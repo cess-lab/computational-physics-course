@@ -1,1 +1,2 @@
-### The template for repositories created within this organization
+# _Hello world, welcome to Computational Methods in Physics!_
+> Owned and managed by Dr. Muhammad Khairul Adib Muhammad Yusof
