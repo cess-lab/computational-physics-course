@@ -1,0 +1,469 @@
+{
+  "deck": {
+    "course": "PHY4605",
+    "title": "From a physics model to a computational experiment",
+    "duration_minutes": 120,
+    "slide_count": 18,
+    "visual_contract": "Each slide is a single ImageGen-generated raster image embedded full-slide.",
+    "delivery_context": "120-minute Week 1 teaching deck; timing appears only in speaker notes and package metadata, never in student-facing slide content.",
+    "branding_override": "No branding, logo, watermark, URL, footer, or institutional mark is permitted.",
+    "canvas": "16:9 pure white canvas; no outer border or frame; no mesh, network, molecular, corner, texture, gradient, or background decoration; locked Roboto Condensed Bold navy title and Roboto Medium charcoal subtitle at the same upper-left anchor on every slide"
+  },
+  "approved_values": {
+    "T_half_h": "6.0 h",
+    "tmax_h": "24 h",
+    "lambda_per_h": "ln(2)/6.0 ≈ 0.1155 1/h",
+    "exact_fraction_at_24h": "0.0625",
+    "timestep_table": [
+      ["2.0", "0.2310", "0.042735", "31.62%", "12"],
+      ["1.0", "0.1155", "0.052536", "15.94%", "24"],
+      ["0.5", "0.0578", "0.057505", "7.99%", "48"],
+      ["0.1", "0.0116", "0.061499", "1.60%", "240"]
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "From a physics model to a computational experiment",
+      "subtitle": "Week 1 | Programming fundamentals through radioactive decay",
+      "archetype": "layered concept",
+      "density": "light",
+      "visual_text": [
+        "A sample has a half-life of 6.0 h.",
+        "How should we simulate one day — and decide whether the answer deserves trust?",
+        "model | units | algorithm | evidence"
+      ],
+      "notes": {
+        "timing": "0–7 min",
+        "checkpoint": "Ask students to predict the fraction remaining after one and four half-lives before showing any code.",
+        "transition": "Use the question to frame the lecture arc: MATLAB is the instrument, not the physics model."
+      }
+    },
+    {
+      "number": 2,
+      "title": "Today’s arc: ask → compute → test",
+      "subtitle": "A physics question becomes a numerical experiment",
+      "archetype": "pipeline",
+      "density": "standard",
+      "visual_text": [
+        "1 Physical question",
+        "2 MATLAB essentials",
+        "3 Decay model",
+        "4 Euler experiment",
+        "5 Validation + Lab bridge",
+        "Learning outcomes",
+        "Map physical quantities to variables and units",
+        "Implement one readable time-step loop",
+        "Compare with a reference and justify dt",
+        "Record evidence so another person can rerun it",
+        "Course roadmap: Week 1 foundations → later numerical methods"
+      ],
+      "notes": {
+        "timing": "7–13 min",
+        "checkpoint": "Which stage would be missing if we only showed a final plot?",
+        "transition": "Make the cycle explicit before introducing the MATLAB interface."
+      }
+    },
+    {
+      "number": 3,
+      "title": "Computation is a controlled experiment on a model",
+      "subtitle": "Every arrow carries a decision that should remain visible.",
+      "archetype": "pipeline",
+      "density": "standard",
+      "visual_text": [
+        "Physics question",
+        "Model + assumptions",
+        "Scale + units",
+        "Discretise",
+        "Algorithm",
+        "MATLAB calculation",
+        "Validate + interpret",
+        "A graph alone is not evidence."
+      ],
+      "notes": {
+        "timing": "13–19 min",
+        "checkpoint": "Have students name one quantity that belongs to the physical model and one that belongs to the numerical method.",
+        "transition": "Now locate the minimum MATLAB views needed to carry the cycle out."
+      }
+    },
+    {
+      "number": 4,
+      "title": "Four MATLAB views, one repeatable experiment",
+      "subtitle": "Know where to try, save, inspect, and rerun your work.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "Command Window",
+        "Try one expression and inspect its answer.",
+        "Editor / Live Editor",
+        "Save the sequence of choices: text + code + output.",
+        "Workspace",
+        "Inspect variables currently in memory — useful, but easy to treat as hidden input.",
+        "Current Folder",
+        "Keep the script and related files together.",
+        "Use the Editor / Live Editor for work you intend to rerun."
+      ],
+      "notes": {
+        "timing": "19–25 min",
+        "checkpoint": "Ask: where should the experiment live if a classmate must rerun it tomorrow?",
+        "transition": "The next step is naming quantities so the code carries units and assumptions with it."
+      }
+    },
+    {
+      "number": 5,
+      "title": "Readable names make units and assumptions visible",
+      "subtitle": "The syntax is small; the naming discipline is the habit.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "N0 = 1000;             % initial population, nuclei",
+        "T_half_h = 6.0;        % half-life, h",
+        "lambda_per_h = log(2)/T_half_h;  % decay constant, 1/h",
+        "Assignment",
+        "Use = to store a value in a named variable.",
+        "Operators",
+        "Use arithmetic to translate an expression.",
+        "Comments",
+        "Use % to explain a choice to the next reader.",
+        "Unit naming",
+        "A suffix such as _h or _m2 keeps dimensions visible.",
+        "Unit check: lambda_per_h × dt_h must be dimensionless."
+      ],
+      "notes": {
+        "timing": "25–31 min",
+        "checkpoint": "What unit does lambda_per_h carry? What unit must dt_h carry?",
+        "transition": "Use the same naming habits in the physics-based Onramp diagnostic before the decay model."
+      }
+    },
+    {
+      "number": 6,
+      "title": "Onramp skills become evidence in a cooling experiment",
+      "subtitle": "Lab 01 diagnostic: build, inspect, and test a temperature model.",
+      "archetype": "layered concept",
+      "density": "dense",
+      "visual_text": [
+        "T(t) = T_env + (T_0 - T_env)e^(-kt)",
+        "T_0 = 80 degC",
+        "T_env = 22 degC",
+        "k = 0.08 min^-1",
+        "t_min = 0:2:60;",
+        "T_C = Tenv_C + (T0_C-Tenv_C).*exp(-k_per_min.*t_min);",
+        "labelled plot",
+        "first time within 1 degC",
+        "initial value, bounds, trend",
+        "Diagnostic habits: arrays | element-wise operations | indexing | plotting | validation",
+        "The code is short; the reasoning must remain visible."
+      ],
+      "notes": {
+        "timing": "31–38 min",
+        "checkpoint": "Before computing, ask students to predict the initial value, the long-time limit, and whether the model can cross below room temperature.",
+        "transition": "The diagnostic uses familiar Onramp operations as evidence; the lecture now applies the same reasoning chain to radioactive decay."
+      }
+    },
+    {
+      "number": 7,
+      "title": "Start with a prediction, then write the model",
+      "subtitle": "A closed sample with a constant half-life gives a controlled physical question.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "Question",
+        "A sample has half-life 6.0 h. How many undecayed nuclei remain after 24 h?",
+        "Model",
+        "dN/dt = -lambda N",
+        "N(0) = N0",
+        "Assumptions",
+        "constant lambda",
+        "closed sample",
+        "same decay probability per unit time",
+        "Predict",
+        "After 6.0 h: 0.5 of N0",
+        "After 24 h: 0.0625 of N0",
+        "A physical population should not become negative."
+      ],
+      "notes": {
+        "timing": "38–45 min",
+        "checkpoint": "Collect predictions: what should remain after one half-life and four half-lives?",
+        "transition": "Translate the symbols into names that MATLAB can store without hiding the units."
+      }
+    },
+    {
+      "number": 8,
+      "title": "Map physics symbols to readable MATLAB names",
+      "subtitle": "A parameter map prevents notation and units from drifting during coding.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "Physics | MATLAB name | meaning / unit",
+        "N0 | N0 | initial population / nuclei",
+        "T1/2 | T_half_h | half-life / h",
+        "lambda | lambda_per_h | decay constant / 1/h",
+        "tmax | tMax_h | final time / h",
+        "dt | dt_h | numerical step / h",
+        "Approved values",
+        "T_half_h = 6.0 h",
+        "tMax_h = 24 h",
+        "lambda_per_h = ln(2)/6.0 ≈ 0.1155 1/h",
+        "Dimension check: lambda_per_h × dt_h is dimensionless."
+      ],
+      "notes": {
+        "timing": "45–51 min",
+        "checkpoint": "Ask students to explain why lambda_per_h and dt_h must use the same time unit.",
+        "transition": "With the parameters named, construct the exact reference before approximating it."
+      }
+    },
+    {
+      "number": 9,
+      "title": "The exact solution is a reference, not a shortcut",
+      "subtitle": "Use the benchmark to make approximation error visible.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "N_exact(t) = N0 exp(-lambda_per_h t)",
+        "lambda_per_h = ln(2)/6.0 ≈ 0.1155 1/h",
+        "At t = 24 h: N_exact/N0 = 0.0625",
+        "One half-life → 0.5",
+        "Two half-lives → 0.25",
+        "Four half-lives → 0.0625",
+        "Reference curve",
+        "Prediction before computing: what should the numerical curve approach?",
+        "A benchmark does not remove the need for numerical work; it gives the work something to answer to."
+      ],
+      "notes": {
+        "timing": "51–57 min",
+        "checkpoint": "Ask students to read the reference value at 24 h and state its physical meaning.",
+        "transition": "Now replace continuous time with an aligned array of discrete times."
+      }
+    },
+    {
+      "number": 10,
+      "title": "Build the time array before the loop",
+      "subtitle": "One time value must align with one stored population value.",
+      "archetype": "numbered process",
+      "density": "standard",
+      "visual_text": [
+        "t_h = 0:dt_h:tMax_h;",
+        "N = zeros(size(t_h));",
+        "N(1) = N0;",
+        "Preallocation",
+        "zeros(size(t_h)) reserves the storage plan.",
+        "Initial condition",
+        "N(1) is N0 because MATLAB indexing starts at 1.",
+        "Alignment",
+        "t_h(1) = 0 ↔ N(1) = N0",
+        "t_h(2) = dt_h ↔ N(2) after one update",
+        "Common trap: N(0) is not a MATLAB index."
+      ],
+      "notes": {
+        "timing": "57–64 min",
+        "checkpoint": "Point to the first two entries and ask which value is known before the loop runs.",
+        "transition": "The derivative approximation supplies the rule that fills the next entry."
+      }
+    },
+    {
+      "number": 11,
+      "title": "Turn the derivative into a next-value rule",
+      "subtitle": "Forward Euler keeps the model but approximates the time derivative.",
+      "archetype": "numbered process",
+      "density": "standard",
+      "visual_text": [
+        "1  Start with the model:  dN/dt = -lambda N",
+        "2  Approximate the slope:  (N_(n+1) - N_n)/dt ≈ -lambda N_n",
+        "3  Rearrange:  N_(n+1) = N_n (1 - lambda dt)",
+        "Approximation",
+        "This is not the exact physics; it is a discrete method for carrying the model forward.",
+        "Smaller dt",
+        "usually improves the approximation here",
+        "More steps",
+        "increase the computational cost",
+        "Warning: if lambda dt > 1, the factor can become negative."
+      ],
+      "notes": {
+        "timing": "64–71 min",
+        "checkpoint": "Have students identify which term must be dimensionless in the update factor.",
+        "transition": "Write the same three-step logic as a minimal MATLAB loop."
+      }
+    },
+    {
+      "number": 12,
+      "title": "The loop is the algorithm written out",
+      "subtitle": "Read it as current value → update rule → next value.",
+      "archetype": "numbered process",
+      "density": "dense",
+      "visual_text": [
+        "for n = 1:numel(t_h)-1",
+        "    N(n+1) = N(n)*(1 - lambda_per_h*dt_h);",
+        "end",
+        "1  Read the current value N(n)",
+        "2  Multiply by the dimensionless factor 1 - lambda_per_h*dt_h",
+        "3  Store the new value in N(n+1)",
+        "Common mistakes",
+        "Overwrite N(n) instead of writing N(n+1)",
+        "Loop to numel(t_h) and write past the end",
+        "Forget N(1) = N0 before the loop",
+        "Checkpoint: what does one pass through the loop represent physically?"
+      ],
+      "notes": {
+        "timing": "71–78 min",
+        "checkpoint": "Trace one iteration on the board: which stored value is read, changed, and preserved?",
+        "transition": "The code is ready; design a fair numerical experiment by changing only dt."
+      }
+    },
+    {
+      "number": 13,
+      "title": "Hold the physics fixed; vary one numerical choice",
+      "subtitle": "A fair timestep experiment changes resolution while keeping the model the same.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "Physical model",
+        "N0 = 1000",
+        "T_half_h = 6.0 h",
+        "tMax_h = 24 h",
+        "lambda_per_h = ln(2)/6.0",
+        "Numerical resolution",
+        "dtValues_h = [2.0 1.0 0.5 0.1]",
+        "Same update rule; different number of steps",
+        "Record",
+        "Euler fraction at 24 h",
+        "relative error against exact",
+        "step count",
+        "Cost is part of the result."
+      ],
+      "notes": {
+        "timing": "78–84 min",
+        "checkpoint": "Ask which quantities must not change when comparing timesteps.",
+        "transition": "Plot the four approximations against the same exact reference."
+      }
+    },
+    {
+      "number": 14,
+      "title": "Coarse and fine Euler curves separate from the reference",
+      "subtitle": "The visual comparison shows why resolution is a modelling decision.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "Fraction remaining, N/N0",
+        "Time, t (h)",
+        "Exact",
+        "Euler dt = 2.0 h",
+        "Euler dt = 1.0 h",
+        "Euler dt = 0.5 h",
+        "Euler dt = 0.1 h",
+        "Read the shape",
+        "Coarse Euler steps fall below the exact curve at 24 h.",
+        "Fine steps track the reference more closely.",
+        "Question: which curve would you report first — and what evidence would you add?"
+      ],
+      "notes": {
+        "timing": "84–90 min",
+        "checkpoint": "Have students rank the curves before revealing the table of final errors.",
+        "transition": "Convert the visual impression into a numerical error and cost report."
+      }
+    },
+    {
+      "number": 15,
+      "title": "Smaller dt improves the result — at a measurable cost",
+      "subtitle": "Approved checkpoints for T_half_h = 6.0 h and tMax_h = 24 h",
+      "archetype": "comparison",
+      "density": "dense",
+      "visual_text": [
+        "dt (h) | lambda*dt | Euler N/N0 at 24 h | relative error | steps",
+        "2.0 | 0.2310 | 0.042735 | 31.62% | 12",
+        "1.0 | 0.1155 | 0.052536 | 15.94% | 24",
+        "0.5 | 0.0578 | 0.057505 | 7.99% | 48",
+        "0.1 | 0.0116 | 0.061499 | 1.60% | 240",
+        "Exact reference at 24 h: N/N0 = 0.0625",
+        "Trend: smaller dt → lower error, more steps",
+        "A numerical result includes accuracy and cost."
+      ],
+      "notes": {
+        "timing": "90–98 min",
+        "checkpoint": "Ask students to choose a timestep for a first report and defend it using error plus cost.",
+        "transition": "A trustworthy report also needs checks on physics, units, implementation, and communication."
+      }
+    },
+    {
+      "number": 16,
+      "title": "Trust comes from a trail of checks",
+      "subtitle": "Validation is evidence that the implementation and interpretation agree with a trusted check.",
+      "archetype": "caution",
+      "density": "dense",
+      "visual_text": [
+        "Physics",
+        "Question, variables, assumptions, expected trend",
+        "Units",
+        "lambda and t use the same time unit",
+        "Algorithm",
+        "Update rule, initial condition, index range",
+        "Numerics",
+        "At least two timesteps and a relative error",
+        "Communication",
+        "Labels, units, legend, and one interpretation",
+        "assert(abs(N(1)-N0) < eps(N0))",
+        "assert(abs(N_exact_fraction(end)-0.0625) < 1e-12)",
+        "assert(all(isfinite(N)))",
+        "assert(all(N >= 0))",
+        "Warning: lambda*dt > 1 can make the Euler population negative."
+      ],
+      "notes": {
+        "timing": "98–105 min",
+        "checkpoint": "Which assertion would catch a missing initial condition? Which would catch a nonphysical negative population?",
+        "transition": "Checks make the result defensible; reproducibility makes the checks portable to another person and another day."
+      }
+    },
+    {
+      "number": 17,
+      "title": "AI can suggest syntax; it cannot certify physics",
+      "subtitle": "Responsible AI use means verification literacy, not blind acceptance.",
+      "archetype": "caution",
+      "density": "standard",
+      "visual_text": [
+        "A safe assistance pattern",
+        "1 Read the code line by line",
+        "2 Check units and limiting cases",
+        "3 Compare with N_exact and report error",
+        "4 Rerun from a fresh MATLAB session",
+        "5 State the test you performed",
+        "What the assistant cannot establish",
+        "Whether the physical assumptions fit the sample",
+        "Whether lambda and dt use compatible units",
+        "Whether the chosen timestep is adequate for the question",
+        "Reproducibility record",
+        "parameters + units | dt + tMax | MATLAB version | validation evidence | labelled figure + caption",
+        "Checkpoint: what evidence makes your dt acceptable?"
+      ],
+      "notes": {
+        "timing": "105–112 min",
+        "checkpoint": "Invite one student example of a test that an AI-generated answer would not perform automatically.",
+        "transition": "Close by turning the full cycle into a practical handoff and exit ticket."
+      }
+    },
+    {
+      "number": 18,
+      "title": "Leave with a model, a method, and a test you can rerun",
+      "subtitle": "The next task transfers the reasoning chain to a cooling model.",
+      "archetype": "recap / bridge",
+      "density": "standard",
+      "visual_text": [
+        "Takeaway 1",
+        "A computational result begins with a model and assumptions — not with a MATLAB command.",
+        "Takeaway 2",
+        "dt is part of the numerical method. Smaller is not automatically free.",
+        "Takeaway 3",
+        "Validation and interpretation are required parts of a simulation.",
+        "Next in the Week 1 package",
+        "Complete the individual entry check.",
+        "Open PHY4605_Week01_Onramp_Diagnostic.m.",
+        "Predict, compute, validate, and interpret the cooling model.",
+        "Exit ticket: model + assumption | algorithm | validation evidence",
+        "model → code → evidence"
+      ],
+      "notes": {
+        "timing": "112–120 min",
+        "checkpoint": "Collect the three-sentence exit ticket before students leave.",
+        "transition": "End with the practical handoff: complete the entry check, then transfer the reasoning chain to the cooling-model Onramp diagnostic."
+      }
+    }
+  ]
+}

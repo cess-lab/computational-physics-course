@@ -1,0 +1,581 @@
+{"kind":"deck","id":"pr/8l858z","name":"Deck"}
+{"kind":"layout","layoutId":"4bbcb530-6d59-47d0-8d64-99438d1d3e9f","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"f9723fe3-02d7-4ec8-a898-e1736cf6a6df","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/mtrkp6","slide":1,"title":"PHY4605 · COMPUTATIONAL METHODS IN PHYSICS","textShapes":4}
+{"kind":"shape","id":"sh/xczed8v6","slide":1,"bbox":[0,0,1280,720]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":1,"text":"PHY4605 · COMPUTATIONAL METHODS IN PHYSICS","textPreview":"PHY4605 · COMPUTATIONAL METHODS IN PHYSICS","textChars":42,"textLines":1,"bbox":[52,62,520,30]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":1,"text":"Numerical Root-Finding\nand Calculus","textPreview":"Numerical Root-Finding | and Calculus","textChars":35,"textLines":2,"bbox":[52,142,600,210]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":1,"text":"From “where?” to “how much?” to “how fast?”","textPreview":"From “where?” to “how much?” to “how fast?”","textChars":43,"textLines":1,"bbox":[52,382,560,72]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":1,"text":"Topic 11","textPreview":"Topic 11","textChars":8,"textLines":1,"bbox":[52,635,200,30]}
+{"kind":"image","id":"im/vahoza1g","slide":1,"name":"","alt":"Abstract numerical root, integral, and tangent visualization","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/mtrkp6","slide":1,"text":"Open with the three questions: Where does a model cross a threshold? How much accumulates? How fast does it change? Ask students to identify the root, area, and slope cues in the image."}
+{"kind":"slide","id":"sl/t3hu3v","slide":2,"title":"PHY4605 · TOPIC 11","textShapes":14}
+{"kind":"textbox","id":"sh/vixczed8","slide":2,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":2,"text":"PREDICT","textPreview":"PREDICT","textChars":7,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/6psfil0r","slide":2,"text":"One curve. Three numerical questions.","textPreview":"One curve. Three numerical questions.","textChars":37,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/val87ed8","slide":2,"bbox":[42,182,370,370]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":2,"text":"WHERE?","textPreview":"WHERE?","textChars":6,"textLines":1,"bbox":[66,210,320,28]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":2,"text":"Solve f(x) = 0","textPreview":"Solve f(x) = 0","textChars":14,"textLines":1,"bbox":[66,276,320,70]}
+{"kind":"textbox","id":"sh/2lszqtcj","slide":2,"text":"Root-finding","textPreview":"Root-finding","textChars":12,"textLines":1,"bbox":[66,450,320,36]}
+{"kind":"shape","id":"sh/v6psfil0","slide":2,"bbox":[444,182,370,370]}
+{"kind":"textbox","id":"sh/bq1oryts","slide":2,"text":"HOW MUCH?","textPreview":"HOW MUCH?","textChars":9,"textLines":1,"bbox":[468,210,320,28]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":2,"text":"Estimate ∫ f(x) dx","textPreview":"Estimate ∫ f(x) dx","textChars":18,"textLines":1,"bbox":[468,276,320,70]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":2,"text":"Integration","textPreview":"Integration","textChars":11,"textLines":1,"bbox":[468,450,320,36]}
+{"kind":"shape","id":"sh/4byhgn29","slide":2,"bbox":[846,182,370,370]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":2,"text":"HOW FAST?","textPreview":"HOW FAST?","textChars":9,"textLines":1,"bbox":[870,210,320,28]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":2,"text":"Estimate df/dx","textPreview":"Estimate df/dx","textChars":14,"textLines":1,"bbox":[870,276,320,70]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":2,"text":"Differentiation","textPreview":"Differentiation","textChars":15,"textLines":1,"bbox":[870,450,320,36]}
+{"kind":"shape","id":"sh/4nap4r65","slide":2,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":2,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/t3hu3v","slide":2,"text":"Pause before revealing the labels. Ask students to match each mathematical operation to a physical question. Examples: equilibrium position, total work, instantaneous velocity."}
+{"kind":"slide","id":"sl/vulrt6","slide":3,"title":"PHY4605 · TOPIC 11","textShapes":17}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":3,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/qh0fepkz","slide":3,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":3,"text":"By the end, you should be able to…","textPreview":"By the end, you should be able to…","textChars":34,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":3,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[52,176,70,42]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":3,"text":"Explain","textPreview":"Explain","textChars":7,"textLines":1,"bbox":[150,174,190,40]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":3,"text":"the geometric idea behind each method","textPreview":"the geometric idea behind each method","textChars":37,"textLines":1,"bbox":[348,176,820,48]}
+{"kind":"shape","id":"sh/c3ylc7u5","slide":3,"bbox":[150,244,1010,2]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":3,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[52,288,70,42]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":3,"text":"Implement","textPreview":"Implement","textChars":9,"textLines":1,"bbox":[150,286,190,40]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":3,"text":"Newton, bisection, trapezoidal, Simpson, and finite differences","textPreview":"Newton, bisection, trapezoidal, Simpson, and finite differences","textChars":63,"textLines":1,"bbox":[348,288,820,48]}
+{"kind":"shape","id":"sh/nih4byhg","slide":3,"bbox":[150,356,1010,2]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[52,400,70,42]}
+{"kind":"textbox","id":"sh/9cvixcze","slide":3,"text":"Diagnose","textPreview":"Diagnose","textChars":8,"textLines":1,"bbox":[150,398,190,40]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":3,"text":"convergence, truncation, and round-off problems","textPreview":"convergence, truncation, and round-off problems","textChars":47,"textLines":1,"bbox":[348,400,820,48]}
+{"kind":"shape","id":"sh/r65wjudg","slide":3,"bbox":[150,468,1010,2]}
+{"kind":"textbox","id":"sh/ylc7u54z","slide":3,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[52,512,70,42]}
+{"kind":"textbox","id":"sh/90je9cvi","slide":3,"text":"Choose","textPreview":"Choose","textChars":6,"textLines":1,"bbox":[150,510,190,40]}
+{"kind":"textbox","id":"sh/gfmlkjm1","slide":3,"text":"a method and verify it with MATLAB","textPreview":"a method and verify it with MATLAB","textChars":34,"textLines":1,"bbox":[348,512,820,48]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":3,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":3,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/vulrt6","slide":3,"text":"Make the method-choice outcome explicit: students are not learning recipes only. They should justify assumptions, stopping criteria, and validation."}
+{"kind":"slide","id":"sl/hf2dpx","slide":4,"title":"PHY4605 · TOPIC 11","textShapes":17}
+{"kind":"textbox","id":"sh/at47y1kr","slide":4,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":4,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":4,"text":"Today’s route: intuition → algorithm → MATLAB → judgement","textPreview":"Today’s route: intuition → algorithm → MATLAB → judgement","textChars":57,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/ahoza1gv","slide":4,"bbox":[115,310,1010,4]}
+{"kind":"shape","id":"sh/l87ed8ba","slide":4,"bbox":[65,270,88,88]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":4,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[65,289,88,40]}
+{"kind":"textbox","id":"sh/3q5o7qpg","slide":4,"text":"ROOTS","textPreview":"ROOTS","textChars":5,"textLines":1,"bbox":[35,392,150,28]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":4,"text":"Newton · Bisection · fzero","textPreview":"Newton · Bisection · fzero","textChars":26,"textLines":1,"bbox":[5,438,210,70]}
+{"kind":"shape","id":"sh/87ed8bat","slide":4,"bbox":[365,270,88,88]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":4,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[365,289,88,40]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":4,"text":"AREA","textPreview":"AREA","textChars":4,"textLines":1,"bbox":[335,392,150,28]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":4,"text":"Trapezoidal · Simpson · integral","textPreview":"Trapezoidal · Simpson · integral","textChars":32,"textLines":1,"bbox":[305,438,210,70]}
+{"kind":"shape","id":"sh/8z25kb6x","slide":4,"bbox":[665,270,88,88]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[665,289,88,40]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":4,"text":"SLOPE","textPreview":"SLOPE","textChars":5,"textLines":1,"bbox":[635,392,150,28]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":4,"text":"Finite differences · diff","textPreview":"Finite differences · diff","textChars":25,"textLines":1,"bbox":[605,438,210,70]}
+{"kind":"shape","id":"sh/8v6psfil","slide":4,"bbox":[965,270,88,88]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":4,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[965,289,88,40]}
+{"kind":"textbox","id":"sh/hoza1gvy","slide":4,"text":"DECIDE","textPreview":"DECIDE","textChars":6,"textLines":1,"bbox":[935,392,150,28]}
+{"kind":"textbox","id":"sh/s36hcrmh","slide":4,"text":"Accuracy · failure · verification","textPreview":"Accuracy · failure · verification","textChars":33,"textLines":1,"bbox":[905,438,210,70]}
+{"kind":"shape","id":"sh/zidonyd0","slide":4,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/a1gvy90j","slide":4,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/hf2dpx","slide":4,"text":"This is the navigation slide. The deck is designed for a two-hour lecture with short predict/discuss/run pauses."}
+{"kind":"slide","id":"sl/uhsdfn","slide":5,"title":"PART 1 · ROOT-FINDING","textShapes":4}
+{"kind":"textbox","id":"sh/kjm1cfa9","slide":5,"text":"PART 1 · ROOT-FINDING","textPreview":"PART 1 · ROOT-FINDING","textChars":21,"textLines":1,"bbox":[52,64,360,28]}
+{"kind":"textbox","id":"sh/r2p8nqxs","slide":5,"text":"Where does the model equal zero?","textPreview":"Where does the model equal zero?","textChars":32,"textLines":1,"bbox":[52,190,760,160]}
+{"kind":"shape","id":"sh/2hwfyxob","slide":5,"bbox":[52,384,200,5]}
+{"kind":"textbox","id":"sh/9gr2p8nq","slide":5,"text":"A root is not merely an x-intercept—it may represent equilibrium, resonance, a threshold, or a boundary between regimes.","textPreview":"A root is not merely an x-intercept—it may represent equilibrium, resonance, a threshold, or a boundary between regimes.","textChars":120,"textLines":1,"bbox":[52,420,880,90]}
+{"kind":"textbox","id":"sh/gvy90je9","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1154,654,70,28]}
+{"kind":"notes","id":"nt/uhsdfn","slide":5,"text":"Invite one physical example of a root. Good answers include net force equals zero, charge balance, or an event time defined implicitly."}
+{"kind":"slide","id":"sl/6mem9n","slide":6,"title":"PHY4605 · TOPIC 11","textShapes":8}
+{"kind":"textbox","id":"sh/at47y1kr","slide":6,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":6,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/32lszqtc","slide":6,"text":"Newton’s method follows the tangent to the axis","textPreview":"Newton’s method follows the tangent to the axis","textChars":47,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":6,"text":"xₖ₊₁ = xₖ − f(xₖ) / f′(xₖ)","textPreview":"xₖ₊₁ = xₖ − f(xₖ) / f′(xₖ)","textChars":26,"textLines":1,"bbox":[790,230,410,70]}
+{"kind":"shape","id":"sh/sneloj2t","slide":6,"bbox":[790,340,410,180]}
+{"kind":"shape","id":"sh/3q5o7qpg","slide":6,"bbox":[790,340,8,180]}
+{"kind":"textbox","id":"sh/e9cvixcz","slide":6,"text":"GEOMETRIC MOVE","textPreview":"GEOMETRIC MOVE","textChars":14,"textLines":1,"bbox":[814,358,368,28]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":6,"text":"At xₖ, replace the curve locally by its tangent. Where that tangent crosses y = 0 becomes the next estimate.","textPreview":"At xₖ, replace the curve locally by its tangent. Where that tangent crosses y = 0 becomes the next estimate.","textChars":108,"textLines":1,"bbox":[814,392,368,114]}
+{"kind":"shape","id":"sh/xs72x4na","slide":6,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":6,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"chart","id":"ch/ap4r65wj","slide":6,"name":"","chartType":"scatter","bbox":[42,170,700,440]}
+{"kind":"notes","id":"nt/6mem9n","slide":6,"text":"Trace the geometric construction: evaluate the curve, estimate local slope, project the tangent to the axis. Emphasize that the tangent is only a local model."}
+{"kind":"slide","id":"sl/0lgcph","slide":7,"title":"PHY4605 · TOPIC 11","textShapes":19}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":7,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/zed8v6ps","slide":7,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":7,"text":"Newton’s algorithm needs two safeguards","textPreview":"Newton’s algorithm needs two safeguards","textChars":39,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/obm58z25","slide":7,"bbox":[42,190,266,250]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":7,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[62,212,48,48]}
+{"kind":"textbox","id":"sh/65wjudg7","slide":7,"text":"Choose x₀","textPreview":"Choose x₀","textChars":9,"textLines":1,"bbox":[62,286,220,34]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":7,"text":"Use a plot or physical estimate.","textPreview":"Use a plot or physical estimate.","textChars":32,"textLines":1,"bbox":[62,340,220,66]}
+{"kind":"shape","id":"sh/sfil0rqd","slide":7,"bbox":[340,190,266,250]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":7,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[360,212,48,48]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":7,"text":"Update","textPreview":"Update","textChars":6,"textLines":1,"bbox":[360,286,220,34]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":7,"text":"x ← x − f(x)/f′(x)","textPreview":"x ← x − f(x)/f′(x)","textChars":18,"textLines":1,"bbox":[360,340,220,66]}
+{"kind":"shape","id":"sh/1gvy90je","slide":7,"bbox":[638,190,266,250]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":7,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[658,212,48,48]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":7,"text":"Check","textPreview":"Check","textChars":5,"textLines":1,"bbox":[658,286,220,34]}
+{"kind":"textbox","id":"sh/87ed8bat","slide":7,"text":"|f(x)| and the step size","textPreview":"|f(x)| and the step size","textChars":24,"textLines":1,"bbox":[658,340,220,66]}
+{"kind":"shape","id":"sh/xs72x4na","slide":7,"bbox":[936,190,266,250]}
+{"kind":"textbox","id":"sh/qd4vmtwr","slide":7,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[956,212,48,48]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":7,"text":"Stop","textPreview":"Stop","textChars":4,"textLines":1,"bbox":[956,286,220,34]}
+{"kind":"textbox","id":"sh/7y1kre1w","slide":7,"text":"Tolerance reached—or iteration limit.","textPreview":"Tolerance reached—or iteration limit.","textChars":37,"textLines":1,"bbox":[956,340,220,66]}
+{"kind":"shape","id":"sh/ed8v6psf","slide":7,"bbox":[190,500,900,120]}
+{"kind":"shape","id":"sh/p4r65wju","slide":7,"bbox":[190,500,8,120]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":7,"text":"SAFEGUARDS","textPreview":"SAFEGUARDS","textChars":10,"textLines":1,"bbox":[214,518,858,28]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":7,"text":"Never loop forever. Stop when both the residual and the update are small, and detect f′(x) ≈ 0 before dividing.","textPreview":"Never loop forever. Stop when both the residual and the update are small, and detect f′(x) ≈ 0 before dividing.","textChars":111,"textLines":1,"bbox":[214,552,858,54]}
+{"kind":"shape","id":"sh/i5sneloj","slide":7,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/pwb2hwfy","slide":7,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/0lgcph","slide":7,"text":"Contrast residual and relative step. A tiny step can occur near numerical stagnation; a small residual directly checks the equation."}
+{"kind":"slide","id":"sl/4a7m1o","slide":8,"title":"PHY4605 · TOPIC 11","textShapes":32}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":8,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":8,"text":"RUN","textPreview":"RUN","textChars":3,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":8,"text":"Worked example: x³ − 2x − 5 = 0","textPreview":"Worked example: x³ − 2x − 5 = 0","textChars":31,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/vy90je9c","slide":8,"bbox":[42,170,530,420]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":8,"text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[60,182,494,18]}
+{"kind":"textbox","id":"sh/d4vmtwra","slide":8,"text":"f  = @(x) x.^3 - 2*x - 5;\ndf = @(x) 3*x.^2 - 2;\nx = 5;\nfor k = 1:8\n    dx = -f(x)/df(x);\n    x  = x + dx;\n    if abs(f(x)) < 1e-10, break, end\nend","textPreview":"f  = @(x) x.^3 - 2*x - 5; | df = @(x) 3*x.^2 - 2; | x = 5; | for k = 1:8 |     dx = -f(x)/df(x); |     x  = x + dx; |     if abs(f(x)) < ...","textChars":146,"textLines":8,"bbox":[60,208,494,370]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":8,"bbox":[625,170,550,50]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":8,"text":"k","textPreview":"k","textChars":1,"textLines":1,"bbox":[635,178,50,34]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":8,"text":"xₖ","textPreview":"xₖ","textChars":2,"textLines":1,"bbox":[705,178,200,34]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":8,"text":"|f(xₖ)|","textPreview":"|f(xₖ)|","textChars":7,"textLines":1,"bbox":[925,178,240,34]}
+{"kind":"shape","id":"sh/d4vmtwra","slide":8,"bbox":[625,220,550,50]}
+{"kind":"textbox","id":"sh/oj2t83it","slide":8,"text":"0","textPreview":"0","textChars":1,"textLines":1,"bbox":[635,228,50,34]}
+{"kind":"textbox","id":"sh/vmtwra5g","slide":8,"text":"5.000000","textPreview":"5.000000","textChars":8,"textLines":1,"bbox":[705,228,200,34]}
+{"kind":"textbox","id":"sh/61032lsz","slide":8,"text":"110","textPreview":"110","textChars":3,"textLines":1,"bbox":[925,228,240,34]}
+{"kind":"shape","id":"sh/dsji5sne","slide":8,"bbox":[625,270,550,50]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":8,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[635,278,50,34]}
+{"kind":"textbox","id":"sh/vahoza1g","slide":8,"text":"3.493151","textPreview":"3.493151","textChars":8,"textLines":1,"bbox":[705,278,200,34]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":8,"text":"30.64","textPreview":"30.64","textChars":5,"textLines":1,"bbox":[925,278,240,34]}
+{"kind":"shape","id":"sh/epkzupwb","slide":8,"bbox":[625,320,550,50]}
+{"kind":"textbox","id":"sh/7adsji5s","slide":8,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[635,328,50,34]}
+{"kind":"textbox","id":"sh/wval87ed","slide":8,"text":"2.607836","textPreview":"2.607836","textChars":8,"textLines":1,"bbox":[705,328,200,34]}
+{"kind":"textbox","id":"sh/pg3ex0nu","slide":8,"text":"7.52","textPreview":"7.52","textChars":4,"textLines":1,"bbox":[925,328,240,34]}
+{"kind":"shape","id":"sh/e1w7mp0b","slide":8,"bbox":[625,370,550,50]}
+{"kind":"textbox","id":"sh/7mp0bi9s","slide":8,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[635,378,50,34]}
+{"kind":"textbox","id":"sh/w7mp0bi9","slide":8,"text":"2.199209","textPreview":"2.199209","textChars":8,"textLines":1,"bbox":[705,378,200,34]}
+{"kind":"textbox","id":"sh/psfil0rq","slide":8,"text":"1.24","textPreview":"1.24","textChars":4,"textLines":1,"bbox":[925,378,240,34]}
+{"kind":"shape","id":"sh/ed8bat47","slide":8,"bbox":[625,420,550,50]}
+{"kind":"textbox","id":"sh/7u54zido","slide":8,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[635,428,50,34]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":8,"text":"2.100237","textPreview":"2.100237","textChars":8,"textLines":1,"bbox":[705,428,200,34]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":8,"text":"0.0637","textPreview":"0.0637","textChars":6,"textLines":1,"bbox":[925,428,240,34]}
+{"kind":"shape","id":"sh/bq1oryts","slide":8,"bbox":[625,470,550,50]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":8,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[635,478,50,34]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":8,"text":"2.094570","textPreview":"2.094570","textChars":8,"textLines":1,"bbox":[705,478,200,34]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":8,"text":"2.02×10⁻⁴","textPreview":"2.02×10⁻⁴","textChars":9,"textLines":1,"bbox":[925,478,240,34]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":8,"bbox":[625,520,550,50]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":8,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[635,528,50,34]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":8,"text":"2.094551","textPreview":"2.094551","textChars":8,"textLines":1,"bbox":[705,528,200,34]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":8,"text":"2.06×10⁻⁹","textPreview":"2.06×10⁻⁹","textChars":9,"textLines":1,"bbox":[925,528,240,34]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":8,"text":"Rapid near the root: error is approximately squared each iteration.","textPreview":"Rapid near the root: error is approximately squared each iteration.","textChars":67,"textLines":1,"bbox":[625,575,550,42]}
+{"kind":"shape","id":"sh/1kre1w7m","slide":8,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":8,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/4a7m1o","slide":8,"text":"Have students run the code, then change x0. Point out the slow-looking early stage and rapid final convergence. The displayed values are rounded."}
+{"kind":"slide","id":"sl/yscj9h","slide":9,"title":"PHY4605 · TOPIC 11","textShapes":15}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":9,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":9,"text":"DISCUSS","textPreview":"DISCUSS","textChars":7,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/j2t83itg","slide":9,"text":"Newton can be brilliant—and still fail","textPreview":"Newton can be brilliant—and still fail","textChars":38,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":9,"bbox":[42,176,565,152]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":9,"text":"POOR START","textPreview":"POOR START","textChars":10,"textLines":1,"bbox":[64,196,180,28]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":9,"text":"The tangent may jump to another root or diverge.","textPreview":"The tangent may jump to another root or diverge.","textChars":48,"textLines":1,"bbox":[64,238,510,62]}
+{"kind":"shape","id":"sh/j6tovaho","slide":9,"bbox":[647,176,565,152]}
+{"kind":"textbox","id":"sh/ulwval87","slide":9,"text":"FLAT SLOPE","textPreview":"FLAT SLOPE","textChars":10,"textLines":1,"bbox":[669,196,180,28]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":9,"text":"f′(x) ≈ 0 creates a huge update.","textPreview":"f′(x) ≈ 0 creates a huge update.","textChars":32,"textLines":1,"bbox":[669,238,510,62]}
+{"kind":"shape","id":"sh/tgfmlkjm","slide":9,"bbox":[42,366,565,152]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":9,"text":"OSCILLATION","textPreview":"OSCILLATION","textChars":11,"textLines":1,"bbox":[64,386,180,28]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":9,"text":"Updates can bounce between points.","textPreview":"Updates can bounce between points.","textChars":34,"textLines":1,"bbox":[64,428,510,62]}
+{"kind":"shape","id":"sh/47y1kre1","slide":9,"bbox":[647,366,565,152]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":9,"text":"DISCONTINUITY","textPreview":"DISCONTINUITY","textChars":13,"textLines":1,"bbox":[669,386,180,28]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":9,"text":"A tangent may cross an irrelevant branch.","textPreview":"A tangent may cross an irrelevant branch.","textChars":41,"textLines":1,"bbox":[669,428,510,62]}
+{"kind":"shape","id":"sh/bm58z25k","slide":9,"bbox":[238,573,805,78]}
+{"kind":"shape","id":"sh/4byhgn29","slide":9,"bbox":[238,573,8,78]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":9,"text":"CASE TO TRY","textPreview":"CASE TO TRY","textChars":11,"textLines":1,"bbox":[262,591,763,28]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":9,"text":"For 2x = tan(x), plot first. Starting guesses near tangent asymptotes can produce surprising jumps.","textPreview":"For 2x = tan(x), plot first. Starting guesses near tangent asymptotes can produce surprising jumps.","textChars":99,"textLines":1,"bbox":[262,625,763,12]}
+{"kind":"shape","id":"sh/8z25kb6x","slide":9,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":9,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/yscj9h","slide":9,"text":"Ask: what information would make Newton safer? Expected answers: plot, bracket, derivative check, maximum iteration count, or a hybrid solver."}
+{"kind":"slide","id":"sl/79rbsk","slide":10,"title":"PHY4605 · TOPIC 11","textShapes":12}
+{"kind":"textbox","id":"sh/onyd0z61","slide":10,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":10,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":10,"text":"Bisection trades speed for certainty","textPreview":"Bisection trades speed for certainty","textChars":36,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":10,"text":"If f(xL) and f(xR) have opposite signs—and f is continuous—at least one root lies between them.","textPreview":"If f(xL) and f(xR) have opposite signs—and f is continuous—at least one root lies between them.","textChars":95,"textLines":1,"bbox":[42,166,1120,64]}
+{"kind":"shape","id":"sh/vahoza1g","slide":10,"bbox":[150,350,950,4]}
+{"kind":"shape","id":"sh/6tovahoz","slide":10,"bbox":[144,330,12,44]}
+{"kind":"shape","id":"sh/dsji5sne","slide":10,"bbox":[619,330,12,44]}
+{"kind":"shape","id":"sh/o7qpg3ex","slide":10,"bbox":[1094,330,12,44]}
+{"kind":"textbox","id":"sh/q5o7qpg3","slide":10,"text":"xL","textPreview":"xL","textChars":2,"textLines":1,"bbox":[126,390,60,32]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":10,"text":"xM","textPreview":"xM","textChars":2,"textLines":1,"bbox":[595,390,60,32]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":10,"text":"xR","textPreview":"xR","textChars":2,"textLines":1,"bbox":[1070,390,60,32]}
+{"kind":"textbox","id":"sh/1w7mp0bi","slide":10,"text":"Discard the half that does not preserve the sign change.","textPreview":"Discard the half that does not preserve the sign change.","textChars":56,"textLines":1,"bbox":[260,480,760,50]}
+{"kind":"shape","id":"sh/qh0fepkz","slide":10,"bbox":[235,555,810,90]}
+{"kind":"shape","id":"sh/j2t83itg","slide":10,"bbox":[235,555,8,90]}
+{"kind":"textbox","id":"sh/8nqxs72x","slide":10,"text":"NON-NEGOTIABLE","textPreview":"NON-NEGOTIABLE","textChars":14,"textLines":1,"bbox":[259,573,768,28]}
+{"kind":"textbox","id":"sh/18jqh0fe","slide":10,"text":"Check f(xL)·f(xR) < 0 before iterating. Bisection cannot detect an even-multiplicity root that merely touches the axis.","textPreview":"Check f(xL)·f(xR) < 0 before iterating. Bisection cannot detect an even-multiplicity root that merely touches the axis.","textChars":119,"textLines":1,"bbox":[259,607,768,24]}
+{"kind":"shape","id":"sh/ulwval87","slide":10,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":10,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/79rbsk","slide":10,"text":"The continuity assumption matters. Demonstrate the sign test physically with thumbs up/down at the endpoints."}
+{"kind":"slide","id":"sl/wtrqb2","slide":11,"title":"PHY4605 · TOPIC 11","textShapes":16}
+{"kind":"textbox","id":"sh/0z61032l","slide":11,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/7ed8bat4","slide":11,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":11,"text":"Bisection shrinks the uncertainty by ½ each step","textPreview":"Bisection shrinks the uncertainty by ½ each step","textChars":48,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/0nuxc3yl","slide":11,"bbox":[42,198,266,210]}
+{"kind":"textbox","id":"sh/72x4nap4","slide":11,"text":"START","textPreview":"START","textChars":5,"textLines":1,"bbox":[62,222,220,26]}
+{"kind":"textbox","id":"sh/ih4byhgn","slide":11,"text":"Confirm sign change","textPreview":"Confirm sign change","textChars":19,"textLines":1,"bbox":[62,280,220,76]}
+{"kind":"shape","id":"sh/p4r65wju","slide":11,"bbox":[340,198,266,210]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":11,"text":"MIDPOINT","textPreview":"MIDPOINT","textChars":8,"textLines":1,"bbox":[360,222,220,26]}
+{"kind":"textbox","id":"sh/6tovahoz","slide":11,"text":"xM = (xL + xR)/2","textPreview":"xM = (xL + xR)/2","textChars":16,"textLines":1,"bbox":[360,280,220,76]}
+{"kind":"shape","id":"sh/vahoza1g","slide":11,"bbox":[638,198,266,210]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":11,"text":"KEEP","textPreview":"KEEP","textChars":4,"textLines":1,"bbox":[658,222,220,26]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":11,"text":"Retain the sign-changing half","textPreview":"Retain the sign-changing half","textChars":29,"textLines":1,"bbox":[658,280,220,76]}
+{"kind":"shape","id":"sh/6hcrmhk3","slide":11,"bbox":[936,198,266,210]}
+{"kind":"textbox","id":"sh/z25kb6xk","slide":11,"text":"REPEAT","textPreview":"REPEAT","textChars":6,"textLines":1,"bbox":[956,222,220,26]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":11,"text":"Until width or residual is small","textPreview":"Until width or residual is small","textChars":32,"textLines":1,"bbox":[956,280,220,76]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":11,"text":"After k iterations:","textPreview":"After k iterations:","textChars":19,"textLines":1,"bbox":[275,482,250,36]}
+{"kind":"textbox","id":"sh/6dcbulwv","slide":11,"text":"interval width = (xR − xL) / 2ᵏ","textPreview":"interval width = (xR − xL) / 2ᵏ","textChars":31,"textLines":1,"bbox":[500,472,500,54]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":11,"text":"This gives an error bound before you even run the code.","textPreview":"This gives an error bound before you even run the code.","textChars":55,"textLines":1,"bbox":[345,550,620,42]}
+{"kind":"shape","id":"sh/rmhk3q5o","slide":11,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":11,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/wtrqb2","slide":11,"text":"Ask students how many steps are needed to reduce a width of 1 to below 1e-6. Answer: ceil(log2(1e6)) = 20."}
+{"kind":"slide","id":"sl/ptsr83","slide":12,"title":"PHY4605 · TOPIC 11","textShapes":25}
+{"kind":"textbox","id":"sh/qpg3ex0n","slide":12,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":12,"text":"DISCUSS","textPreview":"DISCUSS","textChars":7,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/8v6psfil","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/fyxobm58","slide":12,"text":"Newton or bisection? Choose from evidence.","textPreview":"Newton or bisection? Choose from evidence.","textChars":42,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/qd4vmtwr","slide":12,"bbox":[80,180,1120,64]}
+{"kind":"textbox","id":"sh/x4nap4r6","slide":12,"text":"Criterion","textPreview":"Criterion","textChars":9,"textLines":1,"bbox":[90,188,280,48]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":12,"text":"Newton","textPreview":"Newton","textChars":6,"textLines":1,"bbox":[390,188,390,48]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":12,"text":"Bisection","textPreview":"Bisection","textChars":9,"textLines":1,"bbox":[800,188,390,48]}
+{"kind":"shape","id":"sh/q1orytsv","slide":12,"bbox":[80,244,1120,64]}
+{"kind":"textbox","id":"sh/4nap4r65","slide":12,"text":"Starting information","textPreview":"Starting information","textChars":20,"textLines":1,"bbox":[90,252,280,48]}
+{"kind":"textbox","id":"sh/t83itgfm","slide":12,"text":"One guess","textPreview":"One guess","textChars":9,"textLines":1,"bbox":[390,252,390,48]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":12,"text":"A sign-changing bracket","textPreview":"A sign-changing bracket","textChars":23,"textLines":1,"bbox":[800,252,390,48]}
+{"kind":"shape","id":"sh/b2hwfyxo","slide":12,"bbox":[80,308,1120,64]}
+{"kind":"textbox","id":"sh/4byhgn29","slide":12,"text":"Derivative","textPreview":"Derivative","textChars":10,"textLines":1,"bbox":[90,316,280,48]}
+{"kind":"textbox","id":"sh/twra5gbq","slide":12,"text":"Required","textPreview":"Required","textChars":8,"textLines":1,"bbox":[390,316,390,48]}
+{"kind":"textbox","id":"sh/m58z25kb","slide":12,"text":"Not required","textPreview":"Not required","textChars":12,"textLines":1,"bbox":[800,316,390,48]}
+{"kind":"shape","id":"sh/bq1oryts","slide":12,"bbox":[80,372,1120,64]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":12,"text":"Typical speed","textPreview":"Typical speed","textChars":13,"textLines":1,"bbox":[90,380,280,48]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":12,"text":"Very fast near a simple root","textPreview":"Very fast near a simple root","textChars":28,"textLines":1,"bbox":[390,380,390,48]}
+{"kind":"textbox","id":"sh/xkf6dcbu","slide":12,"text":"Steady, linear","textPreview":"Steady, linear","textChars":14,"textLines":1,"bbox":[800,380,390,48]}
+{"kind":"shape","id":"sh/4zidonyd","slide":12,"bbox":[80,436,1120,64]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":12,"text":"Guarantee","textPreview":"Guarantee","textChars":9,"textLines":1,"bbox":[90,444,280,48]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":12,"text":"No","textPreview":"No","textChars":2,"textLines":1,"bbox":[390,444,390,48]}
+{"kind":"textbox","id":"sh/xc3ylc7u","slide":12,"text":"Yes, with continuity + bracket","textPreview":"Yes, with continuity + bracket","textChars":30,"textLines":1,"bbox":[800,444,390,48]}
+{"kind":"shape","id":"sh/4r65wjud","slide":12,"bbox":[80,500,1120,64]}
+{"kind":"textbox","id":"sh/f6dcbulw","slide":12,"text":"Best use","textPreview":"Best use","textChars":8,"textLines":1,"bbox":[90,508,280,48]}
+{"kind":"textbox","id":"sh/mlkjm1cf","slide":12,"text":"Good model and initial estimate","textPreview":"Good model and initial estimate","textChars":31,"textLines":1,"bbox":[390,508,390,48]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":12,"text":"Reliability first","textPreview":"Reliability first","textChars":17,"textLines":1,"bbox":[800,508,390,48]}
+{"kind":"shape","id":"sh/4fu18jqh","slide":12,"bbox":[260,565,760,86]}
+{"kind":"shape","id":"sh/ed8v6psf","slide":12,"bbox":[260,565,8,86]}
+{"kind":"textbox","id":"sh/7y1kre1w","slide":12,"text":"PRACTICAL ANSWER","textPreview":"PRACTICAL ANSWER","textChars":16,"textLines":1,"bbox":[284,583,718,28]}
+{"kind":"textbox","id":"sh/wjudg7ad","slide":12,"text":"Use a hybrid strategy: bracket first, then accelerate safely. MATLAB’s fzero follows this philosophy.","textPreview":"Use a hybrid strategy: bracket first, then accelerate safely. MATLAB’s fzero follows this philosophy.","textChars":101,"textLines":1,"bbox":[284,617,718,20]}
+{"kind":"shape","id":"sh/p4r65wju","slide":12,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":12,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/ptsr83","slide":12,"text":"Do not frame one method as universally superior. The choice depends on available information and failure cost."}
+{"kind":"slide","id":"sl/up4kb7","slide":13,"title":"PHY4605 · TOPIC 11","textShapes":12}
+{"kind":"textbox","id":"sh/b6xkf6dc","slide":13,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/0rqd4vmt","slide":13,"text":"RUN","textPreview":"RUN","textChars":3,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/tcj6tova","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/idonyd0z","slide":13,"text":"MATLAB built-ins: verify, don’t surrender judgement","textPreview":"MATLAB built-ins: verify, don’t surrender judgement","textChars":51,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/byhgn29g","slide":13,"bbox":[42,178,610,340]}
+{"kind":"textbox","id":"sh/0je9cvix","slide":13,"text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[60,190,574,18]}
+{"kind":"textbox","id":"sh/t47y1kre","slide":13,"text":"f = @(x) x.^3 + x - 3;\n\nr1 = fzero(f, [1 2]);   % bracketed real root\nr2 = fzero(f, 2);       % search near a guess\n\np  = [1 -6 12];\nr3 = roots(p);          % polynomial roots, complex allowed","textPreview":"f = @(x) x.^3 + x - 3; |  | r1 = fzero(f, [1 2]);   % bracketed real root | r2 = fzero(f, 2);       % search near a guess |  | p  = [1 -6...","textChars":192,"textLines":7,"bbox":[60,216,574,290]}
+{"kind":"shape","id":"sh/i9s36hcr","slide":13,"bbox":[710,178,500,130]}
+{"kind":"shape","id":"sh/bulwval8","slide":13,"bbox":[710,178,8,130]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":13,"text":"BEFORE","textPreview":"BEFORE","textChars":6,"textLines":1,"bbox":[734,196,458,28]}
+{"kind":"textbox","id":"sh/ulwval87","slide":13,"text":"Plot or scan the function. Identify brackets, discontinuities, and likely root count.","textPreview":"Plot or scan the function. Identify brackets, discontinuities, and likely root count.","textChars":85,"textLines":1,"bbox":[734,230,458,64]}
+{"kind":"shape","id":"sh/1cfa9w3m","slide":13,"bbox":[710,330,500,130]}
+{"kind":"shape","id":"sh/crmhk3q5","slide":13,"bbox":[710,330,8,130]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":13,"text":"AFTER","textPreview":"AFTER","textChars":5,"textLines":1,"bbox":[734,348,458,28]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":13,"text":"Check |f(r)|, units, physical domain, and whether other roots matter.","textPreview":"Check |f(r)|, units, physical domain, and whether other roots matter.","textChars":69,"textLines":1,"bbox":[734,382,458,64]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":13,"text":"A solver returning a number is not the same as a trustworthy solution.","textPreview":"A solver returning a number is not the same as a trustworthy solution.","textChars":70,"textLines":1,"bbox":[165,575,950,46]}
+{"kind":"shape","id":"sh/c3ylc7u5","slide":13,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/jqh0fepk","slide":13,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/up4kb7","slide":13,"text":"Explain the distinction: fzero seeks a real zero of a general function; roots solves a polynomial represented by coefficients and can return complex roots."}
+{"kind":"slide","id":"sl/7ydrmd","slide":14,"title":"PHY4605 · TOPIC 11","textShapes":14}
+{"kind":"textbox","id":"sh/val87ed8","slide":14,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":14,"text":"PREDICT","textPreview":"PREDICT","textChars":7,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":14,"text":"Checkpoint: which method would you trust?","textPreview":"Checkpoint: which method would you trust?","textChars":41,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/vixczed8","slide":14,"bbox":[52,178,82,82]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":14,"text":"A","textPreview":"A","textChars":1,"textLines":1,"bbox":[52,199,82,40]}
+{"kind":"textbox","id":"sh/donyd0z6","slide":14,"text":"Continuous function; bracket found; derivative unavailable.","textPreview":"Continuous function; bracket found; derivative unavailable.","textChars":59,"textLines":1,"bbox":[175,182,720,72]}
+{"kind":"textbox","id":"sh/29gr2p8n","slide":14,"text":"BISECTION","textPreview":"BISECTION","textChars":9,"textLines":1,"bbox":[970,196,220,42]}
+{"kind":"shape","id":"sh/vu9knih4","slide":14,"bbox":[52,320,82,82]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":14,"text":"B","textPreview":"B","textChars":1,"textLines":1,"bbox":[52,341,82,40]}
+{"kind":"textbox","id":"sh/adsji5sn","slide":14,"text":"Smooth model; accurate initial estimate; derivative known.","textPreview":"Smooth model; accurate initial estimate; derivative known.","textChars":58,"textLines":1,"bbox":[175,324,720,72]}
+{"kind":"textbox","id":"sh/h4byhgn2","slide":14,"text":"NEWTON","textPreview":"NEWTON","textChars":6,"textLines":1,"bbox":[970,338,220,42]}
+{"kind":"shape","id":"sh/sji5snel","slide":14,"bbox":[52,462,82,82]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":14,"text":"C","textPreview":"C","textChars":1,"textLines":1,"bbox":[52,483,82,40]}
+{"kind":"textbox","id":"sh/a5gbq1or","slide":14,"text":"Polynomial; all real and complex roots are required.","textPreview":"Polynomial; all real and complex roots are required.","textChars":52,"textLines":1,"bbox":[175,466,720,72]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":14,"text":"ROOTS","textPreview":"ROOTS","textChars":5,"textLines":1,"bbox":[970,480,220,42]}
+{"kind":"shape","id":"sh/s72x4nap","slide":14,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/zidonyd0","slide":14,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/7ydrmd","slide":14,"text":"Hide the right-hand answers if presenting interactively, or ask students to cover them. Require a one-sentence justification."}
+{"kind":"slide","id":"sl/skbbcm","slide":15,"title":"PART 2 · NUMERICAL INTEGRATION","textShapes":4}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":15,"text":"PART 2 · NUMERICAL INTEGRATION","textPreview":"PART 2 · NUMERICAL INTEGRATION","textChars":30,"textLines":1,"bbox":[52,64,360,28]}
+{"kind":"textbox","id":"sh/fu18jqh0","slide":15,"text":"How much accumulates?","textPreview":"How much accumulates?","textChars":21,"textLines":1,"bbox":[52,190,760,160]}
+{"kind":"shape","id":"sh/m94fu18j","slide":15,"bbox":[52,384,200,5]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":15,"text":"When an antiderivative is unavailable—or only sampled data exist—we estimate area from function values.","textPreview":"When an antiderivative is unavailable—or only sampled data exist—we estimate area from function values.","textChars":103,"textLines":1,"bbox":[52,420,880,90]}
+{"kind":"textbox","id":"sh/83itgfml","slide":15,"text":"15","textPreview":"15","textChars":2,"textLines":1,"bbox":[1154,654,70,28]}
+{"kind":"notes","id":"nt/skbbcm","slide":15,"text":"Connect area to displacement, work, charge, probability, and total radiated power."}
+{"kind":"slide","id":"sl/exgx25","slide":16,"title":"PHY4605 · TOPIC 11","textShapes":10}
+{"kind":"textbox","id":"sh/val87ed8","slide":16,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/kre1w7mp","slide":16,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/dcbulwva","slide":16,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/2x4nap4r","slide":16,"text":"The trapezoidal rule replaces the curve by straight segments","textPreview":"The trapezoidal rule replaces the curve by straight segments","textChars":60,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"textbox","id":"sh/k3q5o7qp","slide":16,"text":"Tₙ = h/2 [ f(a) + f(b) + 2Σf(xᵢ) ]","textPreview":"Tₙ = h/2 [ f(a) + f(b) + 2Σf(xᵢ) ]","textChars":34,"textLines":1,"bbox":[765,225,450,78]}
+{"kind":"shape","id":"sh/donyd0z6","slide":16,"bbox":[765,340,450,110]}
+{"kind":"shape","id":"sh/29gr2p8n","slide":16,"bbox":[765,340,8,110]}
+{"kind":"textbox","id":"sh/vu9knih4","slide":16,"text":"MODEL","textPreview":"MODEL","textChars":5,"textLines":1,"bbox":[789,358,408,28]}
+{"kind":"textbox","id":"sh/3ylc7u54","slide":16,"text":"Each panel assumes the curve is locally linear.","textPreview":"Each panel assumes the curve is locally linear.","textChars":47,"textLines":1,"bbox":[789,392,408,44]}
+{"kind":"shape","id":"sh/adsji5sn","slide":16,"bbox":[765,470,450,110]}
+{"kind":"shape","id":"sh/h4byhgn2","slide":16,"bbox":[765,470,8,110]}
+{"kind":"textbox","id":"sh/sji5snel","slide":16,"text":"ERROR TREND","textPreview":"ERROR TREND","textChars":11,"textLines":1,"bbox":[789,488,408,28]}
+{"kind":"textbox","id":"sh/3m94fu18","slide":16,"text":"For smooth functions, halving h reduces the global error by about 4×.","textPreview":"For smooth functions, halving h reduces the global error by about 4×.","textChars":69,"textLines":1,"bbox":[789,522,408,44]}
+{"kind":"shape","id":"sh/a5gbq1or","slide":16,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/lszqtcj6","slide":16,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"chart","id":"ch/ji5snelo","slide":16,"name":"","chartType":"scatter","bbox":[42,175,680,430]}
+{"kind":"notes","id":"nt/exgx25","slide":16,"text":"The orange polyline is the approximation. The integral of each straight segment is a trapezoid. Mention O(h²) global error without deriving it fully."}
+{"kind":"slide","id":"sl/i8v4bm","slide":17,"title":"PHY4605 · TOPIC 11","textShapes":18}
+{"kind":"textbox","id":"sh/87ed8bat","slide":17,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":17,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":17,"text":"17","textPreview":"17","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/1gvy90je","slide":17,"text":"Simpson’s rule fits a parabola through three points","textPreview":"Simpson’s rule fits a parabola through three points","textChars":51,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":17,"text":"Sₙ = h/3 [ f(a) + f(b) + 4Σ f(xodd) + 2Σ f(xeven) ]","textPreview":"Sₙ = h/3 [ f(a) + f(b) + 4Σ f(xodd) + 2Σ f(xeven) ]","textChars":51,"textLines":1,"bbox":[130,170,1020,72]}
+{"kind":"shape","id":"sh/je9cvixc","slide":17,"bbox":[160,310,130,130]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":17,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[160,342,130,50]}
+{"kind":"textbox","id":"sh/xczed8v6","slide":17,"text":"endpoint","textPreview":"endpoint","textChars":8,"textLines":1,"bbox":[130,465,190,34]}
+{"kind":"shape","id":"sh/8v6psfil","slide":17,"bbox":[380,310,130,130]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":17,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[380,342,130,50]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":17,"text":"odd index","textPreview":"odd index","textChars":9,"textLines":1,"bbox":[350,465,190,34]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":17,"bbox":[600,310,130,130]}
+{"kind":"textbox","id":"sh/58z25kb6","slide":17,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[600,342,130,50]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":17,"text":"even index","textPreview":"even index","textChars":10,"textLines":1,"bbox":[570,465,190,34]}
+{"kind":"shape","id":"sh/nuxc3ylc","slide":17,"bbox":[820,310,130,130]}
+{"kind":"textbox","id":"sh/gbq1oryt","slide":17,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[820,342,130,50]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":17,"text":"odd index","textPreview":"odd index","textChars":9,"textLines":1,"bbox":[790,465,190,34]}
+{"kind":"shape","id":"sh/u54zidon","slide":17,"bbox":[1040,310,130,130]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":17,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1040,342,130,50]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":17,"text":"endpoint","textPreview":"endpoint","textChars":8,"textLines":1,"bbox":[1010,465,190,34]}
+{"kind":"shape","id":"sh/qtcj6tov","slide":17,"bbox":[220,555,840,86]}
+{"kind":"shape","id":"sh/1gvy90je","slide":17,"bbox":[220,555,8,86]}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":17,"text":"CRITICAL CONDITION","textPreview":"CRITICAL CONDITION","textChars":18,"textLines":1,"bbox":[244,573,798,28]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":17,"text":"The number of panels n must be even. If n is odd, the standard composite Simpson formula is incomplete.","textPreview":"The number of panels n must be even. If n is odd, the standard composite Simpson formula is incomplete.","textChars":103,"textLines":1,"bbox":[244,607,798,20]}
+{"kind":"shape","id":"sh/q1orytsv","slide":17,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":17,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/i8v4bm","slide":17,"text":"Have students say the weights aloud: 1, 4, 2, 4, 2, …, 4, 1. Explicitly correct the n=5 example in the original live script."}
+{"kind":"slide","id":"sl/y258ja","slide":18,"title":"PHY4605 · TOPIC 11","textShapes":24}
+{"kind":"textbox","id":"sh/32lszqtc","slide":18,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/sneloj2t","slide":18,"text":"RUN","textPreview":"RUN","textChars":3,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/l87ed8ba","slide":18,"text":"18","textPreview":"18","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/at47y1kr","slide":18,"text":"Accuracy is a convergence question—not a single answer","textPreview":"Accuracy is a convergence question—not a single answer","textChars":54,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/3ex0nuxc","slide":18,"bbox":[95,180,1100,70]}
+{"kind":"textbox","id":"sh/szqtcj6t","slide":18,"text":"Panels n","textPreview":"Panels n","textChars":8,"textLines":1,"bbox":[105,188,210,54]}
+{"kind":"textbox","id":"sh/lkjm1cfa","slide":18,"text":"Trapezoidal","textPreview":"Trapezoidal","textChars":11,"textLines":1,"bbox":[335,188,270,54]}
+{"kind":"textbox","id":"sh/ex0nuxc3","slide":18,"text":"Simpson","textPreview":"Simpson","textChars":7,"textLines":1,"bbox":[625,188,270,54]}
+{"kind":"textbox","id":"sh/3itgfmlk","slide":18,"text":"Reference","textPreview":"Reference","textChars":9,"textLines":1,"bbox":[915,188,270,54]}
+{"kind":"shape","id":"sh/bm58z25k","slide":18,"bbox":[95,250,1100,70]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":18,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[105,258,210,54]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":18,"text":"0.8863185","textPreview":"0.8863185","textChars":9,"textLines":1,"bbox":[335,258,270,54]}
+{"kind":"textbox","id":"sh/47y1kre1","slide":18,"text":"0.8362143","textPreview":"0.8362143","textChars":9,"textLines":1,"bbox":[625,258,270,54]}
+{"kind":"textbox","id":"sh/bat47y1k","slide":18,"text":"0.8862269","textPreview":"0.8862269","textChars":9,"textLines":1,"bbox":[915,258,270,54]}
+{"kind":"shape","id":"sh/mp0bi9s3","slide":18,"bbox":[95,320,1100,70]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":18,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[105,328,210,54]}
+{"kind":"textbox","id":"sh/4vmtwra5","slide":18,"text":"0.8862269","textPreview":"0.8862269","textChars":9,"textLines":1,"bbox":[335,328,270,54]}
+{"kind":"textbox","id":"sh/b2hwfyxo","slide":18,"text":"0.8861963","textPreview":"0.8861963","textChars":9,"textLines":1,"bbox":[625,328,270,54]}
+{"kind":"textbox","id":"sh/mhk3q5o7","slide":18,"text":"0.8862269","textPreview":"0.8862269","textChars":9,"textLines":1,"bbox":[915,328,270,54]}
+{"kind":"shape","id":"sh/udg7adsj","slide":18,"bbox":[95,390,1100,70]}
+{"kind":"textbox","id":"sh/nyd0z610","slide":18,"text":"16","textPreview":"16","textChars":2,"textLines":1,"bbox":[105,398,210,54]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":18,"text":"0.8862269","textPreview":"0.8862269","textChars":9,"textLines":1,"bbox":[335,398,270,54]}
+{"kind":"textbox","id":"sh/54zidony","slide":18,"text":"0.8862269","textPreview":"0.8862269","textChars":9,"textLines":1,"bbox":[625,398,270,54]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":18,"text":"0.8862269","textPreview":"0.8862269","textChars":9,"textLines":1,"bbox":[915,398,270,54]}
+{"kind":"shape","id":"sh/nap4r65w","slide":18,"bbox":[220,445,840,150]}
+{"kind":"textbox","id":"sh/cvixczed","slide":18,"text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[238,457,804,18]}
+{"kind":"textbox","id":"sh/5gbq1ory","slide":18,"text":"f = @(x) exp(-x.^2);\nI = integral(f,0,4);\n\n% Repeat your own rule with n = 4,8,16,...\n% Compare abs(I_approx - I).","textPreview":"f = @(x) exp(-x.^2); | I = integral(f,0,4); |  | % Repeat your own rule with n = 4,8,16,... | % Compare abs(I_approx - I).","textChars":114,"textLines":5,"bbox":[238,483,804,100]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":18,"text":"Refine n until the digits you report stop changing meaningfully.","textPreview":"Refine n until the digits you report stop changing meaningfully.","textChars":64,"textLines":1,"bbox":[220,620,840,30]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":18,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/9knih4by","slide":18,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/y258ja","slide":18,"text":"The table is illustrative and rounded. Ask why agreement between two successive approximations is useful but not a proof of correctness."}
+{"kind":"slide","id":"sl/jrhk2n","slide":19,"title":"PHY4605 · TOPIC 11","textShapes":15}
+{"kind":"textbox","id":"sh/90je9cvi","slide":19,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/yd0z6103","slide":19,"text":"RUN","textPreview":"RUN","textChars":3,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/rytsvu9k","slide":19,"text":"19","textPreview":"19","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/g7adsji5","slide":19,"text":"MATLAB’s integral is the benchmark—not the explanation","textPreview":"MATLAB’s integral is the benchmark—not the explanation","textChars":54,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/9s36hcrm","slide":19,"bbox":[42,180,620,330]}
+{"kind":"textbox","id":"sh/y1kre1w7","slide":19,"text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[60,192,584,18]}
+{"kind":"textbox","id":"sh/rmhk3q5o","slide":19,"text":"f = @(x) exp(-x.^2);\nI = integral(f, 0, 4, ...\n    'AbsTol',1e-10, 'RelTol',1e-8);\n\n% Sampled data instead of a function:\nx = linspace(0,4,101);\nI_data = trapz(x, f(x));","textPreview":"f = @(x) exp(-x.^2); | I = integral(f, 0, 4, ... |     'AbsTol',1e-10, 'RelTol',1e-8); |  | % Sampled data instead of a function: | x = l...","textChars":169,"textLines":7,"bbox":[60,218,584,280]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":19,"text":"integral","textPreview":"integral","textChars":8,"textLines":1,"bbox":[720,180,180,36]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":19,"text":"Adaptive quadrature for a function handle","textPreview":"Adaptive quadrature for a function handle","textChars":41,"textLines":1,"bbox":[910,180,300,60]}
+{"kind":"shape","id":"sh/5gbq1ory","slide":19,"bbox":[720,262,490,2]}
+{"kind":"textbox","id":"sh/cvixczed","slide":19,"text":"trapz","textPreview":"trapz","textChars":5,"textLines":1,"bbox":[720,298,180,36]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":19,"text":"Trapezoidal integration of sampled data","textPreview":"Trapezoidal integration of sampled data","textChars":39,"textLines":1,"bbox":[910,298,300,60]}
+{"kind":"shape","id":"sh/upwb2hwf","slide":19,"bbox":[720,380,490,2]}
+{"kind":"textbox","id":"sh/54zidony","slide":19,"text":"cumtrapz","textPreview":"cumtrapz","textChars":8,"textLines":1,"bbox":[720,416,180,36]}
+{"kind":"textbox","id":"sh/cj6tovah","slide":19,"text":"Running accumulated integral","textPreview":"Running accumulated integral","textChars":28,"textLines":1,"bbox":[910,416,300,60]}
+{"kind":"shape","id":"sh/nyd0z610","slide":19,"bbox":[720,535,490,95]}
+{"kind":"shape","id":"sh/udg7adsj","slide":19,"bbox":[720,535,8,95]}
+{"kind":"textbox","id":"sh/1032lszq","slide":19,"text":"VERIFY","textPreview":"VERIFY","textChars":6,"textLines":1,"bbox":[744,553,448,28]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":19,"text":"Check units, bounds, singularities, oscillations, and tolerance sensitivity.","textPreview":"Check units, bounds, singularities, oscillations, and tolerance sensitivity.","textChars":76,"textLines":1,"bbox":[744,587,448,29]}
+{"kind":"shape","id":"sh/obm58z25","slide":19,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/hwfyxobm","slide":19,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/jrhk2n","slide":19,"text":"Distinguish function-based quadrature from integrating measured data. Mention tolerances as part of the numerical model."}
+{"kind":"slide","id":"sl/m93m1i","slide":20,"title":"PHYSICS PINPOINT","textShapes":4}
+{"kind":"shape","id":"sh/9cvixcze","slide":20,"bbox":[0,0,610,720]}
+{"kind":"textbox","id":"sh/gr2p8nqx","slide":20,"text":"PHYSICS PINPOINT","textPreview":"PHYSICS PINPOINT","textChars":16,"textLines":1,"bbox":[52,60,360,28]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":20,"text":"What fraction of a hot object’s radiation is visible?","textPreview":"What fraction of a hot object’s radiation is visible?","textChars":53,"textLines":1,"bbox":[52,145,520,160]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":20,"text":"Numerical integration turns a spectrum into an efficiency.","textPreview":"Numerical integration turns a spectrum into an efficiency.","textChars":58,"textLines":1,"bbox":[52,360,480,76]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":20,"text":"20","textPreview":"20","textChars":2,"textLines":1,"bbox":[1160,650,70,28]}
+{"kind":"image","id":"im/za1gvy90","slide":20,"name":"","alt":"Glowing cavity radiator emitting a continuous visible spectrum","bbox":[0,0,1280,720]}
+{"kind":"notes","id":"nt/m93m1i","slide":20,"text":"Frame the black-body example conceptually: the numerator is energy in the visible band; the denominator is total radiated energy. The live-script expression combines constants into a percentage formula."}
+{"kind":"slide","id":"sl/mcbrub","slide":21,"title":"PHY4605 · TOPIC 11","textShapes":12}
+{"kind":"textbox","id":"sh/zupwb2hw","slide":21,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/sfil0rqd","slide":21,"text":"RUN","textPreview":"RUN","textChars":3,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/h0fepkzu","slide":21,"text":"21","textPreview":"21","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/al87ed8b","slide":21,"text":"Black-body efficiency: make convergence visible","textPreview":"Black-body efficiency: make convergence visible","textChars":47,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/z61032ls","slide":21,"bbox":[42,170,650,390]}
+{"kind":"textbox","id":"sh/orytsvu9","slide":21,"text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[60,182,614,18]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":21,"text":"T = 3500;\nf = @(x) x.^-5 ./ (exp(1.432./(T*x))-1);\n\nfor n = [4 10 20 40 80]   % n must be even\n    I = intSimpson(f,4e-5,7e-5,n);\n    E = 64.77*T^-4*I;\n    fprintf('%4d  %.8f%%\\n',n,E)\nend","textPreview":"T = 3500; | f = @(x) x.^-5 ./ (exp(1.432./(T*x))-1); |  | for n = [4 10 20 40 80]   % n must be even |     I = intSimpson(f,4e-5,7e-5,n);...","textChars":188,"textLines":8,"bbox":[60,208,614,340]}
+{"kind":"shape","id":"sh/6xkf6dcb","slide":21,"bbox":[740,182,470,140]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":21,"bbox":[740,182,8,140]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":21,"text":"WHAT TO LOOK FOR","textPreview":"WHAT TO LOOK FOR","textChars":16,"textLines":1,"bbox":[764,200,428,28]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":21,"text":"Do the reported digits stabilize as n doubles? If not, refine further or compare against integral.","textPreview":"Do the reported digits stabilize as n doubles? If not, refine further or compare against integral.","textChars":98,"textLines":1,"bbox":[764,234,428,74]}
+{"kind":"shape","id":"sh/58z25kb6","slide":21,"bbox":[740,350,470,140]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":21,"bbox":[740,350,8,140]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":21,"text":"PHYSICS CHECK","textPreview":"PHYSICS CHECK","textChars":13,"textLines":1,"bbox":[764,368,428,28]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":21,"text":"Efficiency must lie between 0% and 100%, and the wavelength limits must use centimetres for this formula.","textPreview":"Efficiency must lie between 0% and 100%, and the wavelength limits must use centimetres for this formula.","textChars":105,"textLines":1,"bbox":[764,402,428,74]}
+{"kind":"textbox","id":"sh/5wjudg7a","slide":21,"text":"Correction from the live script: use an even n, not n = 5.","textPreview":"Correction from the live script: use an even n, not n = 5.","textChars":58,"textLines":1,"bbox":[740,535,470,40]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":21,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":21,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/mcbrub","slide":21,"text":"This slide deliberately improves the original example. Ask students to predict how visible efficiency changes with temperature before experimenting."}
+{"kind":"slide","id":"sl/i3ynnu","slide":22,"title":"PART 3 · NUMERICAL DIFFERENTIATION","textShapes":4}
+{"kind":"textbox","id":"sh/oj2t83it","slide":22,"text":"PART 3 · NUMERICAL DIFFERENTIATION","textPreview":"PART 3 · NUMERICAL DIFFERENTIATION","textChars":34,"textLines":1,"bbox":[52,64,360,28]}
+{"kind":"textbox","id":"sh/vy90je9c","slide":22,"text":"How fast is the model changing?","textPreview":"How fast is the model changing?","textChars":31,"textLines":1,"bbox":[52,190,760,160]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":22,"bbox":[52,384,200,5]}
+{"kind":"textbox","id":"sh/dsji5sne","slide":22,"text":"A derivative becomes a slope estimated from nearby samples—but “nearby” creates a numerical trade-off.","textPreview":"A derivative becomes a slope estimated from nearby samples—but “nearby” creates a numerical trade-off.","textChars":102,"textLines":1,"bbox":[52,420,880,90]}
+{"kind":"textbox","id":"sh/o7qpg3ex","slide":22,"text":"22","textPreview":"22","textChars":2,"textLines":1,"bbox":[1154,654,70,28]}
+{"kind":"notes","id":"nt/i3ynnu","slide":22,"text":"Connect derivatives to velocity, acceleration, gradients, flux, and sensitivity."}
+{"kind":"slide","id":"sl/t3xulk","slide":23,"title":"PHY4605 · TOPIC 11","textShapes":18}
+{"kind":"textbox","id":"sh/72x4nap4","slide":23,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/0nuxc3yl","slide":23,"text":"WATCH","textPreview":"WATCH","textChars":5,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/p8nqxs72","slide":23,"text":"23","textPreview":"23","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/itgfmlkj","slide":23,"text":"Three finite differences, three error behaviours","textPreview":"Three finite differences, three error behaviours","textChars":48,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/7ed8bat4","slide":23,"bbox":[42,185,370,360]}
+{"kind":"textbox","id":"sh/0z61032l","slide":23,"text":"FORWARD","textPreview":"FORWARD","textChars":7,"textLines":1,"bbox":[64,212,320,28]}
+{"kind":"textbox","id":"sh/pkzupwb2","slide":23,"text":"[f(x+h) − f(x)] / h","textPreview":"[f(x+h) − f(x)] / h","textChars":19,"textLines":1,"bbox":[64,285,326,90]}
+{"kind":"textbox","id":"sh/i5sneloj","slide":23,"text":"truncation","textPreview":"truncation","textChars":10,"textLines":1,"bbox":[64,442,150,28]}
+{"kind":"textbox","id":"sh/7qpg3ex0","slide":23,"text":"O(h)","textPreview":"O(h)","textChars":4,"textLines":1,"bbox":[252,430,120,45]}
+{"kind":"shape","id":"sh/fu18jqh0","slide":23,"bbox":[444,185,370,360]}
+{"kind":"textbox","id":"sh/m94fu18j","slide":23,"text":"BACKWARD","textPreview":"BACKWARD","textChars":8,"textLines":1,"bbox":[466,212,320,28]}
+{"kind":"textbox","id":"sh/x0nuxc3y","slide":23,"text":"[f(x) − f(x−h)] / h","textPreview":"[f(x) − f(x−h)] / h","textChars":19,"textLines":1,"bbox":[466,285,326,90]}
+{"kind":"textbox","id":"sh/4fu18jqh","slide":23,"text":"truncation","textPreview":"truncation","textChars":10,"textLines":1,"bbox":[466,442,150,28]}
+{"kind":"textbox","id":"sh/fil0rqd4","slide":23,"text":"O(h)","textPreview":"O(h)","textChars":4,"textLines":1,"bbox":[654,430,120,45]}
+{"kind":"shape","id":"sh/qxs72x4n","slide":23,"bbox":[846,185,370,360]}
+{"kind":"textbox","id":"sh/xobm58z2","slide":23,"text":"CENTRAL","textPreview":"CENTRAL","textChars":7,"textLines":1,"bbox":[868,212,320,28]}
+{"kind":"textbox","id":"sh/83itgfml","slide":23,"text":"[f(x+h) − f(x−h)] / 2h","textPreview":"[f(x+h) − f(x−h)] / 2h","textChars":22,"textLines":1,"bbox":[868,285,326,90]}
+{"kind":"textbox","id":"sh/fepkzupw","slide":23,"text":"truncation","textPreview":"truncation","textChars":10,"textLines":1,"bbox":[868,442,150,28]}
+{"kind":"textbox","id":"sh/mtwra5gb","slide":23,"text":"O(h²)","textPreview":"O(h²)","textChars":5,"textLines":1,"bbox":[1056,430,120,45]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":23,"text":"When both sides are available, central difference is usually the better first choice.","textPreview":"When both sides are available, central difference is usually the better first choice.","textChars":85,"textLines":1,"bbox":[170,590,940,40]}
+{"kind":"shape","id":"sh/jm1cfa9w","slide":23,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/c7u54zid","slide":23,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/t3xulk","slide":23,"text":"Use Taylor-series language lightly: central difference cancels the first-order error. At boundaries, forward or backward formulas may be necessary."}
+{"kind":"slide","id":"sl/6pu1g4","slide":24,"title":"PHY4605 · TOPIC 11","textShapes":13}
+{"kind":"textbox","id":"sh/vahoza1g","slide":24,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/ovahoza1","slide":24,"text":"RUN","textPreview":"RUN","textChars":3,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/dg7adsji","slide":24,"text":"24","textPreview":"24","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/6hcrmhk3","slide":24,"text":"MATLAB diff returns differences—not derivative coordinates","textPreview":"MATLAB diff returns differences—not derivative coordinates","textChars":58,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/z25kb6xk","slide":24,"bbox":[42,180,590,350]}
+{"kind":"textbox","id":"sh/onyd0z61","slide":24,"text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[60,192,554,18]}
+{"kind":"textbox","id":"sh/d8v6psfi","slide":24,"text":"h = 0.01;\nx = -2:h:2;\ny = x.^2;\n\ndy = diff(y)/h;\nx_mid = x(1:end-1) + h/2;\n\nplot(x_mid,dy,'o',x,2*x,'-')\nlegend('finite difference','exact')","textPreview":"h = 0.01; | x = -2:h:2; | y = x.^2; |  | dy = diff(y)/h; | x_mid = x(1:end-1) + h/2; |  | plot(x_mid,dy,'o',x,2*x,'-') | legend('finite d...","textChars":140,"textLines":9,"bbox":[60,218,554,300]}
+{"kind":"shape","id":"sh/6dcbulwv","slide":24,"bbox":[690,190,500,120]}
+{"kind":"shape","id":"sh/vy90je9c","slide":24,"bbox":[690,190,8,120]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":24,"text":"LENGTH","textPreview":"LENGTH","textChars":6,"textLines":1,"bbox":[714,208,458,28]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":24,"text":"If y has N samples, diff(y) has N−1 differences.","textPreview":"If y has N samples, diff(y) has N−1 differences.","textChars":48,"textLines":1,"bbox":[714,242,458,54]}
+{"kind":"shape","id":"sh/5wjudg7a","slide":24,"bbox":[690,335,500,140]}
+{"kind":"shape","id":"sh/gbq1oryt","slide":24,"bbox":[690,335,8,140]}
+{"kind":"textbox","id":"sh/n29gr2p8","slide":24,"text":"LOCATION","textPreview":"LOCATION","textChars":8,"textLines":1,"bbox":[714,353,458,28]}
+{"kind":"textbox","id":"sh/yhgn29gr","slide":24,"text":"A forward difference belongs naturally between its two samples, not exactly at the left point.","textPreview":"A forward difference belongs naturally between its two samples, not exactly at the left point.","textChars":94,"textLines":1,"bbox":[714,387,458,74]}
+{"kind":"shape","id":"sh/58z25kb6","slide":24,"bbox":[690,500,500,110]}
+{"kind":"shape","id":"sh/gn29gr2p","slide":24,"bbox":[690,500,8,110]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":24,"text":"UNITS","textPreview":"UNITS","textChars":5,"textLines":1,"bbox":[714,518,458,28]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":24,"text":"Divide by the spacing h. diff(y) alone has units of y, not y per x.","textPreview":"Divide by the spacing h. diff(y) alone has units of y, not y per x.","textChars":67,"textLines":1,"bbox":[714,552,458,44]}
+{"kind":"shape","id":"sh/2x4nap4r","slide":24,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/vixczed8","slide":24,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/6pu1g4","slide":24,"text":"The live script plots the forward difference at x(2:end); this slide uses midpoint coordinates to make the approximation location explicit."}
+{"kind":"slide","id":"sl/udrlv1","slide":25,"title":"PHY4605 · TOPIC 11","textShapes":11}
+{"kind":"textbox","id":"sh/8z25kb6x","slide":25,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/je9cvixc","slide":25,"text":"DISCUSS","textPreview":"DISCUSS","textChars":7,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/qtcj6tov","slide":25,"text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/xs72x4na","slide":25,"text":"At a corner, refinement reveals non-differentiability","textPreview":"At a corner, refinement reveals non-differentiability","textChars":53,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"textbox","id":"sh/fmlkjm1c","slide":25,"text":"f(x) = |x|","textPreview":"f(x) = |x|","textChars":10,"textLines":1,"bbox":[790,220,370,55]}
+{"kind":"shape","id":"sh/q1orytsv","slide":25,"bbox":[790,315,400,92]}
+{"kind":"shape","id":"sh/x4nap4r6","slide":25,"bbox":[790,315,8,92]}
+{"kind":"textbox","id":"sh/8jqh0fep","slide":25,"text":"LEFT LIMIT","textPreview":"LEFT LIMIT","textChars":10,"textLines":1,"bbox":[814,333,358,28]}
+{"kind":"textbox","id":"sh/mp0bi9s3","slide":25,"text":"Slope approaches −1.","textPreview":"Slope approaches −1.","textChars":20,"textLines":1,"bbox":[814,367,358,26]}
+{"kind":"shape","id":"sh/bat47y1k","slide":25,"bbox":[790,430,400,92]}
+{"kind":"shape","id":"sh/4vmtwra5","slide":25,"bbox":[790,430,8,92]}
+{"kind":"textbox","id":"sh/tgfmlkjm","slide":25,"text":"RIGHT LIMIT","textPreview":"RIGHT LIMIT","textChars":11,"textLines":1,"bbox":[814,448,358,28]}
+{"kind":"textbox","id":"sh/m1cfa9w3","slide":25,"text":"Slope approaches +1.","textPreview":"Slope approaches +1.","textChars":20,"textLines":1,"bbox":[814,482,358,26]}
+{"kind":"textbox","id":"sh/bm58z25k","slide":25,"text":"No single derivative exists at x = 0.","textPreview":"No single derivative exists at x = 0.","textChars":37,"textLines":1,"bbox":[790,565,400,42]}
+{"kind":"shape","id":"sh/47y1kre1","slide":25,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/tsvu9kni","slide":25,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"chart","id":"ch/w7mp0bi9","slide":25,"name":"","chartType":"scatter","bbox":[42,175,680,430]}
+{"kind":"notes","id":"nt/udrlv1","slide":25,"text":"Ask whether MATLAB producing a finite number at one grid point proves differentiability. It does not; the result depends on the stencil and sampling."}
+{"kind":"slide","id":"sl/qeofc9","slide":26,"title":"PHY4605 · TOPIC 11","textShapes":10}
+{"kind":"textbox","id":"sh/judg7ads","slide":26,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/cfa9w3m9","slide":26,"text":"PREDICT","textPreview":"PREDICT","textChars":7,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/1032lszq","slide":26,"text":"26","textPreview":"26","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/u18jqh0f","slide":26,"text":"Smaller h helps—until floating-point subtraction fights back","textPreview":"Smaller h helps—until floating-point subtraction fights back","textChars":60,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"shape","id":"sh/c7u54zid","slide":26,"bbox":[790,195,410,112]}
+{"kind":"shape","id":"sh/1orytsvu","slide":26,"bbox":[790,195,8,112]}
+{"kind":"textbox","id":"sh/upwb2hwf","slide":26,"text":"TRUNCATION","textPreview":"TRUNCATION","textChars":10,"textLines":1,"bbox":[814,213,368,28]}
+{"kind":"textbox","id":"sh/nap4r65w","slide":26,"text":"Large h: the secant is a poor local tangent.","textPreview":"Large h: the secant is a poor local tangent.","textChars":44,"textLines":1,"bbox":[814,247,368,46]}
+{"kind":"shape","id":"sh/7u54zido","slide":26,"bbox":[790,335,410,150]}
+{"kind":"shape","id":"sh/ed8bat47","slide":26,"bbox":[790,335,8,150]}
+{"kind":"textbox","id":"sh/l0rqd4vm","slide":26,"text":"ROUND-OFF","textPreview":"ROUND-OFF","textChars":9,"textLines":1,"bbox":[814,353,368,28]}
+{"kind":"textbox","id":"sh/wfyxobm5","slide":26,"text":"Tiny h: f(x+h) and f(x) become nearly equal, so subtraction loses significant digits.","textPreview":"Tiny h: f(x+h) and f(x) become nearly equal, so subtraction loses significant digits.","textChars":85,"textLines":1,"bbox":[814,387,368,84]}
+{"kind":"textbox","id":"sh/36hcrmhk","slide":26,"text":"Best h lies near the bottom of the U-shaped error curve.","textPreview":"Best h lies near the bottom of the U-shaped error curve.","textChars":56,"textLines":1,"bbox":[790,540,410,60]}
+{"kind":"shape","id":"sh/eloj2t83","slide":26,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/lc7u54zi","slide":26,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"chart","id":"ch/bi9s36hc","slide":26,"name":"","chartType":"scatter","bbox":[42,175,700,430]}
+{"kind":"notes","id":"nt/qeofc9","slide":26,"text":"Run the original x^2 example through h = 10^0 to 10^-19. Ask students to predict whether the smallest h gives the best answer."}
+{"kind":"slide","id":"sl/stqp0p","slide":27,"title":"PHY4605 · TOPIC 11","textShapes":16}
+{"kind":"textbox","id":"sh/crmhk3q5","slide":27,"text":"PHY4605 · TOPIC 11","textPreview":"PHY4605 · TOPIC 11","textChars":18,"textLines":1,"bbox":[42,28,310,26]}
+{"kind":"textbox","id":"sh/j6tovaho","slide":27,"text":"DISCUSS","textPreview":"DISCUSS","textChars":7,"textLines":1,"bbox":[1025,26,120,28]}
+{"kind":"textbox","id":"sh/ulwval87","slide":27,"text":"27","textPreview":"27","textChars":2,"textLines":1,"bbox":[1168,26,70,28]}
+{"kind":"textbox","id":"sh/1kre1w7m","slide":27,"text":"Final challenge: design a trustworthy numerical answer","textPreview":"Final challenge: design a trustworthy numerical answer","textChars":54,"textLines":1,"bbox":[42,72,1196,70]}
+{"kind":"textbox","id":"sh/c3ylc7u5","slide":27,"text":"ROOT","textPreview":"ROOT","textChars":4,"textLines":1,"bbox":[52,174,110,36]}
+{"kind":"textbox","id":"sh/ji5snelo","slide":27,"text":"Find when a projectile returns to the ground.","textPreview":"Find when a projectile returns to the ground.","textChars":45,"textLines":1,"bbox":[190,170,560,58]}
+{"kind":"textbox","id":"sh/uxc3ylc7","slide":27,"text":"Method + bracket/guess + residual","textPreview":"Method + bracket/guess + residual","textChars":33,"textLines":1,"bbox":[820,174,360,54]}
+{"kind":"shape","id":"sh/1w7mp0bi","slide":27,"bbox":[190,262,990,2]}
+{"kind":"textbox","id":"sh/8bat47y1","slide":27,"text":"AREA","textPreview":"AREA","textChars":4,"textLines":1,"bbox":[52,319,110,36]}
+{"kind":"textbox","id":"sh/ytsvu9kn","slide":27,"text":"Compute work from sampled force–distance data.","textPreview":"Compute work from sampled force–distance data.","textChars":46,"textLines":1,"bbox":[190,315,560,58]}
+{"kind":"textbox","id":"sh/neloj2t8","slide":27,"text":"Rule + refinement + units","textPreview":"Rule + refinement + units","textChars":25,"textLines":1,"bbox":[820,319,360,54]}
+{"kind":"shape","id":"sh/czed8v6p","slide":27,"bbox":[190,407,990,2]}
+{"kind":"textbox","id":"sh/5kb6xkf6","slide":27,"text":"SLOPE","textPreview":"SLOPE","textChars":5,"textLines":1,"bbox":[52,464,110,36]}
+{"kind":"textbox","id":"sh/u54zidon","slide":27,"text":"Estimate velocity from noisy position measurements.","textPreview":"Estimate velocity from noisy position measurements.","textChars":51,"textLines":1,"bbox":[190,460,560,58]}
+{"kind":"textbox","id":"sh/nqxs72x4","slide":27,"text":"Stencil + spacing + noise strategy","textPreview":"Stencil + spacing + noise strategy","textChars":34,"textLines":1,"bbox":[820,464,360,54]}
+{"kind":"shape","id":"sh/cbulwval","slide":27,"bbox":[190,585,900,70]}
+{"kind":"shape","id":"sh/5sneloj2","slide":27,"bbox":[190,585,8,70]}
+{"kind":"textbox","id":"sh/y90je9cv","slide":27,"text":"YOUR ANSWER MUST INCLUDE","textPreview":"YOUR ANSWER MUST INCLUDE","textChars":24,"textLines":1,"bbox":[214,603,858,28]}
+{"kind":"textbox","id":"sh/nuxc3ylc","slide":27,"text":"assumptions · method · stopping/refinement rule · MATLAB check · physical sanity check","textPreview":"assumptions · method · stopping/refinement rule · MATLAB check · physical sanity check","textChars":86,"textLines":1,"bbox":[214,637,858,4]}
+{"kind":"shape","id":"sh/fmlkjm1c","slide":27,"bbox":[42,677,1196,1]}
+{"kind":"textbox","id":"sh/q1orytsv","slide":27,"text":"Numerical Root-Finding and Calculus","textPreview":"Numerical Root-Finding and Calculus","textChars":35,"textLines":1,"bbox":[42,687,760,20]}
+{"kind":"notes","id":"nt/stqp0p","slide":27,"text":"Use this as a think-pair-share or exit ticket. Require students to specify validation, not only a MATLAB function name."}
+{"kind":"slide","id":"sl/v1xcjp","slide":28,"title":"TOPIC 11 · TAKEAWAY","textShapes":10}
+{"kind":"textbox","id":"sh/obm58z25","slide":28,"text":"TOPIC 11 · TAKEAWAY","textPreview":"TOPIC 11 · TAKEAWAY","textChars":19,"textLines":1,"bbox":[52,58,360,28]}
+{"kind":"textbox","id":"sh/zqtcj6to","slide":28,"text":"Numerical methods are controlled approximations.","textPreview":"Numerical methods are controlled approximations.","textChars":48,"textLines":1,"bbox":[52,132,1040,90]}
+{"kind":"shape","id":"sh/65wjudg7","slide":28,"bbox":[52,320,335,5]}
+{"kind":"textbox","id":"sh/hk3q5o7q","slide":28,"text":"ROOTS","textPreview":"ROOTS","textChars":5,"textLines":1,"bbox":[52,350,335,30]}
+{"kind":"textbox","id":"sh/oza1gvy9","slide":28,"text":"Bracket or initialize wisely. Check the residual.","textPreview":"Bracket or initialize wisely. Check the residual.","textChars":49,"textLines":1,"bbox":[52,405,335,105]}
+{"kind":"shape","id":"sh/zed8v6ps","slide":28,"bbox":[452,320,335,5]}
+{"kind":"textbox","id":"sh/6xkf6dcb","slide":28,"text":"INTEGRALS","textPreview":"INTEGRALS","textChars":9,"textLines":1,"bbox":[452,350,335,30]}
+{"kind":"textbox","id":"sh/hcrmhk3q","slide":28,"text":"Refine the panels. Respect Simpson’s even-n rule.","textPreview":"Refine the panels. Respect Simpson’s even-n rule.","textChars":49,"textLines":1,"bbox":[452,405,335,105]}
+{"kind":"shape","id":"sh/orytsvu9","slide":28,"bbox":[852,320,335,5]}
+{"kind":"textbox","id":"sh/yxobm58z","slide":28,"text":"DERIVATIVES","textPreview":"DERIVATIVES","textChars":11,"textLines":1,"bbox":[852,350,335,30]}
+{"kind":"textbox","id":"sh/nih4byhg","slide":28,"text":"Balance truncation against round-off and noise.","textPreview":"Balance truncation against round-off and noise.","textChars":47,"textLines":1,"bbox":[852,405,335,105]}
+{"kind":"textbox","id":"sh/g3ex0nux","slide":28,"text":"Next: numerical differential equations","textPreview":"Next: numerical differential equations","textChars":38,"textLines":1,"bbox":[52,630,620,38]}
+{"kind":"textbox","id":"sh/5o7qpg3e","slide":28,"text":"28","textPreview":"28","textChars":2,"textLines":1,"bbox":[1160,650,70,28]}
+{"kind":"notes","id":"nt/v1xcjp","slide":28,"text":"Close by asking students for one failure mode they will now check routinely. Bridge to Topic 12: ODE solvers repeatedly use ideas of local slope and accumulated change."}

@@ -1,0 +1,9 @@
+    dt_h    lambdaDt    steps    EulerFractionAt24h    RelativeError
+    ____    ________    _____    __________________    _____________
+
+      2      0.23105      12          0.042735            0.31624
+      1      0.11552      24          0.052536            0.15942
+    0.5     0.057762      48          0.057505           0.079924
+    0.1     0.011552     240          0.061499            0.01601
+
+VALIDATION PASSED: reference, grid, finiteness, admissibility, and convergence-trend checks.
