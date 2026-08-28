@@ -15,12 +15,14 @@ The older top-level PNGs in this folder are preserved existing assets for contex
 ## Contents
 
 - `Week01/Lecture_Slides_Week01.pptx` — final 18-slide raster-only deck with speaker notes on every slide.
-- `raster/slide-01.png` … `raster/slide-18.png` — fresh full-slide raster sources used by the PPTX.
+- `raster/slide-01.png` … `raster/slide-18.png` — normalized fresh full-slide raster sources used by the PPTX.
+- `raster_gen_v5/` and `raster_v5/` — ImageGen outputs and normalized v5 build inputs retained for traceability.
+- `normalize_raster_week01.py` — deterministic post-processing that fits ImageGen outputs to the locked 1920×1080 white canvas and title anchor without adding visible content.
 - `slide_specs.json` — slide content, approved numerical values, archetypes, and speaker-note metadata.
 - `build_raster_week01_deck.js` — deterministic PPTX builder; it adds one full-slide image and non-visible notes per slide.
 - `validate_raster_week01_deck.py` — ZIP/XML validator for slide count, notes, image geometry, native-object absence, source-image hashes, and required terms.
 - `legacy-copies/` — byte-identical copies of the source and approved artefacts retained for traceability.
-- `rendered_raster_v4/` — final headless PDF/PNG render and contact sheet used for visual QA.
+- `rendered_raster_v5/` — final headless PDF/PNG render, title contact sheet, full contact sheet, and structural validation evidence used for visual QA.
 
 ## Rebuild the PPTX
 
@@ -39,17 +41,17 @@ The builder reads `slide_specs.json` and `raster/slide-01.png` through `raster/s
 The final render was produced with:
 
 ```bash
-mkdir -p "Week01/.agent/lecture-slides/rendered_raster_v4"
+mkdir -p "Week01/.agent/lecture-slides/rendered_raster_v5"
 /Users/khairuladib/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override/soffice \
   --headless --convert-to pdf \
-  --outdir "Week01/.agent/lecture-slides/rendered_raster_v4" \
+  --outdir "Week01/.agent/lecture-slides/rendered_raster_v5" \
   "Week01/Lecture_Slides_Week01.pptx"
 /opt/homebrew/bin/pdftoppm -png -r 144 \
-  "Week01/.agent/lecture-slides/rendered_raster_v4/Lecture_Slides_Week01.pdf" \
-  "Week01/.agent/lecture-slides/rendered_raster_v4/slide"
+  "Week01/.agent/lecture-slides/rendered_raster_v5/Lecture_Slides_Week01.pdf" \
+  "Week01/.agent/lecture-slides/rendered_raster_v5/slide"
 ```
 
-`rendered_raster_v4/Lecture_Slides_Week01.pdf` has 18 pages at 960.009 × 540 pt (16:9). The contact sheet and targeted full-size checks cover all slides; targeted checks included the title/overview, code slides, Lab 01 conversion, parameter map, loop, convergence table, responsible-AI, and recap slides.
+`rendered_raster_v5/Lecture_Slides_Week01.pdf` has 18 pages at 960.009 × 540 pt (16:9). The title contact sheet, full contact sheet, and full-size checks cover all slides; checks included the title/overview, code slides, Lab 01 conversion, parameter map, loop, convergence table, responsible-AI, and recap slides.
 
 ## Validation record
 

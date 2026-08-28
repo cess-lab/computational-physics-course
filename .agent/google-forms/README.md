@@ -29,4 +29,4 @@ Prefer four automatically countable conceptual items and one short response. The
 
 Use matric number to link repeated responses locally, but remove names and matric numbers before sending response text to a general-purpose AI system unless an approved institutional workflow explicitly requires identification. Report cohort patterns, confidence calibration, and recurring misconceptions rather than ranking students.
 
-See `Week01_Question_Key_and_AI_Analysis.md` for the first week's answer key, misconception tags, and analysis prompt.
+See each `WeekXX_Question_Key_and_AI_Analysis.md` file for that week's answer key, misconception tags, and analysis prompt.

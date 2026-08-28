@@ -34,6 +34,14 @@
       "numericalReasoning": {"itemId": "4a81ccc9", "questionId": "10c54d7f"},
       "validationReasoning": {"itemId": "7e4cfed4", "questionId": "71a5a1f2"},
       "confidence": {"itemId": "01611fc0", "questionId": "36740d07"}
+    },
+    "Week02": {
+      "physicalPrediction": {"itemId": "246d2eb7", "questionId": "396f2dd0"},
+      "unitsAndArrayOperations": {"itemId": "10927ce8", "questionId": "024da29b"},
+      "arrayReasoning": {"itemId": "45a8ef6a", "questionId": "6cfa46b6"},
+      "defectDiagnosis": {"itemId": "33c57168", "questionId": "15956ce9"},
+      "validationReasoning": {"itemId": "5bad102a", "questionId": "1608cd37"},
+      "confidence": {"itemId": "587f8bb5", "questionId": "2959c13d"}
     }
   },
   "updatePolicy": {

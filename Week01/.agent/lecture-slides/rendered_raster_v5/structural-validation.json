@@ -1,0 +1,229 @@
+{
+  "zip_integrity": "passed",
+  "slides": 18,
+  "notes": 18,
+  "media": 18,
+  "one_full_slide_png_per_slide": true,
+  "native_visible_objects": 0,
+  "source_raster_hash_matches": true,
+  "checks": [
+    {
+      "slide": 1,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-1-1.png"
+    },
+    {
+      "slide": 2,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-2-1.png"
+    },
+    {
+      "slide": 3,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-3-1.png"
+    },
+    {
+      "slide": 4,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-4-1.png"
+    },
+    {
+      "slide": 5,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-5-1.png"
+    },
+    {
+      "slide": 6,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-6-1.png"
+    },
+    {
+      "slide": 7,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-7-1.png"
+    },
+    {
+      "slide": 8,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-8-1.png"
+    },
+    {
+      "slide": 9,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-9-1.png"
+    },
+    {
+      "slide": 10,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-10-1.png"
+    },
+    {
+      "slide": 11,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-11-1.png"
+    },
+    {
+      "slide": 12,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-12-1.png"
+    },
+    {
+      "slide": 13,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-13-1.png"
+    },
+    {
+      "slide": 14,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-14-1.png"
+    },
+    {
+      "slide": 15,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-15-1.png"
+    },
+    {
+      "slide": 16,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-16-1.png"
+    },
+    {
+      "slide": 17,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-17-1.png"
+    },
+    {
+      "slide": 18,
+      "pic": 1,
+      "native_shapes": 0,
+      "graphic_frames": 0,
+      "connectors": 0,
+      "full_slide_emu": [
+        12192000,
+        6858000
+      ],
+      "media": "ppt/media/image-18-1.png"
+    }
+  ],
+  "notes_have_timing_checkpoint_transition": true,
+  "approved_values_and_terms": "passed"
+}
