@@ -1,8 +1,0 @@
-Slide 09 self-QA — pass after title-band regeneration
-
-- Single ImageGen-generated raster; final export verified at 1920 x 1080 (16:9).
-- Inspected at full size: pure flat white, borderless, safe margins, no logo, footer, URL, watermark, pattern, or decorative background. The subtitle now uses the supporting-font treatment: medium-weight charcoal, distinct from the condensed navy title, and its terminal full stop has been removed to match the exact handoff copy.
-- Tangent diagram has two intentional marked points only: blue E_k on the residual curve and gold E_{k+1} at the tangent's x-axis intercept. The gold tangent, slope label, and Newton-step arrow make the local linearisation legible.
-- Formula notation, including E_{k+1}, E_k, minus sign, fraction, and f′(E_k), is visually unambiguous and agrees with the handoff.
-- Pale-blue update card, model-blue curve, gold tangent, and pale-red warning strip follow the required semantic palette.
-- Known minor deviation: generated typeface is a visual equivalent of the prescribed font roles; its exact raster font metadata is not verifiable.

@@ -1,4 +1,0 @@
-Edit this exact 1920×1080 slide raster. Preserve title band, title/subtitle wording and punctuation, margins, white borderless canvas, chart-card bounds, axis labels, gridlines, data curves, dashed reference line label “E ≈ 1.69464 rad”, takeaway, colours, and overall composition. Make only these two evidence fixes:
-1. Remove the isolated disconnected green dot at the lower-left of the RIGHT Root estimate chart. Do not add any replacement dot or trace.
-2. Add one compact, clear, unobtrusive legend in safe unused empty space inside EACH chart card, identical mapping in both: a small green line+marker followed by exact text “Bisection”, and a small gold line+marker followed by exact text “Newton”. Use a normal small Roboto-like charcoal label, keep it clear of the plot lines and axes, and do not add any other words.
-Do not alter any other element. All changes must remain generated within this single raster image, no overlays.
