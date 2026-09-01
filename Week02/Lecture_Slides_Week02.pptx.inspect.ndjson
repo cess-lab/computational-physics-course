@@ -1,0 +1,206 @@
+{"kind":"deck","id":"pr/u5bkg9","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster2.xml","name":"PHY4605 Borderless White Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Opening","placeholders":[{"name":"body","type":"body"},{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Content T1","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Content T2","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Content T3","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"slide","id":"sl/9pver4","slide":1,"title":"PHY4605 Computational Methods in Physics","textShapes":4}
+{"kind":"textbox","id":"sh/wz6hk3yp","slide":1,"text":"PHY4605 Computational Methods in Physics","textPreview":"PHY4605 Computational Methods in Physics","textChars":40,"textLines":1,"bbox":[76.67,84,613.33,26.67]}
+{"kind":"textbox","id":"sh/byxgbyhk","slide":1,"text":"Pseudocode, Loops\nand Debugging","textPreview":"Pseudocode, Loops | and Debugging","textChars":31,"textLines":2,"bbox":[76.67,163.33,720,140]}
+{"kind":"textbox","id":"sh/ax4zidgz","slide":1,"text":"Week 2 | Make Each Step Traceable","textPreview":"Week 2 | Make Each Step Traceable","textChars":33,"textLines":1,"bbox":[76.67,316.67,786.67,40]}
+{"kind":"textbox","id":"sh/k36hony1","slide":1,"text":"model  →  pseudocode  →  loop  →  debug  →  validate","textPreview":"model  →  pseudocode  →  loop  →  debug  →  validate","textChars":52,"textLines":1,"bbox":[76.67,573.33,1000,29.33]}
+{"kind":"image","id":"im/4felsfih","slide":1,"name":"","alt":"Vertical launch path with sampled positions","bbox":[820,116.67,363.33,380]}
+{"kind":"notes","id":"nt/9pver4","slide":1,"text":"[Sources]\nGenerated illustration: Week02/.agent/lecture-slides/assets/vertical-launch-matte.png; course-authored content.\n[/Sources]"}
+{"kind":"slide","id":"sl/nizzat","slide":2,"title":"Start with a physical prediction","textShapes":5}
+{"kind":"textbox","id":"sh/6l4natk3","slide":2,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Start with a physical prediction","textPreview":"Start with a physical prediction","textChars":32,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/t8fm5oju","slide":2,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/s765c329","slide":2,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ih4n69k7","slide":2,"bbox":[466.67,206.67,586.67,240]}
+{"kind":"textbox","id":"sh/5kvm1oji","slide":2,"text":"Before any code","textPreview":"Before any code","textChars":15,"textLines":1,"bbox":[486.67,221.33,546.67,40]}
+{"kind":"textbox","id":"sh/4jm58j2x","slide":2,"text":"1   Upward is positive\n2   Air resistance is neglected\n3   The first stored position is 0 m\n4   The ball rises, reaches a peak, then falls","textPreview":"1   Upward is positive | 2   Air resistance is neglected | 3   The first stored position is 0 m | 4   The ball rises, reaches a peak, the...","textChars":138,"textLines":4,"bbox":[486.67,254.67,546.67,177.33]}
+{"kind":"shape","id":"sh/3ehobi1w","slide":2,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/2donid0b","slide":2,"text":"Prediction first: every later check is easier when the expected behaviour is stated","textPreview":"Prediction first: every later check is easier when the expected behaviour is stated","textChars":83,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"image","id":"im/adgfmp83","slide":2,"name":"","alt":"Purpose-built ImageGen visual of a vertical launch and initial conditions","bbox":[100,180,313.33,346.67]}
+{"kind":"notes","id":"nt/nizzat","slide":2,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/ad3hkp","slide":3,"title":"Name the model before the algorithm","textShapes":11}
+{"kind":"textbox","id":"sh/9svqto3a","slide":3,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Name the model before the algorithm","textPreview":"Name the model before the algorithm","textChars":35,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/mpk7y9kz","slide":3,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/nqt8rel4","slide":3,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/xgvqxo3m","slide":3,"bbox":[110,320,200,100]}
+{"kind":"textbox","id":"sh/at4r29kv","slide":3,"text":"y₀","textPreview":"y₀","textChars":2,"textLines":1,"bbox":[130,334.67,160,40]}
+{"kind":"textbox","id":"sh/bed8velg","slide":3,"text":"0 m","textPreview":"0 m","textChars":3,"textLines":1,"bbox":[130,368,160,37.33]}
+{"kind":"shape","id":"sh/kj69832x","slide":3,"bbox":[360,320,200,100]}
+{"kind":"textbox","id":"sh/lkfq183i","slide":3,"text":"v₀","textPreview":"v₀","textChars":2,"textLines":1,"bbox":[380,334.67,160,40]}
+{"kind":"textbox","id":"sh/ho7atobq","slide":3,"text":"20 m s⁻¹","textPreview":"20 m s⁻¹","textChars":8,"textLines":1,"bbox":[380,368,160,37.33]}
+{"kind":"shape","id":"sh/gny90ja5","slide":3,"bbox":[610,320,200,100]}
+{"kind":"textbox","id":"sh/f2psret0","slide":3,"text":"g","textPreview":"g","textChars":1,"textLines":1,"bbox":[630,334.67,160,40]}
+{"kind":"textbox","id":"sh/u1gry9sf","slide":3,"text":"9.81 m s⁻²","textPreview":"9.81 m s⁻²","textChars":10,"textLines":1,"bbox":[630,368,160,37.33]}
+{"kind":"shape","id":"sh/psraxor2","slide":3,"bbox":[860,320,200,100]}
+{"kind":"textbox","id":"sh/4ri94jah","slide":3,"text":"tₛ","textPreview":"tₛ","textChars":2,"textLines":1,"bbox":[880,334.67,160,40]}
+{"kind":"textbox","id":"sh/3q9sve9w","slide":3,"text":"0:0.5:4 s","textPreview":"0:0.5:4 s","textChars":9,"textLines":1,"bbox":[880,368,160,37.33]}
+{"kind":"shape","id":"sh/2p0r29sb","slide":3,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/5wnql4bi","slide":3,"text":"Plain language: at each chosen time, calculate one vertical position","textPreview":"Plain language: at each chosen time, calculate one vertical position","textChars":68,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"image","id":"im/p4jqxcb6","slide":3,"name":"","alt":"Vertical-motion equation y of t equals y zero plus v zero t minus one half g t squared","bbox":[313.33,173.33,646.67,80]}
+{"kind":"notes","id":"nt/ad3hkp","slide":3,"text":"[Sources]\nEquation asset: Week02/.agent/lecture-slides/assets/equations/vertical-launch-model.tex/.svg/.png; course-authored content.\n[/Sources]"}
+{"kind":"slide","id":"sl/2ofj7j","slide":4,"title":"Break one physics task into small actions","textShapes":11}
+{"kind":"textbox","id":"sh/s3u187a9","slide":4,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Break one physics task into small actions","textPreview":"Break one physics task into small actions","textChars":41,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/72lkz2to","slide":4,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/61cj6xs3","slide":4,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/1sn25cbq","slide":4,"bbox":[100,260,193.33,133.33]}
+{"kind":"textbox","id":"sh/gre1cral","slide":4,"text":"INPUT","textPreview":"INPUT","textChars":5,"textLines":1,"bbox":[120,274.67,153.33,40]}
+{"kind":"textbox","id":"sh/fq5k3mt0","slide":4,"text":"store parameters\nand chosen times","textPreview":"store parameters | and chosen times","textChars":33,"textLines":2,"bbox":[120,308,153.33,70.67]}
+{"kind":"shape","id":"sh/epwjahsf","slide":4,"bbox":[373.33,260,193.33,133.33]}
+{"kind":"textbox","id":"sh/xwjitsbm","slide":4,"text":"CALCULATE","textPreview":"CALCULATE","textChars":9,"textLines":1,"bbox":[393.33,274.67,153.33,40]}
+{"kind":"textbox","id":"sh/wva10nu1","slide":4,"text":"use the current time\nwith the position equation","textPreview":"use the current time | with the position equation","textChars":47,"textLines":2,"bbox":[393.33,308,153.33,70.67]}
+{"kind":"shape","id":"sh/apgzu5gj","slide":4,"bbox":[646.67,260,193.33,133.33]}
+{"kind":"textbox","id":"sh/bqp0nah4","slide":4,"text":"OUTPUT","textPreview":"OUTPUT","textChars":6,"textLines":1,"bbox":[666.67,274.67,153.33,40]}
+{"kind":"textbox","id":"sh/wryhwfyp","slide":4,"text":"store the position in a\nlater array","textPreview":"store the position in a | later array","textChars":35,"textLines":2,"bbox":[666.67,308,153.33,70.67]}
+{"kind":"shape","id":"sh/xs7ipkza","slide":4,"bbox":[920,260,193.33,133.33]}
+{"kind":"textbox","id":"sh/ytgzypgv","slide":4,"text":"CHECK","textPreview":"CHECK","textChars":5,"textLines":1,"bbox":[940,274.67,153.33,40]}
+{"kind":"textbox","id":"sh/ju90rah0","slide":4,"text":"confirm the known first\nvalue","textPreview":"confirm the known first | value","textChars":29,"textLines":2,"bbox":[940,308,153.33,70.67]}
+{"kind":"shape","id":"sh/kvi10fyl","slide":4,"bbox":[296.67,313.33,56.67,23.33]}
+{"kind":"shape","id":"sh/lwritkz6","slide":4,"bbox":[570,313.33,56.67,23.33]}
+{"kind":"shape","id":"sh/6x0j2pgr","slide":4,"bbox":[843.33,313.33,56.67,23.33]}
+{"kind":"shape","id":"sh/7y90vuhc","slide":4,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/3mtgjudk","slide":4,"text":"Pseudocode is an algorithm map, not MATLAB punctuation","textPreview":"Pseudocode is an algorithm map, not MATLAB punctuation","textChars":54,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"notes","id":"nt/2ofj7j","slide":4,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/9ai85j","slide":5,"title":"Map pseudocode to one code block","textShapes":6}
+{"kind":"textbox","id":"sh/md4j614j","slide":5,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Map pseudocode to one code block","textPreview":"Map pseudocode to one code block","textChars":32,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/9gvi1wnu","slide":5,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/8fm18rm9","slide":5,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/zad0vm5s","slide":5,"bbox":[100,200,466.67,340]}
+{"kind":"textbox","id":"sh/y9kz2h47","slide":5,"text":"Pseudocode","textPreview":"Pseudocode","textChars":10,"textLines":1,"bbox":[120,214.67,426.67,40]}
+{"kind":"textbox","id":"sh/lcvixwny","slide":5,"text":"1  Make one position slot per time\n2  Repeat while t moves through the time array\n3  Use the current tₛ value\n4  Store the answer into yₘ(sample_index)","textPreview":"1  Make one position slot per time | 2  Repeat while t moves through the time array | 3  Use the current tₛ value | 4  Store the answer i...","textChars":151,"textLines":4,"bbox":[120,248,426.67,277.33]}
+{"kind":"shape","id":"sh/0bmh4rmd","slide":5,"bbox":[586.67,326.67,86.67,26.67]}
+{"kind":"shape","id":"sh/bmt0rm5w","slide":5,"bbox":[706.67,200,453.33,340]}
+{"kind":"textbox","id":"sh/qlkzyh4b","slide":5,"text":"MATLAB scaffold","textPreview":"MATLAB scaffold","textChars":15,"textLines":1,"bbox":[726.67,214.67,413.33,40]}
+{"kind":"textbox","id":"sh/kjipg7ax","slide":5,"text":"y_m = zeros(size(t_s));\nfor sample_index = 1:numel(t_s)\n    current_time_s = t_s(sample_index);\n    y_m(sample_index) = ...\nend","textPreview":"y_m = zeros(size(t_s)); | for sample_index = 1:numel(t_s) |     current_time_s = t_s(sample_index); |     y_m(sample_index) = ... | end","textChars":127,"textLines":5,"bbox":[726.67,248,413.33,277.33]}
+{"kind":"notes","id":"nt/9ai85j","slide":5,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/51ht3a","slide":6,"title":"A for-loop fills one array entry at a time","textShapes":6}
+{"kind":"textbox","id":"sh/g7214ji1","slide":6,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"A for-loop fills one array entry at a time","textPreview":"A for-loop fills one array entry at a time","textChars":42,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/f6tkbe1w","slide":6,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/e5kj290b","slide":6,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/t4b294jq","slide":6,"bbox":[100,200,600,306.67]}
+{"kind":"textbox","id":"sh/s3i10zi5","slide":6,"text":"Loop scaffold","textPreview":"Loop scaffold","textChars":13,"textLines":1,"bbox":[120,214.67,560,40]}
+{"kind":"textbox","id":"sh/r29k7u1k","slide":6,"text":"for sample_index = 1:numel(t_s)\n    current_time_s = t_s(sample_index);\n    y_m(sample_index) = y0_m + v0_mps*current_time_s ...\n                      - 0.5*g_mps2*current_time_s^2;\nend","textPreview":"for sample_index = 1:numel(t_s) |     current_time_s = t_s(sample_index); |     y_m(sample_index) = y0_m + v0_mps*current_time_s ... |   ...","textChars":185,"textLines":5,"bbox":[120,248,560,244]}
+{"kind":"textbox","id":"sh/x0v2l8ju","slide":6,"text":"index","textPreview":"index","textChars":5,"textLines":1,"bbox":[1066.67,216.67,120,33.33]}
+{"kind":"textbox","id":"sh/czmlc3i9","slide":6,"text":"1  2  3  …  9","textPreview":"1  2  3  …  9","textChars":13,"textLines":1,"bbox":[1066.67,246.67,146.67,36.67]}
+{"kind":"image","id":"im/bqx4vmtc","slide":6,"name":"","alt":"Purpose-built ImageGen stroboscopic vertical sampled positions","bbox":[750,203.33,333.33,306.67]}
+{"kind":"notes","id":"nt/51ht3a","slide":6,"text":"[Sources]\n[Sources]\nGenerated with built-in image_gen: assets/imagegen/stroboscopic-sampled-positions.png; role: sample_index to successive stored positions\n[/Sources]\n[/Sources]"}
+{"kind":"slide","id":"sl/z3os4y","slide":7,"title":"Trace the first two iterations","textShapes":7}
+{"kind":"textbox","id":"sh/kby18nu1","slide":7,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Trace the first two iterations","textPreview":"Trace the first two iterations","textChars":30,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/zap0zitg","slide":7,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/y9gj6dcv","slide":7,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/x87ix8ba","slide":7,"bbox":[120,226.67,446.67,226.67]}
+{"kind":"textbox","id":"sh/c7eh43up","slide":7,"text":"Iteration 1","textPreview":"Iteration 1","textChars":11,"textLines":1,"bbox":[140,241.33,406.67,40]}
+{"kind":"textbox","id":"sh/b650vytk","slide":7,"text":"sample_index = 1\ncurrent_time_s = 0.0 s\ny_m(1) = 0.0000 m","textPreview":"sample_index = 1 | current_time_s = 0.0 s | y_m(1) = 0.0000 m","textChars":57,"textLines":3,"bbox":[140,274.67,406.67,164]}
+{"kind":"shape","id":"sh/a5wz2tcz","slide":7,"bbox":[713.33,226.67,446.67,226.67]}
+{"kind":"textbox","id":"sh/p4nit8ve","slide":7,"text":"Iteration 2","textPreview":"Iteration 2","textChars":11,"textLines":1,"bbox":[733.33,241.33,406.67,40]}
+{"kind":"textbox","id":"sh/o3eh03ut","slide":7,"text":"sample_index = 2\ncurrent_time_s = 0.5 s\ny_m(2) = 8.77375 m","textPreview":"sample_index = 2 | current_time_s = 0.5 s | y_m(2) = 8.77375 m","textChars":58,"textLines":3,"bbox":[733.33,274.67,406.67,164]}
+{"kind":"shape","id":"sh/id4zelkf","slide":7,"bbox":[583.33,326.67,106.67,26.67]}
+{"kind":"shape","id":"sh/3edgnql0","slide":7,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/4zmhgv2l","slide":7,"text":"Trace one symbol at a time, then say what the stored number means physically","textPreview":"Trace one symbol at a time, then say what the stored number means physically","textChars":76,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"notes","id":"nt/z3os4y","slide":7,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/4q888g","slide":8,"title":"Complete the one missing calculation","textShapes":7}
+{"kind":"textbox","id":"sh/4b69gnal","slide":8,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Complete the one missing calculation","textPreview":"Complete the one missing calculation","textChars":36,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/jaxs7it0","slide":8,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/i9oredsv","slide":8,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/t0zadsbi","slide":8,"bbox":[100,213.33,633.33,286.67]}
+{"kind":"textbox","id":"sh/sfqtknax","slide":8,"text":"Commented scaffold","textPreview":"Commented scaffold","textChars":18,"textLines":1,"bbox":[120,228,593.33,40]}
+{"kind":"textbox","id":"sh/rexsbitc","slide":8,"text":"for sample_index = 1:n_samples\n    current_time_s = t_s(sample_index);\n    y_m(sample_index) = ____________;\nend","textPreview":"for sample_index = 1:n_samples |     current_time_s = t_s(sample_index); |     y_m(sample_index) = ____________; | end","textChars":112,"textLines":4,"bbox":[120,261.33,593.33,224]}
+{"kind":"shape","id":"sh/6dobixsr","slide":8,"bbox":[813.33,253.33,313.33,200]}
+{"kind":"textbox","id":"sh/9kva18by","slide":8,"text":"Bounded task","textPreview":"Bounded task","textChars":12,"textLines":1,"bbox":[833.33,268,273.33,40]}
+{"kind":"textbox","id":"sh/8jm983ad","slide":8,"text":"Quantity already named:\n\ny0_m\nv0_mps\ng_mps2\ncurrent_time_s","textPreview":"Quantity already named: |  | y0_m | v0_mps | g_mps2 | current_time_s","textChars":58,"textLines":6,"bbox":[833.33,301.33,273.33,137.33]}
+{"kind":"shape","id":"sh/a183mdgz","slide":8,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/v2h4fihk","slide":8,"text":"Check after completing: does the first loop pass still store y_m(1) = 0 m?","textPreview":"Check after completing: does the first loop pass still store y_m(1) = 0 m?","textChars":74,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"notes","id":"nt/4q888g","slide":8,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/gcp758","slide":9,"title":"Predict before changing a parameter","textShapes":7}
+{"kind":"textbox","id":"sh/ofilo7md","slide":9,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Predict before changing a parameter","textPreview":"Predict before changing a parameter","textChars":35,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ne94v2ls","slide":9,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/2dg3mh47","slide":9,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/x4rm1w3u","slide":9,"bbox":[126.67,233.33,433.33,200]}
+{"kind":"textbox","id":"sh/w3ilsrm9","slide":9,"text":"Original input","textPreview":"Original input","textChars":14,"textLines":1,"bbox":[146.67,248,393.33,40]}
+{"kind":"textbox","id":"sh/b294zmlo","slide":9,"text":"v0_mps = 20;\n\n20 m s⁻¹; same y0_m, g_mps2, and t_s","textPreview":"v0_mps = 20; |  | 20 m s⁻¹; same y0_m, g_mps2, and t_s","textChars":50,"textLines":3,"bbox":[146.67,281.33,393.33,137.33]}
+{"kind":"shape","id":"sh/a103qh43","slide":9,"bbox":[586.67,316.67,103.33,26.67]}
+{"kind":"shape","id":"sh/d87mps3q","slide":9,"bbox":[726.67,233.33,433.33,200]}
+{"kind":"textbox","id":"sh/s7ylgnm5","slide":9,"text":"Modify one input","textPreview":"Modify one input","textChars":16,"textLines":1,"bbox":[746.67,248,393.33,40]}
+{"kind":"textbox","id":"sh/65g7uxsz","slide":9,"text":"v0_lower_mps = 15;\n\n15 m s⁻¹; rerun the same loop pattern","textPreview":"v0_lower_mps = 15; |  | 15 m s⁻¹; rerun the same loop pattern","textChars":57,"textLines":3,"bbox":[746.67,281.33,393.33,137.33]}
+{"kind":"shape","id":"sh/7698n29k","slide":9,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/8ripw7a5","slide":9,"text":"Prediction: the lower launch speed should produce a lower maximum position","textPreview":"Prediction: the lower launch speed should produce a lower maximum position","textChars":74,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"notes","id":"nt/gcp758","slide":9,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/mjcmrl","slide":10,"title":"Read the loop output as evidence","textShapes":5}
+{"kind":"textbox","id":"sh/lojelsje","slide":10,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Read the loop output as evidence","textPreview":"Read the loop output as evidence","textChars":32,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ylsfaxk3","slide":10,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/zm1wj21o","slide":10,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/9c3epcjq","slide":10,"bbox":[893.33,220,280,273.33]}
+{"kind":"textbox","id":"sh/mpsfexkz","slide":10,"text":"Interpret the graph","textPreview":"Interpret the graph","textChars":19,"textLines":1,"bbox":[913.33,234.67,240,40]}
+{"kind":"textbox","id":"sh/7a1wn21k","slide":10,"text":"1   Both curves begin at 0 m\n\n2   15 m s⁻¹ reaches a lower sample peak\n\n3   Negative after crossing 0 m means the idealised model has been extended below the launch level","textPreview":"1   Both curves begin at 0 m |  | 2   15 m s⁻¹ reaches a lower sample peak |  | 3   Negative after crossing 0 m means the idealised model...","textChars":170,"textLines":5,"bbox":[913.33,268,240,210.67]}
+{"kind":"shape","id":"sh/wfuxk721","slide":10,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/hg3ytcjm","slide":10,"text":"A graph is evidence only when its trend, units, and validity are interpreted","textPreview":"A graph is evidence only when its trend, units, and validity are interpreted","textChars":76,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"image","id":"im/90nehkj6","slide":10,"name":"","alt":"MATLAB plot of vertical position versus time for two launch speeds","bbox":[93.33,180,746.67,393.33]}
+{"kind":"notes","id":"nt/mjcmrl","slide":10,"text":"[Sources]\nMATLAB-generated evidence: Week02/.agent/matlab/generate_week02_plot.m and assets/week02_loop_position.png.\n[/Sources]"}
+{"kind":"slide","id":"sl/dduuep","slide":11,"title":"Classify the defect before debugging","textShapes":9}
+{"kind":"textbox","id":"sh/3ypojm58","slide":11,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Classify the defect before debugging","textPreview":"Classify the defect before debugging","textChars":36,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/ozypcr6t","slide":11,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/p076lwny","slide":11,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/etwn6hob","slide":11,"bbox":[90,233.33,320,200]}
+{"kind":"textbox","id":"sh/fu5ofmpw","slide":11,"text":"Syntax","textPreview":"Syntax","textChars":6,"textLines":1,"bbox":[110,248,280,40]}
+{"kind":"textbox","id":"sh/gve5876h","slide":11,"text":"MATLAB cannot complete the intended code structure\n\nmissing end, quote, or bracket","textPreview":"MATLAB cannot complete the intended code structure |  | missing end, quote, or bracket","textChars":82,"textLines":3,"bbox":[110,281.33,280,137.33]}
+{"kind":"shape","id":"sh/1wn6hcn2","slide":11,"bbox":[480,233.33,320,200]}
+{"kind":"textbox","id":"sh/65wn2xof","slide":11,"text":"Array / indexing / operator","textPreview":"Array / indexing / operator","textChars":27,"textLines":1,"bbox":[500,248,280,40]}
+{"kind":"textbox","id":"sh/r65ob2p0","slide":11,"text":"Code may run but reads or stores the wrong values\n\nwrong index, size, or .*","textPreview":"Code may run but reads or stores the wrong values |  | wrong index, size, or .*","textChars":75,"textLines":3,"bbox":[500,281.33,280,137.33]}
+{"kind":"shape","id":"sh/7etobu9c","slide":11,"bbox":[870,233.33,320,200]}
+{"kind":"textbox","id":"sh/md0nipsr","slide":11,"text":"Physical / logical","textPreview":"Physical / logical","textChars":18,"textLines":1,"bbox":[890,248,280,40]}
+{"kind":"textbox","id":"sh/9gb6d4r2","slide":11,"text":"Code runs but implements the wrong physics\n\nwrong sign, unit, or assumption","textPreview":"Code runs but implements the wrong physics |  | wrong sign, unit, or assumption","textChars":75,"textLines":3,"bbox":[890,281.33,280,137.33]}
+{"kind":"shape","id":"sh/8f25kzah","slide":11,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/vitofe98","slide":11,"text":"“The code ran” is not proof that the calculation or physics is correct","textPreview":"“The code ran” is not proof that the calculation or physics is correct","textChars":70,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"notes","id":"nt/dduuep","slide":11,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/cr64yd","slide":12,"title":"Use error and array evidence","textShapes":7}
+{"kind":"textbox","id":"sh/k3u1cveh","slide":12,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Use error and array evidence","textPreview":"Use error and array evidence","textChars":28,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/j2l0jqxw","slide":12,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/y1czalwr","slide":12,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/tsnip0fe","slide":12,"bbox":[100,213.33,513.33,286.67]}
+{"kind":"textbox","id":"sh/8re1gvet","slide":12,"text":"Syntax defect — MATLAB stops","textPreview":"Syntax defect — MATLAB stops","textChars":28,"textLines":1,"bbox":[120,228,473.33,40]}
+{"kind":"textbox","id":"sh/7650nax8","slide":12,"text":"for sample_index = 1:numel(t_s)\n    current_time_s = t_s(sample_index);\n    y_m(sample_index) = y0_m + v0_mps*current_time_s ...\n        - 0.5*g_mps2*current_time_s^2;\n\n% Error cue: “At least one END is missing”","textPreview":"for sample_index = 1:numel(t_s) |     current_time_s = t_s(sample_index); |     y_m(sample_index) = y0_m + v0_mps*current_time_s ... |   ...","textChars":211,"textLines":6,"bbox":[120,261.33,473.33,224]}
+{"kind":"shape","id":"sh/65wje5wn","slide":12,"bbox":[666.67,213.33,513.33,286.67]}
+{"kind":"textbox","id":"sh/9wjidgfu","slide":12,"text":"Indexing defect — MATLAB runs","textPreview":"Indexing defect — MATLAB runs","textChars":29,"textLines":1,"bbox":[686.67,228,473.33,40]}
+{"kind":"textbox","id":"sh/ovah4be9","slide":12,"text":"for sample_index = 1:numel(t_s)\n    current_time_s = t_s(sample_index);\n    y_m(1) = y0_m + v0_mps*current_time_s ...\n        - 0.5*g_mps2*current_time_s^2;\nend\n\n% Array evidence: y_m(2:end) remains 0","textPreview":"for sample_index = 1:numel(t_s) |     current_time_s = t_s(sample_index); |     y_m(1) = y0_m + v0_mps*current_time_s ... |         - 0.5...","textChars":200,"textLines":7,"bbox":[686.67,261.33,473.33,224]}
+{"kind":"shape","id":"sh/edc7m9cv","slide":12,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/zel8vetg","slide":12,"text":"An error pinpoints where MATLAB stopped; the stored array reveals a silent indexing defect","textPreview":"An error pinpoints where MATLAB stopped; the stored array reveals a silent indexing defect","textChars":90,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"notes","id":"nt/cr64yd","slide":12,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}
+{"kind":"slide","id":"sl/2dsx2u","slide":13,"title":"Known value checks the start; physics checks the sign","textShapes":7}
+{"kind":"textbox","id":"sh/2xc7ihon","slide":13,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Known value checks the start; physics checks the sign","textPreview":"Known value checks the start; physics checks the sign","textChars":53,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/pk3qdwny","slide":13,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/4zupkr6t","slide":13,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/rm58f654","slide":13,"bbox":[120,220,373.33,260]}
+{"kind":"textbox","id":"sh/qlw7m1oj","slide":13,"text":"Known initial value","textPreview":"Known initial value","textChars":19,"textLines":1,"bbox":[140,234.67,333.33,40]}
+{"kind":"textbox","id":"sh/donqhgna","slide":13,"text":"At t = 0 s, the equation gives\n\nassert(y_m(1) == y0_m)","textPreview":"At t = 0 s, the equation gives |  | assert(y_m(1) == y0_m)","textChars":54,"textLines":3,"bbox":[140,268,333.33,197.33]}
+{"kind":"shape","id":"sh/6ps7axof","slide":13,"bbox":[800,220,380,260]}
+{"kind":"textbox","id":"sh/w3u9o3qd","slide":13,"text":"Physical-sign defect","textPreview":"Physical-sign defect","textChars":20,"textLines":1,"bbox":[820,234.67,340,40]}
+{"kind":"textbox","id":"sh/x43ax87y","slide":13,"text":"y_wrong(sample_index) = y0_m + v0_mps*t_s(sample_index)\n    + 0.5*g_mps2*t_s(sample_index)^2\n\nInitial check: PASS at t = 0\nPhysics check: FAIL — gravity acts downward","textPreview":"y_wrong(sample_index) = y0_m + v0_mps*t_s(sample_index) |     + 0.5*g_mps2*t_s(sample_index)^2 |  | Initial check: PASS at t = 0 | Physic...","textChars":166,"textLines":5,"bbox":[820,268,340,197.33]}
+{"kind":"shape","id":"sh/a1crmd87","slide":13,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/b2lsvyps","slide":13,"text":"Validation is strongest when code evidence and physical reasoning agree","textPreview":"Validation is strongest when code evidence and physical reasoning agree","textChars":71,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"image","id":"im/twr6hk3e","slide":13,"name":"","alt":"Initial height y of zero equals zero metres","bbox":[210,333.33,200,50]}
+{"kind":"image","id":"im/2xwnul4j","slide":13,"name":"","alt":"Purpose-built ImageGen visual for downward gravity and a rejected upward-sign expectation","bbox":[526.67,200,246.67,286.67]}
+{"kind":"notes","id":"nt/2dsx2u","slide":13,"text":"[Sources]\nEquation asset source: Week02/.agent/lecture-slides/assets/equations/known-initial-value.tex/.svg/.png; TeX: y(0)=0\\,\\mathrm{m}. [Sources]\nGenerated with built-in image_gen: assets/imagegen/debugging-validation-sign.png; role: gravity-sign validation\n[/Sources]\n[/Sources]"}
+{"kind":"slide","id":"sl/ojx87p","slide":14,"title":"Week 2 exit ticket","textShapes":11}
+{"kind":"textbox","id":"sh/wvq9wfat","slide":14,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Week 2 exit ticket","textPreview":"Week 2 exit ticket","textChars":18,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"shape","id":"sh/buhs3a98","slide":14,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/at8ru5sn","slide":14,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[0,0,0,0]}
+{"kind":"textbox","id":"sh/9sfq1kr2","slide":14,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[120,213.33,36.67,30]}
+{"kind":"textbox","id":"sh/or69sfax","slide":14,"text":"Put input, calculation, output, and check in a sensible order","textPreview":"Put input, calculation, output, and check in a sensible order","textChars":61,"textLines":1,"bbox":[173.33,213.33,966.67,46.67]}
+{"kind":"shape","id":"sh/n6x8za9c","slide":14,"bbox":[173.33,256.67,966.67,0]}
+{"kind":"textbox","id":"sh/m5orq5sr","slide":14,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[120,300,36.67,30]}
+{"kind":"textbox","id":"sh/tojad4rm","slide":14,"text":"For sample_index = 2, what time does t_s(sample_index) select?","textPreview":"For sample_index = 2, what time does t_s(sample_index) select?","textChars":62,"textLines":1,"bbox":[173.33,300,966.67,46.67]}
+{"kind":"shape","id":"sh/sna94zq1","slide":14,"bbox":[173.33,343.33,966.67,0]}
+{"kind":"textbox","id":"sh/uh8rapcv","slide":14,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[120,386.67,36.67,30]}
+{"kind":"textbox","id":"sh/vih83udg","slide":14,"text":"Give one syntax or indexing defect and the evidence you would inspect","textPreview":"Give one syntax or indexing defect and the evidence you would inspect","textChars":69,"textLines":1,"bbox":[173.33,386.67,966.67,46.67]}
+{"kind":"shape","id":"sh/gjq9czu1","slide":14,"bbox":[173.33,430,966.67,0]}
+{"kind":"textbox","id":"sh/h4zq54bm","slide":14,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[120,473.33,36.67,30]}
+{"kind":"textbox","id":"sh/6dor6pcz","slide":14,"text":"State the initial-value validation and one physical conclusion from the graph","textPreview":"State the initial-value validation and one physical conclusion from the graph","textChars":77,"textLines":1,"bbox":[173.33,473.33,966.67,46.67]}
+{"kind":"shape","id":"sh/7ex8zadk","slide":14,"bbox":[173.33,516.67,966.67,0]}
+{"kind":"shape","id":"sh/8fq98fu5","slide":14,"bbox":[76.67,616.67,1040,48]}
+{"kind":"textbox","id":"sh/tgzq1kva","slide":14,"text":"Next week: assemble and solve a 2×2 circuit model, then validate the currents","textPreview":"Next week: assemble and solve a 2×2 circuit model, then validate the currents","textChars":77,"textLines":1,"bbox":[100,625.33,993.33,33.33]}
+{"kind":"notes","id":"nt/ojx87p","slide":14,"text":"[Sources]\nCourse-authored content; familiar vertical-launch model.\n[/Sources]"}

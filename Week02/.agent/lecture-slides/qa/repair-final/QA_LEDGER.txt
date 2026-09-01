@@ -1,0 +1,29 @@
+PHY4605 Week 02 repair QA ledger
+
+Generator
+- Model/effort: gpt-5.6-terra, medium.
+- Scope: restore the original 14-slide Week 02 teaching sequence and repair only defects visible in the preserved full-size pre-audit renders.
+
+Baseline and root cause
+- Week 01 baseline: Git commit e9f428b014802776e3d8969e8469cf0c85b4195e.
+- Week 02 visual baseline: qa/pre-audit-render/ and qa/pre-audit-contact-sheet.png.
+- Week 02 deterministic source baseline: source/build_week02_deck.cjs and source/week02_deck_manifest.json.
+- Do not use qa/native-normalized.pptx or native-full-recovery as a baseline: the destructive regeneration replaced the complete 14-slide visual teaching sequence with a 13-slide simplified deck, while native normalization introduced severe font and coordinate scaling drift.
+
+Implemented repair
+- Preserved the complete 14-slide sequence, original scientific visual direction, editable text/shapes/code, MATLAB plot, and retained equation assets.
+- Repaired only visible collision/containment defects: subtitle/title spacing (slides 2, 7, 14); card/body containment (slides 2, 4, 8); Slide 10 interpretation-panel spacing; Slide 13 code/validation separation; exit-ticket/takeaway spacing; and overly long takeaway copy that wrapped into the panel edge.
+- Final deck: Week02/Lecture_Slides_Week02.pptx.
+- Final SHA-256: ca6fccebb2be37d8f8bdf2ddfb13eb990b67875140d50786c143f6b94ec51cc2.
+
+QA and audit handoff
+- Full-size render: qa/repair-final/render-1920/ (14 PNGs, each 1920 x 1080).
+- Contact sheet: qa/repair-final/contact-sheet.png.
+- Presentations/artifact-tool import inspection: qa/repair-final/inspect_final_artifact.mjs and artifact-inspect.ndjson.
+- officecli OpenXML validation: PASS (officecli-validate.json).
+- Canvas-overflow test: PASS (slides-test.txt).
+- ZIP integrity: PASS (unzip-test.txt).
+- Auditor handoff: inspect all 14 final 1920 x 1080 render files, especially slides 2, 4, 8, 10, 13, and 14, against the pre-audit baseline and this ledger. Read-only audit required under the paired-agent contract.
+
+Canonical statement
+The canonical deck uses editable deterministic Nunito typography and approved visual assets; any PDF or flattened PPTX is a distribution derivative, not the source of truth.

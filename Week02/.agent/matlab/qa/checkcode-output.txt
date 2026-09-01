@@ -1,0 +1,18 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+NOPTS | line 16 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 27 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 28 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 29 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 30 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 40 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 41 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 45 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 81 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 92 | Add a semicolon after the statement to hide the output (in a script).
+NOPTS | line 111 | Add a semicolon after the statement to hide the output (in a script).

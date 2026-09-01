@@ -1,0 +1,268 @@
+{"kind":"deck","id":"pr/a2nub9","name":"Deck"}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"PHY4605 Computational Methods in Physics","textShapes":4}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"textChars":40,"textLines":1}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"textChars":31,"textLines":2}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"textChars":52,"textLines":1}
+{"kind":"image","id":"im/dkb2xcfy","slide":1,"name":"Image 0","bbox":[875,116.67,253.33,380]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"Open by asking how a familiar launch equation becomes a sequence of traceable..."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"Start with a physical prediction","textShapes":13}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"textChars":32,"textLines":1}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"textChars":56,"textLines":1}
+{"kind":"shape","id":"sh/a10jqpsj","slide":2,"name":"Shape 2","bbox":[526.67,186.67,566.67,293.33]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"textChars":15,"textLines":1}
+{"kind":"shape","id":"sh/w3i1sfa9","slide":2,"name":"Shape 4","bbox":[560,270,37.33,37.33]}
+{"kind":"textbox","id":"sh/r65knqtk","slide":2,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/ove9o7yd","slide":2,"name":"Shape 7","bbox":[560,315.33,37.33,37.33]}
+{"kind":"textbox","id":"sh/9wnqhczy","slide":2,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"textChars":27,"textLines":1}
+{"kind":"shape","id":"sh/nu58f2hs","slide":2,"name":"Shape 10","bbox":[560,360.67,37.33,37.33]}
+{"kind":"textbox","id":"sh/wjy9sry9","slide":2,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/xk7qlczu","slide":2,"textChars":32,"textLines":1}
+{"kind":"shape","id":"sh/ahwrqhgj","slide":2,"name":"Shape 13","bbox":[560,406,37.33,37.33]}
+{"kind":"textbox","id":"sh/bip8jmho","slide":2,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"textChars":42,"textLines":1}
+{"kind":"shape","id":"sh/do3q9szq","slide":2,"name":"Shape 16","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/t8byxkn2","slide":2,"textChars":62,"textLines":1}
+{"kind":"textbox","id":"sh/s72xofmh","slide":2,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/cnuxgvm9","slide":2,"name":"Image 0","bbox":[148.89,173.33,242.22,363.33]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"Invite students to predict the initial value and overall motion before showin..."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"Name the model before the algorithm","textShapes":11}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"textChars":35,"textLines":1}
+{"kind":"shape","id":"sh/298ryl4v","slide":3,"name":"Shape 1","bbox":[76.67,326.67,236.67,116.67]}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"textChars":3,"textLines":1}
+{"kind":"shape","id":"sh/pcjqtg36","slide":3,"name":"Shape 4","bbox":[353.33,326.67,236.67,116.67]}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"textChars":8,"textLines":1}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"name":"Shape 7","bbox":[630,326.67,236.67,116.67]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"textChars":10,"textLines":1}
+{"kind":"shape","id":"sh/83ulovat","slide":3,"name":"Shape 10","bbox":[906.67,326.67,236.67,116.67]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"textChars":3,"textLines":1}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"textChars":9,"textLines":1}
+{"kind":"shape","id":"sh/x8nml0ra","slide":3,"name":"Shape 13","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"textChars":62,"textLines":1}
+{"kind":"textbox","id":"sh/ja54na9g","slide":3,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/tk36hgva","slide":3,"name":"Image 0","bbox":[397.27,186.67,485.45,100]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"State that this is the only physical model used in the Core route. The equati..."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"Break one physics task into small actions","textShapes":11}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"textChars":41,"textLines":1}
+{"kind":"shape","id":"sh/0ba143al","slide":4,"name":"Shape 1","bbox":[96.67,220,226.67,220]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/ql8jytsj","slide":4,"textChars":34,"textLines":1}
+{"kind":"shape","id":"sh/doj29oba","slide":4,"name":"Shape 4","bbox":[330,326.67,33.33,0]}
+{"kind":"shape","id":"sh/sna103ap","slide":4,"name":"Shape 5","bbox":[376.67,220,226.67,220]}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"textChars":45,"textLines":1}
+{"kind":"shape","id":"sh/kbm987y5","slide":4,"name":"Shape 8","bbox":[610,326.67,33.33,0]}
+{"kind":"shape","id":"sh/5cva1cfq","slide":4,"name":"Shape 9","bbox":[656.67,220,226.67,220]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"textChars":43,"textLines":1}
+{"kind":"shape","id":"sh/w72947yt","slide":4,"name":"Shape 12","bbox":[890,326.67,33.33,0]}
+{"kind":"shape","id":"sh/x8vaxsfe","slide":4,"name":"Shape 13","bbox":[936.67,220,226.67,220]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/v6tsv2xo","slide":4,"textChars":29,"textLines":1}
+{"kind":"shape","id":"sh/g36tgryd","slide":4,"name":"Shape 16","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/h4fa9wfy","slide":4,"textChars":54,"textLines":1}
+{"kind":"textbox","id":"sh/p0batw72","slide":4,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"Have students read the four jobs aloud. Emphasise that the decomposition can ..."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"Map pseudocode to one code block","textShapes":13}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"textChars":32,"textLines":1}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/yhkbe1o7","slide":5,"name":"Shape 3","bbox":[76.67,233.33,506.67,303.33]}
+{"kind":"shape","id":"sh/l4bupwny","slide":5,"name":"Shape 4","bbox":[100,270,37.33,37.33]}
+{"kind":"textbox","id":"sh/032tgr6d","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/n6dcr65o","slide":5,"textChars":31,"textLines":1}
+{"kind":"shape","id":"sh/m5kbi1oj","slide":5,"name":"Shape 7","bbox":[100,330,37.33,37.33]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"textChars":43,"textLines":1}
+{"kind":"shape","id":"sh/ahkvi1cb","slide":5,"name":"Shape 10","bbox":[100,390,37.33,37.33]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"textChars":22,"textLines":1}
+{"kind":"shape","id":"sh/58vehgvy","slide":5,"name":"Shape 13","bbox":[100,450,37.33,37.33]}
+{"kind":"textbox","id":"sh/i54fmlc7","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/j6dwfqds","slide":5,"textChars":28,"textLines":1}
+{"kind":"shape","id":"sh/sb6xsvu9","slide":5,"name":"Shape 16","bbox":[670,233.33,506.67,303.33]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"textChars":82,"textLines":6}
+{"kind":"shape","id":"sh/hgrmpwj2","slide":5,"name":"Shape 18","bbox":[600,380,50,0]}
+{"kind":"textbox","id":"sh/gfi5grih","slide":5,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"Match each pseudocode action to the nearby code structure. Keep the model upd..."}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"A for-loop fills one array entry at a time","textShapes":22}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"textChars":42,"textLines":1}
+{"kind":"shape","id":"sh/zi98nu94","slide":6,"name":"Shape 1","bbox":[76.67,190,650,333.33]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"textChars":170,"textLines":5}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"textChars":5,"textLines":1}
+{"kind":"shape","id":"sh/ml07i9sv","slide":6,"name":"Shape 4","bbox":[766.67,240,69.33,41.33]}
+{"kind":"textbox","id":"sh/7m98ru9g","slide":6,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/oryp8fah","slide":6,"name":"Shape 6","bbox":[846.67,240,69.33,41.33]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/h4bupgn6","slide":6,"name":"Shape 8","bbox":[926.67,240,69.33,41.33]}
+{"kind":"textbox","id":"sh/w32twb6l","slide":6,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/v2tcn650","slide":6,"name":"Shape 10","bbox":[1006.67,240,69.33,41.33]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/5svutgni","slide":6,"name":"Shape 12","bbox":[1086.67,240,69.33,41.33]}
+{"kind":"textbox","id":"sh/47mt0b6x","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"textChars":8,"textLines":1}
+{"kind":"shape","id":"sh/i54bylor","slide":6,"name":"Shape 15","bbox":[766.67,343.33,69.33,41.33]}
+{"kind":"textbox","id":"sh/twfux0ne","slide":6,"textChars":3,"textLines":1}
+{"kind":"shape","id":"sh/svmt4v6t","slide":6,"name":"Shape 17","bbox":[846.67,343.33,69.33,41.33]}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"textChars":3,"textLines":1}
+{"kind":"shape","id":"sh/dcnm98zm","slide":6,"name":"Shape 19","bbox":[926.67,343.33,69.33,41.33]}
+{"kind":"textbox","id":"sh/qpwnet0b","slide":6,"textChars":3,"textLines":1}
+{"kind":"shape","id":"sh/bq547yhw","slide":6,"name":"Shape 21","bbox":[1006.67,343.33,69.33,41.33]}
+{"kind":"textbox","id":"sh/0fy5k3id","slide":6,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/lg76d8zy","slide":6,"name":"Shape 23","bbox":[1086.67,343.33,69.33,41.33]}
+{"kind":"textbox","id":"sh/ydgnit07","slide":6,"textChars":3,"textLines":1}
+{"kind":"textbox","id":"sh/zep4byhs","slide":6,"textChars":12,"textLines":1}
+{"kind":"shape","id":"sh/gju58ji9","slide":6,"name":"Shape 26","bbox":[766.67,446.67,69.33,41.33]}
+{"kind":"textbox","id":"sh/1k3mhozu","slide":6,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/jet8nm1c","slide":6,"name":"Shape 28","bbox":[846.67,446.67,69.33,41.33]}
+{"kind":"textbox","id":"sh/idk7ehkr","slide":6,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/50bqpcj2","slide":6,"name":"Shape 30","bbox":[926.67,446.67,69.33,41.33]}
+{"kind":"textbox","id":"sh/4f2pgr2h","slide":6,"textChars":5,"textLines":1}
+{"kind":"shape","id":"sh/va98j210","slide":6,"name":"Shape 32","bbox":[1006.67,446.67,69.33,41.33]}
+{"kind":"textbox","id":"sh/u907axkf","slide":6,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/hcrqlcj6","slide":6,"name":"Shape 34","bbox":[1086.67,446.67,69.33,41.33]}
+{"kind":"textbox","id":"sh/wbipc72l","slide":6,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/7698f214","slide":6,"name":"Shape 36","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/m5076xkj","slide":6,"textChars":48,"textLines":1}
+{"kind":"textbox","id":"sh/2dkbalg3","slide":6,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"Point out that current_time_s is scalar inside the loop, so the model line us..."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"Trace the first two iterations","textShapes":12}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"textChars":74,"textLines":1}
+{"kind":"shape","id":"sh/ydkbm5sv","slide":7,"name":"Shape 2","bbox":[76.67,200,506.67,316.67]}
+{"kind":"textbox","id":"sh/zedcfa9g","slide":7,"textChars":11,"textLines":1}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/fi9c369c","slide":7,"name":"Shape 7","bbox":[643.33,200,506.67,316.67]}
+{"kind":"textbox","id":"sh/baxkjqlk","slide":7,"textChars":11,"textLines":1}
+{"kind":"textbox","id":"sh/a9ojq5kz","slide":7,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"name":"Shape 12","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/25ojml43","slide":7,"textChars":59,"textLines":1}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"Pause after each assignment. Confirm y(0)=0 m and y(0.5)=8.77375 m from the r..."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"Complete the one missing calculation","textShapes":6}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"textChars":36,"textLines":1}
+{"kind":"shape","id":"sh/g72x4zyd","slide":8,"name":"Shape 1","bbox":[76.67,200,686.67,313.33]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"textChars":126,"textLines":4}
+{"kind":"shape","id":"sh/6h0fypgb","slide":8,"name":"Shape 3","bbox":[820,210,333.33,300]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"textChars":12,"textLines":1}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"textChars":61,"textLines":5}
+{"kind":"shape","id":"sh/je9g3ahk","slide":8,"name":"Shape 6","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"textChars":46,"textLines":1}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"Do not reveal the completed expression immediately. Expected completion is y0..."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"Predict before changing a parameter","textShapes":9}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"textChars":35,"textLines":1}
+{"kind":"shape","id":"sh/0b65obm9","slide":9,"name":"Shape 1","bbox":[96.67,220,433.33,223.33]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"textChars":14,"textLines":1}
+{"kind":"shape","id":"sh/mdonql4z","slide":9,"name":"Shape 3","bbox":[126.67,303.33,346.67,60]}
+{"kind":"textbox","id":"sh/9gzml0nq","slide":9,"textChars":12,"textLines":1}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"textChars":36,"textLines":1}
+{"kind":"shape","id":"sh/bih4na5w","slide":9,"name":"Shape 6","bbox":[740,220,433.33,223.33]}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/oza1gfyh","slide":9,"name":"Shape 8","bbox":[770,303.33,346.67,60]}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"textChars":18,"textLines":1}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"textChars":37,"textLines":1}
+{"kind":"shape","id":"sh/3y107axw","slide":9,"name":"Shape 11","bbox":[560,333.33,146.67,0]}
+{"kind":"shape","id":"sh/cnu1kzyd","slide":9,"name":"Shape 12","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/do3id4fy","slide":9,"textChars":49,"textLines":1}
+{"kind":"textbox","id":"sh/qlcjipgn","slide":9,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"This is the bounded parameter modification used in the lecture Live Script: 2..."}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"Read the loop output as evidence","textShapes":10}
+{"kind":"textbox","id":"sh/xc3mho32","slide":10,"textChars":32,"textLines":1}
+{"kind":"shape","id":"sh/zelojyl8","slide":10,"name":"Shape 1","bbox":[840,190,343.33,366.67]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"textChars":19,"textLines":2}
+{"kind":"shape","id":"sh/l036l83y","slide":10,"name":"Shape 3","bbox":[866.67,293.33,37.33,37.33]}
+{"kind":"textbox","id":"sh/kzu5c32t","slide":10,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/725onyl4","slide":10,"textChars":24,"textLines":1}
+{"kind":"shape","id":"sh/m1cnetkj","slide":10,"name":"Shape 6","bbox":[866.67,350,37.33,37.33]}
+{"kind":"textbox","id":"sh/s7yt4b21","slide":10,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/d87uxg3m","slide":10,"textChars":37,"textLines":1}
+{"kind":"shape","id":"sh/q5gb21kb","slide":10,"name":"Shape 9","bbox":[866.67,420,37.33,37.33]}
+{"kind":"textbox","id":"sh/r6pcv6lw","slide":10,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/0bit8b2d","slide":10,"textChars":80,"textLines":1}
+{"kind":"shape","id":"sh/1cru1g3y","slide":10,"name":"Shape 12","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"textChars":48,"textLines":1}
+{"kind":"textbox","id":"sh/fapcz6ls","slide":10,"textChars":2,"textLines":1}
+{"kind":"image","id":"im/ra907i14","slide":10,"name":"Image 0","bbox":[145.92,186.67,581.49,383.33]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"Use the retained MATLAB plot. The model is algebraic and does not impose a gr..."}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"Classify the defect before debugging","textShapes":12}
+{"kind":"textbox","id":"sh/xcryxg7y","slide":11,"textChars":36,"textLines":1}
+{"kind":"shape","id":"sh/wbih4b6d","slide":11,"name":"Shape 1","bbox":[76.67,213.33,336.67,286.67]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/250zy18b","slide":11,"textChars":50,"textLines":1}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"textChars":30,"textLines":1}
+{"kind":"shape","id":"sh/o7ih0r6h","slide":11,"name":"Shape 5","bbox":[453.33,213.33,336.67,286.67]}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"textChars":27,"textLines":1}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"textChars":49,"textLines":1}
+{"kind":"textbox","id":"sh/ofqtgnyt","slide":11,"textChars":26,"textLines":1}
+{"kind":"shape","id":"sh/9gza9sze","slide":11,"name":"Shape 9","bbox":[830,213.33,336.67,286.67]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"textChars":18,"textLines":1}
+{"kind":"textbox","id":"sh/nehs7iho","slide":11,"textChars":42,"textLines":1}
+{"kind":"textbox","id":"sh/0b6tc3yx","slide":11,"textChars":31,"textLines":1}
+{"kind":"shape","id":"sh/1cfa58zi","slide":11,"name":"Shape 13","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/epobatgr","slide":11,"textChars":70,"textLines":1}
+{"kind":"textbox","id":"sh/zaxs3yhc","slide":11,"textChars":2,"textLines":1}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"Introduce the three categories before diagnosing specific examples. |  | [Sou..."}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"Syntax stops; indexing can fail silently","textShapes":8}
+{"kind":"textbox","id":"sh/1gbm9s3a","slide":12,"textChars":40,"textLines":1}
+{"kind":"shape","id":"sh/0f2lgnmp","slide":12,"name":"Shape 1","bbox":[76.67,200,506.67,333.33]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"textChars":13,"textLines":1}
+{"kind":"shape","id":"sh/q903ad4n","slide":12,"name":"Shape 3","bbox":[103.33,286.67,453.33,156.67]}
+{"kind":"textbox","id":"sh/dcbm583y","slide":12,"textChars":97,"textLines":4}
+{"kind":"textbox","id":"sh/sb2lcnmd","slide":12,"textChars":43,"textLines":1}
+{"kind":"shape","id":"sh/b6d4f2lc","slide":12,"name":"Shape 6","bbox":[670,200,506.67,333.33]}
+{"kind":"textbox","id":"sh/a543mx4r","slide":12,"textChars":15,"textLines":1}
+{"kind":"shape","id":"sh/wvupgz6t","slide":12,"name":"Shape 8","bbox":[696.67,286.67,453.33,156.67]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"textChars":89,"textLines":4}
+{"kind":"textbox","id":"sh/atc7epon","slide":12,"textChars":58,"textLines":1}
+{"kind":"textbox","id":"sh/bulo7u58","slide":12,"textChars":2,"textLines":1}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"Contrast a structural syntax error with an indexing error that can execute wi..."}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"Known value checks the start; physics checks the sign","textShapes":10}
+{"kind":"textbox","id":"sh/q50nydsj","slide":13,"textChars":53,"textLines":1}
+{"kind":"shape","id":"sh/bq9orito","slide":13,"name":"Shape 1","bbox":[76.67,200,480,300]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/21gnuts7","slide":13,"textChars":22,"textLines":1}
+{"kind":"shape","id":"sh/32ponyts","slide":13,"name":"Shape 4","bbox":[673.33,200,506.67,320]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"textChars":20,"textLines":1}
+{"kind":"shape","id":"sh/1076lobm","slide":13,"name":"Shape 6","bbox":[713.33,286.67,426.67,106.67]}
+{"kind":"textbox","id":"sh/hcfy9k3u","slide":13,"textChars":54,"textLines":2}
+{"kind":"textbox","id":"sh/gb6x0zm9","slide":13,"textChars":28,"textLines":1}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"textChars":41,"textLines":1}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"textChars":33,"textLines":1}
+{"kind":"shape","id":"sh/t8fy5k3i","slide":13,"name":"Shape 11","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/876xwfmx","slide":13,"textChars":49,"textLines":1}
+{"kind":"textbox","id":"sh/7mdg3als","slide":13,"textChars":2,"textLines":1}
+{"kind":"image","id":"im/9czix0b6","slide":13,"name":"Image 0","bbox":[156.67,299.49,313.33,67.68]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"Be explicit that y(0)=0 m does not detect the wrong gravity sign. The initial..."}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"Week 2 exit ticket","textShapes":12}
+{"kind":"textbox","id":"sh/xc7eds76","slide":14,"textChars":18,"textLines":1}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"textChars":61,"textLines":1}
+{"kind":"shape","id":"sh/jepwf2pc","slide":14,"name":"Shape 2","bbox":[83.33,186.67,37.33,37.33]}
+{"kind":"textbox","id":"sh/idgvmx8r","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/5grehs7i","slide":14,"textChars":61,"textLines":1}
+{"kind":"shape","id":"sh/kfidonqx","slide":14,"name":"Shape 5","bbox":[150,248,913.33,0]}
+{"kind":"shape","id":"sh/zi5c3y98","slide":14,"name":"Shape 6","bbox":[83.33,270,37.33,37.33]}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/c3e1gjyd","slide":14,"textChars":62,"textLines":1}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"name":"Shape 9","bbox":[150,331.33,913.33,0]}
+{"kind":"shape","id":"sh/a1wze9g7","slide":14,"name":"Shape 10","bbox":[83.33,353.33,37.33,37.33]}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"textChars":69,"textLines":1}
+{"kind":"shape","id":"sh/ls7idofu","slide":14,"name":"Shape 13","bbox":[150,414.67,913.33,0]}
+{"kind":"shape","id":"sh/y5wjitgj","slide":14,"name":"Shape 14","bbox":[83.33,436.67,37.33,37.33]}
+{"kind":"textbox","id":"sh/z650byxo","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/0buh8zy5","slide":14,"textChars":77,"textLines":1}
+{"kind":"shape","id":"sh/1w3i14fq","slide":14,"name":"Shape 17","bbox":[76.67,616.67,1040,63.33]}
+{"kind":"textbox","id":"sh/hsvy50re","slide":14,"textChars":59,"textLines":1}
+{"kind":"textbox","id":"sh/grmxwvqt","slide":14,"textChars":2,"textLines":1}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"Collect short responses. Retain the distinction between a code-stop syntax de..."}
+{"kind":"notice","message":"Truncated: omitted 0 lines. Increase maxChars or narrow target."}

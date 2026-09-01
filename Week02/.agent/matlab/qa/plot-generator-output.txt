@@ -1,0 +1,15 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+Week 02 retained plot generated successfully.
+y(0 s)   = 0.00000 m
+y(0.5 s) = 8.77375 m
+y(1.0 s) = 15.09500 m
+y(4.0 s) = 1.52000 m
+sampled peak, 20 m/s = 20.38000 m
+sampled peak, 15 m/s = 11.46375 m
+WEEK02_PLOT_GENERATOR_OK

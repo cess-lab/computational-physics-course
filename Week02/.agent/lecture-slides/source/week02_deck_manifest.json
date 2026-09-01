@@ -1,0 +1,27 @@
+{
+  "schema": "PHY4605 lecture deck manifest v2",
+  "deck": "Week02/Lecture_Slides_Week02.pptx",
+  "generator": "PptxGenJS 4.x using the installed Codex node runtime",
+  "lockedLectureModel": "vertical launch, upward positive, no air resistance: y(t)=y0+v0*t-0.5*g*t^2; y0=0 m, v0=20 m/s, g=9.81 m/s^2; t_s=0:0.5:4",
+  "coreNewIdeas": [
+    "plain-language decomposition and pseudocode",
+    "for-loop index-to-array mapping",
+    "defect categories plus known-value and physical-evidence debugging"
+  ],
+  "slides": [
+    {"number":1,"tier":"Core","variant":"Opening","title":"Pseudocode, Loops and Debugging","subtitle":"Week 2 | Make Each Step Traceable","job":"Orient the familiar model as an algorithmic problem"},
+    {"number":2,"tier":"Core","variant":"T1","title":"Start with a physical prediction","job":"State direction, assumptions, and predicted behaviour"},
+    {"number":3,"tier":"Core","variant":"T3","title":"Name the model before the algorithm","job":"Connect the equation and locked values to the computation"},
+    {"number":4,"tier":"Core","variant":"T3","title":"Break one physics task into small actions","job":"Teach input/calculation/output/check decomposition"},
+    {"number":5,"tier":"Core","variant":"T3","title":"Map pseudocode to one code block","job":"Map pseudocode to the loop structure"},
+    {"number":6,"tier":"Core","variant":"T3","title":"A for-loop fills one array entry at a time","job":"Explain indexed loop anatomy"},
+    {"number":7,"tier":"Core","variant":"T1","title":"Trace the first two iterations","job":"Trace the first two calculations by hand"},
+    {"number":8,"tier":"Core","variant":"T3","title":"Complete the one missing calculation","job":"Bounded scaffold completion"},
+    {"number":9,"tier":"Core","variant":"T3","title":"Predict before changing a parameter","job":"Modify v0 from 20 m/s to 15 m/s with prediction"},
+    {"number":10,"tier":"Core","variant":"T3","title":"Read the loop output as evidence","job":"Interpret the MATLAB-generated comparison plot and validity"},
+    {"number":11,"tier":"Core","variant":"T3","title":"Classify the defect before debugging","job":"Classify syntax, array/indexing/operator, and physical/logical defects"},
+    {"number":12,"tier":"Core","variant":"T3","title":"Syntax stops; indexing can fail silently","job":"Compare a syntax defect with an indexing defect"},
+    {"number":13,"tier":"Core","variant":"T3","title":"Known value checks the start; physics checks the sign","job":"Use the Core initial-value check while explaining its limitation"},
+    {"number":14,"tier":"Core","variant":"T1","title":"Week 2 exit ticket","job":"Consolidate decomposition, tracing, debugging, validation, and interpretation"}
+  ]
+}
