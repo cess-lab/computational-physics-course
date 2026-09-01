@@ -7,7 +7,7 @@ const ROOT = "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-cours
 const SYSTEM = path.join(ROOT, ".agent/lecture-slide-system");
 const WEEK = path.join(ROOT, "Week01");
 const OUTPUT = path.join(WEEK, "Lecture_Slides_Week01.pptx");
-const QA = path.join(WEEK, ".agent/lecture-slides/qa");
+const QA = path.join(WEEK, ".agent/lecture-slides/qa/terra-sol-round4");
 const EQUATIONS_DIR = path.join(WEEK, ".agent/lecture-slides/assets/equations");
 const MATLAB_FIGURES_DIR = path.join(WEEK, ".agent/lecture-slides/assets/matlab-figures");
 const PROJECTILE = path.join(WEEK, ".agent/lecture-slides/assets/projectile-visual-matte.png");
@@ -106,7 +106,6 @@ const imageOrderBySlide = {
   4: ["visual-launch-boundary", "equation-launch-time", "equation-launch-height", "equation-computed-first-value"],
   5: ["equation-symbol-1", "equation-unit-1", "equation-symbol-2", "equation-unit-2", "equation-symbol-3", "equation-unit-3", "equation-symbol-4", "equation-unit-4"],
   7: ["equation-position-model", "visual-equation-motion", "equation-term-termY0", "equation-term-termV0t", "equation-term-termGravity", "equation-term-termPosition"],
-  8: ["matlab-launch-speed-figure", "equation-comparison-v0", "equation-comparison-fixed"],
   12: ["week01-matlab-plot"],
 };
 
@@ -717,7 +716,8 @@ async function main() {
       { symbolAsset: "symbolT", symbolTex: "t", name: "time", code: "t", unitAsset: "unitS", unitTex: "\\mathrm{s}", unitWidth: 42, unitHeight: 17, unitTopOffset: 41, fill: C.paleBlue, color: C.blue },
       { symbolAsset: "symbolY", symbolTex: "y", name: "vertical position", code: "y", unitAsset: "unitM", unitTex: "\\mathrm{m}", unitWidth: 42, unitHeight: 17, unitTopOffset: 41, fill: C.paleValid, color: C.teal },
       { symbolAsset: "symbolV0", symbolTex: "v_0", name: "initial velocity", code: "v0", unitAsset: "unitMs1", unitTex: "\\mathrm{m\\,s^{-1}}", unitWidth: 160, unitHeight: 26, unitTopOffset: 36, fill: C.paleGold, color: C.gold },
-      { symbolAsset: "symbolG", symbolTex: "g", name: "gravitational acceleration", code: "g", unitAsset: "unitMs2", unitTex: "\\mathrm{m\\,s^{-2}}", unitWidth: 160, unitHeight: 26, unitTopOffset: 36, fill: C.palePurple, color: C.purple },
+      // symbol-g.{tex,svg,png} is rendered with --fg #C98A16 to match this row.
+      { symbolAsset: "symbolG", symbolTex: "g", name: "gravitational acceleration", code: "g", unitAsset: "unitMs2", unitTex: "\\mathrm{m\\,s^{-2}}", unitWidth: 160, unitHeight: 26, unitTopOffset: 36, fill: C.paleGold, color: C.gold },
     ];
     const cols = [115, 315, 870, 1370];
     ["physics symbol", "meaning", "MATLAB name", "unit"].forEach((label, i) => {
@@ -817,44 +817,39 @@ async function main() {
       addText(slide, term.head, { left: term.x + 24, top: 780, width: 302, height: 40 }, { fontSize: 24, bold: true, color: C.navy, alignment: "center", verticalAlignment: "middle" });
     });
 
-    addCard(slide, { left: 260, top: 850, width: 1260, height: 76 }, C.paleRed, C.red);
-    addText(slide, "Unit check: every term on the right must have units of metres", { left: 305, top: 869, width: 1170, height: 42 }, { fontSize: 30, bold: true, color: C.red, alignment: "center" });
+    addCard(slide, { left: 260, top: 850, width: 1260, height: 76 }, C.paleValid, C.teal);
+    addText(slide, "Unit check: every term on the right must have units of metres", { left: 305, top: 869, width: 1170, height: 42 }, { fontSize: 30, bold: true, color: C.teal, alignment: "center" });
     addSlideNumber(slide, 7);
     addNotes(slide, ["PHY4605 Lecture Slide Deck Design Specification", "Standard constant-acceleration kinematics equation", "LaTeX equation assets: `vertical-motion-position-equation.tex`, `term-y0.tex`, `term-v0t.tex`, `term-gravity.tex`, and `term-position.tex`; renderer `render-equations-diagrams`; transparent PNG fallback inserted after retaining matching SVG; foreground colours are encoded by semantic term role; target boxes use fit-contain; alt text attached; asset directory `.agent/lecture-slide-system/assets/equations`", "OpenAI ImageGen; PHY4605 Matte Scientific Cutaway visual-only strictly vertical y(t) time-sequence illustration, with no horizontal projectile path; generated 2026-08-31"]);
   }
 
-  // Slide 8 — comparison plot proof.
-  {
+  // Appendix slide — deferred until after the complete Core route.
+  const addWorkingExposureAppendix = () => {
     const slide = presentation.slides.add({ layout: "Content T2" });
     slide.background.fill = C.white;
-    addTitle(slide, "Changing one parameter reveals the trend", "T2", "Keep the model fixed and change only the initial velocity");
-
-    addPill(slide, "controlled comparison", { left: 115, top: 258, width: 300, height: 52 }, C.paleBlue, C.blue);
-    addCard(slide, { left: 115, top: 340, width: 420, height: 350 }, C.paleGold, C.gold);
-    addText(slide, "Ask one focused question", { left: 151, top: 378, width: 330, height: 70 }, { fontSize: 32, bold: true, color: C.navy });
-    addText(slide, "What changes when\nlaunch speed changes?", { left: 151, top: 458, width: 330, height: 112 }, { fontSize: 30, color: C.charcoal, lineSpacing: 1.05 });
-    addText(slide, "Keep gravity and starting\nheight fixed.", { left: 151, top: 582, width: 330, height: 96 }, { fontSize: 27, bold: true, color: C.gold, lineSpacing: 1.05 });
-    slide.images.add({
-      blob: launchSpeedFigureBytes,
-      contentType: "image/png",
-      name: "matlab-launch-speed-figure",
-      prompt: "MATLAB-generated numerical evidence; source and data retained under .agent/lecture-slide-system/assets/matlab-figures",
-      alt: "MATLAB-generated comparison of two launch speeds with LaTeX-interpreted labels and legend",
-      fit: "contain",
-      position: { left: 600, top: 250, width: 1120, height: 620 },
+    addTitle(slide, "Working exposure: selected values", "T2", "Read a few model outputs before drawing the full graph");
+    addText(slide, "For the same vertical-motion model, each selected time has one computed height.", { left: 115, top: 278, width: 1510, height: 44 }, { fontSize: 30, color: C.charcoal });
+    const values = [
+      { time: "0.0 s", height: "0.00 m", label: "launch", fill: C.paleBlue, color: C.blue },
+      { time: "1.0 s", height: "15.10 m", label: "rising", fill: C.paleNeutral, color: C.navy },
+      { time: "2.0 s", height: "20.38 m", label: "near the peak", fill: C.paleGold, color: C.gold },
+      { time: "3.0 s", height: "15.86 m", label: "falling", fill: C.paleNeutral, color: C.navy },
+      { time: "4.0 s", height: "1.52 m", label: "near return", fill: C.paleValid, color: C.teal },
+    ];
+    values.forEach((value, index) => {
+      const left = 115 + index * 325;
+      addCard(slide, { left, top: 390, width: 285, height: 290 }, value.fill, value.color);
+      addText(slide, value.time, { left: left + 28, top: 432, width: 230, height: 44 }, { fontSize: 30, bold: true, color: value.color, alignment: "center" });
+      addText(slide, value.height, { left: left + 28, top: 515, width: 230, height: 54 }, { fontSize: 34, bold: true, color: C.navy, alignment: "center" });
+      addText(slide, value.label, { left: left + 28, top: 595, width: 230, height: 54 }, { fontSize: 24, color: C.charcoal, alignment: "center" });
     });
-    addText(slide, "Higher initial speed → higher peak", { left: 115, top: 740, width: 430, height: 76 }, { fontSize: 30, bold: true, color: C.navy, alignment: "center" });
-    addText(slide, "changed:", { left: 115, top: 836, width: 115, height: 48 }, { fontSize: 24, bold: true, color: C.blue });
-    addEquationAsset(slide, equationBytes.comparisonV0, { left: 235, top: 834, width: 58, height: 34 }, { name: "equation-comparison-v0", assetKey: "comparisonV0", tex: "v_0", foreground: C.blue, alt: "LaTeX-rendered symbol v subscript zero" });
-    addText(slide, "fixed:", { left: 320, top: 836, width: 78, height: 48 }, { fontSize: 24, bold: true, color: C.muted });
-    addEquationAsset(slide, equationBytes.comparisonGY0, { left: 400, top: 834, width: 130, height: 34 }, { name: "equation-comparison-fixed", assetKey: "comparisonGY0", tex: "g,\\;y_0", foreground: C.muted, alt: "LaTeX-rendered expression g and y subscript zero" });
+    addCard(slide, { left: 180, top: 760, width: 1420, height: 104 }, C.paleValid, C.teal);
+    addText(slide, "Check the pattern: height rises, reaches one maximum, then falls toward the launch height.", { left: 225, top: 782, width: 1330, height: 60 }, { fontSize: 30, bold: true, color: C.teal, alignment: "center" });
+    addSlideNumber(slide, 13);
+    addNotes(slide, ["PHY4605 Lecture Slide Deck Design Specification", "Working exposure only: selected outputs from y(t) = 20t - 0.5(9.81)t^2 for t = 0, 1, 2, 3, 4 s. This is a logical/table support slide, not a parameter sweep."]);
+  };
 
-    addText(slide, "Observed: the blue curve reaches the higher peak", { left: 600, top: 878, width: 1000, height: 42 }, { fontSize: 30, bold: true, color: C.navy });
-    addSlideNumber(slide, 8);
-    addNotes(slide, ["PHY4605 Lecture Slide Deck Design Specification", "Standard constant-acceleration kinematics; comparison calculated for v0 = 20 m/s and 15 m/s", "MATLAB figure `assets/matlab-figures/launch_speed_comparison.png`, generated by `source/generate_master_matlab_figures.m` from retained `launch_speed_comparison_data.mat` and `.csv`; title, axes, legend, and all figure text use the LaTeX interpreter", "LaTeX display assets: `comparison-v0.tex` and `comparison-g-y0.tex`; rendered by `render-equations-diagrams`; transparent PNGs inserted for the changed/fixed parameter labels; matching SVG and TeX retained in `.agent/lecture-slide-system/assets/equations`"]);
-  }
-
-  // Slide 9 — Core recap and exit checkpoint.
+  // Slide 8 — Core recap checkpoint.
   {
     const slide = presentation.slides.add({ layout: "Content T1" });
     slide.background.fill = C.white;
@@ -876,12 +871,12 @@ async function main() {
     });
 
     addCard(slide, { left: 115, top: 740, width: 1575, height: 118 }, C.paleNeutral, C.navy);
-    addText(slide, "Exit prompt: which step would help you find a wrong sign in the model?", { left: 160, top: 774, width: 1485, height: 70 }, { fontSize: 32, bold: true, color: C.navy, alignment: "center" });
-    addSlideNumber(slide, 9);
+    addText(slide, "Checkpoint: which step would help you find a wrong sign in the model?", { left: 160, top: 774, width: 1485, height: 70 }, { fontSize: 32, bold: true, color: C.navy, alignment: "center" });
+    addSlideNumber(slide, 8);
     addNotes(slide, ["PHY4605 Course Topic and Difficulty Blueprint", "PHY4605 Week 01 content manifest"]);
   }
 
-  // Slide 10 — explicit array construction and indexing Core repair.
+  // Slide 9 — explicit array construction and indexing Core repair.
   {
     const slide = presentation.slides.add({ layout: "Content T1" });
     slide.background.fill = C.white;
@@ -896,11 +891,11 @@ async function main() {
     addText(slide, "length(t_s)     % 41", { left: 980, top: 430, width: 610, height: 52 }, { typeface: F.code, fontSize: 30, color: C.navy });
     addText(slide, "t_s(11)         % 1.0 s", { left: 980, top: 540, width: 610, height: 52 }, { typeface: F.code, fontSize: 30, color: C.navy });
     addText(slide, "MATLAB indices start at 1: t_s(1) is the launch time", { left: 115, top: 800, width: 1500, height: 48 }, { fontSize: 32, bold: true, color: C.navy });
-    addSlideNumber(slide, 10);
+    addSlideNumber(slide, 9);
     addNotes(slide, ["PHY4605 Week 01 content manifest", "MATLAB documentation: colon operator, linspace, and array indexing"]);
   }
 
-  // Slide 11 — element-wise operator diagnosis Core repair.
+  // Slide 10 — element-wise operator diagnosis Core repair.
   {
     const slide = presentation.slides.add({ layout: "Content T1" });
     slide.background.fill = C.white;
@@ -916,13 +911,13 @@ async function main() {
       addText(slide, item.code, { left: item.x + 30, top: 470, width: 330, height: 58 }, { typeface: F.code, fontSize: 30, bold: true, color: C.navy });
       addText(slide, item.result, { left: item.x + 30, top: 565, width: 330, height: 52 }, { fontSize: 25, color: C.charcoal });
     });
-    addCard(slide, { left: 115, top: 760, width: 1575, height: 100 }, C.paleRed, C.red);
-    addText(slide, "Checkpoint: explain why the model line contains .* and .^", { left: 155, top: 790, width: 1495, height: 42 }, { fontSize: 32, bold: true, color: C.red, alignment: "center" });
-    addSlideNumber(slide, 11);
+    addCard(slide, { left: 115, top: 760, width: 1575, height: 100 }, C.paleGold, C.gold);
+    addText(slide, "Checkpoint: explain why the model line contains .* and .^", { left: 155, top: 790, width: 1495, height: 42 }, { fontSize: 32, bold: true, color: C.gold, alignment: "center" });
+    addSlideNumber(slide, 10);
     addNotes(slide, ["PHY4605 Course Topic and Difficulty Blueprint", "MATLAB documentation: array vs matrix operations"]);
   }
 
-  // Slide 12 — bounded code trace and graph interpretation.
+  // Slide 11 — bounded code trace and graph interpretation.
   {
     const slide = presentation.slides.add({ layout: "Content T1" });
     slide.background.fill = C.white;
@@ -932,11 +927,11 @@ async function main() {
     addText(slide, ["t_s = 0:0.1:4;", "y_m = 20.*t_s - 0.5*9.81*t_s.^2;", "plot(t_s,y_m,'LineWidth',2)", "xlabel('Time (s)')", "ylabel('Vertical position (m)')", "assert(abs(y_m(1)) < 1e-12)"].join("\n"), { left: 155, top: 395, width: 660, height: 340 }, { typeface: F.code, fontSize: 25, color: C.navy, lineSpacing: 1.22 });
     slide.images.add({ blob: await fs.readFile(path.join(MATLAB_FIGURES_DIR, "week01_height_time.png")), contentType: "image/png", name: "week01-matlab-plot", prompt: "MATLAB-generated numerical evidence", alt: "MATLAB height-versus-time graph for the Week 1 vertical-motion model", fit: "contain", position: { left: 955, top: 255, width: 730, height: 520 } });
     addText(slide, "Prediction: rise, one peak, then fall. Check: y_m(1) = 0 m", { left: 115, top: 860, width: 1520, height: 42 }, { fontSize: 30, bold: true, color: C.navy });
-    addSlideNumber(slide, 12);
+    addSlideNumber(slide, 11);
     addNotes(slide, ["PHY4605 Week 01 content manifest", "MATLAB figure generated by Week01/.agent/matlab/generate_week01_plot.m from retained MAT and CSV data"]);
   }
 
-  // Slide 13 — student-facing exit ticket.
+  // Slide 12 — student-facing exit ticket.
   {
     const slide = presentation.slides.add({ layout: "Content T1" });
     slide.background.fill = C.white;
@@ -955,9 +950,12 @@ async function main() {
     });
     addCard(slide, { left: 115, top: 850, width: 1575, height: 88 }, C.paleValid, C.green);
     addText(slide, "Next time: turn the same physical model into a traceable algorithm", { left: 155, top: 875, width: 1495, height: 40 }, { fontSize: 30, bold: true, color: C.green, alignment: "center" });
-    addSlideNumber(slide, 13);
+    addSlideNumber(slide, 12);
     addNotes(slide, ["PHY4605 Course Topic and Difficulty Blueprint", "Week 02 connection: pseudocode, loops, and debugging"]);
   }
+
+  // Working exposure begins only after the complete 12-slide Core route.
+  addWorkingExposureAppendix();
 
   const layoutSummary = {
     masters: presentation.masters.items.map((item) => ({ id: item.id, name: item.name })),

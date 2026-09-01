@@ -1,45 +1,24 @@
-# PHY4605 editable master — Terra Medium structural repair
+# Terra generator round — master repair
 
-- Generator: Terra Medium (`gpt-5.6-terra`, `medium`), editable-source owner.
-- Output: `../../masters/PHY4605_Editable_Slide_Master.pptx`
-- SHA-256: `185cdbd871821f91bb2cbb4f1d08c1e4fbcf0cd47dbb3b08ff8def46abf7f1a6`
+- Generator: `gpt-5.6-terra`, medium reasoning.
+- Canonical output: `../../masters/PHY4605_Editable_Slide_Master.pptx`.
+- SHA-256: `f1aa3e424a31c908573959cf57852885ef05080b1b779292f4f7bc20ced4e1df`.
 
-## Source-level repair
+## Recorded generator work
 
-The deterministic source `source/build_master_proof.mjs` now injects native
-OpenXML PowerPoint placeholders during its reproducible export repair. The
-placeholders are intentionally empty, so dependent decks can supply their own
-editable text without duplicate visible content.
+The deterministic source retains native OpenXML title, subtitle, and slide-number placeholders on the Opening and Content layouts and masters. The PPTX declares Nunito and IBM Plex Mono with no serif-family tokens. Canonical visual proof uses the artifact-tool renderer, which resolves Nunito and writes 1920 x 1080 PNGs from this exact PPTX hash.
 
-- The `Opening` layout inherits editable course-tag, title, and subtitle
-  treatment.
-- `Content T1`, `Content T2`, and `Content T3` each inherit editable title,
-  subtitle, and slide-number treatment.
-- The library fallback `Title Slide` layout also receives the same treatment,
-  so no master layout remains structurally empty.
-- Both slide-master XML parts now also contain the same inherited title,
-  subtitle, and slide-number placeholder treatment.
+This repair makes the Slide 5 gravitational-acceleration row consistently evaluation gold: its pale-gold panel/border and the project-local LaTeX `g` asset use `#FFF7E6` / `#C98A16`. It also makes the Slide 7 unit-check strip validation teal (`#F0FAF7` / `#2A9D9F`), replacing the inappropriate caution red.
 
-This resolves the prior structural finding that layouts and masters were empty
-apart from their group roots. This change was made only in the deterministic
-source, not by editing the PPTX manually in PowerPoint.
+## Evidence and checks
 
-## Generator QA
-
-- Lock check: no `~$PHY4605_Editable_Slide_Master.pptx` lock file was present
-  before rebuilding.
-- OpenXML validation: `officecli validate` passed.
-- Office issue inspection: `officecli view … issues` returned zero issues.
-- Structural inspection confirms `p:ph` title, `p:ph` subTitle, and `p:ph`
-  sldNum placeholders on all required layouts and both masters.
-- Rendering: the rebuilt PPTX was exported to PDF with headless LibreOffice and
-  rendered to nine 1920 × 1080 PNGs. Full-deck and title contact sheets are
-  retained in this directory. The generator inspected the full contact sheet,
-  title contact sheet, and a full-size representative content slide; no new
-  overlap, clipping, or visual drift was observed.
+- `artifact-1920/`: nine canonical 1920 x 1080 slide renders; the regenerated `full-deck-contact-sheet-1920.png` is built solely from them. `title-region-crops-1920/` contains true 1920 x 360 top title-region crops (source y=70–429), and `title-region-contact-sheet-1920.png` is their current 3 × 3 overview.
+- `current-render-dimensions.md` and `current-sha256sums.txt` bind every current render/contact sheet to this exact hash. The prior `render-dimensions.md` and `sha256sums.txt` are explicitly retired as legacy `185c…` evidence.
+- `master-proof-inspect.ndjson`, `master-layout-summary.json`, and `slide-*.layout.json` retain editable structure evidence.
+- `officecli validate` completed with no errors; `officecli view issues` reported zero issues.
+- `slides_test.py` completed with no overflow.
+- OpenXML placeholder count: seven title, seven subtitle, and six slide-number placeholders across layouts/masters.
 
 ## Audit state
 
-Awaiting a fresh independent **Sol Medium** read-only audit of this exact hash.
-No dependent weekly deck may be built or labelled approved until that audit
-passes.
+Sol Medium read-only follow-up: **PENDING**. This record is generator evidence only; it is not a self-audit verdict.

@@ -1,4 +1,8 @@
-# PHY4605 master — Round 3 QA
+# Archived historical QA — PHY4605 master, superseded 2026-08-31
+
+This record documents the retired Luna MAX → Terra High workflow and SHA-256 below. It is not a current production instruction, approval record, or substitute for the required Terra Medium → Sol Medium paired audit.
+
+## Original Round 3 QA
 
 - Generator: Luna MAX (`gpt-5.6-luna`, `max`)
 - Auditor: Terra High (`gpt-5.6-terra`, `high`), read-only

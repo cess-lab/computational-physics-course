@@ -1,3 +1,5 @@
+# RETIRED: legacy checksum for master hash 185cdbd871821f91bb2cbb4f1d08c1e4fbcf0cd47dbb3b08ff8def46abf7f1a6.
+# Current exact-hash checksums are in current-sha256sums.txt; do not use this file for the current master.
 185cdbd871821f91bb2cbb4f1d08c1e4fbcf0cd47dbb3b08ff8def46abf7f1a6  .agent/lecture-slide-system/masters/PHY4605_Editable_Slide_Master.pptx
 d8c63eff19b725028b8f87db932ba78c11c60a17046d9f2ec0407de09f401ab3  .agent/lecture-slide-system/qa/terra-sol-master-repair/full-deck-contact-sheet.png
 b392ceec479d5cab620235badb9658a9265a9085a5f320f36559e559255c6c55  .agent/lecture-slide-system/qa/terra-sol-master-repair/title-contact-sheet.png

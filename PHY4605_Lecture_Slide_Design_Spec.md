@@ -50,12 +50,9 @@ Use the following reference order when a visual judgement is not fully resolved 
 
 1. **This specification and its machine-readable token file** for all typography, geometry, colour, and acceptance rules.
 2. The approved editable title-and-component proof under `.agent/lecture-slide-system/masters/` for Nunito typography, title variants, subtitle contrast, grid, card construction, and component geometry.
-3. `First Attempts/Week05/.agent/lecture-slides/raster/slide-05.png` for fine card stroke and pale semantic fill treatment only; it is not a typography reference.
-4. `First Attempts/Week05/.agent/lecture-slides/raster/slide-02.png` for restrained workflow rhythm and whitespace only.
-5. `First Attempts/Week03/.agent/lecture-slides/raster/slide-01.png` for technical scientific linework and equation-to-diagram balance only.
-6. `First Attempts/Week02/.agent/lecture-slides/raster/slide-02.png` for open scientific composition only.
+3. The current weekly deck's own rendered proof set only for a directly comparable, already-approved component treatment. It never overrides this specification or the editable master.
 
-Do not use any archived deck as a typography master. Its title execution varies and predates the Nunito system. The editable master proof and this specification establish the title character and geometry.
+Do not use deleted, archived, or retired decks as a visual reference. The editable master proof and this specification establish the title character and geometry.
 
 Do not use Week 01's brighter saturation, photographic/three-dimensional imagery, or card-heavy composition as a visual default. Week 01 may inform the larger title-region proportions only.
 

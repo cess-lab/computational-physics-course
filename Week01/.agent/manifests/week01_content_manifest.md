@@ -22,7 +22,8 @@
 
 Core route: variables and units; one array and indexing; element-wise operations; a labelled plot; prediction, validation, and interpretation. Logical comparisons and the selected-value table are Working exposure. The analytical continuous peak is a reference result, not a second required validation.
 
-## Cross-material consistency
+## Lecture-route consistency
 
-All student-facing Week 01 materials use the names, values, sign convention, time grid, equation, and Core validation above. The MATLAB-generated plot has a blue model curve and a teal initial-value validation marker.
+The Week 01 lecture deck, learning note, lecture demonstration, and their retained MATLAB evidence use the names, values, sign convention, time grid, equation, and Core validation above. The MATLAB-generated plot has a blue model curve and a teal initial-value validation marker.
 
+The AI-enabled practical is intentionally outside this lecture-model lock. It transfers the Week 01 computational literacy to separately supplied RC-charging, mass-spring, and radioactive-decay models; its assumptions, variables, units, and validation references are locked in `Week01_Practical_AI_Enabled_Array_Challenge_Set.m` and the hidden practical protocol.

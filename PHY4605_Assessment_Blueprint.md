@@ -224,7 +224,7 @@ Require all ten submissions but count the best eight for the 12% group component
 
 After each group has locked its submission, assign every group a question slot and randomly select one group member to defend it. The draw must occur after submission, and the selected student must explain the model, trace the relevant code/output, and answer one validation or parameter-change follow-up. For cohorts with more groups than question slots, reuse a slot only with a distinct post-submission parameter or defect variant.
 
-Maintain a hidden rotation ledger: within a group, do not select a student again until every member has been selected; record an absence and schedule a make-up defence. The cumulative average of each student's scored defences supplies the 3% individual component. Score each defence equally across model/units, code/output trace, validation or parameter perturbation, and physical interpretation/AI judgement.
+Maintain a hidden rotation ledger: within a group, do not select a student again until every member has been selected; record an absence and schedule a make-up defence. Establish one completed defence entry for every member before any member receives a second entry, then calculate the cumulative average of each student's scored defences for the 3% individual component. Score each defence equally across model/units, code/output trace, validation or parameter perturbation, and physical interpretation/AI judgement.
 
 ## Individual AI-assisted lab test
 

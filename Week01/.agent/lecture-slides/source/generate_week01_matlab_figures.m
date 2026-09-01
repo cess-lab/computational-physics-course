@@ -23,11 +23,29 @@ writetable(table(t(:), y(:), 'VariableNames', {'time_s', 'height_m'}), ...
 
 makeFigure();
 plot(t, y, 'Color', [0.184 0.427 0.698], 'LineWidth', 4);
-xlabel('$\mathrm{Time},\ t\ (\mathrm{s})$', 'Interpreter', 'latex', 'FontSize', 27);
-ylabel('$\mathrm{Height},\ y\ (\mathrm{m})$', 'Interpreter', 'latex', 'FontSize', 27);
-title('$\mathrm{Vertical\ motion:\ height\ versus\ time}$', 'Interpreter', 'latex', 'FontSize', 30, 'FontWeight', 'bold');
+xlabel('$\mathrm{Time},\ t\ (\mathrm{s})$', 'Interpreter', 'latex', 'FontSize', 32);
+ylabel('$\mathrm{Height},\ y\ (\mathrm{m})$', 'Interpreter', 'latex', 'FontSize', 32);
+title('$\mathrm{Vertical\ motion:\ height\ versus\ time}$', 'Interpreter', 'latex', 'FontSize', 34, 'FontWeight', 'bold');
 xlim([0 4]); ylim([0 22]); grid on; box off;
-exportgraphics(gcf, fullfile(assetDir, 'height_time_evidence.png'), 'Resolution', 220);
+exportgraphics(gcf, fullfile(assetDir, 'height_time_evidence.png'), 'Resolution', 300);
+close(gcf);
+
+% Slide 12: a compact plot with deliberately enlarged tick labels and legend.
+t_s = 0:0.1:4;
+y_m = v0 .* t_s - 0.5 .* g .* t_s .^ 2;
+save(fullfile(assetDir, 'week01_height_time_data.mat'), 'g', 'v0', 't_s', 'y_m');
+writetable(table(t_s(:), y_m(:), 'VariableNames', {'time_s', 'height_m'}), ...
+    fullfile(assetDir, 'week01_height_time_data.csv'));
+makeFigure(); hold on;
+plot(t_s, y_m, 'Color', [0.184 0.427 0.698], 'LineWidth', 4, 'DisplayName', '$y(t)$');
+plot(0, 0, 'o', 'MarkerSize', 10, 'MarkerFaceColor', [0.165 0.616 0.624], ...
+    'MarkerEdgeColor', [0.165 0.616 0.624], 'DisplayName', '$y(0)=0$');
+xlabel('$\mathrm{Time},\ t\ (\mathrm{s})$', 'Interpreter', 'latex', 'FontSize', 32);
+ylabel('$\mathrm{Vertical\ position},\ y\ (\mathrm{m})$', 'Interpreter', 'latex', 'FontSize', 32);
+title('$\mathrm{Model\ output\ and\ launch\ check}$', 'Interpreter', 'latex', 'FontSize', 34, 'FontWeight', 'bold');
+legend('Interpreter', 'latex', 'FontSize', 28, 'Location', 'southoutside', 'Orientation', 'horizontal');
+xlim([0 4]); ylim([0 22]); grid on; box off;
+exportgraphics(gcf, fullfile(assetDir, 'week01_height_time.png'), 'Resolution', 300);
 close(gcf);
 
 v0Values = [20, 15];
@@ -60,7 +78,7 @@ end
 function makeFigure()
 fig = figure('Visible', 'off', 'Color', 'white', 'Position', [100 100 1540 830]);
 ax = axes(fig); %#ok<LAXES>
-set(ax, 'FontName', 'Helvetica', 'FontSize', 24, 'LineWidth', 1.8, ...
+set(ax, 'FontName', 'Helvetica', 'FontSize', 30, 'LineWidth', 1.8, ...
     'TickLabelInterpreter', 'latex', 'XColor', [0.247 0.294 0.341], ...
     'YColor', [0.247 0.294 0.341], 'GridColor', [0.867 0.898 0.925], ...
     'GridAlpha', 1);

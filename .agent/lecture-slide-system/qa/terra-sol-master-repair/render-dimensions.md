@@ -1,4 +1,11 @@
-# Canonical render dimensions
+# RETIRED — legacy canonical render dimensions
+
+This file is retained only as provenance for master SHA-256
+`185cdbd871821f91bb2cbb4f1d08c1e4fbcf0cd47dbb3b08ff8def46abf7f1a6`.
+It must not be used to review the current master. Current exact-hash proof is
+in `current-render-dimensions.md` and `current-sha256sums.txt`.
+
+# Legacy canonical render dimensions
 
 Master SHA-256: `185cdbd871821f91bb2cbb4f1d08c1e4fbcf0cd47dbb3b08ff8def46abf7f1a6`
 

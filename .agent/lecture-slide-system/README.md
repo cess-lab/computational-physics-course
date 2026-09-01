@@ -9,10 +9,10 @@ The canonical output is an editable PPTX. PDF and flattened-PPTX files are optio
 - `fonts/Nunito[wght].ttf` and its OFL licence;
 - `fonts/IBMPlexMono-Regular.ttf`;
 - `fonts/IBMPlexMono-SemiBold.ttf` and the IBM Plex licence;
-- `masters/PHY4605_Editable_Slide_Master.pptx` after lecturer approval;
+- `masters/PHY4605_Editable_Slide_Master.pptx` after an independent Sol Medium audit pass and lecturer acceptance;
 - rendered title and component proofs under `qa/`.
 
-Do not silently substitute fonts when these files are unavailable. The font files are intentionally not fabricated or downloaded by this schema update; stage them from their official licensed sources before building the reusable master.
+Do not silently substitute fonts when these files are unavailable. Stage them from their official licensed sources before building or repairing the reusable master.
 
 ## Source of truth
 

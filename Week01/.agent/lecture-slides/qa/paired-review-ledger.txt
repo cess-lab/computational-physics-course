@@ -19,3 +19,104 @@ Generator QA evidence:
 
 Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
 Audit verdict: PENDING independent review. The generator made no self-audit verdict.
+
+Generator remediation round 4 — Terra Medium (`gpt-5.6-terra`, `medium`)
+Output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `bf44239a85bd497c2290f56ee17d43bc55743df9d2b866430a0529985e639a2b`
+
+Recorded source changes: Slide 3 T2, Slide 4 T3, Slide 8 T2, and Slide 9 T1 now match the manifest. Slide 8 is labelled `Working exposure: selected values` and no longer contains a parameter sweep. Unit/checkpoint prompts use teal or gold; gravity is gold. The Week 01 MATLAB figure source regenerates enlarged ticks and the Slide 12 legend.
+
+Evidence: `terra-sol-round4/artifact-1920/` contains all 13 1920 x 1080 canonical renders; full/title contact sheets are in the same directory. `officecli validate` passed, `officecli view issues` reported 0 issues, OfficeCLI reports Nunito and IBM Plex Mono only, and `slides_test.py` passed with no overflow. OpenXML title/subtitle/slide-number placeholder counts are retained in `terra-sol-round4/generator-round4.md`.
+
+Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Audit verdict: PENDING independent review. The generator made no self-audit verdict.
+
+---
+
+Generator remediation round 5 — Terra Medium (`gpt-5.6-terra`, `medium`)
+Output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `b4b030328e1fed9458b91852c7a4e406ceabb982cc9ec39a2047bfeba13dfac0`
+
+Narrow source repair: the Slide 5 `gravitational acceleration` row now uses pale gold `#FFF7E6` with gold `#C98A16`, replacing the purple treatment. The manifest notes this approved semantic. The source was rebuilt before any QA.
+
+Exact-hash evidence: `terra-sol-round4/artifact-1920/` has all 13 canonical 1920 x 1080 artifact-tool renders and refreshed full/title contact sheets. `officecli validate` passed; `officecli view issues` found 0 issues; `slides_test.py` passed with no overflow. The hash-bound placeholder scan records 13 slide title, 13 subtitle, 12 slide-number, and 7/7/6 layout-plus-master placeholders. OfficeCLI records 163 Nunito and 26 IBM Plex Mono uses.
+
+Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Audit verdict: PENDING / unavailable because no account usage remains for an independent rerun. The generator made no self-audit verdict.
+
+---
+
+Current exact-hash generator record — Terra Medium (`gpt-5.6-terra`, `medium`) — 2026-09-01
+
+Output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `ac4f01f9e89ef972f0115755d07dc0c5ba895909ba1415b9ccf10c65826187ac`
+
+This supersedes the preceding generator evidence after the independent audit findings: the Core route is Slides 1–12, Slide 8 is named `Checkpoint`, and the retained vertical-motion `Working exposure: selected values` material is an optional Slide 13 appendix. The manifest and deterministic source agree. All 13 artifact-tool renders are current 1920 × 1080 proofs with checksums in `terra-sol-round4/current-sha256sums.txt`; canonical full/title contact sheets are present. `officecli validate` passed, Office issue scan reported 0 issues, overflow check passed, and native placeholder counts are 13/13/12 in slides and 7/7/6 in layouts plus masters.
+
+Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Audit follow-up: PENDING. The generator made no self-audit verdict.
+
+---
+
+QA-evidence correction — Terra Medium (`gpt-5.6-terra`, `medium`) — 2026-09-01
+
+PPTX unchanged: `ac4f01f9e89ef972f0115755d07dc0c5ba895909ba1415b9ccf10c65826187ac`.
+Replaced misleading title-crop/contact evidence with `title-region-crops-1920/` (13 true 1920 × 360 top title-region crops from source y=70–429) and `title-region-contact-sheet-1920.png` (1920 × 600, SHA-256 `7ccf5b07ac997f1d01b51bc6093256d52cd819b2a6d8272bee2d10b1b8a9c457`). Regenerated `full-deck-contact-sheet-1920.png` solely from the 13 current artifact-tool renders in physical order: Core Slides 1–12, including Slide 8 Checkpoint, then Working appendix Slide 13 (1920 × 1800, SHA-256 `61278475a565cb4cab3feaf1763a59ca2f09699f4026d5a94af20b5d50c755f4`). Removed the misleading old title-crop/contact paths; current provenance is in `title-region-proof.md` and `current-sha256sums.txt`.
+
+Audit follow-up: PENDING. The generator made no self-audit verdict.
+
+---
+
+Generator remediation round 7 — Terra Medium (`gpt-5.6-terra`, `medium`) — 2026-09-01
+Output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `ac4f01f9e89ef972f0115755d07dc0c5ba895909ba1415b9ccf10c65826187ac`
+
+Accepted independent-audit repairs in deterministic source: the Core route now runs through Slides 1–12, with the previously interrupting vertical-motion `Working exposure: selected values` retained as Slide 13 appendix material after the Core checkpoint. Slide 8 is renamed `Checkpoint`, avoiding a false implication that Core instruction ends there. The manifest now records that order and source layout variants.
+
+Generator QA: all 13 exact-hash artifact-tool renders are 1920 × 1080 and current checksums are in `terra-sol-round4/current-sha256sums.txt`; canonical full/title contact sheets were regenerated. `officecli validate` PASS; `officecli view issues` 0 issues; `slides_test.py` PASS with no overflow. Native OpenXML counts are 13/13/12 title/subtitle/slide-number placeholders in slides and 7/7/6 in layouts plus masters. Full-size inspection covered all slides, including Slide 8 Core checkpoint and Slide 13 appendix.
+
+Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Audit follow-up: PENDING. The generator made no self-audit verdict.
+
+Independent audit dispatch record — 2026-09-01
+
+Requested auditor: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Requested outputs: current master `00a9d0797129c0c5d555d5dfa3f9c67c889d94636c2d22350aecaff1ed5a07e6` and current Week 01 deck `e71ca8a9d259fd65555975fd9e1f64f564d8df8a73c9fb3d0b0ea04d8a715279`.
+Outcome: no verdict produced. The independent Sol task returned a usage-limit error before audit work began. This is not a pass and does not substitute for the required read-only audit.
+Next gate: run one fresh Sol Medium audit against these exact hashes when account usage is available; if either file changes, regenerate its hash-bound evidence first.
+
+---
+
+Generator remediation round 6 — Terra Medium (`gpt-5.6-terra`, `medium`)
+Output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `e71ca8a9d259fd65555975fd9e1f64f564d8df8a73c9fb3d0b0ea04d8a715279`
+
+Narrow source/asset repair: `symbol-g.tex`, `symbol-g.svg`, and `symbol-g.png` were regenerated by the project-local `render-equations-diagrams` route using foreground `#C98A16`. Slide 5 now uses that gold symbol together with its pale-gold `#FFF7E6` panel and gold `#C98A16` border. Full-size canonical render `terra-sol-round4/slide-05.png` was inspected for that match.
+
+Exact-hash evidence was refreshed: 13 canonical 1920 x 1080 artifact-tool renders and full/title contact sheets under `terra-sol-round4/`; `officecli validate` passed; `officecli view issues` found 0 issues; `slides_test.py` passed with no overflow; native placeholder counts remain 13/13/12 in slides and 7/7/6 in layouts plus masters.
+
+Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Audit verdict: PENDING / unavailable because no account usage remains for an independent rerun. The generator made no self-audit verdict.
+
+---
+
+Current exact-hash generator record — Terra Medium (`gpt-5.6-terra`, `medium`) — 2026-09-01
+
+Output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `ac4f01f9e89ef972f0115755d07dc0c5ba895909ba1415b9ccf10c65826187ac`
+
+This supersedes prior generator evidence after the independent audit findings: the Core route is Slides 1–12, Slide 8 is named `Checkpoint`, and the retained vertical-motion `Working exposure: selected values` material is an optional Slide 13 appendix. The manifest and deterministic source agree. All 13 artifact-tool renders are current 1920 × 1080 proofs with checksums in `terra-sol-round4/current-sha256sums.txt`; canonical full/title contact sheets are present. `officecli validate` passed, Office issue scan reported 0 issues, overflow check passed, and native placeholder counts are 13/13/12 in slides and 7/7/6 in layouts plus masters.
+
+Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Audit follow-up: PENDING. The generator made no self-audit verdict.
+
+---
+
+Final independent audit closure — Sol Medium (`gpt-5.6-sol`, `medium`) — 2026-09-01
+
+Audited output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `ac4f01f9e89ef972f0115755d07dc0c5ba895909ba1415b9ccf10c65826187ac`
+Role: read-only independent auditor; no files modified.
+Verdict: **PASS — FORMALLY APPROVED**.
+
+Sol independently verified the current render, full-contact, and true title-region proof checksums/dimensions. All thirteen renders are 1920 × 1080; the current Core route is Slides 1–12 with Slide 8 `Checkpoint`, and Slide 13 is the optional `Working exposure: selected values` appendix. The master semantic fixes are present, provenance/assets and editable placeholder hierarchy pass, misleading title-proof artefacts are absent, and no material, proof, hash, sequence, or design-contract contradiction remains.

@@ -21,7 +21,7 @@ The standard AI-assisted revision pattern is `initial attempt -> Socratic guidan
 
 ## Current materials
 
-- Week 01: package pending rebuild
+- [Week 01 — Physics to Arrays and Plots](Week01/README.md): lecture deck, learning note, lecture demonstration, and AI-enabled practical challenge set. Publication remains subject to the recorded quality gates.
 - [Course topic and difficulty blueprint](PHY4605_Course_Topic_Blueprint.md)
 - [Course-material production blueprint](AGENTS.md)
 - [Assessment blueprint](PHY4605_Assessment_Blueprint.md)
@@ -31,6 +31,6 @@ The standard AI-assisted revision pattern is `initial attempt -> Socratic guidan
 
 Student-facing instructional materials are stored in `Week01/` through `Week13/`. `Week14/` is reserved for buffer/recovery records and must not contain a new planned core package. Hidden `.agent/` folders contain reproducibility sources, build material, and QA evidence.
 
-The topic blueprint governs all future revisions. Earlier Week 01–05 materials remain archived under `First Attempts/` as historical references only. Week 03 must move residual/rank/conditioning/power-balance work out of the Core route; Week 04's eigenproblem package is superseded by parameter sweeps and graph interpretation; and Week 05 must remove the extreme small-derivative case while moving advanced solver comparisons into optional material.
+The topic blueprint governs all future revisions. Use only the current weekly packages and hidden reproducibility evidence; retired source archives are not part of the production route.
 
 Owned and managed by Dr. Muhammad Khairul Adib Muhammad Yusof, Department of Physics, Faculty of Science, Universiti Putra Malaysia.

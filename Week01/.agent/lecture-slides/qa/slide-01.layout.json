@@ -2,12 +2,12 @@
   "schema": "openai.presentation.layout/v4",
   "unit": "px",
   "slide": {
-    "aid": "sl/26gota",
-    "id": "26gota",
+    "aid": "sl/s6n6tp",
+    "id": "s6n6tp",
     "slide": 1,
-    "layoutId": "49c73ed3-889c-4377-baff-9d7abd45f634",
+    "layoutId": "0c532f30-1049-4364-b427-1fd20452ca2b",
     "layoutName": "Opening",
-    "masterLayoutId": "52898967-6e75-4903-8d4a-3a6bfc7ef80b",
+    "masterLayoutId": "9507e388-77be-4f04-b1e1-7d6a346a8d70",
     "masterLayoutName": "PHY4605 Borderless White Master",
     "backgroundColor": "#FFFFFF",
     "frame": {
@@ -44,14 +44,14 @@
   "inheritedLayers": [
     {
       "scope": "layout",
-      "id": "49c73ed3-889c-4377-baff-9d7abd45f634",
+      "id": "0c532f30-1049-4364-b427-1fd20452ca2b",
       "name": "Opening",
-      "parentLayoutId": "52898967-6e75-4903-8d4a-3a6bfc7ef80b",
+      "parentLayoutId": "9507e388-77be-4f04-b1e1-7d6a346a8d70",
       "elements": []
     },
     {
       "scope": "master",
-      "id": "52898967-6e75-4903-8d4a-3a6bfc7ef80b",
+      "id": "9507e388-77be-4f04-b1e1-7d6a346a8d70",
       "name": "PHY4605 Borderless White Master",
       "type": "master",
       "elements": []
@@ -62,7 +62,7 @@
       "order": 1,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/1ob2t432",
+      "aid": "sh/1srq1snu",
       "id": "1",
       "name": "course-tag",
       "bbox": [
@@ -131,7 +131,7 @@
       "order": 2,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/el0jipkb",
+      "aid": "sh/e507qdoj",
       "id": "2",
       "name": "opening-title",
       "bbox": [
@@ -203,7 +203,7 @@
       "order": 3,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/zm9krulw",
+      "aid": "sh/z698zi54",
       "id": "3",
       "name": "opening-subtitle",
       "bbox": [
@@ -269,7 +269,7 @@
       "order": 4,
       "kind": "image",
       "scope": "slide",
-      "aid": "im/58rytg3a",
+      "aid": "im/9cnyh8v6",
       "id": "4",
       "bbox": [
         1305,
@@ -282,7 +282,7 @@
       "imageFit": "contain",
       "prompt": "PHY4605 Matte Scientific Cutaway: a vertical projectile shown at three positions on one dashed trajectory; no text",
       "asset": {
-        "assetId": "b19986ad-a4a9-4084-afac-081469a8fc41",
+        "assetId": "e1d5819b-c11c-48d4-addd-a9f7a4c28856",
         "contentType": "image/png",
         "prompt": "PHY4605 Matte Scientific Cutaway: a vertical projectile shown at three positions on one dashed trajectory; no text",
         "byteLength": 1022984
@@ -292,7 +292,7 @@
       "order": 5,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9sb2xo3y",
+      "aid": "sh/d4rqx8ny",
       "id": "5",
       "bbox": [
         1560,
@@ -360,7 +360,7 @@
       "order": 6,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/mpkjm9kn",
+      "aid": "sh/q1g7mto7",
       "id": "6",
       "bbox": [
         1580,
@@ -428,7 +428,7 @@
       "order": 7,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/nqtkvel8",
+      "aid": "sh/r2p8vy5s",
       "id": "7",
       "bbox": [
         1575,
@@ -496,7 +496,7 @@
       "order": 8,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/4vy1cfm9",
+      "aid": "sh/wz29076x",
       "id": "8",
       "bbox": [
         1267,
@@ -512,7 +512,7 @@
       "order": 9,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/pwrilk3u",
+      "aid": "sh/x0bq9cn2",
       "id": "9",
       "bbox": [
         1170,
@@ -580,7 +580,7 @@
       "order": 10,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/1sj2xcry",
+      "aid": "sh/hkji1sju",
       "id": "10",
       "bbox": [
         115,
@@ -648,7 +648,7 @@
       "order": 11,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/0rqlorqd",
+      "aid": "sh/gja18ni9",
       "id": "11",
       "bbox": [
         334,
@@ -664,7 +664,7 @@
       "order": 12,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/zqhkvm9s",
+      "aid": "sh/fi10zi1o",
       "id": "12",
       "bbox": [
         375,
@@ -732,7 +732,7 @@
       "order": 13,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/ep83mh87",
+      "aid": "sh/uh8z6x03",
       "id": "13",
       "bbox": [
         594,
@@ -748,7 +748,7 @@
       "order": 14,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/9wj21wru",
+      "aid": "sh/tgzixsji",
       "id": "14",
       "bbox": [
         635,
@@ -816,7 +816,7 @@
       "order": 15,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/8valsrq9",
+      "aid": "sh/sfqh4nix",
       "id": "15",
       "bbox": [
         854,
@@ -832,7 +832,7 @@
       "order": 16,
       "kind": "shape",
       "scope": "slide",
-      "aid": "sh/nu1kzm9o",
+      "aid": "sh/7uh0vi1c",
       "id": "16",
       "bbox": [
         895,

@@ -1,4 +1,6 @@
-# PHY4605 Week 01 Materials — Handoff Note
+# Superseded PHY4605 Week 01 Materials Handoff
+
+> **Historical record only — do not use as an active production brief.** It predates the current Week 01 package, the AI-enabled practical contract, the corrected cognitive-weight table, the current master hash, and the PowerPoint-lock release. Use `AGENTS.md`, the four current design/assessment blueprints, `Week01/README.md`, and the current paired-audit ledgers instead.
 
 ## Objective
 
@@ -94,4 +96,3 @@ Before handing Week 01 to students, confirm:
 3. The learning note compiles and every PDF page is visually inspected.
 4. The PPTX uses the canonical editable master; all slides are rendered and visually checked; full-slide and title contact sheets, structural checks, and the paired-audit ledger are retained.
 5. No student-facing duplicate or legacy copies are left outside `Week01/`.
-

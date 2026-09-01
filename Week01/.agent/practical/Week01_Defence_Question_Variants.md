@@ -5,7 +5,7 @@
 | 1 | RC curve prediction | Explain why the initial slope is largest. |
 | 2 | RC units and array length | Change the final time to 8 s; state the first, last, and number of samples. |
 | 3 | RC pseudocode or prompt plan | Identify one check needed before trusting generated code. |
-| 4 | RC voltage expression | Diagnose `exp(-t_RC_s/tau_s)` and correct the array operation. |
+| 4 | RC voltage expression | Diagnose `exp(-t_RC_s./tau_s)` when `tau_s` is deliberately supplied as an equal-length time-constant array; explain why element-wise division is required, then restore the scalar-parameter form. |
 | 5 | RC validation graph | Double `tau_s`; predict the voltage at 2 s before rerunning. |
 | 6 | Oscillator prediction | Change `period_s` to 0.80 s; state how angular frequency changes. |
 | 7 | Displacement or energy code | Explain why `x_m.^2` differs from `x_m^2`. |
