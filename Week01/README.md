@@ -8,7 +8,7 @@ Open `Week01_Lecture_Demonstration_Physics_to_Arrays_and_Plots.m` in MATLAB R202
 
 For the practical, use `Week01_Practical_AI_Enabled_Array_Challenge_Set.m`. It is an AI-enabled group challenge set with ten progressive questions, supplied analogous models, labelled plots, validation checks, concise AI decision evidence, and a post-submission random individual defence. Generative AI may be used to write or debug code; every group member must still be able to explain, verify, and interpret the submitted work.
 
-The learning note, `Week01_Physics_to_Arrays_and_Plots.pdf`, gives the same model and sequence in handout form. The lecture deck presents the same route visually.
+The learning note, `Week01_Physics_to_Arrays_and_Plots.pdf`, gives the same model and sequence in handout form. The final [Week 01 lecture deck](Lecture_Slides_Week01.pptx) presents the route as a 16:9 image-based Teaching Courseware deck using the Muted Academic Blue + Sage direction. Ochre/yellow is used only as an occasional semantic accent, not as a repeated prompt-card element.
 
 ## Locked model
 

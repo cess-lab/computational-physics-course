@@ -25,7 +25,7 @@ The standard AI-assisted revision pattern is `initial attempt -> Socratic guidan
 - [Course topic and difficulty blueprint](PHY4605_Course_Topic_Blueprint.md)
 - [Course-material production blueprint](AGENTS.md)
 - [Assessment blueprint](PHY4605_Assessment_Blueprint.md)
-- [Lecture slide design specification](PHY4605_Lecture_Slide_Design_Spec.md)
+- [Codex-PPT slide deck production specification](PHY4605_Lecture_Slide_Design_Spec.md)
 - [MATLAB Live Script design specification](PHY4605_MATLAB_Live_Script_Design_Spec.md)
 - [Learning note design specification](PHY4605_Learning_Note_Design_Spec.md)
 

@@ -32,9 +32,11 @@ Each active practical uses ten progressive micro-challenges across three or four
 
 For the 3% cumulative individual-defence component, establish one completed defence entry for every group member before any member receives a second entry. Thereafter, average each student's completed entries; an absence remains pending until its recorded make-up defence is completed.
 
-### Slide-deck generation and paired audit contract
+### Codex-PPT slide-deck contract
 
-Every lecture or practical slide deck, and every material slide-deck revision, uses two distinct agent roles. The **generator** is `gpt-5.6-terra` at `medium` reasoning effort; it owns the editable source, approved assets, PPTX build, and source-level revisions. The **auditor** is `gpt-5.6-sol` at `medium` reasoning effort; it is read-only, independently reviews the rendered deck and QA evidence, and must not edit or repair its own findings. Allow at most three generator/auditor rounds, stop early on a pass, and record each round's models, findings, decisions, and final hash in a hidden QA ledger. Use the slide design specification for the detailed checklist and the mandatory LaTeX equation-asset route.
+Every lecture or practical-brief slide deck, and every material slide-deck revision, uses the installed `codex-ppt` skill with its built-in **Teaching Courseware** style. The canonical deck is an image-based 16:9 PPTX with one complete generated image per slide and English presenter notes embedded from `speech.md`. Follow the skill's outline, style, backend, sample-approval, slide-job, state-recording, QA, and assembly gates. Use the built-in image-generation backend unless the lecturer explicitly approves CLI/API fallback. Preserve equations, MATLAB code, units, numerical plots, and computed evidence as strict inputs; never approximate numerical evidence with image generation.
+
+After sample approval, dispatch each remaining slide to one subagent whose model identifier and reasoning effort exactly match the coordinating main agent. Spawn with `fork_turns="all"` and omit model and reasoning-effort overrides so both settings inherit from the main agent. Record the main model, effort, inheritance method, worker ID, slide, and prompt path in hidden QA evidence. If the runtime cannot guarantee or evidence the exact match, block the slide and stop the batch; do not substitute another model or use a sequential fallback. The main agent owns orchestration, inspection, state recording, English speaker notes, assembly, and final scientific QA. Use [PHY4605 Codex-PPT Slide Deck Production Specification](PHY4605_Lecture_Slide_Design_Spec.md) for the detailed course overlay.
 
 Use the course-wide cognitive-weight guide when balancing materials and assessments: model/units 10%, algorithm/pseudocode 20%, MATLAB/code reading 30%, numerical-method theory 15%, validation 10%, and physical interpretation 15%. It is a balance guide, not a requirement that every individual question mirror these shares.
 
@@ -168,14 +170,14 @@ Before generating or revising a student-facing artefact, classify the output typ
 | Artefact type | Required design specification | Required production/QA route |
 | --- | --- | --- |
 | Learning note (`.tex`, PDF) | [PHY4605 Learning Note Design Specification](PHY4605_Learning_Note_Design_Spec.md) | Use the LaTeX workflow; compile and inspect the rendered PDF. |
-| Lecture slide deck (editable PPTX; optional PDF or flattened derivative) | [PHY4605 Lecture Slide Deck Design Specification](PHY4605_Lecture_Slide_Design_Spec.md) | Use the installed `Presentations` skill and `@oai/artifact-tool` to build the editable canonical PPTX from the approved PHY4605 master. Use generated imagery only for visual assets. Render and inspect every slide; use `officecli` as a secondary structural/font inspection aid. |
-| Practical brief slide deck (editable PPTX; optional PDF or flattened derivative) | **Use the same specification as the lecture slide deck:** [PHY4605 Lecture Slide Deck Design Specification](PHY4605_Lecture_Slide_Design_Spec.md) | Use the same editable-first `Presentations` production and QA route as the lecture deck, adapted only for the practical brief's content. |
+| Lecture slide deck (image-based PPTX) | [PHY4605 Codex-PPT Slide Deck Production Specification](PHY4605_Lecture_Slide_Design_Spec.md) | Use the installed `codex-ppt` skill, Teaching Courseware style, built-in image backend, approval gates, exact-match slide workers, recorded state, English speaker notes, and full-size parent QA. |
+| Practical brief slide deck (image-based PPTX) | **Use the same specification as the lecture slide deck:** [PHY4605 Codex-PPT Slide Deck Production Specification](PHY4605_Lecture_Slide_Design_Spec.md) | Use the same Codex-PPT production and QA route, adapted only for the practical brief's approved content and strict assets. |
 | MATLAB Live Script (plain-text `.m`) | [PHY4605 MATLAB Live Script Design Specification](PHY4605_MATLAB_Live_Script_Design_Spec.md) | Use the R2025a-or-later plain-text Live Script format and MATLAB-native code; execute from a fresh MATLAB session and retain validation evidence. |
 | Practical worksheet and practical MATLAB Live Script (plain-text `.m`, or rendered worksheet PDF where applicable) | **Use the same specification as the lecture MATLAB Live Script:** [PHY4605 MATLAB Live Script Design Specification](PHY4605_MATLAB_Live_Script_Design_Spec.md) | Use the same MATLAB-native production and fresh-session execution/validation route as the lecture Live Script, adapted only for the practical activity. |
 
 If one request produces multiple artefact types, route each component independently. A mixed weekly package must use the learning-note specification for the note, the lecture-slide specification for the deck, and the Live Script specification for plain-text `.m` files.
 
-**Cross-material visual rule:** Where a scientific illustration removes a novice-level representation barrier, embed an approved ImageGen visual directly in the learning note and/or MATLAB Live Script rather than linking externally. Reuse a lecture-slide illustration only when the scientific mapping is identical; retain its source and provenance locally. Keep numerical plots as MATLAB-generated evidence, not generated imagery. Record a reason in hidden QA evidence when an illustration is not justified.
+**Cross-material visual rule:** Where a scientific illustration removes a novice-level representation barrier, embed an approved ImageGen visual directly in the learning note and/or MATLAB Live Script rather than linking externally. Reuse a retained strict source visual from a Codex-PPT project only when the scientific mapping is identical; do not crop a complete slide merely to recover an illustration. Keep numerical plots as MATLAB-generated evidence, not generated imagery. Record a reason in hidden QA evidence when an illustration is not justified.
 
 **Practical routing rule:** When asked to build practical brief slides, route them as slide decks and use the lecture slide-deck design specification and QA route. When asked to build a practical MATLAB Live Script, route it as a MATLAB Live Script and use the lecture MATLAB Live Script design specification and QA route. Do not route practical brief slides through the learning-note specification.
 
@@ -185,7 +187,7 @@ Before calling a weekly package complete:
 
 1. Check consistent units, notation, assumptions, and physical terminology across slides, notes, code, and assessment material.
 2. Keep MATLAB code native, readable, and runnable without hidden Workspace state; avoid stale Workspace dependencies.
-3. Render and inspect slides; compile/render and inspect learning notes/PDFs.
+3. Inspect every final slide image at full size, validate the assembled PPTX and embedded notes, and compile/render and inspect learning notes/PDFs.
 4. Execute each Live Script from a fresh MATLAB session and retain appropriate validation evidence.
 5. Validate with suitable unit, limiting-case, convergence, residual, conservation, or reference-solution checks; state the check and outcome in the material or README.
 
