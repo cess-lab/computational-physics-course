@@ -1,0 +1,9 @@
+Slide 03 self-QA — pass after targeted regeneration
+
+- Raster source is a single ImageGen-generated image; exported final is 1920 x 1080 (16:9).
+- Visually inspected at full size. Pure-white, borderless canvas; no logo, watermark, URL, footer branding, motif, or decorative background.
+- Title/subtitle, formula-card copy, curve labels, residual mismatch marker, and root marker are legible and match the planned teaching content. The subtitle has no trailing full stop.
+- Residual schematic is scientifically coherent: a monotonic nonlinear blue curve crosses zero once; red vertical mismatch and green root show the intended distinction.
+- The bottom takeaway is a pale #F4F8FC outlined strip with navy text only; it has no dark banner, multicolour emphasis, or added "Takeaway" prefix.
+- Reference check: title-led white scientific-infographic language and the pale outlined takeaway align with the final Week 02 and Week 03 raster decks.
+- Known minor deviation: ImageGen’s title face is a visually equivalent condensed sans-serif, not verifiable as Roboto Condensed in a raster output.

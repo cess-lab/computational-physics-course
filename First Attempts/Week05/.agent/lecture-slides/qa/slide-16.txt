@@ -1,0 +1,20 @@
+Slide 16 self-QA — MATLAB fzero is a reference implementation, not an oracle
+
+Artifact: raster/slide-16.png
+Dimensions: 1920 x 1080 px (verified)
+SHA-256: aaefbccabcb49fb140fba596f03973208bd9251bb2f57ae012bac2d85073cfc2
+Inspection: viewed at original full size after the final ImageGen layout correction.
+
+Fixed master checklist 10/10 PASS.
+1. PASS — Complete 1920 x 1080 raster on a pure flat white borderless canvas.
+2. PASS — All visible content has at least 76 px outer clearance; cards and rule strip follow the fixed-master inset.
+3. PASS — Navy condensed title and non-condensed charcoal subtitle follow the locked upper-left hierarchy, with no terminal punctuation.
+4. PASS — The four MATLAB code lines are visibly monospace and exact, including @, brackets, commas, hyphen-minus signs, parentheses and semicolons.
+5. PASS — Right-card headings and all six list items match the handoff exactly.
+6. PASS — Purple is used only for the fzero reference-solver category; three validation checks are green.
+7. PASS — Exact bottom rule text is complete, readable, and unmodified.
+8. PASS — Cards remain projection-readable, un-clipped, un-overlapped, and scientifically unambiguous.
+9. PASS — Fine navy card strokes, pale-blue code card, and pale-navy takeaway strip match the Week05 visual language.
+10. PASS — No logo, watermark, URL, citation, footer, page number, background wash, decoration, or unrequested text.
+
+Unresolved risk: none.

@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Canonical mapping for Google Classroom-launched weekly pre-practical quiz diagnostics",
+  "connectedAccount": "adib.yusof@upm.edu.my",
+  "classroomCourseId": "872419838121",
+  "weeks": {
+    "Week01": {
+      "formId": "1BMVbko0tKzdxuym9RVuvqqOQYpZU8iUn9Lj0BqitOAE",
+      "editUrl": "https://docs.google.com/forms/d/1BMVbko0tKzdxuym9RVuvqqOQYpZU8iUn9Lj0BqitOAE/edit",
+      "responderUrl": "https://docs.google.com/forms/d/e/1FAIpQLSekCW074h6shzxEMv1gtaFfKWLRgE5PoKX3vrS4EZRh3sGl2w/viewform",
+      "classroomCourseWorkId": "872420988851",
+      "classroomUrl": "https://classroom.google.com/c/ODcyNDE5ODM4MTIx/a/ODcyNDIwOTg4ODUx/details",
+      "questionCount": 6,
+      "quiz": true,
+      "classroomMaterialType": "form"
+    },
+    "Week02": {
+      "formId": "1vPMTcgdWKOdSVMdMDxLrebuRhkqachWXReThXjuDHUw",
+      "editUrl": "https://docs.google.com/forms/d/1vPMTcgdWKOdSVMdMDxLrebuRhkqachWXReThXjuDHUw/edit",
+      "responderUrl": "https://docs.google.com/forms/d/e/1FAIpQLSeYMfowoXaSEJJYGRVCCU6ceXkweRJLJ6Di0KuYHnNCktV9yQ/viewform",
+      "classroomCourseWorkId": "872419975389",
+      "classroomUrl": "https://classroom.google.com/c/ODcyNDE5ODM4MTIx/a/ODcyNDE5OTc1Mzg5/details",
+      "questionCount": 6,
+      "quiz": true,
+      "classroomMaterialType": "form"
+    }
+  },
+  "creationRules": {
+    "classroomIsSystemOfRecord": true,
+    "oneFormPerWeek": true,
+    "omitRedundantIdentityFields": true,
+    "collectVerifiedEmail": true,
+    "keepDiagnosticsUngradedInClassroom": true,
+    "createFutureWeekFormsOnlyAfterWeeklyMaterialsAreApproved": true
+  }
+}

@@ -1,0 +1,78 @@
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-1.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-10.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-11.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-12.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-13.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-2.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-3.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-4.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-5.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-6.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-7.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-8.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-canonical-r3/slide-9.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-1.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-10.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-11.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-12.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-13.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-2.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-3.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-4.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-5.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-6.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-7.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-8.png
+  pixelWidth: 1920
+  pixelHeight: 1080
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/qa/rendered-fresh-r3/slide-9.png
+  pixelWidth: 1920
+  pixelHeight: 1080

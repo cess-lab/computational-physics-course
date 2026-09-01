@@ -1,0 +1,19 @@
+Slide 13 fixed-master self-QA — PASS
+
+File: raster/slide-13.png
+Final raster: 1920 × 1080 px, 16:9
+Production: One ImageGen-generated complete slide raster, proportionally scaled and placed on a pure-white delivery canvas only to enforce safe-margin clearance.
+
+Fixed master checklist:
+1. YES — file is exactly 1920 × 1080 px.
+2. YES — pure flat-white, borderless canvas.
+3. YES — all visible content clears the 76 px edge margin.
+4. YES — condensed navy title / charcoal non-condensed subtitle use the approved Week 05 visual hierarchy in the upper-left title band.
+5. YES — subtitle is charcoal supporting text with no terminal full stop.
+6. YES — all visible wording and punctuation match the Slide 13 handoff.
+7. YES — endpoint residual values, equality signs, minus signs, interval labels, and defect inequality are exact.
+8. YES — the residual remains below zero across E=0 to E=0.1, clearly proving same-sign endpoints and the missing bisection guarantee.
+9. YES — red dominates the warnings while navy/blue retain structure and residual semantics.
+10. YES — no branding, footer, source label, URL, background decoration, or unrequested element.
+
+Full-size visual inspection completed. Unresolved risk: none.

@@ -1,0 +1,11 @@
+Found 8 issue(s):
+
+Format Issues (8):
+  [O1] /slide[1]/shape[@id=3]: text overflow: 2 lines at 22.5pt need 45pt, usable 34pt. suggest.height=1.6cm
+  [F2] /slide[1]: Picture "" is missing alt text (accessibility issue)
+  [F3] /slide[2]: Picture "" is missing alt text (accessibility issue)
+  [F4] /slide[4]: Picture "" is missing alt text (accessibility issue)
+  [F5] /slide[7]: Picture "" is missing alt text (accessibility issue)
+  [F6] /slide[7]: Picture "" is missing alt text (accessibility issue)
+  [F7] /slide[8]: Picture "" is missing alt text (accessibility issue)
+  [O8] /slide[9]/shape[@id=23]: text overflow: 2 lines at 24.0pt need 48pt, usable 39pt. suggest.height=1.7cm

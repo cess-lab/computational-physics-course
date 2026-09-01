@@ -1,0 +1,45 @@
+Use case: scientific-educational
+Asset type: one 16:9 presentation slide, complete raster image, exactly 1920 x 1080 pixels
+Topic and learning outcome: PHY4605 Week 5 method selection. Learners make a defensible solver choice from the evidence available for a physical numerical problem, including responsible handling of AI/code output.
+Density mode: dense; one highly readable four-column method-selection matrix and a capstone bridge strip. Do not omit or paraphrase any cell; minimum body text equivalent is 23 px.
+Slide archetype: method-selection matrix
+
+MANDATORY FIXED MASTER: exactly 1920×1080. Pure flat #FFFFFF canvas, no outer border, frame, vignette, background wash, gradient, texture, grid, motif, shadow field, decoration, logo, watermark, URL, citation, footer, or page number. All visible elements >=76 px from every edge; prefer >=115 px left/right. Title at x=115 y=60, sentence case, navy #0B2B4C, 68 px Roboto Condensed Bold or visual equivalent, no terminal full stop. Subtitle directly beneath x=115, charcoal #3F4B57, 30 px Roboto Medium/non-condensed supporting text, no terminal full stop. Match approved Week05 Slide05 hierarchy and scale; do not enlarge the title.
+
+Text (verbatim; preserve capitalization, slash, plus signs, hyphens, spaces, and punctuation exactly. Only this quoted text may appear visibly):
+"Method choice is an evidence decision"
+"Choose the solver that matches the evidence available for the physical problem"
+"Situation"
+"Prefer"
+"Reason"
+"Required check"
+"Sign-changing bracket available"
+"Bisection / fzero bracket"
+"global existence evidence"
+"endpoint signs + residual"
+"Good guess and safe derivative"
+"Newton"
+"fast local convergence"
+"step + residual"
+"Derivative risky or step leaves bracket"
+"Safeguarded Newton"
+"speed with fallback"
+"bracket invariant"
+"Only plausible number from AI/code"
+"No acceptance yet"
+"output is not evidence"
+"independent validation"
+"Capstone bridge: define your residual, justify your bracket or initial guess, and name two validation checks."
+
+Composition: main matrix x=115 y=240 w=1690 h=585; bottom capstone strip x=115 y=880 w=1690 h=135. Matrix has four crisp columns with headers and four balanced rows. Header band navy #0B2B4C with white text. All borders fine 2 px navy/grey, rows white or extremely pale neutral, 20–24 px outer corners, no shadows. Use clear cell gutters and vertical rules; no cramped text. Column widths: Situation ~430 px, Prefer ~385 px, Reason ~410 px, Required check ~465 px. Use 24–26 px Roboto body text; 28–30 px for headers. If wrapping is needed, wrap inside its cell at natural phrase boundaries rather than reducing below 23 px. All rows must remain individually legible.
+
+Row 1 exactly: Situation "Sign-changing bracket available"; Prefer chip "Bisection / fzero bracket" with green #3E8E45 text/pale green #F0FAF7 chip; Reason "global existence evidence"; Required check "endpoint signs + residual".
+Row 2 exactly: Situation "Good guess and safe derivative"; Prefer chip "Newton" with gold #C98A16 text/pale gold #FFF7E6 chip; Reason "fast local convergence"; Required check "step + residual".
+Row 3 exactly: Situation "Derivative risky or step leaves bracket"; Prefer chip "Safeguarded Newton" with teal #2A9D9F text/pale teal #F0FAF7 chip; Reason "speed with fallback"; Required check "bracket invariant".
+Row 4 exactly: Situation "Only plausible number from AI/code"; Prefer chip "No acceptance yet" with caution red #B3262E text/pale red #FFF2F2 chip; Reason "output is not evidence"; Required check "independent validation".
+
+Bottom capstone bridge strip: pale navy #F4F8FC fill with thin navy #0B2B4C stroke, rounded 22 px, no shadow. Bold condensed navy 31–34 px exact copy: "Capstone bridge: define your residual, justify your bracket or initial guess, and name two validation checks."
+
+Visual language: disciplined flat university scientific matrix, navy structural rules and headers; semantic colours only in the Prefer chips (green/gold/teal/red). No decorative icons, graphs, badges, symbols, or extra labels—table only. Keep sufficient white space to read from projection distance.
+
+Constraints: Generate all typography, table, rules, headers, cells, chips, and bottom strip inside this one complete ImageGen raster image. No SVG, HTML, Canvas, code, placeholder, editable overlay, or post-generation visible editing. Do not add text to any cell. No logo, institutional mark, watermark, website URL, source label, footer branding, or unrequested element.

@@ -1,0 +1,22 @@
+PHY4605 master — Round 3 image metadata verification
+Date: 2026-08-31
+Generator: Luna MAX (`gpt-5.6-luna`, `max`)
+PPTX: `../../masters/PHY4605_Editable_Slide_Master.pptx`
+
+OpenXML checks
+- `p:nvPicPr` image count: 28
+- `p:cNvPr@descr` count: 28
+- generic fallback descriptors (`PHY4605 scientific visual or LaTeX-rendered equation (...)`): 0
+- semantic `p:cNvPr@name` entries: 28
+- all `ppt/**/theme*.xml` major/minor latin, east-Asia, and complex-script typefaces: Nunito; no Calibri, Aptos, or Roboto remain
+
+Descriptor coverage
+- Five scientific visuals have model-specific descriptions.
+- Twenty-two LaTeX-rendered PNGs have expression-specific descriptions.
+- Equation-bearing speaker notes carry TeX, SVG, PNG, foreground, target size, fit/crop, alt, and QA provenance.
+PHY4605 master — Round 3 image metadata verification
+Date: 2026-08-31
+Generator: Luna MAX (`gpt-5.6-luna`, `max`)
+PPTX: `../../masters/PHY4605_Editable_Slide_Master.pptx`
++SHA-256: `972f07b4b49eb49cfdf69d04488b2154deadf413c212ca27e70279a92565facf`
++This final repair also normalizes all theme inheritance XML; slide content and layout are unchanged.

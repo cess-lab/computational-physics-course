@@ -1,0 +1,53 @@
+PHY4605 WEEK 05 IMAGEGEN FIXED MASTER CONTRACT
+
+Purpose
+This contract is mandatory for every remaining Week 05 raster slide. The slide-specific handoff supplies content; this file locks the visual execution and acceptance criteria.
+
+Canonical references
+1. Week02/.agent/lecture-slides/raster/slide-02.png for workflow/card rhythm and title/subtitle hierarchy.
+2. Week03/.agent/lecture-slides/raster/slide-01.png for scientific linework, equation/diagram balance, and restrained colour semantics.
+3. Week05/.agent/lecture-slides/raster/slide-05.png for the approved Week 05 title band, safe margins, card stroke, and takeaway treatment.
+
+Fixed canvas
+- Exactly 1920 x 1080 px, 16:9.
+- Pure flat white #FFFFFF background.
+- No border, frame, background wash, vignette, gradient, texture, node motif, shadow field, logo, watermark, URL, citation, source label, footer, or page number.
+- Every visible element must remain at least 76 px from all four edges. Prefer 115 px left/right.
+
+Fixed title band
+- Title anchor: x=115 px, y=60 px.
+- Title: Roboto Condensed Bold or one visually identical condensed sans-serif; sentence case; navy #0B2B4C; nominal 68 px; maximum two lines; no terminal full stop.
+- Subtitle: x=115 px; directly below title; Roboto Medium or a non-condensed supporting sans-serif; 30 px; charcoal #3F4B57; no bold condensed face; no terminal full stop.
+- Do not enlarge the title to fill unused space. Match the visual scale of approved Week05 slide-05.png.
+
+Fixed content language
+- Use the exact slide-specific wording from Week05_Lecture_Slide_Deck_Handoff.md. Do not paraphrase, add prefixes, add labels, add punctuation, or create explanatory copy.
+- Preserve mathematical minus signs, primes, subscripts, superscripts, inequality signs, units, brackets, decimal places, and scientific notation exactly.
+- Use navy for structure/equations, blue for model/residual, green/teal for validity, gold for numerical choice/iteration, red only for failure/warning, and purple only for fzero/reference-solver content.
+- Cards use white or the specified very pale semantic fill, 2 px fine stroke, 20-24 px rounded corners, and no visible shadow.
+- Bottom takeaway/warning strips use the exact fill/stroke/text colour specified in the handoff. Never substitute a dark banner unless the handoff explicitly requests it.
+- Use functional scientific diagrams only. No decorative imagery.
+
+Generation rule
+- Generate one complete slide as one ImageGen raster. Do not use SVG, HTML, Canvas, Graphviz, PowerPoint shapes, text overlays, or post-generation visible edits.
+- Do not submit an image that was merely padded if the title family, subtitle family, punctuation, exact copy, or scientific diagram is wrong. Regenerate or edit through ImageGen.
+- Proportional white padding is allowed only to correct edge clearance when every content and typography requirement already passes.
+
+Binary pre-submission checklist
+PASS only when every answer is YES:
+1. Is the file exactly 1920 x 1080?
+2. Is the canvas pure flat white and borderless?
+3. Are all visible elements >=76 px from every edge?
+4. Does the title match the approved Week 05 scale, face, colour, and x/y anchor?
+5. Is the subtitle non-condensed charcoal supporting text with no terminal full stop?
+6. Is every visible word and punctuation mark identical to the handoff?
+7. Are every equation, number, unit, sign, subscript, and superscript exact?
+8. Does the diagram/table/chart support the intended scientific claim without ambiguity?
+9. Do accent colours follow the semantic mapping?
+10. Is there no branding, footer, source label, URL, background decoration, or unrequested element?
+
+Required return
+- Absolute raster path.
+- Exact statement: Fixed master checklist 10/10 PASS.
+- One-line unresolved risk, or “Unresolved risk: none.”
+- Stop and wait for coordinator audit. Do not begin another slide.

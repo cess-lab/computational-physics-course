@@ -1,0 +1,385 @@
+{
+  "deck": {
+    "course": "PHY4605",
+    "title": "Reliable computational workflow through physics",
+    "duration_minutes": 120,
+    "slide_count": 18,
+    "visual_contract": "Each slide is a single ImageGen-generated raster image embedded full-slide.",
+    "delivery_context": "120-minute Week 2 teaching deck; timing appears only in speaker notes and package metadata, never in student-facing slide content.",
+    "branding_override": "No branding, logo, watermark, URL, footer, or institutional mark is permitted.",
+    "canvas": "16:9 pure white canvas; no outer border or frame; no mesh, network, molecular, corner, texture, gradient, or background decoration; locked Roboto Condensed Bold navy title and Roboto Medium charcoal subtitle at the same upper-left anchor on every slide"
+  },
+  "approved_values": {
+    "mass_kg": "0.50 kg",
+    "spring_constant_N_per_m": "8.0 N/m",
+    "amplitude_m": "0.12 m",
+    "omega_rad_per_s": "4.0 rad/s",
+    "period_s": "pi/2 s",
+    "total_energy_J": "0.0576 J"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Reliable computational workflow through physics",
+      "subtitle": "Week 2 | Functions, vectorisation, debugging, and testing",
+      "archetype": "layered concept",
+      "density": "light",
+      "visual_text": [
+        "An ideal oscillator is simple enough to know — and rich enough to expose weak computational reasoning.",
+        "Can readable code, independent tests, and physical evidence make a calculation trustworthy?",
+        "decompose | predict | implement | test | interpret"
+      ],
+      "notes": {
+        "timing": "0–6 min",
+        "checkpoint": "Ask what evidence students would want before trusting an oscillator plot.",
+        "transition": "Frame MATLAB as the instrument used to expose the reasoning chain."
+      }
+    },
+    {
+      "number": 2,
+      "title": "Today’s arc: decompose → predict → implement → test",
+      "subtitle": "A compact physics model becomes a defensible computational result.",
+      "archetype": "pipeline",
+      "density": "standard",
+      "visual_text": [
+        "1 Physical question",
+        "2 Dependencies + pseudocode",
+        "3 Vectorised implementation",
+        "4 Layered tests",
+        "5 Debugging + practical transfer",
+        "Outcomes: preserve units, align arrays, classify defects, design tests, explain physical evidence"
+      ],
+      "notes": {
+        "timing": "6–12 min",
+        "checkpoint": "Which step is missing when an AI assistant returns code immediately after the question?",
+        "transition": "Establish the standard of evidence before writing any syntax."
+      }
+    },
+    {
+      "number": 3,
+      "title": "A trustworthy program is an argument",
+      "subtitle": "Running code is only one claim in a longer chain.",
+      "archetype": "pipeline",
+      "density": "standard",
+      "visual_text": [
+        "Physics question → model + assumptions → dependencies → algorithm → code → independent tests → physical interpretation",
+        "Each arrow is a decision that can be inspected.",
+        "A plausible graph is not yet evidence."
+      ],
+      "notes": {
+        "timing": "12–18 min",
+        "checkpoint": "Ask students to identify one claim that a successful Run button cannot verify.",
+        "transition": "Introduce a model whose expected behaviour is known before computation."
+      }
+    },
+    {
+      "number": 4,
+      "title": "Worked model: an ideal mass–spring oscillator",
+      "subtitle": "Known physics gives us strong reference behaviour.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "m d²x/dt² = −kx",
+        "x(t) = A cos(ωt + φ)",
+        "v(t) = −Aω sin(ωt + φ)",
+        "ω = √(k/m)    T = 2π/ω",
+        "m = 0.50 kg | k = 8.0 N/m | A = 0.12 m | φ = 0",
+        "Assumptions: linear spring, point mass, no damping, horizontal motion, equilibrium at x = 0"
+      ],
+      "notes": {
+        "timing": "18–25 min",
+        "checkpoint": "Predict x, v, and the direction of motion at t = T/4.",
+        "transition": "Map every symbol to a readable variable and unit."
+      }
+    },
+    {
+      "number": 5,
+      "title": "Map symbols to names, meanings, and units",
+      "subtitle": "Readable names keep dimensions visible while the model becomes code.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "m → mass_kg → kg",
+        "k → springConstant_N_per_m → N/m",
+        "A → amplitude_m → m",
+        "ω → omega_rad_per_s → rad/s",
+        "t → t_s → s",
+        "x, v, E → x_m, v_m_per_s, totalEnergy_J",
+        "Dimensional check: k/m has units s⁻²; √(k/m) has units s⁻¹."
+      ],
+      "notes": {
+        "timing": "25–31 min",
+        "checkpoint": "Have students derive the unit of omega without using a memorised formula.",
+        "transition": "Separate inputs, derived quantities, outputs, and checks before coding."
+      }
+    },
+    {
+      "number": 6,
+      "title": "Decompose before writing MATLAB",
+      "subtitle": "A dependency map prevents important decisions from disappearing into syntax.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "Inputs: m, k, A, φ, final time, sampling resolution",
+        "Derived: ω = √(k/m), T = 2π/ω",
+        "Outputs: t, x(t), v(t), energy",
+        "Checks: units, initial values, bounds, repeat period, energy conservation",
+        "Question to ask: which quantities depend on which earlier decisions?"
+      ],
+      "notes": {
+        "timing": "31–38 min",
+        "checkpoint": "Ask whether total energy is an input, a derived quantity, an output, or a check.",
+        "transition": "Turn the dependency map into structured pseudocode."
+      }
+    },
+    {
+      "number": 7,
+      "title": "Pseudocode is executable reasoning",
+      "subtitle": "It records the algorithm before MATLAB or AI chooses the syntax.",
+      "archetype": "numbered process",
+      "density": "standard",
+      "visual_text": [
+        "1 Define physical inputs with units",
+        "2 Compute ω and T",
+        "3 Create one aligned time array",
+        "4 Evaluate x, v, K, U, and E at every time",
+        "5 Apply independent checks",
+        "6 Interpret the motion and state limitations",
+        "Pseudocode should preserve dependencies and decisions — not imitate MATLAB punctuation."
+      ],
+      "notes": {
+        "timing": "38–44 min",
+        "checkpoint": "Ask students what must happen before the time array can be designed.",
+        "transition": "Implement the analytical model once for every time using arrays."
+      }
+    },
+    {
+      "number": 8,
+      "title": "Vectorisation evaluates one model across an array",
+      "subtitle": "The mathematics stays visible when array operations match the formula.",
+      "archetype": "layered concept",
+      "density": "dense",
+      "visual_text": [
+        "omega_rad_per_s = sqrt(springConstant_N_per_m/mass_kg);",
+        "t_s = linspace(0,4*period_s,1001);",
+        "x_m = amplitude_m.*cos(omega_rad_per_s.*t_s + phase_rad);",
+        "v_m_per_s = -amplitude_m.*omega_rad_per_s.*sin(...);",
+        "kineticEnergy_J = 0.5.*mass_kg.*v_m_per_s.^2;",
+        "potentialEnergy_J = 0.5.*springConstant_N_per_m.*x_m.^2;",
+        "totalEnergy_J = kineticEnergy_J + potentialEnergy_J;",
+        "Element-wise operators preserve one result per stored time."
+      ],
+      "notes": {
+        "timing": "44–52 min",
+        "checkpoint": "Which operators need dots, and why does scalar multiplication not require one here?",
+        "transition": "Make the alignment expectation explicit as an array-shape contract."
+      }
+    },
+    {
+      "number": 9,
+      "title": "Shape contracts make array alignment testable",
+      "subtitle": "One time value must correspond to one position, velocity, and energy value.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "Contract: size(t_s) = size(x_m) = size(v_m_per_s) = size(totalEnergy_J)",
+        "Aligned arrays support plotting, indexing, and element-by-element comparisons.",
+        "Common defects: row versus column mismatch | unintended implicit expansion | wrong colon order",
+        "Check both shape and finiteness before interpreting values.",
+        "A scalar loop is a useful independent cross-check of a vectorised result."
+      ],
+      "notes": {
+        "timing": "52–59 min",
+        "checkpoint": "What plausible output might implicit expansion create when two vectors have different orientations?",
+        "transition": "Move from array correctness to a ladder of independently failing tests."
+      }
+    },
+    {
+      "number": 10,
+      "title": "Testing should climb from execution to physics",
+      "subtitle": "Different layers expose different classes of defect.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "1 Runs without error — syntax only",
+        "2 Shapes align and values are finite",
+        "3 Known values match at t = 0",
+        "4 Physical bounds hold: |x| ≤ A",
+        "5 The state repeats after one period",
+        "6 An invariant holds: K + U is constant",
+        "7 A scalar implementation agrees with the vectorised one",
+        "No single layer proves the whole model."
+      ],
+      "notes": {
+        "timing": "59–66 min",
+        "checkpoint": "Which test can pass even if the physical formula contains the wrong sign?",
+        "transition": "Use exact states to build low-cost, interpretable tests."
+      }
+    },
+    {
+      "number": 11,
+      "title": "Known states give cheap, powerful checks",
+      "subtitle": "Evaluate behaviour where the physics already supplies an answer.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "At t = 0: x = A, v = 0",
+        "At t = T/4: x = 0, v = −Aω",
+        "At t = T/2: x = −A, v = 0",
+        "At t = T: x = A, v = 0",
+        "Use tolerances for floating-point comparisons; do not demand exact equality blindly.",
+        "A test is useful when its failure points toward a specific cause."
+      ],
+      "notes": {
+        "timing": "66–72 min",
+        "checkpoint": "Ask students to predict the velocity sign at one quarter-period before revealing it.",
+        "transition": "Add a physical invariant that checks the entire time history."
+      }
+    },
+    {
+      "number": 12,
+      "title": "Energy conservation checks the whole trajectory",
+      "subtitle": "An ideal undamped oscillator exchanges kinetic and potential energy.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "K(t) = ½mv²    U(t) = ½kx²",
+        "E(t) = K + U = ½kA² = 0.0576 J",
+        "At maximum displacement: U is maximum, K = 0",
+        "At equilibrium: K is maximum, U = 0",
+        "The total should remain constant across every stored time.",
+        "An invariant is strong evidence — but it still has a blind spot."
+      ],
+      "notes": {
+        "timing": "72–79 min",
+        "checkpoint": "Ask what the energy curves should look like before running the lecture demonstration.",
+        "transition": "Reveal a wrong velocity formula that still passes the energy test."
+      }
+    },
+    {
+      "number": 13,
+      "title": "One passing test is evidence — not proof",
+      "subtitle": "A wrong velocity sign still preserves total energy because velocity is squared.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "Correct: v(t) = −Aω sin(ωt + φ)",
+        "Defect:  v_wrong(t) = +Aω sin(ωt + φ)",
+        "Energy test: PASS — both velocities produce the same v²",
+        "Quarter-period sign test: FAIL — the mass moves in the wrong direction",
+        "Design tests that fail independently and expose different assumptions.",
+        "A conserved scalar may hide a wrong phase or direction."
+      ],
+      "notes": {
+        "timing": "79–86 min",
+        "checkpoint": "Ask students why the energy invariant cannot see the sign defect.",
+        "transition": "Generalise the diagnosis into a controlled debugging cycle."
+      }
+    },
+    {
+      "number": 14,
+      "title": "Debugging is another controlled experiment",
+      "subtitle": "Change one suspected cause and preserve the evidence.",
+      "archetype": "numbered process",
+      "density": "standard",
+      "visual_text": [
+        "1 Reproduce from a clean run",
+        "2 Localise the first doubtful quantity",
+        "3 State one hypothesis about the cause",
+        "4 Design the smallest discriminating test",
+        "5 Repair one cause",
+        "6 Rerun all previous tests",
+        "7 Explain the physical consequence",
+        "Avoid random edits: every change should answer a hypothesis."
+      ],
+      "notes": {
+        "timing": "86–93 min",
+        "checkpoint": "Ask what evidence should be recorded before editing the code.",
+        "transition": "Use categories to choose tests for plausible candidate code."
+      }
+    },
+    {
+      "number": 15,
+      "title": "Diagnose plausible code by defect category",
+      "subtitle": "Different defects require different evidence.",
+      "archetype": "comparison",
+      "density": "dense",
+      "visual_text": [
+        "Formula defect: omega = sqrt(k*m) → check units and period scale",
+        "Logical defect: 0:tMax:dt → inspect endpoints and number of values",
+        "Array defect: x^2 → inspect shapes; use element-wise powers for vectors",
+        "Communication defect: plot(v,x) → compare axes with the claimed graph",
+        "Numerical defect: exact equality → repeat with a physically justified tolerance",
+        "For each: category | consequence | correction | test that would fail"
+      ],
+      "notes": {
+        "timing": "93–101 min",
+        "checkpoint": "Give one candidate line at a time and ask for the first discriminating test, not merely the correction.",
+        "transition": "Show how readable structure makes the same diagnosis faster."
+      }
+    },
+    {
+      "number": 16,
+      "title": "Readable code exposes the scientific structure",
+      "subtitle": "Compact code is not automatically clearer, faster, or more trustworthy.",
+      "archetype": "comparison",
+      "density": "standard",
+      "visual_text": [
+        "Readable workflow",
+        "Named inputs with units",
+        "Derived quantities computed once",
+        "Aligned arrays",
+        "Checks beside the claim they support",
+        "Interpretation in physical language",
+        "Opaque workflow",
+        "Magic numbers | compressed expressions | unlabeled plots | hidden workspace state",
+        "Optimise for auditability before cleverness."
+      ],
+      "notes": {
+        "timing": "101–107 min",
+        "checkpoint": "Ask which naming choice would help a classmate catch a unit mismatch.",
+        "transition": "Apply the same standard when an AI assistant proposes code."
+      }
+    },
+    {
+      "number": 17,
+      "title": "Use AI as a critic and pair programmer — not an authority",
+      "subtitle": "The student remains responsible for the model, decisions, and validation evidence.",
+      "archetype": "layered concept",
+      "density": "standard",
+      "visual_text": [
+        "Before AI: predict behaviour, define units, decompose the problem, write pseudocode",
+        "With AI: ask for alternatives, explanations, edge cases, and tests",
+        "After AI: inspect every dependency, run independent checks, modify deliberately, interpret physically",
+        "Record what was accepted, changed, or rejected — and why.",
+        "A confident explanation from AI is not validation evidence."
+      ],
+      "notes": {
+        "timing": "107–113 min",
+        "checkpoint": "Ask for one prompt that makes Copilot critique code rather than merely generate it.",
+        "transition": "Transfer the workflow to the practical's projectile model."
+      }
+    },
+    {
+      "number": 18,
+      "title": "Practical bridge: debug and validate a projectile model",
+      "subtitle": "Start individually; then make every group claim answerable with evidence.",
+      "archetype": "numbered process",
+      "density": "standard",
+      "visual_text": [
+        "1 Complete the Week 02 Individual Practical Check — Quiz in Google Classroom",
+        "2 Predict the trajectory and write pseudocode before using AI",
+        "3 Build aligned x(t) and y(t) arrays",
+        "4 Diagnose a plausible defective candidate",
+        "5 Validate initial state, horizontal velocity, peak, range, and ground condition",
+        "6 Declare AI use and the decisions your group retained",
+        "Transfer question: which oscillator checks have a projectile analogue?"
+      ],
+      "notes": {
+        "timing": "113–120 min",
+        "checkpoint": "Collect one proposed projectile check from each part of the room.",
+        "transition": "End the lecture and direct students to the Week 02 Individual Practical Check — Quiz in Google Classroom before group work begins."
+      }
+    }
+  ]
+}

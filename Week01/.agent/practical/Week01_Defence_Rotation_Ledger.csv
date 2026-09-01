@@ -1,0 +1,2 @@
+week,group_id,student_id,student_name,eligible_before_draw,question_slot,variant,defence_date,model_units_0_to_3,code_output_trace_0_to_3,validation_perturbation_0_to_3,interpretation_ai_judgement_0_to_3,mean_score,absence_or_makeup_note
+01,GROUP_01,STUDENT_ID,STUDENT_NAME,YES,QUESTION_SLOT,VARIANT,YYYY-MM-DD,,,,,,

@@ -1,0 +1,21 @@
+PHY4605 Week 01 lecture deck paired review
+Date: 2026-09-01
+
+Generator remediation — Terra Medium (`gpt-5.6-terra`, `medium`)
+Output: `Week01/Lecture_Slides_Week01.pptx`
+SHA-256: `25988a7ec92bc54e137e7bf704f040fe120390c422ec04974ada8c90c26002fb`
+
+Accepted prior findings resolved in deterministic source:
+- Removed the internal opening-slide text `Editable PowerPoint master proof`.
+- Bound the opening course tag/title/subtitle and every content-slide title/subtitle/slide number to native OpenXML `p:ph` placeholders matching the inherited Opening/Content T1/Content T2/Content T3 layout treatment. They are no longer unlinked local overlays.
+- Added Week01-local `source/generate_week01_matlab_figures.m` plus retained PNG, MAT, and CSV assets for `height_time_evidence` and `launch_speed_comparison`.
+- Re-rendered the entire 13-slide deck through both artifact-tool and OfficeCLI at 1920 x 1080. Slide 13 subtitle and number are visible in both proof sets.
+
+Generator QA evidence:
+- `rendered-canonical-r3/` and `rendered-fresh-r3/`: 13 PNGs each, all 1920 x 1080; per-image dimensions are recorded in `render-dimensions-r3.txt`.
+- `full-deck-contact-sheet-canonical-r3.png`, `full-deck-contact-sheet-fresh-r3.png`, `title-contact-sheet-canonical-r3.png`, and `title-contact-sheet-fresh-r3.png`.
+- `officecli-validate-r3.txt`: PASS; `officecli-issues-r3.txt`: 0 issues; `slides-test-r3.txt`: PASS with no overflow.
+- `openxml-placeholder-preflight-r3.txt`: 13 slide titles, 12 slide subtitles, and 12 slide numbers are native placeholders; all required layout placeholder types are present. Slide XML uses only Nunito and IBM Plex Mono.
+
+Auditor assignment: Sol Medium (`gpt-5.6-sol`, `medium`); read-only.
+Audit verdict: PENDING independent review. The generator made no self-audit verdict.

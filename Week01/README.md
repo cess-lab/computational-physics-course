@@ -1,14 +1,46 @@
-# PHY4605 Week 01
+# PHY4605 Week 01 — Physics to Arrays and Plots
 
-This folder contains the final student-facing materials for Week 01.
+The lecture materials use one familiar vertical-motion model to connect physical reasoning with MATLAB arrays and a labelled plot. The practical deliberately transfers the same computational literacy to supplied RC-circuit, mass-spring, and radioactive-decay contexts.
 
-## Materials
+## Start here
 
-- `Lecture_Slides_Week01.pptx` — lecture slide deck.
-- `Week01_Lecture_Demonstration_Model_to_Computation.m` — complete instructor-led MATLAB demonstration; no student typing is required during the lecture.
-- `Week01_Model_to_Computation.pdf` — learning note.
-- `Week01_Practical_Onramp_Diagnostic.m` — group MATLAB Onramp diagnostic practical using Newton cooling.
+Open `Week01_Lecture_Demonstration_Physics_to_Arrays_and_Plots.m` in MATLAB R2025a or later, then run its sections in order. The file is a lecture demonstration: it is complete and can be followed without entering code from a blank page.
 
-MATLAB Onramp is a prerequisite. The lecture demonstration may be downloaded before class and kept as a worked example. At the start of the practical, each student must complete the [PHY4605 Individual Practical Check](https://docs.google.com/forms/d/e/1FAIpQLSc1q0t0yBi8XVwrrNH2G2H8Sc66VFy2fBMkbhJaTZ3TGRxkvw/viewform) and select `Week 01` before discussing the problem or using MATLAB, notes, calculators, or AI. Then complete the practical in a group of two or three. MATLAB Copilot is allowed during the group practical, but its material use must be declared and independently checked.
+For the practical, use `Week01_Practical_AI_Enabled_Array_Challenge_Set.m`. It is an AI-enabled group challenge set with ten progressive questions, supplied analogous models, labelled plots, validation checks, concise AI decision evidence, and a post-submission random individual defence. Generative AI may be used to write or debug code; every group member must still be able to explain, verify, and interpret the submitted work.
 
-The `.m` files are Live Scripts in MATLAB R2025a or later and remain plain text for version control. Files used to build, render, validate, or reproduce these materials are stored in the hidden `.agent/` folder. Students should use the files listed above and do not need the contents of `.agent/`.
+The learning note, `Week01_Physics_to_Arrays_and_Plots.pdf`, gives the same model and sequence in handout form. The lecture deck presents the same route visually.
+
+## Locked model
+
+For a ball launched vertically upward, with upward positive and air resistance neglected:
+
+`y(t) = y0 + v0 t - (1/2) g t.^2`
+
+| Quantity | Value |
+| --- | ---: |
+| `y0_m` | 0 m |
+| `v0_mps` | 20 m s^-1 |
+| `g_mps2` | 9.81 m s^-2 |
+| `t_s` | 0:0.1:4 s |
+
+The continuous model reaches its highest point at approximately 2.04 s and 20.39 m. The required Week 01 validation is the known initial value: `y(0) = 0 m`.
+
+## What to look for
+
+- A physics model becomes named variables with units.
+- An array stores many time values; MATLAB indexing starts at 1.
+- `.*` and `.^` apply the calculation to every time sample.
+- A graph needs a descriptive title, labelled axes, and units.
+- A graph is evidence only when it agrees with a stated physical prediction and a check.
+
+## Practical transfer and assessment
+
+The practical supplies all equations, assumptions, variables, units, and reference checks. It asks groups to apply Week 01 array, indexing, element-wise operation, and plotting ideas to a different physics context, rather than reproduce the lecture's vertical-motion example.
+
+All ten practical questions must be completed before the group submission is locked. After submission, the instructor assigns a question slot and, where needed, a parameter or defect variant; one eligible group member is selected at random to explain the model, code/output, validation, and physical conclusion. The practical portfolio consists of a 12% group-evidence component and a 3% cumulative individual defence component.
+
+Record only the AI tool used, the material request, what your group accepted/modified/rejected, and the independent checks performed. Do not submit a full chat history.
+
+## Requirements and reproducibility
+
+The lecture demonstration and practical baseline use base MATLAB only. Run the practical from a fresh MATLAB session, from top to bottom, before adding group code and again before submitting. All hidden source, reference solution, question variants, defence rubric, rotation ledger, build evidence, and QA records are kept in `.agent/`; they are not student tasks.

@@ -1,0 +1,34 @@
+Use case: scientific-educational
+Asset type: one 16:9 presentation slide, complete raster image, exactly 1920 x 1080 pixels
+Topic and learning outcome: PHY4605 Week 5 root finding. Learners see why a very small derivative makes an unsafeguarded Newton tangent step dangerously large from a poor initial guess.
+Density mode: standard; three clear zones plus a warning strip, no dense prose.
+Slide archetype: caution / numerical shock
+
+MANDATORY FIXED MASTER: exactly 1920×1080. Pure flat #FFFFFF canvas, absolutely borderless. No vignette, background wash, gradient, texture, grid, motif, shadow field, decorative imagery, logo, watermark, URL, citation, footer, or page number. All visible content >=76 px from every edge, prefer >=115 px left/right. Match approved Week05 Slide 05: upper-left sentence-case title at x=115 y=60, navy #0B2B4C Roboto Condensed Bold (or visually identical) nominal 68 px, no terminal period; subtitle x=115 directly below in non-condensed Roboto Medium 30 px charcoal #3F4B57, no terminal period. Do not enlarge title.
+
+Text (verbatim; preserve every exact character, prime, unicode subscript, unicode minus, delta, decimal, equality sign, unit, capitalization, and terminal period. No other visible words or symbols):
+"Stress case: a small derivative creates a huge Newton step"
+"High eccentricity makes local tangent information dangerous from a poor guess"
+"e = 0.999"
+"M = 0.15 rad"
+"E₀ = 0"
+"f(0)=−0.15"
+"f′(0)=1−0.999=0.001"
+"ΔE=−f(0)/f′(0)=150 rad"
+"candidate = 150 rad"
+"E ≈ 0.97925 rad"
+"A successful final residual later does not erase the risk exposed by the first step."
+
+Composition under title band: three vertical zones with clear gutters. Left parameter card x=115 y=250 w=560 h=520. Centre equation card x=730 y=250 w=580 h=520. Right tangent-failure diagram x=1365 y=250 w=440 h=520. All cards use 20–24 px corners, fine 2 px strokes, no shadows, with >=115 px outer side clearance.
+
+Left parameter card: pale red #FFF2F2 fill with caution-red #B3262E stroke. Compact heading-free numerical parameter stack, set as three large separate lines exactly: "e = 0.999"; "M = 0.15 rad"; "E₀ = 0". Add only a functional small red warning triangle/near-flat slope icon in pale red circular backplate, no extra labels.
+
+Centre equation card: pale orange/gold #FFF7E6 fill with gold #C98A16 stroke. Display the three exact equations as a clean vertically spaced math stack: "f(0)=−0.15"; "f′(0)=1−0.999=0.001"; "ΔE=−f(0)/f′(0)=150 rad". Use a proper math face, navy equations, with the final 150 rad given restrained red/gold emphasis but no extra text. Prime must be clearly visible after f. All minus signs must be unicode minus, not hyphen.
+
+Right diagram: white card with a fine caution-red #B3262E stroke. Functional scientific tangent-failure schematic only. Draw navy axes and a shallow blue residual curve near E₀=0. At the start, a nearly horizontal gold tangent points to the right. Draw a very long gold arrow leaving the useful plotting window; exact label "candidate = 150 rad" close to the arrow and fully visible. Mark the useful root region with a small green highlight/dot and exact label "E ≈ 0.97925 rad". These are the only diagram labels. Clearly communicate that the tangent candidate is far outside the useful region; no added axes labels, tick labels, numbers, or words.
+
+Bottom warning strip: x=115 y=900 w=1690 h=115. Pale red #FFF2F2 fill, thin caution-red #B3262E stroke, rounded 22 px, no shadow. Bold condensed caution-red text 31–34 px: "A successful final residual later does not erase the risk exposed by the first step."
+
+Visual language: professional university scientific infographic; navy structure, blue residual curve, gold numerical/tangent arrow, green useful root, red caution. Functional diagrams only, strict left alignment in cards, generous whitespace.
+
+Constraints: generate all text, equations, cards, icons, and the tangent schematic inside this one ImageGen raster image. Do not use SVG, HTML, Canvas, code, placeholders, editable overlays, or post-generation visible edits. Only the quoted Text may appear as visible words/symbols. Ensure all formula notation and labels are exact. No logo, institutional mark, watermark, URL, source label, footer branding, timing, or unrequested element.

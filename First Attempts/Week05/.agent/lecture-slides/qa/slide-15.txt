@@ -1,0 +1,14 @@
+Slide 15 self-QA — Fixed master checklist 10/10 PASS
+
+1. PASS — final raster exported at 1920 x 1080.
+2. PASS — pure flat white borderless canvas.
+3. PASS — all flow cards, title/subtitle, and comparison strip are inside safe margins.
+4. PASS — sentence-case navy condensed title uses the controlled Week 05 scale and upper-left band.
+5. PASS — subtitle uses lighter non-condensed charcoal supporting treatment without terminal punctuation.
+6. PASS — flow and comparison text match the handoff; no connector labels, code, or extra branches are present.
+7. PASS — `[a,b]`, `E_new = E − f/f′`, vertical bars, values, and equals sign are legible and preserved.
+8. PASS — the uncluttered decision diamond splits to accept/fallback paths that converge on bracket preservation, clearly communicating safeguarded Newton.
+9. PASS — green bracket/update, gold proposal, teal accept, and red fallback follow the semantic palette.
+10. PASS — no branding, footer, URL, source label, background decoration, or unrequested element.
+
+Unresolved risk: ImageGen renders the prime in `f/f′` in a close apostrophe-like form at projection scale; its intended derivative notation remains legible in context.

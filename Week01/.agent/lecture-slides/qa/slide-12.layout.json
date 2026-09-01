@@ -1,0 +1,647 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/id6l61",
+    "id": "id6l61",
+    "slide": 12,
+    "layoutId": "6f56c1f4-3f42-4b66-afb1-67297ccec0c0",
+    "layoutName": "Content T1",
+    "masterLayoutId": "52898967-6e75-4903-8d4a-3a6bfc7ef80b",
+    "masterLayoutName": "PHY4605 Borderless White Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "PHY4605",
+    "colors": {
+      "accent1": "#2F6DB2",
+      "accent2": "#2A9D9F",
+      "accent3": "#C98A16",
+      "accent4": "#6F4B9B",
+      "accent5": "#3E8E45",
+      "accent6": "#B3262E",
+      "bg1": "#FFFFFF",
+      "bg2": "#F7F9FB",
+      "tx1": "#0B2B4C",
+      "tx2": "#3F4B57",
+      "dk1": "#0B2B4C",
+      "dk2": "#3F4B57",
+      "lt1": "#FFFFFF",
+      "lt2": "#F7F9FB",
+      "hlink": "#2F6DB2",
+      "folHlink": "#6F4B9B"
+    },
+    "typefaces": [
+      "IBM Plex Mono",
+      "Nunito"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "6f56c1f4-3f42-4b66-afb1-67297ccec0c0",
+      "name": "Content T1",
+      "parentLayoutId": "52898967-6e75-4903-8d4a-3a6bfc7ef80b",
+      "elements": []
+    },
+    {
+      "scope": "master",
+      "id": "52898967-6e75-4903-8d4a-3a6bfc7ef80b",
+      "name": "PHY4605 Borderless White Master",
+      "type": "master",
+      "elements": []
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/83a54z6x",
+      "id": "1",
+      "name": "title-T1",
+      "bbox": [
+        115,
+        60,
+        1580,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Run the model, then read the graph",
+      "textPreview": "Run the model, then read the graph",
+      "resolvedFontSize": 68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 68,
+        "typeface": "Nunito",
+        "color": "#0B2B4C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Run the model, then read the graph"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Run the model, then read the graph",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 68,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Run the model, then read the graph",
+              "fontSize": 68,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/721ovu5c",
+      "id": "2",
+      "name": "subtitle-T1",
+      "bbox": [
+        115,
+        152,
+        1580,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Prediction comes before the plot; a known value checks the result",
+      "textPreview": "Prediction comes before the plot; a known value checks the result",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Nunito",
+        "color": "#3F4B57",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Prediction comes before the plot; a known value checks the result"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Prediction comes before the plot; a known value checks the result",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Prediction comes before the plot; a known value checks the result",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#3F4B57",
+              "alignment": "left"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/m1sn2por",
+      "id": "3",
+      "bbox": [
+        115,
+        270,
+        760,
+        555
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F4F8FC",
+      "lineColor": "#2F6DB2",
+      "lineWidth": 2
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hs3614ne",
+      "id": "4",
+      "bbox": [
+        155,
+        310,
+        650,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Trace this short fragment",
+      "textPreview": "Trace this short fragment",
+      "resolvedFontSize": 34,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 34,
+        "typeface": "Nunito",
+        "color": "#2F6DB2",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Trace this short fragment"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Trace this short fragment",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Nunito",
+            "color": "#2F6DB2",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Trace this short fragment",
+              "fontSize": 34,
+              "typeface": "Nunito",
+              "color": "#2F6DB2",
+              "bold": true,
+              "alignment": "left"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gru58jmt",
+      "id": "5",
+      "bbox": [
+        155,
+        395,
+        660,
+        340
+      ],
+      "geometry": "rect",
+      "text": "t_s = 0:0.1:4;\ny_m = 20.*t_s - 0.5*9.81*t_s.^2;\nplot(t_s,y_m,'LineWidth',2)\nxlabel('Time (s)')\nylabel('Vertical position (m)')\nassert(abs(y_m(1)) < 1e-12)",
+      "textPreview": "t_s = 0:0.1:4; | y_m = 20.*t_s - 0.5*9.81*t_s.^2; | plot(t_s,y_m,'LineWidth',2) | xlabel('Time (s)') | ylabel('Vertical position (m)') | ...",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "IBM Plex Mono",
+        "color": "#0B2B4C",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 6,
+        "lines": [
+          {
+            "index": 1,
+            "text": "t_s = 0:0.1:4;"
+          },
+          {
+            "index": 2,
+            "text": "y_m = 20.*t_s - 0.5*9.81*t_s.^2;"
+          },
+          {
+            "index": 3,
+            "text": "plot(t_s,y_m,'LineWidth',2)"
+          },
+          {
+            "index": 4,
+            "text": "xlabel('Time (s)')"
+          },
+          {
+            "index": 5,
+            "text": "ylabel('Vertical position (m)')"
+          },
+          {
+            "index": 6,
+            "text": "assert(abs(y_m(1)) < 1e-12)"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "t_s = 0:0.1:4;",
+          "lineSpacingPercent": 122000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "IBM Plex Mono",
+            "color": "#0B2B4C",
+            "alignment": "left",
+            "lineSpacing": 1.22
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "t_s = 0:0.1:4;",
+              "fontSize": 25,
+              "typeface": "IBM Plex Mono",
+              "color": "#0B2B4C",
+              "alignment": "left",
+              "lineSpacing": 1.22
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "y_m = 20.*t_s - 0.5*9.81*t_s.^2;",
+          "lineSpacingPercent": 122000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "IBM Plex Mono",
+            "color": "#0B2B4C",
+            "alignment": "left",
+            "lineSpacing": 1.22
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "y_m = 20.*t_s - 0.5*9.81*t_s.^2;",
+              "fontSize": 25,
+              "typeface": "IBM Plex Mono",
+              "color": "#0B2B4C",
+              "alignment": "left",
+              "lineSpacing": 1.22
+            }
+          ]
+        },
+        {
+          "index": 3,
+          "text": "plot(t_s,y_m,'LineWidth',2)",
+          "lineSpacingPercent": 122000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "IBM Plex Mono",
+            "color": "#0B2B4C",
+            "alignment": "left",
+            "lineSpacing": 1.22
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "plot(t_s,y_m,'LineWidth',2)",
+              "fontSize": 25,
+              "typeface": "IBM Plex Mono",
+              "color": "#0B2B4C",
+              "alignment": "left",
+              "lineSpacing": 1.22
+            }
+          ]
+        },
+        {
+          "index": 4,
+          "text": "xlabel('Time (s)')",
+          "lineSpacingPercent": 122000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "IBM Plex Mono",
+            "color": "#0B2B4C",
+            "alignment": "left",
+            "lineSpacing": 1.22
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "xlabel('Time (s)')",
+              "fontSize": 25,
+              "typeface": "IBM Plex Mono",
+              "color": "#0B2B4C",
+              "alignment": "left",
+              "lineSpacing": 1.22
+            }
+          ]
+        },
+        {
+          "index": 5,
+          "text": "ylabel('Vertical position (m)')",
+          "lineSpacingPercent": 122000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "IBM Plex Mono",
+            "color": "#0B2B4C",
+            "alignment": "left",
+            "lineSpacing": 1.22
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "ylabel('Vertical position (m)')",
+              "fontSize": 25,
+              "typeface": "IBM Plex Mono",
+              "color": "#0B2B4C",
+              "alignment": "left",
+              "lineSpacing": 1.22
+            }
+          ]
+        },
+        {
+          "index": 6,
+          "text": "assert(abs(y_m(1)) < 1e-12)",
+          "lineSpacingPercent": 122000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "IBM Plex Mono",
+            "color": "#0B2B4C",
+            "alignment": "left",
+            "lineSpacing": 1.22
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "assert(abs(y_m(1)) < 1e-12)",
+              "fontSize": 25,
+              "typeface": "IBM Plex Mono",
+              "color": "#0B2B4C",
+              "alignment": "left",
+              "lineSpacing": 1.22
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/uh83q1w7",
+      "id": "6",
+      "bbox": [
+        955,
+        255,
+        730,
+        520
+      ],
+      "alt": "MATLAB height-versus-time graph for the Week 1 vertical-motion model",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "prompt": "MATLAB-generated numerical evidence",
+      "asset": {
+        "assetId": "4df7c932-51b7-4a48-b963-ebf0e4303b5b",
+        "contentType": "image/png",
+        "prompt": "MATLAB-generated numerical evidence",
+        "byteLength": 113468
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/upcn69o3",
+      "id": "7",
+      "bbox": [
+        115,
+        860,
+        1520,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Prediction: rise, one peak, then fall. Check: y_m(1) = 0 m",
+      "textPreview": "Prediction: rise, one peak, then fall. Check: y_m(1) = 0 m",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Nunito",
+        "color": "#0B2B4C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Prediction: rise, one peak, then fall. Check: y_m(1) = 0 m"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Prediction: rise, one peak, then fall. Check: y_m(1) = 0 m",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Prediction: rise, one peak, then fall. Check: y_m(1) = 0 m",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true,
+              "alignment": "left"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xwj6pkna",
+      "id": "8",
+      "name": "slide-number-12",
+      "bbox": [
+        1764,
+        976,
+        40,
+        28
+      ],
+      "geometry": "rect",
+      "text": "12",
+      "textPreview": "12",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "Nunito",
+        "color": "#697684",
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "12"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "12",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#697684",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "12",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#697684",
+              "alignment": "right"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

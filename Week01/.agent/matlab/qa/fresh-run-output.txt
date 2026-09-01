@@ -1,0 +1,57 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+n_samples =
+
+    41
+
+
+first_time_s =
+
+     0
+
+
+eleventh_time_s =
+
+     1
+
+
+position_at_start_m =
+
+     0
+
+
+position_at_1s_m =
+
+   15.0950
+
+
+selected =
+
+  5×2 table
+
+    time_s    position_m
+    ______    __________
+
+      0              0  
+      1         15.095  
+      2          20.38  
+      3         15.855  
+      4           1.52  
+
+
+t_peak_s =
+
+    2.0387
+
+
+y_peak_m =
+
+   20.3874
+
+WEEK01_FRESH_RUN_OK

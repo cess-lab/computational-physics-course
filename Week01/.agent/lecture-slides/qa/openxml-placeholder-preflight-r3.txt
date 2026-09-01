@@ -1,0 +1,26 @@
+OpenXML structural counts
+slide title placeholders:       13
+slide subtitle placeholders:       12
+slide-number placeholders:       12
+layout title placeholders:        5
+layout subtitle placeholders:        5
+layout slide-number placeholders:        4
+font names in slide XML:
+  66 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide1.xml:typeface="Nunito"
+  24 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide10.xml:typeface="IBM Plex Mono"
+  42 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide10.xml:typeface="Nunito"
+  18 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide11.xml:typeface="IBM Plex Mono"
+  60 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide11.xml:typeface="Nunito"
+  36 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide12.xml:typeface="IBM Plex Mono"
+  30 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide12.xml:typeface="Nunito"
+  72 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide13.xml:typeface="Nunito"
+ 126 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide2.xml:typeface="Nunito"
+  60 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide3.xml:typeface="Nunito"
+  66 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide4.xml:typeface="Nunito"
+  24 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide5.xml:typeface="IBM Plex Mono"
+  72 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide5.xml:typeface="Nunito"
+  54 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide6.xml:typeface="IBM Plex Mono"
+  96 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide6.xml:typeface="Nunito"
+  48 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide7.xml:typeface="Nunito"
+  78 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide8.xml:typeface="Nunito"
+ 120 /var/folders/3r/7pns84md0lb5nqhp3586wy1c0000gn/T/tmp.9mHrmgXf5h/ppt/slides/slide9.xml:typeface="Nunito"

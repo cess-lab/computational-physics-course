@@ -1,0 +1,228 @@
+{"kind":"layout","layoutId":"f48dc1c2-94c4-4fac-9a77-5fdaa401cdd4","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"6f5a9a57-5de4-4eae-8b51-d17f390f84b0","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"7b92f5ea-9bb7-4fbb-bea2-efd54d4ae4da","name":"PHY4605 Borderless White Master","type":"master"}
+{"kind":"layout","layoutId":"8f0cb4a0-f84c-4a09-a9a1-19fe23cdd23a","name":"Opening"}
+{"kind":"layout","layoutId":"b1f936f7-59d8-4f31-b952-c5df95cd3201","name":"Content T1"}
+{"kind":"layout","layoutId":"e2715ab4-6aa3-4071-b0f2-48ac4f40ae4a","name":"Content T2"}
+{"kind":"layout","layoutId":"b3635aca-18df-41ae-8b76-5b1d999150e8","name":"Content T3"}
+{"kind":"slide","id":"sl/urm0r2","slide":1,"title":"PHY4605 COMPUTATIONAL PHYSICS","textShapes":12}
+{"kind":"textbox","id":"sh/kb2947u9","slide":1,"name":"course-tag","text":"PHY4605 COMPUTATIONAL PHYSICS","textPreview":"PHY4605 COMPUTATIONAL PHYSICS","textChars":29,"textLines":1,"bbox":[115,86,760,38]}
+{"kind":"textbox","id":"sh/jat8vmdo","slide":1,"name":"opening-title","text":"Physics to Arrays\nand Plots","textPreview":"Physics to Arrays | and Plots","textChars":27,"textLines":2,"bbox":[115,182,880,210]}
+{"kind":"textbox","id":"sh/i90r2hc3","slide":1,"name":"opening-subtitle","text":"Week 1  |  A familiar model becomes computational evidence","textPreview":"Week 1  |  A familiar model becomes computational evidence","textChars":58,"textLines":1,"bbox":[115,432,940,46]}
+{"kind":"textbox","id":"sh/sz298ru5","slide":1,"text":"highest point","textPreview":"highest point","textChars":13,"textLines":1,"bbox":[1495,168,240,38]}
+{"kind":"textbox","id":"sh/7et8zmd0","slide":1,"text":"return","textPreview":"return","textChars":6,"textLines":1,"bbox":[1515,466,190,38]}
+{"kind":"textbox","id":"sh/6dkr6hcf","slide":1,"text":"launch","textPreview":"launch","textChars":6,"textLines":1,"bbox":[1515,664,190,38]}
+{"kind":"shape","id":"sh/h4va5wb2","slide":1,"bbox":[1142,260,16,310]}
+{"kind":"textbox","id":"sh/g3m9cruh","slide":1,"text":"gravity","textPreview":"gravity","textChars":7,"textLines":1,"bbox":[1040,390,100,36]}
+{"kind":"textbox","id":"sh/69cr6x0z","slide":1,"text":"physical model","textPreview":"physical model","textChars":14,"textLines":1,"bbox":[115,830,210,54]}
+{"kind":"shape","id":"sh/ra58z21k","slide":1,"bbox":[334,851,30,12]}
+{"kind":"textbox","id":"sh/sve987ip","slide":1,"text":"arrays","textPreview":"arrays","textChars":6,"textLines":1,"bbox":[375,830,210,54]}
+{"kind":"shape","id":"sh/twnq1cja","slide":1,"bbox":[594,851,30,12]}
+{"kind":"textbox","id":"sh/exwrah0v","slide":1,"text":"plot","textPreview":"plot","textChars":4,"textLines":1,"bbox":[635,830,210,54]}
+{"kind":"shape","id":"sh/fy583m1g","slide":1,"bbox":[854,851,30,12]}
+{"kind":"textbox","id":"sh/gze9cri1","slide":1,"text":"validation","textPreview":"validation","textChars":10,"textLines":1,"bbox":[895,830,210,54]}
+{"kind":"textbox","id":"sh/10nq5cjm","slide":1,"text":"Editable PowerPoint master proof","textPreview":"Editable PowerPoint master proof","textChars":32,"textLines":1,"bbox":[115,944,620,34]}
+{"kind":"image","id":"im/0bq9kbqp","slide":1,"name":"","alt":"A ball at launch, at its highest point, and on return along one vertical dashed path","prompt":"PHY4605 Matte Scientific Cutaway: a vertical projectile shown at three positions on one dashed trajectory; no text","bbox":[1190,90,430,720]}
+{"kind":"notes","id":"nt/urm0r2","slide":1,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- OpenAI ImageGen; PHY4605 Matte Scientific Cutaway visual-only projectile illustration; generated 2026-08-31\n- Standard constant-acceleration kinematics; lecturer-authored"}
+{"kind":"slide","id":"sl/f1wpl0","slide":2,"title":"Arrays store physical moments","textShapes":24}
+{"kind":"textbox","id":"sh/wni9sjm5","slide":2,"name":"title-T1","text":"Arrays store physical moments","textPreview":"Arrays store physical moments","textChars":29,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/v29sjelk","slide":2,"name":"subtitle-T1","text":"Each index identifies one measurement time","textPreview":"Each index identifies one measurement time","textChars":42,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/907aho3e","slide":2,"bbox":[524,575,860,0]}
+{"kind":"shape","id":"sh/8zy9ojmt","slide":2,"bbox":[524,543,0,17]}
+{"kind":"shape","id":"sh/nypsfel8","slide":2,"bbox":[506,557,36,36]}
+{"kind":"textbox","id":"sh/mxgrm94n","slide":2,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[496,613,56,30]}
+{"kind":"shape","id":"sh/twbat83i","slide":2,"bbox":[610,543,0,17]}
+{"kind":"shape","id":"sh/sv2tk32x","slide":2,"bbox":[600,565,20,20]}
+{"kind":"textbox","id":"sh/udwvilwr","slide":2,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[582,613,56,30]}
+{"kind":"shape","id":"sh/fe5crqdw","slide":2,"bbox":[696,543,0,17]}
+{"kind":"shape","id":"sh/gfedkveh","slide":2,"bbox":[686,565,20,20]}
+{"kind":"textbox","id":"sh/hgnet0v2","slide":2,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[668,613,56,30]}
+{"kind":"shape","id":"sh/69cvelwf","slide":2,"bbox":[782,543,0,17]}
+{"kind":"shape","id":"sh/7alcnqd0","slide":2,"bbox":[772,565,20,20]}
+{"kind":"textbox","id":"sh/sbedgbel","slide":2,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[754,613,56,30]}
+{"kind":"shape","id":"sh/tcnupgv6","slide":2,"bbox":[868,543,0,17]}
+{"kind":"shape","id":"sh/q5gvq5cj","slide":2,"bbox":[858,565,20,20]}
+{"kind":"textbox","id":"sh/r6pwzad4","slide":2,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[840,613,56,30]}
+{"kind":"shape","id":"sh/nqhsr2tw","slide":2,"bbox":[954,543,0,17]}
+{"kind":"shape","id":"sh/mp8rixcb","slide":2,"bbox":[936,557,36,36]}
+{"kind":"textbox","id":"sh/9sjatcbm","slide":2,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[926,613,56,30]}
+{"kind":"shape","id":"sh/orq9k7u1","slide":2,"bbox":[1040,543,0,17]}
+{"kind":"shape","id":"sh/bu1svmts","slide":2,"bbox":[1030,565,20,20]}
+{"kind":"textbox","id":"sh/atsbmhc7","slide":2,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1012,613,56,30]}
+{"kind":"shape","id":"sh/xgjaxcby","slide":2,"bbox":[1126,543,0,17]}
+{"kind":"shape","id":"sh/wfatorud","slide":2,"bbox":[1116,565,20,20]}
+{"kind":"textbox","id":"sh/ji1szmto","slide":2,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1098,613,56,30]}
+{"kind":"shape","id":"sh/yhsbqhcj","slide":2,"bbox":[1212,543,0,17]}
+{"kind":"shape","id":"sh/gnu9grqh","slide":2,"bbox":[1202,565,20,20]}
+{"kind":"textbox","id":"sh/ho3apwr2","slide":2,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1184,613,56,30]}
+{"kind":"shape","id":"sh/ulcre18b","slide":2,"bbox":[1298,543,0,17]}
+{"kind":"shape","id":"sh/fmlsnm9w","slide":2,"bbox":[1288,565,20,20]}
+{"kind":"textbox","id":"sh/8ju9crql","slide":2,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1270,613,56,30]}
+{"kind":"shape","id":"sh/tk3qlwr6","slide":2,"bbox":[1384,543,0,17]}
+{"kind":"shape","id":"sh/6hsrah8f","slide":2,"bbox":[1366,557,36,36]}
+{"kind":"textbox","id":"sh/7i18jm90","slide":2,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1356,613,56,30]}
+{"kind":"shape","id":"sh/kva987q9","slide":2,"bbox":[369,660,310,166]}
+{"kind":"textbox","id":"sh/lwjqhcru","slide":2,"text":"launch","textPreview":"launch","textChars":6,"textLines":1,"bbox":[395,682,258,36]}
+{"kind":"textbox","id":"sh/90z6987m","slide":2,"text":"t(1) = 0.0 s","textPreview":"t(1) = 0.0 s","textChars":12,"textLines":1,"bbox":[395,733,258,34]}
+{"kind":"textbox","id":"sh/oz6pg361","slide":2,"text":"initial condition","textPreview":"initial condition","textChars":17,"textLines":1,"bbox":[395,782,258,32]}
+{"kind":"shape","id":"sh/nyxo7ypg","slide":2,"bbox":[799,660,310,166]}
+{"kind":"textbox","id":"sh/mxonedov","slide":2,"text":"middle","textPreview":"middle","textChars":6,"textLines":1,"bbox":[825,682,258,36]}
+{"kind":"textbox","id":"sh/xoz6ds7y","slide":2,"text":"t(6) = 2.0 s","textPreview":"t(6) = 2.0 s","textChars":12,"textLines":1,"bbox":[825,733,258,34]}
+{"kind":"textbox","id":"sh/wnqpkn6d","slide":2,"text":"at the peak","textPreview":"at the peak","textChars":11,"textLines":1,"bbox":[825,782,258,32]}
+{"kind":"shape","id":"sh/b2hobips","slide":2,"bbox":[1229,660,310,166]}
+{"kind":"textbox","id":"sh/a187ido7","slide":2,"text":"end","textPreview":"end","textChars":3,"textLines":1,"bbox":[1255,682,258,36]}
+{"kind":"textbox","id":"sh/dsv61o7e","slide":2,"text":"t(11) = 4.0 s","textPreview":"t(11) = 4.0 s","textChars":13,"textLines":1,"bbox":[1255,733,258,34]}
+{"kind":"textbox","id":"sh/crm58j6t","slide":2,"text":"near return","textPreview":"near return","textChars":11,"textLines":1,"bbox":[1255,782,258,32]}
+{"kind":"textbox","id":"sh/i10vm50f","slide":2,"text":"The number in parentheses selects one physical moment from the array","textPreview":"The number in parentheses selects one physical moment from the array","textChars":68,"textLines":1,"bbox":[115,872,1500,42]}
+{"kind":"textbox","id":"sh/3m9cvq10","slide":2,"name":"slide-number-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"image","id":"im/jq9cn61c","slide":2,"name":"","alt":"Eleven evenly spaced snapshots of one ball: launch, rise, highest point, descent, and return","prompt":"PHY4605 Matte Scientific Cutaway: eleven aligned samples of one vertical projectile, with the central peak marked in gold; visual-only","bbox":[325,215,1270,410]}
+{"kind":"notes","id":"nt/f1wpl0","slide":2,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- PHY4605 Course Topic and Difficulty Blueprint\n- OpenAI ImageGen; PHY4605 Matte Scientific Cutaway visual-only eleven-sample motion illustration aligned with the editable index rail; generated 2026-08-31"}
+{"kind":"slide","id":"sl/i91ugj","slide":3,"title":"A labelled plot turns values into evidence","textShapes":12}
+{"kind":"textbox","id":"sh/l07mlsj6","slide":3,"name":"title-T2","text":"A labelled plot turns values into evidence","textPreview":"A labelled plot turns values into evidence","textChars":42,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/yxw3ad0v","slide":3,"name":"subtitle-T2","text":"Axes, units, and shape must agree with the model","textPreview":"Axes, units, and shape must agree with the model","textChars":48,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/zy54ji10","slide":3,"bbox":[115,260,420,570]}
+{"kind":"textbox","id":"sh/83ylg7ix","slide":3,"text":"Before plotting","textPreview":"Before plotting","textChars":15,"textLines":1,"bbox":[151,298,340,44]}
+{"kind":"textbox","id":"sh/947mpsji","slide":3,"text":"starts at","textPreview":"starts at","textChars":9,"textLines":1,"bbox":[151,390,170,34]}
+{"kind":"textbox","id":"sh/m1g3ex0r","slide":3,"text":"y = 0 m","textPreview":"y = 0 m","textChars":7,"textLines":1,"bbox":[151,432,300,44]}
+{"kind":"textbox","id":"sh/n2p4n21c","slide":3,"text":"rises to","textPreview":"rises to","textChars":8,"textLines":1,"bbox":[151,508,170,34]}
+{"kind":"textbox","id":"sh/o7el43id","slide":3,"text":"one maximum","textPreview":"one maximum","textChars":11,"textLines":1,"bbox":[151,550,300,44]}
+{"kind":"textbox","id":"sh/p8n2d8jy","slide":3,"text":"returns to","textPreview":"returns to","textChars":10,"textLines":1,"bbox":[151,626,170,34]}
+{"kind":"textbox","id":"sh/94zi1ove","slide":3,"text":"y ≈ 0 m","textPreview":"y ≈ 0 m","textChars":7,"textLines":1,"bbox":[151,668,300,44]}
+{"kind":"textbox","id":"sh/83qh83ut","slide":3,"text":"prediction first","textPreview":"prediction first","textChars":16,"textLines":1,"bbox":[151,742,250,50]}
+{"kind":"textbox","id":"sh/m18z6tcn","slide":3,"text":"Does the curve match all three predictions?","textPreview":"Does the curve match all three predictions?","textChars":43,"textLines":1,"bbox":[605,872,900,44]}
+{"kind":"textbox","id":"sh/x8ji58ba","slide":3,"name":"slide-number-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"chart","id":"ch/byx47up0","slide":3,"name":"","chartType":"line","bbox":[605,250,1130,610]}
+{"kind":"notes","id":"nt/i91ugj","slide":3,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- Standard constant-acceleration kinematics; y(t) = 20t - 4.905t^2"}
+{"kind":"slide","id":"sl/gyinv7","slide":4,"title":"A boundary check can reveal an error","textShapes":14}
+{"kind":"textbox","id":"sh/ed0r21k3","slide":4,"name":"title-T3","text":"A boundary check can reveal an error\nthat a smooth curve hides","textPreview":"A boundary check can reveal an error | that a smooth curve hides","textChars":62,"textLines":2,"bbox":[115,60,1580,138]}
+{"kind":"textbox","id":"sh/1gradwju","slide":4,"name":"subtitle-T3","text":"Use a known condition before trusting the full result","textPreview":"Use a known condition before trusting the full result","textChars":53,"textLines":1,"bbox":[115,205,1580,44]}
+{"kind":"textbox","id":"sh/0fi94r29","slide":4,"text":"Known condition","textPreview":"Known condition","textChars":15,"textLines":1,"bbox":[115,320,560,44]}
+{"kind":"shape","id":"sh/mh0r610f","slide":4,"bbox":[480,390,325,330]}
+{"kind":"textbox","id":"sh/9kbahgjq","slide":4,"text":"At launch","textPreview":"At launch","textChars":9,"textLines":1,"bbox":[515,432,255,42]}
+{"kind":"textbox","id":"sh/oj298bi5","slide":4,"text":"t = 0 s","textPreview":"t = 0 s","textChars":7,"textLines":1,"bbox":[515,515,255,56]}
+{"kind":"textbox","id":"sh/3mp8321g","slide":4,"text":"must give","textPreview":"must give","textChars":9,"textLines":1,"bbox":[515,583,255,38]}
+{"kind":"textbox","id":"sh/2lgruxkv","slide":4,"text":"y = 0 m","textPreview":"y = 0 m","textChars":7,"textLines":1,"bbox":[515,635,255,58]}
+{"kind":"textbox","id":"sh/0bid0ryd","slide":4,"text":"Computed result","textPreview":"Computed result","textChars":15,"textLines":1,"bbox":[930,320,560,44]}
+{"kind":"shape","id":"sh/1wru9wfy","slide":4,"bbox":[930,390,760,330]}
+{"kind":"textbox","id":"sh/e90vyhg7","slide":4,"text":"y(1)","textPreview":"y(1)","textChars":4,"textLines":1,"bbox":[975,448,170,62]}
+{"kind":"textbox","id":"sh/fa9c7mxs","slide":4,"text":"= 0.000 m","textPreview":"= 0.000 m","textChars":9,"textLines":1,"bbox":[1150,448,390,62]}
+{"kind":"textbox","id":"sh/oz2d4ry9","slide":4,"text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[1580,450,46,46]}
+{"kind":"textbox","id":"sh/p0budwfu","slide":4,"text":"The first array value satisfies the launch condition","textPreview":"The first array value satisfies the launch condition","textChars":52,"textLines":1,"bbox":[975,580,640,80]}
+{"kind":"shape","id":"sh/2xkv21gj","slide":4,"bbox":[115,790,1575,110]}
+{"kind":"textbox","id":"sh/nytcbmx4","slide":4,"text":"A smooth graph is not enough: test at least one value that physics already tells you","textPreview":"A smooth graph is not enough: test at least one value that physics already tells you","textChars":84,"textLines":1,"bbox":[160,822,1480,48]}
+{"kind":"textbox","id":"sh/43yts7y5","slide":4,"name":"slide-number-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"image","id":"im/udcvm98n","slide":4,"name":"","alt":"A ball on the ground at launch with an upward initial-velocity arrow and downward gravity arrow","prompt":"Launch-boundary close-up with ball, ground, initial-velocity arrow, gravity arrow, no text","bbox":[115,375,330,355]}
+{"kind":"notes","id":"nt/gyinv7","slide":4,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- Standard initial-condition validation for vertical motion\n- OpenAI ImageGen; PHY4605 Matte Scientific Cutaway visual-only launch-boundary illustration; generated 2026-08-31"}
+{"kind":"slide","id":"sl/z851zb","slide":5,"title":"Names and units keep the model readable","textShapes":24}
+{"kind":"textbox","id":"sh/qd0b2tg7","slide":5,"name":"title-T1","text":"Names and units keep the model readable","textPreview":"Names and units keep the model readable","textChars":39,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/d0baxofy","slide":5,"name":"subtitle-T1","text":"Translate each physical quantity before writing code","textPreview":"Translate each physical quantity before writing code","textChars":52,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/sf2t4jyd","slide":5,"text":"physics symbol","textPreview":"physics symbol","textChars":14,"textLines":1,"bbox":[115,266,340,38]}
+{"kind":"textbox","id":"sh/f2tszyxo","slide":5,"text":"meaning","textPreview":"meaning","textChars":7,"textLines":1,"bbox":[315,266,490,38]}
+{"kind":"textbox","id":"sh/e1kb6tg3","slide":5,"text":"MATLAB name","textPreview":"MATLAB name","textChars":11,"textLines":1,"bbox":[870,266,340,38]}
+{"kind":"textbox","id":"sh/14ba18fu","slide":5,"text":"unit","textPreview":"unit","textChars":4,"textLines":1,"bbox":[1370,266,340,38]}
+{"kind":"shape","id":"sh/032t83y9","slide":5,"bbox":[115,330,1575,98]}
+{"kind":"textbox","id":"sh/n6ds3ix0","slide":5,"text":"t","textPreview":"t","textChars":1,"textLines":1,"bbox":[155,350,110,54]}
+{"kind":"textbox","id":"sh/25kbadgf","slide":5,"text":"time","textPreview":"time","textChars":4,"textLines":1,"bbox":[315,355,490,48]}
+{"kind":"textbox","id":"sh/sfixsvmp","slide":5,"text":"t","textPreview":"t","textChars":1,"textLines":1,"bbox":[870,353,300,50]}
+{"kind":"textbox","id":"sh/tgryl03a","slide":5,"text":"s","textPreview":"s","textChars":1,"textLines":1,"bbox":[1370,353,250,50]}
+{"kind":"shape","id":"sh/6d0fql4z","slide":5,"bbox":[115,458,1575,98]}
+{"kind":"textbox","id":"sh/re9gjqlk","slide":5,"text":"y","textPreview":"y","textChars":1,"textLines":1,"bbox":[155,478,110,54]}
+{"kind":"textbox","id":"sh/g32hwf21","slide":5,"text":"vertical position","textPreview":"vertical position","textChars":17,"textLines":1,"bbox":[315,483,490,48]}
+{"kind":"textbox","id":"sh/14byp03m","slide":5,"text":"y","textPreview":"y","textChars":1,"textLines":1,"bbox":[870,481,300,50]}
+{"kind":"textbox","id":"sh/e10fu54v","slide":5,"text":"m","textPreview":"m","textChars":1,"textLines":1,"bbox":[1370,481,250,50]}
+{"kind":"shape","id":"sh/f29gnalg","slide":5,"bbox":[115,586,1575,98]}
+{"kind":"textbox","id":"sh/o72h0f2x","slide":5,"text":"v₀","textPreview":"v₀","textChars":2,"textLines":1,"bbox":[155,606,110,54]}
+{"kind":"textbox","id":"sh/p8bytk3i","slide":5,"text":"initial velocity","textPreview":"initial velocity","textChars":16,"textLines":1,"bbox":[315,611,490,48]}
+{"kind":"textbox","id":"sh/xo7ydkvm","slide":5,"text":"v0","textPreview":"v0","textChars":2,"textLines":1,"bbox":[870,609,300,50]}
+{"kind":"textbox","id":"sh/cnyx4fu1","slide":5,"text":"m s⁻¹","textPreview":"m s⁻¹","textChars":5,"textLines":1,"bbox":[1370,609,250,50]}
+{"kind":"shape","id":"sh/bmpgbadw","slide":5,"bbox":[115,714,1575,98]}
+{"kind":"textbox","id":"sh/algfi5cb","slide":5,"text":"g","textPreview":"g","textChars":1,"textLines":1,"bbox":[155,734,110,54]}
+{"kind":"textbox","id":"sh/lsryhkvy","slide":5,"text":"gravitational acceleration","textPreview":"gravitational acceleration","textChars":26,"textLines":1,"bbox":[315,739,490,48]}
+{"kind":"textbox","id":"sh/krix8fud","slide":5,"text":"g","textPreview":"g","textChars":1,"textLines":1,"bbox":[870,737,300,50]}
+{"kind":"textbox","id":"sh/jq9gfuds","slide":5,"text":"m s⁻²","textPreview":"m s⁻²","textChars":5,"textLines":1,"bbox":[1370,737,250,50]}
+{"kind":"textbox","id":"sh/ypgf6pc7","slide":5,"text":"Readable names reduce syntax mistakes and make unit checks easier","textPreview":"Readable names reduce syntax mistakes and make unit checks easier","textChars":65,"textLines":1,"bbox":[115,872,1500,44]}
+{"kind":"textbox","id":"sh/1wny50ve","slide":5,"name":"slide-number-5","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"notes","id":"nt/z851zb","slide":5,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- SI units for one-dimensional vertical motion"}
+{"kind":"slide","id":"sl/mn3zzw","slide":6,"title":"Short code should expose the physics","textShapes":17}
+{"kind":"textbox","id":"sh/l8vypgr6","slide":6,"name":"title-T1","text":"Short code should expose the physics","textPreview":"Short code should expose the physics","textChars":36,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/y5kzu18f","slide":6,"name":"subtitle-T1","text":"The algorithm appears before the MATLAB syntax","textPreview":"The algorithm appears before the MATLAB syntax","textChars":46,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/z6tgn690","slide":6,"text":"Plain-language algorithm","textPreview":"Plain-language algorithm","textChars":24,"textLines":1,"bbox":[115,260,660,46]}
+{"kind":"textbox","id":"sh/c32hsrq9","slide":6,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[115,340,54,54]}
+{"kind":"textbox","id":"sh/d4bylwru","slide":6,"text":"Choose the model parameters","textPreview":"Choose the model parameters","textChars":27,"textLines":1,"bbox":[200,348,590,46]}
+{"kind":"shape","id":"sh/qhkzq18j","slide":6,"bbox":[136,398,12,34]}
+{"kind":"textbox","id":"sh/b2tgjm9o","slide":6,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[115,440,54,54]}
+{"kind":"textbox","id":"sh/wz6h4vqt","slide":6,"text":"Create an array of times","textPreview":"Create an array of times","textChars":24,"textLines":1,"bbox":[200,448,590,46]}
+{"kind":"shape","id":"sh/x0fix0ry","slide":6,"bbox":[136,498,12,34]}
+{"kind":"textbox","id":"sh/94r2hozi","slide":6,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[115,540,54,54]}
+{"kind":"textbox","id":"sh/83il8jyx","slide":6,"text":"Calculate height at every time","textPreview":"Calculate height at every time","textChars":30,"textLines":1,"bbox":[200,548,590,46]}
+{"kind":"shape","id":"sh/729kfyhc","slide":6,"bbox":[136,598,12,34]}
+{"kind":"textbox","id":"sh/m1036t0r","slide":6,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[115,640,54,54]}
+{"kind":"textbox","id":"sh/lg72dozm","slide":6,"text":"Plot height against time","textPreview":"Plot height against time","textChars":24,"textLines":1,"bbox":[200,648,590,46]}
+{"kind":"shape","id":"sh/kfyl4ji1","slide":6,"bbox":[136,698,12,34]}
+{"kind":"textbox","id":"sh/zepkbehg","slide":6,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[115,740,54,54]}
+{"kind":"textbox","id":"sh/ydg3290v","slide":6,"text":"Check the launch value","textPreview":"Check the launch value","textChars":22,"textLines":1,"bbox":[200,748,590,46]}
+{"kind":"shape","id":"sh/5cbmp8zq","slide":6,"bbox":[900,260,790,570]}
+{"kind":"textbox","id":"sh/4b2lg3y5","slide":6,"text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[940,294,680,40]}
+{"kind":"textbox","id":"sh/ofa5cr6h","slide":6,"name":"code-sample","text":"% model parameters\nv0 = 20;       % m/s\ng  = 9.81;     % m/s^2\n\n% array of times\nt = linspace(0,4,11);\n\n% height at every time\ny = v0.*t - 0.5*g.*t.^2;\n\nplot(t,y,'LineWidth',2)\ny(1)            % boundary check","textPreview":"% model parameters | v0 = 20;       % m/s | g  = 9.81;     % m/s^2 |  | % array of times | t = linspace(0,4,11); |  | % height at every t...","textChars":209,"textLines":12,"bbox":[940,356,690,425]}
+{"kind":"textbox","id":"sh/pgj6lw72","slide":6,"text":".* and .^ apply the operation to every array element","textPreview":".* and .^ apply the operation to every array element","textChars":52,"textLines":1,"bbox":[115,872,1500,44]}
+{"kind":"textbox","id":"sh/2dsnahob","slide":6,"name":"slide-number-6","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"notes","id":"nt/mn3zzw","slide":6,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- MATLAB documentation: array operators and plot"}
+{"kind":"slide","id":"sl/s6vucd","slide":7,"title":"The equation links each term to motion","textShapes":12}
+{"kind":"textbox","id":"sh/7mdcratc","slide":7,"name":"title-T1","text":"The equation links each term to motion","textPreview":"The equation links each term to motion","textChars":38,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/87md0fuh","slide":7,"name":"subtitle-T1","text":"Read the model from left to right before evaluating it","textPreview":"Read the model from left to right before evaluating it","textChars":54,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/zidcnqt0","slide":7,"bbox":[115,700,350,132]}
+{"kind":"textbox","id":"sh/kjmdwvul","slide":7,"text":"y₀","textPreview":"y₀","textChars":2,"textLines":1,"bbox":[139,712,302,46]}
+{"kind":"textbox","id":"sh/lkvup0b6","slide":7,"text":"starting position","textPreview":"starting position","textChars":17,"textLines":1,"bbox":[139,769,302,46]}
+{"kind":"shape","id":"sh/idov6pcz","slide":7,"bbox":[525,700,350,132]}
+{"kind":"textbox","id":"sh/3exwzutk","slide":7,"text":"v₀t","textPreview":"v₀t","textChars":3,"textLines":1,"bbox":[549,712,302,46]}
+{"kind":"textbox","id":"sh/nep4jutc","slide":7,"text":"upward contribution","textPreview":"upward contribution","textChars":19,"textLines":1,"bbox":[549,769,302,46]}
+{"kind":"shape","id":"sh/mdg3qpcr","slide":7,"bbox":[935,700,350,132]}
+{"kind":"textbox","id":"sh/9g7ml4bi","slide":7,"text":"−½gt²","textPreview":"−½gt²","textChars":5,"textLines":1,"bbox":[959,712,302,46]}
+{"kind":"textbox","id":"sh/ofylszux","slide":7,"text":"gravity contribution","textPreview":"gravity contribution","textChars":20,"textLines":1,"bbox":[959,769,302,46]}
+{"kind":"shape","id":"sh/bi94net8","slide":7,"bbox":[1345,700,350,132]}
+{"kind":"textbox","id":"sh/ah03u9c3","slide":7,"text":"y(t)","textPreview":"y(t)","textChars":4,"textLines":1,"bbox":[1369,712,302,46]}
+{"kind":"textbox","id":"sh/x4rmp4be","slide":7,"text":"predicted position","textPreview":"predicted position","textChars":18,"textLines":1,"bbox":[1369,769,302,46]}
+{"kind":"shape","id":"sh/wjilwjut","slide":7,"bbox":[260,850,1260,76]}
+{"kind":"textbox","id":"sh/j694retk","slide":7,"text":"Unit check: every term on the right must have units of metres","textPreview":"Unit check: every term on the right must have units of metres","textChars":61,"textLines":1,"bbox":[305,869,1170,42]}
+{"kind":"textbox","id":"sh/y50ny9cz","slide":7,"name":"slide-number-7","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"image","id":"im/gb6d4jet","slide":7,"name":"","alt":"Equation: y of t equals y subscript zero plus v subscript zero t minus one half g t squared","prompt":"Deterministic LaTeX-rendered constant-acceleration position equation; not generated imagery","bbox":[610,220,700,144]}
+{"kind":"image","id":"im/3exwfedk","slide":7,"name":"","alt":"Five time snapshots of one ball at vertical positions: launch, rise, peak, descent, and return; each position has a vertical guide","prompt":"PHY4605 Matte Scientific Cutaway: a strictly one-dimensional vertical-motion y(t) time sequence with launch, rise, gold-highlighted peak, descent, and return; no horizontal trajectory or text","bbox":[160,370,1480,320]}
+{"kind":"notes","id":"nt/s6vucd","slide":7,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- Standard constant-acceleration kinematics equation\n- LaTeX equation asset: TeX `y(t)=y_0+v_0t-\\frac{1}{2}gt^2`; renderer `render-equations-diagrams`; PNG fallback selected after preserving source SVG; foreground #0B2B4C; target box 700 x 144 px; fit contain; alt text attached; source `.agent/lecture-slide-system/assets/equations/vertical-motion-position-equation.tex`; SVG `.agent/lecture-slide-system/assets/equations/vertical-motion-position-equation.svg`; PNG `.agent/lecture-slide-system/assets/equations/vertical-motion-position-equation.png`\n- OpenAI ImageGen; PHY4605 Matte Scientific Cutaway visual-only strictly vertical y(t) time-sequence illustration, with no horizontal projectile path; generated 2026-08-31"}
+{"kind":"slide","id":"sl/lknypn","slide":8,"title":"Changing one parameter reveals the trend","textShapes":8}
+{"kind":"textbox","id":"sh/wji9o3yt","slide":8,"name":"title-T2","text":"Changing one parameter reveals the trend","textPreview":"Changing one parameter reveals the trend","textChars":40,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/bip8fyx8","slide":8,"name":"subtitle-T2","text":"Keep the model fixed and change only the initial velocity","textPreview":"Keep the model fixed and change only the initial velocity","textChars":57,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/ahgrmtgn","slide":8,"text":"controlled comparison","textPreview":"controlled comparison","textChars":21,"textLines":1,"bbox":[115,258,300,52]}
+{"kind":"textbox","id":"sh/ofy9k3yh","slide":8,"text":"Higher initial speed → higher peak","textPreview":"Higher initial speed → higher peak","textChars":34,"textLines":1,"bbox":[115,740,430,76]}
+{"kind":"textbox","id":"sh/nep8byxw","slide":8,"text":"changed: v₀","textPreview":"changed: v₀","textChars":11,"textLines":1,"bbox":[115,836,185,40]}
+{"kind":"textbox","id":"sh/mdgritgb","slide":8,"text":"fixed: g and y₀","textPreview":"fixed: g and y₀","textChars":15,"textLines":1,"bbox":[320,836,230,40]}
+{"kind":"textbox","id":"sh/0be9gjyl","slide":8,"text":"Observed: the blue curve reaches the higher peak","textPreview":"Observed: the blue curve reaches the higher peak","textChars":48,"textLines":1,"bbox":[600,878,1000,42]}
+{"kind":"textbox","id":"sh/2h8jq90v","slide":8,"name":"slide-number-8","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"chart","id":"ch/1gfax4jy","slide":8,"name":"","chartType":"line","bbox":[600,250,1120,620]}
+{"kind":"image","id":"im/0fy5cj6l","slide":8,"name":"","alt":"Two separate vertical motions with equal gravity: a taller blue sequence and a shorter gold sequence, each shown on a vertical guide","prompt":"PHY4605 Matte Scientific Cutaway: two adjacent strictly one-dimensional vertical y(t) motions, a taller blue motion and shorter gold motion with the same downward gravity; no horizontal coordinate, projectile arcs, or text","bbox":[90,315,480,420]}
+{"kind":"notes","id":"nt/lknypn","slide":8,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- Standard constant-acceleration kinematics; comparison calculated for v0 = 20 m/s and 15 m/s\n- OpenAI ImageGen; PHY4605 Matte Scientific Cutaway visual-only comparison of two strictly vertical y(t) motions under the same downward gravity, with no horizontal coordinate; generated 2026-08-31"}
+{"kind":"slide","id":"sl/16sbbk","slide":9,"title":"The design system keeps every week coherent","textShapes":16}
+{"kind":"textbox","id":"sh/lcruh8v2","slide":9,"name":"title-T2","text":"The design system keeps every week coherent","textPreview":"The design system keeps every week coherent","textChars":43,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/y9gv6twr","slide":9,"name":"subtitle-T2","text":"Approve this proof before the Week 1 teaching deck is rebuilt","textPreview":"Approve this proof before the Week 1 teaching deck is rebuilt","textChars":61,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/zapcfydw","slide":9,"bbox":[425,519,80,12]}
+{"kind":"shape","id":"sh/c7yd4jel","slide":9,"bbox":[820,519,80,12]}
+{"kind":"shape","id":"sh/d87udov6","slide":9,"bbox":[1215,519,80,12]}
+{"kind":"shape","id":"sh/qlgb29wf","slide":9,"bbox":[115,370,330,360]}
+{"kind":"textbox","id":"sh/bmpcbed0","slide":9,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[143,400,64,46]}
+{"kind":"textbox","id":"sh/ojet0je9","slide":9,"text":"Typography","textPreview":"Typography","textChars":10,"textLines":1,"bbox":[143,478,275,50]}
+{"kind":"textbox","id":"sh/pknu94fu","slide":9,"text":"Nunito titles and body\nIBM Plex Mono code","textPreview":"Nunito titles and body | IBM Plex Mono code","textChars":41,"textLines":2,"bbox":[143,565,275,145]}
+{"kind":"shape","id":"sh/50fmhove","slide":9,"bbox":[510,370,330,360]}
+{"kind":"textbox","id":"sh/4z6583ut","slide":9,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[538,400,64,46]}
+{"kind":"textbox","id":"sh/3yx4fyd8","slide":9,"text":"Structure","textPreview":"Structure","textChars":9,"textLines":1,"bbox":[538,478,275,50]}
+{"kind":"textbox","id":"sh/idon6tcn","slide":9,"text":"T1, T2, and T3 title rules\nlocked content zones","textPreview":"T1, T2, and T3 title rules | locked content zones","textChars":47,"textLines":2,"bbox":[538,565,275,145]}
+{"kind":"shape","id":"sh/hcvmdov2","slide":9,"bbox":[905,370,330,360]}
+{"kind":"textbox","id":"sh/wbm54juh","slide":9,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[933,400,64,46]}
+{"kind":"textbox","id":"sh/vad4bedc","slide":9,"text":"Visuals","textPreview":"Visuals","textChars":7,"textLines":1,"bbox":[933,478,275,50]}
+{"kind":"textbox","id":"sh/u94n29cr","slide":9,"text":"editable scientific graphics\napproved generated assets","textPreview":"editable scientific graphics | approved generated assets","textChars":54,"textLines":2,"bbox":[933,565,275,145]}
+{"kind":"shape","id":"sh/98vm94v6","slide":9,"bbox":[1300,370,330,360]}
+{"kind":"textbox","id":"sh/87m50jul","slide":9,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1328,400,64,46]}
+{"kind":"textbox","id":"sh/k3qdc36t","slide":9,"text":"QA","textPreview":"QA","textChars":2,"textLines":1,"bbox":[1328,478,275,50]}
+{"kind":"textbox","id":"sh/loje587y","slide":9,"text":"render, inspect, and check\nfonts, titles, and overflow","textPreview":"render, inspect, and check | fonts, titles, and overflow","textChars":54,"textLines":2,"bbox":[1328,565,275,145]}
+{"kind":"shape","id":"sh/y18vadon","slide":9,"bbox":[115,790,1575,118]}
+{"kind":"textbox","id":"sh/z2hw3yp8","slide":9,"text":"Review focus: title character, spacing, component shapes, chart treatment, and visual balance","textPreview":"Review focus: title character, spacing, component shapes, chart treatment, and visual balance","textChars":93,"textLines":1,"bbox":[160,824,1485,52]}
+{"kind":"textbox","id":"sh/czqd836h","slide":9,"name":"slide-number-9","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"notes","id":"nt/16sbbk","slide":9,"text":"[Sources]\n- PHY4605 Lecture Slide Deck Design Specification\n- PHY4605 editable master proof review checkpoint"}

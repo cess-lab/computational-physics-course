@@ -1,0 +1,8 @@
+{"kind":"deck","id":"pr/061ncr","name":"Deck"}
+{"kind":"layout","layoutId":"6188b473-189e-404b-968a-5cf3b1dae23c","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ba93b503-3004-43a3-8ec6-4656b0123929","name":"Title Slide","type":"title"}
+{"kind":"layout","layoutId":"f43f9ed7-18b0-4fa4-8557-39876b6edadb","name":"Proof Master","type":"master"}
+{"kind":"layout","layoutId":"69187541-0985-4e79-817b-0272367c022b","name":"Proof Layout"}
+{"kind":"slide","id":"sl/aoncdb","slide":1,"title":"Artifact export debug","textShapes":1}
+{"kind":"textbox","id":"sh/xoz6dk7e","slide":1,"text":"Artifact export debug","textPreview":"Artifact export debug","textChars":21,"textLines":1,"bbox":[100,100,800,100]}
+{"kind":"notes","id":"nt/aoncdb","slide":1,"text":"[Sources]\n- Debug"}

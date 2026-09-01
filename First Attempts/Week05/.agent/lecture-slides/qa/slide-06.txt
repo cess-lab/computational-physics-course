@@ -1,0 +1,8 @@
+Slide 06 self-QA — pass after title-band regeneration
+
+- Single ImageGen-generated raster; final export is 1920 x 1080 (16:9).
+- Inspected at full size: plain white, borderless, safe content margins; title scale/weight is controlled to match Slides 02–05; no logo, footer, watermark, URL, background pattern, or texture.
+- Exact analytic-bracket formulas preserve the signed terms, square brackets, and inequalities: f(M−e) ≤ 0 and f(M+e) ≥ 0.
+- Residual plot shows green bracket endpoints M−e and M+e, a blue curve, endpoint signs, and a navy root dot with green outline between them.
+- Validity semantics use pale green cards/bracket lines; title hierarchy and card treatment match the Week 02/Week 03 final deck language.
+- Known minor deviation: ImageGen’s condensed title face is visually equivalent but embedded font identity cannot be verified from the raster.

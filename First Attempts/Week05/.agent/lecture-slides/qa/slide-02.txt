@@ -1,0 +1,12 @@
+Status: pass — regenerated with ImageGen on 2026-08-29, proportionally rescaled and white-padded without cropping to the required 1920x1080 delivery dimensions, then inspected at full size.
+
+Checks passed:
+- 16:9, 1920x1080, with a flat pure-white and borderless outer canvas; no vignette or background wash.
+- Upper-left navy condensed title and charcoal subtitle use the Week02/Week03 Slide 02 visual treatment and scale.
+- Exact approved copy is present, with no additional text in the functional icons.
+- Six clearly ordered cards and navy arrows: blue Model/Residual; green Bracket; gold Iterate; teal Check; navy Defend. The outermost card edges and takeaway strip are inset more than 115 px from both side edges.
+- Bottom takeaway strip matches the approved sentence.
+- No logo, watermark, URL, footer branding, citation, timing, or background decoration.
+- Scientific pipeline is coherent and visually consistent with the reviewed Week02/Week03 workflow slides: bold condensed title, white canvas, navy arrows, flat outline icons, semantic accents, and a validation-oriented takeaway.
+
+Known concern: none. The final raster is ImageGen-generated; its 1672x941 native output was proportionally rescaled and padded on the flat-white canvas to guarantee the requested 1920x1080 dimensions and >=115 px side margins, with no crop or visible overlay.

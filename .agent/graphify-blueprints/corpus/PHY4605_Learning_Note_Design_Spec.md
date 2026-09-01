@@ -1,0 +1,1 @@
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/PHY4605_Learning_Note_Design_Spec.md

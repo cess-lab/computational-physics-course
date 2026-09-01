@@ -1,0 +1,38 @@
+Use case: scientific-educational
+Asset type: one 16:9 presentation slide, complete raster image, exactly 1920 x 1080 pixels
+Topic and learning outcome: PHY4605 Week 5 root finding. Learners see a traceable reasoning chain from the physical orbit model to trustworthy numerical evidence, preserving the physics, variables and validation after the equation becomes an algorithm.
+Density mode: standard; six compact pipeline stages plus one takeaway, with generous whitespace.
+Slide archetype: pipeline
+
+Text (verbatim, preserve every character, case, arrow, plus sign, and punctuation exactly):
+"Today’s arc: physical model → numerical evidence"
+"Keep the physics visible after the equation becomes an algorithm"
+"Orbit model"
+"M, E, e"
+"Residual"
+"f(E)=0"
+"Bracket"
+"existence + uniqueness"
+"Iterate"
+"bisection or Newton"
+"Check"
+"step + residual + status"
+"Defend"
+"physical interpretation"
+"A solver output is evidence only after the model, units, algorithm, and validation checks agree."
+
+Composition: pure white #FFFFFF, completely flat and borderless background with no outer frame, vignette, wash, tint, grid, motif, texture, or decorative background elements. Match the established Week02 and Week03 Slide 02 title band: upper-left title at x=115 px y=60 px in Roboto Condensed Bold 68 px navy #0B2B4C; subtitle directly beneath at x=115 px y=142 px in Roboto Medium 30 px charcoal #3F4B57. These are fixed anchors and scale. Content begins below the title band. Six horizontal rounded cards span left-to-right with each complete card inset at least 115 px from the left/right slide edge. Use cards approximately 245 px wide by 180 px high, 22 px radius and 2 px stroke, with compact even gutters and navy arrows between cards. Centre the card heading and body. Keep every visible element at least 115 px from each vertical edge and at least 76 px from the top/bottom edges.
+
+Pipeline content and semantic colours, left to right:
+1. "Orbit model" with "M, E, e"; model-blue #2F6DB2 stroke and pale blue #EEF5FD fill; include a small consistent navy/blue outline ellipse-orbit icon in a pale circular backplate.
+2. "Residual" with "f(E)=0"; model-blue #2F6DB2 stroke and pale blue #EEF5FD fill; include a small outline curve-crossing-axis icon.
+3. "Bracket" with "existence + uniqueness"; valid green #3E8E45 stroke and pale green #F0FAF7 fill; include a small outline interval-on-axis icon.
+4. "Iterate" with "bisection or Newton"; evaluation-gold #C98A16 stroke and pale gold #FFF7E6 fill; include a small outline circular-arrow iteration icon.
+5. "Check" with "step + residual + status"; teal #2A9D9F stroke and pale teal/green #F0FAF7 fill; include a small outline check-mark-with-ruler icon.
+6. "Defend" with "physical interpretation"; navy #0B2B4C stroke and pale navy #F4F8FC fill; include a small outline magnifier-over-orbit icon.
+
+Use a bottom takeaway strip inset 115 px from both left/right edges, approximately y=930, h=92, rounded 22 px, pale navy #F4F8FC fill and thin navy stroke. Use bold Roboto Condensed 32 px navy for the takeaway sentence. The six cards make an unambiguous left-to-right scientific pipeline, with the arrows centred between them. Minimal flat editorial scientific infographic; no gradients, glow, glass, heavy shadows, decorations, photographic scene, or dense paragraphs.
+
+Constraints: Generate all typography, arrows, cards, icons, and graphics directly inside this single ImageGen raster image. Text must be crisp, accurate, fully visible, and readable at presentation scale. No SVG, no HTML, no code, no placeholders, no logo, no institutional mark, no watermark, no URL, no footer branding, no citations, no timing, and no decorative outer border.
+
+Critical regeneration controls: preserve the exact quoted visible copy and successful six-card pipeline architecture. Do not place extra letters, variables, numbers, tick labels, or extra text inside the icons; only the quoted Text lines may be visible. The bracket icon is a plain green horizontal interval line with two end dots and no labels. Keep the background absolutely flat pure white outside cards. Reserve completely blank vertical strips 120 px wide on both the left and right of the final 1920px-wide canvas: no card, arrow, icon, line, or takeaway outline may enter those strips. Begin the first card at x=120px or later; end the last card at x=1800px or earlier. Use narrower cards or gutters as needed rather than violating these blank side margins.

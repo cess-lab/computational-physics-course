@@ -1,0 +1,15 @@
+Slide 04 self-QA — PASS
+
+File: raster/slide-04.png
+Final raster: 1920 × 1080 px, 16:9
+Production: One ImageGen-generated full-slide raster, proportionally resized to the specified 1920 × 1080 delivery dimensions.
+
+Full-size visual inspection completed:
+- Pure-white, borderless canvas; no logo, footer, watermark, URL, texture, motif, grid, or background decoration.
+- Exact handoff title and subtitle are present and legible in the established condensed navy / charcoal hierarchy.
+- Equation copy is correct and legible: M = E − e sin E; f(E)=E−e sin E−M; f′(E)=1−e cos E.
+- Units bar has the required exact content and clear green/teal validation treatment.
+- Orbit is physically coherent: ellipse with geometric centre, offset gold focus, blue body point, centre-to-body E construction, and focus-to-body orbit-position line.
+- Thin lines, restrained blue/gold/teal accents, whitespace, card treatment, margins, and visual language align with the Week 02/03 reference direction.
+- Revision QA: approved raster was uniformly scaled to 90% and centred on a pure-white 1920 × 1080 canvas. Visible content now clears 76 px on every edge (left/right padding 96 px; top/bottom padding 54 px before internal source-space margin). The source content itself had its own internal margin, so the actual nearest visible content is safely beyond 76 px. No overlay, reflow, or content change was introduced.
+- Known concern: raster font metadata cannot be verified; the visible title/supporting type is visually consistent with the required condensed/sans-serif roles.

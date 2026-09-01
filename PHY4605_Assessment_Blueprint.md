@@ -1,21 +1,41 @@
 # PHY4605 Assessment Blueprint
 
-This document defines how PHY4605 assesses computational methods in physics. It is the source of truth for written tests, the final examination, weekly practicals, the individual lab test, and the capstone investigation.
+This document is the source of truth for PHY4605 written tests, the final examination, weekly practicals, the individual lab test, and the capstone investigation. It implements the difficulty calibration and topic tiers in [PHY4605 Course Topic and Difficulty Blueprint](PHY4605_Course_Topic_Blueprint.md).
 
 ## Assessment purpose
 
-PHY4605 assesses whether a student can convert a physics problem into a defensible computational experiment. MATLAB syntax and code polish are supporting skills, not the main outcome.
+PHY4605 assesses whether a student can turn a familiar physics problem and an appropriate computational scaffold into credible numerical evidence. MATLAB syntax and code polish support the task; they are not the main outcome.
 
-A successful student can:
+Assessment must distinguish ordinary pass-level adaptation from distinction-level independent construction.
 
-1. formulate a physical model, assumptions, variables, parameters, and units;
-2. identify scales, initial/boundary conditions, and the required output;
-3. select and justify a numerical or symbolic method;
-4. construct pseudocode or another explicit algorithmic flow;
-5. use MATLAB and AI tools to implement or inspect the method;
-6. diagnose physical, logical, numerical, and implementation errors;
-7. validate using units, known or limiting cases, convergence, residuals, conservation, reference results, sensitivity, or uncertainty as appropriate; and
-8. interpret and defend the result physically.
+The assessment calibration serves a nominal cohort of 35 Year-2 physics students with familiar analytic physics but no reliable MATLAB baseline despite Onramp. The course targets are 90% pass, a median grade of B, 50% completion of Core work without remediation, and about 10% distinction-level independent modelling. Do not raise Core assessment difficulty because a small prepared minority progresses quickly.
+
+### Ordinary pass profile
+
+A passing student should be able to:
+
+1. identify the physical question, variables, parameters, outputs, and units;
+2. arrange supplied steps or write short guided pseudocode;
+3. read and trace a short, commented MATLAB script;
+4. complete or modify a small section of supplied code;
+5. connect code variables and operations to the physical model;
+6. identify a clear physical, logical, array, or basic MATLAB defect;
+7. produce or interpret the output that answers the physical question;
+8. perform at least one appropriate validation check; and
+9. explain the main result or trend in physical language.
+
+Blank-page programming, independent formulation of an unfamiliar problem, several-method comparison, and advanced numerical diagnosis are distinction-level evidence in lectures and AI-free written assessments. In AI-enabled practicals, generative-AI code writing is permitted, but code volume never substitutes for verification, explanation, or physical reasoning.
+
+## Assessment principles
+
+- Use familiar or closely analogous physics for ordinary pass-level questions.
+- Create novelty through a changed parameter, supplied graph, code defect, incomplete pseudocode, result table, or interpretation demand.
+- Supply formulas, algorithms, and MATLAB syntax when recalling them is not the intended competency.
+- Do not require long code production or memorised function names.
+- Let students earn model, algorithm, tracing, diagnosis, and interpretation marks even when code execution is incomplete.
+- Do not award full integrated-task marks when no valid validation check is demonstrated.
+- Keep **Core**, **Working exposure**, and **Stretch** expectations visibly distinct when preparing questions and rubrics.
+- Stretch material may differentiate excellent performance but must not be necessary for an ordinary pass.
 
 ## Assessment map
 
@@ -24,180 +44,312 @@ A successful student can:
 | Test 1 | 10% | 90-minute open-book written assessment | AI-free |
 | Test 2 | 10% | 90-minute open-book written assessment | AI-free |
 | Final examination | 40% | 120-minute open-book written examination | AI-free |
-| Practical portfolio | 15% | Ten group evidence packets | AI allowed and declared |
-| Individual lab test | 10% | Individual verification challenge in the practical session | AI allowed and declared |
-| Capstone investigation | 15% | Group project with individual defence | AI allowed and declared |
+| Practical portfolio | 15% | Ten AI-enabled group evidence packets: 12% group component, best eight counted, plus 3% cumulative individual defence ledger | AI allowed and declared |
+| Individual lab test | 10% | Individual scaffolded verification challenge | AI allowed and declared |
+| Capstone investigation | 15% | Bounded group project with starter Live Script and individual defence | AI allowed and declared |
 
-Open-book conditions are intended to reduce memorisation. Written questions must therefore use unfamiliar or adapted physics cases, supplied evidence, and decision-making tasks. A compact MATLAB/method reference sheet may be supplied.
+Open-book conditions reduce memorisation but do not justify unfamiliar, under-scaffolded cases. A compact formula, algorithm, and MATLAB reference sheet should be supplied where appropriate.
+
+## Course-wide competency balance
+
+Use this balance across the complete assessment system and as the default guide for the final examination.
+
+| Competency | Target share |
+| --- | ---: |
+| Model and units | 10% |
+| Algorithm and pseudocode | 20% |
+| MATLAB and code reading | 30% |
+| Numerical-method theory | 15% |
+| Validation | 10% |
+| Physical interpretation | 15% |
+
+Do not allow numerical-method theory or MATLAB syntax recall to crowd out code reading, validation, or interpretation.
 
 ## Written-assessment question paradigms
 
-Use several paradigms in each assessment rather than relying on one long calculation.
+Use several short or medium paradigms rather than one long integrated calculation.
 
-### Model formulation
+### Familiar-model identification
 
-Provide a physical situation and ask students to identify the question, state variables, parameters and units, assumptions, governing equations, initial/boundary conditions, and required outputs.
+Provide a physical situation already encountered in the course or a closely analogous version. Ask students to identify the question, variables, parameters, outputs, units, assumptions, and one expected trend.
 
-### Decomposition and pseudocode
+### Guided decomposition and pseudocode
 
-Ask students to express the workflow as:
+Ask students to complete, order, or correct a short workflow such as:
 
-`inputs -> model -> discretisation -> algorithm -> output -> validation`.
+`inputs -> model -> algorithm -> output -> validation`.
 
-Accept structured English, a flow diagram, or MATLAB-like pseudocode. Reward correct dependencies and logic rather than punctuation or exact function names.
-
-### Method selection
-
-Ask students to choose and justify a method against the physics, available information, accuracy requirement, computational cost, and likely failure modes.
+Accept structured English, a flow diagram, or MATLAB-like pseudocode. Reward correct dependencies and logic rather than punctuation.
 
 ### Code reading and tracing
 
-Supply a short code fragment and ask students to trace one or two iterations, connect variables to physical quantities, predict an output/graph, or explain an indexing and update choice. Do not require lengthy hand execution.
+Supply a short, commented code fragment. Ask students to:
 
-### Debugging and AI-output critique
+- connect variables to physical quantities;
+- trace one or two iterations;
+- identify array dimensions or element-wise operations;
+- predict the effect of one parameter modification;
+- match a code line to a pseudocode step; or
+- select the expected graph/output.
 
-Supply a plausible MATLAB Copilot response containing physical, unit, logical, numerical, or implementation defects. Students must locate each defect, explain its consequence, and propose a defensible correction or test.
+Do not require lengthy hand execution.
+
+### Scaffold completion
+
+Provide a nearly complete algorithm or Live Script excerpt with one or two missing lines. Supply the necessary syntax when exact recall is not being assessed. Ask students to complete the logic and explain what the inserted line does.
+
+### Defect diagnosis
+
+Supply one or more clear defects, such as:
+
+- wrong unit or parameter;
+- `*` used instead of `.*`;
+- incorrect index or loop bound;
+- missing initial value;
+- wrong sign;
+- equation/code mismatch;
+- unlabelled or misleading output; or
+- a result that violates an expected bound or trend.
+
+Students should identify the defect, state its consequence, and propose a correction or check.
 
 ### Numerical evidence
 
-Supply tables, curves, residuals, eigenmodes, fit results, or convergence evidence. Ask students to quantify and interpret accuracy, cost, uncertainty, sensitivity, stability, or model adequacy.
+Supply a compact table, graph, residual, convergence sequence, fit result, uncertainty range, or sample-size comparison. Ask students what it shows, what it does not show, and which conclusion is justified.
 
-### Validation design
+### Validation
 
-Ask students to propose independent checks appropriate to the problem and explain what each check would detect.
+Ask students to select or apply at least one check appropriate to the familiar problem: units, initial value, expected sign, bound, known case, analytic result, direct substitution, refinement, conservation, residual, or reproducibility.
 
-### Adaptation and transfer
+Advanced comparisons among several independent checks are stretch evidence.
 
-Change an assumption, parameter, initial condition, accuracy target, or requested output. Ask how the model, algorithm, expected behaviour, and validation plan must change.
+### Adaptation and interpretation
+
+Change one parameter, assumption, initial condition, resolution, or requested output. Ask how the supplied pseudocode/code and expected physical result should change.
 
 ## Test 1 specification
 
-Test 1 is a 90-minute open-book, AI-free assessment. Use approximately 50 raw marks and two connected physics cases.
+Test 1 is a 90-minute open-book, AI-free assessment using approximately 50 raw marks and two familiar or closely analogous cases from Weeks 01–05.
 
 | Evidence | Suggested share |
 | --- | ---: |
-| Model, assumptions, variables, and units | 25% |
-| Method selection and pseudocode | 25% |
-| Code reading, tracing, or diagnosis | 25% |
-| Validation and physical interpretation | 25% |
+| Model, variables, and units | 15% |
+| Guided algorithm or pseudocode | 25% |
+| Code reading, tracing, and clear-defect diagnosis | 30% |
+| Numerical-method concept | 10% |
+| Validation and physical interpretation | 20% |
 
-The coverage should draw mainly from Weeks 01-05 while permitting earlier concepts to recur. Avoid more than 8-12 lines of student-written pseudocode or MATLAB-like code in any one part.
+Requirements:
+
+- include arrays/element-wise reasoning or plotting literacy;
+- include one short loop/algorithm trace or scaffold completion;
+- include one validation decision;
+- use no more than 8–10 lines of student-produced pseudocode across any one part;
+- do not require independent full bisection, Newton, circuit, or MATLAB implementation;
+- treat rank, conditioning, formal residual analysis, uniqueness proof, multiple stopping rules, `fzero`, and safeguarding as stretch only.
 
 ## Test 2 specification
 
-Test 2 is a 90-minute open-book, AI-free assessment. Use approximately 50 raw marks and two connected cases involving numerical evidence.
+Test 2 is a 90-minute open-book, AI-free assessment using approximately 50 raw marks and two familiar or closely analogous cases from Weeks 06–11.
 
 | Evidence | Suggested share |
 | --- | ---: |
-| Error, convergence, residual, or uncertainty reasoning | 30% |
-| Method selection or algorithm adaptation | 25% |
-| Diagnosis of supplied MATLAB/AI-assisted work | 20% |
-| Validation, limitation, and interpretation | 25% |
+| Algorithm adaptation and code reading | 30% |
+| Numerical evidence and method concept | 20% |
+| Defect diagnosis | 15% |
+| Validation and uncertainty reasoning | 20% |
+| Physical interpretation and limitation | 15% |
 
-The coverage should draw mainly from Weeks 06-11 while requiring students to reuse the course-wide modelling and validation chain.
+Requirements:
+
+- supply the less familiar formula or syntax;
+- assess one controlled modification rather than a blank-page design;
+- include one graph/table interpretation;
+- include one required validation check;
+- keep advanced error-order derivations, formal statistical theory, Runge–Kutta derivation, and advanced propagation as stretch.
 
 ## Final-examination specification
 
-The final examination is 120 minutes, open book, and AI-free. Use 80 raw marks so that the expected writing and calculation load remains realistic.
+The final examination is 120 minutes, open book, AI-free, and uses 80 raw marks.
 
 | Section | Raw marks | Suggested time | Purpose |
 | --- | ---: | ---: | --- |
-| A. Computational literacy | 16 | 20 minutes | Short model, units, method, trace, and diagnosis questions |
-| B. Evidence and diagnosis | 28 | 40 minutes | Analyse supplied code, plots, tables, residuals, convergence, and AI-generated claims |
-| C. Integrated computational design | 36 | 50 minutes | Formulate one unseen physics problem, choose a method, construct pseudocode, plan validation, and interpret expected results |
-| Review | - | 10 minutes | Check assumptions, units, logic, and completeness |
+| A. Model and guided algorithm | 28 | 35 minutes | Variables/units, familiar model, ordered reasoning, and short pseudocode |
+| B. Code reading and method reasoning | 28 | 40 minutes | Trace, complete, modify, and diagnose supplied MATLAB/algorithm excerpts |
+| C. Validation and physical interpretation | 24 | 35 minutes | Analyse supplied numerical evidence, apply checks, explain trends, and state limitations |
+| Review | — | 10 minutes | Check units, logic, code tracing, and completeness |
 
-The approximate competency balance is:
+The 80 raw marks should approximate:
 
-- model formulation: 25%;
-- method selection and pseudocode: 20%;
-- code/AI-output inspection: 20%;
-- numerical evidence: 20%; and
-- validation, limitations, and physical interpretation: 15%.
+- model and units: 8 marks;
+- algorithm and pseudocode: 16 marks;
+- MATLAB and code reading: 24 marks;
+- numerical-method theory: 12 marks;
+- validation: 8 marks; and
+- physical interpretation: 12 marks.
 
-Do not ask students to reproduce a memorised algorithm or write a long program from scratch. Supply formulas or syntax that are not themselves the target of the question.
+Use familiar models or closely analogous cases. A changed parameter, graph, defect, or required output may be unseen. Do not make independent formulation of an unfamiliar physics problem necessary for a pass.
+
+The final may include a small number of stretch marks for less-scaffolded transfer, a second validation strategy, or deeper method comparison. These marks must not prevent a well-prepared pass-level student from passing.
 
 ## Practical portfolio
 
-Collect ten compact group evidence packets. Students work in stable groups of two or three and rotate the roles of model lead, algorithm/implementation lead, and validation lead.
+Collect ten compact AI-enabled group evidence packets across the active practical weeks. Students work in groups of two or three and rotate the roles of model lead, algorithm/code lead, and validation/interpretation lead. They may use any generative-AI tool to formulate, write, debug, or improve MATLAB code. AI-generated code is allowed, but it never earns understanding marks by itself.
 
-Each packet contains:
+Each practical uses ten progressive micro-challenges across three or four analogous supplied-model physics contexts. The contexts should normally differ from the lecture model, but every task supplies the necessary assumptions, equation or data, variables, units, and validation reference so that transfer of the current computational method—not hidden unfamiliar theory—is assessed.
 
-1. a prediction;
-2. the model, assumptions, variables, and units;
-3. pseudocode or an algorithm map;
-4. selected computational output;
-5. validation evidence;
-6. physical interpretation and one limitation; and
-7. a concise AI-use decision record.
+Each group packet contains, for every micro-challenge:
 
-Require all ten submissions but count the best eight for the group component. Use selected individual entry/exit checks to establish participation and understanding.
+1. a prediction or stated expectation;
+2. the relevant model, variables, and units;
+3. a concise computational plan, pseudocode, or prompt plan;
+4. runnable MATLAB code and one selected output;
+5. a fresh-session reproducibility record;
+6. one required validation check;
+7. a physical interpretation and one limitation where relevant; and
+8. a concise AI decision record: tool, material request, accepted/modified/rejected output, and independent checks.
 
-| Criterion | Weight within portfolio |
+Require all ten submissions but count the best eight for the 12% group component. Google Classroom is the system of record. Practical packets should be brief enough that feedback can target reasoning rather than formatting volume.
+
+| Group-evidence criterion | Weight within the 12% component |
 | --- | ---: |
-| Physical model, assumptions, and units | 20% |
-| Algorithm and method reasoning | 20% |
-| Computational implementation | 15% |
-| Validation and numerical evidence | 25% |
-| Interpretation and limitations | 15% |
-| Responsible AI decision record | 5% |
+| Model and units | 15% |
+| Algorithm, pseudocode, or prompt plan | 15% |
+| Runnable code, output, and reproducibility | 20% |
+| Validation | 20% |
+| Physical interpretation and limitation | 20% |
+| Responsible AI decision record | 10% |
+
+### Individual defence ledger
+
+After each group has locked its submission, assign every group a question slot and randomly select one group member to defend it. The draw must occur after submission, and the selected student must explain the model, trace the relevant code/output, and answer one validation or parameter-change follow-up. For cohorts with more groups than question slots, reuse a slot only with a distinct post-submission parameter or defect variant.
+
+Maintain a hidden rotation ledger: within a group, do not select a student again until every member has been selected; record an absence and schedule a make-up defence. The cumulative average of each student's scored defences supplies the 3% individual component. Score each defence equally across model/units, code/output trace, validation or parameter perturbation, and physical interpretation/AI judgement.
 
 ## Individual AI-assisted lab test
 
 Use an individual verification challenge rather than blank-page programming.
 
-Each student receives a physical problem, a partially completed or flawed AI-generated Live Script, an individual parameter variant, and a validity or accuracy requirement. Students may use MATLAB Copilot but must:
+Each student receives:
 
-1. state the model and assumptions;
-2. inspect the proposed algorithm;
-3. identify and explain defects;
-4. repair or improve the solution;
-5. provide at least two independent validation checks;
-6. interpret the result;
-7. respond to an unseen parameter, condition, or accuracy change; and
-8. answer a brief individual defence question.
+- a familiar physical problem;
+- a heavily scaffolded or partly flawed Live Script;
+- an individual parameter variant;
+- a clear required output; and
+- a validation menu or one required check.
+
+The student must:
+
+1. identify the relevant model, variables, and units;
+2. arrange or explain the algorithm;
+3. trace the relevant code section;
+4. identify and repair one or two clear defects;
+5. modify one parameter or assumption;
+6. perform at least one valid check;
+7. interpret the result; and
+8. answer one brief individual defence question.
 
 | Criterion | Weight within lab test |
 | --- | ---: |
-| Model and method reasoning | 20% |
+| Model and units | 15% |
+| Algorithm and code tracing | 25% |
 | Defect diagnosis and correction | 25% |
-| Numerical/validation evidence | 30% |
+| Validation | 15% |
 | Physical interpretation | 15% |
-| Individual defence and AI judgement | 10% |
+| Individual defence and AI judgement | 5% |
 
-The lecturer and demonstrator may conduct parallel three-minute defences. Suitable prompts include: “Show the line that represents the physics,” “Why is this resolution acceptable?”, “What did Copilot suggest that you rejected?”, and “Which check would fail first if the result were wrong?”
+A second independently designed check or complete implementation without the scaffold is stretch evidence.
 
 ## Capstone investigation
 
-The capstone is an open but bounded group problem. The group should have freedom in the physical question, parameters, evidence, and interpretation while using methods that are feasible within the course.
+The capstone is a bounded supported investigation, not an open-ended research project.
+
+### Required structure
+
+- The lecturer provides four to six bounded problem spaces.
+- Each group receives or selects an approved starter Live Script.
+- The group states the model, assumptions, variables, and units.
+- The group completes or refines supplied pseudocode.
+- The group modifies one physical parameter or assumption.
+- The group produces one principal graph or table.
+- The group performs one required validation check and one chosen check.
+- The group interprets the result and states one limitation.
+- The group provides a concise reproducibility record and AI-use decision record.
+- Each student traces one relevant code section and answers one physics, algorithm, validation, or interpretation question.
+
+### Milestones
 
 | Milestone | Week | Weight within course |
 | --- | ---: | ---: |
-| Problem formulation and feasibility proposal | 06 | 2% |
-| Approved method and validation plan | 07 | 3% |
-| Development/process evidence | 08-12 | 3% |
-| Final computational investigation | 14 | 5% |
-| Individual defence | 14 | 2% |
+| Problem-space selection and feasibility | 06 | 2% |
+| Approved model, supplied/selected method, and validation plan | 07 | 3% |
+| Compact development/process evidence | 08–11 | 3% |
+| Studio completion and defence rehearsal | 12 | Formative checkpoint |
+| Final bounded investigation | 13 | 5% |
+| Individual defence and handoff | 13 | 2% |
 
-Assess the development trail, including decisions, revisions, dead ends, evidence, and limitations. Do not assess only the final polished code or presentation.
+Week 14 is buffer only. A deferred presentation or defence may use the buffer when necessary, but no new planned milestone belongs there.
+
+| Criterion | Weight within capstone |
+| --- | ---: |
+| Model, assumptions, variables, and units | 15% |
+| Pseudocode and explanation of supplied method | 15% |
+| Code tracing and justified modification | 20% |
+| Principal output and reproducibility | 15% |
+| Required and chosen validation evidence | 15% |
+| Physical interpretation and limitation | 15% |
+| Individual defence and AI decision record | 5% |
+
+Independent extensions, blank-page implementations, or advanced method comparisons may earn distinction credit but are not required for ordinary completion.
+
+## Ungraded short remediation
+
+When a weekly diagnostic shows a common misconception, retain the planned schedule and publish an optional 10–15 minute remediation through Google Classroom.
+
+Each remediation contains:
+
+1. one named misconception;
+2. one plain-language explanation;
+3. one worked correction using a familiar physical model;
+4. one retry question or code-tracing task;
+5. the correct reasoning after the retry; and
+6. one confidence check.
+
+Keep it ungraded unless the lecturer explicitly changes the policy. Track completion and responses for teaching feedback. Do not make optional remediation a hidden prerequisite for the next lecture.
+
+## Ungraded revision and reflection
+
+Use Google Classroom for short revision activities that rehearse assessment structure without reproducing confidential questions. A suitable evidence packet contains:
+
+1. initial prediction or code trace;
+2. revised reasoning after progressive hints;
+3. one misconception or defect corrected;
+4. one validation choice; and
+5. confidence before and after.
+
+Gemini Notebook / NotebookLM may provide source-grounded Socratic guidance. It should ask one focused question at a time and use progressive hints rather than immediately producing a complete solution.
 
 ## Responsible AI evidence
 
-AI is allowed in practicals, the individual lab test, and the capstone. Students must provide a concise material-use record stating:
+AI is allowed in practicals, the individual lab test, and the capstone. In practicals, students may use any generative-AI tool to write, debug, or improve code. Students provide a concise record of:
 
-- what AI was asked to do;
+- what assistance was requested;
 - what output was accepted, modified, or rejected;
-- why those decisions were made; and
-- which independent checks were performed.
+- why that decision was made; and
+- which check was used before accepting the output.
 
-Do not require complete chat histories and do not use AI-detection scores as assessment evidence. Establish validity through individual explanations, parameter perturbations, version/process checkpoints, reproducibility, and independent numerical or physical checks.
+Do not require complete chat histories and do not use AI-detection scores as misconduct evidence. Establish validity through code tracing, post-submission parameter/defect variants, short individual explanations, process checkpoints, reproducibility, and validation.
 
-## Minimum runnability rule
+Google Classroom remains the official submission/evidence record. Gemini Notebook / NotebookLM is a learning companion. Written tests and the final examination remain AI-free.
 
-Perfect or highly polished code is not required. A student may earn model, method, pseudocode, and diagnosis marks when implementation is incomplete. Full numerical-evidence and validation marks require reproducible output, or a precise and technically defensible diagnosis of why execution failed and what evidence remains unavailable.
+## Minimum runnability and validation rule
+
+Perfect or highly polished code is not required. A student may earn model, pseudocode, tracing, diagnosis, and interpretation marks when implementation is incomplete.
+
+Full computational-output marks require reproducible output or a precise diagnosis of why execution failed. Full integrated-task marks require at least one valid validation check. A student who never demonstrates a valid check in individual assessed evidence has not met the pass profile.
 
 ## Evidence base
 
-- [MathWorks: Set Up MATLAB Copilot](https://www.mathworks.com/help/matlab-copilot/ug/set-up-matlab-copilot.html) - Copilot can generate, modify, and explain code, but generated responses require validation.
-- [TEQSA: Assessment reform for the age of artificial intelligence](https://www.teqsa.gov.au/sites/default/files/2023-09/assessment-reform-age-artificial-intelligence-discussion-paper.pdf) - use multiple contextualised assessment modes, assess learning processes, and secure meaningful checkpoints.
-- [Weller et al. (2022): Computational-thinking practices in introductory physics](https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.18.020106) - translating physics into code and algorithm building are distinct computational-thinking practices.
+- [MathWorks: Set Up MATLAB Copilot](https://www.mathworks.com/help/matlab-copilot/ug/set-up-matlab-copilot.html) — generated code and explanations require independent checking.
+- [TEQSA: Assessment reform for the age of artificial intelligence](https://www.teqsa.gov.au/sites/default/files/2023-09/assessment-reform-age-artificial-intelligence-discussion-paper.pdf) — use multiple contextualised modes, process evidence, and secure checkpoints.
+- [Weller et al. (2022): Computational-thinking practices in introductory physics](https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.18.020106) — translating physics into code and constructing algorithms are distinct computational-thinking practices.

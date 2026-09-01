@@ -1,0 +1,16 @@
+621625045e92712684fc3f7de4afb04f7fb646438014ffea7f1a60a28851328b  Week01/Lecture_Slides_Week01.pptx
+b82864fd8cb845467f464403c0d115180c7568724fc5c3577393b6d1094b2477  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-01.png
+db860e874c76acd3be6f8dc82dc5f2832a7acb2c5a8b6614ba7b53c974940ad2  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-02.png
+fc6f0870144771dd745e66f4c0df4fa086c0dc55824cb634731fe3eb36e96aff  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-03.png
+629b45a28b43da40ef0b66b68859dce2598d1839b6afcdf3b452e718d27a7842  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-04.png
+85febec2aea0864c8cf438b044a642abad1fc6a574ee0d397964c63eb480ebcb  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-05.png
+8c4362b34b1d87b3ae03c58d017e394ca83f743264df5967c63d862354ccd019  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-06.png
+404e9c6686f1112b3d5653feaf146cf48dbeb4da47f3b9c7a0765af77d9a227a  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-07.png
+6f06c1daec4d4c4c0e9de166f78a9a60514697bed6b11bc0f28c193c027e2910  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-08.png
+05f0db42c466b2849838c7b29d3e932c5ff3872fe43f74c9dfbe26be20701a97  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-09.png
+4c2781a750f7e7ddc0287f2b9c7c7b0397c9b964df8045231c531c6d4d74009c  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-10.png
+ff9978d027f50874d8f557d3ab29fc9ad7a8ff79572bc6e14df94ba6377a3754  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-11.png
+fc79dc084acf5cfc6fd30043379386c36e4d4e343a3d193e72dec0a37c900f4a  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-12.png
+4cebd33e6365b91e61deeafb95aee8d0e2825bb513c2c9aa0950949b6289f38f  Week01/.agent/lecture-slides/qa/rendered-canonical/slide-13.png
+fef5d3c69c507537cb2936b79eb84d7860d66f676c29e620a9cc3c0a64d2bab2  Week01/.agent/lecture-slides/qa/full-deck-contact-sheet.png
+1067db5c1e5fd1cfccd2f88d69becdcf8e985b4a2bff13a6d867f1837a7a6b90  Week01/.agent/lecture-slides/qa/title-contact-sheet.png

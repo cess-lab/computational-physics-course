@@ -1,0 +1,20 @@
+Slide 18 self-QA — Recap: a trustworthy root has a chain of evidence
+
+Artifact: raster/slide-18.png
+Dimensions: 1920 x 1080 px (verified)
+SHA-256: 1be3cb4058af3c081b5545ee743c724ede7e454552f5de8017d8b854a1a747f5
+Inspection: viewed at original full size after the final ImageGen title-band correction.
+
+Fixed master checklist 10/10 PASS.
+1. PASS — Complete 1920 x 1080 raster on a pure flat white borderless canvas.
+2. PASS — All title, chain, cards, and takeaway content remains at least 76 px from each outer edge.
+3. PASS — Navy condensed title and charcoal non-condensed subtitle follow the common upper-left master hierarchy, with no terminal punctuation.
+4. PASS — The full chain is exact and in correct order: model → residual → bracket/guess → iteration → stopping rule → validation → interpretation.
+5. PASS — All three card headings and body sentences are present verbatim, including commas, semicolons, and terminal full stops.
+6. PASS — Chain nodes use clear restrained semantic accents for model, validity, iteration, validation, and interpretation.
+7. PASS — Takeaway cards use the required green, gold/red, and blue/teal accents without ambiguity.
+8. PASS — Exact practical bridge strip, including the Weeks 01–06 en dash, is complete and projection-readable.
+9. PASS — The flow supports the intended evidence-chain recap and practical transition without scientific ambiguity.
+10. PASS — No logo, watermark, URL, citation, footer, page number, background wash, decoration, clipping, or unintended text.
+
+Unresolved risk: none.

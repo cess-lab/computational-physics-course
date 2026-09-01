@@ -1,0 +1,13 @@
+Slides: 9
+Total shapes: 195
+Text boxes: 195
+Pictures: 6
+Charts: 2
+Words: 489
+Slides without title: 9
+Pictures without alt text: 6
+
+Font usage:
+  Nunito: 121 occurrence(s)
+  IBM Plex Mono: 18 occurrence(s)
+  Cambria Math: 14 occurrence(s)

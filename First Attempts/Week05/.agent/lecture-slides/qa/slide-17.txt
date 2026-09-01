@@ -1,0 +1,20 @@
+Slide 17 self-QA — Method choice is an evidence decision
+
+Artifact: raster/slide-17.png
+Dimensions: 1920 x 1080 px (verified)
+SHA-256: e9bc981d512f86681563c173cc7ab94ea0e47b04047db7bf74add5605bc733eb
+Inspection: viewed at original full size after the final ImageGen layout correction.
+
+Fixed master checklist 10/10 PASS.
+1. PASS — Complete 1920 x 1080 raster; pure flat white borderless canvas.
+2. PASS — All visible elements retain at least 76 px outer clearance; matrix and bridge strip use the fixed-master inset.
+3. PASS — Navy condensed title and charcoal non-condensed subtitle use the fixed-master upper-left hierarchy; neither has terminal punctuation.
+4. PASS — Exact four matrix headers: Situation / Prefer / Reason / Required check.
+5. PASS — All sixteen matrix cell texts are present verbatim, including the required slash, plus signs, hyphen, and AI/code wording.
+6. PASS — Dense matrix body remains projection-readable at or above the 23 px minimum.
+7. PASS — Prefer chips are semantically green, gold, teal, and red in row order.
+8. PASS — Exact capstone bridge copy is visible in the pale navy strip.
+9. PASS — No logo, watermark, URL, footer, page number, citation, vignette, decoration, or background wash.
+10. PASS — Full-size inspection found no clipped, overlapping, substituted, or visibly malformed text.
+
+Unresolved risk: none.

@@ -1,0 +1,7 @@
+slides=9
+notes=9
+images=5
+layouts=5
+masters=2
+xml_parts_with_nunito=9
+xml_parts_with_ibm_plex_mono=5

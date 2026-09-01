@@ -1,0 +1,43 @@
+{
+  "masters": [
+    {
+      "id": "4a45f968-edea-4bcb-9780-7488defc5edc",
+      "name": "Master"
+    },
+    {
+      "id": "6714322f-555a-4a29-9010-75687280562a",
+      "name": "PHY4605 Borderless White Master"
+    }
+  ],
+  "layouts": [
+    {
+      "id": "4a45f968-edea-4bcb-9780-7488defc5edc",
+      "name": "Master"
+    },
+    {
+      "id": "3cf15c7c-4425-4f2a-b5f8-0aff541284ca",
+      "name": "Title Slide"
+    },
+    {
+      "id": "6714322f-555a-4a29-9010-75687280562a",
+      "name": "PHY4605 Borderless White Master"
+    },
+    {
+      "id": "edf3dc1a-4175-472d-91b6-eb340f1150a2",
+      "name": "Opening"
+    },
+    {
+      "id": "594106c0-bf75-436f-a0c8-9b08a501cc2f",
+      "name": "Content T1"
+    },
+    {
+      "id": "bf23293e-6a4b-4063-9683-59fb438801f1",
+      "name": "Content T2"
+    },
+    {
+      "id": "7e835b28-1c28-454c-8bc5-e747cfa98864",
+      "name": "Content T3"
+    }
+  ],
+  "slides": 9
+}

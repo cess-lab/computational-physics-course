@@ -1,0 +1,16 @@
+Status: pass — generated and then targeted-edited through ImageGen on 2026-08-29; proportionally rescaled without crop to 1920x1080; inspected at full size against the fixed master contract.
+
+Fixed master checklist 10/10 PASS.
+
+1. YES — final raster is exactly 1920x1080.
+2. YES — canvas is flat pure white and borderless.
+3. YES — all visible content has >=76 px outer-edge clearance.
+4. YES — navy condensed title and charcoal supporting subtitle match the approved Week05 visual scale, hierarchy, and upper-left placement.
+5. YES — subtitle is a non-condensed charcoal supporting face with no terminal full stop.
+6. YES — all required visible wording and punctuation match the Slide 11 handoff.
+7. YES — verified formula/sign/subscript forms: `(b−a)/2`, `|E_{k+1}−E_k|`, and `|f(E_k)|`; the step-size glyph was targeted-edited through ImageGen to remove the ambiguous brace.
+8. YES — the 2×2 taxonomy visibly distinguishes certified bisection bound, small iteration step, residual evidence, and implementation status.
+9. YES — accents follow the required green/gold/blue/purple semantic mapping.
+10. YES — no branding, footer, source label, URL, background decoration, or unrequested element is visible.
+
+Unresolved risk: none.

@@ -1,0 +1,40 @@
+Use case: scientific-educational
+Asset type: one 16:9 presentation slide, complete raster image, exactly 1920 x 1080 pixels
+Topic and learning outcome: PHY4605 Week 5 root finding. Learners can trace why bisection preserves a valid sign-changing interval while reducing the root-location uncertainty at each iteration.
+Density mode: standard; four numbered process cards, one formula band, and one takeaway with disciplined whitespace.
+Slide archetype: numbered process
+
+Text (verbatim; preserve every character, case, operator, subscript, asterisk subscript, parentheses, vertical bars, less-than symbol, unicode minus, and punctuation exactly):
+"Bisection keeps the root inside the interval"
+"Each step preserves the sign-changing bracket and halves the uncertainty"
+"1"
+"Start"
+"f(a)f(b) < 0"
+"2"
+"Midpoint"
+"c = (a+b)/2"
+"3"
+"Test sign"
+"Which half still brackets?"
+"4"
+"Repeat"
+"Width halves each time"
+"|c_k − E_*| ≤ (b_k − a_k)/2"
+"Bisection is slower, but the interval itself is evidence."
+
+Composition: PHY4605 Borderless White Scientific Infographic. Flat pure white #FFFFFF canvas with no outer border, vignette, wash, gradient, grid, background motif, texture, watermark, logo, footer, URL or decorative scene. Match final Week02/Week03 and approved Week05 title band: sentence-case navy #0B2B4C condensed bold title at x=115 y=60 around 68 px; charcoal #3F4B57 subtitle directly beneath x=115 y=142 around 30 px. Maintain a quiet title band and at least 115 px safe margins at the left and right.
+
+Four equal rounded process cards in a row under the title band, approximately x=115, 560, 1005, 1450, y=265, w=385, h=440, using 2 px strokes, pale fills, 22 px corners, no shadows. Each card has a small gold circular step-number badge at the upper left, then heading/body text and a miniature horizontal number line in the lower portion. On every miniature number line, use green endpoints/bracket lines and a blue midpoint dot. Do not include any other labels inside the number lines.
+
+Card 1, pale green #F0FAF7, green #3E8E45 stroke: gold badge "1", heading "Start", body "f(a)f(b) < 0". Its simple number line has two green endpoint markers and green bracket indication.
+Card 2, pale blue #EEF5FD, blue #2F6DB2 stroke: gold badge "2", heading "Midpoint", body "c = (a+b)/2". Its number line has green endpoints, a blue midpoint dot, and an even split indicator.
+Card 3, pale green #F0FAF7, green #3E8E45 stroke: gold badge "3", heading "Test sign", body "Which half still brackets?". Its number line shows a green retained half interval and blue midpoint dot, without extra labels.
+Card 4, pale gold #FFF7E6, gold #C98A16 stroke: gold badge "4", heading "Repeat", body "Width halves each time". Its number line shows a visibly narrower green retained interval and blue midpoint dot, without extra labels.
+
+Formula strip: centred rounded pale green #F0FAF7 card from approximately x=230 y=770 w=1460 h=135, green border; place the exact formula "|c_k − E_*| ≤ (b_k − a_k)/2" large, centred, crisp, in Cambria Math or an equivalent math face and navy #0B2B4C. Render k as a true subscript on c and b, an asterisk as a true subscript on E, and all two minus signs as the unicode minus symbol.
+
+Bottom takeaway strip: x=115 y=930 w=1690 h=92, pale navy #F4F8FC fill, thin navy #0B2B4C stroke, rounded corners. Bold condensed navy 31–34 px exact text: "Bisection is slower, but the interval itself is evidence."
+
+Visual language: precise editorial scientific infographic, flat consistent outline styling, restrained semantic accents—green bracket validity, blue midpoint/model, gold step-number/evaluation. Keep every word readable and do not add a decorative background or extra icons.
+
+Constraints: generate all typography, cards, badges, formula, number lines, and graphics inside this one complete ImageGen raster image. Only the quoted Text may appear as words/symbols; no extra labels, numbers, tick labels, a/b/c letters, or variables in number lines. No SVG, no HTML, no code, no placeholder, no logo, no institutional mark, no watermark, no website URL, no source/citation, no timing, and no footer branding.

@@ -1,0 +1,19 @@
+Slide 10 fixed-master self-QA — PASS
+
+File: raster/slide-10.png
+Final raster: 1920 × 1080 px, 16:9
+Production: One ImageGen-generated full-slide raster, proportionally resized to the required 1920 × 1080 delivery dimensions.
+
+Fixed master checklist:
+1. YES — file is exactly 1920 × 1080 px.
+2. YES — pure flat-white, borderless canvas.
+3. YES — all visible content clears the 76 px edge margin.
+4. YES — condensed navy title / charcoal non-condensed subtitle match the current Week 05 title band at its established upper-left position and visual scale.
+5. YES — subtitle is charcoal supporting text with no terminal full stop.
+6. YES — all visible wording and punctuation match the Slide 10 handoff.
+7. YES — model values, bracket, root, iteration counts, residuals, scientific notation, and units are exact.
+8. YES — comparison table directly supports the method-agreement and evidence claim.
+9. YES — navy header plus green, gold, and purple method-row accents follow required semantics.
+10. YES — no branding, footer, source label, URL, background decoration, or unrequested element.
+
+Full-size visual inspection completed. Unresolved risk: none.

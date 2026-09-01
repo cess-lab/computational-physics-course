@@ -1,0 +1,17 @@
+Create one single 1920×1080 ImageGen raster lecture slide in the exact Week02/Week03 PHY4605 scientific infographic language. Flat pure-white #FFFFFF background; completely borderless outer edge; no logo, watermark, footer, URL, texture, gradient, grid, pattern, or decorative background. All ink at least 76 px from all edges, preferably 115 px side margins.
+
+LOCKED TITLE BAND: place the sentence-case title at x≈115 px, y≈60 px, with 68 px nominal height—NOT LARGE OR OVERSIZED. It must match the moderate title size and weight of Slides 02–05: navy #0B2B4C Roboto Condensed-like bold. Exact title: A bracket gives global existence evidence
+Place one charcoal #3F4B57 Roboto-like 30 px subtitle directly below at x≈115 px, y≈142 px. Exact subtitle: For Kepler’s equation, the physics gives a sign-changing interval
+
+Below title band leave comfortable whitespace. Both main panels start no closer than x=115 and end before x=1805. Left panel pale green #F0FAF7 flat rounded card x≈115 y≈245 w≈820 h≈520, fine green #3E8E45 outline. It contains exactly:
+Heading: Analytic bracket
+Formula: a = M − e,    b = M + e
+Formula: f(M−e) = −e[1+sin(M−e)] ≤ 0
+Formula: f(M+e) =  e[1−sin(M+e)] ≥ 0
+Render mathematics large, precise, black/navy Cambria Math-like; preserve each minus, plus, square bracket, and inequality sign exactly.
+
+Right white rounded card x≈1020 y≈245 w≈785 h≈520, fine neutral outline. Draw a precise nonlinear model-blue residual curve between two green vertical bracket lines. Horizontal axis label E; vertical axis label f(E). The left green bracket endpoint is M−e and lies below the x-axis, label f(a) ≤ 0. The right green bracket endpoint is M+e and lies above the x-axis, label f(b) ≥ 0. The smooth curve rises across the zero axis exactly once only. Place one navy root dot with green outline at that single crossing, label root. No numeric values. Preserve all labels exactly.
+
+Bottom pale #F0FAF7 rounded takeaway strip x≈115 y≈900 w≈1690 h≈115, fine green outline, navy text, entirely inside 76 px safe margin. Exact text: Continuity + opposite signs guarantee at least one root in the bracket.
+
+Typography/card language must match final Week02 and Week03: controlled title scale, warm academic white space, crisp fine outlines, restrained green validity semantic, blue curve, no heavy shadows. Generate all text/diagram/curves/cards in one raster, not editable overlays; no SVG, HTML, code, placeholder, unrelated imagery, or extra words.
