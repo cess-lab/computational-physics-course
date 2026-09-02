@@ -1,0 +1,19 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{amsmath}
+\usepackage{array,booktabs}
+\usepackage{xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{>{\centering\arraybackslash}m{1.5cm}>{\centering\arraybackslash}m{1.5cm}>{\raggedright\arraybackslash}m{8.0cm}}
+\toprule
+\textbf{Entry} & \textbf{Value} & \textbf{Physical origin}\\
+\midrule
+$A_{11}$ & $3\,\Omega$ & $R_1+R_s$: resistance multiplying $I_1$ in the left-loop equation\\
+$A_{12}$ & $-1\,\Omega$ & $-R_s$: effect of $I_2$ on the shared-resistor drop in the left loop\\
+$A_{21}$ & $-1\,\Omega$ & $-R_s$: effect of $I_1$ on the shared-resistor drop in the right loop\\
+$A_{22}$ & $4\,\Omega$ & $R_2+R_s$: resistance multiplying $I_2$ in the right-loop equation\\
+\bottomrule
+\end{tabular}
+\end{document}

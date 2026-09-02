@@ -1,0 +1,572 @@
+{
+  "deck_name": "Lecture_Slides_Week03",
+  "language": "English",
+  "goal": "Teach Year-2 physics students to turn a familiar two-loop DC circuit into two Kirchhoff equations, map the equations into a 2x2 system, solve with MATLAB backslash, reconstruct the shared-branch current, validate the original equations directly, and interpret the signs physically.",
+  "deck_context": {
+    "deck_context": "Week 03 uses one small two-loop resistor circuit so the new cognitive load is representation: choose mesh-current directions, write one Kirchhoff voltage equation per loop, map each equation to one matrix row, solve the supplied system, and return to the circuit for validation and interpretation.",
+    "core_claim": "A matrix is a compact representation of physical equations; a solver result becomes credible only when the original equations are checked and the currents are interpreted using the stated directions and units.",
+    "locked_model": "Two clockwise mesh currents I1 and I2; R1 = 2 ohm; R2 = 3 ohm; Rs = 1 ohm; V1 = 5 V; V2 = 2 V; Ishared = I1 - I2; (R1+Rs)I1 - Rs I2 = V1; -Rs I1 + (R2+Rs)I2 = V2; A_ohm = [3 -1; -1 4]; b_V = [5; 2]; x_A = A_ohm\\b_V; I1_A = 2 A; I2_A = 1 A; Ishared_A = 1 A.",
+    "exactness": "Equations, matrix entries, code, variable names, values, units, signs, assertion tolerance, and validation differences are strict teaching content. Do not invent, paraphrase, or approximate them.",
+    "canonical_terms": [
+      "physical prediction",
+      "clockwise mesh current",
+      "shared-branch current",
+      "Kirchhoff voltage law",
+      "one equation per row",
+      "A*x=b",
+      "A_ohm",
+      "x_A",
+      "b_V",
+      "backslash",
+      "direct-substitution validation",
+      "physical interpretation"
+    ],
+    "course_alignment": {
+      "core": [
+        "state unknowns, directions, and units",
+        "derive two Kirchhoff equations",
+        "map one equation to one matrix row",
+        "use supplied MATLAB backslash syntax",
+        "reconstruct the shared current",
+        "validate by direct substitution",
+        "interpret positive and negative current signs",
+        "diagnose one plausible wrong-sign matrix"
+      ],
+      "working_exposure": [
+        "equivalent equation ordering",
+        "small source perturbation",
+        "coupling interpretation"
+      ],
+      "stretch": [
+        "residual",
+        "rank",
+        "conditioning",
+        "power balance"
+      ],
+      "removed": [
+        "eigenproblems",
+        "normal modes",
+        "advanced root-finding stress cases"
+      ]
+    }
+  },
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 4,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and the approved Slide 06 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "origin_image/slide_06.png",
+    "input_context_preparation": "Parent inspected the approved Week 02 sample, all strict Week 03 source assets, and the approved Week 03 Slide 06 sample with view_image before delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slide system with strong hierarchy, approachable labelled diagrams, moderate information density, and restrained semantic colour",
+    "color_palette": "open warm-white canvas; deep navy #243B53 for titles and structure; dusty blue #6E8FB3 for model content; quiet sage #7AA69B for expected or validated states; muted ochre #C7A35A for occasional prompts or warnings; subdued coral #BF7A70 only for genuine defects or physical failure",
+    "typography": "projection-readable sans-serif; bold for main titles; semibold for short headings and labels; regular for explanations and sublabels; readable regular monospaced MATLAB code; preserve mathematical symbols and units exactly",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin functional lines, direct labels, simple diagrams, generous alignment, no gradients, no decorative clutter, and no thick outer frame",
+    "prompt_rule": "Use ochre sparingly as a functional cue; prefer a compact inline prompt or small marker over a repeated oversized prompt box.",
+    "deck_consistency": "same palette, typography hierarchy, icon language, spacing rhythm, and approachable scientific tone across all slides; vary composition by teaching role",
+    "prohibited": [
+      "thick outer frame",
+      "slide numbers",
+      "timings",
+      "source labels",
+      "production metadata",
+      "unrelated logos",
+      "unlabelled decorative graphs"
+    ]
+  },
+  "approved_style_reference": {
+    "path": "origin_image/slide_06.png",
+    "role": "approved Week 03 sample slide style reference",
+    "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "From a circuit sketch to a checkable current",
+      "role": "cover",
+      "intent": "Open with the physical question and establish that A*x=b stores circuit equations rather than replacing the physics.",
+      "key_points": [
+        "A two-loop circuit can be written as two equations.",
+        "A 2x2 system stores those equations compactly.",
+        "MATLAB can solve the system.",
+        "The result still needs a physical check."
+      ],
+      "local_context": "Start with a sparse conceptual two-loop circuit motif without exact component values. Show the reasoning path circuit -> equations -> solve -> check -> interpretation.",
+      "layout": {
+        "composition": "sparse cover with large title on the left, conceptual two-loop circuit motif on the right, and a connected lower reasoning path",
+        "variation": "cover layout; do not copy a process-card grid"
+      },
+      "visual_elements": {
+        "main_visual": "new clean conceptual two-loop resistor motif with two clockwise arrows and a small matrix silhouette, no exact numerical claims",
+        "supporting_elements": "circuit -> equations -> solve -> check -> interpretation"
+      },
+      "source_image_rules": "Conceptual visual only; no strict numerical asset is required.",
+      "constraints": [
+        "Keep the cover sparse but purposeful.",
+        "No slide number, outer frame, watermark, logo, timings, or production metadata."
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Predict the current directions before solving",
+      "role": "prediction",
+      "intent": "Activate physical intuition and the sign convention before showing algebra or MATLAB.",
+      "key_points": [
+        "Choose clockwise mesh currents I1 and I2.",
+        "The chosen directions should give positive currents.",
+        "The larger source and smaller left private resistance suggest I1 > I2.",
+        "A prediction becomes a later check."
+      ],
+      "local_context": "Use the exact circuit asset. State the source polarities and resistor values shown in that asset, but keep the slide focused on prediction rather than solution.",
+      "layout": {
+        "composition": "exact circuit on the left two-thirds with a compact sage prediction panel on the right",
+        "variation": "prediction-plus-model layout"
+      },
+      "visual_elements": {
+        "main_visual": "exact labelled two-loop circuit",
+        "supporting_elements": "prediction panel with positive I1, positive I2, and I1 > I2"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/circuit_mesh_model.png",
+          "role": "strict input; exact circuit topology, component values, source values, polarities, and clockwise mesh-current arrows",
+          "fidelity": "preserve every label, sign, arrow, value, and physical relationship"
+        }
+      ],
+      "source_image_rules": "Circuit image is strict. Include it visibly and do not redraw or alter its scientific content.",
+      "constraints": [
+        "Do not show the solved currents yet.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "The shared resistor is where the two loop currents meet",
+      "role": "concept relationship",
+      "intent": "Make the origin of the coupled terms visible through the shared-branch current definition.",
+      "key_points": [
+        "The two mesh currents oppose one another in the shared branch.",
+        "Define the shared direction to follow mesh 1.",
+        "Ishared = I1 - I2.",
+        "A negative result means the actual branch direction is opposite to the assigned direction."
+      ],
+      "local_context": "Use a zoomed shared-branch explanation. The circuit remains the physical source; the equation defines a direction and a difference, not a new independent current.",
+      "layout": {
+        "composition": "circuit context on the left, highlighted shared resistor in the centre, exact subtraction equation and sign-meaning callout on the right",
+        "variation": "zoom-and-relationship layout"
+      },
+      "visual_elements": {
+        "main_visual": "exact circuit with the shared branch highlighted and two opposing mesh contributions",
+        "supporting_elements": "subtraction flow I1 - I2 -> shared branch"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/circuit_mesh_model.png",
+          "role": "strict input; physical source context for the shared resistor",
+          "fidelity": "preserve topology, arrows, labels, polarities, values, and units"
+        },
+        {
+          "path": "assets/strict/shared_current_equation.png",
+          "role": "strict mathematical input; shared current equation and direction meaning",
+          "fidelity": "preserve Ishared = I1 - I2 and the direction statement exactly"
+        }
+      ],
+      "source_image_rules": "Both input assets are strict. Keep the circuit and the subtraction relationship recognizable and physically consistent.",
+      "constraints": [
+        "Do not introduce a third independent unknown.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Walk each loop in words before writing symbols",
+      "role": "derivation",
+      "intent": "Keep the reasoning order visible: physical loop walk, then equation.",
+      "key_points": [
+        "One physical loop gives one Kirchhoff equation.",
+        "The left-loop shared contribution follows I1 - I2.",
+        "The right-loop shared contribution is reversed.",
+        "Every resistance-times-current term has units of volts."
+      ],
+      "local_context": "Use two horizontal loop-walk lanes. The exact equations must be visible, but the lane labels should first express the physical reasoning in plain language.",
+      "layout": {
+        "composition": "two horizontal loop-walk lanes with word statements, directional arrows, and a compact dimensional check",
+        "variation": "derivation lanes; avoid a four-card process grid"
+      },
+      "visual_elements": {
+        "main_visual": "two directional loop lanes leading to the exact KVL equations",
+        "supporting_elements": "left loop, right loop, shared term reversed, and units cue"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/kvl_equations.png",
+          "role": "strict equation input; two symbolic KVL equations and dimensional relationship",
+          "fidelity": "preserve signs, subscripts, terms, and Omega times A equals V exactly"
+        }
+      ],
+      "source_image_rules": "Equation image is strict. The generated slide may add plain-language labels around it but must not rewrite the equations.",
+      "constraints": [
+        "Do not show the numerical matrix yet.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Turn each Kirchhoff equation into one matrix row",
+      "role": "representation mapping",
+      "intent": "Show the exact equation-to-row mapping and preserve unknown and source order.",
+      "key_points": [
+        "Keep the unknown order x = [I1; I2].",
+        "Row 1 comes from the left-loop equation.",
+        "Row 2 comes from the right-loop equation.",
+        "b stores the matching source terms."
+      ],
+      "local_context": "Use coloured connectors from the left KVL equation to row 1, the right KVL equation to row 2, and the source rises to b. Explain that every coefficient remains traceable to a physical term.",
+      "layout": {
+        "composition": "equation-to-matrix mapping with three aligned columns and coloured row connectors",
+        "variation": "mapping diagram; no equal-card grid"
+      },
+      "visual_elements": {
+        "main_visual": "exact symbolic matrix mapping",
+        "supporting_elements": "row 1, row 2, unknown column order, source vector order"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/matrix_map.png",
+          "role": "strict mathematical input; symbolic coefficient matrix, unknown vector, source vector, and units",
+          "fidelity": "preserve row/column order, signs, symbols, and unit labels exactly"
+        }
+      ],
+      "source_image_rules": "Matrix mapping is strict. Add connectors and labels without replacing the supplied mathematical content.",
+      "constraints": [
+        "Make the row-to-equation relationship unambiguous.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Keep the units visible in A*x=b",
+      "role": "units audit",
+      "intent": "Repair the common mistake of treating matrix entries as unitless numbers.",
+      "key_points": [
+        "A = [3 -1; -1 4] ohm.",
+        "x = [I1; I2] A.",
+        "b = [5; 2] V.",
+        "A*x has units of volts."
+      ],
+      "local_context": "Approved sample slide. Preserve the final image at origin_image/slide_06.png as-is.",
+      "layout": {
+        "composition": "approved sample composition with large exact numeric system, unit labels, sage dimensional-check panel, and compact ochre prompt",
+        "variation": "approved sample; keep as-is"
+      },
+      "visual_elements": {
+        "main_visual": "approved sample image",
+        "supporting_elements": "numeric system and dimensional check"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/numeric_system_units/numeric_system_units.png",
+          "role": "strict mathematical input; locked numeric system and units",
+          "fidelity": "preserve matrix entries, vector entries, subscripts, and Omega times A equals V exactly"
+        }
+      ],
+      "source_image_rules": "Approved sample is final strict visual for this slide; do not regenerate or alter it.",
+      "constraints": [
+        "Keep the approved sample exactly.",
+        "No additional text."
+      ],
+      "sample_approved": true,
+      "use_approved_style_reference": false
+    },
+    {
+      "number": 7,
+      "title": "Audit the matrix before asking MATLAB to solve",
+      "role": "coefficient tracing",
+      "intent": "Prevent sign and row/column mistakes by reading every coefficient back as physics.",
+      "key_points": [
+        "A11 = R1 + Rs = 3 ohm.",
+        "A12 = -Rs = -1 ohm.",
+        "A21 = -Rs = -1 ohm.",
+        "A22 = R2 + Rs = 4 ohm."
+      ],
+      "local_context": "Place the exact audit table beside a compact matrix with highlighted cells. Prompt students to ask: which row, which unknown, which sign, and which unit?",
+      "layout": {
+        "composition": "large matrix at left with four highlighted entries connected to a physical-origin audit table at right",
+        "variation": "audit table; no process-card repetition"
+      },
+      "visual_elements": {
+        "main_visual": "strict four-entry coefficient audit",
+        "supporting_elements": "which row? which column? which sign? which unit?"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/matrix_audit.png",
+          "role": "strict text/matrix input; coefficient values, signs, units, and physical origins",
+          "fidelity": "preserve all four entries and origin statements exactly"
+        }
+      ],
+      "source_image_rules": "Audit table is strict. The surrounding matrix may be conceptual, but the supplied entries and origins must remain exact.",
+      "constraints": [
+        "Do not imply that negative off-diagonal signs are a memorised matrix rule; tie them to the shared branch.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Solve the supplied system with MATLAB backslash",
+      "role": "code mapping",
+      "intent": "Connect the supplied MATLAB code to the physical objects already constructed.",
+      "key_points": [
+        "Store the resistances and source voltages.",
+        "Build A and b in the stated order.",
+        "Use x_A = A_ohm\\b_V.",
+        "Read x_A(1) as I1_A and x_A(2) as I2_A."
+      ],
+      "local_context": "Show the exact code excerpt on the left with callouts for parameters, matrix, source vector, backslash, and indexing. Show the exact output on the right.",
+      "layout": {
+        "composition": "large exact MATLAB code panel on the left, numbered callouts along the centre, and a compact output panel on the right",
+        "variation": "code-plus-output layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict MATLAB code excerpt",
+        "supporting_elements": "backslash callout and strict output values"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/solve_code.png",
+          "role": "strict MATLAB code input; parameters, matrix construction, backslash, and indexing",
+          "fidelity": "preserve variable names, punctuation, line breaks, backslash, and indices exactly"
+        },
+        {
+          "path": "assets/strict/solve_output.png",
+          "role": "strict numerical output input; solved mesh-current values",
+          "fidelity": "preserve I1_A = 2 A and I2_A = 1 A exactly"
+        }
+      ],
+      "source_image_rules": "Both code and output images are strict. Do not rewrite the code in generated typography.",
+      "constraints": [
+        "Do not ask students to implement a solver from scratch.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Reconstruct the current in the shared branch",
+      "role": "derived physical quantity",
+      "intent": "Return from the vector solution to the measurable current in the shared resistor.",
+      "key_points": [
+        "The shared resistor carries the difference of the mesh currents.",
+        "Ishared_A = I1_A - I2_A.",
+        "The locked solution gives Ishared_A = 1 A.",
+        "A negative shared value would reverse the assigned branch direction."
+      ],
+      "local_context": "Show the exact subtraction relationship and exact result alongside a highlighted shared branch. Make clear that mesh currents are convenient unknowns, not separate physical paths through the shared resistor.",
+      "layout": {
+        "composition": "highlighted shared branch on the left, subtraction diagram through the centre, and exact result plus sign interpretation on the right",
+        "variation": "derived-quantity layout"
+      },
+      "visual_elements": {
+        "main_visual": "shared branch direction cue",
+        "supporting_elements": "2 A - 1 A -> 1 A"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/shared_current_equation.png",
+          "role": "strict mathematical input; shared-current subtraction and direction meaning",
+          "fidelity": "preserve equation and direction statement exactly"
+        },
+        {
+          "path": "assets/strict/shared_current_result.png",
+          "role": "strict numerical input; mesh and shared current values",
+          "fidelity": "preserve all current values and units exactly"
+        }
+      ],
+      "source_image_rules": "Both mathematical inputs are strict. Keep the relationship between mesh currents and the branch current physically explicit.",
+      "constraints": [
+        "Do not present Ishared as a third independently solved unknown.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Validate the original equations directly",
+      "role": "validation evidence",
+      "intent": "Make direct substitution the credibility gate after the solver call.",
+      "key_points": [
+        "Rebuild both KVL values from the solved currents.",
+        "3(2) - 1(1) = 5 V.",
+        "-1(2) + 4(1) = 2 V.",
+        "The difference vector is zero within the stated tolerance."
+      ],
+      "local_context": "Use two large green validation lanes, one per original equation, then show the exact MATLAB check below. Emphasise that the check tests the equations representing the circuit.",
+      "layout": {
+        "composition": "two green validation lanes across the top, exact code strip below, and one concise conclusion card",
+        "variation": "evidence-first layout"
+      },
+      "visual_elements": {
+        "main_visual": "exact reconstructed equations",
+        "supporting_elements": "exact MATLAB validation code and zero difference outcome"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/validation_equations.png",
+          "role": "strict mathematical input; reconstructed left and right KVL values",
+          "fidelity": "preserve both arithmetic checks and volt units exactly"
+        },
+        {
+          "path": "assets/strict/validation_code.png",
+          "role": "strict MATLAB code input; reconstructed values, difference vector, and assertion",
+          "fidelity": "preserve variable names, arithmetic, tolerance, and error string exactly"
+        }
+      ],
+      "source_image_rules": "Validation equations and code are strict. Do not replace them with generated paraphrases or decorative checkmarks.",
+      "constraints": [
+        "Keep the validation result visually more prominent than the solver call.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Read the numbers back into the circuit",
+      "role": "physical interpretation",
+      "intent": "Close the loop from numerical output to direction, magnitude, and branch meaning.",
+      "key_points": [
+        "Positive I1 and I2 follow the assumed clockwise arrows.",
+        "I1 > I2 matches the prediction.",
+        "The shared current follows the mesh-1 direction.",
+        "A negative current would indicate reversed physical direction, not automatically a failed calculation."
+      ],
+      "local_context": "Place the exact circuit on the left and a concise interpretation panel on the right. Use the exact summary asset for the numerical signs and values.",
+      "layout": {
+        "composition": "exact circuit on the left with solution directions highlighted and a three-part sign/magnitude/difference interpretation panel on the right",
+        "variation": "interpretation return layout"
+      },
+      "visual_elements": {
+        "main_visual": "exact circuit as the physical anchor",
+        "supporting_elements": "sign -> direction, comparison -> prediction, difference -> shared branch"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/circuit_mesh_model.png",
+          "role": "strict input; exact circuit interpretation context",
+          "fidelity": "preserve topology, arrows, labels, polarities, values, and units"
+        },
+        {
+          "path": "assets/strict/solution_summary.png",
+          "role": "strict numerical/text input; solved currents and sign comparison",
+          "fidelity": "preserve solved values, inequalities, and units exactly"
+        }
+      ],
+      "source_image_rules": "Circuit and summary are strict inputs. Add interpretive labels without changing the supplied solution.",
+      "constraints": [
+        "Make clear that a negative current is a direction statement.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 12,
+      "title": "A plausible matrix can still encode the wrong circuit",
+      "role": "debugging diagnosis",
+      "intent": "Distinguish successful MATLAB execution from a physically correct model.",
+      "key_points": [
+        "Flipping one off-diagonal sign can still produce finite output.",
+        "The wrong matrix changes the shared-resistor term.",
+        "The correct equations expose a -1.6923 V mismatch in the left equation.",
+        "Successful execution is not proof of a correct model."
+      ],
+      "local_context": "Use a split comparison: correct sign convention versus the single wrong-sign coefficient, then show the correct-equation validation failure and a repair cue. Use coral only for the defect and mismatch.",
+      "layout": {
+        "composition": "split correct-versus-defective comparison with a coral mismatch strip leading to a repair cue",
+        "variation": "debugging comparison layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict wrong-sign matrix/code excerpt",
+        "supporting_elements": "finite output, correct-equation mismatch, repair by tracing the shared term"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/wrong_sign_matrix.png",
+          "role": "strict defect input; single flipped off-diagonal coefficient and finite wrong solution",
+          "fidelity": "preserve the coefficient sign, variable names, values, and punctuation exactly"
+        },
+        {
+          "path": "assets/strict/wrong_sign_validation.png",
+          "role": "strict failure evidence; correct-equation mismatch and volt units",
+          "fidelity": "preserve -1.6923 V and the zero second mismatch exactly"
+        }
+      ],
+      "source_image_rules": "Defect and mismatch assets are strict. Do not soften the single sign error or invent a different numerical failure.",
+      "constraints": [
+        "Label the defect as physical/logical, not MATLAB syntax.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Working exposure — keep the representation and the physics paired",
+      "role": "controlled comparison",
+      "intent": "Broaden the workflow with two bounded comparisons without displacing the Core validation route.",
+      "key_points": [
+        "Reordering rows is harmless only when the same reorder is applied to b.",
+        "Changing V2 from 2.0 V to 2.1 V changes both coupled currents.",
+        "Equivalent representation preserves the solution; a physical input change propagates through coupling.",
+        "Residual, rank, conditioning, and power balance are optional stretch checks."
+      ],
+      "local_context": "Use two side-by-side mini-panels: reorder A and b together with unchanged x, and change one source with both current entries changing. Keep the stretch diagnostics in a small removable bottom strip.",
+      "layout": {
+        "composition": "two controlled-comparison panels with a small stretch footer",
+        "variation": "comparison layout; avoid presenting advanced diagnostics as required core work"
+      },
+      "visual_elements": {
+        "main_visual": "exact working-exposure values",
+        "supporting_elements": "representation change versus physical input change"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/reordering_perturbation.png",
+          "role": "strict numerical input; equivalent row ordering and V2 perturbation results",
+          "fidelity": "preserve zero reordering difference, 2.0 to 2.1 V change, perturbed vector, and current changes exactly"
+        }
+      ],
+      "source_image_rules": "Working-exposure values are strict. Keep the comparison bounded and label advanced diagnostics as optional stretch.",
+      "constraints": [
+        "Do not imply that students must reproduce conditioning or power calculations for the Core route.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Exit ticket — explain the 2x2 solve to a future you",
+      "role": "transfer and reflection",
+      "intent": "Consolidate the Core reasoning chain and preview transfer to another bounded circuit model.",
+      "key_points": [
+        "State the unknowns, directions, and units.",
+        "Map one matrix coefficient to its Kirchhoff term.",
+        "Explain why A*x has units of volts.",
+        "Write one direct-substitution validation and interpret a negative current."
+      ],
+      "local_context": "Use four compact response cards labelled PREDICT, MAP, CHECK, and INTERPRET, ending with a small bridge to the practical's sensor and node-voltage contexts. Do not reveal new numerical answers.",
+      "layout": {
+        "composition": "four response cards across the slide with a lower transfer bridge from the lecture circuit to sensor and node-voltage contexts",
+        "variation": "exit-ticket card layout"
+      },
+      "visual_elements": {
+        "main_visual": "four response prompts",
+        "supporting_elements": "small conceptual bridge to the practical"
+      },
+      "source_image_rules": "Prompt text is strict teaching content. Use a simple conceptual bridge visual without new numerical claims.",
+      "constraints": [
+        "Keep the prompts answerable from the lecture.",
+        "No slide number or outer frame."
+      ]
+    }
+  ]
+}

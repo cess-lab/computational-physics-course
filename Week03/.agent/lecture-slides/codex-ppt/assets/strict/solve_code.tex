@@ -1,0 +1,19 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weekblue}{HTML}{6E8FB3}
+\definecolor{weeksage}{HTML}{7AA69B}
+\lstdefinestyle{matlab}{language=Matlab,basicstyle=\ttfamily\large,keywordstyle=\color{weekblue!80!black},commentstyle=\color{weeksage!70!black},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=false,frame=single,rulecolor=\color{weeknavy!35},backgroundcolor=\color{weeknavy!3},aboveskip=0pt,belowskip=0pt}
+\begin{document}
+\begin{lstlisting}[style=matlab]
+R1_ohm = 2; R2_ohm = 3; Rs_ohm = 1;
+V1_V = 5; V2_V = 2;
+A_ohm = [R1_ohm+Rs_ohm, -Rs_ohm; ...
+         -Rs_ohm, R2_ohm+Rs_ohm];
+b_V = [V1_V; V2_V];
+x_A = A_ohm\b_V;
+I1_A = x_A(1);
+I2_A = x_A(2);
+\end{lstlisting}
+\end{document}

@@ -1,0 +1,110 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+A_ohm =
+
+     3    -1
+    -1     4
+
+
+b_V =
+
+     5
+     2
+
+
+I1_A =
+
+     2
+
+
+I2_A =
+
+     1
+
+
+Ishared_A =
+
+     1
+
+
+left_reconstructed_V =
+
+     5
+
+
+right_reconstructed_V =
+
+     2
+
+
+validation_difference_V =
+
+     0
+     0
+
+
+current_summary =
+
+  1×3 table
+
+    LeftMesh_A    RightMesh_A    SharedBranch_A
+    __________    ___________    ______________
+
+        2              1               1       
+
+
+x_wrong_sign_A =
+
+    1.3846
+    0.8462
+
+
+wrong_model_difference_V =
+
+   -1.6923
+   -0.0000
+
+
+maximum_reordering_difference_A =
+
+     0
+
+
+x_perturbed_A =
+
+    2.0091
+    1.0273
+
+
+change_in_currents_A =
+
+    0.0091
+    0.0273
+
+
+residual_V =
+
+     0
+     0
+
+
+matrix_rank =
+
+     2
+
+
+condition_number =
+
+    1.9387
+
+
+power_difference_W =
+
+     0
+

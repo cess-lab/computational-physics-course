@@ -1,0 +1,6 @@
+--- consistency checks ---
+questions=10
+lecture_blank_lines=1
+practical_blank_lines=1
+slide_artifacts=0
+reference_pass=1

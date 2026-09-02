@@ -1,0 +1,7 @@
+Compiler: bundled Tectonic 0.17.0
+Command: compile_latex.py --compiler tectonic --output-directory Week03/.agent/learning-notes/build-arrows-20260902 --json
+Result: PASS; 4 pages; A4; PDF 1.5; 71599 bytes
+Output: Week03/.agent/learning-notes/build-arrows-20260902/Week03_Two_by_Two_Linear_Systems_through_Kirchhoff_Circuits.pdf
+Student-facing copy: Week03/Week03_Learning_Note_Two_by_Two_Linear_Systems_through_Kirchhoff_Circuits.pdf
+Standard build directory synchronised from the arrow-revision build.
+SHA-256: e5ca1b29712510b9a5fb88a951d39cb543c112fdbadbfbf1c2b8df44eafc9aa9

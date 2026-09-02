@@ -1,0 +1,27 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+--- Week03/Week03_Lecture_Demonstration_Two_by_Two_Linear_Systems_through_Kirchhoff_Circuits.m ---
+NOPTS: line 27: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 28: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 33: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 34: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 38: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 42: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 43: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 44: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 51: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 58: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 59: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 67: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 74: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 75: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 79: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 80: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 81: Add a semicolon after the statement to hide the output (in a script).
+NOPTS: line 84: Add a semicolon after the statement to hide the output (in a script).
+--- Week03/Week03_Practical_AI_Enabled_Kirchhoff_Linear_Systems_Challenge_Set.m ---

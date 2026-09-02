@@ -1,0 +1,13 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weekcoral}{HTML}{BF7A70}
+\lstdefinestyle{matlab}{language=Matlab,basicstyle=\ttfamily\large,showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=false,frame=single,rulecolor=\color{weekcoral!70},backgroundcolor=\color{weekcoral!8},aboveskip=0pt,belowskip=0pt}
+\begin{document}
+\begin{lstlisting}[style=matlab]
+A_wrong_sign_ohm = [3, 1; ...
+                    -1, 4];
+x_wrong_sign_A = [1.3846; 0.8462];
+\end{lstlisting}
+\end{document}

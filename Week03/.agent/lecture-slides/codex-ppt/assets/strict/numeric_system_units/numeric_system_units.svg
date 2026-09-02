@@ -1,0 +1,13 @@
+<svg color="#243B53" style="vertical-align: -0.452ex;" xmlns="http://www.w3.org/2000/svg" width="39.367ex" height="2.149ex" role="img" focusable="false" viewBox="0 -750 17400 950"><rect x="0" y="-750" width="17400" height="950" fill="#ffffff"/><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math" data-latex="\begin{bmatrix}
+3 &amp; -1\\[-2pt]
+-1 &amp; 4
+\end{bmatrix}
+\begin{bmatrix}
+I_1\\[-2pt]
+I_2
+\end{bmatrix}
+=
+\begin{bmatrix}
+5\\[-2pt]
+2
+\end{bmatrix}"><g data-mml-node="merror" data-mjx-error="Unknown environment 'bmatrix'"><rect data-background="true" width="17400" height="950" y="-200"></rect><g data-mml-node="mtext" style="font-family: serif;"><text data-variant="-explicitFont" transform="scale(1,-1)" font-size="884px">Unknown environment 'bmatrix'</text></g></g></g></g></svg>
