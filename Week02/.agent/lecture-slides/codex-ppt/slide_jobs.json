@@ -1,0 +1,579 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Lecture_Slides_Week02",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and the approved Slide 4 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+    "input_context_preparation": "Parent inspected the Week 01 approved sample, the Week 02 sample, the strict equation assets, and the strict MATLAB plot with view_image before delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 4,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "From one calculation to a traceable loop",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2a-767b-73c1-9686-3945acec9980",
+        "agent_nickname": "Franklin",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "2aaf373f6b654630458dc1b266872639c0f3925445c6e0bfca81d3721e01ec1e",
+        "dispatched_at": "2026-09-01T18:10:36Z"
+      },
+      "result": {
+        "agent_id": "01a05e2a-767b-73c1-9686-3945acec9980",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2a-767b-73c1-9686-3945acec9980/exec-6162c314-2c11-4102-aecd-c90c768fb97e.png",
+        "selected_source_sha256": "e6298b248f73d44aabac127d51a2e29cb693b61e739713413729b273dfaf1285",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "e6298b248f73d44aabac127d51a2e29cb693b61e739713413729b273dfaf1285",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 cover with the required title and key points, clear vertical-motion visual, and consistent approved courseware styling.",
+        "recorded_at": "2026-09-01T18:12:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Predict the motion before asking MATLAB to repeat anything",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2a-794e-7e20-8312-d50f3a0e2560",
+        "agent_nickname": "Faraday",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "f21f6e70f2d27bd2b75f0a6d212de30a025645d027efe95811ee81f9c22d4fad",
+        "dispatched_at": "2026-09-01T18:10:37Z"
+      },
+      "result": {
+        "agent_id": "01a05e2a-794e-7e20-8312-d50f3a0e2560",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2a-794e-7e20-8312-d50f3a0e2560/exec-762afe5d-595c-448e-b88e-3c818fe4bf28.png",
+        "selected_source_sha256": "f9236b0716fd66c43645c25aa4bc56d35a3214e046384d735a56fc2b3956eebc",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "f9236b0716fd66c43645c25aa4bc56d35a3214e046384d735a56fc2b3956eebc",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 prediction sequence with exact text, clear labelled trajectory, and approved visual style.",
+        "recorded_at": "2026-09-01T18:12:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Fix the model, then ask what repeats",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/assets/equations/vertical-launch-model.png",
+          "role": "strict input asset; exact locked Week 02 equation",
+          "fidelity": "preserve symbols, sign, fraction, subscripts, and exponent exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2a-7f24-7922-b8d7-47ef0d13ef03",
+        "agent_nickname": "Herschel",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "63abb8b00cc93810bcdfc6b37803d9a357212a69183f7b050daef8c7dd134ac8",
+        "dispatched_at": "2026-09-01T18:10:39Z"
+      },
+      "result": {
+        "agent_id": "01a05e2a-7f24-7922-b8d7-47ef0d13ef03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2a-7f24-7922-b8d7-47ef0d13ef03/exec-c069c20c-ccd9-45dd-a33c-568f6d9bcd59.png",
+        "selected_source_sha256": "1a877fca11ec0cdb54591e3e6ca1d00af4cbd9684a0f5684ab935008322bd704",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "1a877fca11ec0cdb54591e3e6ca1d00af4cbd9684a0f5684ab935008322bd704",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 slide; strict equation is prominent, fixed inputs and time-to-position mapping are visually clear.",
+        "recorded_at": "2026-09-01T18:12:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "One calculation is four small jobs",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [],
+      "requires_context_images": false,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_04.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Turn the jobs into a repeatable recipe",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2a-8d9b-7913-8875-0109d1455c10",
+        "agent_nickname": "Curie",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "ea6c98885d0f9aa34a014b8ab690395e2cd9d7bac4493239ae36b6d7783290e9",
+        "dispatched_at": "2026-09-01T18:10:44Z"
+      },
+      "result": {
+        "agent_id": "01a05e2a-8d9b-7913-8875-0109d1455c10",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2a-8d9b-7913-8875-0109d1455c10/exec-b08cb5cd-e7ba-4262-8d3b-7209d1aa7210.png",
+        "selected_source_sha256": "aa5f42dc0dc41db7cad43a6104f2bdbbd8795eb94e7cb4360dc2ec4ac086ff68",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "aa5f42dc0dc41db7cad43a6104f2bdbbd8795eb94e7cb4360dc2ec4ac086ff68",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "16:9 ladder is legible, preserves all six pseudocode steps, and makes the loop-back from step 5 to step 3 visually explicit.",
+        "recorded_at": "2026-09-01T18:12:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "The index is a storage address, not a time",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2c-d2b9-74e0-951c-d8f6ab7fe56d",
+        "agent_nickname": "Mencius",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "726706fc5c944dc079559aca04e264333d6d0e0645537cb269df910ff9b316ac",
+        "dispatched_at": "2026-09-01T18:13:11Z"
+      },
+      "result": {
+        "agent_id": "01a05e2c-d2b9-74e0-951c-d8f6ab7fe56d",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2c-d2b9-74e0-951c-d8f6ab7fe56d/exec-4578ef98-467f-4a17-a33b-24e90b60de1a.png",
+        "selected_source_sha256": "ecb023d7873bcdd85965f01c9a8ed24c71e599dd48dc6cfa056773ef1edc4f4b",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "ecb023d7873bcdd85965f01c9a8ed24c71e599dd48dc6cfa056773ef1edc4f4b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 mapping diagram; index 2 clearly aligns the time and position arrays with the highlighted physical moment.",
+        "recorded_at": "2026-09-01T18:15:50Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Trace two passes before trusting the whole loop",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2c-d3b3-7fc0-9dc1-8b73618739ca",
+        "agent_nickname": "Arendt",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "27697497dac1e8c7622bc6ac7e11b4aae3c698fa5e465e7751c17b2317074f7f",
+        "dispatched_at": "2026-09-01T18:13:11Z"
+      },
+      "result": {
+        "agent_id": "01a05e2c-d3b3-7fc0-9dc1-8b73618739ca",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2c-d3b3-7fc0-9dc1-8b73618739ca/exec-1b50e141-64f9-428f-8eaa-3218e158405a.png",
+        "selected_source_sha256": "4a06282e49ab36f12cf779c075c37f0a75101be6120f8249dedaec9b30270e07",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "4a06282e49ab36f12cf779c075c37f0a75101be6120f8249dedaec9b30270e07",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 two-pass trace with exact values, aligned index-to-output mappings, and restrained change highlights.",
+        "recorded_at": "2026-09-01T18:15:51Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Write the MATLAB loop that matches the recipe",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2c-d6cc-73a3-8771-4390d82cd224",
+        "agent_nickname": "Nietzsche",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "34aac1250731f8af8293f446830aa15134b6520d42c3a9607163c7ec6b790274",
+        "dispatched_at": "2026-09-01T18:13:13Z"
+      },
+      "result": {
+        "agent_id": "01a05e2c-d6cc-73a3-8771-4390d82cd224",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2c-d6cc-73a3-8771-4390d82cd224/exec-a86e03c9-2ea7-4740-bb01-949be5808f67.png",
+        "selected_source_sha256": "504f7d71be47ab45b81966a4816601d29267c56fbbcca8a5bded4a57e62804d2",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "504f7d71be47ab45b81966a4816601d29267c56fbbcca8a5bded4a57e62804d2",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 code-and-callout slide with all four loop roles clearly mapped and strict MATLAB identifiers preserved.",
+        "recorded_at": "2026-09-01T18:15:51Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Complete one line, then say what it does",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2c-dfb3-73e0-9b09-e5f37c6d1ba6",
+        "agent_nickname": "Turing",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "c8ade4e5ca1da791c8275a4c72546f717cbab9594fd2bd2977de3ee702ea8149",
+        "dispatched_at": "2026-09-01T18:13:16Z"
+      },
+      "result": {
+        "agent_id": "01a05e2c-dfb3-73e0-9b09-e5f37c6d1ba6",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2c-dfb3-73e0-9b09-e5f37c6d1ba6/exec-1be3154f-8260-44f9-b348-28318795d18b.png",
+        "selected_source_sha256": "59aaed22103d3ee730b79b4878d496aedc6c6d37b5c1e6d3b0012f2c3d5d4031",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "59aaed22103d3ee730b79b4878d496aedc6c6d37b5c1e6d3b0012f2c3d5d4031",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 bounded-completion layout with scaffold, sentence flow, and first-value check in the approved courseware style.",
+        "recorded_at": "2026-09-01T18:15:51Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Change one input, predict one consequence",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2f-db76-7663-8846-98695b395a3e",
+        "agent_nickname": "Boole",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "9cf334d332f12e6491d1d7b0018e304d79bb8e08882cdc088c71108608ed16d1",
+        "dispatched_at": "2026-09-01T18:16:30Z"
+      },
+      "result": {
+        "agent_id": "01a05e2f-db76-7663-8846-98695b395a3e",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2f-db76-7663-8846-98695b395a3e/exec-d18e5dd5-41f8-4043-b2de-7212e186d190.png",
+        "selected_source_sha256": "80445969b4b6ba91f2086fe7fe136c575dd9091bf04d7976c32a33fcee1feae9",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "80445969b4b6ba91f2086fe7fe136c575dd9091bf04d7976c32a33fcee1feae9",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 controlled-comparison slide with clear fixed, changed, and predicted states; only the launch speed changes and the conceptual lower peak remains separate from computed evidence.",
+        "recorded_at": "2026-09-01T18:20:07Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Read the plot as evidence, not decoration",
+      "job": "prompts/slide_11_conceptual.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e3d-25a2-7211-bca6-10032a26732f",
+        "agent_nickname": "Leibniz",
+        "prompt": "prompts/slide_11_conceptual.json",
+        "prompt_sha256": "10b03fae45f6eae22468e7b09d745dd984ce8bd0f5e17fa6379c9de1a30f42fa",
+        "dispatched_at": "2026-09-01T18:31:00Z"
+      },
+      "result": {
+        "agent_id": "01a05e3d-25a2-7211-bca6-10032a26732f",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e3d-25a2-7211-bca6-10032a26732f/exec-c7cf09d1-656d-4de0-a79e-76ea6c3f6f3b.png",
+        "selected_source_sha256": "b82921c8e60799db9f3a0dc6254c2e6057feab3a4c9786dc7cda73ab070bdca6",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "b82921c8e60799db9f3a0dc6254c2e6057feab3a4c9786dc7cda73ab070bdca6",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable conceptual evidence board with no numerical plot, clear two-trajectory comparison, four observations, and the required distinction between conceptual sketch and MATLAB output.",
+        "recorded_at": "2026-09-01T18:32:39Z"
+      },
+      "blocker": null,
+      "blocker_history": [
+        {
+          "agent_id": "01a05e2f-dc88-73b2-8f1a-f4492514408a",
+          "reason": "Exact-match built-in imagegen worker reported that edit-mode generation altered the strict MATLAB comparison plot despite two preservation attempts; no compliant output selected.",
+          "blocked_at": "2026-09-01T18:19:31Z"
+        }
+      ],
+      "reopened": {
+        "at": "2026-09-01T18:30:43Z",
+        "reason": "Lecturer approved replacing the strict plot with a generated conceptual evidence graphic.",
+        "replacement_job": "prompts/slide_11_conceptual.json"
+      }
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Diagnose the defect before editing the code",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2f-e1ee-7290-a677-f43694eeae98",
+        "agent_nickname": "Tesla",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "81ed472b08bda020843055ef48cd3589edb1e19a61fec64929533b24c2548c39",
+        "dispatched_at": "2026-09-01T18:16:33Z"
+      },
+      "result": {
+        "agent_id": "01a05e2f-e1ee-7290-a677-f43694eeae98",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2f-e1ee-7290-a677-f43694eeae98/exec-47d4a20c-4f55-4dc9-955e-64d7cba8c1e9.png",
+        "selected_source_sha256": "04f099875fccc61843d1d27a4c1b57e87432b3fa3ffde96c6a440427614705fa",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "04f099875fccc61843d1d27a4c1b57e87432b3fa3ffde96c6a440427614705fa",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 three-lane diagnostic slide with distinct defect classes, exact short code fragments, and a clear evidence path.",
+        "recorded_at": "2026-09-01T18:20:07Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "One check can pass while the model is still wrong",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/assets/equations/known-initial-value.png",
+          "role": "strict input asset; exact known initial-value equation",
+          "fidelity": "preserve y(0) = 0 m exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e2f-ef88-74e1-a8da-a85eea08672d",
+        "agent_nickname": "Chandrasekhar",
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "6b4547b468d4d125affbfec6bc84dce1253f72cacf057558768c0bbd7cc45982",
+        "dispatched_at": "2026-09-01T18:16:37Z"
+      },
+      "result": {
+        "agent_id": "01a05e2f-ef88-74e1-a8da-a85eea08672d",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e2f-ef88-74e1-a8da-a85eea08672d/exec-57dacd4f-4d03-4074-aca0-b5341fd8a005.png",
+        "selected_source_sha256": "7dec112e843ca21d08bc1901065bbd587f0aa946ec4ff0c084fe6a5903b88bf4",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "7dec112e843ca21d08bc1901065bbd587f0aa946ec4ff0c084fe6a5903b88bf4",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 validation-contrast slide; the supplied initial-value equation remains visibly preserved, and the numerical-versus-physical check distinction is clear.",
+        "recorded_at": "2026-09-01T18:20:07Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Exit ticket — explain the loop to a future you",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05e3d-269b-71b2-8c73-961b50e998cc",
+        "agent_nickname": "Socrates",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "168307719bf392a42f533bb3e2359ecf16c8abb320f16fe25979dd52b89e2cae",
+        "dispatched_at": "2026-09-01T18:31:01Z"
+      },
+      "result": {
+        "agent_id": "01a05e3d-269b-71b2-8c73-961b50e998cc",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05e3d-269b-71b2-8c73-961b50e998cc/exec-9a811f51-2e21-4111-887e-d3da5ff4cb47.png",
+        "selected_source_sha256": "fc26e0390210db38175dc44d34304e9acc34d14b41548819c5328ddc0256dd67",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "fc26e0390210db38175dc44d34304e9acc34d14b41548819c5328ddc0256dd67",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable 16:9 exit-ticket slide with all four prompts, writing lines, and a clear 2 x 2 circuit bridge.",
+        "recorded_at": "2026-09-01T18:32:39Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-01T18:32:39Z"
+}

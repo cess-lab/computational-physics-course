@@ -1,0 +1,477 @@
+{
+  "deck_name": "Lecture_Slides_Week02",
+  "language": "English",
+  "goal": "Teach Year-2 physics students to turn one familiar vertical-motion calculation into an ordered algorithm, trace a MATLAB for-loop, make one bounded parameter change, diagnose clear defects from evidence, and explain what validation does and does not prove.",
+  "deck_context": {
+    "deck_context": "Week 02 reuses the familiar one-dimensional vertical-launch model so the new cognitive load is algorithmic rather than mathematical. The lecture moves from prediction to one calculation, then to a repeatable recipe, index mapping, two-pass tracing, a MATLAB loop, bounded completion, controlled modification, plotted evidence, defect classification, validation limits, and transfer.",
+    "core_claim": "A loop becomes trustworthy when every pass has a clear input, current value, update, matching output slot, stopping point, check, and physical interpretation.",
+    "locked_model": "y(t) = y0 + v0 t - (1/2) g t^2; upward is positive; air resistance is neglected; gravity is constant; y0_m = 0 m; v0_mps = 20 m s^-1; g_mps2 = 9.81 m s^-2; t_s = 0:0.5:4 s.",
+    "exactness": "Equations, code, indices, numerical values, units, signs, assertions, and plot data are strict teaching content. Do not invent, paraphrase, or approximate them.",
+    "canonical_terms": [
+      "physical prediction",
+      "input / calculate / store / check",
+      "pseudocode",
+      "start / current / update / next / stop",
+      "sample_index",
+      "current_time_s",
+      "for loop",
+      "syntax defect",
+      "indexing or operator defect",
+      "physical or logical defect",
+      "known-value validation",
+      "physical interpretation"
+    ],
+    "course_alignment": {
+      "core": [
+        "decompose into input, calculation, output, and check",
+        "plain-language pseudocode",
+        "loop start/current/update/next/stopping point",
+        "trace first two iterations",
+        "complete one scaffold line",
+        "modify one parameter and predict effect",
+        "diagnose three clear defect types",
+        "use known-value and physical checks",
+        "interpret the graph physically"
+      ],
+      "working_exposure": [
+        "preallocation",
+        "supplied MATLAB comparison plot"
+      ],
+      "stretch": [
+        "write a reusable function from scratch",
+        "design a second independent test"
+      ],
+      "removed": [
+        "eigenproblems",
+        "normal modes",
+        "advanced root-finding stress cases"
+      ]
+    }
+  },
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 4,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and the approved Slide 4 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "origin_image/slide_04.png",
+    "input_context_preparation": "Parent inspected the Week 01 approved sample, the Week 02 sample, the strict equation assets, and the strict MATLAB plot with view_image before delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slide system with strong hierarchy, approachable labelled diagrams, moderate information density, and restrained semantic colour",
+    "color_palette": "open warm-white canvas; deep navy #243B53 for titles and structure; dusty blue #6E8FB3 for model content; quiet sage #7AA69B for expected or validated states; muted ochre #C7A35A for occasional prompts or warnings; subdued coral #BF7A70 only for genuine defects or physical failure",
+    "typography": "projection-readable sans-serif; bold for main titles; semibold for short headings and labels; regular for explanations and sublabels; readable regular monospaced MATLAB code; preserve mathematical symbols and units exactly",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin functional lines, direct labels, simple diagrams, generous alignment, no gradients, no decorative clutter, and no thick outer frame",
+    "prompt_rule": "Use ochre/yellow sparingly as a functional cue; prefer a compact inline prompt or small marker over a repeated oversized prompt box.",
+    "deck_consistency": "same palette, typography hierarchy, icon language, spacing rhythm, and approachable scientific tone across all slides; vary composition by teaching role",
+    "prohibited": [
+      "thick outer frame",
+      "slide numbers",
+      "timings",
+      "source labels",
+      "production metadata",
+      "unrelated logos",
+      "unlabelled decorative graphs"
+    ]
+  },
+  "approved_style_reference": {
+    "path": "origin_image/slide_04.png",
+    "role": "approved sample slide style reference",
+    "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "From one calculation to a traceable loop",
+      "role": "cover",
+      "intent": "Open with the driving question and show looping as an extension of a physical calculation.",
+      "key_points": [
+        "A familiar equation can be evaluated one time at a time.",
+        "An algorithm makes the order visible.",
+        "A loop makes repetition explicit.",
+        "Evidence still needs checking and physical interpretation."
+      ],
+      "local_context": "Continue Week 01’s vertical-motion story while shifting the focus to ordered repetition, debugging, and validation.",
+      "layout": {
+        "composition": "sparse cover with title left, new conceptual vertical-motion trajectory right, and a connected reasoning path question -> recipe -> loop -> evidence -> explanation along the lower third",
+        "variation": "cover layout; do not copy the sample process cards"
+      },
+      "visual_elements": {
+        "main_visual": "new conceptual vertical-motion scene with no exact labels or numerical claims",
+        "supporting_elements": "small connected reasoning words"
+      },
+      "source_image_rules": "No strict source image required; conceptual illustration must agree with upward-positive motion.",
+      "constraints": [
+        "Keep the cover sparse but not empty.",
+        "No slide number, outer frame, watermark, logo, timings, or production metadata."
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Predict the motion before asking MATLAB to repeat anything",
+      "role": "prediction",
+      "intent": "Reactivate the physical prediction before introducing loop syntax.",
+      "key_points": [
+        "Choose upward as positive.",
+        "The ball starts at y = 0 m.",
+        "It rises to one maximum, then falls.",
+        "The prediction is our first debugging reference."
+      ],
+      "local_context": "Use y(t) = y0 + v0 t - (1/2) g t^2 with y0 = 0 m, v0 = 20 m s^-1, and g = 9.81 m s^-2. Do not show MATLAB code yet.",
+      "layout": {
+        "composition": "three- or four-state motion sequence with direct labels START, RISING, PEAK, FALLING and a compact prediction panel",
+        "variation": "prediction sequence; vary from the process sample"
+      },
+      "visual_elements": {
+        "main_visual": "new conceptual motion sequence with trajectory line, arrows, and clear peak",
+        "supporting_elements": "small prompt: What should the output look like?"
+      },
+      "source_image_rules": "Conceptual visual only; no exact numerical plot required.",
+      "constraints": [
+        "No unexplained colour legend.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Fix the model, then ask what repeats",
+      "role": "model representation",
+      "intent": "Separate fixed physical inputs from the single value that changes on each loop pass.",
+      "key_points": [
+        "Use y(t) = y0 + v0 t - (1/2) g t^2.",
+        "Keep y0 = 0 m, v0 = 20 m s^-1, and g = 9.81 m s^-2 fixed.",
+        "Choose ordered times t_s = 0:0.5:4 s.",
+        "One evaluation gives one position."
+      ],
+      "local_context": "The exact locked values are y0_m = 0 m, v0_mps = 20 m s^-1, g_mps2 = 9.81 m s^-2, and t_s = 0:0.5:4 s. Explain that current_time_s changes while the model stays fixed.",
+      "layout": {
+        "composition": "large exact equation at upper centre, fixed-input chips underneath, and one highlighted time-to-position example at bottom",
+        "variation": "equation-plus-input mapping"
+      },
+      "visual_elements": {
+        "main_visual": "exact equation asset",
+        "supporting_elements": "fixed input strip and current time -> one position cue"
+      },
+      "required_images": [
+        {
+          "path": "assets/equations/vertical-launch-model.png",
+          "role": "strict input asset; exact locked Week 02 equation",
+          "fidelity": "preserve symbols, sign, fraction, subscripts, and exponent exactly"
+        }
+      ],
+      "source_image_rules": "Equation image is strict. All values and units must match the locked model.",
+      "constraints": [
+        "Do not replace the supplied equation with generated typography.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 4,
+      "title": "One calculation is four small jobs",
+      "role": "process",
+      "intent": "Give students the plain-language decomposition that makes a later loop understandable.",
+      "key_points": [
+        "Input stores the model parameters and ordered times.",
+        "Calculate uses the current time in the model.",
+        "Store saves one position in the matching output slot.",
+        "Check compares the result with something already known."
+      ],
+      "local_context": "Approved sample slide. Preserve the final image at origin_image/slide_04.png as-is.",
+      "layout": {
+        "composition": "approved sample image with four connected internal cards and compact lower one-pass band",
+        "variation": "approved sample; keep as-is"
+      },
+      "visual_elements": {
+        "main_visual": "approved sample image",
+        "supporting_elements": "four-job process and one-pass track"
+      },
+      "source_image_rules": "Approved sample is final strict visual for this slide; do not regenerate or alter it.",
+      "constraints": [
+        "Keep the approved sample exactly.",
+        "No additional text."
+      ],
+      "sample_approved": true,
+      "use_approved_style_reference": false
+    },
+    {
+      "number": 5,
+      "title": "Turn the jobs into a repeatable recipe",
+      "role": "pseudocode",
+      "intent": "Make loop vocabulary explicit in plain language before MATLAB punctuation.",
+      "key_points": [
+        "Make one output slot for every input time.",
+        "Start at the first index.",
+        "Read the current time, calculate, and store one position.",
+        "Move to the next index and stop after the last."
+      ],
+      "local_context": "Render this exact six-step pseudocode: 1. Make one position slot per time; 2. Start at the first index; 3. Read the current time; 4. Calculate and store one position; 5. Move to the next index; 6. Stop after the last time. Highlight start, current, update, next, and stop.",
+      "layout": {
+        "composition": "vertical six-step ladder with one loop-back arrow from Move to the next index to Read the current time and an end marker at Stop",
+        "variation": "algorithm ladder; no equal-card grid"
+      },
+      "visual_elements": {
+        "main_visual": "numbered pseudocode ladder",
+        "supporting_elements": "loop vocabulary tags and compact note plain language first"
+      },
+      "source_image_rules": "Pseudocode is strict teaching text; render exactly as supplied.",
+      "constraints": [
+        "Do not show full MATLAB code yet.",
+        "Make the loop-back relationship unambiguous.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 6,
+      "title": "The index is a storage address, not a time",
+      "role": "concept explanation",
+      "intent": "Connect MATLAB’s one-based index to a physical sample and matching output location.",
+      "key_points": [
+        "MATLAB indexing starts at 1.",
+        "t_s(sample_index) selects the current physical time.",
+        "y_m(sample_index) selects the matching output slot.",
+        "The same index keeps input and output aligned."
+      ],
+      "local_context": "Render exact expressions sample_index, t_s(sample_index), and y_m(sample_index). Show t_s = [0, 0.5, 1.0, ...] s and y_m = [0, 8.77375, 15.0950, ...] m; highlight index 2 mapping to 0.5 s and 8.77375 m.",
+      "layout": {
+        "composition": "two aligned array strips on left mapped by direct connector to moments on a vertical-motion curve on right; highlight index 2",
+        "variation": "mapping diagram"
+      },
+      "visual_elements": {
+        "main_visual": "aligned time and position arrays with one physical moment highlighted",
+        "supporting_elements": "storage address, current time, matching output slot labels"
+      },
+      "source_image_rules": "Expressions, sample values, and units are strict text; preserve the index-to-time mapping.",
+      "constraints": [
+        "Avoid tiny array entries.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Trace two passes before trusting the whole loop",
+      "role": "worked trace",
+      "intent": "Demonstrate execution order with two concrete iterations before presenting the complete code.",
+      "key_points": [
+        "Pass 1 uses index 1 and t = 0 s, giving y = 0 m.",
+        "Pass 2 uses index 2 and t = 0.5 s, giving y = 8.77375 m.",
+        "The selected input and output location change together.",
+        "Trace symbols first; interpret the number physically second."
+      ],
+      "local_context": "Use exact values: Iteration 1: sample_index = 1; current_time_s = 0.0 s; y_m(1) = 0.00000 m. Iteration 2: sample_index = 2; current_time_s = 0.5 s; y_m(2) = 8.77375 m. Show compact equation substitution without arithmetic errors.",
+      "layout": {
+        "composition": "two large side-by-side trace panels with index, current time, substitution, and stored result; narrow lower connector shows same pattern, next index",
+        "variation": "worked example comparison"
+      },
+      "visual_elements": {
+        "main_visual": "two trace cards with matching fields",
+        "supporting_elements": "arrows from t_s(index) to y_m(index) and restrained ochre highlight on changed fields"
+      },
+      "source_image_rules": "Indices, times, and numerical results are strict; preserve 8.77375 m exactly.",
+      "constraints": [
+        "Do not make numerical values unreadable.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Write the MATLAB loop that matches the recipe",
+      "role": "code mapping",
+      "intent": "Map the plain-language recipe onto a complete readable MATLAB loop.",
+      "key_points": [
+        "Preallocate one position slot per time.",
+        "Loop from 1 to n_samples.",
+        "Use a scalar current_time_s inside the loop.",
+        "Store into the matching indexed output."
+      ],
+      "local_context": "Render this exact MATLAB code with line breaks: y_m = zeros(size(t_s)); / for sample_index = 1:n_samples /     current_time_s = t_s(sample_index); /     y_m(sample_index) = y0_m + v0_mps*current_time_s ... /         - 0.5*g_mps2*current_time_s^2; / end. Use numbered callouts 1 preallocate, 2 select, 3 calculate, 4 store. Keep ordinary * and ^ because current_time_s is scalar.",
+      "layout": {
+        "composition": "large monospaced code panel on left two-thirds with four local numbered callouts aligned to exact lines on right",
+        "variation": "code-and-callout layout"
+      },
+      "visual_elements": {
+        "main_visual": "exact MATLAB loop",
+        "supporting_elements": "four callouts and note one pass handles one scalar time"
+      },
+      "source_image_rules": "MATLAB code is strict; preserve names, punctuation, ellipsis, indentation, ordinary multiplication, exponent, and end exactly.",
+      "constraints": [
+        "Keep punctuation projection-readable.",
+        "No helper functions or vectorised alternatives.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Complete one line, then say what it does",
+      "role": "bounded completion",
+      "intent": "Give one controlled implementation checkpoint and connect the line to physical meaning.",
+      "key_points": [
+        "The missing line is the position update.",
+        "Use the current time, not the whole time array.",
+        "Store into y_m(sample_index).",
+        "The first stored value should remain 0 m."
+      ],
+      "local_context": "Render exact scaffold: y_m = zeros(size(t_s)); / for sample_index = 1:n_samples /     current_time_s = t_s(sample_index); /     y_m(sample_index) = ________________________________; / end. Show exact completion y0_m + v0_mps*current_time_s - 0.5*g_mps2*current_time_s^2 and the sentence frame current time -> equation -> matching slot.",
+      "layout": {
+        "composition": "large scaffold with one highlighted blank on left; right side shows three-part sentence frame and green first-value check",
+        "variation": "bounded task layout"
+      },
+      "visual_elements": {
+        "main_visual": "exact scaffold and single missing update line",
+        "supporting_elements": "current time -> equation -> matching slot and initial-value check"
+      },
+      "source_image_rules": "Scaffold and completion are strict code text; preserve blank location and names.",
+      "constraints": [
+        "Do not turn this into a multi-line coding exercise.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Change one input, predict one consequence",
+      "role": "controlled modification",
+      "intent": "Reinforce causal reasoning by changing one parameter while holding the algorithm and other inputs fixed.",
+      "key_points": [
+        "Change only v0_mps from 20 to 15 m s^-1.",
+        "Keep y0_m, g_mps2, and t_s fixed.",
+        "Predict a lower maximum position.",
+        "Rerun the same algorithm for a controlled comparison."
+      ],
+      "local_context": "Use exact text original v0_mps = 20 m s^-1 and modified v0_lower_mps = 15 m s^-1. Keep y0_m = 0 m, g_mps2 = 9.81 m s^-2, and t_s = 0:0.5:4 s unchanged. Expected prediction: lower launch speed -> lower maximum position. Do not show final comparison plot yet.",
+      "layout": {
+        "composition": "three-column fixed / changed / predicted layout with unchanged inputs in a quiet strip and one ochre arrow from 20 to 15",
+        "variation": "controlled comparison"
+      },
+      "visual_elements": {
+        "main_visual": "parameter change diagram with one highlighted changed input and conceptual lower-peak sketch",
+        "supporting_elements": "fixed, changed, predicted labels"
+      },
+      "source_image_rules": "Values, names, and units are strict; do not introduce a second changed parameter.",
+      "constraints": [
+        "Keep prediction separate from computed evidence.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Read the plot as evidence, not decoration",
+      "role": "data evidence",
+      "intent": "Use loop output to answer the prediction question and practise unit-aware interpretation.",
+      "key_points": [
+        "Both cases begin at 0 m.",
+        "The lower launch speed produces a lower sampled peak.",
+        "Labels and units make the graph interpretable.",
+        "The curve is valid only under the stated model assumptions."
+      ],
+      "local_context": "Use the conceptual evidence sketch to name the observations: both cases begin at 0 m; the lower launch speed produces a lower sampled peak; labels and units make the output interpretable; the claim is limited by the stated model assumptions. Exact numerical values remain in the MATLAB Live Script rather than on this conceptual slide.",
+      "layout": {
+        "composition": "conceptual evidence board with a left-to-right trend sketch, shared-start marker, higher and lower sampled peaks, and a right-side checklist for labels, units, and assumptions",
+        "variation": "conceptual evidence layout; no numerical plot asset"
+      },
+      "visual_elements": {
+        "main_visual": "generated conceptual output sketch with a labelled vertical axis, shared start, one higher peak and one lower peak, and direct trend annotations",
+        "supporting_elements": "evidence checklist: shared start, lower launch speed -> lower sampled peak, labels + units, stated assumptions"
+      },
+      "required_images": [],
+      "source_image_rules": "Conceptual visual only; do not present an approximate curve as quantitative MATLAB evidence. Refer to the exact MATLAB comparison plot in the Live Script for numerical values.",
+      "constraints": [
+        "Label the conceptual sketch as conceptual or trend only.",
+        "Do not invent numerical ticks, peak values, or an unlabelled decorative graph.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Diagnose the defect before editing the code",
+      "role": "debugging classification",
+      "intent": "Give students a decision path for distinguishing visible failure from plausible-but-wrong output.",
+      "key_points": [
+        "Syntax defects stop MATLAB reading the intended structure.",
+        "Indexing or operator defects can run while storing or calculating the wrong thing.",
+        "Physical or logical defects can produce plausible numbers with wrong physics.",
+        "The code running is not a correctness test."
+      ],
+      "local_context": "Use exact short defect fragments and consequences: Syntax: for k = 1:numel(t_s); ...; % missing end -> MATLAB cannot determine the loop boundary. Indexing: y_m(1) = ... inside every loop pass -> code runs but overwrites one storage slot. Physical sign: y_m(k) = y0_m + v0_mps*t_s(k) + 0.5*g_mps2*t_s(k)^2 -> code runs but accelerates upward and contradicts upward-positive gravity. Evidence path: error location / pseudocode / output / physics.",
+      "layout": {
+        "composition": "three vertical diagnostic lanes with symptom, exact fragment, and evidence to inspect; coral syntax, ochre indexing, teal physical/logical",
+        "variation": "taxonomy / diagnostic lanes"
+      },
+      "visual_elements": {
+        "main_visual": "three diagnostic lanes with short exact code snippets",
+        "supporting_elements": "decision cue stops? -> syntax; storage wrong? -> index/operator; physics wrong? -> sign/model"
+      },
+      "source_image_rules": "Fragments, signs, and consequences are strict text; preserve missing end, fixed output index, and plus gravity sign.",
+      "constraints": [
+        "Do not label all defects as MATLAB errors.",
+        "Keep fragments short and readable.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 13,
+      "title": "One check can pass while the model is still wrong",
+      "role": "validation and limitation",
+      "intent": "Show what a known-value check proves, what it misses, and why physical reasoning supplies a second check.",
+      "key_points": [
+        "y(0) = 0 m is a known initial-value check.",
+        "assert(y_m(1) == y0_m) checks the first stored value.",
+        "A wrong gravity sign can still pass at t = 0.",
+        "Use the predicted trajectory as a second physical check."
+      ],
+      "local_context": "Use exact y(0) = 0 m and exact assertion assert(abs(y_m(1)-y0_m) < 1e-12). Show wrong-sign expression y_wrong(k) = y0_m + v0_mps*t_s(k) + 0.5*g_mps2*t_s(k)^2 and state initial check passes at t = 0; physical check fails because the ball accelerates upward. End with exact phrase check the number and the meaning.",
+      "layout": {
+        "composition": "split panel: known initial value and passing assertion left; qualitative wrong-sign trajectory with coral physical-failure marker right; narrow bottom contrast numerical check versus physical check",
+        "variation": "validation contrast"
+      },
+      "visual_elements": {
+        "main_visual": "strict known-value equation plus exact assertion and conceptual wrong-sign trajectory",
+        "supporting_elements": "PASS at t = 0, FAIL physical direction, final line check the number and the meaning"
+      },
+      "required_images": [
+        {
+          "path": "assets/equations/known-initial-value.png",
+          "role": "strict input asset; exact known initial-value equation",
+          "fidelity": "preserve y(0) = 0 m exactly"
+        }
+      ],
+      "source_image_rules": "Equation image and assertion/sign expressions are strict; wrong-sign trajectory is conceptual and must accelerate upward.",
+      "constraints": [
+        "Make the limitation of one check explicit.",
+        "Do not imply the assertion validates the full trajectory.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Exit ticket — explain the loop to a future you",
+      "role": "transfer and reflection",
+      "intent": "Consolidate the Core reasoning chain and bridge it to Week 03 without revealing answers.",
+      "key_points": [
+        "Put input, calculation, output, and check in order.",
+        "Explain what t_s(sample_index) selects.",
+        "Identify one defect and the evidence that reveals it.",
+        "State one validation and one physical conclusion."
+      ],
+      "local_context": "Use exact prompts: ORDER — Put input, calculation, output, and check in a sensible order. TRACE — For sample_index = 2, what does t_s(sample_index) select? DIAGNOSE — Give one syntax, indexing/operator, or physical/logical defect and its evidence. VALIDATE — State one validation and one physical conclusion from the graph. Add a small bridge: the same recipe will organise a 2 x 2 circuit model.",
+      "layout": {
+        "composition": "balanced two-by-two response cards labelled ORDER, TRACE, DIAGNOSE, VALIDATE with short writing lines and a small bridge arrow to a 2 x 2 circuit model",
+        "variation": "exit ticket; compact cards permitted, no outer frame"
+      },
+      "visual_elements": {
+        "main_visual": "four response prompts with simple line icons",
+        "supporting_elements": "model -> algorithm -> code -> check -> interpretation cue; no answers"
+      },
+      "source_image_rules": "Prompt wording is strict teaching text; do not add answer text.",
+      "constraints": [
+        "Keep prompts projection-readable.",
+        "No slide number or production metadata.",
+        "No new Week 03 content beyond the 2 x 2 bridge."
+      ]
+    }
+  ]
+}

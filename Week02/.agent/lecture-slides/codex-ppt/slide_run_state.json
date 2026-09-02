@@ -1,0 +1,36 @@
+{
+  "status": "slides_recorded",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-09-01T18:06:57Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "blocked",
+      "at": "2026-09-01T18:19:31Z",
+      "note": "slide_11: Exact-match built-in imagegen worker reported that edit-mode generation altered the strict MATLAB comparison plot despite two preservation attempts; no compliant output selected."
+    },
+    {
+      "from": "blocked",
+      "to": "jobs_prepared",
+      "at": "2026-09-01T18:30:43Z",
+      "note": "reopened slide_11 after lecturer-approved conceptual-graphic replacement"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-09-01T18:31:01Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-09-01T18:32:39Z",
+      "note": "all slide images recorded"
+    }
+  ],
+  "updated_at": "2026-09-01T18:32:39Z"
+}

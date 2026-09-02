@@ -1,0 +1,39 @@
+{
+  "slide": 11,
+  "title": "Read the plot as evidence, not decoration",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 11,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nTeach Year-2 physics students to turn one familiar vertical-motion calculation into an ordered algorithm, trace a MATLAB for-loop, make one bounded parameter change, diagnose clear defects from evidence, and explain what validation does and does not prove.\n\n## Required Background\nThe lecture uses a familiar upward-positive vertical-motion model so the new cognitive load is algorithmic. The key distinction on this slide is conceptual trend versus quantitative evidence: a visual sketch can show what to look for, but exact numerical values belong to the MATLAB Live Script. The reasoning chain remains physical prediction -> algorithm -> code -> evidence -> physical interpretation.\n\n## Global Style\nUse the confirmed Teaching Courseware — Muted Academic Blue + Sage style: open warm-white canvas; deep navy #243B53; dusty blue #6E8FB3; quiet sage #7AA69B for expected or validated states; muted ochre #C7A35A for a prompt; subdued coral #BF7A70 only for a warning. Use projection-readable sans-serif type, readable regular monospaced text only where useful, flat clean educational finish, thin functional lines, direct labels, no gradients, no decorative clutter, and no thick outer frame. Match the approved sample's palette, typography mood, density, texture, and visual identity while varying the layout for an evidence-reading slide.\n\n## Input Image\nImage 1 is the approved Slide 04 sample style reference only. Do not copy its exact layout or content.\n\n## Slide\n{\n  \"number\": 11,\n  \"title\": \"Read the plot as evidence, not decoration\",\n  \"role\": \"evidence reading and physical interpretation\",\n  \"intent\": \"Show students how a loop output becomes a defensible physical claim without presenting an approximate generated graph as numerical data.\"\n}\n\n## Text\n{\n  \"title\": \"Read the plot as evidence, not decoration\",\n  \"key_points\": [\n    \"Both cases begin at 0 m.\",\n    \"The lower launch speed produces a lower sampled peak.\",\n    \"Labels and units make the output interpretable.\",\n    \"The claim is valid only under the stated model assumptions.\"\n  ]\n}\n\n## Layout\nUse a balanced evidence board: a large labelled conceptual trend sketch on the left, a right-side checklist of four observations, and a compact footer tag reading \"conceptual trend sketch — not numerical data\". The sketch should show one shared start, one higher arc, one lower arc, and direct labels \"shared start\", \"higher sampled peak\", and \"lower sampled peak\". Include a vertical label \"position, y\" and a horizontal label \"time, t\" without numeric ticks. Add a small bridge at the bottom: \"Exact values come from the MATLAB output.\"\n\n## Visual Elements\nCreate a clean, clearly labelled conceptual motion/output sketch with two distinct trajectories or sampled paths and a visible assumptions gate. Use arrows and short callouts to connect visual features to the four evidence statements. Keep the graphic explicitly conceptual, not a quantitative graph.\n\n## Source Image Rules\nThere is no strict plot asset on this revised slide. Do not invent numerical ticks, peak values, MATLAB data points, or a pseudo-precise curve. The exact MATLAB comparison plot remains in the lecturer Live Script and hidden QA assets.\n\n## Constraints\n[\n  \"Render the title and key points exactly in English.\",\n  \"Keep the conceptual label visible and legible.\",\n  \"Do not present the sketch as a measured or numerical plot.\",\n  \"No slide number, watermark, unrelated logo, production metadata, or outer frame.\"\n]\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_11.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+      "role": "approved sample slide style reference",
+      "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and the approved Slide 4 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+    "input_context_preparation": "Parent inspected the Week 01 approved sample, the Week 02 sample, the strict equation assets, and the strict MATLAB plot with view_image before delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": ["backend_used", "selected_source", "qa_note"]
+  }
+}

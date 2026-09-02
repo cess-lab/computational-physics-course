@@ -1,0 +1,59 @@
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+n_samples =
+
+     9
+
+
+first_time_s =
+
+     0
+
+second_time_s =
+
+    0.5000
+
+
+first_position_m =
+
+     0
+
+
+second_position_m =
+
+    8.7737
+
+
+position_at_start_m =
+
+     0
+
+
+position_at_1s_m =
+
+   15.0950
+
+
+completed_update =
+
+   15.0950
+
+
+nonzero_entries_with_defect =
+
+     1
+
+
+position_wrong_sign_at_4s_m =
+
+  158.4800
+
+
+maximum_loop_vector_difference_m =
+
+     0
