@@ -1,0 +1,16 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weekblue}{HTML}{6E8FB3}
+\definecolor{weeksage}{HTML}{7AA69B}
+\definecolor{weekcoral}{HTML}{BF7A70}
+\lstdefinestyle{matlab}{language=Matlab,basicstyle=\ttfamily\fontsize{15}{19}\selectfont,keywordstyle=\color{weekblue!80!black},commentstyle=\color{weeksage!70!black},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=false,frame=single,rulecolor=\color{weeknavy!35},backgroundcolor=\color{weeknavy!3},aboveskip=0pt,belowskip=0pt}
+\begin{document}
+\begin{lstlisting}[style=matlab]
+wrong_baseline_extension = F_N.*baseline_k_Npm;
+correct_baseline_extension = F_N./baseline_k_Npm;
+wrong_final_value = wrong_baseline_extension(end)
+correct_final_value_m = correct_baseline_extension(end)
+\end{lstlisting}
+\end{document}

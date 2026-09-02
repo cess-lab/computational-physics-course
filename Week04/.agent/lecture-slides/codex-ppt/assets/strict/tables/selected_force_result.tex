@@ -1,0 +1,18 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{>{\centering\arraybackslash}m{2.0cm} >{\centering\arraybackslash}m{2.4cm} >{\centering\arraybackslash}m{2.4cm} >{\centering\arraybackslash}m{2.4cm}}
+\toprule
+\textbf{$F$ (N)} & \textbf{$k=50$ N/m} & \textbf{$k=100$ N/m} & \textbf{$k=200$ N/m}\\
+\midrule
+2 & 0.040 & 0.020 & 0.010\\
+5 & 0.100 & 0.050 & 0.025\\
+8 & 0.160 & 0.080 & 0.040\\
+\bottomrule
+\end{tabular}
+\end{document}

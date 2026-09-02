@@ -1,0 +1,14 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weekblue}{HTML}{6E8FB3}
+\definecolor{weeksage}{HTML}{7AA69B}
+\lstdefinestyle{matlab}{language=Matlab,basicstyle=\ttfamily\fontsize{16}{20}\selectfont,keywordstyle=\color{weekblue!80!black},commentstyle=\color{weeksage!70!black},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=false,frame=single,rulecolor=\color{weeknavy!35},backgroundcolor=\color{weeknavy!3},aboveskip=0pt,belowskip=0pt}
+\begin{document}
+\begin{lstlisting}[style=matlab]
+zero_force_extension_m = extension_m(:,1)
+assert(max(abs(zero_force_extension_m)) < 1e-12, ...
+    'Zero-force limiting-case validation failed.')
+\end{lstlisting}
+\end{document}

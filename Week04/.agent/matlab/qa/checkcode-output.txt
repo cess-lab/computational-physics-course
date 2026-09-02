@@ -1,0 +1,16 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+L 27 (C 12): Add a semicolon after the statement to hide the output (in a script).
+L 31 (C 29): Add a semicolon after the statement to hide the output (in a script).
+L 32 (C 20): Add a semicolon after the statement to hide the output (in a script).
+L 33 (C 19): Add a semicolon after the statement to hide the output (in a script).
+L 47 (C 24): Add a semicolon after the statement to hide the output (in a script).
+L 58 (C 19): Add a semicolon after the statement to hide the output (in a script).
+L 59 (C 23): Add a semicolon after the statement to hide the output (in a script).
+L 65 (C 1-20): Add a semicolon after the statement to hide the output (in a script).
+

@@ -1,0 +1,19 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weeksage}{HTML}{7AA69B}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.35}
+\begin{tabular}{>{\centering\arraybackslash}m{2.8cm} >{\centering\arraybackslash}m{4.4cm} >{\centering\arraybackslash}m{4.0cm}}
+\toprule
+\textbf{$k$ (N/m)} & \textbf{$x$ at $F=10$ N (m)} & \textbf{case}\\
+\midrule
+50 & 0.20 & lower stiffness\\
+100 & 0.10 & baseline\\
+200 & 0.05 & higher stiffness\\
+\bottomrule
+\end{tabular}
+\end{document}

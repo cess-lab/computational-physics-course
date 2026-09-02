@@ -1,0 +1,18 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{>{\centering\arraybackslash}m{2.2cm} >{\centering\arraybackslash}m{4.4cm} >{\centering\arraybackslash}m{5.0cm}}
+\toprule
+\textbf{$k$ (N/m)} & \textbf{Correct $x=F/k$ (m)} & \textbf{Wrong $x=F.*k$ (N$^2$/m)}\\
+\midrule
+50 & 0.20 & 500\\
+100 & 0.10 & 1000\\
+200 & 0.05 & 2000\\
+\bottomrule
+\end{tabular}
+\end{document}

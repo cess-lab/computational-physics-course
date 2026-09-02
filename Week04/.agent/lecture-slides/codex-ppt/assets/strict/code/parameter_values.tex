@@ -1,0 +1,14 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weekblue}{HTML}{6E8FB3}
+\definecolor{weeksage}{HTML}{7AA69B}
+\lstdefinestyle{matlab}{language=Matlab,basicstyle=\ttfamily\fontsize{18}{22}\selectfont,keywordstyle=\color{weekblue!80!black},commentstyle=\color{weeksage!70!black},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=false,frame=single,rulecolor=\color{weeknavy!35},backgroundcolor=\color{weeknavy!3},aboveskip=0pt,belowskip=0pt}
+\begin{document}
+\begin{lstlisting}[style=matlab]
+F_N = 0:0.5:10;             % applied force array (N)
+k_Npm = [50 100 200];       % spring stiffness values (N/m)
+baseline_k_Npm = 100;        % baseline spring stiffness (N/m)
+\end{lstlisting}
+\end{document}

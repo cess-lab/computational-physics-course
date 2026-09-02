@@ -64,7 +64,7 @@ The following decisions are specific to PHY4605. They do not modify the installe
 - Do not use empty illustrations or unlabeled graphics as the main learning object. Diagrams should include the relevant state names, variables, units, arrows, axes, steps, or short annotations needed to explain what students should notice.
 - Place annotations close to the feature they describe. A connector should be short and should end clearly on the intended target; avoid long diagonal leaders that cross unrelated parts of the visual. Every label must have an unambiguous target.
 - When a quantitative graph is the learning object, make it read as a real plotted graph: include axis labels, units, readable ticks and values, a recognizable curve or data series, and a title or legend when useful. Grid lines may be used when they improve reading. Do not substitute an unlabeled decorative curve for the intended graph.
-- Preserve MATLAB-generated plots and computed evidence as strict source assets under the scientific controls below. A complete generated slide may contain or frame such evidence, but image generation must not invent, approximate, or redraw strict numerical results. A conceptual graphic without exact numerical claims must be clearly treated as conceptual.
+- For lecture-slide visuals, use MATLAB-generated plots and computed evidence as strict numerical reference/QA assets. When a graph is the learning object, provide the MATLAB output, script, and data to the built-in ImageGen backend as reference only, then generate the complete slide as one cohesive image, including the graph, labels, annotations, and surrounding layout. Do not paste or overlay the MATLAB raster into PowerPoint or add separate PowerPoint annotation boxes. The generated graph must not invent or materially change the specified values, units, curve relationships, or marker positions; compare it against the retained MATLAB source during QA. Learning notes and MATLAB Live Scripts keep MATLAB-generated plots when their own specifications require them. A conceptual graphic without exact numerical claims must be clearly treated as conceptual.
 
 ### Framing and reusable patterns
 
@@ -84,7 +84,7 @@ The following decisions are specific to PHY4605. They do not modify the installe
 ## Scientific and exact-content controls
 
 - The weekly locked model, assumptions, variables, units, signs, sample counts, code, validation language, and physical interpretation must agree across slides, learning notes, MATLAB Live Scripts, practicals, and READMEs.
-- MATLAB-generated plots and computed evidence are strict source assets. Preserve their data, axes, labels, legends, units, values, and curve shapes; never ask image generation to approximate or redraw them.
+- MATLAB-generated plots and computed evidence remain strict numerical references and source facts. Preserve their data, axes, labels, legends, units, values, and curve relationships during slide generation. For lecture-slide visuals, pass them to ImageGen as reference-only inputs for a full-slide redraw; do not paste the MATLAB raster into the final slide, and verify the redraw against the retained source. For learning notes and MATLAB Live Scripts, embed the MATLAB-generated plot directly where their specifications require it.
 - Exact equations, mathematical fragments, symbols, code, and unit expressions must be supplied as strict source assets whenever image generation might alter their meaning. Retain their source and provenance under the weekly hidden folder.
 - Required source images must be mapped to explicit slide numbers and roles in `outline.md`. The lecturer approves this mapping before sample generation.
 - A generated slide must not invent a value, scientific component, sign, arrow direction, relationship, code token, or validation result.
@@ -153,7 +153,7 @@ Inspect every final slide at full size. A contact sheet is only supplementary. V
 3. every worker satisfies the exact-match policy;
 4. every final `origin_image/slide_XX.png` came from the confirmed built-in backend;
 5. titles, prose, code, equations, signs, symbols, units, and numerical values are exact and readable;
-6. strict plots and supplied figures are visibly preserved rather than replaced by approximate redraws;
+6. lecture-slide graphs are cohesive ImageGen redraws checked against the retained MATLAB reference, while learning-note/Live-Script plots and other strict supplied figures are visibly preserved where their specifications require direct embedding;
 7. no important element is clipped, overlapped, distorted, truncated, or too small for projection;
 8. visual identity is consistent while adjacent layouts vary appropriately;
 9. the deck contains the required prediction, algorithm/code reasoning, validation, and physical interpretation;

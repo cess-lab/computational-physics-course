@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="620" viewBox="0 0 1200 620" role="img">
+
+<defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="context-stroke"/>
+    </marker>
+  </defs>
+<rect width="100%" height="100%" fill="#ffffff"/>
+<text x="56" y="52" fill="#243B53" font-size="30" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="start">Same applied force F</text>
+<text x="58" y="88" fill="#6E8FB3" font-size="22" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" text-anchor="start">compare extension while k changes</text>
+<line x1="42" y1="112" x2="1158" y2="112" stroke="#D7E0E8" stroke-width="2" stroke-linecap="round"/>
+<text x="58" y="190" fill="#C7A35A" font-size="30" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="start">F</text>
+<line x1="88" y1="182" x2="192" y2="182" stroke="#C7A35A" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="246" y="146" width="12" height="72" rx="0" fill="#243B53" stroke="#243B53" stroke-width="1"/>
+<polyline points="258,182 286,154 314,210 342,154 370,210 398,154 426,210 454,154 482,210 510,154 538,210 566,182" fill="none" stroke="#6E8FB3" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="566" y="156" width="46" height="52" rx="5" fill="#EAF0F5" stroke="#243B53" stroke-width="3"/>
+<line x1="630" y1="224" x2="812" y2="224" stroke="#7AA69B" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="724" y="214" fill="#7AA69B" font-size="22" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">larger x</text>
+<text x="858" y="188" fill="#243B53" font-size="27" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="start">k = 50 N/m</text>
+<text x="858" y="220" fill="#7AA69B" font-size="21" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" text-anchor="start">largest extension</text>
+<text x="58" y="346" fill="#C7A35A" font-size="30" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="start">F</text>
+<line x1="88" y1="338" x2="192" y2="338" stroke="#C7A35A" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="246" y="302" width="12" height="72" rx="0" fill="#243B53" stroke="#243B53" stroke-width="1"/>
+<polyline points="258,338 286,310 314,366 342,310 370,366 398,310 426,366 454,310 482,366 510,310 538,366 566,338" fill="none" stroke="#6E8FB3" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="566" y="312" width="46" height="52" rx="5" fill="#EAF0F5" stroke="#243B53" stroke-width="3"/>
+<line x1="630" y1="380" x2="756" y2="380" stroke="#7AA69B" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="693" y="370" fill="#7AA69B" font-size="22" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">x</text>
+<text x="858" y="344" fill="#243B53" font-size="27" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="start">k = 100 N/m</text>
+<text x="858" y="376" fill="#7AA69B" font-size="21" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" text-anchor="start">baseline</text>
+<text x="58" y="502" fill="#C7A35A" font-size="30" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="start">F</text>
+<line x1="88" y1="494" x2="192" y2="494" stroke="#C7A35A" stroke-width="5" stroke-linecap="round" marker-end="url(#arrow)"/>
+<rect x="246" y="458" width="12" height="72" rx="0" fill="#243B53" stroke="#243B53" stroke-width="1"/>
+<polyline points="258,494 286,466 314,522 342,466 370,522 398,466 426,522 454,494" fill="none" stroke="#6E8FB3" stroke-width="5" stroke-linejoin="round" stroke-linecap="round"/>
+<rect x="454" y="468" width="46" height="52" rx="5" fill="#EAF0F5" stroke="#243B53" stroke-width="3"/>
+<line x1="518" y1="546" x2="584" y2="546" stroke="#7AA69B" stroke-width="3" stroke-linecap="round" marker-end="url(#arrow)"/>
+<text x="551" y="536" fill="#7AA69B" font-size="22" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="middle">smaller x</text>
+<text x="858" y="500" fill="#243B53" font-size="27" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="700" text-anchor="start">k = 200 N/m</text>
+<text x="858" y="532" fill="#7AA69B" font-size="21" font-family="Inter, Helvetica, Arial, sans-serif" font-weight="500" text-anchor="start">smallest extension</text>
+</svg>

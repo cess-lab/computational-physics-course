@@ -1,0 +1,617 @@
+{
+  "deck_name": "Lecture_Slides_Week04",
+  "language": "English",
+  "goal": "Teach Year-2 physics students to treat a parameter sweep as a controlled computational experiment: vary one named parameter, hold the model and other inputs fixed, evaluate the same model for every case, overlay labelled curves on common axes, validate a known or limiting case, diagnose a runnable but physically wrong calculation, and explain the trend.",
+  "deck_context": {
+    "deck_context": "Week 04 uses one familiar ideal Hooke's-law model so the new cognitive load is controlled comparison: choose spring stiffness as the single swept parameter, keep the applied-force array and model fixed, evaluate extension repeatedly, read a common-axis plot, validate zero force, and transfer the workflow to analogous physics models.",
+    "core_claim": "A parameter sweep is a controlled computational experiment. A graph becomes physically credible only when the same input is compared across cases and the trend agrees with the equation, units, and a known or limiting check.",
+    "locked_model": "Ideal elastic spring: F = kx and x = F/k; F_N = 0:0.5:10 N; k_Npm = [50 100 200] N/m; baseline_k_Npm = 100 N/m; extension_m is stored one row per stiffness case; at F = 10 N the extensions are 0.20 m, 0.10 m, and 0.05 m; at F = 0 every case gives x = 0.",
+    "exactness": "Equations, variable names, values, units, MATLAB code, plot labels, legend entries, numerical tables, limiting-case check, and wrong-model comparison are strict teaching content. Do not invent, paraphrase, or approximate them.",
+    "canonical_terms": [
+      "parameter sweep",
+      "controlled experiment",
+      "swept parameter",
+      "fixed input",
+      "Hooke's law",
+      "spring stiffness",
+      "spring extension",
+      "common axes",
+      "same-input comparison",
+      "known or limiting case",
+      "physical interpretation",
+      "runnable but physically wrong"
+    ],
+    "course_alignment": {
+      "core": [
+        "vary one named parameter",
+        "hold the model and other inputs fixed",
+        "build and read a small parameter array",
+        "evaluate the same model for every case",
+        "overlay labelled curves on common axes",
+        "compare cases at the same input",
+        "validate F = 0 gives x = 0",
+        "explain the stiffness trend physically",
+        "diagnose x = F.*k as a physical/logical defect"
+      ],
+      "working_exposure": [
+        "selected-force result table",
+        "numerical comparison alongside the graph",
+        "transfer to analogous supplied models"
+      ],
+      "stretch": [
+        "local sensitivity dx/dk = -F/k^2",
+        "normalised comparisons",
+        "heatmaps and threshold detection"
+      ],
+      "removed": []
+    }
+  },
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 4,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "the Week 04 Slide 09 job prompt and the approved Week 03 Teaching Courseware sample",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "origin_image/slide_09.png",
+    "input_context_preparation": "Parent inspected the approved Week 03 sample and every Week 04 strict source asset with view_image before generation and delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slide system with strong hierarchy, approachable labelled scientific diagrams, moderate information density, and visual pacing for learners",
+    "color_palette": "open warm-white canvas; deep navy #243B53 for titles and structure; dusty blue #6E8FB3 for model content; quiet sage #7AA69B for expected or validated states; muted ochre #C7A35A for occasional prompts or warnings; subdued coral #BF7A70 only for genuine defects or physical failure",
+    "typography": "projection-readable sans-serif; use a large bold navy main title at the Week 03 scale; semibold for short headings and labels; regular for explanations and sublabels; readable regular monospaced MATLAB code; preserve mathematical symbols and units exactly",
+    "title_treatment": "Place a thin deep-navy horizontal separator below the title, extending from the left content margin nearly to the right content margin on every slide.",
+    "density_rule": "Keep supporting copy concise and leave visible white space around the dominant learning object; use one compact prompt rather than multiple stacked answer panels.",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin functional lines, direct labels, simple diagrams, generous alignment, no gradients, no decorative clutter, and no thick outer frame",
+    "prompt_rule": "Use ochre sparingly as a functional cue; prefer a compact inline prompt or small marker over a repeated oversized prompt box.",
+    "deck_consistency": "match Week 03's palette, typography hierarchy, icon language, spacing rhythm, and approachable scientific tone while varying composition by teaching role",
+    "prohibited": [
+      "thick outer frame",
+      "slide numbers",
+      "timings",
+      "source labels",
+      "production metadata",
+      "unrelated logos",
+      "unlabelled decorative graphs"
+    ]
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+    "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+    "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Change one parameter, see the physics",
+      "role": "cover",
+      "intent": "Open with a light, question-led cover for the Week 04 parameter-sweep lesson.",
+      "key_points": [
+        "Week 04 | Parameter sweeps and graph interpretation"
+      ],
+      "local_context": "Use a deliberately sparse opening composition. Keep the physical theme visible through one simple Hooke's-law spring sketch and the compact relation x = F/k, without previewing the lesson workflow or its explanatory panels.",
+      "layout": {
+        "composition": "large title and one concise subtitle above a single spacious central spring visual with generous warm-white negative space",
+        "variation": "sparse cover layout; do not copy the Week 03 cover's exact arrangement"
+      },
+      "visual_elements": {
+        "main_visual": "one simple labelled Hooke's-law spring with a rightward force arrow",
+        "supporting_elements": "small x = F/k equation and the single Week 04 subtitle"
+      },
+      "required_images": [],
+      "source_image_rules": "No strict source visual is required for this sparse cover. Keep the single spring sketch scientifically legible and do not add extra cases, data, or workflow content.",
+      "constraints": [
+        "Remove the core-question paragraph, all checkmark bullets, the five-step workflow, the bottom banner, and all other explanatory text.",
+        "Use only the exact title, the exact subtitle, one spring sketch, the labels F, k, and x, and the equation x = F/k.",
+        "Keep most of the slide visibly open and uncluttered.",
+        "No slide number, outer frame, watermark, logo, timings, or production metadata."
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Predict before MATLAB",
+      "role": "prediction",
+      "intent": "Activate equation-based intuition before computation.",
+      "key_points": [
+        "Hooke's law gives x = F/k.",
+        "For the same positive force, smaller k means larger extension.",
+        "At F = 10 N, predict 0.20 m, 0.10 m, and 0.05 m for k = 50, 100, and 200 N/m.",
+        "At F = 0, every ideal-spring case should give x = 0."
+      ],
+      "local_context": "Use the locked values and ask which stiffness case should produce the steepest force-extension curve. Do not show the MATLAB loop yet.",
+      "layout": {
+        "composition": "equation and case visual on the left with a compact sage prediction panel on the right",
+        "variation": "prediction-plus-model layout"
+      },
+      "visual_elements": {
+        "main_visual": "three-case spring schematic and exact model equation",
+        "supporting_elements": "prediction panel with ordering and the zero-force expectation"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/spring_cases.png",
+          "role": "strict input; same-force spring comparison",
+          "fidelity": "preserve case ordering and labels exactly"
+        },
+        {
+          "path": "assets/strict/equations/model_equations.png",
+          "role": "strict equation input; Hooke's law and rearranged extension",
+          "fidelity": "preserve F = kx and x = F/k exactly"
+        }
+      ],
+      "source_image_rules": "Equation and schematic are strict. Do not replace them with approximate text or redraw them with altered values.",
+      "constraints": [
+        "Do not show the solved matrix or loop code yet.",
+        "In the three-case schematic, make the k = 50 N/m spring visibly longer in the extension direction than the k = 100 N/m baseline spring; make the k = 200 N/m spring shortest, while keeping the same wall, block scale, force arrows, case order, labels, and units.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "A sweep is a controlled experiment",
+      "role": "concept relationship",
+      "intent": "Make the one-change/many-fixed-inputs rule explicit.",
+      "key_points": [
+        "Vary one named parameter: spring stiffness k.",
+        "Hold the force array, model, units, and all other assumptions fixed.",
+        "A comparison that changes force and stiffness together is confounded.",
+        "The fixed-input rule lets the output difference be attributed to k."
+      ],
+      "local_context": "Use the six-node workflow from the Week 04 learning note. Mark a confounded comparison as the common mistake to diagnose later.",
+      "layout": {
+        "composition": "horizontal six-node controlled-sweep flow with a small side branch for the confounded comparison",
+        "variation": "process diagram; avoid a repeated equal-card grid"
+      },
+      "visual_elements": {
+        "main_visual": "strict controlled-sweep flow diagram",
+        "supporting_elements": "one parameter highlighted in ochre and fixed inputs grouped in dusty blue"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/sweep_flow.png",
+          "role": "strict authored workflow diagram; controlled parameter sweep sequence",
+          "fidelity": "preserve all node labels and the confounded-comparison warning"
+        }
+      ],
+      "source_image_rules": "Workflow diagram is strict. Keep the sequence and warning intact.",
+      "constraints": [
+        "Use concise labels; do not turn the slide into a paragraph.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Start with the model, variables, and units",
+      "role": "model and units",
+      "intent": "Establish the exact physical model before arrays or loops.",
+      "key_points": [
+        "Use an ideal linear spring in its elastic range.",
+        "F = kx, so x = F/k.",
+        "F_N is the common applied-force array in N.",
+        "k_Npm is the swept stiffness in N/m; extension_m is the output in m."
+      ],
+      "local_context": "Present the variable roles and units as the physical contract for the computation, including baseline_k_Npm = 100 N/m.",
+      "layout": {
+        "composition": "large exact equation on the left, compact variables-and-units table in the centre, dimensional check on the right",
+        "variation": "equation-led units audit"
+      },
+      "visual_elements": {
+        "main_visual": "strict model equation",
+        "supporting_elements": "variable/unit table and N divided by (N/m) equals m"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/equations/model_equations.png",
+          "role": "strict equation input; physical model",
+          "fidelity": "preserve equation symbols and fraction exactly"
+        },
+        {
+          "path": "assets/strict/equations/unit_relation.png",
+          "role": "strict equation input; dimensional relation",
+          "fidelity": "preserve N divided by (N/m) equals m exactly"
+        }
+      ],
+      "source_image_rules": "Equation assets are strict. Generated explanatory text may label them but must not rewrite them.",
+      "constraints": [
+        "Do not introduce a different spring model.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Plan the computation in plain language",
+      "role": "algorithm",
+      "intent": "Make the algorithm visible before MATLAB syntax.",
+      "key_points": [
+        "Follow the eight-step path from the model to physical interpretation.",
+        "Hold the force array, equation, units, and all other inputs fixed while one parameter changes."
+      ],
+      "local_context": "Use the eight-step pseudocode from the Week 04 learning note and emphasize same model, one controlled change.",
+      "layout": {
+        "composition": "expanded numbered algorithm path and enlarged controlled-change rule filling the body below the title; no separate top checklist band",
+        "variation": "spacious algorithm path; use the reclaimed vertical space to increase row height, spacing, and legibility"
+      },
+      "visual_elements": {
+        "main_visual": "eight-step pseudocode path",
+        "supporting_elements": "enlarged one-parameter/fixed-input rule plus the limiting-check and defect callouts"
+      },
+      "source_image_rules": "Keep the exact learning-note logic; use readable concise labels.",
+      "constraints": [
+        "Remove the four upper checkmark statements immediately below the separator.",
+        "Use the reclaimed vertical space for larger, more widely spaced algorithm rows and a taller controlled-change panel; do not leave a blank band.",
+        "Remove all downward arrows between the numbered algorithm rows; keep the rows visually separate with whitespace only while preserving the eight-step order.",
+        "Avoid MATLAB syntax on this slide.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Store the cases explicitly",
+      "role": "code introduction",
+      "intent": "Show how named arrays make the controlled comparison inspectable.",
+      "key_points": [
+        "Build one common force array.",
+        "Store the stiffness cases explicitly.",
+        "Keep the baseline named so it can be traced later.",
+        "Units in variable names help keep the physical meaning visible."
+      ],
+      "local_context": "Use the exact supplied MATLAB lines and annotate the role of each variable without changing the code.",
+      "layout": {
+        "composition": "large strict MATLAB code panel on the left with four compact numbered annotations on the right",
+        "variation": "code-plus-callouts layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict MATLAB parameter-definition code",
+        "supporting_elements": "fixed input, swept cases, baseline, and units callouts"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/code/parameter_values.png",
+          "role": "strict MATLAB code input; parameter and force arrays",
+          "fidelity": "preserve source code, spacing, comments, values, and units exactly"
+        }
+      ],
+      "source_image_rules": "Code image is strict. Do not rewrite, relabel, or invent code.",
+      "constraints": [
+        "Keep code large enough for projection.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Evaluate the same model for every case",
+      "role": "guided code tracing",
+      "intent": "Connect the loop index, matrix row, and physical parameter case.",
+      "key_points": [
+        "Preallocate one row for each stiffness value.",
+        "Each loop pass changes only k_Npm(case_id).",
+        "Use element-wise division for x = F/k.",
+        "Row case_id maps to one stiffness case."
+      ],
+      "local_context": "Show the exact loop and an output-matrix schematic so students can trace the row meaning before plotting.",
+      "layout": {
+        "composition": "strict code panel on the left, arrows into a three-row result matrix on the right",
+        "variation": "code-to-data mapping"
+      },
+      "visual_elements": {
+        "main_visual": "strict MATLAB sweep loop",
+        "supporting_elements": "row 1 -> 50 N/m, row 2 -> 100 N/m, row 3 -> 200 N/m"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/code/sweep_loop.png",
+          "role": "strict MATLAB code input; parameter sweep loop",
+          "fidelity": "preserve source code, indexing, division, and spacing exactly"
+        }
+      ],
+      "source_image_rules": "Code is strict. Generated arrows may explain the row mapping but must not modify the code.",
+      "constraints": [
+        "Make row order unambiguous.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Read one row before plotting",
+      "role": "numerical trace",
+      "intent": "Make the numerical result interpretable before introducing the graph.",
+      "key_points": [
+        "At F = 10 N, row 1 gives 0.20 m.",
+        "The baseline row gives 0.10 m.",
+        "Row 3 gives 0.05 m.",
+        "The same-input ordering is x_50 > x_100 > x_200."
+      ],
+      "local_context": "Highlight the final force column and make the row-to-stiffness mapping explicit.",
+      "layout": {
+        "composition": "large strict result table with the F = 10 N column highlighted and a small same-input comparison panel",
+        "variation": "table-led worked result"
+      },
+      "visual_elements": {
+        "main_visual": "strict 10 N comparison table",
+        "supporting_elements": "baseline row marker and ordering arrow"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/tables/comparison_at_10N.png",
+          "role": "strict numerical table input; extension values at 10 N",
+          "fidelity": "preserve case order, values, labels, and units exactly"
+        }
+      ],
+      "source_image_rules": "Numerical table is strict. Do not round or replace the supplied values.",
+      "constraints": [
+        "Do not imply that the rows are independent experiments with different forces.",
+        "Repair the green rounded rectangle around the baseline row: use one clean, symmetric rectangle with smooth corners and a uniform stroke, centered around row 2; remove any doubled line, kink, protrusion, or distortion and keep it clear of the row arrows and labels.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 9,
+      "sample_approved": true,
+      "title": "Overlay every case on common axes",
+      "role": "plotting",
+      "intent": "Show the controlled comparison as a single labelled graph and introduce the transpose as a data-shape operation.",
+      "key_points": [
+        "Use one plot call for all stiffness cases; label the physical axes and identify each stiffness in the legend.",
+        "The transpose changes the stored 3-by-21 arrangement into a plotting arrangement without changing the values."
+      ],
+      "local_context": "Use the exact MATLAB-generated plot and the exact plotting command. Keep the plot dominant and readable.",
+      "layout": {
+        "composition": "dominant strict MATLAB plot on the right with a shorter strict plotting-code panel and one compact transpose callout on the left; leave more open white space below the title",
+        "variation": "plot-plus-code layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict MATLAB-generated Hooke's-law parameter-sweep plot",
+        "supporting_elements": "short plot command, labels, legend, and one concise transpose explanation"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/week04_hooke_parameter_sweep.png",
+          "role": "strict MATLAB-generated numerical plot; source evidence",
+          "fidelity": "preserve axes, title, line ordering, legend, labels, and numerical geometry exactly"
+        },
+        {
+          "path": "assets/strict/code/plot_command.png",
+          "role": "strict MATLAB plotting code input",
+          "fidelity": "preserve plot command, labels, legend, and transpose exactly"
+        }
+      ],
+      "source_image_rules": "Plot and code are strict. Do not redraw the graph, change labels, or invent curves.",
+      "constraints": [
+        "The plot must remain the dominant object.",
+        "Reduce density slightly: use only two concise explanatory bullets, one compact transpose callout, and no separate bottom answer panel.",
+        "Use a substantially larger Week 03-style title and a thin navy separator extending from the left margin nearly to the right margin directly below it.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "The graph is a physics statement",
+      "role": "interpretation",
+      "intent": "Translate visual slope and ordering back into the model.",
+      "key_points": [
+        "Each curve is straight because x is proportional to F.",
+        "The slope is 1/k.",
+        "Smaller k gives a steeper line and larger extension at the same force.",
+        "The graph supports the prediction only because the comparison uses common force inputs."
+      ],
+      "local_context": "Regenerate the entire slide as one cohesive ImageGen canvas rather than placing a chart onto a separate slide background. Use the MATLAB plot as a numerical and line-geometry reference only, then redraw the graph, labels, and annotations together in one consistent visual system. Use the exact same-input values at F = 5 N: x = 0.10 m for k = 50 N/m, x = 0.05 m for k = 100 N/m, and x = 0.025 m for k = 200 N/m. Match the approved neighboring-slide title row geometry and typography.",
+      "layout": {
+        "composition": "single-canvas graph-led interpretation with integrated direct labels and a short physical explanation strip",
+        "variation": "cohesive annotated evidence layout"
+      },
+      "visual_elements": {
+        "main_visual": "cohesive ImageGen-rendered MATLAB-style parameter-sweep graph with exact F = 5 N relationships",
+        "supporting_elements": "integrated direct labels and thin leader lines for slope = 1/k, lower k -> larger x, and common-input comparison"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/week04_hooke_parameter_sweep_F5_markers.png",
+          "role": "MATLAB numerical and line-geometry reference for a full-slide ImageGen regeneration",
+          "fidelity": "use as a reference for the exact line ordering, axis values, marker positions, and labels; redraw the graph and its labels cohesively in the generated canvas rather than pasting this image"
+        },
+        {
+          "path": "assets/strict/equations/model_equations.png",
+          "role": "equation reference for the full-slide ImageGen regeneration",
+          "fidelity": "render the exact equation x = F/k clearly in the generated canvas"
+        }
+      ],
+      "source_image_rules": "Use the MATLAB plot and equation as strict content references, not pasted image objects. Generate the complete slide—including the graph, graph labels, equation, direct annotations, and explanatory strip—as one unified ImageGen raster. Preserve the numerical relationships and exact text while making the annotation strokes and typography cohesive.",
+      "constraints": [
+        "Do not imply a nonlinear model.",
+        "Place exactly three same-input markers on the visible plotted strokes, not merely near the tick values: at F = 5 N, blue k = 50 N/m at x = 0.10 m, orange k = 100 N/m at x = 0.05 m, and ochre k = 200 N/m at x = 0.025 m. The blue marker must be centered on the blue line, with no visible gap or offset; the orange and ochre markers must likewise sit on their corresponding strokes.",
+        "Match the title row to approved Week 04 Slide 09 / Week 03: large bold sans-serif title, deep navy color, and a thin separator extending nearly edge to edge beneath it.",
+        "Use compact direct labels or thin leader lines integrated into the graph; do not use oversized floating rounded-rectangle annotation boxes or a pasted chart layer.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Validate a known limiting case",
+      "role": "validation",
+      "intent": "Demonstrate a direct model check that tests all swept cases together.",
+      "key_points": [
+        "At F = 0, Hooke's law requires x = 0 for every positive stiffness.",
+        "Read the first result column directly.",
+        "Assert that the largest absolute value is below 1e-12.",
+        "A known limit turns a physical expectation into a reproducible check."
+      ],
+      "local_context": "Use the exact validation code and a green result panel. Make clear that this checks the evaluated model, not merely MATLAB syntax.",
+      "layout": {
+        "composition": "strict validation code on the left, large green zero-vector result panel on the right, compact bottom question",
+        "variation": "Week 03-style validation layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict validation code",
+        "supporting_elements": "zero-force result [0; 0; 0] m and tolerance check"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/code/validation_code.png",
+          "role": "strict MATLAB validation code input",
+          "fidelity": "preserve source code, tolerance, and error text exactly"
+        },
+        {
+          "path": "assets/strict/equations/zero_force_result.png",
+          "role": "strict numerical validation result",
+          "fidelity": "preserve the three zero extension values and units exactly"
+        }
+      ],
+      "source_image_rules": "Code and result are strict. Do not change the tolerance or result.",
+      "constraints": [
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 12,
+      "title": "A runnable calculation can still be wrong",
+      "role": "diagnosis",
+      "intent": "Show the physical and dimensional defects before asking students to repair the expression.",
+      "key_points": [
+        "x = F.*k is syntactically valid but physically wrong.",
+        "Its units are N times N/m, not metres.",
+        "It reverses the stiffness trend: larger k appears to give larger extension."
+      ],
+      "local_context": "Use a spacious two-panel diagnosis layout with blue runnable-output framing and coral physical failure. Stop after identifying the wrong model; the numerical comparison and repair path move to the next slide.",
+      "layout": {
+        "composition": "two large open diagnostic panels below the title: strict code and correct model on the left, unit mismatch and reversed trend on the right",
+        "variation": "spacious plausible-but-wrong diagnosis layout; no bottom repair strip"
+      },
+      "visual_elements": {
+        "main_visual": "strict wrong-versus-correct MATLAB code",
+        "supporting_elements": "correct model anchor, unit mismatch, and reversed-trend comparison"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/code/wrong_model.png",
+          "role": "strict MATLAB code input; wrong and correct expressions",
+          "fidelity": "preserve source expressions and variable names exactly"
+        },
+        {
+          "path": "assets/strict/equations/model_equations.png",
+          "role": "strict equation input; correct physical relationship",
+          "fidelity": "preserve x = F/k exactly"
+        }
+      ],
+      "source_image_rules": "Code and equation are strict. Use coral only for the physical defect, not for ordinary code.",
+      "constraints": [
+        "Do not describe the wrong expression as a MATLAB syntax error.",
+        "Remove the numerical comparison table and the repair strip from this slide; place them on the next slide.",
+        "Use the reclaimed space to enlarge both diagnostic panels and their explanatory text.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Repair the expression, then recheck the physics",
+      "role": "diagnosis and validation",
+      "intent": "Use numerical evidence and a short repair path to close the plausible-but-wrong example.",
+      "key_points": [
+        "At F = 10 N, compare correct x = F/k with wrong x = F.*k.",
+        "The correct model gives 0.20, 0.10, and 0.05 m; the wrong expression gives 500, 1000, and 2000 N^2/m.",
+        "Repair by tracing the model, units, limiting case, and expected trend."
+      ],
+      "local_context": "Make this a readable follow-up to Slide 12: show the strict comparison table, then a compact repair sequence ending with the exact corrected MATLAB expression.",
+      "layout": {
+        "composition": "large strict wrong-versus-correct numerical table on the left, compact five-step repair path on the right, and a green bottom recheck statement",
+        "variation": "split diagnosis follow-up; use open space rather than stacking another dense two-panel wall"
+      },
+      "visual_elements": {
+        "main_visual": "strict comparison table at F = 10 N",
+        "supporting_elements": "model, units, limiting-case, trend, and corrected-expression repair path"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/tables/wrong_vs_correct_at_10N.png",
+          "role": "strict numerical comparison table; correct and wrong model outputs",
+          "fidelity": "preserve case order, values, labels, and units exactly"
+        },
+        {
+          "path": "assets/strict/code/wrong_model.png",
+          "role": "strict MATLAB code input; corrected expression for the repair endpoint",
+          "fidelity": "preserve source expressions and variable names exactly"
+        },
+        {
+          "path": "assets/strict/equations/model_equations.png",
+          "role": "strict equation input; correct physical relationship",
+          "fidelity": "preserve x = F/k exactly"
+        }
+      ],
+      "source_image_rules": "Table, code, and equation are strict. Do not round, relabel, or replace them.",
+      "constraints": [
+        "Keep the wrong units visibly distinct from the correct metres (m).",
+        "End with the exact repair expression correct_baseline_extension = F_N./baseline_k_Npm;.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Working exposure: compare selected inputs",
+      "role": "working exposure",
+      "intent": "Extend the same-input comparison from one force to a compact numerical table.",
+      "key_points": [
+        "Compare the same selected forces for every stiffness case.",
+        "At F = [2 5 8] N, the values follow the same inverse-stiffness ordering.",
+        "A table and a graph are two views of the same controlled experiment."
+      ],
+      "local_context": "Use the supplied selected-force result table. Keep this as working exposure rather than adding a new required method.",
+      "layout": {
+        "composition": "large strict selected-force table on the left with a compact baseline/lower/higher stiffness comparison on the right",
+        "variation": "working numerical comparison"
+      },
+      "visual_elements": {
+        "main_visual": "strict selected-force result table",
+        "supporting_elements": "same-input comparison cue and inverse-stiffness ordering"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/tables/selected_force_result.png",
+          "role": "strict numerical table input; selected-force extension values",
+          "fidelity": "preserve force values, case order, values, and units exactly"
+        }
+      ],
+      "source_image_rules": "Numerical table is strict. Do not alter precision or case order.",
+      "constraints": [
+        "Do not introduce the optional local-sensitivity derivation as a new core requirement.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Exit ticket — explain a fair sweep to a future you",
+      "role": "summary and transfer",
+      "intent": "Consolidate the reasoning chain and prepare transfer to analogous practical models.",
+      "key_points": [
+        "PREDICT the trend from the equation.",
+        "CONTROL one changed parameter and the fixed inputs.",
+        "PLOT labelled cases on common axes.",
+        "CHECK a known or limiting case, then INTERPRET the physical result."
+      ],
+      "local_context": "Use four reflection cards and a bottom transfer ribbon naming the supplied practical contexts: Ohmic resistor, vertical motion, and small-angle pendulum.",
+      "layout": {
+        "composition": "four reflection cards across the upper two-thirds with a compact transfer ribbon across the bottom",
+        "variation": "summary and transfer layout inspired by Week 03's exit ticket"
+      },
+      "visual_elements": {
+        "main_visual": "PREDICT, CONTROL, PLOT, CHECK & INTERPRET cards",
+        "supporting_elements": "Ohmic resistor -> vertical motion -> small-angle pendulum transfer cue"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/sweep_flow.png",
+          "role": "strict workflow input; compact transfer anchor",
+          "fidelity": "preserve the core controlled-sweep sequence"
+        }
+      ],
+      "source_image_rules": "Workflow is strict. The transfer context names must remain exact.",
+      "constraints": [
+        "No capstone checkpoint content.",
+        "No slide number or outer frame."
+      ]
+    }
+  ]
+}

@@ -1,0 +1,62 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+ans =
+
+         0    0.0100    0.0200    0.0300    0.0400
+         0    0.0050    0.0100    0.0150    0.0200
+         0    0.0025    0.0050    0.0075    0.0100
+
+
+baseline_extension_at_10N_m =
+
+    0.1000
+
+
+extension_at_10N_m =
+
+    0.2000
+    0.1000
+    0.0500
+
+
+comparison_at_10N =
+
+  3×2 table
+
+    Stiffness_N_per_m    Extension_at_10N_m
+    _________________    __________________
+
+            50                   0.2       
+           100                   0.1       
+           200                  0.05       
+
+
+zero_force_extension_m =
+
+     0
+     0
+     0
+
+
+wrong_final_value =
+
+        1000
+
+
+correct_final_value_m =
+
+    0.1000
+
+
+selected_extension_m =
+
+    0.0400    0.1000    0.1600
+    0.0200    0.0500    0.0800
+    0.0100    0.0250    0.0400
+

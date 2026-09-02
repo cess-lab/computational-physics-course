@@ -1,0 +1,708 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Lecture_Slides_Week04",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "the Week 04 Slide 09 job prompt and the approved Week 03 Teaching Courseware sample",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+    "input_context_preparation": "Parent inspected the approved Week 03 sample and every Week 04 strict source asset with view_image before generation and delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 4,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Change one parameter, see the physics",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_01",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "487f656ea0167a01a08db2d8e9a286f830c469d7b29c2365be96e6e40a4a5e86",
+        "dispatched_at": "2026-09-02T10:33:32Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_01",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_01.png",
+        "selected_source_sha256": "268f40aa0772a08fd953293f41756dddd88300d2393b9b44f0a99e9ce21b4b47",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "268f40aa0772a08fd953293f41756dddd88300d2393b9b44f0a99e9ce21b4b47",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:32Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Predict before MATLAB",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/spring_cases.png",
+          "role": "strict input; same-force spring comparison",
+          "fidelity": "preserve case ordering and labels exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_equations.png",
+          "role": "strict equation input; Hooke's law and rearranged extension",
+          "fidelity": "preserve F = kx and x = F/k exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_02",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "016d79937bee6e5acf89eb53779d6c5f8c681aed0c935000707208943a4e6cb0",
+        "dispatched_at": "2026-09-02T10:33:32Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_02",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_02.png",
+        "selected_source_sha256": "d9237dd95afd28b3d5e0c81bb1b21d311218c33ba4c4168cae64f7276f16620c",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "d9237dd95afd28b3d5e0c81bb1b21d311218c33ba4c4168cae64f7276f16620c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:32Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "A sweep is a controlled experiment",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/sweep_flow.png",
+          "role": "strict authored workflow diagram; controlled parameter sweep sequence",
+          "fidelity": "preserve all node labels and the confounded-comparison warning"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_03",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "3b66d664f29b4e1b8c9fa899b70405886bf9bc25c93c71f1e6006d824cf819c7",
+        "dispatched_at": "2026-09-02T10:33:32Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_03",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_03.png",
+        "selected_source_sha256": "dba49bcf3476d40f94b5e49fe4b72c1ce4b9cf7baf598abcd4b153422ed37d76",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "dba49bcf3476d40f94b5e49fe4b72c1ce4b9cf7baf598abcd4b153422ed37d76",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:32Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Start with the model, variables, and units",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_equations.png",
+          "role": "strict equation input; physical model",
+          "fidelity": "preserve equation symbols and fraction exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/equations/unit_relation.png",
+          "role": "strict equation input; dimensional relation",
+          "fidelity": "preserve N divided by (N/m) equals m exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_04",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "79a1794ffee01d7a74b4b8cd6554d3479edac5dc39fa82f29993cfd414940b00",
+        "dispatched_at": "2026-09-02T10:33:33Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_04",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_04.png",
+        "selected_source_sha256": "231f9f726cb934c8e11133b439c236ddd4cfa65884b91349ef1f671d378ca952",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "231f9f726cb934c8e11133b439c236ddd4cfa65884b91349ef1f671d378ca952",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:33Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Plan the computation in plain language",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_05",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "c981f8e37a248f9f6e2ae8608d45c406b0fb6cc6b8ab84f195236c770182aba2",
+        "dispatched_at": "2026-09-02T10:33:33Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_05",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_05.png",
+        "selected_source_sha256": "3eb829618f8c932e3695310346faa4d00a45099d045e637321c76ec7bf04f759",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "3eb829618f8c932e3695310346faa4d00a45099d045e637321c76ec7bf04f759",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:33Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Store the cases explicitly",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/code/parameter_values.png",
+          "role": "strict MATLAB code input; parameter and force arrays",
+          "fidelity": "preserve source code, spacing, comments, values, and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_06",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "b88ca1a75b6632b16eb3762939299698f8e305109eb6316c4b5d8864fac06d0f",
+        "dispatched_at": "2026-09-02T10:33:33Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_06",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_06.png",
+        "selected_source_sha256": "37c35d3e0470e26d49ad9bda535af07bd2cd01d6678077a6d2f5becaacd55b4f",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "37c35d3e0470e26d49ad9bda535af07bd2cd01d6678077a6d2f5becaacd55b4f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:33Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Evaluate the same model for every case",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/code/sweep_loop.png",
+          "role": "strict MATLAB code input; parameter sweep loop",
+          "fidelity": "preserve source code, indexing, division, and spacing exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_07",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "8f7406e0e99365e246a744b41599199cc7e96ff9123bc4eb85c855c0a1fec5d9",
+        "dispatched_at": "2026-09-02T10:33:33Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_07",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_07.png",
+        "selected_source_sha256": "327fa771917fef10d31ca487de56f761132dfa6dec5f701472d8aa9e82aa008e",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "327fa771917fef10d31ca487de56f761132dfa6dec5f701472d8aa9e82aa008e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:33Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Read one row before plotting",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/tables/comparison_at_10N.png",
+          "role": "strict numerical table input; extension values at 10 N",
+          "fidelity": "preserve case order, values, labels, and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_08",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "6a3365e555c4790e2780434a400b609d0a1a0410e02b58e9c460a3bae4cedfc4",
+        "dispatched_at": "2026-09-02T10:33:33Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_08",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_08.png",
+        "selected_source_sha256": "6cfed1314ba1ce8ff5919c1c7de9ead0fb9bab9f17726e4b33f93208b8ffa4d6",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "6cfed1314ba1ce8ff5919c1c7de9ead0fb9bab9f17726e4b33f93208b8ffa4d6",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:33Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Overlay every case on common axes",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/week04_hooke_parameter_sweep.png",
+          "role": "strict MATLAB-generated numerical plot; source evidence",
+          "fidelity": "preserve axes, title, line ordering, legend, labels, and numerical geometry exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/code/plot_command.png",
+          "role": "strict MATLAB plotting code input",
+          "fidelity": "preserve plot command, labels, legend, and transpose exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_09.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "The graph is a physics statement",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/week04_hooke_parameter_sweep_F5_markers.png",
+          "role": "MATLAB numerical and line-geometry reference for a full-slide ImageGen regeneration",
+          "fidelity": "use as a reference for the exact line ordering, axis values, marker positions, and labels; redraw the graph and its labels cohesively in the generated canvas rather than pasting this image"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_equations.png",
+          "role": "equation reference for the full-slide ImageGen regeneration",
+          "fidelity": "render the exact equation x = F/k clearly in the generated canvas"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-imagegen-full-canvas-20260902-r10",
+        "agent_nickname": "Coordinator ImageGen full-canvas",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "d83dbef0411cca7775dbc3abbf86908254a41ce3640d67df282790b82bf933b7",
+        "dispatched_at": "2026-09-02T10:33:48Z"
+      },
+      "result": {
+        "agent_id": "coordinator-imagegen-full-canvas-20260902-r10",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/imagegen-full-canvas-revision10/slide_10.png",
+        "selected_source_sha256": "4f6247f8c6cf71302b3caa8ca4bdc2e7e0f26b61fd6654d66c741a632f0f7c29",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "4f6247f8c6cf71302b3caa8ca4bdc2e7e0f26b61fd6654d66c741a632f0f7c29",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Whole slide regenerated as one cohesive ImageGen canvas: graph, labels, leader lines, bullets, title, equation, and interpretation strip are integrated; F=5 N markers inspected on the three curves; final 1672x941 raster selected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:48Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Validate a known limiting case",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/code/validation_code.png",
+          "role": "strict MATLAB validation code input",
+          "fidelity": "preserve source code, tolerance, and error text exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/equations/zero_force_result.png",
+          "role": "strict numerical validation result",
+          "fidelity": "preserve the three zero extension values and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_11",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "8a731af8feab6262a06dcd8c8af7996c5f726b253051a10d3611498f8a0446d5",
+        "dispatched_at": "2026-09-02T10:33:33Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_11",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_11.png",
+        "selected_source_sha256": "17c5a4c900da5146fbe7c610b2a5f031b88654d4bdae4dcce61acf91f72de02b",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "17c5a4c900da5146fbe7c610b2a5f031b88654d4bdae4dcce61acf91f72de02b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:33Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "A runnable calculation can still be wrong",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/code/wrong_model.png",
+          "role": "strict MATLAB code input; wrong and correct expressions",
+          "fidelity": "preserve source expressions and variable names exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_equations.png",
+          "role": "strict equation input; correct physical relationship",
+          "fidelity": "preserve x = F/k exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_12",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "08e2217d26efe84a2189cf96978773abee54c7e1d639c136fc7d659e38142105",
+        "dispatched_at": "2026-09-02T10:33:33Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_12",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_12.png",
+        "selected_source_sha256": "39c18247eaa7f977ef8b70aacac9a462027c472277e693cb0cc2e0e2a8e3e7c3",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "39c18247eaa7f977ef8b70aacac9a462027c472277e693cb0cc2e0e2a8e3e7c3",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:34Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Repair the expression, then recheck the physics",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/tables/wrong_vs_correct_at_10N.png",
+          "role": "strict numerical comparison table; correct and wrong model outputs",
+          "fidelity": "preserve case order, values, labels, and units exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/code/wrong_model.png",
+          "role": "strict MATLAB code input; corrected expression for the repair endpoint",
+          "fidelity": "preserve source expressions and variable names exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_equations.png",
+          "role": "strict equation input; correct physical relationship",
+          "fidelity": "preserve x = F/k exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_13",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "aebe04682c9aea9ef20d854da865c744eb4efbd7ddcd169b6054df7f9593ca90",
+        "dispatched_at": "2026-09-02T10:33:34Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_13",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_13.png",
+        "selected_source_sha256": "8e13a9df10ee5ff17d6f6f5777e79aa6a52a899fbfa9de4b3697eb57a358298a",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "8e13a9df10ee5ff17d6f6f5777e79aa6a52a899fbfa9de4b3697eb57a358298a",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:34Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Working exposure: compare selected inputs",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/tables/selected_force_result.png",
+          "role": "strict numerical table input; selected-force extension values",
+          "fidelity": "preserve force values, case order, values, and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_14",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "72f483ca0ec856b6aa4dd4e51e9f7ef9c2e49ba8ed23d962f10fde485da5bd02",
+        "dispatched_at": "2026-09-02T10:33:34Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_14",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_14.png",
+        "selected_source_sha256": "cd5e7b330f602bc0a8db9d0df885f765262a840f6af970f59dc52bedac1662fd",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "cd5e7b330f602bc0a8db9d0df885f765262a840f6af970f59dc52bedac1662fd",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:34Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_15",
+      "number": 15,
+      "title": "Exit ticket — explain a fair sweep to a future you",
+      "job": "prompts/slide_15.json",
+      "out": "origin_image/slide_15.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 04 Teaching Courseware sample slide and Week 03-derived style reference",
+          "fidelity": "match the approved sample's palette, typography scale, density, separator treatment, texture, and visual identity; do not copy exact content or layout unless the slide specification requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/assets/strict/sweep_flow.png",
+          "role": "strict workflow input; compact transfer anchor",
+          "fidelity": "preserve the core controlled-sweep sequence"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_15",
+        "agent_nickname": "Coordinator carry-forward",
+        "prompt": "prompts/slide_15.json",
+        "prompt_sha256": "3331fccef5372ae90d24c4bc557a57dd6a99c72c5e4bb8e0b6477a99f7091cd4",
+        "dispatched_at": "2026-09-02T10:33:34Z"
+      },
+      "result": {
+        "agent_id": "coordinator-carry-forward-20260902-r10-slide_15",
+        "backend_used": "built-in image tool (carry-forward from accepted revision)",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/qa/carry-forward-revision10/slide_15.png",
+        "selected_source_sha256": "39fa2c6de307bff5bbafcedd4b6420187b91a0227e3f9ec584c4f1423b33b8e7",
+        "final_image": "origin_image/slide_15.png",
+        "final_image_sha256": "39fa2c6de307bff5bbafcedd4b6420187b91a0227e3f9ec584c4f1423b33b8e7",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Unchanged accepted source carried forward for the full-canvas Slide 10 regeneration; 1672x941 raster inspected by coordinator.",
+        "recorded_at": "2026-09-02T10:33:34Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-02T10:33:48Z"
+}
