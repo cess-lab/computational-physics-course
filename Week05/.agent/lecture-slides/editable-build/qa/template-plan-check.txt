@@ -1,0 +1,11 @@
+Template plan check: fail
+FAIL unknown-shape-id: Referenced inherited shape id "sh/i54bylor" was not found on source slide 6. outputSlide=7 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/svmt4v6t" was not found on source slide 6. outputSlide=7 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/cbe5g3ih" was not found on source slide 6. outputSlide=7 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/dcnm98zm" was not found on source slide 6. outputSlide=7 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/qpwnet0b" was not found on source slide 6. outputSlide=7 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/i54bylor" was not found on source slide 6. outputSlide=10 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/svmt4v6t" was not found on source slide 6. outputSlide=10 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/cbe5g3ih" was not found on source slide 6. outputSlide=10 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/dcnm98zm" was not found on source slide 6. outputSlide=10 sourceSlide=6
+FAIL unknown-shape-id: Referenced inherited shape id "sh/qpwnet0b" was not found on source slide 6. outputSlide=10 sourceSlide=6

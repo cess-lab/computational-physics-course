@@ -1,0 +1,13 @@
+{
+  "final": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/Lecture_Slides_Week05.pptx",
+  "slideCount": 14,
+  "renderDir": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/artifact-render",
+  "montage": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/artifact-deck-montage.webp",
+  "layoutIds": {
+    "opening": "/ppt/slideLayouts/slideLayout2.xml",
+    "t1": "/ppt/slideLayouts/slideLayout3.xml",
+    "t2": "/ppt/slideLayouts/slideLayout4.xml",
+    "t3": "/ppt/slideLayouts/slideLayout5.xml"
+  },
+  "notesVisible": true
+}

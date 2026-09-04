@@ -1,0 +1,192 @@
+{
+  "communities": {
+    "0": [
+      "corpus_agents_google_classroom",
+      "corpus_week02_readme",
+      "corpus_week02_readme_reliable_computational_workflow",
+      "corpus_week03_readme",
+      "corpus_week03_readme_capstone_problem_spaces",
+      "corpus_week03_readme_kirchhoff_linear_systems",
+      "corpus_week04_readme",
+      "corpus_week04_readme_capstone_question_selection",
+      "corpus_week04_readme_coupled_oscillator_eigenproblems"
+    ],
+    "1": [
+      "corpus_agents",
+      "corpus_agents_assessment_architecture",
+      "corpus_agents_course_reasoning_chain",
+      "corpus_phy4605_learning_note_design_spec",
+      "corpus_phy4605_learning_note_design_spec_academic_scientific_learning_note",
+      "corpus_readme",
+      "corpus_week01_readme",
+      "corpus_week01_readme_newton_cooling_diagnostic"
+    ],
+    "2": [
+      "corpus_phy4605_assessment_blueprint",
+      "corpus_phy4605_assessment_blueprint_defensible_computational_experiment",
+      "corpus_phy4605_assessment_blueprint_mathworks_copilot",
+      "corpus_phy4605_assessment_blueprint_teqsa_assessment_reform",
+      "corpus_phy4605_assessment_blueprint_weller_computational_thinking"
+    ],
+    "3": [
+      "corpus_phy4605_matlab_live_script_design_spec",
+      "corpus_phy4605_matlab_live_script_design_spec_physics_first_reproducible_notebook",
+      "corpus_week05_readme",
+      "corpus_week05_readme_kepler_root_finding",
+      "corpus_week05_readme_midsemester_report"
+    ],
+    "4": [
+      "corpus_agents_digital_learning_architecture",
+      "corpus_agents_matlab",
+      "corpus_agents_notebooklm"
+    ],
+    "5": [
+      "corpus_phy4605_lecture_slide_design_spec",
+      "corpus_phy4605_lecture_slide_design_spec_imagegen_raster_contract",
+      "corpus_phy4605_lecture_slide_design_spec_scientific_educational_image_slides"
+    ],
+    "6": [
+      "corpus_agents_weekly_package"
+    ]
+  },
+  "cohesion": {
+    "0": 0.25,
+    "1": 0.2857142857142857,
+    "2": 0.4,
+    "3": 0.4,
+    "4": 0.6666666666666666,
+    "5": 0.6666666666666666,
+    "6": 1.0
+  },
+  "gods": [
+    {
+      "id": "corpus_agents",
+      "label": "PHY4605 Course-Material Blueprint",
+      "degree": 8
+    },
+    {
+      "id": "corpus_agents_google_classroom",
+      "label": "Google Classroom",
+      "degree": 6
+    },
+    {
+      "id": "corpus_phy4605_assessment_blueprint",
+      "label": "PHY4605 Assessment Blueprint",
+      "degree": 6
+    },
+    {
+      "id": "corpus_agents_digital_learning_architecture",
+      "label": "Digital Learning and Submission Architecture",
+      "degree": 4
+    },
+    {
+      "id": "corpus_readme",
+      "label": "PHY4605 Computational Methods in Physics",
+      "degree": 4
+    },
+    {
+      "id": "corpus_phy4605_lecture_slide_design_spec",
+      "label": "PHY4605 Lecture Slide Deck Design Specification",
+      "degree": 3
+    },
+    {
+      "id": "corpus_phy4605_matlab_live_script_design_spec",
+      "label": "PHY4605 MATLAB Live Script Design Specification",
+      "degree": 3
+    },
+    {
+      "id": "corpus_week01_readme",
+      "label": "PHY4605 Week 01",
+      "degree": 3
+    },
+    {
+      "id": "corpus_week03_readme",
+      "label": "PHY4605 Week 03",
+      "degree": 3
+    },
+    {
+      "id": "corpus_week04_readme",
+      "label": "PHY4605 Week 04",
+      "degree": 3
+    }
+  ],
+  "surprises": [
+    {
+      "source": "PHY4605 Computational Methods in Physics",
+      "target": "Computational Physics Reasoning Chain",
+      "source_files": [
+        "corpus/README.md",
+        "corpus/AGENTS.md"
+      ],
+      "confidence": "INFERRED",
+      "relation": "semantically_similar_to",
+      "why": "inferred connection - not explicitly stated in source; semantically similar concepts with no structural link"
+    },
+    {
+      "source": "PHY4605 Course-Material Blueprint",
+      "target": "PHY4605 Assessment Blueprint",
+      "source_files": [
+        "corpus/AGENTS.md",
+        "corpus/PHY4605_Assessment_Blueprint.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "PHY4605 Course-Material Blueprint",
+      "target": "PHY4605 Learning Note Design Specification",
+      "source_files": [
+        "corpus/AGENTS.md",
+        "corpus/PHY4605_Learning_Note_Design_Spec.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `PHY4605 Learning Note Design Specification` unexpectedly reaches hub `PHY4605 Course-Material Blueprint`"
+    },
+    {
+      "source": "PHY4605 Course-Material Blueprint",
+      "target": "PHY4605 Lecture Slide Deck Design Specification",
+      "source_files": [
+        "corpus/AGENTS.md",
+        "corpus/PHY4605_Lecture_Slide_Design_Spec.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    },
+    {
+      "source": "PHY4605 Course-Material Blueprint",
+      "target": "PHY4605 MATLAB Live Script Design Specification",
+      "source_files": [
+        "corpus/AGENTS.md",
+        "corpus/PHY4605_MATLAB_Live_Script_Design_Spec.md"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "bridges separate communities"
+    }
+  ],
+  "questions": [
+    {
+      "type": "bridge_node",
+      "question": "Why does `PHY4605 Course-Material Blueprint` connect `Community 1` to `Community 2`, `Community 3`, `Community 4`, `Community 5`?",
+      "why": "High betweenness centrality (0.506) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Google Classroom` connect `Community 0` to `Community 1`, `Community 3`, `Community 4`?",
+      "why": "High betweenness centrality (0.463) - this node is a cross-community bridge."
+    },
+    {
+      "type": "bridge_node",
+      "question": "Why does `Digital Learning and Submission Architecture` connect `Community 4` to `Community 0`, `Community 1`?",
+      "why": "High betweenness centrality (0.324) - this node is a cross-community bridge."
+    },
+    {
+      "type": "isolated_nodes",
+      "question": "What connects `PHY4605 Assessment Architecture`, `Gemini Notebook / NotebookLM`, `MATLAB` to the rest of the system?",
+      "why": "17 weakly-connected nodes found - possible documentation gaps or missing edges."
+    }
+  ]
+}

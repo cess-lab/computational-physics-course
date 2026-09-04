@@ -1,0 +1,30 @@
+Week 05 editable lecture deck provenance
+
+Communication job: By the end, Year-2 physics students should be able to explain a root as the physical input that satisfies a target condition, trace scaffolded bisection/Newton steps, apply one residual stopping rule, and validate the result by substitution.
+
+Content sources:
+- Week05/README.md
+- Week05/.agent/manifests/Week05_Content_Manifest.md
+- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m
+- Week05/.agent/lecture-slides/codex-ppt/outline.md
+- Week05/.agent/lecture-slides/codex-ppt/speech.md
+
+Design source:
+- .agent/lecture-slide-system/masters/PHY4605_Editable_Slide_Master.pptx
+- .agent/lecture-slide-system/PHY4605_Lecture_Slide_Tokens.json
+- Existing Week 03 and Week 04 lecture decks were used only as visual continuity references.
+
+Strict scientific assets:
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_residual.png and model_residual.tex
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/signs.png and signs.tex
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/newton_update_slope.png and newton_update_slope.tex
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/validation.png and validation.tex
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/transfer_residuals.png and transfer_residuals.tex
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/week05_endpoint_low.png and week05_endpoint_low.tex
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/week05_endpoint_high.png and week05_endpoint_high.tex
+- Week05/.agent/lecture-slides/codex-ppt/assets/strict/week05_projectile_residual.png (MATLAB-generated numerical evidence)
+- .agent/lecture-slide-system/assets/projectile-visual-matte.png (approved visual asset for opening slide)
+
+Locked numeric facts: v0 = 20 m/s; g = 9.81 m/s^2; target = 35 m; low-angle bracket [20, 40] degree; bisection root 29.5679 degree after 13 recorded iterations with residual +4.1164e-4 m; Newton root 29.5673 degree after 4 recorded evaluations with residual -7.1308e-7 m; core stopping rule abs(residual_m) < 1e-3 m.
+
+Production route: import the approved editable master, remove only its proof slides, add 14 slides using the inherited Opening and Content T1/T2/T3 layouts, use editable PowerPoint text/shapes/tables plus project-local LaTeX PNG equation assets, export PPTX with @oai/artifact-tool, render all slides, and inspect at full size.

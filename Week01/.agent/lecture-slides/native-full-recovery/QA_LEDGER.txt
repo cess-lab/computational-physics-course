@@ -1,0 +1,43 @@
+PHY4605 lecture-deck QA ledger — Week 01
+
+Scope
+- Restore the visual teaching evidence that was lost in the earlier repair-safe text-only recovery.
+- Required evidence: physical illustration, LaTeX equation asset, MATLAB-generated plots, editable MATLAB code cards, validation, and physical interpretation.
+
+Paired production contract
+- Generator: gpt-5.6-terra, medium reasoning; owns the editable source, assets, stage PPTX, and source revisions.
+- Auditor: gpt-5.6-sol, medium reasoning; read-only review of rendered slides and QA evidence.
+- Production route: @oai/artifact-tool stage -> Microsoft PowerPoint native Save As -> close/reopen verification.
+- Prohibited: post-export JSZip, officecli mutation, or raw XML mutation.
+
+Round 1
+- Generator decision: rebuild the deck from the approved PHY4605 visual master and restore figures, equations, code cards, and speaker notes.
+- Initial auditor result: FAIL. Findings included missing teaching visuals, weak/empty modification and interpretation evidence, overlapping slide content, generic provenance, missing alt text, and stale evidence binding.
+- Decision: continue to Round 2 source revision.
+
+Round 2
+- Generator decision: add the vertical-launch illustration, sampled-motion illustration, LaTeX position equation, MATLAB comparison/height plots, and editable code/tracing cards; keep the familiar vertical-launch model and Week 01 Core scope.
+- Decision: continue to Round 3 cleanup after rendered-slide inspection.
+
+Round 3
+- Generator decision: rebuild Week 01 slides 6, 11, and 12 from empty canvases so each contains only the intended title, short claim, and MATLAB evidence plot; preserve the equation and array visuals elsewhere.
+- Stage: Week01_artifact-stage.pptx; SHA-256 607e4fb04fb1cf1962b827ced3e33455d0e3ace99f4c4bd83526635e044e5870.
+- Stage evidence: 12 slides, 8 embedded pictures, editable IBM Plex Mono code cards, LaTeX equation asset, and MATLAB-generated plots.
+
+Final canonical evidence
+- File: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/Lecture_Slides_Week01.pptx
+- SHA-256: 1b5a5567ab031d9405cc558cd906d9eeb97c663163793cf490da737adbca8581.
+- Native PowerPoint reopen: PASS; opened directly as “Lecture_Slides_Week01”, 12 slides, no repair prompt observed.
+- Structure: officecli validate PASS; unzip -t PASS; 16:9; 12 slides; 8 pictures; 91 total shapes; 446 words.
+- Render evidence: qa/round-3/canonical-render/, canonical-contact.png, title-contact.png.
+- Query evidence: pictures.json, canonical-stats.json, canonical-issues.json.
+
+Final auditor decision (gpt-5.6-sol, medium): FAIL on residual presentation/accessibility issues, while repair-free opening and visual recovery passed.
+- W1 slide 6 plot still competes with editable labels/claim; slide 8 plot competes with the control/explain claim; slides 11–12 graph placement truncates part of the explanatory sentence.
+- officecli reports title overflow on slides 5–8; pictures lack alt text after native save; no structural title objects are recognized.
+- These residuals are retained as evidence rather than silently edited after the three-round cap.
+
+Asset provenance
+- ImageGen/retained illustrations: projectile-visual-matte.png, array-sampled-motion-matte-v2.png, equation-motion-vertical-matte-v2.png, launch-boundary-condition-matte.png.
+- LaTeX-rendered equation assets: equations/vertical-motion-position-equation.png and supporting equations/*.tex/.svg/.png.
+- MATLAB-generated evidence: matlab-figures/height_time_evidence.png, week01_height_time.png, launch_speed_comparison.png (with retained CSV/MAT data).

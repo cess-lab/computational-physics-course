@@ -1,0 +1,16 @@
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster2.xml","name":"PHY4605 Borderless White Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Opening","placeholders":[{"name":"body","type":"body"},{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Content T1","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Content T2","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Content T3","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"PHY4605 Computational Methods in Physics","textShapes":12}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"Arrays store physical moments","textShapes":21}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"A labelled plot turns values into evidence","textShapes":10}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"A boundary check can reveal an error","textShapes":10}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"Names and units keep the model readable","textShapes":16}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"Short code should expose the physics","textShapes":17}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"The equation links each term to motion","textShapes":8}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"Changing one parameter reveals the trend","textShapes":11}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"The design system keeps every week coherent","textShapes":16}

@@ -1,0 +1,234 @@
+{"kind":"deck","id":"pr/r83hh5","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster2.xml","name":"PHY4605 Borderless White Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Opening","placeholders":[{"name":"body","type":"body"},{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Content T1","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Content T2","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Content T3","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"PHY4605 Computational Methods in Physics","textShapes":12}
+{"kind":"textbox","id":"sh/sfqdkrep","slide":1,"textChars":40,"textLines":1}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"textChars":27,"textLines":1}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/sryl4zqx","slide":1,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/fu94fe98","slide":1,"bbox":[1267,295,16,240]}
+{"kind":"textbox","id":"sh/utg3698n","slide":1,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/wn6dc7eh","slide":1,"textChars":14,"textLines":1}
+{"kind":"shape","id":"sh/hofulsf2","slide":1,"bbox":[334,846,30,12]}
+{"kind":"textbox","id":"sh/ul4vaxgb","slide":1,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/vmdcj2xw","slide":1,"bbox":[594,846,30,12]}
+{"kind":"textbox","id":"sh/4r6dg7et","slide":1,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/5sfepcfe","slide":1,"bbox":[854,846,30,12]}
+{"kind":"textbox","id":"sh/ipovexwn","slide":1,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/3qxwn2x8","slide":1,"textChars":32,"textLines":1}
+{"kind":"image","id":"im/mh4v6dwr","slide":1,"name":"visual-projectile","bbox":[1338.33,200,353.33,530]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - OpenAI Imag..."}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"Arrays store physical moments","textShapes":21}
+{"kind":"textbox","id":"sh/et8zmto7","slide":2,"textChars":29,"textLines":1}
+{"kind":"textbox","id":"sh/9072xkry","slide":2,"textChars":42,"textLines":1}
+{"kind":"shape","id":"sh/b29kza94","slide":2,"bbox":[524,575,860,0]}
+{"kind":"shape","id":"sh/a10jqpsj","slide":2,"bbox":[524,543,0,17]}
+{"kind":"shape","id":"sh/x4r21kru","slide":2,"bbox":[506,557,36,36]}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/r65knqtk","slide":2,"bbox":[610,543,0,17]}
+{"kind":"shape","id":"sh/q5wjelsz","slide":2,"bbox":[600,565,20,20]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/9wnqhczy","slide":2,"bbox":[696,543,0,17]}
+{"kind":"shape","id":"sh/mtwrmxg7","slide":2,"bbox":[686,565,20,20]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/wjy9sry9","slide":2,"bbox":[782,543,0,17]}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"bbox":[772,565,20,20]}
+{"kind":"textbox","id":"sh/ahwrqhgj","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/bip8jmho","slide":2,"bbox":[868,543,0,17]}
+{"kind":"shape","id":"sh/cnupgny5","slide":2,"bbox":[858,565,20,20]}
+{"kind":"textbox","id":"sh/do3q9szq","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/t8byxkn2","slide":2,"bbox":[954,543,0,17]}
+{"kind":"shape","id":"sh/s72xofmh","slide":2,"bbox":[936,557,36,36]}
+{"kind":"textbox","id":"sh/76twva5c","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/65kfmpor","slide":2,"bbox":[1040,543,0,17]}
+{"kind":"shape","id":"sh/hcvy14ne","slide":2,"bbox":[1030,565,20,20]}
+{"kind":"textbox","id":"sh/gbmxszmt","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/fadgzu58","slide":2,"bbox":[1126,543,0,17]}
+{"kind":"shape","id":"sh/u94fqp4n","slide":2,"bbox":[1116,565,20,20]}
+{"kind":"textbox","id":"sh/p0vy54na","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/4zmxwzmp","slide":2,"bbox":[1212,543,0,17]}
+{"kind":"shape","id":"sh/mlgvq147","slide":2,"bbox":[1202,565,20,20]}
+{"kind":"textbox","id":"sh/nmpcj6ls","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/onydsbmd","slide":2,"bbox":[1298,543,0,17]}
+{"kind":"shape","id":"sh/9o7ulg3y","slide":2,"bbox":[1288,565,20,20]}
+{"kind":"textbox","id":"sh/a9gvulkj","slide":2,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/ba9cn6l4","slide":2,"bbox":[1384,543,0,17]}
+{"kind":"shape","id":"sh/wbidwb29","slide":2,"bbox":[1366,557,36,36]}
+{"kind":"textbox","id":"sh/xcrupg3u","slide":2,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/id0vylkf","slide":2,"bbox":[369,660,310,166]}
+{"kind":"textbox","id":"sh/je9crql0","slide":2,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/69wbilcj","slide":2,"textChars":17,"textLines":1}
+{"kind":"shape","id":"sh/tw7ud0va","slide":2,"bbox":[799,660,310,166]}
+{"kind":"textbox","id":"sh/svedkvup","slide":2,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/exgvmlcv","slide":2,"textChars":11,"textLines":1}
+{"kind":"shape","id":"sh/107uh0v6","slide":2,"bbox":[1229,660,310,166]}
+{"kind":"textbox","id":"sh/gzydovul","slide":2,"textChars":3,"textLines":1}
+{"kind":"textbox","id":"sh/a1cba1wb","slide":2,"textChars":11,"textLines":1}
+{"kind":"textbox","id":"sh/0vq1o36x","slide":2,"textChars":68,"textLines":1}
+{"kind":"textbox","id":"sh/1wzix87i","slide":2,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/wbax8ful","slide":2,"name":"visual-array-motion","bbox":[488.52,215,942.95,410]}
+{"kind":"image","id":"im/je1g3adc","slide":2,"name":"equation-arrayStart","bbox":[422.37,730,203.26,42]}
+{"kind":"image","id":"im/idsfa5cr","slide":2,"name":"equation-arrayPeak","bbox":[852.37,730,203.26,42]}
+{"kind":"image","id":"im/5g3y5kvi","slide":2,"name":"equation-arrayEnd","bbox":[1271.74,730,224.52,42]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - PHY4605 Cou..."}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"A labelled plot turns values into evidence","textShapes":10}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"textChars":42,"textLines":1}
+{"kind":"textbox","id":"sh/cza94vmx","slide":3,"textChars":48,"textLines":1}
+{"kind":"shape","id":"sh/d0jax03i","slide":3,"bbox":[115,260,420,570]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"textChars":15,"textLines":1}
+{"kind":"textbox","id":"sh/3ah8rqlg","slide":3,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/pcjqtg36","slide":3,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/m5cra54z","slide":3,"textChars":11,"textLines":1}
+{"kind":"textbox","id":"sh/n6ls3alk","slide":3,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"textChars":43,"textLines":1}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/ulcnalwf","slide":3,"name":"equation-prediction-1","bbox":[209.39,428,183.21,48]}
+{"kind":"image","id":"im/vmlojqd0","slide":3,"name":"equation-prediction-3","bbox":[209.73,664,182.54,48]}
+{"kind":"image","id":"im/8ju58bep","slide":3,"name":"matlab-height-time-figure","bbox":[679.89,250,980.21,610]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - Standard co..."}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"A boundary check can reveal an error","textShapes":10}
+{"kind":"textbox","id":"sh/g36tgryd","slide":4,"textChars":62,"textLines":2}
+{"kind":"textbox","id":"sh/1cj2d8b6","slide":4,"textChars":53,"textLines":1}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"textChars":15,"textLines":1}
+{"kind":"shape","id":"sh/ql8jytsj","slide":4,"bbox":[480,390,325,330]}
+{"kind":"textbox","id":"sh/doj29oba","slide":4,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/3ihk3et8","slide":4,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"textChars":15,"textLines":1}
+{"kind":"shape","id":"sh/5cva1cfq","slide":4,"bbox":[930,390,760,330]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/w72947yt","slide":4,"textChars":52,"textLines":1}
+{"kind":"shape","id":"sh/x8vaxsfe","slide":4,"bbox":[115,790,1575,110]}
+{"kind":"textbox","id":"sh/a5kr2xg3","slide":4,"textChars":84,"textLines":1}
+{"kind":"textbox","id":"sh/v6tsv2xo","slide":4,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/q5onm50v","slide":4,"name":"visual-launch-boundary","bbox":[161.67,375,236.67,355]}
+{"kind":"image","id":"im/m1s7e9k3","slide":4,"name":"equation-launch-time","bbox":[558.5,505,168,42]}
+{"kind":"image","id":"im/n2187e1o","slide":4,"name":"equation-launch-height","bbox":[550.89,628,183.21,48]}
+{"kind":"image","id":"im/83apgj29","slide":4,"name":"equation-computed-first-value","bbox":[1080.93,452,308.15,48]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - Standard in..."}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"Names and units keep the model readable","textShapes":16}
+{"kind":"textbox","id":"sh/kny587i9","slide":5,"textChars":39,"textLines":1}
+{"kind":"textbox","id":"sh/dgbulwnm","slide":5,"textChars":52,"textLines":1}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"textChars":14,"textLines":1}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"textChars":11,"textLines":1}
+{"kind":"textbox","id":"sh/l4bupwny","slide":5,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/032tgr6d","slide":5,"bbox":[115,330,1575,98]}
+{"kind":"textbox","id":"sh/m5kbi1oj","slide":5,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/ahkvi1cb","slide":5,"bbox":[115,458,1575,98]}
+{"kind":"textbox","id":"sh/k7mxovud","slide":5,"textChars":17,"textLines":1}
+{"kind":"textbox","id":"sh/58vehgvy","slide":5,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/j6dwfqds","slide":5,"bbox":[115,586,1575,98]}
+{"kind":"textbox","id":"sh/tcfel0vu","slide":5,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/hgrmpwj2","slide":5,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/fe94nm1w","slide":5,"bbox":[115,714,1575,98]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/4ji5kbid","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/2h0ni107","slide":5,"textChars":65,"textLines":1}
+{"kind":"textbox","id":"sh/5o7mhcju","slide":5,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/5gfi9krm","slide":5,"name":"equation-symbol-1","bbox":[196.62,352,26.77,48]}
+{"kind":"image","id":"im/4f6hgfq1","slide":5,"name":"equation-unit-1","bbox":[1383.65,371,14.7,17]}
+{"kind":"image","id":"im/jex07a9g","slide":5,"name":"equation-symbol-2","bbox":[191.89,480,36.23,48]}
+{"kind":"image","id":"im/id4ze58b","slide":5,"name":"equation-unit-2","bbox":[1374.94,499,32.11,17]}
+{"kind":"image","id":"im/t4fid4ry","slide":5,"name":"equation-symbol-3","bbox":[174,608,72,48]}
+{"kind":"image","id":"im/sj61kzqd","slide":5,"name":"equation-unit-3","bbox":[1415.45,622,69.1,26]}
+{"kind":"image","id":"im/rix0bu9s","slide":5,"name":"equation-symbol-4","bbox":[192.34,736,35.32,48]}
+{"kind":"image","id":"im/6hozip87","slide":5,"name":"equation-unit-4","bbox":[1415.45,750,69.1,26]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - SI units fo..."}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"Short code should expose the physics","textShapes":17}
+{"kind":"textbox","id":"sh/bq547yhw","slide":6,"textChars":36,"textLines":1}
+{"kind":"textbox","id":"sh/yhg7epsj","slide":6,"textChars":46,"textLines":1}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"textChars":24,"textLines":1}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/98rqt4r6","slide":6,"textChars":27,"textLines":1}
+{"kind":"shape","id":"sh/ml07i9sv","slide":6,"bbox":[136,398,12,34]}
+{"kind":"textbox","id":"sh/7m98ru9g","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"textChars":24,"textLines":1}
+{"kind":"shape","id":"sh/pc76hkr2","slide":6,"bbox":[136,498,12,34]}
+{"kind":"textbox","id":"sh/h4bupgn6","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/w32twb6l","slide":6,"textChars":30,"textLines":1}
+{"kind":"shape","id":"sh/v2tcn650","slide":6,"bbox":[136,598,12,34]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/5svutgni","slide":6,"textChars":24,"textLines":1}
+{"kind":"shape","id":"sh/47mt0b6x","slide":6,"bbox":[136,698,12,34]}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/i54bylor","slide":6,"textChars":22,"textLines":1}
+{"kind":"shape","id":"sh/twfux0ne","slide":6,"bbox":[900,260,790,570]}
+{"kind":"textbox","id":"sh/svmt4v6t","slide":6,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"textChars":209,"textLines":12}
+{"kind":"textbox","id":"sh/dcnm98zm","slide":6,"textChars":52,"textLines":1}
+{"kind":"textbox","id":"sh/qpwnet0b","slide":6,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - MATLAB docu..."}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"The equation links each term to motion","textShapes":8}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"textChars":38,"textLines":1}
+{"kind":"textbox","id":"sh/cb2tkvap","slide":7,"textChars":54,"textLines":1}
+{"kind":"shape","id":"sh/zedcfa9g","slide":7,"bbox":[115,680,350,152]}
+{"kind":"textbox","id":"sh/l0vuh0rm","slide":7,"textChars":17,"textLines":1}
+{"kind":"shape","id":"sh/eh0ba1sr","slide":7,"bbox":[525,680,350,152]}
+{"kind":"textbox","id":"sh/baxkjqlk","slide":7,"textChars":19,"textLines":1}
+{"kind":"shape","id":"sh/a9ojq5kz","slide":7,"bbox":[935,680,350,152]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"textChars":20,"textLines":1}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"bbox":[1345,680,350,152]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/o761ov2t","slide":7,"bbox":[260,850,1260,76]}
+{"kind":"textbox","id":"sh/f2d0b6lc","slide":7,"textChars":61,"textLines":1}
+{"kind":"textbox","id":"sh/eh4jil4r","slide":7,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/gb25wj6t","slide":7,"name":"equation-position-model","bbox":[610.47,220,699.05,144]}
+{"kind":"image","id":"im/vat4ne5o","slide":7,"name":"visual-equation-motion","bbox":[620,370,560,320]}
+{"kind":"image","id":"im/u9knu9o3","slide":7,"name":"equation-term-termY0","bbox":[256.04,712,67.92,48]}
+{"kind":"image","id":"im/50v6tonq","slide":7,"name":"equation-term-termV0t","bbox":[661,712,78,48]}
+{"kind":"image","id":"im/4zm50365","slide":7,"name":"equation-term-termGravity","bbox":[1043.45,688,133.09,90]}
+{"kind":"image","id":"im/3ydory5k","slide":7,"name":"equation-term-termPosition","bbox":[1480.59,712,78.81,48]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - Standard co..."}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"Changing one parameter reveals the trend","textShapes":11}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"textChars":40,"textLines":1}
+{"kind":"textbox","id":"sh/18byd4zy","slide":8,"textChars":57,"textLines":1}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"textChars":21,"textLines":1}
+{"kind":"shape","id":"sh/ri9g7uhw","slide":8,"bbox":[115,340,420,350]}
+{"kind":"textbox","id":"sh/6h0fypgb","slide":8,"textChars":24,"textLines":1}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"textChars":39,"textLines":2}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"textChars":39,"textLines":2}
+{"kind":"textbox","id":"sh/id0fu50z","slide":8,"textChars":34,"textLines":1}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/m5gvmhwn","slide":8,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"textChars":48,"textLines":1}
+{"kind":"textbox","id":"sh/1k7edwv2","slide":8,"textChars":1,"textLines":1}
+{"kind":"image","id":"im/0rmpoj2t","slide":8,"name":"matlab-launch-speed-figure","bbox":[606.8,250,1106.39,620]}
+{"kind":"image","id":"im/nud8jy1k","slide":8,"name":"equation-comparison-v0","bbox":[238.5,834,51,34]}
+{"kind":"image","id":"im/mt47qt0z","slide":8,"name":"equation-comparison-fixed","bbox":[409.51,834,110.98,34]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - Standard co..."}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"The design system keeps every week coherent","textShapes":16}
+{"kind":"textbox","id":"sh/wba1cjqp","slide":9,"textChars":43,"textLines":1}
+{"kind":"textbox","id":"sh/1cfmhgne","slide":9,"textChars":61,"textLines":1}
+{"kind":"shape","id":"sh/0b65obm9","slide":9,"bbox":[425,439,80,12]}
+{"kind":"shape","id":"sh/nex4jq5k","slide":9,"bbox":[820,439,80,12]}
+{"kind":"shape","id":"sh/mdonql4z","slide":9,"bbox":[1215,439,80,12]}
+{"kind":"shape","id":"sh/9gzml0nq","slide":9,"bbox":[115,270,330,400]}
+{"kind":"textbox","id":"sh/ofq5svm5","slide":9,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/bih4na5w","slide":9,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"textChars":41,"textLines":2}
+{"kind":"shape","id":"sh/oza1gfyh","slide":9,"bbox":[510,270,330,400]}
+{"kind":"textbox","id":"sh/p0ji9kf2","slide":9,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/3y107axw","slide":9,"textChars":47,"textLines":2}
+{"kind":"shape","id":"sh/cnu1kzyd","slide":9,"bbox":[905,270,330,400]}
+{"kind":"textbox","id":"sh/do3id4fy","slide":9,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/qlcjipgn","slide":9,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/bml0buxs","slide":9,"textChars":54,"textLines":2}
+{"kind":"shape","id":"sh/0ru1ozyp","slide":9,"bbox":[1300,270,330,400]}
+{"kind":"textbox","id":"sh/lsn2h4fa","slide":9,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/98ji147e","slide":9,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/87a18zqt","slide":9,"textChars":54,"textLines":2}
+{"kind":"shape","id":"sh/76h0zup8","slide":9,"bbox":[115,740,1575,118]}
+{"kind":"textbox","id":"sh/ml8j6p8n","slide":9,"textChars":93,"textLines":1}
+{"kind":"textbox","id":"sh/hcji5o7a","slide":9,"textChars":1,"textLines":1}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"[Sources] | - PHY4605 Lecture Slide Deck Design Specification | - PHY4605 edi..."}
+{"kind":"notice","message":"Truncated: omitted 0 lines. Increase maxChars or narrow target."}

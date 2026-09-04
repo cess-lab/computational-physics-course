@@ -1,0 +1,967 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/3gv66d",
+    "id": "3gv66d",
+    "slide": 13,
+    "layoutId": "/ppt/slideLayouts/slideLayout3.xml",
+    "layoutName": "Content T1",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "masterLayoutName": "PHY4605 Borderless White Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "PHY4605",
+    "colors": {
+      "accent1": "#2F6DB2",
+      "accent2": "#2A9D9F",
+      "accent3": "#C98A16",
+      "accent4": "#6F4B9B",
+      "accent5": "#3E8E45",
+      "accent6": "#B3262E",
+      "dk1": "#0B2B4C",
+      "lt1": "#FFFFFF",
+      "dk2": "#3F4B57",
+      "lt2": "#F7F9FB",
+      "hlink": "#2F6DB2",
+      "folHlink": "#6F4B9B"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      },
+      "minorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      }
+    },
+    "typefaces": [
+      "Nunito"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout3.xml",
+      "name": "Content T1",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout3.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            88
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout3.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            152,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout3.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "PHY4605 Borderless White Master",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            88
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            152,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ts3i1wr2",
+      "id": "20",
+      "name": "title-T1",
+      "bbox": [
+        115,
+        60,
+        1580,
+        88
+      ],
+      "geometry": "rect",
+      "text": "The equation links each term to motion",
+      "textPreview": "The equation links each term to motion",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The equation links each term to motion"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The equation links each term to motion",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 68,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The equation links each term to motion",
+              "fontSize": 68,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dgr2lsrq",
+      "id": "2",
+      "name": "subtitle-T1",
+      "bbox": [
+        115,
+        152,
+        1580,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Read the model from left to right before evaluating it",
+      "textPreview": "Read the model from left to right before evaluating it",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Read the model from left to right before evaluating it"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Read the model from left to right before evaluating it",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Read the model from left to right before evaluating it",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#3F4B57"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/vy5kf6to",
+      "id": "21",
+      "name": "equation-position-model",
+      "bbox": [
+        610.47,
+        220,
+        699.05,
+        144
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image21.png",
+        "contentType": "image/png",
+        "byteLength": 15635
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image21.png",
+        "contentType": "image/png",
+        "byteLength": 15635
+      }
+    },
+    {
+      "order": 4,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/wze1obu9",
+      "id": "22",
+      "name": "visual-equation-motion",
+      "bbox": [
+        620,
+        370,
+        560,
+        320
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image22.png",
+        "contentType": "image/png",
+        "byteLength": 691239
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image22.png",
+        "contentType": "image/png",
+        "byteLength": 691239
+      }
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/i9gjmds3",
+      "id": "5",
+      "bbox": [
+        115,
+        680,
+        350,
+        152
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F7F9FB",
+      "lineColor": "#0B2B4C",
+      "lineWidth": 2
+    },
+    {
+      "order": 6,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/x0n2hgbu",
+      "id": "23",
+      "name": "equation-term-termY0",
+      "bbox": [
+        256.04,
+        712,
+        67.92,
+        48
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image23.png",
+        "contentType": "image/png",
+        "byteLength": 2351
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image23.png",
+        "contentType": "image/png",
+        "byteLength": 2351
+      }
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4bilona9",
+      "id": "7",
+      "bbox": [
+        139,
+        780,
+        302,
+        40
+      ],
+      "geometry": "rect",
+      "text": "starting position",
+      "textPreview": "starting position",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "starting position"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "starting position",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "starting position",
+              "fontSize": 24,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/n6tkr29s",
+      "id": "8",
+      "bbox": [
+        525,
+        680,
+        350,
+        152
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EEF5FD",
+      "lineColor": "#2F6DB2",
+      "lineWidth": 2
+    },
+    {
+      "order": 9,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/m9cji1c7",
+      "id": "24",
+      "name": "equation-term-termV0t",
+      "bbox": [
+        661,
+        712,
+        78,
+        48
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image24.png",
+        "contentType": "image/png",
+        "byteLength": 2700
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image24.png",
+        "contentType": "image/png",
+        "byteLength": 2700
+      }
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/o3mlwfy1",
+      "id": "10",
+      "bbox": [
+        549,
+        780,
+        302,
+        40
+      ],
+      "geometry": "rect",
+      "text": "upward contribution",
+      "textPreview": "upward contribution",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "upward contribution"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "upward contribution",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "upward contribution",
+              "fontSize": 24,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/p4vm5kzm",
+      "id": "11",
+      "bbox": [
+        935,
+        680,
+        350,
+        152
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF7E6",
+      "lineColor": "#C98A16",
+      "lineWidth": 2
+    },
+    {
+      "order": 12,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/nu5kb6tc",
+      "id": "25",
+      "name": "equation-term-termGravity",
+      "bbox": [
+        1043.45,
+        688,
+        133.09,
+        90
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image25.png",
+        "contentType": "image/png",
+        "byteLength": 4603
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image25.png",
+        "contentType": "image/png",
+        "byteLength": 4603
+      }
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/32dk3uhg",
+      "id": "13",
+      "bbox": [
+        959,
+        780,
+        302,
+        40
+      ],
+      "geometry": "rect",
+      "text": "gravity contribution",
+      "textPreview": "gravity contribution",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "gravity contribution"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "gravity contribution",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "gravity contribution",
+              "fontSize": 24,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gzml8fi5",
+      "id": "14",
+      "bbox": [
+        1345,
+        680,
+        350,
+        152
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F0FAF7",
+      "lineColor": "#3E8E45",
+      "lineWidth": 2
+    },
+    {
+      "order": 15,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/8ve1krux",
+      "id": "26",
+      "name": "equation-term-termPosition",
+      "bbox": [
+        1480.59,
+        712,
+        78.81,
+        48
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image26.png",
+        "contentType": "image/png",
+        "byteLength": 3722
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image26.png",
+        "contentType": "image/png",
+        "byteLength": 3722
+      }
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/exk3650z",
+      "id": "16",
+      "bbox": [
+        1369,
+        780,
+        302,
+        40
+      ],
+      "geometry": "rect",
+      "text": "predicted position",
+      "textPreview": "predicted position",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "predicted position"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "predicted position",
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "predicted position",
+              "fontSize": 24,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fytkzahk",
+      "id": "17",
+      "bbox": [
+        260,
+        850,
+        1260,
+        76
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF2F2",
+      "lineColor": "#B3262E",
+      "lineWidth": 2
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/sb2l4vit",
+      "id": "18",
+      "bbox": [
+        305,
+        869,
+        1170,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Unit check: every term on the right must have units of metres",
+      "textPreview": "Unit check: every term on the right must have units of metres",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Unit check: every term on the right must have units of metres"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Unit check: every term on the right must have units of metres",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#B3262E",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Unit check: every term on the right must have units of metres",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#B3262E",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/twb2x0ze",
+      "id": "19",
+      "name": "slide-number-7",
+      "bbox": [
+        1764,
+        976,
+        40,
+        28
+      ],
+      "geometry": "rect",
+      "text": "7",
+      "textPreview": "7",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "7"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "7",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#697684",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "7",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#697684"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

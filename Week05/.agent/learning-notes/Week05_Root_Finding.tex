@@ -1,0 +1,201 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,array,enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx,listings,tikz,float,needspace}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\newcommand{\course}{PHY4605 Computational Methods in Physics}
+\newcommand{\units}[1]{\,\mathrm{#1}}
+\newtcolorbox{keybox}{colback=RoyalBlue!5,colframe=RoyalBlue!65!black,boxrule=.7pt,arc=2mm}
+\newtcolorbox{checkbox}{colback=ForestGreen!5,colframe=ForestGreen!55!black,boxrule=.7pt,arc=2mm}
+\newtcolorbox{aibox}{colback=BurntOrange!7,colframe=BurntOrange!80!black,boxrule=.7pt,arc=2mm}
+\lstdefinestyle{matlabstyle}{language=Matlab,basicstyle=\ttfamily\footnotesize,keywordstyle=\color{RoyalBlue!75!black},commentstyle=\color{ForestGreen!55!black},stringstyle=\color{BurntOrange!80!black},numbers=left,numberstyle=\scriptsize\color{black!50},numbersep=5pt,frame=single,rulecolor=\color{RoyalBlue!25},backgroundcolor=\color{RoyalBlue!3},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=true}
+\begin{document}
+{\large\textsc{\course}}\\[-2pt]
+{\small Learning Note \textbar\ Week 5}\par\vspace{4pt}
+{\LARGE\bfseries Root Finding}\par\vspace{3pt}
+\textit{Turn a physical target condition into a residual, then find and validate one meaningful root.}
+
+\begin{keybox}\textbf{Physical question.} A projectile is launched from level ground with speed $20\units{m\,s^{-1}}$. What low launch angle makes the range equal to a $35\units{m}$ target distance?\end{keybox}
+
+\section*{Core learning outcomes}
+\begin{enumerate}[nosep,leftmargin=5mm]
+\item rewrite a physical target condition as a residual equation $f(x)=0$;
+\item identify a sign-changing bracket and trace scaffolded bisection and Newton updates; and
+\item validate a computed root by substituting it back into the residual and interpreting its unit.
+\end{enumerate}
+
+\section*{1. A root is a physical condition, not just a number}
+A root-finding problem begins with an original physical equation and a target condition. We do not start by asking MATLAB to ``solve for $x$'' in the abstract. We first ask what physical output should equal what target value.
+
+For Week 5, use the level-ground projectile range model
+\[
+R(\theta)=\frac{v_0^2}{g}\sin(2\theta),
+\]
+where $\theta$ is the launch angle, $v_0=20\units{m\,s^{-1}}$, and $g=9.81\units{m\,s^{-2}}$. The target condition is
+\[
+R(\theta)=35\units{m}.
+\]
+The residual is defined as
+\[
+f(\theta)=R(\theta)-35.
+\]
+A root is an angle where $f(\theta)=0$. At that angle, the model range equals the target range.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.24\linewidth}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}p{.38\linewidth}}
+\toprule
+\textbf{Quantity} & \textbf{MATLAB name} & \textbf{Meaning and unit}\\
+\midrule
+$v_0$ & \texttt{v0\_mps} & launch speed, m/s\\
+$g$ & \texttt{g\_mps2} & gravitational acceleration, m/s$^2$\\
+$\theta$ & \texttt{theta\_deg} & launch angle, degree; unknown root\\
+$R$ & \texttt{range\_m} & model range, m\\
+$f(\theta)$ & \texttt{residual\_m} & range residual, m\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{2. Residual signs have physical meaning}
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.26\linewidth}>{\raggedright\arraybackslash}p{.56\linewidth}}
+\toprule
+\textbf{Residual sign} & \textbf{Physical meaning}\\
+\midrule
+$f(\theta)<0$ & model range is shorter than the target: the projectile undershoots\\
+$f(\theta)=0$ & model range equals the target: the angle is a root\\
+$f(\theta)>0$ & model range is longer than the target: the projectile overshoots\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For the locked lecture values, a low-angle bracket from $20^\circ$ to $40^\circ$ changes sign:
+\[
+f(20^\circ)\approx -8.79\units{m},\qquad f(40^\circ)\approx +5.16\units{m}.
+\]
+This does not prove that there is only one projectile angle. It gives the Core evidence needed for one bracketed low-angle root.
+
+\begin{checkbox}\textbf{Prediction checkpoint.} The low-angle root should lie between $20^\circ$ and $40^\circ$. If the residual is still negative, the model undershoots; if it is positive, the model overshoots.\end{checkbox}
+
+\section*{3. See the root on a residual graph}
+A residual graph plots the mismatch, not the original range. The root is where the residual curve crosses the zero line.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=.88\linewidth]{../matlab/assets/week05_projectile_residual.png}
+\caption{MATLAB-generated residual graph for the locked projectile model. The selected low-angle bracket from $20^\circ$ to $40^\circ$ contains a sign change.}
+\end{figure}
+
+\section*{4. Pseudocode for bisection}
+Bisection is a safe bracketed method when the residual signs at the interval endpoints are opposite.
+
+\begin{enumerate}[nosep,leftmargin=7mm]
+\item choose left and right endpoints with opposite residual signs;
+\item compute the midpoint;
+\item evaluate the residual at the midpoint;
+\item if the midpoint residual is small enough, stop;
+\item otherwise keep the half interval whose endpoints still have opposite signs; and
+\item repeat until the supplied stopping rule is satisfied.
+\end{enumerate}
+
+\begin{keybox}\textbf{One Core stopping rule.} In Week 5 Core work, stop when $|f(\theta)|<10^{-3}\units{m}$. Do not compare several stopping rules unless the task is explicitly marked stretch.\end{keybox}
+
+\section*{5. Scaffolded bisection in MATLAB}
+\begin{lstlisting}[style=matlabstyle]
+v0_mps = 20;
+g_mps2 = 9.81;
+target_m = 35;
+tolerance_m = 1e-3;
+left_deg = 20;
+right_deg = 40;
+for iteration = 1:40
+    mid_deg = (left_deg + right_deg)/2;
+    f_mid_m = (v0_mps^2/g_mps2)*sind(2*mid_deg) - target_m;
+    if abs(f_mid_m) < tolerance_m
+        break
+    end
+    f_left_m = (v0_mps^2/g_mps2)*sind(2*left_deg) - target_m;
+    if f_left_m*f_mid_m < 0
+        right_deg = mid_deg;
+    else
+        left_deg = mid_deg;
+    end
+end
+root_deg = mid_deg;
+\end{lstlisting}
+The midpoint is not a magic guess. It is the centre of the current bracket. The update keeps the side of the interval that still contains a sign change.
+
+\section*{6. Newton's method as a tangent update}
+Newton's method uses a local tangent line instead of an interval half. In words:
+\[
+\text{new angle} = \text{current angle} - \frac{\text{current residual}}{\text{current residual slope}}.
+\]
+For the projectile residual with angle in degrees,
+\[
+\frac{df}{d\theta}=\frac{v_0^2}{g}\cos(2\theta)\frac{2\pi}{180}.
+\]
+The factor $2\pi/180$ appears because the update uses degrees while calculus derivatives normally use radians. The slope unit is metres per degree.
+
+\begin{lstlisting}[style=matlabstyle]
+theta_deg = 25;
+for iteration = 1:40
+    f_current_m = (v0_mps^2/g_mps2)*sind(2*theta_deg) - target_m;
+    slope_m_per_deg = (v0_mps^2/g_mps2)*cosd(2*theta_deg)*(2*pi/180);
+    if abs(f_current_m) < tolerance_m
+        break
+    end
+    theta_deg = theta_deg - f_current_m/slope_m_per_deg;
+end
+newton_root_deg = theta_deg;
+\end{lstlisting}
+
+\begin{aibox}\textbf{Responsible-AI caution.} A generated Newton script can be runnable but still use a radians derivative with a degrees residual, or it can reverse the residual sign without explaining it. Check the physical residual, the derivative unit, the update trace, and the final substitution.\end{aibox}
+
+\Needspace{12\baselineskip}
+\section*{7. Validate by substitution}
+A root is not accepted because a loop stopped. Substitute the computed angle back into the residual:
+\[
+R(\theta_*)=\frac{20^2}{9.81}\sin(2\theta_*),\qquad f(\theta_*)=R(\theta_*)-35.
+\]
+For the low-angle root,
+\[
+\theta_*\approx 29.6^\circ,\qquad |f(\theta_*)|<10^{-3}\units{m}.
+\]
+The root is an angle. The residual is a distance. Keeping these units separate prevents a common interpretation error.
+
+\section*{8. Diagnose a bad bracket}
+A midpoint can always be calculated, but bisection should not start unless the two endpoint residuals have opposite signs. If both endpoints undershoot or both overshoot, the interval does not provide the Core safety evidence for a root.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}p{.48\linewidth}}
+\toprule
+\textbf{Check} & \textbf{Why it matters}\\
+\midrule
+Graph crosses zero & gives a visual root location\\
+Endpoint signs differ & gives a numerical bracket for bisection\\
+Residual after solving is small & validates that the computed value satisfies the target condition\\
+Root unit is stated & preserves the physical meaning of the answer\\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{Working exposure: method cost}
+Bisection keeps a bracket and is easy to defend. Newton often needs fewer iterations, but it depends on a useful local slope and a reasonable starting value. Iteration count is a limited cost measure; it never replaces residual validation.
+
+\section*{Optional stretch}
+Uniqueness proof, multiple stopping criteria, MATLAB \texttt{fzero}, safeguarded Newton, and formal method selection are stretch topics. The Core Week 5 route only needs one meaningful residual, one valid bracket, scaffolded bisection and Newton traces, one stopping rule, and substitution validation.
+
+\section*{Three takeaways}
+\begin{enumerate}[nosep,leftmargin=6mm]
+\item Convert the physical target condition into a residual equation $f(x)=0$ before solving.
+\item Bisection uses sign-changing brackets; Newton uses a local tangent update.
+\item A computed root must be validated by substituting it back into the residual and interpreting its physical unit.
+\end{enumerate}
+
+\begin{keybox}\textbf{Preparation for the practical.} Be ready to transfer the same root-finding logic to a projectile target, a thin-lens image distance, and an RC threshold time. For every context, state the residual, unknown unit, bracket or starting value, stopping rule, validation check, and physical meaning of the root.\end{keybox}
+\end{document}

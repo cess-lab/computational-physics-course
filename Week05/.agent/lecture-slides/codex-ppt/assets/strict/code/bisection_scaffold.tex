@@ -1,0 +1,27 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weekblue}{HTML}{6E8FB3}
+\definecolor{weeksage}{HTML}{7AA69B}
+\lstdefinestyle{matlab}{language=Matlab,basicstyle=\ttfamily\fontsize{14}{18}\selectfont,keywordstyle=\color{weekblue!80!black},commentstyle=\color{weeksage!70!black},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=false,frame=single,rulecolor=\color{weeknavy!35},backgroundcolor=\color{weeknavy!3},aboveskip=0pt,belowskip=0pt}
+\begin{document}
+\begin{lstlisting}[style=matlab]
+bis_left_deg = left_deg;
+bis_right_deg = right_deg;
+for iteration = 1:max_iterations
+    mid_deg = (bis_left_deg + bis_right_deg)/2;
+    f_mid_m = (v0_mps^2/g_mps2)*sind(2*mid_deg) - target_m;
+    if abs(f_mid_m) < tolerance_m
+        break
+    end
+    f_bis_left_m = (v0_mps^2/g_mps2)*sind(2*bis_left_deg) - target_m;
+    if f_bis_left_m*f_mid_m < 0
+        bis_right_deg = mid_deg;
+    else
+        bis_left_deg = mid_deg;
+    end
+end
+bisection_root_deg = mid_deg;
+\end{lstlisting}
+\end{document}

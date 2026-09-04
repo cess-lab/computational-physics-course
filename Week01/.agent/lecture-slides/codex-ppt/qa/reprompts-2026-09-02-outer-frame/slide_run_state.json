@@ -1,0 +1,12 @@
+{
+  "status": "jobs_prepared",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-09-01T17:01:35Z",
+      "note": "prepared slide prompt jobs"
+    }
+  ],
+  "updated_at": "2026-09-01T17:01:35Z"
+}

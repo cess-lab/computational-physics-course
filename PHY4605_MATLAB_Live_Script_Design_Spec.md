@@ -8,7 +8,7 @@ Use [PHY4605 Course Topic and Difficulty Blueprint](PHY4605_Course_Topic_Bluepri
 
 Design for second-year physics students who can work with familiar mathematical equations but may have no retained MATLAB knowledge and little experience translating physics into computational steps. Do not assume that students can distinguish matrix from element-wise operations, interpret a MATLAB error, construct an array reliably, or write a complete program from a blank page.
 
-- **Core:** provide a complete or heavily scaffolded pathway. Students read, trace, predict, complete one bounded step, modify a parameter or expression, inspect the output, and perform at least one visible validation check. In AI-enabled practicals, code writing may be assisted by generative AI, but the student must still supply the model, units, plan, reproducible evidence, validation, interpretation, and individual explanation.
+- **Core:** provide a complete or heavily scaffolded pathway. Students read, trace, predict, complete one bounded step, modify a parameter or expression, inspect the output, and perform at least one visible validation check.
 - **Working exposure:** provide a worked demonstration or a guided modification. Do not make unscaffolded implementation necessary for an ordinary pass.
 - **Stretch:** place optional independent implementation, additional theory, and additional validation after the complete Core pathway. Label it `Optional stretch` and make it removable without breaking the main script.
 - Keep a normal week's Core script centred on one familiar physical model and no more than three genuinely new conceptual ideas.
@@ -36,7 +36,7 @@ Keep lecture and practical Live Scripts visibly distinct.
 | Role | Filename pattern | H1 title pattern | Interaction contract |
 | --- | --- | --- | --- |
 | Lecture demonstration | `WeekXX_Lecture_Demonstration_<Topic>.m` | `Week X Lecture Demonstration: <Title>` | A complete worked example led by the lecturer. It may contain verbal `Pause and Predict` and code-tracing prompts, but no `TODO`, student typing requirement, submission field, exit ticket, or AI-use declaration. Students may receive the file before the lecture, and the lecture must remain deliverable without student laptops. |
-| Practical activity | `WeekXX_Practical_<Topic>.m` | `Week X Practical Activity: <Title>` | An AI-enabled student group challenge set with ten progressive micro-challenges across three or four analogous supplied-model contexts. Students may write, debug, or improve code with generative AI, but each challenge requires prediction, model/units, plan, runnable evidence, validation, interpretation, and a concise AI decision record. When an individual pre-practical diagnostic is required, students complete the corresponding Google Classroom activity before group work begins. |
+| Practical activity | `WeekXX_Practical_<Topic>.m` | `Week X Practical Activity: <Title>` | A heavily scaffolded student group investigation with explicit checkpoints, small editable `TODO` records, validation evidence, and an AI decision record where relevant. When an individual pre-practical diagnostic is required, students complete the corresponding Google Classroom activity before group work begins. |
 
 Place the role label in bold immediately below the H1 as `LECTURE DEMONSTRATION` or `PRACTICAL ACTIVITY`. Do not reuse one file as a hybrid lecture worksheet and practical submission.
 
@@ -83,14 +83,6 @@ Organise the Live Script, as applicable, around this sequence:
 
 The exact number of sections may vary, but the physical model → scale and units → discretisation → algorithm → code → error/uncertainty → validation → physical interpretation chain must remain visible. A lecture demonstration replaces student-entry sections with complete worked explanations and lecturer-led prompts; a practical retains the student investigation and submission evidence.
 
-## AI-enabled practical challenge design
-
-Practicals may use a different but analogous physics context from the lecture demonstration. Supply every needed assumption, equation or data set, variable, unit, and validation reference so the practical tests the week's computational method and reasoning rather than unannounced theory. Use ten progressive micro-challenges across three or four contexts; a challenge may request prediction, unit reasoning, code generation, code tracing, a selected value, a plot, a defect diagnosis, a validation check, or an interpretation, but every question must name its evidence and a viable short defence prompt.
-
-Generative AI may be used for code writing, debugging, or explanation. Do not require a complete chat transcript. Require a concise decision record that identifies the AI tool, the material request, what was accepted/modified/rejected, and the independent checks performed. A student must rerun the final work from a fresh MATLAB session and be able to explain the model, code/output, validation, and physical conclusion.
-
-The visible student script must itself open and run cleanly from a fresh session as a challenge baseline. Students add their group code in designated cells and submit the completed copy. Retain a hidden, fresh-session-tested reference solution, question-variant bank, defence rubric, and rotation ledger under `WeekXX/.agent/`. After submissions are locked, assign question and parameter/defect variants, then randomly select one group member for a short defence. The ledger must establish one completed defence entry for every member before any member receives a second entry, then average each student's completed entries. Do not place staff timing, answer keys, draw rules, or variants in the student-facing script.
-
 Use native lists for genuinely multi-item predictions, instructions, or checkpoints. Do not compress a numbered or bulleted task into one long paragraph when separate list items would make the reading order clearer.
 
 For Core material, use this local teaching sequence whenever applicable:
@@ -109,7 +101,7 @@ Use comments generously enough to support a genuine novice. A comment may explai
 - Display array size, representative values, or a small table when shape or indexing is part of the learning goal.
 - Visually connect equations, pseudocode names, and MATLAB variable names.
 - Repeat brief literacy reminders for indexing, element-wise operations, loops, plotting, and error messages until students have used them successfully more than once.
-- In a lecture demonstration, keep Core code completion to one bounded action: complete one expression, choose one index, modify one parameter, repair one identified defect, or add one label/check. In an AI-enabled practical, an explicitly named challenge may permit AI-assisted code writing, provided its required model/units, plan, output, validation, interpretation, and defence hook remain visible.
+- In a practical, limit each Core `TODO` to one bounded action: complete one expression, choose one index, modify one parameter, repair one identified defect, or add one label/check.
 - Never hide essential Core logic in a custom function that students have not yet traced.
 
 Make every script runnable from a fresh MATLAB session without hidden Workspace state or manual preconditions. Declare parameters together with units and use names that make units visible where practical, such as `T_half_h`, `dt_s`, or `mass_kg`. Separate parameters, physics model, numerical method, validation, and visualisation into clearly identifiable code sections.
@@ -165,7 +157,7 @@ Keep any surrounding caption or explanation concise and ensure that the illustra
 
 Record the MATLAB release, relevant toolboxes, parameter values and units, numerical settings, random seed where applicable, validation evidence, and expected run order. Keep the visible instructions sufficient for another person to reproduce the result from a fresh MATLAB session.
 
-For AI-assisted work, include the AI tool, what was generated or consulted, what was accepted/modified/rejected, and the independent checks performed by the student. Practical AI use may include writing or debugging code. Required checks may include units, limiting cases, convergence, residuals, conservation, reference results, and physical interpretation.
+For AI-assisted work, include what was generated or consulted and the independent checks performed by the student. Required checks may include units, limiting cases, convergence, residuals, conservation, reference results, and physical interpretation.
 
 Google Classroom is the official submission record for practical evidence. Gemini Notebook / NotebookLM may be linked from Classroom as a source-grounded Socratic tutor. Do not require students to paste a complete tutor transcript into the Live Script; record only material AI decisions and independent validation evidence where relevant.
 
@@ -177,4 +169,4 @@ Inspect the source as plain text and confirm the `%[text]`, `%%`, and `%[appendi
 
 Confirm that every code block has a concise preceding explanation, official MATLAB functions are used where appropriate, toolbox requirements are available or explicitly reported, every required embedded illustration is scientifically accurate and legible with retained provenance (or the documented omission is justified), and the student task can be completed from the visible instructions.
 
-For each lecture Core route, additionally confirm that a novice can identify the physical question, restate the equation in words, follow the pseudocode, trace the supplied code, complete every bounded task without inventing program structure, obtain an interpretable output, and carry out the required validation. For an AI-enabled practical, confirm instead that the supplied baseline runs cleanly, each micro-challenge states its evidence and defence hook, the completed reference solution runs fresh, and the student can meet the understanding requirements without a hidden chat-history requirement. Confirm that deleting every `Optional stretch` section leaves a complete runnable Core script.
+For each Core route, additionally confirm that a novice can identify the physical question, restate the equation in words, follow the pseudocode, trace the supplied code, complete every bounded task without inventing program structure, obtain an interpretable output, and carry out the required validation. Confirm that deleting every `Optional stretch` section leaves a complete runnable Core script.

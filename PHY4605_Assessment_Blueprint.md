@@ -24,7 +24,7 @@ A passing student should be able to:
 8. perform at least one appropriate validation check; and
 9. explain the main result or trend in physical language.
 
-Blank-page programming, independent formulation of an unfamiliar problem, several-method comparison, and advanced numerical diagnosis are distinction-level evidence in lectures and AI-free written assessments. In AI-enabled practicals, generative-AI code writing is permitted, but code volume never substitutes for verification, explanation, or physical reasoning.
+Blank-page programming, independent formulation of an unfamiliar problem, several-method comparison, and advanced numerical diagnosis are distinction-level evidence.
 
 ## Assessment principles
 
@@ -44,7 +44,7 @@ Blank-page programming, independent formulation of an unfamiliar problem, severa
 | Test 1 | 10% | 90-minute open-book written assessment | AI-free |
 | Test 2 | 10% | 90-minute open-book written assessment | AI-free |
 | Final examination | 40% | 120-minute open-book written examination | AI-free |
-| Practical portfolio | 15% | Ten AI-enabled group evidence packets: 12% group component, best eight counted, plus 3% cumulative individual defence ledger | AI allowed and declared |
+| Practical portfolio | 15% | Ten group evidence packets; best eight counted | AI allowed and declared |
 | Individual lab test | 10% | Individual scaffolded verification challenge | AI allowed and declared |
 | Capstone investigation | 15% | Bounded group project with starter Live Script and individual defence | AI allowed and declared |
 
@@ -194,37 +194,31 @@ The final may include a small number of stretch marks for less-scaffolded transf
 
 ## Practical portfolio
 
-Collect ten compact AI-enabled group evidence packets across the active practical weeks. Students work in groups of two or three and rotate the roles of model lead, algorithm/code lead, and validation/interpretation lead. They may use any generative-AI tool to formulate, write, debug, or improve MATLAB code. AI-generated code is allowed, but it never earns understanding marks by itself.
+Collect ten compact group evidence packets across the active practical weeks. Students work in groups of two or three and rotate the roles of model lead, algorithm/code lead, and validation/interpretation lead.
 
-Each practical uses ten progressive micro-challenges across three or four analogous supplied-model physics contexts. The contexts should normally differ from the lecture model, but every task supplies the necessary assumptions, equation or data, variables, units, and validation reference so that transfer of the current computational method—not hidden unfamiliar theory—is assessed.
+Each core packet contains:
 
-Each group packet contains, for every micro-challenge:
+1. one prediction;
+2. the model variables and units;
+3. short supplied, arranged, or completed pseudocode;
+4. one traced, completed, or modified code section;
+5. one selected computational output;
+6. one core validation check;
+7. one physical interpretation and limitation; and
+8. a concise AI-use decision record where relevant.
 
-1. a prediction or stated expectation;
-2. the relevant model, variables, and units;
-3. a concise computational plan, pseudocode, or prompt plan;
-4. runnable MATLAB code and one selected output;
-5. a fresh-session reproducibility record;
-6. one required validation check;
-7. a physical interpretation and one limitation where relevant; and
-8. a concise AI decision record: tool, material request, accepted/modified/rejected output, and independent checks.
+Require all ten submissions but count the best eight for the group component. Use selected individual entry/exit checks to establish participation without requiring lengthy additional reports.
 
-Require all ten submissions but count the best eight for the 12% group component. Google Classroom is the system of record. Practical packets should be brief enough that feedback can target reasoning rather than formatting volume.
-
-| Group-evidence criterion | Weight within the 12% component |
+| Criterion | Weight within portfolio |
 | --- | ---: |
 | Model and units | 15% |
-| Algorithm, pseudocode, or prompt plan | 15% |
-| Runnable code, output, and reproducibility | 20% |
-| Validation | 20% |
+| Algorithm and pseudocode | 20% |
+| Code reading, completion, or modification | 25% |
+| Validation | 15% |
 | Physical interpretation and limitation | 20% |
-| Responsible AI decision record | 10% |
+| Responsible AI decision record | 5% |
 
-### Individual defence ledger
-
-After each group has locked its submission, assign every group a question slot and randomly select one group member to defend it. The draw must occur after submission, and the selected student must explain the model, trace the relevant code/output, and answer one validation or parameter-change follow-up. For cohorts with more groups than question slots, reuse a slot only with a distinct post-submission parameter or defect variant.
-
-Maintain a hidden rotation ledger: within a group, do not select a student again until every member has been selected; record an absence and schedule a make-up defence. Establish one completed defence entry for every member before any member receives a second entry, then calculate the cumulative average of each student's scored defences for the 3% individual component. Score each defence equally across model/units, code/output trace, validation or parameter perturbation, and physical interpretation/AI judgement.
+Google Classroom is the system of record. Practical packets should be brief enough that feedback can target reasoning rather than formatting volume.
 
 ## Individual AI-assisted lab test
 
@@ -331,14 +325,14 @@ Gemini Notebook / NotebookLM may provide source-grounded Socratic guidance. It s
 
 ## Responsible AI evidence
 
-AI is allowed in practicals, the individual lab test, and the capstone. In practicals, students may use any generative-AI tool to write, debug, or improve code. Students provide a concise record of:
+AI is allowed in practicals, the individual lab test, and the capstone. Students provide a concise record of:
 
 - what assistance was requested;
 - what output was accepted, modified, or rejected;
 - why that decision was made; and
 - which check was used before accepting the output.
 
-Do not require complete chat histories and do not use AI-detection scores as misconduct evidence. Establish validity through code tracing, post-submission parameter/defect variants, short individual explanations, process checkpoints, reproducibility, and validation.
+Do not require complete chat histories and do not use AI-detection scores as misconduct evidence. Establish validity through code tracing, parameter variants, short explanations, process checkpoints, reproducibility, and validation.
 
 Google Classroom remains the official submission/evidence record. Gemini Notebook / NotebookLM is a learning companion. Written tests and the final examination remain AI-free.
 

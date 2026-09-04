@@ -1,0 +1,101 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+impulse_upper_bound_Ns =
+
+    24
+
+
+first_trapezoid_Ns =
+
+    4.6058
+
+
+J_coarse_manual_Ns =
+
+    9.0970
+
+
+J_coarse_trapz_Ns =
+
+    9.0970
+
+
+refinement_table =
+
+  3×3 table
+
+    Intervals    DeltaT_s    ImpulseTrapz_Ns
+    _________    ________    _______________
+
+        4           0.5           9.097     
+        8          0.25          8.8836     
+       16         0.125          8.8299     
+
+
+J_exact_Ns =
+
+    8.8120
+
+
+validation_table =
+
+  3×5 table
+
+    Intervals    DeltaT_s    ImpulseTrapz_Ns    AbsoluteError_Ns    RelativeError_percent
+    _________    ________    _______________    ________________    _____________________
+
+        4           0.5           9.097                0.285                3.2342       
+        8          0.25          8.8836             0.071596               0.81248       
+       16         0.125          8.8299             0.017921               0.20337       
+
+
+finest_impulse_Ns =
+
+    8.8299
+
+
+finest_abs_error_Ns =
+
+    0.0179
+
+
+finest_rel_error_percent =
+
+    0.2034
+
+
+wrong_missing_time_axis =
+
+   18.1940
+
+
+correct_with_time_axis_Ns =
+
+    9.0970
+
+
+simpson_abs_error_Ns =
+
+   4.6150e-04
+
+
+error_reduction_factor =
+
+    3.9807    3.9951
+
+
+reference_summary =
+
+  1×7 table
+
+    ImpulseExact_Ns    ImpulseFineTrapz_Ns    ImpulseSuppliedSimpson_Ns    WorkExact_J    WorkFineTrapz_J    ChargeExact_C    ChargeFineTrapz_C
+    _______________    ___________________    _________________________    ___________    _______________    _____________    _________________
+
+        9.5021               9.5516                    9.5053                5.9307            5.936           0.017104           0.017193     
+

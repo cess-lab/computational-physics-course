@@ -1,0 +1,5 @@
+Built-in image_gen, scientific-educational, PHY4605 Matte Scientific Cutaway.
+vertical-launch-prediction.png: vertical launch, sparse sampled positions, initial-condition prediction; used on slide 2 only.
+stroboscopic-sampled-positions.png: five vertical sampled positions and time-step progression; used on slide 6 only.
+debugging-validation-sign.png: downward gravity expectation and rejected upward-sign expectation; used on slide 13 only.
+All prompts prohibited embedded text, equations, axes, legends, labels, numbers, logos, watermarks, and frames.

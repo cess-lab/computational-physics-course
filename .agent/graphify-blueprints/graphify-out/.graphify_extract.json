@@ -1,0 +1,795 @@
+{
+  "nodes": [
+    {
+      "id": "corpus_agents",
+      "label": "PHY4605 Course-Material Blueprint",
+      "file_type": "document",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_agents_course_reasoning_chain",
+      "label": "Computational Physics Reasoning Chain",
+      "file_type": "rationale",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "rationale": "The required instructional sequence connects physical modelling, numerical implementation, validation, and interpretation."
+    },
+    {
+      "id": "corpus_agents_assessment_architecture",
+      "label": "PHY4605 Assessment Architecture",
+      "file_type": "concept",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_agents_digital_learning_architecture",
+      "label": "Digital Learning and Submission Architecture",
+      "file_type": "concept",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_agents_google_classroom",
+      "label": "Google Classroom",
+      "file_type": "concept",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_agents_notebooklm",
+      "label": "Gemini Notebook / NotebookLM",
+      "file_type": "concept",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_agents_matlab",
+      "label": "MATLAB",
+      "file_type": "concept",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_agents_weekly_package",
+      "label": "Weekly Student-Facing Package Convention",
+      "file_type": "concept",
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_assessment_blueprint",
+      "label": "PHY4605 Assessment Blueprint",
+      "file_type": "document",
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_assessment_blueprint_defensible_computational_experiment",
+      "label": "Defensible Computational Experiment",
+      "file_type": "concept",
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_assessment_blueprint_mathworks_copilot",
+      "label": "MathWorks MATLAB Copilot Documentation",
+      "file_type": "document",
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "source_url": "https://www.mathworks.com/help/matlab-copilot/ug/set-up-matlab-copilot.html",
+      "captured_at": null,
+      "author": "MathWorks",
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_assessment_blueprint_teqsa_assessment_reform",
+      "label": "TEQSA Assessment Reform for the Age of Artificial Intelligence",
+      "file_type": "paper",
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "source_url": "https://www.teqsa.gov.au/sites/default/files/2023-09/assessment-reform-age-artificial-intelligence-discussion-paper.pdf",
+      "captured_at": null,
+      "author": "TEQSA",
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_assessment_blueprint_weller_computational_thinking",
+      "label": "Weller et al. Computational-Thinking Practices in Introductory Physics",
+      "file_type": "paper",
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "source_url": "https://journals.aps.org/prper/abstract/10.1103/PhysRevPhysEducRes.18.020106",
+      "captured_at": null,
+      "author": "Weller et al.",
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_learning_note_design_spec",
+      "label": "PHY4605 Learning Note Design Specification",
+      "file_type": "document",
+      "source_file": "corpus/PHY4605_Learning_Note_Design_Spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_learning_note_design_spec_academic_scientific_learning_note",
+      "label": "PHY4605 Academic Scientific Learning Note",
+      "file_type": "concept",
+      "source_file": "corpus/PHY4605_Learning_Note_Design_Spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_lecture_slide_design_spec",
+      "label": "PHY4605 Lecture Slide Deck Design Specification",
+      "file_type": "document",
+      "source_file": "corpus/PHY4605_Lecture_Slide_Design_Spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_lecture_slide_design_spec_imagegen_raster_contract",
+      "label": "ImageGen Full-Slide Raster Contract",
+      "file_type": "concept",
+      "source_file": "corpus/PHY4605_Lecture_Slide_Design_Spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_lecture_slide_design_spec_scientific_educational_image_slides",
+      "label": "scientific-educational-image-slides Skill",
+      "file_type": "concept",
+      "source_file": "corpus/PHY4605_Lecture_Slide_Design_Spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_matlab_live_script_design_spec",
+      "label": "PHY4605 MATLAB Live Script Design Specification",
+      "file_type": "document",
+      "source_file": "corpus/PHY4605_MATLAB_Live_Script_Design_Spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_phy4605_matlab_live_script_design_spec_physics_first_reproducible_notebook",
+      "label": "PHY4605 Physics-First Reproducible MATLAB Notebook",
+      "file_type": "concept",
+      "source_file": "corpus/PHY4605_MATLAB_Live_Script_Design_Spec.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_readme",
+      "label": "PHY4605 Computational Methods in Physics",
+      "file_type": "document",
+      "source_file": "corpus/README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": "Dr. Muhammad Khairul Adib Muhammad Yusof",
+      "contributor": null
+    },
+    {
+      "id": "corpus_week01_readme",
+      "label": "PHY4605 Week 01",
+      "file_type": "document",
+      "source_file": "corpus/Week01_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week01_readme_newton_cooling_diagnostic",
+      "label": "Newton Cooling Onramp Diagnostic",
+      "file_type": "concept",
+      "source_file": "corpus/Week01_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week02_readme",
+      "label": "PHY4605 Week 02",
+      "file_type": "document",
+      "source_file": "corpus/Week02_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week02_readme_reliable_computational_workflow",
+      "label": "Reliable Computational Workflow",
+      "file_type": "concept",
+      "source_file": "corpus/Week02_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week03_readme",
+      "label": "PHY4605 Week 03",
+      "file_type": "document",
+      "source_file": "corpus/Week03_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week03_readme_kirchhoff_linear_systems",
+      "label": "Kirchhoff Linear-System Modelling",
+      "file_type": "concept",
+      "source_file": "corpus/Week03_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week03_readme_capstone_problem_spaces",
+      "label": "Bounded Capstone Problem Spaces",
+      "file_type": "concept",
+      "source_file": "corpus/Week03_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week04_readme",
+      "label": "PHY4605 Week 04",
+      "file_type": "document",
+      "source_file": "corpus/Week04_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week04_readme_coupled_oscillator_eigenproblems",
+      "label": "Coupled-Oscillator Eigenproblems",
+      "file_type": "concept",
+      "source_file": "corpus/Week04_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week04_readme_capstone_question_selection",
+      "label": "Capstone Question Selection",
+      "file_type": "concept",
+      "source_file": "corpus/Week04_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week05_readme",
+      "label": "PHY4605 Week 05",
+      "file_type": "document",
+      "source_file": "corpus/Week05_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week05_readme_kepler_root_finding",
+      "label": "Kepler Equation Root Finding",
+      "file_type": "concept",
+      "source_file": "corpus/Week05_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    },
+    {
+      "id": "corpus_week05_readme_midsemester_report",
+      "label": "Weeks 01-06 Mid-Semester Report",
+      "file_type": "concept",
+      "source_file": "corpus/Week05_README.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null
+    }
+  ],
+  "edges": [
+    {
+      "source": "corpus_agents",
+      "target": "corpus_phy4605_assessment_blueprint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents",
+      "target": "corpus_phy4605_learning_note_design_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents",
+      "target": "corpus_phy4605_lecture_slide_design_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents",
+      "target": "corpus_phy4605_matlab_live_script_design_spec",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents",
+      "target": "corpus_agents_course_reasoning_chain",
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents",
+      "target": "corpus_agents_assessment_architecture",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents",
+      "target": "corpus_agents_digital_learning_architecture",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents_digital_learning_architecture",
+      "target": "corpus_agents_google_classroom",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents_digital_learning_architecture",
+      "target": "corpus_agents_notebooklm",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_agents_digital_learning_architecture",
+      "target": "corpus_agents_matlab",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_assessment_blueprint",
+      "target": "corpus_phy4605_assessment_blueprint_defensible_computational_experiment",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_assessment_blueprint",
+      "target": "corpus_phy4605_assessment_blueprint_mathworks_copilot",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_assessment_blueprint",
+      "target": "corpus_phy4605_assessment_blueprint_teqsa_assessment_reform",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_assessment_blueprint",
+      "target": "corpus_phy4605_assessment_blueprint_weller_computational_thinking",
+      "relation": "cites",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_Assessment_Blueprint.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_learning_note_design_spec",
+      "target": "corpus_phy4605_learning_note_design_spec_academic_scientific_learning_note",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_Learning_Note_Design_Spec.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_lecture_slide_design_spec",
+      "target": "corpus_phy4605_lecture_slide_design_spec_imagegen_raster_contract",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_Lecture_Slide_Design_Spec.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_lecture_slide_design_spec",
+      "target": "corpus_phy4605_lecture_slide_design_spec_scientific_educational_image_slides",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_Lecture_Slide_Design_Spec.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_phy4605_matlab_live_script_design_spec",
+      "target": "corpus_phy4605_matlab_live_script_design_spec_physics_first_reproducible_notebook",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/PHY4605_MATLAB_Live_Script_Design_Spec.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_readme",
+      "target": "corpus_agents",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_readme",
+      "target": "corpus_phy4605_assessment_blueprint",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_readme",
+      "target": "corpus_week01_readme",
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_readme",
+      "target": "corpus_agents_course_reasoning_chain",
+      "relation": "semantically_similar_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "corpus/README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week01_readme",
+      "target": "corpus_week01_readme_newton_cooling_diagnostic",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week01_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week01_readme",
+      "target": "corpus_agents_google_classroom",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week01_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week02_readme",
+      "target": "corpus_week02_readme_reliable_computational_workflow",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week02_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week02_readme",
+      "target": "corpus_agents_google_classroom",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week02_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week03_readme",
+      "target": "corpus_week03_readme_kirchhoff_linear_systems",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week03_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week03_readme",
+      "target": "corpus_week03_readme_capstone_problem_spaces",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week03_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week03_readme",
+      "target": "corpus_agents_google_classroom",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week03_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week04_readme",
+      "target": "corpus_week04_readme_coupled_oscillator_eigenproblems",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week04_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week04_readme",
+      "target": "corpus_week04_readme_capstone_question_selection",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week04_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week04_readme",
+      "target": "corpus_agents_google_classroom",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week04_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week04_readme_capstone_question_selection",
+      "target": "corpus_week03_readme_capstone_problem_spaces",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "source_file": "corpus/Week04_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week05_readme",
+      "target": "corpus_week05_readme_kepler_root_finding",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week05_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week05_readme",
+      "target": "corpus_week05_readme_midsemester_report",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week05_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week05_readme",
+      "target": "corpus_agents_google_classroom",
+      "relation": "conceptually_related_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/Week05_README.md",
+      "source_location": null,
+      "weight": 1.0
+    },
+    {
+      "source": "corpus_week05_readme_kepler_root_finding",
+      "target": "corpus_phy4605_matlab_live_script_design_spec",
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "corpus/Week05_README.md",
+      "source_location": null,
+      "weight": 1.0
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "weekly_design_specification_routing",
+      "label": "Weekly Artifact Design Specification Routing",
+      "nodes": [
+        "corpus_agents",
+        "corpus_phy4605_learning_note_design_spec",
+        "corpus_phy4605_lecture_slide_design_spec",
+        "corpus_phy4605_matlab_live_script_design_spec"
+      ],
+      "relation": "implement",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md"
+    },
+    {
+      "id": "digital_course_platform_roles",
+      "label": "PHY4605 Digital Course Platform Roles",
+      "nodes": [
+        "corpus_agents_google_classroom",
+        "corpus_agents_notebooklm",
+        "corpus_agents_matlab"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "corpus/AGENTS.md"
+    },
+    {
+      "id": "early_capstone_progression",
+      "label": "Early Capstone Progression",
+      "nodes": [
+        "corpus_week03_readme_capstone_problem_spaces",
+        "corpus_week04_readme_capstone_question_selection",
+        "corpus_week05_readme_midsemester_report"
+      ],
+      "relation": "form",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "corpus/AGENTS.md"
+    }
+  ],
+  "input_tokens": 0,
+  "output_tokens": 0
+}

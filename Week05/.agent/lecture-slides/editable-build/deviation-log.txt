@@ -1,0 +1,11 @@
+Intentional deviations from the approved master proof
+
+1. Slide-local Week 01 copy, equations, tables, charts, and visuals are replaced
+   with Week 05 root-finding content; this prevents cross-week scientific mismatch.
+2. The Week 05 title slide uses the approved projectile visual asset from the shared
+   PHY4605 lecture-slide system instead of the Week 01 vertical-motion hero.
+3. Week 05 equations and exact computed values are inserted as deterministic local
+   LaTeX-rendered images or native text only where a display equation is not needed.
+4. The MATLAB residual plot remains a strict MATLAB-generated source asset and is
+   embedded as an image; all exact graph labels and evidence remain visible and
+   traceable in the plot asset and speaker notes.

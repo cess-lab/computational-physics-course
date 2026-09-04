@@ -1,0 +1,255 @@
+{
+  "deck_name": "Lecture_Slides_Week01_Teaching_Courseware",
+  "language": "English",
+  "goal": "Teach Year-2 physics students to move from a familiar vertical-motion model to named MATLAB variables, sampled arrays, element-wise operations, a labelled plot, and one executable physical validation check.",
+  "deck_context": {
+    "source_summary": "This Week 01 lecture repairs uncertain MATLAB foundations through one familiar model: a ball launched vertically upward with air resistance neglected. Students predict the motion, identify variables and units, create a time array, use MATLAB indexing and element-wise operators, plot height against time, and validate the known launch value.",
+    "core_claim": "A physical model becomes trustworthy computational evidence only when its variables, arrays, operations, plot, and validation check stay connected.",
+    "canonical_terms": [
+      "vertical motion",
+      "physical model",
+      "variables and units",
+      "time array",
+      "MATLAB indexing starts at 1",
+      "element-wise operators",
+      "labelled plot",
+      "boundary check",
+      "physical interpretation"
+    ],
+    "locked_model": {
+      "equation": "y(t) = y0 + v0 t - (1/2) g t^2",
+      "assumptions": ["upward is positive", "air resistance is neglected"],
+      "values": {
+        "y0": "0 m",
+        "v0": "20 m s^-1",
+        "g": "9.81 m s^-2",
+        "time": "0:0.1:4 s"
+      },
+      "predictions": ["starts at y = 0 m", "rises to one maximum", "falls back toward the launch height"],
+      "required_validation": "y(0) = 0 m, represented in MATLAB as y_m(1)"
+    }
+  },
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 6,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "approved sample prompt for Slide 7, using the current element-wise-operator slide as a strict content reference",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "origin_image/slide_07.png",
+    "input_context_preparation": "view_image inspected the local source slide before built-in image editing; the approved sample is the final style reference",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware",
+    "visual_direction": "clear, friendly, modern educational slide system with strong hierarchy, approachable diagrams, and visual pacing for learners",
+    "color_palette": "white or very light neutral canvas; navy and cool gray structure; restrained model blue, valid teal/green, evaluation gold, and occasional caution coral; pale fills only",
+    "typography": "large bold sans-serif titles, short readable instructional text, crisp exact MATLAB code and symbols, clear labels, generous line spacing",
+    "texture_and_finish": "flat clean educational finish with sparse linework, simple diagrams, rounded teaching modules, no shadows, no gradients, no decorative clutter",
+    "deck_consistency": "keep the same palette, typography mood, icon language, spacing, and approachable scientific tone across all slides while varying composition by teaching role"
+  },
+  "approved_style_reference": {
+    "path": "origin_image/slide_07.png",
+    "role": "approved sample slide style reference",
+    "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Physics to Arrays and Plots",
+      "role": "cover",
+      "intent": "Open with one familiar physical story and make the model-to-evidence journey visible.",
+      "key_points": [
+        "A familiar vertical-motion model becomes a computational object.",
+        "The route is physical model, arrays, plot, validation, and interpretation.",
+        "The emphasis is on reading and tracing a model clearly."
+      ],
+      "local_context": "Show a ball launched vertically upward; upward is positive, air resistance is neglected, and the visual states are launch, highest point, and return.",
+      "layout": {"composition": "sparse cover with large title on the left and a friendly vertical-motion cutaway on the right; a small four-part reasoning chain sits low on the canvas"},
+      "visual_elements": {"main_visual": "one-dimensional vertical-motion illustration with launch, peak, return, and gravity direction", "supporting_elements": "small connected labels for physical model, arrays, plot, validation"},
+      "required_images": [
+        {"path": "../lecture-slides/assets/projectile-visual-matte.png", "role": "strict input asset; main vertical-motion illustration", "fidelity": "preserve launch, peak, return, gravity, and colour mapping"}
+      ],
+      "source_image_rules": "Use the supplied illustration as the visible scientific visual; do not redraw it as a different physical situation.",
+      "constraints": ["Keep the cover sparse.", "No agenda grid, no slide number, no watermark."]
+    },
+    {
+      "number": 2,
+      "title": "Start with a physical prediction",
+      "role": "context",
+      "intent": "Ask learners to predict the output shape before any MATLAB syntax appears.",
+      "key_points": ["The ball starts at y = 0 m.", "It rises to one maximum.", "It falls back toward the launch height."],
+      "local_context": "The prediction refers to the locked vertical-motion model with y0 = 0 m, v0 = 20 m s^-1, g = 9.81 m s^-2, upward positive, and no air resistance.",
+      "layout": {"composition": "three-state visual sequence across the slide with short prediction prompts beneath launch, peak, and return; keep the question visually dominant"},
+      "visual_elements": {"main_visual": "three highlighted states along a vertical trajectory", "supporting_elements": "small arrows and prediction words: starts, rises, falls"},
+      "required_images": [
+        {"path": "../lecture-slides/assets/equation-motion-vertical-matte-v2.png", "role": "strict input asset; one-dimensional vertical-motion cutaway", "fidelity": "preserve direction and physical state mapping"}
+      ],
+      "source_image_rules": "Preserve the supplied one-dimensional motion visual and compose concise prediction labels around it.",
+      "constraints": ["Do not show MATLAB code on this slide.", "Use no more than three short prediction statements.", "No slide number."]
+    },
+    {
+      "number": 3,
+      "title": "The equation links each term to motion",
+      "role": "concept explanation",
+      "intent": "Make the analytical model readable before translating it into MATLAB.",
+      "key_points": ["y0 is the starting position.", "v0 t is the upward contribution.", "-(1/2) g t^2 is the gravity contribution.", "Every term on the right has units of metres."],
+      "local_context": "Use y(t) = y0 + v0 t - (1/2) g t^2 with upward positive and air resistance neglected. The final quantity y(t) is vertical position in metres.",
+      "layout": {"composition": "large exact equation across the upper middle; four colour-linked term annotations and a small trajectory diagram below"},
+      "visual_elements": {"main_visual": "equation with term-to-motion mapping", "supporting_elements": "pale navy, blue, gold, and teal callouts; unit check strip"},
+      "required_images": [
+        {"path": "../lecture-slides/assets/equations/vertical-motion-position-equation.png", "role": "strict input asset; exact position equation", "fidelity": "preserve symbols, signs, superscript, and spacing"},
+        {"path": "../lecture-slides/assets/equation-motion-vertical-matte-v2.png", "role": "strict input asset; supporting vertical-motion diagram", "fidelity": "preserve physical direction and states"}
+      ],
+      "source_image_rules": "Use the supplied equation asset and supporting diagram visibly; do not invent a different formula or sign convention.",
+      "constraints": ["Exact equation typography is essential.", "Keep the unit statement short and prominent.", "No slide number."]
+    },
+    {
+      "number": 4,
+      "title": "Names and units keep the model readable",
+      "role": "mapping",
+      "intent": "Reduce ambiguity by translating physical quantities into meaningful MATLAB names before code reading.",
+      "key_points": ["Translate t, y, v0, and g before writing code.", "Keep units visible in names or comments.", "Distinguish variables from fixed parameters.", "Readable names support unit checks."],
+      "local_context": "Preferred MATLAB naming convention is t_s, y_m, v0_mps, and g_mps2. Units are s, m, m s^-1, and m s^-2.",
+      "layout": {"composition": "wide four-column mapping table: physics symbol, meaning, MATLAB name, unit; one row per quantity"},
+      "visual_elements": {"main_visual": "colour-coded mapping table", "supporting_elements": "small symbol and unit markers; a bottom callout connecting naming to fewer syntax mistakes"},
+      "required_images": [
+        {"path": "../lecture-slides/assets/equations/symbol-t.png", "role": "strict input asset; exact time symbol", "fidelity": "preserve symbol appearance"},
+        {"path": "../lecture-slides/assets/equations/symbol-y.png", "role": "strict input asset; exact position symbol", "fidelity": "preserve symbol appearance"},
+        {"path": "../lecture-slides/assets/equations/symbol-v0.png", "role": "strict input asset; exact initial-velocity symbol", "fidelity": "preserve subscript"},
+        {"path": "../lecture-slides/assets/equations/symbol-g.png", "role": "strict input asset; exact gravitational-acceleration symbol", "fidelity": "preserve symbol and gold semantic colour"}
+      ],
+      "source_image_rules": "Keep the exact supplied symbols and use their semantic colour mapping consistently.",
+      "constraints": ["Do not compress the table into tiny text.", "No slide number."]
+    },
+    {
+      "number": 5,
+      "title": "Build the time array first",
+      "role": "worked example",
+      "intent": "Show that an array is a physical sampling plan with one time value for each computed height.",
+      "key_points": ["t_s = 0:0.1:4; creates 41 samples.", "t_s = linspace(0,4,41); creates the same endpoints and count.", "length(t_s) reports 41.", "MATLAB indexing starts at 1."],
+      "local_context": "Both code lines represent time in seconds from 0 to 4 s. Use exact MATLAB syntax and readable code typography.",
+      "layout": {"composition": "left: two code routes in a single comparison panel; right: sampled time axis with launch and end highlighted; bottom: one short indexing reminder"},
+      "visual_elements": {"main_visual": "horizontal time-sample axis", "supporting_elements": "two code snippets, 41-sample count, and launch/end markers"},
+      "required_images": [],
+      "source_image_rules": "No supplied visual is required; render the exact code as legible teaching typography.",
+      "constraints": ["Preserve punctuation in both MATLAB lines.", "Do not add a dense table.", "No slide number."]
+    },
+    {
+      "number": 6,
+      "title": "An index selects one physical moment",
+      "role": "guided trace",
+      "intent": "Connect abstract array positions to known moments in the motion.",
+      "key_points": ["t_s(1) is the launch time.", "t_s(11) selects 1.0 s.", "An index is not a time value.", "Read the array position before interpreting the physical state."],
+      "local_context": "Use the 41-sample time array from 0:0.1:4 s. Make the mapping t_s(1) = 0.0 s and t_s(11) = 1.0 s explicit.",
+      "layout": {"composition": "large sampled trajectory across the middle with index labels below; two magnified callouts identify index 1 and index 11"},
+      "visual_elements": {"main_visual": "array-to-trajectory mapping", "supporting_elements": "launch and one-second callouts; a short reminder that MATLAB starts at 1"},
+      "required_images": [
+        {"path": "../lecture-slides/assets/array-sampled-motion-matte-v2.png", "role": "strict input asset; sampled-motion and index mapping illustration", "fidelity": "preserve index-to-time mapping and state highlights"}
+      ],
+      "source_image_rules": "Include the supplied sampled-motion illustration visibly and preserve its mapping.",
+      "constraints": ["Do not imply zero-based indexing.", "No slide number."]
+    },
+    {
+      "number": 7,
+      "title": "Dots tell MATLAB to work through an array",
+      "role": "comparison",
+      "intent": "Repair the most important Week 1 syntax misconception by contrasting scalar arithmetic with per-sample array operations.",
+      "key_points": ["20 * 3 produces one number.", "v0_mps .* t_s produces one value for every time.", "t_s.^2 squares every stored time value.", "The dots make the operation element-wise."],
+      "local_context": "Use the exact strings 20 * 3, v0_mps .* t_s, and t_s.^2. The central visual should show one time array becoming one output value per sample.",
+      "layout": {"composition": "three comparison modules across the slide with a central array-to-output cue and a gold checkpoint strip along the bottom"},
+      "visual_elements": {"main_visual": "time array flowing to one result per sample", "supporting_elements": "neutral scalar module, blue multiplication module, gold square module, checkpoint callout"},
+      "required_images": [],
+      "source_image_rules": "Use the approved sample slide as the style reference only; this slide is already accepted and must be retained.",
+      "constraints": ["Exact MATLAB punctuation is essential.", "No slide number.", "Do not replace the operators with prose-only descriptions."],
+      "sample_approved": true
+    },
+    {
+      "number": 8,
+      "title": "The algorithm appears before the MATLAB syntax",
+      "role": "process diagram",
+      "intent": "Make the ordered computational plan explicit before students trace code.",
+      "key_points": ["Choose the model parameters.", "Create an array of times.", "Calculate height at every time.", "Plot height against time.", "Check the launch value."],
+      "local_context": "The five steps operate on the locked vertical-motion model and lead to one labelled height-time plot plus the launch-value validation.",
+      "layout": {"composition": "five-step process flowing left to right with each step represented by a simple scientific icon and one plain-language sentence"},
+      "visual_elements": {"main_visual": "ordered algorithm pathway", "supporting_elements": "numbered circles, arrows, and a small check symbol at the final step"},
+      "required_images": [],
+      "source_image_rules": "No supplied visual is required; use simple diagrams only.",
+      "constraints": ["Keep each step concise.", "Do not show a full code block here.", "No slide number."]
+    },
+    {
+      "number": 9,
+      "title": "Short code should expose the physics",
+      "role": "code reading",
+      "intent": "Guide students to locate model parameters, array construction, element-wise calculation, plotting, and checking in a runnable fragment.",
+      "key_points": ["Read comments and variable names first.", "Locate the parameters and time array.", "Trace the model line with .* and .^.", "Locate the plot and boundary check."],
+      "local_context": "Use this exact code fragment: v0 = 20; g = 9.81; t = linspace(0,4,11); y = v0.*t - 0.5*g.*t.^2; plot(t,y,'LineWidth',2); y(1). Keep comments concise and code readable.",
+      "layout": {"composition": "large code panel on the left with five numbered trace markers; a narrow right column names what each region represents physically"},
+      "visual_elements": {"main_visual": "high-contrast MATLAB code fragment", "supporting_elements": "five labelled trace markers: parameters, array, calculation, plot, check"},
+      "required_images": [],
+      "source_image_rules": "No supplied visual is required; exact code is the primary visual content.",
+      "constraints": ["Preserve MATLAB punctuation and comments.", "No tiny code.", "No slide number."]
+    },
+    {
+      "number": 10,
+      "title": "A labelled plot turns values into evidence",
+      "role": "data evidence",
+      "intent": "Show how a graph answers the physical question only when its shape, labels, and units agree with a stated prediction.",
+      "key_points": ["The curve starts at y = 0 m.", "It rises to one maximum.", "It falls toward the launch height.", "Axis labels, units, and title make the output interpretable."],
+      "local_context": "The supplied MATLAB plot is the height-time evidence for the locked vertical-motion model; preserve its data shape, axes, labels, units, and values.",
+      "layout": {"composition": "large supplied plot on the right; three prediction statements on the left connected to the corresponding parts of the curve"},
+      "visual_elements": {"main_visual": "supplied MATLAB-generated height-time plot", "supporting_elements": "prediction checklist and short caption"},
+      "required_images": [
+        {"path": "../lecture-slides/assets/matlab-figures/height_time_evidence.png", "role": "strict input asset; main MATLAB evidence plot", "fidelity": "preserve data, axes, labels, units, curve, and values; do not redraw"}
+      ],
+      "source_image_rules": "Embed the supplied plot as the evidence figure; do not synthesize a replacement chart.",
+      "constraints": ["Keep the plot large enough to read.", "Do not add unrelated data.", "No slide number."]
+    },
+    {
+      "number": 11,
+      "title": "A boundary check can reveal an error that a smooth curve hides",
+      "role": "validation",
+      "intent": "Model the minimum executable physical check students should perform before trusting a result.",
+      "key_points": ["The known condition is y(0) = 0 m.", "In a one-based array this is y_m(1).", "assert(abs(y_m(1)) < 1e-12) makes the check executable.", "A smooth graph is not enough."],
+      "local_context": "The validation compares the computed first array value with the known launch condition. Use a clear passing state and retain the exact assert syntax.",
+      "layout": {"composition": "left: launch-state illustration; right: computed first value and passing check in a teal/green validation panel; bottom: one caution sentence"},
+      "visual_elements": {"main_visual": "launch boundary condition connected to y_m(1)", "supporting_elements": "exact assert line, check mark, and brief warning against trusting a smooth curve alone"},
+      "required_images": [
+        {"path": "../lecture-slides/assets/launch-boundary-condition-matte.png", "role": "strict input asset; launch boundary illustration", "fidelity": "preserve launch state and validation meaning"},
+        {"path": "../lecture-slides/assets/equations/computed-first-value.png", "role": "strict input asset; computed first value expression", "fidelity": "preserve exact expression and value"},
+        {"path": "../lecture-slides/assets/equations/launch-time.png", "role": "strict input asset; launch time expression", "fidelity": "preserve exact time statement"}
+      ],
+      "source_image_rules": "Use the supplied launch and equation assets visibly; do not replace the validation with a generic quality badge.",
+      "constraints": ["Make the passing check visually unambiguous.", "Red may appear only for the warning about an unchecked result.", "No slide number."]
+    },
+    {
+      "number": 12,
+      "title": "Trace one model from physics to a graph",
+      "role": "synthesis",
+      "intent": "Consolidate the reusable Week 1 reasoning chain and prepare students to transfer it to later numerical methods.",
+      "key_points": ["Model: question, direction, variables, and units.", "Algorithm: sample, calculate, plot, and check.", "Code: read the dots in .* and .^.", "Evidence: prediction, labelled plot, and launch-value check."],
+      "local_context": "This slide restates the course-wide chain for the vertical-motion example and asks where a wrong sign would first become visible.",
+      "layout": {"composition": "four connected vertical or horizontal stages with one diagnostic checkpoint question spanning the bottom"},
+      "visual_elements": {"main_visual": "four-stage model-to-evidence chain", "supporting_elements": "compact arrows, semantic colours, and one wrong-sign diagnostic prompt"},
+      "required_images": [],
+      "source_image_rules": "No supplied visual is required; use a simple coherent chain.",
+      "constraints": ["Keep all four stages distinct.", "The diagnostic question must remain visible.", "No slide number."]
+    },
+    {
+      "number": 13,
+      "title": "Week 1 exit ticket",
+      "role": "summary and reflection",
+      "intent": "Give students a short individual checkpoint that asks them to restate the model-to-evidence chain in their own words.",
+      "key_points": ["Name the output variable and its unit.", "Explain what t_s(11) selects.", "Identify the operator that squares every value in t_s.", "State one graph prediction and one value that can be validated."],
+      "local_context": "Questions refer to the locked vertical-motion model, the 41-sample time array, element-wise operators, the labelled graph, and y_m(1) as the launch-value check. Do not reveal answers.",
+      "layout": {"composition": "four spacious learner-response prompts arranged vertically with a pale green bridge at the bottom: next time, turn the same model into a traceable algorithm"},
+      "visual_elements": {"main_visual": "numbered response prompts", "supporting_elements": "small writing lines and a restrained next-time bridge"},
+      "required_images": [],
+      "source_image_rules": "No supplied visual is required; keep the slide calm and writable.",
+      "constraints": ["Do not reveal answers.", "Avoid dense paragraphs.", "No slide number."]
+    }
+  ]
+}

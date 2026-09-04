@@ -6,7 +6,7 @@ import JSZip from "jszip";
 const ROOT = "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course";
 const SYSTEM = path.join(ROOT, ".agent/lecture-slide-system");
 const OUTPUT = path.join(SYSTEM, "masters/PHY4605_Editable_Slide_Master.pptx");
-const QA = path.join(SYSTEM, "qa/terra-sol-master-repair");
+const QA = path.join(SYSTEM, "qa/terra-sol-round1");
 const EQUATIONS_DIR = path.join(SYSTEM, "assets/equations");
 const MATLAB_FIGURES_DIR = path.join(SYSTEM, "assets/matlab-figures");
 const PROJECTILE = path.join(SYSTEM, "assets/projectile-visual-matte.png");
@@ -679,8 +679,7 @@ async function main() {
       { symbolAsset: "symbolT", symbolTex: "t", name: "time", code: "t", unitAsset: "unitS", unitTex: "\\mathrm{s}", unitWidth: 42, unitHeight: 17, unitTopOffset: 41, fill: C.paleBlue, color: C.blue },
       { symbolAsset: "symbolY", symbolTex: "y", name: "vertical position", code: "y", unitAsset: "unitM", unitTex: "\\mathrm{m}", unitWidth: 42, unitHeight: 17, unitTopOffset: 41, fill: C.paleValid, color: C.teal },
       { symbolAsset: "symbolV0", symbolTex: "v_0", name: "initial velocity", code: "v0", unitAsset: "unitMs1", unitTex: "\\mathrm{m\\,s^{-1}}", unitWidth: 160, unitHeight: 26, unitTopOffset: 36, fill: C.paleGold, color: C.gold },
-      // symbol-g.{tex,svg,png} is rendered with --fg #C98A16 to match this row.
-      { symbolAsset: "symbolG", symbolTex: "g", name: "gravitational acceleration", code: "g", unitAsset: "unitMs2", unitTex: "\\mathrm{m\\,s^{-2}}", unitWidth: 160, unitHeight: 26, unitTopOffset: 36, fill: C.paleGold, color: C.gold },
+      { symbolAsset: "symbolG", symbolTex: "g", name: "gravitational acceleration", code: "g", unitAsset: "unitMs2", unitTex: "\\mathrm{m\\,s^{-2}}", unitWidth: 160, unitHeight: 26, unitTopOffset: 36, fill: C.palePurple, color: C.purple },
     ];
     const cols = [115, 315, 870, 1370];
     ["physics symbol", "meaning", "MATLAB name", "unit"].forEach((label, i) => {
@@ -780,8 +779,8 @@ async function main() {
       addText(slide, term.head, { left: term.x + 24, top: 780, width: 302, height: 40 }, { fontSize: 24, bold: true, color: C.navy, alignment: "center", verticalAlignment: "middle" });
     });
 
-    addCard(slide, { left: 260, top: 850, width: 1260, height: 76 }, C.paleValid, C.teal);
-    addText(slide, "Unit check: every term on the right must have units of metres", { left: 305, top: 869, width: 1170, height: 42 }, { fontSize: 30, bold: true, color: C.teal, alignment: "center" });
+    addCard(slide, { left: 260, top: 850, width: 1260, height: 76 }, C.paleRed, C.red);
+    addText(slide, "Unit check: every term on the right must have units of metres", { left: 305, top: 869, width: 1170, height: 42 }, { fontSize: 30, bold: true, color: C.red, alignment: "center" });
     addSlideNumber(slide, 7);
     addNotes(slide, ["PHY4605 Lecture Slide Deck Design Specification", "Standard constant-acceleration kinematics equation", "LaTeX equation assets: `vertical-motion-position-equation.tex`, `term-y0.tex`, `term-v0t.tex`, `term-gravity.tex`, and `term-position.tex`; renderer `render-equations-diagrams`; transparent PNG fallback inserted after retaining matching SVG; foreground colours are encoded by semantic term role; target boxes use fit-contain; alt text attached; asset directory `.agent/lecture-slide-system/assets/equations`", "OpenAI ImageGen; PHY4605 Matte Scientific Cutaway visual-only strictly vertical y(t) time-sequence illustration, with no horizontal projectile path; generated 2026-08-31"]);
   }

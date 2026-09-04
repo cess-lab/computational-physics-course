@@ -1,0 +1,1224 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/m8tq4t",
+    "id": "m8tq4t",
+    "slide": 9,
+    "layoutId": "/ppt/slideLayouts/slideLayout3.xml",
+    "layoutName": "Content T1",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "masterLayoutName": "PHY4605 Borderless White Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "PHY4605",
+    "colors": {
+      "accent1": "#2F6DB2",
+      "accent2": "#2A9D9F",
+      "accent3": "#C98A16",
+      "accent4": "#6F4B9B",
+      "accent5": "#3E8E45",
+      "accent6": "#B3262E",
+      "dk1": "#0B2B4C",
+      "lt1": "#FFFFFF",
+      "dk2": "#3F4B57",
+      "lt2": "#F7F9FB",
+      "hlink": "#2F6DB2",
+      "folHlink": "#6F4B9B"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      },
+      "minorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      }
+    },
+    "typefaces": [
+      "Nunito"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout3.xml",
+      "name": "Content T1",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout3.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            88
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout3.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            152,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout3.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "PHY4605 Borderless White Master",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            88
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            152,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gr29k36h",
+      "id": "1",
+      "name": "PHY4605 inherited title treatment",
+      "bbox": [
+        115,
+        60,
+        1580,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Newton follows the local tangent",
+      "textPreview": "Newton follows the local tangent",
+      "resolvedFontSize": 68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 68,
+        "typeface": "Nunito",
+        "color": "#0B2B4C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Newton follows the local tangent"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Newton follows the local tangent",
+          "lineSpacingPercent": 94000,
+          "resolvedTextStyle": {
+            "fontSize": 68,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.94
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Newton follows the local tangent",
+              "fontSize": 68,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.94
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fq98by5w",
+      "id": "2",
+      "name": "PHY4605 inherited subtitle treatment",
+      "bbox": [
+        115,
+        152,
+        1580,
+        44
+      ],
+      "geometry": "rect",
+      "text": "A tangent turns the residual into a local correction",
+      "textPreview": "A tangent turns the residual into a local correction",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Nunito",
+        "color": "#3F4B57",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A tangent turns the residual into a local correction"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A tangent turns the residual into a local correction",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A tangent turns the residual into a local correction",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#3F4B57",
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ep0ritob",
+      "id": "3",
+      "name": "PHY4605 inherited slide-number treatment",
+      "bbox": [
+        1764,
+        976,
+        40,
+        28
+      ],
+      "geometry": "rect",
+      "text": "9",
+      "textPreview": "9",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "Nunito",
+        "color": "#697684",
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "9"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "9",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#697684",
+            "alignment": "right",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "9",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#697684",
+              "alignment": "right",
+              "lineSpacing": 1
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pwbqh8ny",
+      "id": "4",
+      "name": "newton-geometry-card",
+      "bbox": [
+        115,
+        285,
+        900,
+        560
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F7F9FB",
+      "lineColor": "#AAB4BE",
+      "lineWidth": 2
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ov29o36d",
+      "id": "5",
+      "name": "newton-schematic-x-axis",
+      "bbox": [
+        220,
+        730,
+        690,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#3F4B57",
+      "lineWidth": 3
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3ut8fy58",
+      "id": "6",
+      "name": "newton-schematic-y-axis",
+      "bbox": [
+        235,
+        370,
+        0,
+        360
+      ],
+      "geometry": "line",
+      "lineColor": "#3F4B57",
+      "lineWidth": 3
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2tkrmton",
+      "id": "7",
+      "name": "newton-schematic-zero",
+      "bbox": [
+        235,
+        525,
+        675,
+        0
+      ],
+      "geometry": "line",
+      "lineColor": "#AAB4BE",
+      "lineWidth": 2
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/xkvqlsna",
+      "id": "8",
+      "name": "newton-schematic-curve",
+      "bbox": [
+        235,
+        345,
+        690,
+        410
+      ],
+      "geometry": "custom",
+      "lineColor": "#2F6DB2",
+      "lineWidth": 5
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/cjm9sn6p",
+      "id": "9",
+      "name": "newton-schematic-current",
+      "bbox": [
+        584,
+        494,
+        22,
+        22
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#C98A16",
+      "lineColor": "#C98A16",
+      "lineWidth": 0
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/mhkbip43",
+      "id": "10",
+      "name": "newton-schematic-tangent",
+      "bbox": [
+        595,
+        505,
+        270,
+        20
+      ],
+      "geometry": "line",
+      "lineColor": "#C98A16",
+      "lineWidth": 4
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/7idcrul8",
+      "id": "11",
+      "name": "newton-schematic-root",
+      "bbox": [
+        853,
+        513,
+        24,
+        24
+      ],
+      "geometry": "ellipse",
+      "fillColor": "#3E8E45",
+      "lineColor": "#3E8E45",
+      "lineWidth": 0
+    },
+    {
+      "order": 12,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/8jmtkzmt",
+      "id": "12",
+      "name": "newton-schematic-current-label",
+      "bbox": [
+        525,
+        527,
+        140,
+        34
+      ],
+      "geometry": "rect",
+      "text": "current θ",
+      "textPreview": "current θ",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Nunito",
+        "color": "#C98A16",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "current θ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "current θ",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#C98A16",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "current θ",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#C98A16",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/9kvut43e",
+      "id": "13",
+      "name": "newton-schematic-root-label",
+      "bbox": [
+        795,
+        473,
+        140,
+        34
+      ],
+      "geometry": "rect",
+      "text": "next θ",
+      "textPreview": "next θ",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Nunito",
+        "color": "#3E8E45",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "next θ"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "next θ",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#3E8E45",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "next θ",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#3E8E45",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ul4bm94z",
+      "id": "14",
+      "name": "newton-schematic-zero-label",
+      "bbox": [
+        240,
+        492,
+        160,
+        30
+      ],
+      "geometry": "rect",
+      "text": "residual = 0",
+      "textPreview": "residual = 0",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Nunito",
+        "color": "#697684",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "residual = 0"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "residual = 0",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#697684",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "residual = 0",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#697684",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/vmdcvelk",
+      "id": "15",
+      "name": "newton-schematic-slope-label",
+      "bbox": [
+        665,
+        605,
+        160,
+        34
+      ],
+      "geometry": "rect",
+      "text": "local slope",
+      "textPreview": "local slope",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 22,
+        "typeface": "Nunito",
+        "color": "#C98A16",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "local slope"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "local slope",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#C98A16",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "local slope",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#C98A16",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/w7mtojm5",
+      "id": "16",
+      "name": "newton-geometry-caption",
+      "bbox": [
+        185,
+        785,
+        760,
+        36
+      ],
+      "geometry": "rect",
+      "text": "use the local slope to predict a better angle",
+      "textPreview": "use the local slope to predict a better angle",
+      "resolvedFontSize": 26,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 26,
+        "typeface": "Nunito",
+        "color": "#0B2B4C",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "use the local slope to predict a better angle"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "use the local slope to predict a better angle",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "use the local slope to predict a better angle",
+              "fontSize": 26,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/h8vuxo3q",
+      "id": "17",
+      "name": "newton-equation-card",
+      "bbox": [
+        1080,
+        285,
+        725,
+        560
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF7E6",
+      "lineColor": "#C98A16",
+      "lineWidth": 2
+    },
+    {
+      "order": 18,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ap0ba54v",
+      "id": "18",
+      "name": "newton-equation-heading",
+      "bbox": [
+        1120,
+        330,
+        645,
+        42
+      ],
+      "geometry": "rect",
+      "text": "Newton update",
+      "textPreview": "Newton update",
+      "resolvedFontSize": 33.33,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 34,
+        "typeface": "Nunito",
+        "color": "#C98A16",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.98,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Newton update"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Newton update",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Nunito",
+            "color": "#C98A16",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Newton update",
+              "fontSize": 34,
+              "typeface": "Nunito",
+              "color": "#C98A16",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 19,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/gza5wf6h",
+      "id": "19",
+      "bbox": [
+        1130,
+        420,
+        625,
+        210
+      ],
+      "alt": "LaTeX-rendered Newton update and degree-based residual slope",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "9a0fa4ec-44d0-4466-9f9f-659a3aa852cc",
+        "contentType": "image/png",
+        "byteLength": 21781
+      }
+    },
+    {
+      "order": 20,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fi50vmxw",
+      "id": "20",
+      "name": "newton-unit-note",
+      "bbox": [
+        1140,
+        690,
+        605,
+        76
+      ],
+      "geometry": "rect",
+      "text": "Because theta is in degree, the slope must be in m per degree",
+      "textPreview": "Because theta is in degree, the slope must be in m per degree",
+      "resolvedFontSize": 25,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 25,
+        "typeface": "Nunito",
+        "color": "#3F4B57",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Because theta is in degree, the slope must be in m"
+          },
+          {
+            "index": 2,
+            "text": "per degree"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Because theta is in degree, the slope must be in m per degree",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Because theta is in degree, the slope must be in m per degree",
+              "fontSize": 25,
+              "typeface": "Nunito",
+              "color": "#3F4B57",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 21,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/uhwz2hgb",
+      "id": "21",
+      "name": "newton-takeaway",
+      "bbox": [
+        115,
+        875,
+        1560,
+        50
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF7E6",
+      "lineWidth": 2
+    },
+    {
+      "order": 22,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1knixwfm",
+      "id": "22",
+      "name": "newton-takeaway-text",
+      "bbox": [
+        150,
+        885,
+        1490,
+        30
+      ],
+      "geometry": "rect",
+      "text": "Newton moves by residual divided by local slope",
+      "textPreview": "Newton moves by residual divided by local slope",
+      "resolvedFontSize": 23.81,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 24,
+        "typeface": "Nunito",
+        "color": "#C98A16",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.99,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Newton moves by residual divided by local slope"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Newton moves by residual divided by local slope",
+          "lineSpacingPercent": 105000,
+          "resolvedTextStyle": {
+            "fontSize": 24,
+            "typeface": "Nunito",
+            "color": "#C98A16",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.05
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Newton moves by residual divided by local slope",
+              "fontSize": 24,
+              "typeface": "Nunito",
+              "color": "#C98A16",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.05
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

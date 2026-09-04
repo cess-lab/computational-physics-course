@@ -1,0 +1,730 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/vvw18q",
+    "id": "vvw18q",
+    "slide": 13,
+    "layoutId": "/ppt/slideLayouts/slideLayout4.xml",
+    "layoutName": "Content T2",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "masterLayoutName": "PHY4605 Borderless White Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "PHY4605",
+    "colors": {
+      "accent1": "#2F6DB2",
+      "accent2": "#2A9D9F",
+      "accent3": "#C98A16",
+      "accent4": "#6F4B9B",
+      "accent5": "#3E8E45",
+      "accent6": "#B3262E",
+      "dk1": "#0B2B4C",
+      "lt1": "#FFFFFF",
+      "dk2": "#3F4B57",
+      "lt2": "#F7F9FB",
+      "hlink": "#2F6DB2",
+      "folHlink": "#6F4B9B"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      },
+      "minorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      }
+    },
+    "typefaces": [
+      "Nunito"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout4.xml",
+      "name": "Content T2",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout4.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            88
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout4.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            152,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout4.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "PHY4605 Borderless White Master",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            88
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            152,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fal876dk",
+      "id": "1",
+      "name": "PHY4605 inherited title treatment",
+      "bbox": [
+        115,
+        60,
+        1580,
+        88
+      ],
+      "geometry": "rect",
+      "text": "Working exposure: central difference and error behaviour",
+      "textPreview": "Working exposure: central difference and error behaviour",
+      "resolvedFontSize": 59.46,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 62,
+        "typeface": "Nunito",
+        "color": "#0B2B4C",
+        "bold": true,
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.96,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Working exposure: central difference and error behaviour"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Working exposure: central difference and error behaviour",
+          "lineSpacingPercent": 94000,
+          "resolvedTextStyle": {
+            "fontSize": 62,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left",
+            "lineSpacing": 0.94
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Working exposure: central difference and error behaviour",
+              "fontSize": 62,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true,
+              "alignment": "left",
+              "lineSpacing": 0.94
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gbu9gbe5",
+      "id": "2",
+      "name": "PHY4605 inherited subtitle treatment",
+      "bbox": [
+        115,
+        152,
+        1580,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Interpret supplied evidence only; no independent central-difference implementation is required",
+      "textPreview": "Interpret supplied evidence only; no independent central-difference implementation is required",
+      "resolvedFontSize": 30,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Nunito",
+        "color": "#3F4B57",
+        "alignment": "left",
+        "verticalAlignment": "top",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Interpret supplied evidence only; no independent central-difference implementation is required"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Interpret supplied evidence only; no independent central-difference implementation is required",
+          "lineSpacingPercent": 100000,
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "left",
+            "lineSpacing": 1
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Interpret supplied evidence only; no independent central-difference implementation is required",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#3F4B57",
+              "alignment": "left",
+              "lineSpacing": 1
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1c3a9gvq",
+      "id": "3",
+      "name": "PHY4605 inherited slide-number treatment",
+      "bbox": [
+        1764,
+        976,
+        40,
+        28
+      ],
+      "geometry": "rect",
+      "text": "13",
+      "textPreview": "13",
+      "resolvedFontSize": 22,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 22,
+        "typeface": "Nunito",
+        "color": "#697684",
+        "alignment": "right",
+        "verticalAlignment": "middle",
+        "wrap": "none",
+        "autoFit": "shrinkText",
+        "autoFitScale": 1,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "13"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "13",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#697684",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "13",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#697684",
+              "alignment": "right"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/rmlkz61g",
+      "id": "4",
+      "bbox": [
+        130,
+        280,
+        850,
+        130
+      ],
+      "alt": "Central-difference definition",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "a6ba2182-bb7e-4de2-a839-053c8c0c2175",
+        "contentType": "image/png",
+        "uri": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/equations/central-difference.png"
+      }
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/r6183mdo",
+      "id": "5",
+      "name": "central-note",
+      "bbox": [
+        1080,
+        270,
+        610,
+        190
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F5F1FB",
+      "lineColor": "#6F4B9B",
+      "lineWidth": 2
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/s7a9cre9",
+      "id": "6",
+      "name": "central-title",
+      "bbox": [
+        1110,
+        310,
+        550,
+        36
+      ],
+      "geometry": "rect",
+      "text": "symmetric samples",
+      "textPreview": "symmetric samples",
+      "resolvedFontSize": 29.13,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 30,
+        "typeface": "Nunito",
+        "color": "#6F4B9B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.97,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "symmetric samples"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "symmetric samples",
+          "lineSpacingPercent": 103000,
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#6F4B9B",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.03
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "symmetric samples",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#6F4B9B",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.03
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/t83q5wve",
+      "id": "7",
+      "name": "central-body",
+      "bbox": [
+        1120,
+        365,
+        530,
+        72
+      ],
+      "geometry": "rect",
+      "text": "For this quadratic model, the supplied expression matches the analytic derivative to floating-point precision",
+      "textPreview": "For this quadratic model, the supplied expression matches the analytic derivative to floating-point precision",
+      "resolvedFontSize": 20.62,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 25,
+        "typeface": "Nunito",
+        "color": "#3F4B57",
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.82,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "For this quadratic model, the supplied expression"
+          },
+          {
+            "index": 2,
+            "text": "matches the analytic derivative to floating-point"
+          },
+          {
+            "index": 3,
+            "text": "precision"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "For this quadratic model, the supplied expression matches the analytic derivative to floating-point precision",
+          "lineSpacingPercent": 103000,
+          "resolvedTextStyle": {
+            "fontSize": 25,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "center",
+            "lineSpacing": 1.03
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "For this quadratic model, the supplied expression matches the analytic derivative to floating-point precision",
+              "fontSize": 25,
+              "typeface": "Nunito",
+              "color": "#3F4B57",
+              "alignment": "center",
+              "lineSpacing": 1.03
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 8,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/7qh0n21c",
+      "id": "8",
+      "bbox": [
+        155,
+        500,
+        760,
+        350
+      ],
+      "alt": "MATLAB error versus step-size plot",
+      "contentType": "image/png",
+      "imageFit": "contain",
+      "asset": {
+        "assetId": "65c592a3-a11d-469c-b9bb-23fdff0164cf",
+        "contentType": "image/png",
+        "uri": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/matlab/assets/week06_forward_error_vs_step.png"
+      }
+    },
+    {
+      "order": 9,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/ji18zmdc",
+      "id": "9",
+      "name": "qual",
+      "bbox": [
+        1030,
+        600,
+        610,
+        95
+      ],
+      "geometry": "rect",
+      "text": "Qualitative reading: an extremely small h is not a universal guarantee of a better answer",
+      "textPreview": "Qualitative reading: an extremely small h is not a universal guarantee of a better answer",
+      "resolvedFontSize": 29.68,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 31,
+        "typeface": "Nunito",
+        "color": "#6F4B9B",
+        "bold": true,
+        "alignment": "center",
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "shrinkText",
+        "autoFitScale": 0.96,
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 3,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Qualitative reading: an extremely small h is"
+          },
+          {
+            "index": 2,
+            "text": "not a universal guarantee of a better"
+          },
+          {
+            "index": 3,
+            "text": "answer"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Qualitative reading: an extremely small h is not a universal guarantee of a better answer",
+          "lineSpacingPercent": 103000,
+          "resolvedTextStyle": {
+            "fontSize": 31,
+            "typeface": "Nunito",
+            "color": "#6F4B9B",
+            "bold": true,
+            "alignment": "center",
+            "lineSpacing": 1.03
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Qualitative reading: an extremely small h is not a universal guarantee of a better answer",
+              "fontSize": 31,
+              "typeface": "Nunito",
+              "color": "#6F4B9B",
+              "bold": true,
+              "alignment": "center",
+              "lineSpacing": 1.03
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

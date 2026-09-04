@@ -1,0 +1,12 @@
+Native recovery generator: gpt-5.6-terra, medium reasoning.
+Artifact-tool build source: build_native_recovery.mjs (identical retained source copy).
+Operation marker: create, expected outputs 2, format pptx.
+Stage output: Week02_artifact-stage.pptx
+Stage SHA-256: 085a64126a77a0b46369b6088c2cf85383d45b43c7ca74f9f2f615d764123e3e
+Supporting ZIP integrity check: pass.
+Native PowerPoint open/reopen: pass; opened the artifact-stage deck before replacement with no repair prompt.
+Canonical replacement: completed after explicit user confirmation.
+Canonical output: Week02/Lecture_Slides_Week02.pptx
+Canonical SHA-256 after PowerPoint native Save As: d0a209fa1b86132bc10ea75c4a6e1ef72f85618997810ef035e822c3ac0e3cb5
+Native PowerPoint close/reopen proof: pass; opened exact canonical path with 13 slides, no repair prompt observed; title bar reported "Saved to my Mac".
+Prohibited post-export mutations used: none.

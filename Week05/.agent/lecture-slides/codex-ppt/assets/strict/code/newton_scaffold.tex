@@ -1,0 +1,23 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{xcolor}
+\usepackage{listings}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weekblue}{HTML}{6E8FB3}
+\definecolor{weeksage}{HTML}{7AA69B}
+\lstdefinestyle{matlab}{language=Matlab,basicstyle=\ttfamily\fontsize{13}{17}\selectfont,keywordstyle=\color{weekblue!80!black},commentstyle=\color{weeksage!70!black},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=false,frame=single,rulecolor=\color{weeknavy!35},backgroundcolor=\color{weeknavy!3},aboveskip=0pt,belowskip=0pt}
+\begin{document}
+\begin{lstlisting}[style=matlab]
+newton_theta_deg = newton_start_deg;
+newton_history = zeros(max_iterations,4);
+for iteration = 1:max_iterations
+    f_current_m = (v0_mps^2/g_mps2)*sind(2*newton_theta_deg) - target_m;
+    slope_m_per_deg = (v0_mps^2/g_mps2)*cosd(2*newton_theta_deg)*(2*pi/180);
+    newton_history(iteration,:) = [iteration, newton_theta_deg, f_current_m, slope_m_per_deg];
+    if abs(f_current_m) < tolerance_m
+        break
+    end
+    newton_theta_deg = newton_theta_deg - f_current_m/slope_m_per_deg;
+end
+newton_root_deg = newton_theta_deg;
+\end{lstlisting}
+\end{document}

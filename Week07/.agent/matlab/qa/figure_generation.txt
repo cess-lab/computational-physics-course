@@ -1,0 +1,7 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+

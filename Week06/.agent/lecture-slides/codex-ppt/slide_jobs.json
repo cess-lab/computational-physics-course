@@ -1,0 +1,563 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "codex-ppt",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "approved revised Slide 06 prompt, updated from Sol's visual comparison with the Week05 reference",
+    "size": "1672x941 pixels, built-in default landscape resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default ImageGen path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
+    "input_context_preparation": "Workers must inspect the approved Week05 style reference and the approved Week06 Slide 06 sample with view_image, then use them as style-only input images in the built-in image tool.",
+    "handoff_rule": "Every worker must use the built-in image tool in edit/reference mode with the approved Week06 sample as style-only reference. Return a blocker if that path is unavailable."
+  },
+  "max_concurrent_slides": 4,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "From nearby values to an instantaneous rate",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06ad2-9b94-7833-8202-3233544d070a",
+        "agent_nickname": "Ampere",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "29fc153d51d97781f0f3d12b8405de9b037e1503d7b9c33a420a04e11b2ddabf",
+        "dispatched_at": "2026-09-04T07:39:13Z"
+      },
+      "result": {
+        "agent_id": "01a06ad2-9b94-7833-8202-3233544d070a",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/drafts/slide_01_matlab_exact-plot.png",
+        "selected_source_sha256": "27f2da803ee16d9bf61305a27e063fe2f8323ab4b90aef7d9798416d2712242c",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "27f2da803ee16d9bf61305a27e063fe2f8323ab4b90aef7d9798416d2712242c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Lecturer-authorized exception: approved ImageGen artwork retained, with the graph region replaced by a native MATLAB rendering of the locked model and exact coordinate anchors.",
+        "recorded_at": "2026-09-04T07:39:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "A derivative is a physical rate",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06aaa-4bc3-76a1-97eb-cb32a5991148",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "2cbdb99ac7f8423272b0417d9932e7ac092295bdfe7423ec55f442cd6ab6ce2f",
+        "dispatched_at": "2026-09-04T07:39:12Z"
+      },
+      "result": {
+        "agent_id": "01a06aaa-4bc3-76a1-97eb-cb32a5991148",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+        "selected_source_sha256": "1f827a0698b305a6ee913b6192b96f72d7ab0b3fca57f008620c7b422bae0321",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "1f827a0698b305a6ee913b6192b96f72d7ab0b3fca57f008620c7b422bae0321",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Use two nearby values",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06aaa-4ae5-7423-a40b-d2eaf544bfe9",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "0f2543c3a1d39c2c1c04e73f8f55ef6e17d2500b30d75dff5a63fa6255a41880",
+        "dispatched_at": "2026-09-04T07:39:12Z"
+      },
+      "result": {
+        "agent_id": "01a06aaa-4ae5-7423-a40b-d2eaf544bfe9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_03.png",
+        "selected_source_sha256": "8dd7f7eda359f93a7bcd9efe4ad2bba161b122636d4aed2993fd2e0371090293",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "8dd7f7eda359f93a7bcd9efe4ad2bba161b122636d4aed2993fd2e0371090293",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Reuse a familiar vertical-motion model",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06aaa-4982-7c21-a1a8-9283f3bef7c2",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "2a756483e47cd5e52559af772957be1be88e8ba30f8a58cfca7c7d9b4c56c409",
+        "dispatched_at": "2026-09-04T07:39:12Z"
+      },
+      "result": {
+        "agent_id": "01a06aaa-4982-7c21-a1a8-9283f3bef7c2",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+        "selected_source_sha256": "0182be08e90ae7988d69810377d777110a1a69a20251597952c19ed215a493df",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "0182be08e90ae7988d69810377d777110a1a69a20251597952c19ed215a493df",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Predict before computing",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06a8e-a692-7b83-b2aa-a3cd4181d8e9",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "f868a616c7e500825d46abbe5e23b9bd89eb9dccc2037aeabab7672aab480e4d",
+        "dispatched_at": "2026-09-04T07:39:12Z"
+      },
+      "result": {
+        "agent_id": "01a06a8e-a692-7b83-b2aa-a3cd4181d8e9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+        "selected_source_sha256": "769e9cbb8d09757fa70caf4349366a0a75a8d2735071e34bda2ca1fc0d4da6ff",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "769e9cbb8d09757fa70caf4349366a0a75a8d2735071e34bda2ca1fc0d4da6ff",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Work one forward difference by hand",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_06.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Pseudocode before MATLAB",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06a8e-a724-7bc2-ac22-49aec80918c8",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "8f347b42ee5b26fd3e71c82707fe19655ce09f8ffc6201b356d766ed6dcbd5dc",
+        "dispatched_at": "2026-09-04T07:39:12Z"
+      },
+      "result": {
+        "agent_id": "01a06a8e-a724-7bc2-ac22-49aec80918c8",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+        "selected_source_sha256": "28c0baa31c1cc89756c8e75960d02dfdfd5e08796674d86a29c1f53184e28406",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "28c0baa31c1cc89756c8e75960d02dfdfd5e08796674d86a29c1f53184e28406",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Read the MATLAB scaffold line by line",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06a8e-a793-7c12-a9bc-e94741d69161",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "59006106ac37d4de22c51b24f9b0beabbf18470a9971f6a2c18685a583bd0708",
+        "dispatched_at": "2026-09-04T07:39:12Z"
+      },
+      "result": {
+        "agent_id": "01a06a8e-a793-7c12-a9bc-e94741d69161",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+        "selected_source_sha256": "7fa4f506aae7d7c1cfb1623033d990349c603efa607dd3b6aaa8088ce834c066",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "7fa4f506aae7d7c1cfb1623033d990349c603efa607dd3b6aaa8088ce834c066",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Smaller steps give a more local estimate",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06a8e-a625-7dc3-87c7-e18825a0376a",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "2663521a2590b57ea9a2d7e4540a54f4d9dffc339b83c9de37b2948ec510cd43",
+        "dispatched_at": "2026-09-04T07:39:12Z"
+      },
+      "result": {
+        "agent_id": "01a06a8e-a625-7dc3-87c7-e18825a0376a",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+        "selected_source_sha256": "ec523d25a345df06ebe87ddee33937d7a0f56f586cae4969a2a4b42577ecdb22",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "ec523d25a345df06ebe87ddee33937d7a0f56f586cae4969a2a4b42577ecdb22",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Validate with the analytic derivative",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06a8e-a692-7b83-b2aa-a3cd4181d8e9",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "943d9925cdda4dfe695975b6091ad77e3e52013e9689c04f6aef187bc21c561b",
+        "dispatched_at": "2026-09-04T07:39:13Z"
+      },
+      "result": {
+        "agent_id": "01a06a8e-a692-7b83-b2aa-a3cd4181d8e9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_10.png",
+        "selected_source_sha256": "1f502007a43d6fc74cbd1ddeb04769e970e60f1e4d6909377bdafa4e9a1b0c5f",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "1f502007a43d6fc74cbd1ddeb04769e970e60f1e4d6909377bdafa4e9a1b0c5f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "State the error with a physical unit",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06a8e-a724-7bc2-ac22-49aec80918c8",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "035c6ccd4be5b75da2faa93bb5275c1dc7cf0a2dbfdc165438d7282453260bf9",
+        "dispatched_at": "2026-09-04T07:39:13Z"
+      },
+      "result": {
+        "agent_id": "01a06a8e-a724-7bc2-ac22-49aec80918c8",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_11.png",
+        "selected_source_sha256": "37f68374ab189d33e9372467e0b95ba9ea10ec0913d019718deca9e4fb6a30f3",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "37f68374ab189d33e9372467e0b95ba9ea10ec0913d019718deca9e4fb6a30f3",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Why is the forward difference approximate?",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06aaa-48d1-7712-802f-b481a8d536ab",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "33a8d19e2693872044941491391f86fbbbdd2becd332d41e5ccb7a7984ec1de6",
+        "dispatched_at": "2026-09-04T07:39:13Z"
+      },
+      "result": {
+        "agent_id": "01a06aaa-48d1-7712-802f-b481a8d536ab",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_12.png",
+        "selected_source_sha256": "ef0f0ce620ea7bf93a72fcdcee31b69d50522e2faf1cf82425ade0d59e8e1614",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "ef0f0ce620ea7bf93a72fcdcee31b69d50522e2faf1cf82425ade0d59e8e1614",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Working exposure: a centred estimate",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06aaf-7ce4-7932-8c7b-016283c67367",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "29a25afc0078432803054d613a07e15c6e282cbec65d2f3085ac7b1f9d439de8",
+        "dispatched_at": "2026-09-04T07:39:13Z"
+      },
+      "result": {
+        "agent_id": "01a06aaf-7ce4-7932-8c7b-016283c67367",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_13.png",
+        "selected_source_sha256": "38b497b5b364e4e85a0f684a843aab3f8cea328bc70b0c4583628ed21794c3df",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "38b497b5b364e4e85a0f684a843aab3f8cea328bc70b0c4583628ed21794c3df",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Core transfer and exit ticket",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week05 style-only reference",
+          "fidelity": "match its modern flat courseware identity, not its exact bisection content or layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a06aaf-7d88-7fe3-9772-513d76299440",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "95065a25f71837979db3f65d9f783ec0e4b3e56685ac4e982f2cb4ee0cfac6e7",
+        "dispatched_at": "2026-09-04T07:39:13Z"
+      },
+      "result": {
+        "agent_id": "01a06aaf-7d88-7fe3-9772-513d76299440",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/origin_image/slide_14.png",
+        "selected_source_sha256": "2e992e8be71bf6ac48b585ee124ade5499c408080b65c17d6254729ee48ee746",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "2e992e8be71bf6ac48b585ee124ade5499c408080b65c17d6254729ee48ee746",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Prior validated output retained during the authorised Slide 1 scientific-plot repair.",
+        "recorded_at": "2026-09-04T07:39:13Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-04T07:39:13Z"
+}

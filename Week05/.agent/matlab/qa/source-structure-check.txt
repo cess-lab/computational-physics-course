@@ -1,0 +1,10 @@
+STRUCTURE CHECK
+lecture H1 count: 1
+practical H1 count: 1
+lecture appendix count: 1
+practical appendix count: 1
+forbidden Live Script commands (expected none):
+student-facing mlx files (expected none):
+slide project files:
+Week05/.agent/lecture-slides/codex-ppt/outline.md
+slide images/pptx anywhere in Week05 (expected none):

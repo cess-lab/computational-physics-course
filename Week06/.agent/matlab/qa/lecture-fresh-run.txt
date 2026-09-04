@@ -1,0 +1,75 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+v_exact_mps =
+
+   10.1900
+
+
+y_now_m =
+
+   15.0950
+
+
+y_next_demo_m =
+
+   18.9637
+
+
+v_forward_demo_mps =
+
+    7.7375
+
+
+step_comparison =
+
+  4×4 table
+
+    Step_s    ForwardVelocity_mps    AbsoluteError_mps    RelativeError_percent
+    ______    ___________________    _________________    _____________________
+
+      0.5           7.7375                 2.4525                24.068        
+      0.2            9.209                  0.981                9.6271        
+      0.1           9.6995                 0.4905                4.8135        
+     0.05           9.9448                0.24525                2.4068        
+
+
+smallest_step_estimate_mps =
+
+    9.9448
+
+
+smallest_step_abs_error_mps =
+
+    0.2452
+
+
+smallest_step_rel_error_percent =
+
+    2.4068
+
+
+wrong_denominator_mps =
+
+    3.8687
+
+
+correct_denominator_mps =
+
+    7.7375
+
+
+v_central_mps =
+
+   10.1900
+
+
+central_abs_error_mps =
+
+   1.7764e-15
+

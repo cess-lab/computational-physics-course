@@ -1,0 +1,33 @@
+{
+  "deck": "Week02/Lecture_Slides_Week02.pptx",
+  "final_sha256": "619e7b5d547a987ff118bab22a13734f70f4a6eaf7e5b28a069dfe2be29fd4b4",
+  "slide_count": 14,
+  "core_slides": 14,
+  "appendix_slides": 0,
+  "core_new_ideas": [
+    "pseudocode decomposition",
+    "for-loop tracing",
+    "defect diagnosis"
+  ],
+  "title_layouts": {
+    "opening": "Opening",
+    "slides_2_to_12": "Content T2",
+    "slide_13": "Content T3",
+    "slide_14": "Content T2"
+  },
+  "index_name": "sample_index on slides 5-8",
+  "equation_assets": [
+    {
+      "tex": "assets/equations/vertical-launch-model.tex",
+      "role": "model equation"
+    },
+    {
+      "tex": "assets/equations/known-initial-value.tex",
+      "role": "initial-value validation"
+    }
+  ],
+  "matlab_evidence": "Week02/.agent/matlab/generate_week02_plot.m",
+  "rendered_proof": "qa/round-2/render-1920",
+  "render_size": "1920x1080",
+  "qa": "qa/round-2"
+}

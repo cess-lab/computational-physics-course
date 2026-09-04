@@ -1,0 +1,388 @@
+{
+  "run_status": "blocked",
+  "deck_name": "Lecture_Slides_Week01_Teaching_Courseware",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "approved sample prompt for Slide 7, using the current element-wise-operator slide as a strict content reference",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+    "input_context_preparation": "view_image inspected the local source slide before built-in image editing; the approved sample is the final style reference",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Physics to Arrays and Plots",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/projectile-visual-matte.png",
+          "role": "strict input asset; main vertical-motion illustration",
+          "fidelity": "preserve launch, peak, return, gravity, and colour mapping"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05cce-8070-7fc0-870d-e45fb36f3226",
+        "agent_nickname": "Tesla",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "6c631956147b8c19b2c6ea4f60a1f121148e677eab87e73aa673d26db4833fbc",
+        "dispatched_at": "2026-09-01T11:50:32Z"
+      },
+      "result": {
+        "agent_id": "01a05cce-8070-7fc0-870d-e45fb36f3226",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05cce-8070-7fc0-870d-e45fb36f3226/exec-2f4657af-24f9-477d-b036-fc3697ac536a.png",
+        "selected_source_sha256": "82a513a34bcd33d023150c9c6dc570ceadead4e134dd5f8f79c92cd29d81e864",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "82a513a34bcd33d023150c9c6dc570ceadead4e134dd5f8f79c92cd29d81e864",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Legible sparse cover matches the approved Teaching Courseware style and preserves the supplied vertical-motion asset.",
+        "recorded_at": "2026-09-01T11:51:47Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Start with a physical prediction",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equation-motion-vertical-matte-v2.png",
+          "role": "strict input asset; one-dimensional vertical-motion cutaway",
+          "fidelity": "preserve direction and physical state mapping"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "blocked",
+      "dispatch": {
+        "agent_id": "01a05cce-8175-7170-aacd-f1b92d20493b",
+        "agent_nickname": "Halley",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "671ec9fcf84ece60d64fd09ab015f93929be1d913913bbcb2c07f12f79f19e25",
+        "dispatched_at": "2026-09-01T11:50:32Z"
+      },
+      "result": null,
+      "blocker": {
+        "agent_id": "01a05cce-8175-7170-aacd-f1b92d20493b",
+        "reason": "User requested that slide generation stop before the regenerated image was inspected and recorded.",
+        "blocked_at": "2026-09-01T11:55:23Z"
+      }
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "The equation links each term to motion",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/vertical-motion-position-equation.png",
+          "role": "strict input asset; exact position equation",
+          "fidelity": "preserve symbols, signs, superscript, and spacing"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equation-motion-vertical-matte-v2.png",
+          "role": "strict input asset; supporting vertical-motion diagram",
+          "fidelity": "preserve physical direction and states"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05cce-8246-7dc2-8a79-87ce712825ff",
+        "agent_nickname": "Plato",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "1549b145340f1cd962f273e36577b1dafbe2162037b25af3c47575ef6a1fb8ba",
+        "dispatched_at": "2026-09-01T11:50:33Z"
+      },
+      "result": {
+        "agent_id": "01a05cce-8246-7dc2-8a79-87ce712825ff",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05cce-8246-7dc2-8a79-87ce712825ff/exec-2870ac98-70b9-4eea-9ef1-5c4b2b19ee65.png",
+        "selected_source_sha256": "75ae3700ae5d5c3182428f37752cf5326a625f84429add1eff8aa4814f650f33",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "75ae3700ae5d5c3182428f37752cf5326a625f84429add1eff8aa4814f650f33",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Text and equation are legible, the Teaching Courseware style matches the approved sample, and both strict equation and trajectory assets are preserved.",
+        "recorded_at": "2026-09-01T11:52:43Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Names and units keep the model readable",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/symbol-t.png",
+          "role": "strict input asset; exact time symbol",
+          "fidelity": "preserve symbol appearance"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/symbol-y.png",
+          "role": "strict input asset; exact position symbol",
+          "fidelity": "preserve symbol appearance"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/symbol-v0.png",
+          "role": "strict input asset; exact initial-velocity symbol",
+          "fidelity": "preserve subscript"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/symbol-g.png",
+          "role": "strict input asset; exact gravitational-acceleration symbol",
+          "fidelity": "preserve symbol and gold semantic colour"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Build the time array first",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "An index selects one physical moment",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/array-sampled-motion-matte-v2.png",
+          "role": "strict input asset; sampled-motion and index mapping illustration",
+          "fidelity": "preserve index-to-time mapping and state highlights"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Dots tell MATLAB to work through an array",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_07.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "The algorithm appears before the MATLAB syntax",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Short code should expose the physics",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "A labelled plot turns values into evidence",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/matlab-figures/height_time_evidence.png",
+          "role": "strict input asset; main MATLAB evidence plot",
+          "fidelity": "preserve data, axes, labels, units, curve, and values; do not redraw"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "A boundary check can reveal an error that a smooth curve hides",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/launch-boundary-condition-matte.png",
+          "role": "strict input asset; launch boundary illustration",
+          "fidelity": "preserve launch state and validation meaning"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/computed-first-value.png",
+          "role": "strict input asset; computed first value expression",
+          "fidelity": "preserve exact expression and value"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/launch-time.png",
+          "role": "strict input asset; launch time expression",
+          "fidelity": "preserve exact time statement"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Trace one model from physics to a graph",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Week 1 exit ticket",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/codex-ppt-teaching-courseware/origin_image/slide_07.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography mood, density, texture, and visual identity only; do not copy the exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "pending",
+      "dispatch": null,
+      "result": null,
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-01T11:55:23Z"
+}

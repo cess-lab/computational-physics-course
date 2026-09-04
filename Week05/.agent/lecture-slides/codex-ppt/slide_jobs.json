@@ -1,0 +1,623 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Lecture_Slides_Week05",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "prompt_source": "coordinator's approved Slide 05 sample prompt for the bisection bracket/update concept",
+    "size": "1672x941 pixels, built-in default landscape resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+    "input_context_preparation": "The sample used no local source image; the coordinator supplied the Teaching Courseware style brief and exact locked values in the generation prompt. Local strict source assets will be inspected with view_image before dependent slide generation.",
+    "handoff_rule": "Every remaining slide worker must use this same built-in image tool in generate mode, with the approved Slide 05 visible as a style-only reference and any listed strict assets preserved; return a blocker if this path is unavailable."
+  },
+  "max_concurrent_slides": 4,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "From a physical target to a checkable root",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062a6-16d5-7433-a7a1-4546ae211eb4",
+        "agent_nickname": "Banach",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "b2cae77bcc669d68b1f16c73a60c6c1c36e0be08f283b296a50c48615fc383e0",
+        "dispatched_at": "2026-09-02T15:04:07Z"
+      },
+      "result": {
+        "agent_id": "01a062a6-16d5-7433-a7a1-4546ae211eb4",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062a6-16d5-7433-a7a1-4546ae211eb4/exec-c12250e9-f3d4-4d4b-a898-0b18a5bb94da.png",
+        "selected_source_sha256": "d607e4cabcd56943466f74e12c071370fe16b2879cc8fbcd70b869746d82f43f",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "d607e4cabcd56943466f74e12c071370fe16b2879cc8fbcd70b869746d82f43f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: sparse cover, readable title and labels, no clipping or overlap, and Teaching Courseware style matches the approved sample.",
+        "recorded_at": "2026-09-02T15:06:52Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Turn the target condition into a residual",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_residual.png",
+          "role": "strict equation input; projectile model, target condition, and residual definition",
+          "fidelity": "preserve every symbol, value, fraction, and unit exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062a6-19ba-7e31-b54c-f389d40f799c",
+        "agent_nickname": "Lovelace",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "b35748bcd0116d17b0931cbab016c3c0584d4b4ec176f1d81d2b49173571de10",
+        "dispatched_at": "2026-09-02T15:04:09Z"
+      },
+      "result": {
+        "agent_id": "01a062a6-19ba-7e31-b54c-f389d40f799c",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062a6-19ba-7e31-b54c-f389d40f799c/exec-c8131e20-2c95-4600-a7ac-e5c3df671752.png",
+        "selected_source_sha256": "36855948d2346ead8752d6a7d4109015e315724148ca35a5c6c4715f6dbe0095",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "36855948d2346ead8752d6a7d4109015e315724148ca35a5c6c4715f6dbe0095",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: residual transformation, exact model/target units, and arrows are readable with no clipping or overlap; Teaching Courseware style matches the approved sample.",
+        "recorded_at": "2026-09-02T15:10:05Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Read the residual sign as physics",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/signs.png",
+          "role": "strict equation input; residual sign meanings",
+          "fidelity": "preserve the sign symbols and physical meanings exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062a6-2189-73d0-bdd4-90e83792fc2e",
+        "agent_nickname": "Boole",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "4cabf154ad83b74852bbac99f111eb341fea0a52970c0550a2a4b07d7fa99f30",
+        "dispatched_at": "2026-09-02T15:04:10Z"
+      },
+      "result": {
+        "agent_id": "01a062a6-2189-73d0-bdd4-90e83792fc2e",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062a6-2189-73d0-bdd4-90e83792fc2e/exec-7c440e35-b157-4cbe-b345-afac46c73f03.png",
+        "selected_source_sha256": "70fa4a343682708a36d440e924404c737ce90b715f96890a2da443cb40a21f4e",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "70fa4a343682708a36d440e924404c737ce90b715f96890a2da443cb40a21f4e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: undershoot/root/overshoot signs map correctly to physical range meaning, with readable equations, units, and no clipping or overlap.",
+        "recorded_at": "2026-09-02T15:10:05Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Find the zero crossing before coding",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/week05_projectile_residual.png",
+          "role": "strict numerical and geometry reference for the residual graph; reference-only input for a complete cohesive slide redraw",
+          "fidelity": "preserve curve shape, zero line, axes, labels, units, tick relationships, endpoint marker positions, and numerical relationships; do not paste the raster or invent data"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062a6-26a8-71a1-9a5e-b4c1f3f2e83c",
+        "agent_nickname": "Popper",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "f04e1d364b580622ca1c839d2c456ff394e7927ef75a4a424b14c6b0059b45ef",
+        "dispatched_at": "2026-09-02T15:04:12Z"
+      },
+      "result": {
+        "agent_id": "01a062a6-26a8-71a1-9a5e-b4c1f3f2e83c",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062a6-26a8-71a1-9a5e-b4c1f3f2e83c/exec-46e229e7-b0c2-42af-9be2-e93bdd943aea.png",
+        "selected_source_sha256": "5ad155d8a9c8969870105afda2a2d1c6e5ace62c15e3a41f3f5e0f69aabc080c",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "5ad155d8a9c8969870105afda2a2d1c6e5ace62c15e3a41f3f5e0f69aabc080c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: MATLAB graph relationships and endpoint signs are preserved in a cohesive redraw, with readable axes, labels, and no overlap.",
+        "recorded_at": "2026-09-02T15:07:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Bisection keeps a sign change alive",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_05.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Trace the first four bisection updates",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/bisection_first_four.png",
+          "role": "strict numerical trace table for the first four bisection updates",
+          "fidelity": "preserve all rows, intervals, midpoint values, residuals, signs, and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062ac-5f33-78d1-86be-30f9ccc3be5d",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "09fa661523acf59d381ef91c3b9800115dc6fda6cc8435770e17fd26f2b75452",
+        "dispatched_at": "2026-09-02T15:11:08Z"
+      },
+      "result": {
+        "agent_id": "01a062ac-5f33-78d1-86be-30f9ccc3be5d",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062ac-5f33-78d1-86be-30f9ccc3be5d/exec-65574a60-f7e3-4371-ad72-7636e2a97bfe.png",
+        "selected_source_sha256": "438806cf9cf851ae433d7fb1300b304efb786cb5d4925090dc4c34d68117f138",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "438806cf9cf851ae433d7fb1300b304efb786cb5d4925090dc4c34d68117f138",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: exact four-row bisection trace, retained-half decisions, interval companion graphic, and prompt are readable with no clipping or overlap.",
+        "recorded_at": "2026-09-02T15:28:51Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Read the bisection scaffold, line by line",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/code/bisection_scaffold.png",
+          "role": "strict MATLAB code input; scaffolded bisection loop",
+          "fidelity": "preserve every code token, variable name, operator, indentation relationship, and line order exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062ac-5fe8-7e21-95cc-b940a37dbf12",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "f95a94ab29b3b840e66362d5cfcd097c4795e7be59919e0029191fc8258d5694",
+        "dispatched_at": "2026-09-02T15:11:08Z"
+      },
+      "result": {
+        "agent_id": "01a062ac-5fe8-7e21-95cc-b940a37dbf12",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062ac-5fe8-7e21-95cc-b940a37dbf12/exec-964c2f98-ac34-4e3d-adf6-0041064d5569.png",
+        "selected_source_sha256": "0285d88efb4b2313ae8bf8b4767e3c15b4dba4e2992bccb1276da3942b70ad86",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "0285d88efb4b2313ae8bf8b4767e3c15b4dba4e2992bccb1276da3942b70ad86",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: complete MATLAB scaffold, exact line-by-line annotations, title, and prompt are readable with no clipping or overlap; strict code content is preserved.",
+        "recorded_at": "2026-09-02T15:25:36Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Stop once, then substitute back",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/validation.png",
+          "role": "strict equation input; root, substituted range, and residual",
+          "fidelity": "preserve numerical values, signs, units, and equation structure exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/bisection_validation.png",
+          "role": "strict validation table; result and interpretation",
+          "fidelity": "preserve all checks and values exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062ac-678e-7d53-aebc-4a5497554153",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "af8d4d89683951f07d88ede82a7a3453586e8543739d8ff903a0236c0e87c535",
+        "dispatched_at": "2026-09-02T15:11:07Z"
+      },
+      "result": {
+        "agent_id": "01a062ac-678e-7d53-aebc-4a5497554153",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062ac-678e-7d53-aebc-4a5497554153/exec-9ed3ec23-4c57-44ab-a437-f5959511b912.png",
+        "selected_source_sha256": "1f1a520d961b0befb0be9cb60eaf104b8dfbb7d88192fd284895defc1f28a21e",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "1f1a520d961b0befb0be9cb60eaf104b8dfbb7d88192fd284895defc1f28a21e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: bisection result, residual stopping rule, substitution validation, exact numeric evidence, and physical interpretation are readable with no clipping or overlap.",
+        "recorded_at": "2026-09-02T15:24:52Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Newton follows the local tangent",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/newton_update_slope.png",
+          "role": "strict equation input; Newton update and degree-based residual slope",
+          "fidelity": "preserve the update, derivative, conversion factor, and metre-per-degree unit exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062ac-61d7-7631-9de3-6b000bd59f62",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "f2a672aaf4ed5bc299c5bd4f9caa501ce73c97ce8cc037e72ad3386b22cb48d9",
+        "dispatched_at": "2026-09-02T15:11:08Z"
+      },
+      "result": {
+        "agent_id": "01a062ac-61d7-7631-9de3-6b000bd59f62",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062ac-61d7-7631-9de3-6b000bd59f62/exec-f5fb5ed5-dc6b-4334-b998-f69d898a5b03.png",
+        "selected_source_sha256": "48836890d60a757367af1f6d2d3798a1f686d9a252620bb1926325af41f90ac4",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "48836890d60a757367af1f6d2d3798a1f686d9a252620bb1926325af41f90ac4",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: Newton tangent graph, exact update and slope equation, degree-unit interpretation, and prompt are readable with no clipping or overlap.",
+        "recorded_at": "2026-09-02T16:02:17Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Trace Newton from 25 degree",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/code/newton_scaffold.png",
+          "role": "strict MATLAB code input; scaffolded Newton loop",
+          "fidelity": "preserve every code token, variable name, operator, and line order exactly"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/newton_trace.png",
+          "role": "strict numerical trace table; four Newton evaluations",
+          "fidelity": "preserve all angles, residuals, slopes, units, and stop entry exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062ba-5fac-7df0-aa0e-ac4be7e27085",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "19384cdbe39229bdd085fa64a3691a5c79f57a0aa0eaec3c31f3fe29d68733f4",
+        "dispatched_at": "2026-09-02T15:26:16Z"
+      },
+      "result": {
+        "agent_id": "01a062ba-5fac-7df0-aa0e-ac4be7e27085",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062ba-5fac-7df0-aa0e-ac4be7e27085/exec-75e7a24d-ecf6-47f3-b645-5ea8a2b42d10.png",
+        "selected_source_sha256": "593042d533d00468e516239badb10481a2e98188866aef24c0bd7bcdb2e5041e",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "593042d533d00468e516239badb10481a2e98188866aef24c0bd7bcdb2e5041e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: exact Newton scaffold, four-row trace values, stopping-rule evidence, and readable title are preserved with no clipping or overlap.",
+        "recorded_at": "2026-09-02T16:09:24Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Working exposure: same root, different route",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/method_comparison.png",
+          "role": "strict comparison input; bisection versus Newton",
+          "fidelity": "preserve method names, update ideas, evaluation counts, and requirements exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062bd-a2ad-7c91-bffa-f429a0acd178",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "c0e456e003db6a8e886261711b16cba15315dca0e8fb77e3f02f3c88e48631c4",
+        "dispatched_at": "2026-09-02T15:29:50Z"
+      },
+      "result": {
+        "agent_id": "01a062bd-a2ad-7c91-bffa-f429a0acd178",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062bd-a2ad-7c91-bffa-f429a0acd178/exec-7048cc43-3f39-4f2d-b7ba-dba66824b067.png",
+        "selected_source_sha256": "e2b279257f3c37c37933f1963a3eb7ff77550c75299b3a15de43f1552f3b8667",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "e2b279257f3c37c37933f1963a3eb7ff77550c75299b3a15de43f1552f3b8667",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: exact bisection/Newton comparison table, iteration/evaluation counts, validation conclusion, and teaching hierarchy are readable with no clipping or overlap.",
+        "recorded_at": "2026-09-02T16:03:32Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "A midpoint is not enough: the bracket must change sign",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062c7-e245-7273-903a-5649767da5d0",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "fb15377a31849c8d5d2ec52f7260e8b8aa47d8a4ca7de44b18120bb8e222e2da",
+        "dispatched_at": "2026-09-02T15:41:02Z"
+      },
+      "result": {
+        "agent_id": "01a062c7-e245-7273-903a-5649767da5d0",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062c7-e245-7273-903a-5649767da5d0/exec-85a9fc09-6c99-4311-9e07-ec3e2ad758e4.png",
+        "selected_source_sha256": "9894288a5b9f06566f4750bf21d7dd47877dc8b08295e7108b7da0bf655db767",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "9894288a5b9f06566f4750bf21d7dd47877dc8b08295e7108b7da0bf655db767",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: same-sign failure versus sign-changing valid bracket, exact endpoint signs, repair path, title, and prompt are readable with no clipping or overlap.",
+        "recorded_at": "2026-09-02T15:43:31Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Transfer the residual pattern to new physics",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/transfer_residuals.png",
+          "role": "strict equation input; thin-lens and RC charging residuals with units",
+          "fidelity": "preserve both residual forms, variable names, and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062ca-8834-7142-b473-3b8899c90107",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "4a0b1ca525dcc25a33ac374b0d3ba6f613b86dac3cc7f3d60d2c3a70cc91fd65",
+        "dispatched_at": "2026-09-02T15:43:55Z"
+      },
+      "result": {
+        "agent_id": "01a062ca-8834-7142-b473-3b8899c90107",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062ca-8834-7142-b473-3b8899c90107/exec-4ea11f29-0c37-4f02-8e29-d97bd5b9966a.png",
+        "selected_source_sha256": "6db868a5a40263f52e58525d02eb93901abcf0b859b0c64ab1cbb84525dae5a9",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "6db868a5a40263f52e58525d02eb93901abcf0b859b0c64ab1cbb84525dae5a9",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: thin-lens and RC residual forms, units, shared workflow, and no-answer transfer intent are preserved with readable text and no clipping or overlap.",
+        "recorded_at": "2026-09-02T15:54:28Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Exit ticket — explain a root to a future you",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+          "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a062d4-8a7d-7db0-8b45-7ceb459e1469",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "36b44fbb1895e5537aaa5626ad233e4ae439a4f29729e4191b4da090e83e5ce5",
+        "dispatched_at": "2026-09-02T15:54:52Z"
+      },
+      "result": {
+        "agent_id": "01a062d4-8a7d-7db0-8b45-7ceb459e1469",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a062d4-8a7d-7db0-8b45-7ceb459e1469/exec-588f077e-8bed-4dca-86d6-6266bb86c7a5.png",
+        "selected_source_sha256": "5f77a1b0124e7e84430c02f567f8621c6b8b41a4a28a69b27bbafc3972d592f0",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "5f77a1b0124e7e84430c02f567f8621c6b8b41a4a28a69b27bbafc3972d592f0",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: four exit-ticket prompts, compact root-finding checklist, physical units, and title are readable with no clipping or overlap.",
+        "recorded_at": "2026-09-02T15:57:21Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-02T16:09:24Z"
+}

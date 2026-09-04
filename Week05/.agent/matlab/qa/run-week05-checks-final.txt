@@ -1,0 +1,127 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+f_left_m =
+
+   -8.7905
+
+
+f_right_m =
+
+    5.1553
+
+
+bisection_root_deg =
+
+   29.5679
+
+
+bisection_residual_m =
+
+   4.1164e-04
+
+
+bisection_iterations =
+
+    13
+
+
+bisection_trace =
+
+  13×5 table
+
+    Iteration    Left_deg    Mid_deg    Right_deg    Residual_at_mid_m
+    _________    ________    _______    _________    _________________
+
+        1             20         30          40            0.31194    
+        2             20         25          30            -3.7648    
+        3             25       27.5          30            -1.5993    
+        4           27.5      28.75          30           -0.61095    
+        5          28.75     29.375          30           -0.14121    
+        6         29.375     29.688          30           0.087455    
+        7         29.375     29.531      29.688          -0.026356    
+        8         29.531     29.609      29.688            0.03068    
+        9         29.531      29.57      29.609          0.0021941    
+       10         29.531     29.551       29.57          -0.012073    
+       11         29.551     29.561       29.57         -0.0049374    
+       12         29.561     29.565       29.57         -0.0013711    
+       13         29.565     29.568       29.57         0.00041164    
+
+
+newton_root_deg =
+
+   29.5673
+
+
+newton_residual_m =
+
+  -7.1308e-07
+
+
+newton_iterations =
+
+     4
+
+
+newton_trace =
+
+  4×4 table
+
+    Iteration    Theta_deg    Residual_m     Slope_m_per_deg
+    _________    _________    ___________    _______________
+
+        1             25          -3.7648        0.91488    
+        2         29.115         -0.33461        0.74939    
+        3         29.562       -0.0042242        0.73044    
+        4         29.567      -7.1308e-07        0.73019    
+
+
+validated_range_m =
+
+   35.0004
+
+
+validated_residual_m =
+
+   4.1164e-04
+
+
+root_summary =
+
+  1×4 table
+
+    BisectionRoot_deg    NewtonRoot_deg    ValidatedRange_m    ValidatedResidual_m
+    _________________    ______________    ________________    ___________________
+
+         29.568              29.567               35               0.00041164     
+
+
+iteration_comparison =
+
+  1×2 table
+
+    BisectionIterations    NewtonIterations
+    ___________________    ________________
+
+            13                    4        
+
+
+high_angle_root_deg =
+
+   60.4321
+
+
+reference_summary =
+
+  1×4 table
+
+    ProjectileBisection_deg    ProjectileNewton_deg    LensImage_m    RCThreshold_s
+    _______________________    ____________________    ___________    _____________
+
+            27.085                    27.084             0.14999         0.91602   
+

@@ -1,0 +1,119 @@
+{"kind":"deck","id":"pr/s0z8s3","name":"Deck"}
+{"kind":"layout","layoutId":"8af8d609-32ab-4114-bb4a-837cbe2602da","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"96ffbab9-8741-42c8-a9d6-8a3659409992","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/2uwblo","slide":1,"title":"Physics to arrays and plots","textShapes":5}
+{"kind":"textbox","id":"sh/5kz2tc3e","slide":1,"text":"Physics to arrays and plots","textPreview":"Physics to arrays and plots","textChars":27,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/ih8jix43","slide":1,"text":"A vertical launch becomes a sequence of checked calculations","textPreview":"A vertical launch becomes a sequence of checked calculations","textChars":60,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/jihkr2l8","slide":1,"text":"Question","textPreview":"Question","textChars":8,"textLines":1,"bbox":[115,290,500,60]}
+{"kind":"textbox","id":"sh/wv61g7mx","slide":1,"text":"How can MATLAB calculate the ball’s height at many times and reveal the motion in one labelled plot?","textPreview":"How can MATLAB calculate the ball’s height at many times and reveal the motion in one labelled plot?","textChars":100,"textLines":1,"bbox":[115,370,690,180]}
+{"kind":"shape","id":"sh/hwz2pc3i","slide":1,"bbox":[980,270,650,430]}
+{"kind":"textbox","id":"sh/utojex4r","slide":1,"text":"launch → rise → peak → return","textPreview":"launch → rise → peak → return","textChars":29,"textLines":1,"bbox":[1050,420,500,80]}
+{"kind":"notes","id":"nt/2uwblo","slide":1,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/5qrbko","slide":2,"title":"1","textShapes":8}
+{"kind":"textbox","id":"sh/a14fy107","slide":2,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/x4fy9gji","slide":2,"text":"Start with the physical prediction","textPreview":"Start with the physical prediction","textChars":34,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/w3mx0bix","slide":2,"text":"Upward is positive; gravity is constant; air resistance is neglected","textPreview":"Upward is positive; gravity is constant; air resistance is neglected","textChars":68,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/j6xgbq1o","slide":2,"bbox":[130,280,570,76]}
+{"kind":"textbox","id":"sh/i5oz2l03","slide":2,"text":"1. At 0 s: y = 0 m","textPreview":"1. At 0 s: y = 0 m","textChars":18,"textLines":1,"bbox":[154,299,522,38]}
+{"kind":"shape","id":"sh/58fydgju","slide":2,"bbox":[130,384,570,76]}
+{"kind":"textbox","id":"sh/k76h4vi9","slide":2,"text":"2. The ball rises and slows","textPreview":"2. The ball rises and slows","textChars":27,"textLines":1,"bbox":[154,403,522,38]}
+{"kind":"shape","id":"sh/zatgzm1k","slide":2,"bbox":[130,488,570,76]}
+{"kind":"textbox","id":"sh/y9kfqhkz","slide":2,"text":"3. The graph has one peak","textPreview":"3. The graph has one peak","textChars":25,"textLines":1,"bbox":[154,507,522,38]}
+{"kind":"shape","id":"sh/4by5oje1","slide":2,"bbox":[130,592,570,76]}
+{"kind":"textbox","id":"sh/5c7mhofm","slide":2,"text":"4. It returns toward y = 0 m","textPreview":"4. It returns toward y = 0 m","textChars":28,"textLines":1,"bbox":[154,611,522,38]}
+{"kind":"textbox","id":"sh/ipgnm9wv","slide":2,"text":"A graph is evidence only if it agrees with this physical story.","textPreview":"A graph is evidence only if it agrees with this physical story.","textChars":63,"textLines":1,"bbox":[900,440,700,90]}
+{"kind":"notes","id":"nt/5qrbko","slide":2,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/rgbyge","slide":3,"title":"2","textShapes":7}
+{"kind":"textbox","id":"sh/8ruxcjqx","slide":3,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/7qlwjepc","slide":3,"text":"The model connects physics to calculation","textPreview":"The model connects physics to calculation","textChars":41,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/mpcfat8r","slide":3,"text":"Each variable carries a value and a unit","textPreview":"Each variable carries a value and a unit","textChars":40,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/lo3eho76","slide":3,"bbox":[170,330,1020,120]}
+{"kind":"textbox","id":"sh/knax8jql","slide":3,"text":"y(t) = y0 + v0*t - 0.5*g*t^2","textPreview":"y(t) = y0 + v0*t - 0.5*g*t^2","textChars":28,"textLines":1,"bbox":[198,355,964,75]}
+{"kind":"shape","id":"sh/zm1wfep0","slide":3,"bbox":[1350,300,360,76]}
+{"kind":"textbox","id":"sh/ylsf698f","slide":3,"text":"1. y0 = 0 m","textPreview":"1. y0 = 0 m","textChars":11,"textLines":1,"bbox":[1374,319,312,38]}
+{"kind":"shape","id":"sh/xkjed47a","slide":3,"bbox":[1350,404,360,76]}
+{"kind":"textbox","id":"sh/cjax4zqp","slide":3,"text":"2. v0 = 20 m s⁻¹","textPreview":"2. v0 = 20 m s⁻¹","textChars":16,"textLines":1,"bbox":[1374,423,312,38]}
+{"kind":"shape","id":"sh/yxo7ilwr","slide":3,"bbox":[1350,508,360,76]}
+{"kind":"textbox","id":"sh/zyxorqxc","slide":3,"text":"3. g = 9.81 m s⁻²","textPreview":"3. g = 9.81 m s⁻²","textChars":17,"textLines":1,"bbox":[1374,527,312,38]}
+{"kind":"notes","id":"nt/rgbyge","slide":3,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/qcg1t7","slide":4,"title":"3","textShapes":7}
+{"kind":"textbox","id":"sh/50zi1kfu","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/ix8zq5g3","slide":4,"text":"A time array stores many sample moments","textPreview":"A time array stores many sample moments","textChars":39,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/jyh0zaxo","slide":4,"text":"Use one position for every time value","textPreview":"Use one position for every time value","textChars":37,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/s3ahwzy5","slide":4,"bbox":[130,290,600,100]}
+{"kind":"textbox","id":"sh/t4ji5kfq","slide":4,"text":"t_s = 0:0.5:4;","textPreview":"t_s = 0:0.5:4;","textChars":14,"textLines":1,"bbox":[158,315,544,55]}
+{"kind":"textbox","id":"sh/618zupgf","slide":4,"text":"Index:   1      2      3      …      9","textPreview":"Index:   1      2      3      …      9","textChars":38,"textLines":1,"bbox":[130,500,1200,44]}
+{"kind":"textbox","id":"sh/r2h03ux0","slide":4,"text":"Time:    0    0.5    1.0     …    4.0 s","textPreview":"Time:    0    0.5    1.0     …    4.0 s","textChars":39,"textLines":1,"bbox":[130,560,1200,44]}
+{"kind":"textbox","id":"sh/gra10zyh","slide":4,"text":"MATLAB indexing starts at 1.","textPreview":"MATLAB indexing starts at 1.","textChars":28,"textLines":1,"bbox":[130,720,900,60]}
+{"kind":"notes","id":"nt/qcg1t7","slide":4,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/8nn0ye","slide":5,"title":"4","textShapes":5}
+{"kind":"textbox","id":"sh/gre58jap","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/fq5ofet4","slide":5,"text":"Element-wise operators calculate every sample","textPreview":"Element-wise operators calculate every sample","textChars":45,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/upwn69cj","slide":5,"text":"The dot tells MATLAB to work value by value","textPreview":"The dot tells MATLAB to work value by value","textChars":43,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/pg76lob6","slide":5,"bbox":[120,310,1550,120]}
+{"kind":"textbox","id":"sh/ofy5cja1","slide":5,"text":"y_m = y0_m + v0_mps.*t_s - 0.5*g_mps2.*t_s.^2;","textPreview":"y_m = y0_m + v0_mps.*t_s - 0.5*g_mps2.*t_s.^2;","textChars":46,"textLines":1,"bbox":[148,335,1494,75]}
+{"kind":"textbox","id":"sh/3u5ojetg","slide":5,"text":"Use .* and .^ when both sides contain arrays.","textPreview":"Use .* and .^ when both sides contain arrays.","textChars":45,"textLines":1,"bbox":[120,510,1400,70]}
+{"kind":"notes","id":"nt/8nn0ye","slide":5,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/l1xebx","slide":6,"title":"5","textShapes":6}
+{"kind":"textbox","id":"sh/s3uto3y5","slide":6,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/r21cfyxk","slide":6,"text":"A labelled plot lets us test the prediction","textPreview":"A labelled plot lets us test the prediction","textChars":43,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/qhsbmtgz","slide":6,"text":"Axes and units make the result interpretable","textPreview":"Axes and units make the result interpretable","textChars":44,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/5gjudofe","slide":6,"bbox":[250,280,1180,540]}
+{"kind":"textbox","id":"sh/4fatkjyt","slide":6,"text":"height y (m)","textPreview":"height y (m)","textChars":12,"textLines":1,"bbox":[320,350,260,44]}
+{"kind":"textbox","id":"sh/3e1cbex8","slide":6,"text":"time t (s)","textPreview":"time t (s)","textChars":10,"textLines":1,"bbox":[860,740,240,44]}
+{"kind":"textbox","id":"sh/idsbitg3","slide":6,"text":"rises → peak → falls","textPreview":"rises → peak → falls","textChars":20,"textLines":1,"bbox":[670,500,440,54]}
+{"kind":"notes","id":"nt/l1xebx","slide":6,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/ofea0j","slide":7,"title":"6","textShapes":5}
+{"kind":"textbox","id":"sh/xs3mpcn6","slide":7,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/apcnex4f","slide":7,"text":"Trace one value before trusting the whole array","textPreview":"Trace one value before trusting the whole array","textChars":47,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/bql4n250","slide":7,"text":"At index 1, time is 0 s","textPreview":"At index 1, time is 0 s","textChars":23,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/kvu5k7mx","slide":7,"bbox":[140,330,1260,190]}
+{"kind":"textbox","id":"sh/lwnmtcni","slide":7,"text":"t_s(1) = 0\ny_m(1) = 0 + 20×0 - 0.5×9.81×0² = 0 m","textPreview":"t_s(1) = 0 | y_m(1) = 0 + 20×0 - 0.5×9.81×0² = 0 m","textChars":48,"textLines":2,"bbox":[168,355,1204,145]}
+{"kind":"textbox","id":"sh/ytcnix4r","slide":7,"text":"Known-value check: y(0) = 0 m ✓","textPreview":"Known-value check: y(0) = 0 m ✓","textChars":31,"textLines":1,"bbox":[140,620,1000,70]}
+{"kind":"notes","id":"nt/ofea0j","slide":7,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/4kfnfn","slide":8,"title":"7","textShapes":8}
+{"kind":"textbox","id":"sh/xgvqtw76","slide":8,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/adkry1of","slide":8,"text":"Modify one input and compare the physical result","textPreview":"Modify one input and compare the physical result","textChars":48,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/bet8r6p0","slide":8,"text":"A larger launch speed should increase the peak height","textPreview":"A larger launch speed should increase the peak height","textChars":53,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/kjm94b6h","slide":8,"bbox":[130,280,540,76]}
+{"kind":"textbox","id":"sh/lkvqxg72","slide":8,"text":"1. Keep y0 and g fixed","textPreview":"1. Keep y0 and g fixed","textChars":22,"textLines":1,"bbox":[154,299,492,38]}
+{"kind":"shape","id":"sh/yh4r21or","slide":8,"bbox":[130,384,540,76]}
+{"kind":"textbox","id":"sh/zid8v6pw","slide":8,"text":"2. Change v0 only","textPreview":"2. Change v0 only","textChars":17,"textLines":1,"bbox":[154,403,492,38]}
+{"kind":"shape","id":"sh/0nips7qd","slide":8,"bbox":[130,488,540,76]}
+{"kind":"textbox","id":"sh/1obqlc7y","slide":8,"text":"3. Recalculate the array","textPreview":"3. Recalculate the array","textChars":24,"textLines":1,"bbox":[154,507,492,38]}
+{"kind":"shape","id":"sh/lsrmdozy","slide":8,"bbox":[130,592,540,76]}
+{"kind":"textbox","id":"sh/0ri5kjid","slide":8,"text":"4. Compare labelled curves","textPreview":"4. Compare labelled curves","textChars":26,"textLines":1,"bbox":[154,611,492,38]}
+{"kind":"textbox","id":"sh/zq94behs","slide":8,"text":"Controlled comparison: change one thing, then explain one change in the graph.","textPreview":"Controlled comparison: change one thing, then explain one change in the graph.","textChars":78,"textLines":1,"bbox":[850,420,780,120]}
+{"kind":"notes","id":"nt/4kfnfn","slide":8,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/sd1n4i","slide":9,"title":"8","textShapes":8}
+{"kind":"textbox","id":"sh/7idk7e5s","slide":9,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/8jml0j6d","slide":9,"text":"Common mistakes have visible clues","textPreview":"Common mistakes have visible clues","textChars":34,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/94v29ony","slide":9,"text":"Classify the problem before changing the code","textPreview":"Classify the problem before changing the code","textChars":45,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/ydkju9ob","slide":9,"bbox":[130,280,560,76]}
+{"kind":"textbox","id":"sh/zetk3u5w","slide":9,"text":"1. Missing dot operator","textPreview":"1. Missing dot operator","textChars":23,"textLines":1,"bbox":[154,299,512,38]}
+{"kind":"shape","id":"sh/kfmlwz6h","slide":9,"bbox":[130,384,560,76]}
+{"kind":"textbox","id":"sh/lgv254n2","slide":9,"text":"2. Wrong array index","textPreview":"2. Wrong array index","textChars":20,"textLines":1,"bbox":[154,403,512,38]}
+{"kind":"shape","id":"sh/a9kjqpof","slide":9,"bbox":[130,488,560,76]}
+{"kind":"textbox","id":"sh/batkzupk","slide":9,"text":"3. Unlabelled graph","textPreview":"3. Unlabelled graph","textChars":19,"textLines":1,"bbox":[154,507,512,38]}
+{"kind":"shape","id":"sh/v69kvyx8","slide":9,"bbox":[130,592,560,76]}
+{"kind":"textbox","id":"sh/u5032tgn","slide":9,"text":"4. Unit or sign error","textPreview":"4. Unit or sign error","textChars":21,"textLines":1,"bbox":[154,611,512,38]}
+{"kind":"textbox","id":"sh/h8rmxofy","slide":9,"text":"Ask: is it a syntax, array, plotting, or physical-model defect?","textPreview":"Ask: is it a syntax, array, plotting, or physical-model defect?","textChars":63,"textLines":1,"bbox":[900,450,720,110]}
+{"kind":"notes","id":"nt/sd1n4i","slide":9,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/bo1qbm","slide":10,"title":"9","textShapes":4}
+{"kind":"textbox","id":"sh/ehgn2dc3","slide":10,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/1k76d8bu","slide":10,"text":"The complete reasoning chain is reusable","textPreview":"The complete reasoning chain is reusable","textChars":40,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/gjy543u9","slide":10,"text":"Model → units → array → calculation → plot → check → explanation","textPreview":"Model → units → array → calculation → plot → check → explanation","textChars":64,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/3m9ofitk","slide":10,"text":"The code is not the goal. The goal is a result you can explain and validate.","textPreview":"The code is not the goal. The goal is a result you can explain and validate.","textChars":76,"textLines":1,"bbox":[180,350,1420,110]}
+{"kind":"notes","id":"nt/bo1qbm","slide":10,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/3pye89","slide":11,"title":"10","textShapes":4}
+{"kind":"textbox","id":"sh/wn6honi1","slide":11,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/bmx0fihg","slide":11,"text":"Checkpoint: read the graph physically","textPreview":"Checkpoint: read the graph physically","textChars":37,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/alozmd0v","slide":11,"text":"What should the curve show at launch, peak, and return?","textPreview":"What should the curve show at launch, peak, and return?","textChars":55,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/lszilszi","slide":11,"text":"Use the graph to support a claim about the ball’s motion—not just to report that it “looks right”.","textPreview":"Use the graph to support a claim about the ball’s motion—not just to report that it “looks right”.","textChars":98,"textLines":1,"bbox":[170,340,1460,120]}
+{"kind":"notes","id":"nt/3pye89","slide":11,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/pco7ta","slide":12,"title":"11","textShapes":4}
+{"kind":"textbox","id":"sh/ahc32d8b","slide":12,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/xknmx8rm","slide":12,"text":"Exit ticket","textPreview":"Exit ticket","textChars":11,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/cje543q1","slide":12,"text":"Name one validation check and one unit you would inspect before submitting","textPreview":"Name one validation check and one unit you would inspect before submitting","textChars":74,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/zm54zi9s","slide":12,"text":"Your evidence should connect the numerical output back to the physical model.","textPreview":"Your evidence should connect the numerical output back to the physical model.","textChars":77,"textLines":1,"bbox":[180,380,1450,90]}
+{"kind":"notes","id":"nt/pco7ta","slide":12,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}

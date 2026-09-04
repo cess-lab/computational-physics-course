@@ -1,0 +1,14 @@
+# RETIRED: legacy checksum for master hash 185cdbd871821f91bb2cbb4f1d08c1e4fbcf0cd47dbb3b08ff8def46abf7f1a6.
+# Current exact-hash checksums are in current-sha256sums.txt; do not use this file for the current master.
+185cdbd871821f91bb2cbb4f1d08c1e4fbcf0cd47dbb3b08ff8def46abf7f1a6  .agent/lecture-slide-system/masters/PHY4605_Editable_Slide_Master.pptx
+d8c63eff19b725028b8f87db932ba78c11c60a17046d9f2ec0407de09f401ab3  .agent/lecture-slide-system/qa/terra-sol-master-repair/full-deck-contact-sheet.png
+b392ceec479d5cab620235badb9658a9265a9085a5f320f36559e559255c6c55  .agent/lecture-slide-system/qa/terra-sol-master-repair/title-contact-sheet.png
+b82864fd8cb845467f464403c0d115180c7568724fc5c3577393b6d1094b2477  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-1.png
+db860e874c76acd3be6f8dc82dc5f2832a7acb2c5a8b6614ba7b53c974940ad2  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-2.png
+fc6f0870144771dd745e66f4c0df4fa086c0dc55824cb634731fe3eb36e96aff  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-3.png
+629b45a28b43da40ef0b66b68859dce2598d1839b6afcdf3b452e718d27a7842  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-4.png
+85febec2aea0864c8cf438b044a642abad1fc6a574ee0d397964c63eb480ebcb  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-5.png
+8c4362b34b1d87b3ae03c58d017e394ca83f743264df5967c63d862354ccd019  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-6.png
+404e9c6686f1112b3d5653feaf146cf48dbeb4da47f3b9c7a0765af77d9a227a  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-7.png
+6f06c1daec4d4c4c0e9de166f78a9a60514697bed6b11bc0f28c193c027e2910  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-8.png
+6bca844345a67aa2117fa65c4fe22a1918082fd7ab17ca64f7e896b220ad52c7  .agent/lecture-slide-system/qa/terra-sol-master-repair/rendered-canonical/slide-9.png

@@ -1,0 +1,128 @@
+{"kind":"deck","id":"pr/tli8er","name":"Deck"}
+{"kind":"layout","layoutId":"a0fd0530-d132-427d-94a7-856fc8227fcd","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"ced01fcc-c784-4c0e-a3f2-7eecc4202816","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/mt59xc","slide":1,"title":"PHY4605 Computational Methods in Physics","textShapes":3}
+{"kind":"shape","id":"sh/6pkju5cv","slide":1,"bbox":[70,45,980,500]}
+{"kind":"textbox","id":"sh/5obilkba","slide":1,"text":"PHY4605 Computational Methods in Physics","textPreview":"PHY4605 Computational Methods in Physics","textChars":40,"textLines":1,"bbox":[115,126,920,42]}
+{"kind":"textbox","id":"sh/4n21sfup","slide":1,"text":"Pseudocode, Loops and\nDebugging","textPreview":"Pseudocode, Loops and | Debugging","textChars":31,"textLines":2,"bbox":[115,245,950,170]}
+{"kind":"textbox","id":"sh/atczihoz","slide":1,"text":"Week 2 | Make Each Step Traceable","textPreview":"Week 2 | Make Each Step Traceable","textChars":33,"textLines":1,"bbox":[115,475,980,55]}
+{"kind":"image","id":"im/mpkfmtc7","slide":1,"name":"","alt":"Vertical launch illustration","bbox":[1080,250,600,460]}
+{"kind":"image","id":"im/sfydcnat","slide":1,"name":"","alt":"Vertical launch hero illustration","bbox":[1230,175,545,570]}
+{"kind":"notes","id":"nt/mt59xc","slide":1,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/4gvkfg","slide":2,"title":"1","textShapes":5}
+{"kind":"textbox","id":"sh/tsva5wv2","slide":2,"text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/6p4rahwb","slide":2,"text":"Begin with a physical prediction","textPreview":"Begin with a physical prediction","textChars":32,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/rqd83mdw","slide":2,"text":"The ball rises, reaches one peak, then falls","textPreview":"The ball rises, reaches one peak, then falls","textChars":44,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/43298re5","slide":2,"text":"At 0 s, y must be 0 m","textPreview":"At 0 s, y must be 0 m","textChars":21,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/5obq1wvq","slide":2,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/i1kr6hwf","slide":2,"text":"Use the vertical-launch model as the reference.","textPreview":"Use the vertical-launch model as the reference.","textChars":47,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"image","id":"im/ilojut43","slide":2,"name":"","alt":"Vertical launch prediction illustration","bbox":[980,250,650,450]}
+{"kind":"notes","id":"nt/4gvkfg","slide":2,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/icfwjs","slide":3,"title":"2","textShapes":6}
+{"kind":"textbox","id":"sh/qhkfexgj","slide":3,"text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/dkvypszu","slide":3,"text":"Break the task into four jobs","textPreview":"Break the task into four jobs","textChars":29,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/sj2xg7y9","slide":3,"text":"Input → calculation → output → check","textPreview":"Input → calculation → output → check","textChars":36,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/3etgjihs","slide":3,"text":"Each job has a clear physical purpose","textPreview":"Each job has a clear physical purpose","textChars":37,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/idkfadg7","slide":3,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/5gbylszy","slide":3,"text":"Use the vertical-launch model as the reference.","textPreview":"Use the vertical-launch model as the reference.","textChars":47,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"shape","id":"sh/4f2xcnyd","slide":3,"bbox":[210,430,1440,95]}
+{"kind":"textbox","id":"sh/vq9wfihw","slide":3,"text":"Input: y0_m = 0;  v0_mps = 20;  g_mps2 = 9.81;","textPreview":"Input: y0_m = 0;  v0_mps = 20;  g_mps2 = 9.81;","textChars":46,"textLines":1,"bbox":[238,455,1384,50]}
+{"kind":"notes","id":"nt/icfwjs","slide":3,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/foid4h","slide":4,"title":"3","textShapes":7}
+{"kind":"textbox","id":"sh/0rytcn6p","slide":4,"text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/fqps3254","slide":4,"text":"Pseudocode maps the algorithm","textPreview":"Pseudocode maps the algorithm","textChars":29,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/e5gbaxoj","slide":4,"text":"Use plain language before MATLAB punctuation","textPreview":"Use plain language before MATLAB punctuation","textChars":44,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/pw7u9cnm","slide":4,"bbox":[130,280,620,76]}
+{"kind":"textbox","id":"sh/ovytg761","slide":4,"text":"1. Choose y0, v0 and g","textPreview":"1. Choose y0, v0 and g","textChars":22,"textLines":1,"bbox":[154,299,572,38]}
+{"kind":"shape","id":"sh/nups725g","slide":4,"bbox":[130,384,620,76]}
+{"kind":"textbox","id":"sh/2tgbexov","slide":4,"text":"2. Create the time array","textPreview":"2. Create the time array","textChars":24,"textLines":1,"bbox":[154,403,572,38]}
+{"kind":"shape","id":"sh/50nax8n2","slide":4,"bbox":[130,488,620,76]}
+{"kind":"textbox","id":"sh/4zet436h","slide":4,"text":"3. Repeat the height calculation","textPreview":"3. Repeat the height calculation","textChars":32,"textLines":1,"bbox":[154,507,572,38]}
+{"kind":"shape","id":"sh/a50ryxwj","slide":4,"bbox":[130,592,620,76]}
+{"kind":"textbox","id":"sh/v69872d4","slide":4,"text":"4. Plot and check the result","textPreview":"4. Plot and check the result","textChars":28,"textLines":1,"bbox":[154,611,572,38]}
+{"kind":"notes","id":"nt/foid4h","slide":4,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/ftzvfr","slide":5,"title":"4","textShapes":4}
+{"kind":"textbox","id":"sh/ob6l0b6p","slide":5,"text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/3axkr654","slide":5,"text":"A for loop visits one array position at a time","textPreview":"A for loop visits one array position at a time","textChars":46,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/29o3y1oz","slide":5,"text":"The index connects t(k) with y(k)","textPreview":"The index connects t(k) with y(k)","textChars":33,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/18v2pwne","slide":5,"bbox":[120,310,1540,260]}
+{"kind":"textbox","id":"sh/g7mlwr6t","slide":5,"text":"for k = 1:numel(t_s)\n    % calculate y_m(k)\nend","textPreview":"for k = 1:numel(t_s) |     % calculate y_m(k) | end","textChars":47,"textLines":3,"bbox":[148,335,1484,215]}
+{"kind":"image","id":"im/yx4r6x8f","slide":5,"name":"","alt":"Stroboscopic sampled positions for loop iterations","bbox":[980,260,650,430]}
+{"kind":"image","id":"im/zydsf2p0","slide":5,"name":"","alt":"Loop index traversal illustration","bbox":[1080,280,480,390]}
+{"kind":"notes","id":"nt/ftzvfr","slide":5,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/9lpa0s","slide":6,"title":"5","textShapes":4}
+{"kind":"textbox","id":"sh/361oz2pk","slide":6,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/47a58765","slide":6,"text":"Trace the first two loop results","textPreview":"Trace the first two loop results","textChars":32,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/p8j61s7q","slide":6,"text":"Trace values before running the full loop","textPreview":"Trace values before running the full loop","textChars":41,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/q9c7axob","slide":6,"bbox":[120,310,1540,150]}
+{"kind":"textbox","id":"sh/ralo32pw","slide":6,"text":"k = 1: t = 0 s, y = 0 m\nk = 2: t = 0.5 s, y = 8.77375 m","textPreview":"k = 1: t = 0 s, y = 0 m | k = 2: t = 0.5 s, y = 8.77375 m","textChars":55,"textLines":2,"bbox":[148,335,1484,105]}
+{"kind":"notes","id":"nt/9lpa0s","slide":6,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/jmaq1o","slide":7,"title":"6","textShapes":4}
+{"kind":"textbox","id":"sh/vapk7qxk","slide":7,"text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/wby1gvy5","slide":7,"text":"Complete the one-line update","textPreview":"Complete the one-line update","textChars":28,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/hc7290fq","slide":7,"text":"The calculation must use the matching index k","textPreview":"The calculation must use the matching index k","textChars":45,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"shape","id":"sh/mlwjalg3","slide":7,"bbox":[120,310,1540,150]}
+{"kind":"textbox","id":"sh/7m503qxo","slide":7,"text":"y_m(k) = y0_m + v0_mps*t_s(k) - 0.5*g_mps2*t_s(k)^2;","textPreview":"y_m(k) = y0_m + v0_mps*t_s(k) - 0.5*g_mps2*t_s(k)^2;","textChars":52,"textLines":1,"bbox":[148,335,1484,105]}
+{"kind":"notes","id":"nt/jmaq1o","slide":7,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/ljq3f0","slide":8,"title":"7","textShapes":6}
+{"kind":"textbox","id":"sh/uhczypkn","slide":8,"text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/hknit4je","slide":8,"text":"Modify one physical input","textPreview":"Modify one physical input","textChars":25,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/wju10z2t","slide":8,"text":"Change v0 only, then predict the change","textPreview":"Change v0 only, then predict the change","textChars":39,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/jm50vu14","slide":8,"text":"A larger launch speed raises the peak","textPreview":"A larger launch speed raises the peak","textChars":37,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/ilwj29kz","slide":8,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/5onix4ja","slide":8,"text":"Use the vertical-launch model as the reference.","textPreview":"Use the vertical-launch model as the reference.","textChars":47,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"shape","id":"sh/zq10ja10","slide":8,"bbox":[1030,585,720,335]}
+{"kind":"shape","id":"sh/0b258z6l","slide":8,"bbox":[220,450,1420,100]}
+{"kind":"textbox","id":"sh/1cb6h476","slide":8,"text":"v0_lower_mps = 15;  % change one input, then rerun","textPreview":"v0_lower_mps = 15;  % change one input, then rerun","textChars":50,"textLines":1,"bbox":[248,475,1364,55]}
+{"kind":"image","id":"im/9cz65cfq","slide":8,"name":"","alt":"MATLAB plot showing launch-speed parameter change","bbox":[1080,610,620,290]}
+{"kind":"image","id":"im/3ed4rixg","slide":8,"name":"","alt":"MATLAB plot showing launch-speed parameter change","bbox":[1080,610,620,290]}
+{"kind":"notes","id":"nt/ljq3f0","slide":8,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/4mw0sj","slide":9,"title":"8","textShapes":5}
+{"kind":"textbox","id":"sh/dcfexwvm","slide":9,"text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/q94v2hwb","slide":9,"text":"Debug from evidence, not guesses","textPreview":"Debug from evidence, not guesses","textChars":32,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/badwvmdg","slide":9,"text":"Read the message, inspect the line, check values and units","textPreview":"Read the message, inspect the line, check values and units","textChars":58,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/0z6d8rud","slide":9,"text":"A plausible graph can still hide a physics defect","textPreview":"A plausible graph can still hide a physics defect","textChars":49,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/l0fe1wvy","slide":9,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/ydov61c7","slide":9,"text":"Use the vertical-launch model as the reference.","textPreview":"Use the vertical-launch model as the reference.","textChars":47,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"image","id":"im/6pc7mtk3","slide":9,"name":"","alt":"MATLAB-generated plot for two launch speeds","bbox":[930,260,720,490]}
+{"kind":"image","id":"im/9wj654ja","slide":9,"name":"","alt":"Debugging with evidence illustration","bbox":[1080,260,500,380]}
+{"kind":"notes","id":"nt/4mw0sj","slide":9,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/vur8e2","slide":10,"title":"9","textShapes":5}
+{"kind":"textbox","id":"sh/il8bylkf","slide":10,"text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/5oju903q","slide":10,"text":"Classify the defect before debugging","textPreview":"Classify the defect before debugging","textChars":36,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/4nat0v25","slide":10,"text":"Syntax; array/index/operator; physical/logical","textPreview":"Syntax; array/index/operator; physical/logical","textChars":46,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/vihc3qlo","slide":10,"text":"Each category needs a different check","textPreview":"Each category needs a different check","textChars":37,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/uh8bulk3","slide":10,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/hkzu503u","slide":10,"text":"Evidence first: identify the defect category before editing.","textPreview":"Evidence first: identify the defect category before editing.","textChars":60,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"image","id":"im/porq1gji","slide":10,"name":"","alt":"Gravity-sign debugging illustration","bbox":[1010,250,580,450]}
+{"kind":"notes","id":"nt/vur8e2","slide":10,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/ssrioq","slide":11,"title":"10","textShapes":5}
+{"kind":"textbox","id":"sh/ru98b2tw","slide":11,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/cvip47uh","slide":11,"text":"Validation begins at the known initial value","textPreview":"Validation begins at the known initial value","textChars":44,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/dwrqdcb2","slide":11,"text":"The first computed position must be y(0) = 0 m","textPreview":"The first computed position must be y(0) = 0 m","textChars":46,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/2pg7yxcf","slide":11,"text":"If the first value fails, stop and investigate","textPreview":"If the first value fails, stop and investigate","textChars":46,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/3qp872t0","slide":11,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/4ryp07u5","slide":11,"text":"Use the vertical-launch model as the reference.","textPreview":"Use the vertical-launch model as the reference.","textChars":47,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"image","id":"im/8fqx4nqh","slide":11,"name":"","alt":"LaTeX-rendered initial-value validation equation","bbox":[980,380,560,140]}
+{"kind":"notes","id":"nt/ssrioq","slide":11,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/3ckzik","slide":12,"title":"11","textShapes":6}
+{"kind":"textbox","id":"sh/7250rql4","slide":12,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/83e1kv29","slide":12,"text":"Interpret the final output physically","textPreview":"Interpret the final output physically","textChars":37,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/9472t03u","slide":12,"text":"Explain rise, peak and descent using the model","textPreview":"Explain rise, peak and descent using the model","textChars":46,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/ydwjelk7","slide":12,"text":"The graph should agree with the prediction","textPreview":"The graph should agree with the prediction","textChars":42,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/ze50nqls","slide":12,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/0fe1gb2d","slide":12,"text":"Use the vertical-launch model as the reference.","textPreview":"Use the vertical-launch model as the reference.","textChars":47,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"shape","id":"sh/i9gjq5kr","slide":12,"bbox":[1030,585,720,335]}
+{"kind":"shape","id":"sh/b65k7m90","slide":12,"bbox":[180,440,1500,100]}
+{"kind":"textbox","id":"sh/q5wjeh8f","slide":12,"text":"plot(t_s, y_m);  xlabel(\"time t (s)\");  ylabel(\"height y (m)\");","textPreview":"plot(t_s, y_m);  xlabel(\"time t (s)\");  ylabel(\"height y (m)\");","textChars":63,"textLines":1,"bbox":[208,465,1444,55]}
+{"kind":"image","id":"im/gfedwby9","slide":12,"name":"","alt":"MATLAB plot for output interpretation","bbox":[1080,610,620,290]}
+{"kind":"image","id":"im/ihwvylgz","slide":12,"name":"","alt":"MATLAB plot for output interpretation","bbox":[1080,610,620,290]}
+{"kind":"notes","id":"nt/3ckzik","slide":12,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}
+{"kind":"slide","id":"sl/u969uz","slide":13,"title":"12","textShapes":5}
+{"kind":"textbox","id":"sh/618r2xor","slide":13,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/t4jadc7i","slide":13,"text":"Exit ticket","textPreview":"Exit ticket","textChars":11,"textLines":1,"bbox":[115,60,1580,92]}
+{"kind":"textbox","id":"sh/s3a9476x","slide":13,"text":"Write the next debugging action for a failed initial-value check","textPreview":"Write the next debugging action for a failed initial-value check","textChars":64,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/jyh87ip0","slide":13,"text":"Model → algorithm → code → validation → explanation","textPreview":"Model → algorithm → code → validation → explanation","textChars":51,"textLines":1,"bbox":[155,350,1480,150]}
+{"kind":"shape","id":"sh/ix8rydov","slide":13,"bbox":[155,600,1320,90]}
+{"kind":"textbox","id":"sh/50zq9s76","slide":13,"text":"Use the vertical-launch model as the reference.","textPreview":"Use the vertical-launch model as the reference.","textChars":47,"textLines":1,"bbox":[190,625,1260,42]}
+{"kind":"notes","id":"nt/u969uz","slide":13,"text":"[Sources]\n- PHY4605 Week materials and retained course assets\n[/Sources]"}

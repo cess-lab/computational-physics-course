@@ -1,0 +1,7 @@
+PHY4605 Week 05 template fidelity record
+
+- The canonical deck was authored from the approved master-derived template-starter.pptx with PresentationFile.importPptx and exported with PresentationFile.exportPptx.
+- The final visual system retains the approved master language: white borderless canvas, navy title rules, rounded panels, restrained blue/gold/green palette, and Nunito / IBM Plex Mono typography.
+- The generic template-fidelity checker reports intentional mask-cover-overlay findings because the starter's sample slide content was cleared and replaced with Week 05 content. These are expected for this full-slide recomposition and are not visible overlays in the final render.
+- The checker also sees a retired exploratory build script and a stale plan mapping under the hidden backend folder; neither is the canonical build input. The active build script imports template-starter.pptx and uses artifact-tool only.
+- Full-resolution artifact-tool and LibreOffice inspections found no visible inherited-content remnants, overlay artifacts, or unresolved placeholder text.

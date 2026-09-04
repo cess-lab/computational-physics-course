@@ -1,0 +1,26 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+       id                                         message                                     fix    line     column 
+    _________    _________________________________________________________________________    ___    ____    ________
+
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      35     10    10
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      36     11    11
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      63     20    20
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      64     22    22
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      65     22    22
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      66     17    17
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      86     17    17
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      87     19    19
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      88     19    19
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      89     14    14
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      94     19    19
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1      95     22    22
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1     101     14    14
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1     106     22    22
+    {'NOPTS'}    {'Add a semicolon after the statement to hide the output (in a script).'}     1     111     21    21
+

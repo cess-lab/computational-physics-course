@@ -1,0 +1,4 @@
+Validation passed: no errors found.
+
+Command:
+officecli validate Week02/Lecture_Slides_Week02.pptx

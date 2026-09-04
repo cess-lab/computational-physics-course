@@ -1,0 +1,565 @@
+{
+  "deck_name": "Lecture_Slides_Week05",
+  "language": "English",
+  "goal": "Teach Year-2 physics students to turn a familiar projectile target condition into a residual f(theta)=0, interpret residual signs and a graphical zero crossing, trace scaffolded bisection and Newton updates, apply one supplied residual stopping rule, validate by substitution, and explain the physical meaning and unit of the root.",
+  "deck_context": {
+    "source_summary": "Week 05 uses a level-ground projectile range model to make numerical root finding physically interpretable. Students move from the target range condition to a residual, read undershoot and overshoot signs, locate a sign-changing bracket, trace bisection and Newton iterations, stop using one supplied residual tolerance, substitute the root back into the residual, and transfer the pattern to thin-lens and RC charging contexts.",
+    "core_claim": "A root is a physical input that makes a target condition true. A numerical answer is credible only when the residual is defined with units, the update is traceable, the one supplied stopping rule is satisfied, and substitution confirms the target condition.",
+    "locked_model": "Level-ground projectile range: R(theta) = (v0_mps^2/g_mps2)*sind(2*theta_deg), with v0_mps = 20 m/s, g_mps2 = 9.81 m/s^2, target_m = 35 m, theta_deg in degree, range_m in m, and residual_m = range_m - target_m.",
+    "locked_setup": "Low-angle bracket [20, 40] degree; f(20 degree) = -8.7905 m approximately; f(40 degree) = +5.1553 m approximately; Newton starting angle 25 degree; theta_scan_deg = 10:1:70; one Core stopping rule abs(residual_m) < 1e-3 m.",
+    "locked_results": "Bisection: 29.5679 degree after 13 recorded iterations with residual +4.1164e-4 m; Newton: 29.5673 degree after 4 recorded evaluations with residual -7.1308e-7 m; direct substitution at the bisection result gives range 35.0004 m and residual +4.1164e-4 m.",
+    "bisection_trace": "Iteration 1: [20,40], midpoint 30, residual +0.31194 m, keep [20,30]. Iteration 2: [20,30], midpoint 25, residual -3.7648 m, keep [25,30]. Iteration 3: [25,30], midpoint 27.5, residual -1.5993 m, keep [27.5,30]. Iteration 4: [27.5,30], midpoint 28.75, residual -0.61095 m, keep [28.75,30].",
+    "newton_trace": "Evaluation 1: theta 25 degree, residual -3.7648 m, slope 0.91488 m/degree, next angle 29.115 degree. Evaluation 2: theta 29.115 degree, residual -0.33461 m, slope 0.74939 m/degree, next angle 29.562 degree. Evaluation 3: theta 29.562 degree, residual -0.0042242 m, slope 0.73044 m/degree, next angle 29.567 degree. Evaluation 4: theta 29.567 degree, residual -7.1308e-7 m, slope 0.73019 m/degree, stop.",
+    "transfer_contexts": "Thin lens residual f(v) = 1/f - 1/u - 1/v, root v in m, residual in m^-1. RC charging residual f(t) = Vs*(1-exp(-t/(RC))) - Vthreshold, root t in s, residual in V. Do not reveal practical numerical answers on the transfer slide.",
+    "exactness": "Equations, signs, units, MATLAB variable names, MATLAB code, numerical values, trace entries, stopping rule, validation result, and transfer residual forms are strict teaching content. Do not invent, paraphrase, or change them.",
+    "canonical_terms": [
+      "target condition",
+      "residual",
+      "root",
+      "undershoot",
+      "overshoot",
+      "zero crossing",
+      "sign-changing bracket",
+      "bisection",
+      "midpoint",
+      "Newton's method",
+      "tangent update",
+      "residual stopping rule",
+      "substitution validation",
+      "physical interpretation"
+    ],
+    "course_alignment": {
+      "core": [
+        "distinguish the original physical equation from residual form f(x)=0",
+        "interpret negative, zero, and positive residuals physically",
+        "identify a zero crossing and sign-changing bracket",
+        "trace and complete scaffolded bisection",
+        "trace and complete scaffolded Newton",
+        "use one supplied residual stopping rule",
+        "validate by substituting the root into the residual",
+        "state the root's physical unit and meaning",
+        "diagnose a bad same-sign bisection bracket"
+      ],
+      "working_exposure": [
+        "guaranteed bracketed versus faster local method",
+        "iteration count as a limited cost measure",
+        "transfer to thin-lens and RC charging residuals"
+      ],
+      "stretch": [
+        "uniqueness proof",
+        "multiple stopping criteria",
+        "MATLAB fzero",
+        "safeguarded Newton",
+        "formal solver selection"
+      ],
+      "removed": [
+        "extreme small-derivative stress cases",
+        "150-radian Newton-step examples"
+      ]
+    }
+  },
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 4,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "prompt_source": "coordinator's approved Slide 05 sample prompt for the bisection bracket/update concept",
+    "size": "1672x941 pixels, built-in default landscape resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+    "input_context_preparation": "The sample used no local source image; the coordinator supplied the Teaching Courseware style brief and exact locked values in the generation prompt. Local strict source assets will be inspected with view_image before dependent slide generation.",
+    "handoff_rule": "Every remaining slide worker must use this same built-in image tool in generate mode, with the approved Slide 05 visible as a style-only reference and any listed strict assets preserved; return a blocker if this path is unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slide system with strong hierarchy, approachable labelled scientific diagrams, moderate information density, and visual pacing for learners",
+    "color_palette": "open warm-white canvas; deep navy #243B53 for titles and structure; dusty blue #6E8FB3 for model and algorithm content; quiet sage #7AA69B for expected, retained, validated, or acceptable states; muted ochre #C7A35A for occasional prompts and midpoint/caution cues; subdued coral #BF7A70 only for genuine bad-bracket or physical-failure diagnosis",
+    "typography": "projection-readable sans-serif; large bold navy main title at the Week 03/04 scale; semibold for short headings and labels; regular for explanations and sublabels; readable regular monospaced MATLAB code; preserve mathematical symbols and units exactly",
+    "title_treatment": "Place a thin deep-navy horizontal separator below the title, extending from the left content margin nearly to the right content margin on every slide.",
+    "density_rule": "Keep supporting copy concise and leave visible white space around the dominant learning object; one learning job per slide; use compact prompts rather than multiple stacked answer panels.",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin functional lines, direct labels, simple diagrams, generous alignment, no gradients, no decorative clutter, and no thick outer frame",
+    "prompt_rule": "Use ochre sparingly as a functional cue for a question, midpoint, or caution; use sage for a retained bracket or validation; use coral only for the same-sign diagnosis.",
+    "deck_consistency": "match the existing Week 03 and Week 04 Teaching Courseware decks in palette, title scale, separator treatment, icon language, spacing rhythm, and approachable scientific tone while varying composition by teaching role",
+    "prohibited": [
+      "thick outer frame",
+      "slide numbers",
+      "timings",
+      "source labels",
+      "production metadata",
+      "unrelated logos",
+      "unlabelled decorative graphs",
+      "dense paragraphs",
+      "invented numerical values"
+    ]
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+    "role": "approved Week 05 Teaching Courseware sample slide; style-only reference for palette, typography, density, separator, and visual identity",
+    "fidelity": "match the approved sample's palette, typography scale, spacing rhythm, functional colour meaning, clean finish, and visual tone; do not copy its exact layout or content unless the slide role requires it"
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "From a physical target to a checkable root",
+      "role": "cover",
+      "intent": "Open with a sparse, question-led physical problem before introducing numerical method vocabulary.",
+      "key_points": [
+        "Week 05 | Root finding",
+        "A projectile is launched at v0 = 20 m/s.",
+        "Find the low launch angle that makes the range equal to 35 m."
+      ],
+      "local_context": "Keep the cover deliberately light. The unknown is a launch angle in degree, and the target is a physical range in m. Do not preview bisection, Newton, residuals, or the full workflow on the cover.",
+      "layout": {
+        "composition": "large question-led title on the left with one spacious level-ground projectile arc visual on the right; a single concise subtitle below the separator",
+        "variation": "sparse cover; do not copy the previous week's spring cover exact composition"
+      },
+      "visual_elements": {
+        "main_visual": "simple labelled projectile arc from level ground to a target marker labelled 35 m, with launch arrow labelled v0 = 20 m/s and a small theta angle marker",
+        "supporting_elements": "small subtitle Week 05 | Root finding; no algorithm panels"
+      },
+      "required_images": [],
+      "source_image_rules": "No strict source visual is required. Keep the conceptual projectile schematic labelled and physically plausible without inventing a second trajectory or a solved angle.",
+      "constraints": [
+        "Use exact title text and exact subtitle text.",
+        "Do not show a residual graph, code, bisection, Newton, or numerical answer.",
+        "No slide number, outer frame, watermark, logo, timings, or production metadata."
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Turn the target condition into a residual",
+      "role": "representation change",
+      "intent": "Distinguish the original physical equation from the residual equation that a numerical method can drive to zero.",
+      "key_points": [
+        "Original model: R(theta) = v0^2/g * sin(2 theta).",
+        "Target condition: R(theta) = 35 m.",
+        "Residual: f(theta) = R(theta) - 35 m.",
+        "A root satisfies f(theta) = 0."
+      ],
+      "local_context": "The residual is model range minus target range, so its unit is m. The root variable theta is an angle in degree. Make the physical model -> target -> residual zero mapping the dominant story.",
+      "layout": {
+        "composition": "three-stage horizontal equation map: PHYSICAL MODEL -> TARGET CONDITION -> RESIDUAL ZERO, with a compact variables/units strip underneath",
+        "variation": "equation-led representation map; no code yet"
+      },
+      "visual_elements": {
+        "main_visual": "exact model-and-residual equation asset as the central learning object",
+        "supporting_elements": "three labelled stages, arrows, and separate chips for root unit degree and residual unit m"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/equations/model_residual.png",
+          "role": "strict equation input; projectile model, target condition, and residual definition",
+          "fidelity": "preserve every symbol, value, fraction, and unit exactly"
+        }
+      ],
+      "source_image_rules": "Equation asset is strict. Keep the exact supplied mathematical content visibly intact; generated surrounding labels must not rewrite the equations.",
+      "constraints": [
+        "Do not use generic x as the only unknown; keep theta and its degree unit visible.",
+        "Do not introduce a solver or a stopping rule yet.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Read the residual sign as physics",
+      "role": "concept meaning",
+      "intent": "Connect algebraic sign to undershoot, exact target, and overshoot before any iteration.",
+      "key_points": [
+        "f(theta) < 0: model range is shorter than the target — undershoot.",
+        "f(theta) = 0: model range equals the target — root.",
+        "f(theta) > 0: model range is longer than the target — overshoot.",
+        "The residual is a distance mismatch in metres."
+      ],
+      "local_context": "Keep the sign interpretation exact. Use one horizontal physical comparison strip with three launch outcomes or target-distance states, not three unrelated decorative illustrations.",
+      "layout": {
+        "composition": "three horizontally aligned state panels with a shared target-distance baseline; negative in dusty blue, zero in sage, positive in ochre, with a compact exact sign equation asset",
+        "variation": "concept comparison layout"
+      },
+      "visual_elements": {
+        "main_visual": "labelled undershoot, root, and overshoot states with short arrows showing the model range relative to the 35 m target",
+        "supporting_elements": "exact residual sign asset, unit badge residual (m), and a small bottom prompt asking which sign means overshoot"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/equations/signs.png",
+          "role": "strict equation input; residual sign meanings",
+          "fidelity": "preserve the sign symbols and physical meanings exactly"
+        }
+      ],
+      "source_image_rules": "Sign equations are strict; conceptual state diagrams may be generated but must keep negative/zero/positive meanings consistent.",
+      "constraints": [
+        "Do not show a solved numerical root.",
+        "Do not imply that a sign alone proves uniqueness.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Find the zero crossing before coding",
+      "role": "graph reading and bracket selection",
+      "intent": "Use the residual graph to locate a low-angle crossing and select a numerical bracket before writing a solver.",
+      "key_points": [
+        "Scan theta = 10:1:70 degree.",
+        "f(20 degree) = -8.7905 m approximately.",
+        "f(40 degree) = +5.1553 m approximately.",
+        "The sign-changing bracket [20, 40] degree contains the low-angle zero crossing."
+      ],
+      "local_context": "The supplied MATLAB residual graph contains a second high-angle crossing; keep that crossing visually secondary and do not turn the slide into a uniqueness lesson. The low-angle bracket is the Core focus.",
+      "layout": {
+        "composition": "large graph-led slide with the residual plot occupying most of the right and centre, a concise bracket evidence panel on the left, and direct callouts to the 20 degree and 40 degree endpoints",
+        "variation": "data/evidence layout"
+      },
+      "visual_elements": {
+        "main_visual": "complete cohesive ImageGen redraw of the supplied MATLAB residual graph with readable axes, zero line, low-angle bracket markers, and a restrained secondary high-angle crossing",
+        "supporting_elements": "left endpoint and right endpoint sign cards, bracket label, and a small prompt: Where does f(theta) cross zero?"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/week05_projectile_residual.png",
+          "role": "strict numerical and geometry reference for the residual graph; reference-only input for a complete cohesive slide redraw",
+          "fidelity": "preserve curve shape, zero line, axes, labels, units, tick relationships, endpoint marker positions, and numerical relationships; do not paste the raster or invent data"
+        }
+      ],
+      "source_image_rules": "The MATLAB plot is a strict numerical/geometry reference. Generate the graph, labels, annotations, and surrounding layout together as one complete ImageGen canvas; do not paste or overlay the source raster.",
+      "constraints": [
+        "Keep the graph quantitative and recognizably plotted, with axis labels and units.",
+        "Do not label or teach the high-angle crossing as a required second answer.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Bisection keeps a sign change alive",
+      "role": "algorithm intuition",
+      "intent": "Show the midpoint and interval-update idea in plain language before the MATLAB scaffold.",
+      "sample_approved": true,
+      "key_points": [
+        "Start with endpoints whose residuals have opposite signs.",
+        "Compute the midpoint.",
+        "Evaluate the midpoint residual.",
+        "Keep the half interval whose endpoints still have opposite signs.",
+        "Repeat until the supplied residual rule is satisfied."
+      ],
+      "local_context": "The approved sample is the final Slide 05 image. It shows [20,40] degree, midpoint 30 degree, f(30 degree) = +0.31194 m, and retained [20,30] degree. Keep the slide as the approved sample; do not regenerate it.",
+      "layout": {
+        "composition": "use the approved sample composition: a top bracket-to-midpoint-to-retained-half diagram, a four-step strip below, and one compact ochre question callout",
+        "variation": "approved representative sample; deliberately retained as the style and algorithm reference"
+      },
+      "visual_elements": {
+        "main_visual": "approved bisection number-line and retained-bracket diagram",
+        "supporting_elements": "four numbered algorithm steps and midpoint question callout"
+      },
+      "required_images": [],
+      "source_image_rules": "The final Slide 05 is the approved generated sample already stored at origin_image/slide_05.png.",
+      "constraints": [
+        "Reuse the approved sample image exactly.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Trace the first four bisection updates",
+      "role": "worked iteration trace",
+      "intent": "Make bisection a repeated sign decision rather than a memorised formula.",
+      "key_points": [
+        "Iteration 1 keeps [20, 30] after testing 30 degree.",
+        "Iteration 2 keeps [25, 30] after testing 25 degree.",
+        "Iteration 3 keeps [27.5, 30] after testing 27.5 degree.",
+        "Iteration 4 keeps [28.75, 30] after testing 28.75 degree."
+      ],
+      "local_context": "Use the exact first-four-row trace: 1 [20,40] -> 30 -> +0.31194 m -> [20,30]; 2 [20,30] -> 25 -> -3.7648 m -> [25,30]; 3 [25,30] -> 27.5 -> -1.5993 m -> [27.5,30]; 4 [27.5,30] -> 28.75 -> -0.61095 m -> [28.75,30].",
+      "layout": {
+        "composition": "large four-row trace table on the left or centre paired with a vertically shrinking interval diagram on the right; use sage to highlight each retained half",
+        "variation": "table-plus-process layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict bisection trace table with a companion interval strip",
+        "supporting_elements": "sign badges, midpoint dots, and a bottom prompt: Which half still contains opposite endpoint signs?"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/tables/bisection_first_four.png",
+          "role": "strict numerical trace table for the first four bisection updates",
+          "fidelity": "preserve all rows, intervals, midpoint values, residuals, signs, and units exactly"
+        }
+      ],
+      "source_image_rules": "The trace table is strict. Generated interval graphics must agree with its endpoints and retained-half decisions.",
+      "constraints": [
+        "Do not replace the trace with generic pseudocode.",
+        "Do not display later iterations on this slide.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Read the bisection scaffold, line by line",
+      "role": "MATLAB code tracing",
+      "intent": "Map the supplied code to midpoint, residual, stopping, and sign-change decisions.",
+      "key_points": [
+        "mid_deg = (bis_left_deg + bis_right_deg)/2 creates the trial angle.",
+        "f_mid_m evaluates the physical residual in metres.",
+        "abs(f_mid_m) < tolerance_m is the one Core stopping rule.",
+        "The sign-product test decides which endpoint moves."
+      ],
+      "local_context": "Use the exact bisection scaffold from the lecture demonstration. Surround it with four concise callouts: MIDPOINT, RESIDUAL, STOP, KEEP SIGN CHANGE. Keep variable names and operators unchanged.",
+      "layout": {
+        "composition": "large exact MATLAB code panel on the left with four numbered callouts and a small decision prompt on the right",
+        "variation": "code-led annotation layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict bisection scaffold code image",
+        "supporting_elements": "direct arrows to the midpoint line, residual line, stopping condition, and sign-product branch"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/code/bisection_scaffold.png",
+          "role": "strict MATLAB code input; scaffolded bisection loop",
+          "fidelity": "preserve every code token, variable name, operator, indentation relationship, and line order exactly"
+        }
+      ],
+      "source_image_rules": "Code asset is strict. It must be visibly reproduced as the code panel; generated callouts may explain but may not rewrite or correct the code.",
+      "constraints": [
+        "Use readable monospaced code at classroom projection scale.",
+        "Do not add a second stopping rule or generic solver function.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Stop once, then substitute back",
+      "role": "validation",
+      "intent": "Close the bisection loop by making residual validation more important than iteration count.",
+      "key_points": [
+        "Use abs(residual_m) < 1e-3 m as the one Core stopping rule.",
+        "Bisection gives theta = 29.5679 degree after 13 recorded iterations.",
+        "The final residual is +4.1164e-4 m.",
+        "Substitution gives a model range of 35.0004 m."
+      ],
+      "local_context": "Show the exact result and validation values. The physical conclusion is that the model hits the 35 m target within the supplied residual tolerance; the root unit is degree and the residual/range units are m.",
+      "layout": {
+        "composition": "left result card with the final low-angle root and one stopping-rule badge; right large sage substitution check; a small bottom sentence interprets the physical result",
+        "variation": "validation-first result layout"
+      },
+      "visual_elements": {
+        "main_visual": "strict validation result table/equation asset",
+        "supporting_elements": "sage checkmark, tolerance comparison, and physical interpretation strip"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/equations/validation.png",
+          "role": "strict equation input; root, substituted range, and residual",
+          "fidelity": "preserve numerical values, signs, units, and equation structure exactly"
+        },
+        {
+          "path": "assets/strict/tables/bisection_validation.png",
+          "role": "strict validation table; result and interpretation",
+          "fidelity": "preserve all checks and values exactly"
+        }
+      ],
+      "source_image_rules": "Validation assets are strict. Keep the exact +4.1164e-4 m sign and 35.0004 m value; do not round them into a different teaching result.",
+      "constraints": [
+        "Use exactly one Core stopping-rule pattern.",
+        "Do not introduce the high-angle companion root.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Newton follows the local tangent",
+      "role": "method concept",
+      "intent": "Introduce Newton as a local tangent prediction rather than a mysterious formula.",
+      "key_points": [
+        "Newton uses one current angle rather than keeping an interval.",
+        "The update is new angle = current angle - residual/slope.",
+        "For degree input, the slope includes 2*pi/180.",
+        "The slope unit is metres per degree."
+      ],
+      "local_context": "Use a conceptual residual curve with a tangent at a current estimate, crossing the zero line at the next estimate. Preserve the exact Newton update and derivative expression from the strict asset. Do not claim Newton is always safer than bisection.",
+      "layout": {
+        "composition": "large conceptual residual curve and tangent on the left, exact update/derivative equation asset on the right, with a small unit callout",
+        "variation": "geometry-plus-equation layout"
+      },
+      "visual_elements": {
+        "main_visual": "labelled tangent construction: current point -> tangent -> next estimate on zero residual line",
+        "supporting_elements": "strict Newton equation asset, degree/radians conversion cue, and a compact prompt asking what the slope measures"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/equations/newton_update_slope.png",
+          "role": "strict equation input; Newton update and degree-based residual slope",
+          "fidelity": "preserve the update, derivative, conversion factor, and metre-per-degree unit exactly"
+        }
+      ],
+      "source_image_rules": "The update/derivative equation is strict; the tangent diagram is conceptual but must show the current point, zero line, tangent, next estimate, and correct update direction.",
+      "constraints": [
+        "Do not show a radians-only derivative without the 2*pi/180 factor.",
+        "Do not introduce Newton failure stress examples.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Trace Newton from 25 degree",
+      "role": "MATLAB code and iteration trace",
+      "intent": "Keep the local update visible through exact code and four numerical evaluations.",
+      "key_points": [
+        "Start from theta = 25 degree.",
+        "Each evaluation records angle, residual, and slope.",
+        "The update moves from 25 to 29.115 to 29.562 to 29.567 degree.",
+        "The fourth recorded residual is -7.1308e-7 m, so the one stopping rule is met."
+      ],
+      "local_context": "Use the exact Newton code panel and strict trace table. Keep the slope unit m/degree visible. The trace must show the four evaluations in order and must not invent a fifth evaluation.",
+      "layout": {
+        "composition": "exact Newton code panel on the left; four connected numeric evaluation cards or a strict table on the right; a sage stop badge at the bottom",
+        "variation": "code-plus-trace layout; visually distinct from Slide 07 through a right-led sequence"
+      },
+      "visual_elements": {
+        "main_visual": "strict MATLAB Newton scaffold and strict four-row trace table",
+        "supporting_elements": "arrows showing angle updates and a final residual-magnitude stop indicator"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/code/newton_scaffold.png",
+          "role": "strict MATLAB code input; scaffolded Newton loop",
+          "fidelity": "preserve every code token, variable name, operator, and line order exactly"
+        },
+        {
+          "path": "assets/strict/tables/newton_trace.png",
+          "role": "strict numerical trace table; four Newton evaluations",
+          "fidelity": "preserve all angles, residuals, slopes, units, and stop entry exactly"
+        }
+      ],
+      "source_image_rules": "Code and trace assets are strict. Keep exact values and units; generated arrows may explain the sequence but may not alter the table.",
+      "constraints": [
+        "Do not show multiple stopping criteria.",
+        "Do not compare methods yet; comparison belongs on Slide 11.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Working exposure: same root, different route",
+      "role": "limited method comparison",
+      "intent": "Contrast bracket preservation and local speed without turning iteration count into a correctness claim.",
+      "key_points": [
+        "Bisection reaches the locked tolerance in 13 recorded iterations.",
+        "Newton reaches the same low-angle root in 4 recorded evaluations from the chosen start.",
+        "Bisection preserves a sign-changing bracket.",
+        "Newton needs a useful slope and a reasonable start.",
+        "Both still require residual validation."
+      ],
+      "local_context": "This is Working exposure and removable without breaking the Core route. Use the exact comparison values and make the shared validation requirement visually larger than the iteration counts.",
+      "layout": {
+        "composition": "two-column BRACKETED / LOCAL comparison with a compact shared sage validation bar underneath",
+        "variation": "comparison layout; use compact badges for 13 and 4 without making them score-like KPIs"
+      },
+      "visual_elements": {
+        "main_visual": "strict method comparison table or two aligned method cards",
+        "supporting_elements": "small bracket icon, tangent icon, and shared residual-check strip"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/tables/method_comparison.png",
+          "role": "strict comparison input; bisection versus Newton",
+          "fidelity": "preserve method names, update ideas, evaluation counts, and requirements exactly"
+        }
+      ],
+      "source_image_rules": "Comparison table is strict. Do not imply that fewer iterations alone proves a method is more correct.",
+      "constraints": [
+        "Label this as Working exposure, not a new Core method-selection rule.",
+        "Do not introduce formal solver selection or fzero.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 12,
+      "title": "A midpoint is not enough: the bracket must change sign",
+      "role": "debugging and setup diagnosis",
+      "intent": "Distinguish runnable midpoint arithmetic from a justified bisection setup.",
+      "key_points": [
+        "Bisection starts with endpoint residuals of opposite signs.",
+        "A same-sign interval can still produce a midpoint, but it does not give the Core bracket evidence.",
+        "Check the graph and endpoint signs before iterating.",
+        "Repair path: GRAPH -> SIGNS -> START."
+      ],
+      "local_context": "Show a coral same-sign bracket with both endpoints negative or both positive and no demonstrated zero crossing, beside the sage valid [20,40] degree bracket with negative-left and positive-right residuals. Do not use extreme derivative failure cases.",
+      "layout": {
+        "composition": "split diagnosis: coral SAME-SIGN bracket on the left with a blocked start, sage SIGN-CHANGING bracket on the right with a valid start, joined by a short repair path",
+        "variation": "debugging comparison layout"
+      },
+      "visual_elements": {
+        "main_visual": "two labelled bracket diagrams with endpoint signs and zero-crossing evidence",
+        "supporting_elements": "coral defect badge, sage valid badge, and a bottom three-step repair path"
+      },
+      "required_images": [],
+      "source_image_rules": "This is a conceptual diagnosis. Keep the bracket logic and endpoint sign meanings exact; do not invent numerical residual values for the same-sign example.",
+      "constraints": [
+        "Do not say that a midpoint cannot be calculated.",
+        "Do not claim a same-sign bracket proves there is no root anywhere.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 13,
+      "title": "Transfer the residual pattern to new physics",
+      "role": "transfer and practical preparation",
+      "intent": "Separate the general root-finding pattern from the projectile equation without revealing practical answers.",
+      "key_points": [
+        "Thin lens: residual 1/f - 1/u - 1/v; root v in m; residual in m^-1.",
+        "RC charging: residual Vs(1-exp(-t/(RC))) - Vthreshold; root t in s; residual in V.",
+        "The shared pattern is model -> residual -> bracket/start -> update -> stop -> substitute -> interpret."
+      ],
+      "local_context": "Use the exact supplied transfer residual forms and units. Show two unsolved context cards labelled THIN LENS and RC CHARGING feeding one shared root-finding workflow. Do not reveal the practical numerical reference answers.",
+      "layout": {
+        "composition": "two compact physics context cards on the left and right connected to a central or bottom shared workflow ribbon",
+        "variation": "transfer layout; lighter density than code slides"
+      },
+      "visual_elements": {
+        "main_visual": "simple labelled lens and RC charging conceptual diagrams with exact residual equations",
+        "supporting_elements": "shared workflow arrow and unit badges for m^-1/m, V/s"
+      },
+      "required_images": [
+        {
+          "path": "assets/strict/equations/transfer_residuals.png",
+          "role": "strict equation input; thin-lens and RC charging residuals with units",
+          "fidelity": "preserve both residual forms, variable names, and units exactly"
+        }
+      ],
+      "source_image_rules": "Transfer equations are strict. Generated diagrams must remain conceptual and unsolved; do not add practical parameter values or answer values.",
+      "constraints": [
+        "Do not reveal 27.085 degree, 27.084 degree, 0.14999 m, or 0.91602 s reference answers.",
+        "Do not add a third method.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 14,
+      "title": "Exit ticket — explain a root to a future you",
+      "role": "retrieval and transfer",
+      "intent": "Consolidate the Core reasoning chain as four short explanations students can carry into the practical.",
+      "key_points": [
+        "DEFINE: write the physical target and residual.",
+        "BRACKET: explain what opposite endpoint signs mean.",
+        "UPDATE: describe one bisection midpoint or Newton tangent step.",
+        "CHECK: substitute the root into the residual and state the root's physical unit."
+      ],
+      "local_context": "Use four spacious response cards labelled DEFINE, BRACKET, UPDATE, CHECK. A small bottom bridge names the practical contexts projectile range, thin lens, and RC threshold. Do not add a new method or a full answer key.",
+      "layout": {
+        "composition": "four evenly spaced reflection cards with restrained functional borders and a small bottom transfer ribbon",
+        "variation": "retrieval/exit-ticket layout; open white space around cards"
+      },
+      "visual_elements": {
+        "main_visual": "four labelled response cards with simple icons: equation, sign-changing bracket, tangent/midpoint, checkmark",
+        "supporting_elements": "bottom practical-transfer ribbon with the three context names"
+      },
+      "required_images": [],
+      "source_image_rules": "No strict source visual is required. Keep labels and the four Core prompts exact.",
+      "constraints": [
+        "Do not show a worked answer key.",
+        "No slide number or outer frame."
+      ]
+    }
+  ]
+}

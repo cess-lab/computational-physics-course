@@ -1,0 +1,18 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{amsmath}
+\usepackage{booktabs,array,xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{>{\centering\arraybackslash}m{1.2cm} >{\centering\arraybackslash}m{2.4cm} >{\centering\arraybackslash}m{3.0cm} >{\centering\arraybackslash}m{3.6cm} >{\centering\arraybackslash}m{2.5cm}}
+\toprule
+\textbf{iteration} & \textbf{$\theta$ (degree)} & \textbf{residual (m)} & \textbf{slope (m/degree)} & \textbf{next angle (degree)}\\
+\midrule
+1 & 25 & -3.7648 & 0.91488 & 29.115\\
+2 & 29.115 & -0.33461 & 0.74939 & 29.562\\
+3 & 29.562 & -0.0042242 & 0.73044 & 29.567\\
+4 & 29.567 & $-7.1308\times10^{-7}$ & 0.73019 & stop\\
+\bottomrule
+\end{tabular}
+\end{document}

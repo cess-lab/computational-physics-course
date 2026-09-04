@@ -1,0 +1,10 @@
+Found 7 issue(s):
+
+Format Issues (7):
+  [F1] /slide[1]: Picture "" is missing alt text (accessibility issue)
+  [F2] /slide[2]: Picture "" is missing alt text (accessibility issue)
+  [F3] /slide[3]: Picture "" is missing alt text (accessibility issue)
+  [F4] /slide[6]: Picture "" is missing alt text (accessibility issue)
+  [F5] /slide[10]: Picture "" is missing alt text (accessibility issue)
+  [F6] /slide[13]: Picture "" is missing alt text (accessibility issue)
+  [F7] /slide[13]: Picture "" is missing alt text (accessibility issue)

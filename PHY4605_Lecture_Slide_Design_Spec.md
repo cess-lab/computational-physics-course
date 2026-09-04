@@ -79,7 +79,7 @@ The following decisions are specific to PHY4605. They do not modify the installe
 
 ### Delegation
 
-- The lecturer-approved worker family for this project is Luna Max. When slide subagents are used, use Luna Max workers only, with the exact model and reasoning-effort settings inherited from the coordinating Luna Max task. Do not substitute another model; if matching Luna Max workers cannot be guaranteed or evidenced, block that delegated batch.
+- Do not hard-code a separate worker model family in this project specification. Follow the installed `codex-ppt` exact-match policy: after sample approval, every slide worker inherits the coordinating main agent's exact model identifier and reasoning effort through `fork_turns="all"`, with no model or effort override. If exact inheritance cannot be guaranteed or evidenced, block that delegated batch.
 
 ## Scientific and exact-content controls
 
@@ -112,7 +112,7 @@ Chat statements alone never satisfy a gate. Use the files and state transitions 
 Every slide-generation or slide-regeneration subagent must match the coordinating main agent's exact model identifier and reasoning effort.
 
 - Spawn workers with `fork_turns="all"` and omit model and reasoning-effort overrides so both settings inherit from the main agent.
-- Example: a main task using `gpt-5.6-luna` at `xhigh` may dispatch only `gpt-5.6-luna` at `xhigh` slide workers.
+- Example: whichever model and reasoning effort run the coordinating task must also run every slide worker in that batch.
 - Do not substitute another model because of availability, speed, cost, queueing, or concurrency.
 - Before each batch, record the main task's model identifier, reasoning effort, inheritance method, worker ID, assigned slide, and prompt path in a hidden dispatch ledger.
 - A slide result may be recorded only when its dispatch entry shows inherited exact-match settings.

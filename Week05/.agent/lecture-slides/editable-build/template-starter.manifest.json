@@ -1,0 +1,167 @@
+{
+  "sourcePptx": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/.agent/lecture-slide-system/masters/PHY4605_Editable_Slide_Master.pptx",
+  "mapPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-frame-map.json",
+  "output": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter.pptx",
+  "outputBytes": 3640771,
+  "sourceSlideCount": 9,
+  "slideCount": 14,
+  "previewDir": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview",
+  "layoutDir": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout",
+  "contactSheet": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-contact-sheet.png",
+  "slides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "opening thesis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-01.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-01.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-01.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-01.layout.json"
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 2,
+      "narrativeRole": "model and residual",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-02.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-02.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-02.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-02.layout.json"
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 3,
+      "narrativeRole": "sign interpretation",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-03.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-03.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-03.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-03.layout.json"
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 4,
+      "narrativeRole": "graphical bracket evidence",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-04.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-04.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-04.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-04.layout.json"
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 5,
+      "narrativeRole": "method principle",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-05.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-05.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-05.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-05.layout.json"
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 6,
+      "narrativeRole": "algorithm trace",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-06.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-06.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-06.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-06.layout.json"
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "narrativeRole": "code reading",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-07.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-07.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-07.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-07.layout.json"
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 4,
+      "narrativeRole": "validation proof",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-08.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-08.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-08.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-08.layout.json"
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 7,
+      "narrativeRole": "method explanation",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-09.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-09.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-09.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-09.layout.json"
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 6,
+      "narrativeRole": "algorithm trace",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-10.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-10.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-10.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-10.layout.json"
+    },
+    {
+      "outputSlide": 11,
+      "sourceSlide": 8,
+      "narrativeRole": "method comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-11.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-11.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-11.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-11.layout.json"
+    },
+    {
+      "outputSlide": 12,
+      "sourceSlide": 4,
+      "narrativeRole": "failure diagnosis",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-12.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-12.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-12.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-12.layout.json"
+    },
+    {
+      "outputSlide": 13,
+      "sourceSlide": 7,
+      "narrativeRole": "transfer map",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-13.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-13.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-13.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-13.layout.json"
+    },
+    {
+      "outputSlide": 14,
+      "sourceSlide": 9,
+      "narrativeRole": "synthesis and exit",
+      "reuseMode": "duplicate-slide",
+      "editTargetCount": 2,
+      "previewPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-preview/starter-slide-14.png",
+      "previewRelativePath": "template-starter-preview/starter-slide-14.png",
+      "layoutPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter-layout/starter-slide-14.layout.json",
+      "layoutRelativePath": "template-starter-layout/starter-slide-14.layout.json"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "status": "blocked",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-09-01T11:49:38Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "blocked",
+      "at": "2026-09-01T11:55:23Z",
+      "note": "slide_02: User requested that slide generation stop before the regenerated image was inspected and recorded."
+    }
+  ],
+  "updated_at": "2026-09-01T11:55:23Z"
+}

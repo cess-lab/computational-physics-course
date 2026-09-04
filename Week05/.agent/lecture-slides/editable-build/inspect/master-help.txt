@@ -1,0 +1,24 @@
+{
+  "ndjson": "",
+  "truncated": false,
+  "metadata": {
+    "revision": "6qxwlg",
+    "query": "*",
+    "include": {
+      "requested": [
+        "index",
+        "examples",
+        "notes"
+      ],
+      "tokens": [
+        "index",
+        "examples",
+        "notes"
+      ]
+    },
+    "search": "delete remove duplicate slide collection",
+    "notices": [
+      "Search matched 0 entries"
+    ]
+  }
+}

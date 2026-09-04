@@ -1,0 +1,108 @@
+{
+  "status": "slides_recorded",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-09-04T03:33:09Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "blocked",
+      "at": "2026-09-04T03:58:14Z",
+      "note": "slide_08: Worker generated a candidate but did not return an inspectable absolute source path; regenerate with a worker that returns provenance."
+    },
+    {
+      "from": "blocked",
+      "to": "jobs_prepared",
+      "at": "2026-09-04T03:59:51Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-09-04T04:07:19Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-09-04T04:11:46Z",
+      "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "jobs_prepared",
+      "at": "2026-09-04T04:21:09Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-09-04T04:31:35Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-09-04T04:48:31Z",
+      "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "jobs_prepared",
+      "at": "2026-09-04T05:04:39Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-09-04T05:05:24Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-09-04T05:07:41Z",
+      "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "jobs_prepared",
+      "at": "2026-09-04T05:09:30Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-09-04T05:09:52Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "blocked",
+      "at": "2026-09-04T05:12:41Z",
+      "note": "slide_01: Third ImageGen repair could not preserve the exact 4.08 s ground intercept and t0=1.0 s tick alignment; rejected candidate: /Users/khairuladib/.codex/generated_images/01a06ad2-9b94-7833-8202-3233544d070a/exec-83659a4f-bfa0-48dd-9f16-fde6f03a471d.png. Earlier visually improved but coordinate-inexact Slide 1 remains in the assembled PPTX."
+    },
+    {
+      "from": "blocked",
+      "to": "jobs_prepared",
+      "at": "2026-09-04T07:39:12Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-09-04T07:39:13Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-09-04T07:39:13Z",
+      "note": "all slide images recorded"
+    }
+  ],
+  "updated_at": "2026-09-04T07:39:13Z"
+}

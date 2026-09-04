@@ -1,0 +1,1034 @@
+{
+  "schema": "openai.presentation.layout/v4",
+  "unit": "px",
+  "slide": {
+    "aid": "sl/6bivqr",
+    "id": "6bivqr",
+    "slide": 4,
+    "layoutId": "/ppt/slideLayouts/slideLayout5.xml",
+    "layoutName": "Content T3",
+    "masterLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "masterLayoutName": "PHY4605 Borderless White Master",
+    "backgroundColor": "#FFFFFF",
+    "frame": {
+      "left": 0,
+      "top": 0,
+      "width": 1920,
+      "height": 1080
+    }
+  },
+  "theme": {
+    "colorSchemeName": "PHY4605",
+    "colors": {
+      "accent1": "#2F6DB2",
+      "accent2": "#2A9D9F",
+      "accent3": "#C98A16",
+      "accent4": "#6F4B9B",
+      "accent5": "#3E8E45",
+      "accent6": "#B3262E",
+      "dk1": "#0B2B4C",
+      "lt1": "#FFFFFF",
+      "dk2": "#3F4B57",
+      "lt2": "#F7F9FB",
+      "hlink": "#2F6DB2",
+      "folHlink": "#6F4B9B"
+    },
+    "fontScheme": {
+      "name": "Office",
+      "majorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      },
+      "minorFont": {
+        "latinTypeface": "Nunito",
+        "eastAsianTypeface": "Nunito",
+        "complexScriptTypeface": "Nunito"
+      }
+    },
+    "typefaces": [
+      "Nunito"
+    ]
+  },
+  "inheritedLayers": [
+    {
+      "scope": "layout",
+      "id": "/ppt/slideLayouts/slideLayout5.xml",
+      "name": "Content T3",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout5.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            138
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout5.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            205,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "layout",
+          "aid": "template/layout//ppt/slideLayouts/slideLayout5.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    },
+    {
+      "scope": "master",
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "PHY4605 Borderless White Master",
+      "type": "master",
+      "elements": [
+        {
+          "order": 1,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/10",
+          "id": "10",
+          "name": "PHY4605 inherited title treatment",
+          "bbox": [
+            115,
+            60,
+            1580,
+            88
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 2,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/11",
+          "id": "11",
+          "name": "PHY4605 inherited subtitle treatment",
+          "bbox": [
+            115,
+            152,
+            1580,
+            44
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        },
+        {
+          "order": 3,
+          "kind": "shape",
+          "scope": "master",
+          "aid": "template/master//ppt/slideMasters/slideMaster2.xml/12",
+          "id": "12",
+          "name": "PHY4605 inherited slide-number treatment",
+          "bbox": [
+            1764,
+            976,
+            40,
+            28
+          ],
+          "geometry": "rect",
+          "resolvedTextStyle": {
+            "anchor": 2,
+            "verticalAlignment": "middle",
+            "wrap": "square",
+            "insets": {
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          "lineWidth": 0
+        }
+      ]
+    }
+  ],
+  "elements": [
+    {
+      "order": 1,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/knilkbqx",
+      "id": "18",
+      "name": "title-T3",
+      "bbox": [
+        115,
+        60,
+        1580,
+        138
+      ],
+      "geometry": "rect",
+      "text": "A boundary check can reveal an error\nthat a smooth curve hides",
+      "textPreview": "A boundary check can reveal an error | that a smooth curve hides",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A boundary check can reveal an error"
+          },
+          {
+            "index": 2,
+            "text": "that a smooth curve hides"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A boundary check can reveal an error",
+          "lineSpacingPercent": 95000,
+          "resolvedTextStyle": {
+            "fontSize": 56,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A boundary check can reveal an error",
+              "fontSize": 56,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        },
+        {
+          "index": 2,
+          "text": "that a smooth curve hides",
+          "lineSpacingPercent": 95000,
+          "resolvedTextStyle": {
+            "fontSize": 56,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "that a smooth curve hides",
+              "fontSize": 56,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 2,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/dsz2lwfm",
+      "id": "2",
+      "name": "subtitle-T3",
+      "bbox": [
+        115,
+        205,
+        1580,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Use a known condition before trusting the full result",
+      "textPreview": "Use a known condition before trusting the full result",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Use a known condition before trusting the full result"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Use a known condition before trusting the full result",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Use a known condition before trusting the full result",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#3F4B57"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 3,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/crqlcre1",
+      "id": "3",
+      "bbox": [
+        115,
+        320,
+        560,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Known condition",
+      "textPreview": "Known condition",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Known condition"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Known condition",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Known condition",
+              "fontSize": 34,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 4,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/up43mdc3",
+      "id": "19",
+      "name": "visual-launch-boundary",
+      "bbox": [
+        161.67,
+        375,
+        236.67,
+        355
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image9.png",
+        "contentType": "image/png",
+        "byteLength": 1099009
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image9.png",
+        "contentType": "image/png",
+        "byteLength": 1099009
+      }
+    },
+    {
+      "order": 5,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/et83e1w7",
+      "id": "5",
+      "bbox": [
+        480,
+        390,
+        325,
+        330
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#EEF5FD",
+      "lineColor": "#2F6DB2",
+      "lineWidth": 2
+    },
+    {
+      "order": 6,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/1wj2pgfy",
+      "id": "6",
+      "bbox": [
+        515,
+        432,
+        255,
+        42
+      ],
+      "geometry": "rect",
+      "text": "At launch",
+      "textPreview": "At launch",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "At launch"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "At launch",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Nunito",
+            "color": "#2F6DB2",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "At launch",
+              "fontSize": 32,
+              "typeface": "Nunito",
+              "color": "#2F6DB2",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 7,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/6l8nehwb",
+      "id": "20",
+      "name": "equation-launch-time",
+      "bbox": [
+        558.5,
+        505,
+        168,
+        42
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image10.png",
+        "contentType": "image/png",
+        "byteLength": 3326
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image10.png",
+        "contentType": "image/png",
+        "byteLength": 3326
+      }
+    },
+    {
+      "order": 8,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fyxkbmxo",
+      "id": "8",
+      "bbox": [
+        515,
+        583,
+        255,
+        38
+      ],
+      "geometry": "rect",
+      "text": "must give",
+      "textPreview": "must give",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "must give"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "must give",
+          "resolvedTextStyle": {
+            "fontSize": 26,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "must give",
+              "fontSize": 26,
+              "typeface": "Nunito",
+              "color": "#3F4B57"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 9,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/rmho7mxw",
+      "id": "21",
+      "name": "equation-launch-height",
+      "bbox": [
+        550.89,
+        628,
+        183.21,
+        48
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image11.png",
+        "contentType": "image/png",
+        "byteLength": 3877
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image11.png",
+        "contentType": "image/png",
+        "byteLength": 3877
+      }
+    },
+    {
+      "order": 10,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/gvm5sfq5",
+      "id": "10",
+      "bbox": [
+        930,
+        320,
+        560,
+        44
+      ],
+      "geometry": "rect",
+      "text": "Computed result",
+      "textPreview": "Computed result",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "Computed result"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "Computed result",
+          "resolvedTextStyle": {
+            "fontSize": 34,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "Computed result",
+              "fontSize": 34,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 11,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/hwvml07q",
+      "id": "11",
+      "bbox": [
+        930,
+        390,
+        760,
+        330
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#F0FAF7",
+      "lineColor": "#3E8E45",
+      "lineWidth": 2
+    },
+    {
+      "order": 12,
+      "kind": "image",
+      "scope": "slide",
+      "aid": "im/snq5greh",
+      "id": "22",
+      "name": "equation-computed-first-value",
+      "bbox": [
+        1080.93,
+        452,
+        308.15,
+        48
+      ],
+      "contentType": "image/png",
+      "asset": {
+        "assetId": "/ppt/media/image12.png",
+        "contentType": "image/png",
+        "byteLength": 9665
+      },
+      "fillImage": {
+        "assetId": "/ppt/media/image12.png",
+        "contentType": "image/png",
+        "byteLength": 9665
+      }
+    },
+    {
+      "order": 13,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/fut4japk",
+      "id": "13",
+      "bbox": [
+        1580,
+        450,
+        46,
+        46
+      ],
+      "geometry": "ellipse",
+      "text": "✓",
+      "textPreview": "✓",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "verticalAlignment": "middle",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 2,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "✓"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "✓",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#FFFFFF",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "✓",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#FFFFFF",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "fillColor": "#3E8E45",
+      "lineWidth": 0
+    },
+    {
+      "order": 14,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/4jm5wf6h",
+      "id": "14",
+      "bbox": [
+        975,
+        580,
+        640,
+        80
+      ],
+      "geometry": "rect",
+      "text": "The first array value satisfies the launch condition",
+      "textPreview": "The first array value satisfies the launch condition",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 2,
+        "lines": [
+          {
+            "index": 1,
+            "text": "The first array value satisfies the launch"
+          },
+          {
+            "index": 2,
+            "text": "condition"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "The first array value satisfies the launch condition",
+          "resolvedTextStyle": {
+            "fontSize": 30,
+            "typeface": "Nunito",
+            "color": "#3F4B57",
+            "alignment": "left"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "The first array value satisfies the launch condition",
+              "fontSize": 30,
+              "typeface": "Nunito",
+              "color": "#3F4B57"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 15,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/pkvmpk72",
+      "id": "15",
+      "bbox": [
+        115,
+        790,
+        1575,
+        110
+      ],
+      "geometry": "roundRect",
+      "fillColor": "#FFF7E6",
+      "lineColor": "#C98A16",
+      "lineWidth": 2
+    },
+    {
+      "order": 16,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/2x4nu58b",
+      "id": "16",
+      "bbox": [
+        160,
+        822,
+        1480,
+        48
+      ],
+      "geometry": "rect",
+      "text": "A smooth graph is not enough: test at least one value that physics already tells you",
+      "textPreview": "A smooth graph is not enough: test at least one value that physics already tells you",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 1,
+        "fontSize": 18.67,
+        "verticalAlignment": "top",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "A smooth graph is not enough: test at least one value that physics already tells you"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "A smooth graph is not enough: test at least one value that physics already tells you",
+          "resolvedTextStyle": {
+            "fontSize": 32,
+            "typeface": "Nunito",
+            "color": "#0B2B4C",
+            "bold": true,
+            "alignment": "center"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "A smooth graph is not enough: test at least one value that physics already tells you",
+              "fontSize": 32,
+              "typeface": "Nunito",
+              "color": "#0B2B4C",
+              "bold": true
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    },
+    {
+      "order": 17,
+      "kind": "shape",
+      "scope": "slide",
+      "aid": "sh/3id4napw",
+      "id": "17",
+      "name": "slide-number-4",
+      "bbox": [
+        1764,
+        976,
+        40,
+        28
+      ],
+      "geometry": "rect",
+      "text": "4",
+      "textPreview": "4",
+      "resolvedFontSize": 18.67,
+      "resolvedTextStyle": {
+        "anchor": 2,
+        "fontSize": 18.67,
+        "verticalAlignment": "middle",
+        "wrap": "square",
+        "autoFit": "none",
+        "insets": {
+          "top": 0,
+          "right": 0,
+          "bottom": 0,
+          "left": 0
+        }
+      },
+      "textLayout": {
+        "lineCount": 1,
+        "lines": [
+          {
+            "index": 1,
+            "text": "4"
+          }
+        ]
+      },
+      "paragraphs": [
+        {
+          "index": 1,
+          "text": "4",
+          "resolvedTextStyle": {
+            "fontSize": 22,
+            "typeface": "Nunito",
+            "color": "#697684",
+            "alignment": "right"
+          },
+          "runs": [
+            {
+              "index": 1,
+              "text": "4",
+              "fontSize": 22,
+              "typeface": "Nunito",
+              "color": "#697684"
+            }
+          ]
+        }
+      ],
+      "lineWidth": 0
+    }
+  ],
+  "composeRuns": []
+}

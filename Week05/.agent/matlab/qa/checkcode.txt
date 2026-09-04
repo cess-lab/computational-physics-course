@@ -1,0 +1,17 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+CHECKCODE Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m
+  15×1 struct array with fields:
+
+    id
+    message
+    fix
+    line
+    column
+
+CHECKCODE Week05_Practical_AI_Enabled_Root_Finding_Challenge_Set.m

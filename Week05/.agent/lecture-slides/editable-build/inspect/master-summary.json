@@ -1,0 +1,50 @@
+{
+  "slides": 9,
+  "layouts": [
+    {
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master",
+      "parentLayoutId": ""
+    },
+    {
+      "id": "/ppt/slideLayouts/slideLayout1.xml",
+      "name": "Title Slide",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml"
+    },
+    {
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "PHY4605 Borderless White Master",
+      "parentLayoutId": ""
+    },
+    {
+      "id": "/ppt/slideLayouts/slideLayout2.xml",
+      "name": "Opening",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml"
+    },
+    {
+      "id": "/ppt/slideLayouts/slideLayout3.xml",
+      "name": "Content T1",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml"
+    },
+    {
+      "id": "/ppt/slideLayouts/slideLayout4.xml",
+      "name": "Content T2",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml"
+    },
+    {
+      "id": "/ppt/slideLayouts/slideLayout5.xml",
+      "name": "Content T3",
+      "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml"
+    }
+  ],
+  "masters": [
+    {
+      "id": "/ppt/slideMasters/slideMaster1.xml",
+      "name": "Master"
+    },
+    {
+      "id": "/ppt/slideMasters/slideMaster2.xml",
+      "name": "PHY4605 Borderless White Master"
+    }
+  ]
+}

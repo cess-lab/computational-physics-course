@@ -1,0 +1,16 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{amsmath}
+\usepackage{booktabs,array,xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.55}
+\begin{tabular}{>{\centering\arraybackslash}m{2.6cm} >{\centering\arraybackslash}m{4.2cm} >{\centering\arraybackslash}m{2.2cm} >{\raggedright\arraybackslash}m{5.0cm}}
+\toprule
+\textbf{method} & \textbf{update idea} & \textbf{recorded evaluations} & \textbf{what it preserves / needs}\\
+\midrule
+Bisection & midpoint and sign-changing half & 13 & preserves a bracket\\
+Newton & current $-$ residual/slope & 4 & needs a useful slope and start\\
+\bottomrule
+\end{tabular}
+\end{document}

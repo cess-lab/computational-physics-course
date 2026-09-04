@@ -1,0 +1,381 @@
+{"kind":"deck","id":"pr/kyte2d","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster2.xml","name":"PHY4605 Borderless White Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Opening","placeholders":[{"name":"body","type":"body"},{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Content T1","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Content T2","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Content T3","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"slide","id":"sl/pwbju4","slide":1,"title":"PHY4605 Computational Methods in Physics","textShapes":8}
+{"kind":"textbox","id":"sh/2h8n2p0z","slide":1,"textChars":40,"textLines":1}
+{"kind":"textbox","id":"sh/pkj6dkzq","slide":1,"textChars":42,"textLines":1}
+{"kind":"textbox","id":"sh/ojq54fi5","slide":1,"textChars":58,"textLines":1}
+{"kind":"shape","id":"sh/fuho7aho","slide":1,"bbox":[870,490,280,0]}
+{"kind":"shape","id":"sh/et8ny503","slide":1,"bbox":[870,350,0,140]}
+{"kind":"shape","id":"sh/1gz69kze","slide":1,"bbox":[1096.67,383.33,0,106.67]}
+{"kind":"shape","id":"sh/gfq50fit","slide":1,"bbox":[876.67,313.33,30,36.67]}
+{"kind":"shape","id":"sh/rqxo3ahc","slide":1,"bbox":[906.67,283.33,33.33,30]}
+{"kind":"shape","id":"sh/6ponu50r","slide":1,"bbox":[940,263.33,33.33,20]}
+{"kind":"shape","id":"sh/wv698jyt","slide":1,"bbox":[973.33,254.67,33.33,8.67]}
+{"kind":"shape","id":"sh/xgfq1ofe","slide":1,"bbox":[1006.67,254.67,33.33,8.67]}
+{"kind":"shape","id":"sh/ator69g3","slide":1,"bbox":[1040,263.33,33.33,20]}
+{"kind":"shape","id":"sh/bux8zexo","slide":1,"bbox":[1073.33,283.33,33.33,30]}
+{"kind":"shape","id":"sh/or694zyx","slide":1,"bbox":[1106.67,313.33,30,36.67]}
+{"kind":"shape","id":"sh/9sfqx4fi","slide":1,"bbox":[1136.67,350,13.33,33.33]}
+{"kind":"shape","id":"sh/2p4r2pgr","slide":1,"bbox":[861.33,474.67,17.33,17.33]}
+{"kind":"shape","id":"sh/nqx8vuxc","slide":1,"bbox":[1140,374.67,17.33,17.33]}
+{"kind":"textbox","id":"sh/8nq903e1","slide":1,"textChars":12,"textLines":1}
+{"kind":"textbox","id":"sh/toja98fm","slide":1,"textChars":12,"textLines":1}
+{"kind":"textbox","id":"sh/h4fqto7q","slide":1,"textChars":11,"textLines":1}
+{"kind":"textbox","id":"sh/g369k365","slide":1,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/f2d8ryp0","slide":1,"textChars":51,"textLines":1}
+{"kind":"notes","id":"nt/pwbju4","slide":1,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - PHY4605 Lecture Slide..."}
+{"kind":"slide","id":"sl/1b2zsk","slide":2,"title":"Turn the target condition into a residual","textShapes":15}
+{"kind":"textbox","id":"sh/h83edkb2","slide":2,"textChars":41,"textLines":1}
+{"kind":"textbox","id":"sh/ulsvi5sr","slide":2,"textChars":51,"textLines":1}
+{"kind":"shape","id":"sh/vm1wbatw","slide":2,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/8jadgfal","slide":2,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/9kje90b6","slide":2,"bbox":[76.67,163.33,286.67,140]}
+{"kind":"textbox","id":"sh/mhsve5sf","slide":2,"textChars":14,"textLines":1}
+{"kind":"textbox","id":"sh/7i1c7at0","slide":2,"textChars":23,"textLines":2}
+{"kind":"shape","id":"sh/kfqdcva9","slide":2,"bbox":[382,220.67,34.67,22.67]}
+{"kind":"shape","id":"sh/lgju50bu","slide":2,"bbox":[446.67,163.33,286.67,140]}
+{"kind":"textbox","id":"sh/d032d4bm","slide":2,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/szul4zu1","slide":2,"textChars":12,"textLines":1}
+{"kind":"shape","id":"sh/relkbetg","slide":2,"bbox":[752,220.67,34.67,22.67]}
+{"kind":"shape","id":"sh/6dc329cv","slide":2,"bbox":[816.67,163.33,286.67,140]}
+{"kind":"textbox","id":"sh/5c3294ba","slide":2,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/4bul0zu5","slide":2,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/i9s3ypcz","slide":2,"bbox":[76.67,506.67,346.67,73.33]}
+{"kind":"textbox","id":"sh/h8j25kbe","slide":2,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/w7alwfut","slide":2,"textChars":21,"textLines":1}
+{"kind":"shape","id":"sh/8relcz2p","slide":2,"bbox":[453.33,506.67,346.67,73.33]}
+{"kind":"textbox","id":"sh/9snmlkja","slide":2,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/mpw3apkj","slide":2,"textChars":30,"textLines":1}
+{"kind":"shape","id":"sh/nq5kju14","slide":2,"bbox":[830,506.67,373.33,73.33]}
+{"kind":"textbox","id":"sh/0nel8f2t","slide":2,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/lon2hkjy","slide":2,"textChars":27,"textLines":1}
+{"kind":"image","id":"im/gnad07il","slide":2,"name":"","alt":"LaTeX-rendered projectile range model, target condition, and residual definition","bbox":[203.33,336.67,873.33,146.67]}
+{"kind":"notes","id":"nt/1b2zsk","slide":2,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - PHY4605 Lecture Slide..."}
+{"kind":"slide","id":"sl/b82sse","slide":3,"title":"Read the residual sign as physics","textShapes":16}
+{"kind":"textbox","id":"sh/p4ni9sn6","slide":3,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/2hwzyd4f","slide":3,"textChars":59,"textLines":1}
+{"kind":"shape","id":"sh/3i507i50","slide":3,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/gfuhw3mp","slide":3,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/1g3i58na","slide":3,"bbox":[76.67,166.67,286.67,273.33]}
+{"kind":"textbox","id":"sh/edczut4j","slide":3,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/fel03y54","slide":3,"textChars":20,"textLines":1}
+{"kind":"shape","id":"sh/0by187mt","slide":3,"bbox":[113.33,333.33,213.33,0]}
+{"kind":"shape","id":"sh/lc7ihc3e","slide":3,"bbox":[260,283.33,0,100]}
+{"kind":"textbox","id":"sh/lw76xwj6","slide":3,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/0byporil","slide":3,"bbox":[113.33,303.33,70.4,0]}
+{"kind":"shape","id":"sh/zapovm10","slide":3,"bbox":[175.07,294.67,17.33,17.33]}
+{"kind":"textbox","id":"sh/y9w7mh0f","slide":3,"textChars":8,"textLines":1}
+{"kind":"shape","id":"sh/d8n6tcju","slide":3,"bbox":[446.67,166.67,286.67,273.33]}
+{"kind":"textbox","id":"sh/c7epkri9","slide":3,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/b65orm1o","slide":3,"textChars":20,"textLines":1}
+{"kind":"shape","id":"sh/q5w7ih0j","slide":3,"bbox":[483.33,333.33,213.33,0]}
+{"kind":"shape","id":"sh/x4rq5gjy","slide":3,"bbox":[630,283.33,0,100]}
+{"kind":"textbox","id":"sh/w3ipwbit","slide":3,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/gjahoju1","slide":3,"bbox":[483.33,303.33,106.67,0]}
+{"kind":"shape","id":"sh/1kjihovm","slide":3,"bbox":[581.33,294.67,17.33,17.33]}
+{"kind":"textbox","id":"sh/eh8zm9cv","slide":3,"textChars":4,"textLines":1}
+{"kind":"shape","id":"sh/fih0fedg","slide":3,"bbox":[816.67,166.67,286.67,273.33]}
+{"kind":"textbox","id":"sh/sfqhkzu5","slide":3,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/tgzid4va","slide":3,"textChars":20,"textLines":1}
+{"kind":"shape","id":"sh/6t8zi9cz","slide":3,"bbox":[853.33,333.33,213.33,0]}
+{"kind":"shape","id":"sh/reh0bedk","slide":3,"bbox":[1000,283.33,0,100]}
+{"kind":"textbox","id":"sh/4r6hgzut","slide":3,"textChars":6,"textLines":1}
+{"kind":"shape","id":"sh/5szi94ve","slide":3,"bbox":[853.33,303.33,147.2,0]}
+{"kind":"shape","id":"sh/nmx0zuxg","slide":3,"bbox":[991.87,294.67,17.33,17.33]}
+{"kind":"textbox","id":"sh/mlojqpwv","slide":3,"textChars":8,"textLines":1}
+{"kind":"shape","id":"sh/8n61szel","slide":3,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/vqx03uxc","slide":3,"textChars":75,"textLines":1}
+{"kind":"image","id":"im/mxgre5wb","slide":3,"name":"","alt":"LaTeX-rendered residual sign meanings: undershoot, root, and overshoot","bbox":[146.67,473.33,986.67,103.33]}
+{"kind":"notes","id":"nt/b82sse","slide":3,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - PHY4605 Lecture Slide..."}
+{"kind":"slide","id":"sl/fk2019","slide":4,"title":"Find the zero crossing before coding","textShapes":9}
+{"kind":"textbox","id":"sh/va5wjilc","slide":4,"textChars":36,"textLines":1}
+{"kind":"textbox","id":"sh/wbydsn2x","slide":4,"textChars":51,"textLines":1}
+{"kind":"shape","id":"sh/xc7elsji","slide":4,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/mlwvmdkv","slide":4,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/nm5wfilg","slide":4,"bbox":[76.67,166.67,296.67,400]}
+{"kind":"textbox","id":"sh/87edon21","slide":4,"textChars":17,"textLines":1}
+{"kind":"textbox","id":"sh/98nehs3m","slide":4,"textChars":45,"textLines":2}
+{"kind":"shape","id":"sh/yhcvitkz","slide":4,"bbox":[100,323.33,250,70]}
+{"kind":"textbox","id":"sh/zilwbylk","slide":4,"textChars":24,"textLines":1}
+{"kind":"shape","id":"sh/7a1gzuxo","slide":4,"bbox":[100,416.67,250,70]}
+{"kind":"textbox","id":"sh/698fq9w3","slide":4,"textChars":24,"textLines":1}
+{"kind":"textbox","id":"sh/tcjy14fu","slide":4,"textChars":25,"textLines":1}
+{"kind":"shape","id":"sh/ve1g3ex0","slide":4,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/udszu9wf","slide":4,"textChars":96,"textLines":1}
+{"kind":"image","id":"im/bits7uho","slide":4,"name":"","alt":"MATLAB-generated projectile-range residual plot with zero line and labelled axes","bbox":[406.67,163.33,793.33,413.33]}
+{"kind":"notes","id":"nt/fk2019","slide":4,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - MATLAB-generated resi..."}
+{"kind":"slide","id":"sl/ycgldt","slide":5,"title":"Bisection keeps a sign change alive","textShapes":26}
+{"kind":"textbox","id":"sh/fe5kj2ds","slide":5,"textChars":35,"textLines":1}
+{"kind":"textbox","id":"sh/gzelsnud","slide":5,"textChars":51,"textLines":1}
+{"kind":"shape","id":"sh/10n2lsvy","slide":5,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/69c3mdcb","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/ralkfidg","slide":5,"textChars":15,"textLines":1}
+{"kind":"shape","id":"sh/sbelonu1","slide":5,"bbox":[123.33,263.33,250,0]}
+{"kind":"shape","id":"sh/tcn2hsvm","slide":5,"bbox":[114.67,254.67,17.33,17.33]}
+{"kind":"shape","id":"sh/i5c3idcz","slide":5,"bbox":[364.67,254.67,17.33,17.33]}
+{"kind":"textbox","id":"sh/j6lkbidk","slide":5,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/zu1sr2l4","slide":5,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/ytsryh4j","slide":5,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/lwjatc3a","slide":5,"textChars":9,"textLines":1}
+{"kind":"shape","id":"sh/kva907mp","slide":5,"bbox":[426.67,250,40,25.33]}
+{"kind":"textbox","id":"sh/7i1svmlg","slide":5,"textChars":17,"textLines":1}
+{"kind":"shape","id":"sh/mxsr2h4v","slide":5,"bbox":[520,263.33,206.67,0]}
+{"kind":"shape","id":"sh/9kjaxw36","slide":5,"bbox":[613.33,254.67,17.33,17.33]}
+{"kind":"textbox","id":"sh/8ja94rm1","slide":5,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/3mh8jilw","slide":5,"textChars":25,"textLines":1}
+{"kind":"shape","id":"sh/21orqx4b","slide":5,"bbox":[756.67,250,40,25.33]}
+{"kind":"textbox","id":"sh/6hwvyloz","slide":5,"textChars":27,"textLines":1}
+{"kind":"shape","id":"sh/ri5crq5k","slide":5,"bbox":[866.67,263.33,200,0]}
+{"kind":"shape","id":"sh/sjed0v65","slide":5,"bbox":[858,254.67,17.33,17.33]}
+{"kind":"shape","id":"sh/tk7ut0nq","slide":5,"bbox":[1058,254.67,17.33,17.33]}
+{"kind":"textbox","id":"sh/idwbulo3","slide":5,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/je5cnq5o","slide":5,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/4fedwv69","slide":5,"textChars":15,"textLines":1}
+{"kind":"textbox","id":"sh/5gnup0ne","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/upcbq1or","slide":5,"textChars":21,"textLines":2}
+{"kind":"shape","id":"sh/vqlcj65c","slide":5,"bbox":[316.67,406.67,36.67,22.67]}
+{"kind":"textbox","id":"sh/d4bypo7u","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/c32xwjq9","slide":5,"textChars":16,"textLines":2}
+{"kind":"shape","id":"sh/b29gnep4","slide":5,"bbox":[596.67,406.67,36.67,22.67]}
+{"kind":"textbox","id":"sh/qh0fu98j","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/pgrel47y","slide":5,"textChars":17,"textLines":2}
+{"kind":"shape","id":"sh/ofixszqd","slide":5,"bbox":[876.67,406.67,36.67,22.67]}
+{"kind":"textbox","id":"sh/3e9wjups","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/2d0fqp87","slide":5,"textChars":20,"textLines":2}
+{"kind":"shape","id":"sh/1creh47m","slide":5,"bbox":[76.67,520,1126.67,73.33]}
+{"kind":"textbox","id":"sh/gbyxozqh","slide":5,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/gfa5o3qd","slide":5,"textChars":31,"textLines":1}
+{"kind":"textbox","id":"sh/hgj6x87y","slide":5,"textChars":63,"textLines":1}
+{"kind":"notes","id":"nt/ycgldt","slide":5,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - Lecturer-approved Sli..."}
+{"kind":"slide","id":"sl/nbv4sa","slide":6,"title":"Trace the first four bisection updates","textShapes":10}
+{"kind":"textbox","id":"sh/kfepcvel","slide":6,"textChars":38,"textLines":1}
+{"kind":"textbox","id":"sh/je58jqx0","slide":6,"textChars":62,"textLines":1}
+{"kind":"shape","id":"sh/idw7alwf","slide":6,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/t47qp0f2","slide":6,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/72p8nqxw","slide":6,"textChars":43,"textLines":1}
+{"kind":"textbox","id":"sh/6hg7elwb","slide":6,"textChars":14,"textLines":1}
+{"kind":"shape","id":"sh/983qdwfy","slide":6,"bbox":[840,246.67,346.67,0]}
+{"kind":"shape","id":"sh/87up4bed","slide":6,"bbox":[840,246.67,346.67,0]}
+{"kind":"shape","id":"sh/qpgzydkv","slide":6,"bbox":[833.33,240,13.33,13.33]}
+{"kind":"shape","id":"sh/rqp07ilg","slide":6,"bbox":[1180,240,13.33,13.33]}
+{"kind":"textbox","id":"sh/sryh0n21","slide":6,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/ds7i9s3m","slide":6,"bbox":[840,313.33,226.67,0]}
+{"kind":"shape","id":"sh/etgz2dk7","slide":6,"bbox":[840,313.33,226.67,0]}
+{"kind":"shape","id":"sh/fep0bils","slide":6,"bbox":[833.33,306.67,13.33,13.33]}
+{"kind":"shape","id":"sh/0fyh4n2d","slide":6,"bbox":[1060,306.67,13.33,13.33]}
+{"kind":"textbox","id":"sh/1grids3i","slide":6,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/2h0z6xk3","slide":6,"bbox":[840,380,166.67,0]}
+{"kind":"shape","id":"sh/ni90f2lo","slide":6,"bbox":[840,380,166.67,0]}
+{"kind":"shape","id":"sh/zm9g32hw","slide":6,"bbox":[833.33,373.33,13.33,13.33]}
+{"kind":"shape","id":"sh/yl0zux0b","slide":6,"bbox":[1000,373.33,13.33,13.33]}
+{"kind":"textbox","id":"sh/loby5cz2","slide":6,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/kn2hw7ih","slide":6,"bbox":[840,446.67,136.67,0]}
+{"kind":"shape","id":"sh/bi9gzi10","slide":6,"bbox":[840,446.67,136.67,0]}
+{"kind":"shape","id":"sh/ah0zqx0f","slide":6,"bbox":[833.33,440,13.33,13.33]}
+{"kind":"shape","id":"sh/xkry1szq","slide":6,"bbox":[970,440,13.33,13.33]}
+{"kind":"textbox","id":"sh/cjihsni5","slide":6,"textChars":26,"textLines":1}
+{"kind":"shape","id":"sh/nupgvi1o","slide":6,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/2tgfmd03","slide":6,"textChars":76,"textLines":1}
+{"kind":"table","id":"tb/t4je1836","slide":6,"name":"","rows":5,"cols":5,"preview":"iteration | current bracket (degree) | midpoint (degree) | f(mid) (m) | keep","bbox":[76.67,173.33,693.33,313.33]}
+{"kind":"notes","id":"nt/nbv4sa","slide":6,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - Lecturer demonstratio..."}
+{"kind":"slide","id":"sl/623sp9","slide":7,"title":"Read the bisection scaffold, line by line","textShapes":17}
+{"kind":"textbox","id":"sh/98r6doju","slide":7,"textChars":41,"textLines":1}
+{"kind":"textbox","id":"sh/m507i9kj","slide":7,"textChars":51,"textLines":1}
+{"kind":"shape","id":"sh/n69obe14","slide":7,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/03ipgj2d","slide":7,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/l4r69ojy","slide":7,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/y107e9k7","slide":7,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/z29o7e1s","slide":7,"textChars":26,"textLines":1}
+{"kind":"textbox","id":"sh/kz2ps32x","slide":7,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/50vql8j2","slide":7,"textChars":8,"textLines":1}
+{"kind":"textbox","id":"sh/xonutsb2","slide":7,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/wnedknuh","slide":7,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/b25critw","slide":7,"textChars":4,"textLines":1}
+{"kind":"textbox","id":"sh/a1wvixcr","slide":7,"textChars":30,"textLines":1}
+{"kind":"textbox","id":"sh/90nupsb6","slide":7,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/ozetgnul","slide":7,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/ny5cnid0","slide":7,"textChars":17,"textLines":1}
+{"kind":"shape","id":"sh/2xwbedcf","slide":7,"bbox":[76.67,203.33,1126.67,380]}
+{"kind":"textbox","id":"sh/twru1cba","slide":7,"textChars":466,"textLines":16}
+{"kind":"shape","id":"sh/8vyds7up","slide":7,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/sz6xov21","slide":7,"textChars":94,"textLines":1}
+{"kind":"notes","id":"nt/623sp9","slide":7,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - MATLAB scaffold from ..."}
+{"kind":"slide","id":"sl/1nyktd","slide":8,"title":"Stop once, then substitute back","textShapes":11}
+{"kind":"textbox","id":"sh/369greh0","slide":8,"textChars":31,"textLines":1}
+{"kind":"textbox","id":"sh/o7ihkjy5","slide":8,"textChars":57,"textLines":1}
+{"kind":"shape","id":"sh/p8rytozq","slide":8,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/e1gzepg3","slide":8,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/f29gnuho","slide":8,"bbox":[76.67,166.67,346.67,380]}
+{"kind":"textbox","id":"sh/g3ihgzy9","slide":8,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/14ryp4zu","slide":8,"textChars":14,"textLines":1}
+{"kind":"textbox","id":"sh/yxkzqtgn","slide":8,"textChars":28,"textLines":1}
+{"kind":"shape","id":"sh/zyt0zyx8","slide":8,"bbox":[100,370,296.67,70]}
+{"kind":"textbox","id":"sh/7alg3e5k","slide":8,"textChars":17,"textLines":1}
+{"kind":"textbox","id":"sh/69cfa9of","slide":8,"textChars":22,"textLines":1}
+{"kind":"textbox","id":"sh/tc3y5onq","slide":8,"textChars":47,"textLines":1}
+{"kind":"shape","id":"sh/8buhcjm5","slide":8,"bbox":[466.67,166.67,736.67,206.67]}
+{"kind":"textbox","id":"sh/velg7y5w","slide":8,"textChars":34,"textLines":1}
+{"kind":"shape","id":"sh/gfehg3mh","slide":8,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/325gby5s","slide":8,"textChars":87,"textLines":1}
+{"kind":"table","id":"tb/2t0r2lsv","slide":8,"name":"","rows":4,"cols":3,"preview":"check | result | interpretation","bbox":[466.67,400,736.67,166.67]}
+{"kind":"image","id":"im/983mlkv6","slide":8,"name":"","alt":"LaTeX-rendered bisection root, substituted range, and residual validation","bbox":[496.67,233.33,676.67,113.33]}
+{"kind":"notes","id":"nt/1nyktd","slide":8,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - MATLAB-generated vali..."}
+{"kind":"slide","id":"sl/qw2a12","slide":9,"title":"Newton follows the local tangent","textShapes":11}
+{"kind":"textbox","id":"sh/kvudsbu1","slide":9,"textChars":32,"textLines":1}
+{"kind":"textbox","id":"sh/julcj6tw","slide":9,"textChars":55,"textLines":1}
+{"kind":"shape","id":"sh/itcvq1cb","slide":9,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/tknepgby","slide":9,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/sjedwbud","slide":9,"bbox":[76.67,166.67,626.67,406.67]}
+{"kind":"shape","id":"sh/7ilwn6ts","slide":9,"bbox":[143.33,303.33,480,0]}
+{"kind":"shape","id":"sh/6hcvulc7","slide":9,"bbox":[143.33,233.33,0,246.67]}
+{"kind":"shape","id":"sh/1onet0bu","slide":9,"bbox":[143.33,416,50,24]}
+{"kind":"shape","id":"sh/gned0vu9","slide":9,"bbox":[193.33,379.33,46.67,36.67]}
+{"kind":"shape","id":"sh/al4by5k3","slide":9,"bbox":[240,336,46.67,43.33]}
+{"kind":"shape","id":"sh/bmds7a1o","slide":9,"bbox":[286.67,309.33,46.67,26.67]}
+{"kind":"shape","id":"sh/cnmt0f29","slide":9,"bbox":[333.33,309.33,50,8]}
+{"kind":"shape","id":"sh/x8va9kju","slide":9,"bbox":[383.33,317.33,60,30]}
+{"kind":"shape","id":"sh/y94b2pkf","slide":9,"bbox":[443.33,347.33,60,56.67]}
+{"kind":"shape","id":"sh/zadsba1k","slide":9,"bbox":[503.33,404,73.33,45.33]}
+{"kind":"shape","id":"sh/kbmt4f25","slide":9,"bbox":[320,303.33,260,76.67]}
+{"kind":"shape","id":"sh/lcfadkjq","slide":9,"bbox":[313.33,372,16,16]}
+{"kind":"shape","id":"sh/edkr6lkv","slide":9,"bbox":[625.33,295.33,16,16]}
+{"kind":"textbox","id":"sh/fetszqlg","slide":9,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/jm5gb2dw","slide":9,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/ilwzixwb","slide":9,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/587ydsv2","slide":9,"textChars":14,"textLines":1}
+{"kind":"shape","id":"sh/vi5gnix0","slide":9,"bbox":[746.67,416.67,433.33,113.33]}
+{"kind":"textbox","id":"sh/ahwzedwf","slide":9,"textChars":10,"textLines":1}
+{"kind":"textbox","id":"sh/xknypsv6","slide":9,"textChars":25,"textLines":1}
+{"kind":"textbox","id":"sh/wjehgnel","slide":9,"textChars":40,"textLines":1}
+{"kind":"shape","id":"sh/fep0jmd4","slide":9,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/udgzqhwj","slide":9,"textChars":72,"textLines":1}
+{"kind":"image","id":"im/fetwnaxc","slide":9,"name":"","alt":"LaTeX-rendered Newton update and degree-based residual slope","bbox":[746.67,213.33,433.33,166.67]}
+{"kind":"notes","id":"nt/qw2a12","slide":9,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - PHY4605 Lecture Slide..."}
+{"kind":"slide","id":"sl/pc78tl","slide":10,"title":"Trace Newton from 25 degree","textShapes":7}
+{"kind":"textbox","id":"sh/4zal8ri5","slide":10,"textChars":27,"textLines":1}
+{"kind":"textbox","id":"sh/3y14zm10","slide":10,"textChars":56,"textLines":1}
+{"kind":"shape","id":"sh/2xs36h0f","slide":10,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/do3m5gz2","slide":10,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/cnu5cbih","slide":10,"bbox":[76.67,166.67,620,416.67]}
+{"kind":"textbox","id":"sh/rml436hw","slide":10,"textChars":527,"textLines":12}
+{"kind":"textbox","id":"sh/qlcna10b","slide":10,"textChars":16,"textLines":1}
+{"kind":"shape","id":"sh/srql07ix","slide":10,"bbox":[736.67,530,466.67,53.33]}
+{"kind":"textbox","id":"sh/a1czul4z","slide":10,"textChars":39,"textLines":1}
+{"kind":"shape","id":"sh/b2l0n65k","slide":10,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/cnu1wbm5","slide":10,"textChars":75,"textLines":1}
+{"kind":"table","id":"tb/sf61wjyd","slide":10,"name":"","rows":5,"cols":5,"preview":"iteration | theta (degree) | residual (m) | slope (m/degree) | next angle (degree)","bbox":[736.67,206.67,466.67,303.33]}
+{"kind":"notes","id":"nt/pc78tl","slide":10,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - MATLAB Newton scaffol..."}
+{"kind":"slide","id":"sl/3aujzv","slide":11,"title":"Working exposure: same root, different route","textShapes":15}
+{"kind":"textbox","id":"sh/nupgn6d8","slide":11,"textChars":44,"textLines":1}
+{"kind":"textbox","id":"sh/ovyhgrut","slide":11,"textChars":66,"textLines":1}
+{"kind":"shape","id":"sh/pw7ipwbe","slide":11,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/e5gzahcr","slide":11,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/f6pgjmdc","slide":11,"bbox":[76.67,173.33,513.33,353.33]}
+{"kind":"shape","id":"sh/07yhcrux","slide":11,"bbox":[690,173.33,513.33,353.33]}
+{"kind":"textbox","id":"sh/187ylwvi","slide":11,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/61wz6hcv","slide":11,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/r25gfmd0","slide":11,"textChars":29,"textLines":1}
+{"kind":"textbox","id":"sh/n2hsvedk","slide":11,"textChars":27,"textLines":1}
+{"kind":"textbox","id":"sh/m18rm9cz","slide":11,"textChars":2,"textLines":1}
+{"kind":"textbox","id":"sh/94zaxovq","slide":11,"textChars":19,"textLines":1}
+{"kind":"textbox","id":"sh/o3qtoju5","slide":11,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/bq1szedw","slide":11,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/a5sbq9cb","slide":11,"textChars":15,"textLines":1}
+{"kind":"textbox","id":"sh/xsja1ovm","slide":11,"textChars":16,"textLines":1}
+{"kind":"textbox","id":"sh/wratsju1","slide":11,"textChars":46,"textLines":1}
+{"kind":"shape","id":"sh/ruxsnudc","slide":11,"bbox":[76.67,553.33,1126.67,46.67]}
+{"kind":"textbox","id":"sh/q9orepcr","slide":11,"textChars":91,"textLines":1}
+{"kind":"notes","id":"nt/3aujzv","slide":11,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - MATLAB bisection and ..."}
+{"kind":"slide","id":"sl/lhmfxp","slide":12,"title":"A midpoint is not enough: the bracket must change sign","textShapes":15}
+{"kind":"textbox","id":"sh/jetkrilg","slide":12,"textChars":54,"textLines":1}
+{"kind":"textbox","id":"sh/kfml0nm1","slide":12,"textChars":66,"textLines":1}
+{"kind":"shape","id":"sh/5gv2t83m","slide":12,"bbox":[76.67,163.33,1126.67,0]}
+{"kind":"textbox","id":"sh/6h432d47","slide":12,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/7idkvilc","slide":12,"bbox":[76.67,200,506.67,346.67]}
+{"kind":"shape","id":"sh/sjml4nmx","slide":12,"bbox":[696.67,200,506.67,346.67]}
+{"kind":"textbox","id":"sh/t4vmxs3i","slide":12,"textChars":17,"textLines":1}
+{"kind":"textbox","id":"sh/u5436x43","slide":12,"textChars":21,"textLines":1}
+{"kind":"shape","id":"sh/f6d4z2lo","slide":12,"bbox":[120,356.67,373.33,0]}
+{"kind":"shape","id":"sh/fed4ru18","slide":12,"bbox":[110.67,347.33,18.67,18.67]}
+{"kind":"shape","id":"sh/ed4nypkn","slide":12,"bbox":[484,347.33,18.67,18.67]}
+{"kind":"textbox","id":"sh/1gvmt4je","slide":12,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/0fm50z2t","slide":12,"textChars":1,"textLines":1}
+{"kind":"shape","id":"sh/rat4nu1c","slide":12,"bbox":[740,356.67,373.33,0]}
+{"kind":"shape","id":"sh/q9knupkr","slide":12,"bbox":[730.67,347.33,18.67,18.67]}
+{"kind":"shape","id":"sh/dcbmp4j2","slide":12,"bbox":[1104,347.33,18.67,18.67]}
+{"kind":"textbox","id":"sh/sb25wz2x","slide":12,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/b6x4ze1g","slide":12,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/a5on69kv","slide":12,"textChars":15,"textLines":1}
+{"kind":"textbox","id":"sh/6187yd43","slide":12,"textChars":27,"textLines":1}
+{"kind":"textbox","id":"sh/72h8rilo","slide":12,"textChars":23,"textLines":1}
+{"kind":"textbox","id":"sh/83qp0nm9","slide":12,"textChars":23,"textLines":1}
+{"kind":"shape","id":"sh/t4jqts3u","slide":12,"bbox":[590,343.33,60,30]}
+{"kind":"textbox","id":"sh/u5s72x4f","slide":12,"textChars":24,"textLines":1}
+{"kind":"shape","id":"sh/vq18v2l0","slide":12,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/grap4725","slide":12,"textChars":99,"textLines":1}
+{"kind":"notes","id":"nt/lhmfxp","slide":12,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - PHY4605 Lecture Slide..."}
+{"kind":"slide","id":"sl/c4bbvg","slide":13,"title":"Transfer the residual pattern to new physics","textShapes":17}
+{"kind":"textbox","id":"sh/exg72107","slide":13,"textChars":44,"textLines":1}
+{"kind":"textbox","id":"sh/1krqdgzy","slide":13,"textChars":54,"textLines":1}
+{"kind":"shape","id":"sh/gjyp4bid","slide":13,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/rupo76hw","slide":13,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/6tg7y10b","slide":13,"bbox":[76.67,176.67,333.33,340]}
+{"kind":"shape","id":"sh/tw769gz2","slide":13,"bbox":[870,176.67,333.33,340]}
+{"kind":"textbox","id":"sh/svyp0bih","slide":13,"textChars":9,"textLines":1}
+{"kind":"textbox","id":"sh/bq98jqh0","slide":13,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/ap07a50f","slide":13,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/s76h4nqh","slide":13,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/t8fid8r2","slide":13,"textChars":3,"textLines":1}
+{"kind":"textbox","id":"sh/654z2d8b","slide":13,"textChars":33,"textLines":1}
+{"kind":"textbox","id":"sh/r6x0bi9w","slide":13,"textChars":11,"textLines":1}
+{"kind":"textbox","id":"sh/43mh03ql","slide":13,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/54vy98rq","slide":13,"textChars":20,"textLines":1}
+{"kind":"textbox","id":"sh/i14zet8f","slide":13,"textChars":13,"textLines":1}
+{"kind":"textbox","id":"sh/j2dg7y90","slide":13,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/wzmhc3q9","slide":13,"textChars":33,"textLines":1}
+{"kind":"shape","id":"sh/xk36t0fm","slide":13,"bbox":[400,546.67,66.67,25.33]}
+{"kind":"textbox","id":"sh/cju5kve1","slide":13,"textChars":13,"textLines":1}
+{"kind":"shape","id":"sh/bilorqxg","slide":13,"bbox":[806.67,546.67,66.67,25.33]}
+{"kind":"shape","id":"sh/ahsnilgv","slide":13,"bbox":[76.67,616.67,1040,46.67]}
+{"kind":"textbox","id":"sh/pgj6pgfa","slide":13,"textChars":88,"textLines":1}
+{"kind":"image","id":"im/upojmt0n","slide":13,"name":"","alt":"LaTeX-rendered thin-lens and RC-charging residual forms with units","bbox":[436.67,220,406.67,200]}
+{"kind":"notes","id":"nt/c4bbvg","slide":13,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - PHY4605 practical tra..."}
+{"kind":"slide","id":"sl/hx9x78","slide":14,"title":"Exit ticket — explain a root to a future you","textShapes":20}
+{"kind":"textbox","id":"sh/cn6pkbqh","slide":14,"textChars":44,"textLines":1}
+{"kind":"textbox","id":"sh/rmxor6pw","slide":14,"textChars":62,"textLines":1}
+{"kind":"shape","id":"sh/qlonil8b","slide":14,"bbox":[76.67,133.33,1126.67,0]}
+{"kind":"textbox","id":"sh/lcz6x07y","slide":14,"textChars":2,"textLines":1}
+{"kind":"shape","id":"sh/0r6povqd","slide":14,"bbox":[76.67,200,226.67,286.67]}
+{"kind":"textbox","id":"sh/zqxovqps","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/ypo7ml87","slide":14,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/9gz6107u","slide":14,"textChars":43,"textLines":2}
+{"kind":"shape","id":"sh/8fqpsv6p","slide":14,"bbox":[95.33,413.33,186.67,0]}
+{"kind":"textbox","id":"sh/6lgza54f","slide":14,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/7mp0ja50","slide":14,"bbox":[356.67,200,226.67,286.67]}
+{"kind":"textbox","id":"sh/8ny1cvml","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/to7il0n6","slide":14,"textChars":7,"textLines":1}
+{"kind":"textbox","id":"sh/up0je54r","slide":14,"textChars":29,"textLines":2}
+{"kind":"shape","id":"sh/va90na5c","slide":14,"bbox":[375.33,413.33,186.67,0]}
+{"kind":"textbox","id":"sh/gbi1gfmh","slide":14,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/hcripkn2","slide":14,"bbox":[636.67,200,226.67,286.67]}
+{"kind":"textbox","id":"sh/atwz2lo7","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/bu50bq5s","slide":14,"textChars":6,"textLines":1}
+{"kind":"textbox","id":"sh/zylw3mlk","slide":14,"textChars":39,"textLines":2}
+{"kind":"shape","id":"sh/exsfahkz","slide":14,"bbox":[655.33,413.33,186.67,0]}
+{"kind":"textbox","id":"sh/103y5c3q","slide":14,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/0zuxcr25","slide":14,"bbox":[916.67,200,226.67,286.67]}
+{"kind":"textbox","id":"sh/ru1wz2lo","slide":14,"textChars":1,"textLines":1}
+{"kind":"textbox","id":"sh/qtsf6x43","slide":14,"textChars":5,"textLines":1}
+{"kind":"textbox","id":"sh/dwje1c3e","slide":14,"textChars":48,"textLines":2}
+{"kind":"shape","id":"sh/cvax87m9","slide":14,"bbox":[935.33,413.33,186.67,0]}
+{"kind":"textbox","id":"sh/bq5gb6ls","slide":14,"textChars":18,"textLines":1}
+{"kind":"shape","id":"sh/apcfi1k7","slide":14,"bbox":[76.67,533.33,1126.67,54.67]}
+{"kind":"textbox","id":"sh/8v6tc32p","slide":14,"textChars":57,"textLines":1}
+{"kind":"notes","id":"nt/hx9x78","slide":14,"text":"|  | [Sources] | - PHY4605 Week 05 Content Manifest | - PHY4605 Lecture Slide..."}
+{"kind":"notice","message":"Truncated: omitted 0 lines. Increase maxChars or narrow target."}

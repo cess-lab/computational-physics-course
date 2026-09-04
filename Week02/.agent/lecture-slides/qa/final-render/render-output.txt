@@ -1,0 +1,2 @@
+/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/.agent/lecture-slides/qa/final-render/slide.png
+[pages] total=14

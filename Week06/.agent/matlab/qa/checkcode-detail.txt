@@ -1,0 +1,22 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+FILE: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m
+line 22 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 51 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 52 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 53 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 61 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 77 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 78 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 79 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 85 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 86 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 93 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+line 94 | NOPTS | Add a semicolon after the statement to hide the output (in a script).
+FILE: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/Week06_Practical_AI_Enabled_Numerical_Differentiation_Challenge_Set.m
+NO MESSAGES

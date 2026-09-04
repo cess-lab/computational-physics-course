@@ -1,0 +1,168 @@
+{
+  "success": true,
+  "data": {
+    "matches": 8,
+    "results": [
+      {
+        "path": "/slide[1]/picture[@id=12]",
+        "type": "picture",
+        "preview": "Picture 11",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 11",
+          "id": 12,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 1022984,
+          "x": "915pt",
+          "y": "195pt",
+          "width": "210pt",
+          "height": "315pt",
+          "zorder": 6
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[2]/picture[@id=26]",
+        "type": "picture",
+        "preview": "Picture 25",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 25",
+          "id": 26,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 868983,
+          "x": "690pt",
+          "y": "3416505emu",
+          "width": "487.5pt",
+          "height": "2691989emu",
+          "zorder": 13
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[3]/picture[@id=25]",
+        "type": "picture",
+        "preview": "Picture 24",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 24",
+          "id": 25,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 691239,
+          "x": "915pt",
+          "y": "2966357emu",
+          "width": "337.5pt",
+          "height": "2449286emu",
+          "zorder": 12
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[3]/picture[@id=26]",
+        "type": "picture",
+        "preview": "Picture 25",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 25",
+          "id": 26,
+          "alt": "(missing)",
+          "relId": "rId4",
+          "contentType": "image/png",
+          "fileSize": 15635,
+          "x": "3926898emu",
+          "y": "266.25pt",
+          "width": "4623955emu",
+          "height": "75pt",
+          "zorder": 13
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[6]/picture[@id=16]",
+        "type": "picture",
+        "preview": "Picture 15",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 15",
+          "id": 16,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 188122,
+          "x": "675pt",
+          "y": "2687834emu",
+          "width": "570pt",
+          "height": "4530331emu",
+          "zorder": 8
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[8]/picture[@id=26]",
+        "type": "picture",
+        "preview": "Picture 25",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 25",
+          "id": 26,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 168725,
+          "x": "25.4cm",
+          "y": "2990392emu",
+          "width": "525pt",
+          "height": "3639465emu",
+          "zorder": 13
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[11]/picture[@id=10]",
+        "type": "picture",
+        "preview": "Picture 9",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 9",
+          "id": 10,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 188122,
+          "x": "645pt",
+          "y": "2878334emu",
+          "width": "570pt",
+          "height": "4530331emu",
+          "zorder": 5
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[12]/picture[@id=10]",
+        "type": "picture",
+        "preview": "Picture 9",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 9",
+          "id": 10,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 224549,
+          "x": "727.5pt",
+          "y": "2998370emu",
+          "width": "517.5pt",
+          "height": "3528261emu",
+          "zorder": 5
+        },
+        "children": []
+      }
+    ]
+  }
+}

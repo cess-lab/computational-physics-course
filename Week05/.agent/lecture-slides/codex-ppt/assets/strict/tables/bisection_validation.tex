@@ -1,0 +1,18 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{amsmath}
+\usepackage{booktabs,array,xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\definecolor{weeksage}{HTML}{7AA69B}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.55}
+\begin{tabular}{>{\raggedright\arraybackslash}m{4.2cm} >{\centering\arraybackslash}m{4.7cm} >{\raggedright\arraybackslash}m{5.4cm}}
+\toprule
+\textbf{check} & \textbf{result} & \textbf{interpretation}\\
+\midrule
+root angle & $29.5679$ degree & low-angle launch angle\\
+model range & $35.0004$ m & target condition is met\\
+residual & $+4.1164\times10^{-4}$ m & below $10^{-3}$ m tolerance\\
+\bottomrule
+\end{tabular}
+\end{document}

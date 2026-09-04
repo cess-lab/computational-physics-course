@@ -1,0 +1,28 @@
+PHY4605 Week 05 lecture deck — final QA
+Checked: 2026-09-02 (Asia/Kuala_Lumpur)
+
+Canonical output
+- /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/Lecture_Slides_Week05.pptx
+- SHA-256: 1d21f8577755c07acda20e0b217b7c1f8ca0a98fad77f62984f776952b909be2
+- 14 slides; 14 speaker-notes parts; 0 slide-local placeholders; 16:9 canvas 18288000 x 10287000 EMU.
+
+Authoring and source fidelity
+- Editable source was created by importing the approved master-derived template-starter.pptx with PresentationFile.importPptx, clearing the starter slide content, and exporting with PresentationFile.exportPptx.
+- All final slide content is editable native text/shapes except the five approved exact PNG source assets.
+- Embedded PNGs are byte-identical to their local strict sources:
+  - slide 2: equations/model_residual.png
+  - slide 4: strict/week05_projectile_residual.png
+  - slide 8: equations/validation.png
+  - slide 9: equations/newton_update_slope.png
+  - slide 13: equations/transfer_residuals.png
+- LaTeX equation sources and rendered SVG/PNG assets are retained under the hidden strict asset folder; equation SVG scan found 0 conversion errors.
+
+Structural checks
+- presentations/container_tools/slides_test.py: PASS — no overflow detected.
+- officecli validate: PASS — no errors found.
+- officecli stats: 14 slides; 401 shapes/text boxes; 5 pictures; Nunito 250 occurrences; IBM Plex Mono 21 occurrences.
+- LibreOffice independent render: 14 PDF pages, 1440 x 810 pt; final PNG render set produced for all 14 slides.
+
+Known non-blocking exporter diagnostics
+- officecli reports five missing picture descriptions and fourteen conservative multiline text-overflow warnings. The five assets have descriptive alt metadata in the artifact-tool inspection, but the current OOXML exporter does not serialize those descriptions in a form officecli recognizes. The multiline warnings were visually checked at full resolution and did not produce clipping or overlap.
+- officecli reports no structural title placeholders because the title bands are authored as editable text boxes; visible title text is present on all 14 slides and slides_test passes.

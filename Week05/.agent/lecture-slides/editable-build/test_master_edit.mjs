@@ -1,0 +1,21 @@
+import fs from "node:fs/promises";
+import { FileBlob, PresentationFile } from "@oai/artifact-tool";
+
+const source = "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-starter.pptx";
+const out = "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/test_master_edit.pptx";
+const preview = "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/test_master_edit.png";
+const p = await PresentationFile.importPptx(await FileBlob.load(source));
+const slide = p.slides.items[0];
+slide.shapes.deleteAll();
+slide.placeholders.getItem("title").text = "From a Physical Target to a Checkable Root";
+slide.placeholders.getItem("title").text.style = { typeface: "Nunito", fontSize: 82, bold: true, color: "#0B2B4C", alignment: "left", verticalAlignment: "top", autoFit: "none", insets: { top: 0, left: 0, right: 0, bottom: 0 } };
+slide.placeholders.getItem("subtitle").text = "Week 5 | Projectile range as a checkable residual";
+slide.placeholders.getItem("subtitle").text.style = { typeface: "Nunito", fontSize: 30, color: "#3F4B57", alignment: "left", verticalAlignment: "top", autoFit: "none", insets: { top: 0, left: 0, right: 0, bottom: 0 } };
+const box = slide.shapes.add({ geometry: "roundRect", name: "test-box", position: { left: 115, top: 600, width: 600, height: 120 }, fill: "#EEF5FD", line: { style: "solid", fill: "#2F6DB2", width: 2 }, borderRadius: 22 });
+box.text = "Editable test box";
+box.text.style = { typeface: "Nunito", fontSize: 30, bold: true, color: "#0B2B4C", alignment: "center", verticalAlignment: "middle", autoFit: "none", insets: { top: 16, right: 24, bottom: 16, left: 24 } };
+await fs.writeFile(preview, new Uint8Array(await p.export({ slide, format: "png", scale: 1 }).then((b) => b.arrayBuffer())));
+const pptx = await PresentationFile.exportPptx(p);
+await pptx.save(out);
+const inspect = await p.inspect({ kind: "slide,textbox,shape,layout", maxChars: 6000 });
+console.log(inspect.ndjson);

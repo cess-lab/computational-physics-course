@@ -1,0 +1,23 @@
+PHY4605 Week 05 paired audit ledger
+
+Required role contract
+- Generator: gpt-5.6-terra, medium reasoning effort.
+- Auditor: gpt-5.6-sol, medium reasoning effort, read-only.
+- The desktop runtime did not expose a callable hidden worker for the required second model; the available worker route returned WORKER_IDENTITY_LOST. No delegated auditor result is claimed here.
+- Coordinator completed the generator-side build and independent read-only artifact, OOXML, slides_test, officecli, and full-resolution visual checks. The runtime limitation is retained explicitly rather than represented as a model-paired pass.
+
+Round 1 — generator QA and repair
+- Finding: initial embedded image frames rendered blank because the image blob was not byte-backed.
+- Finding: Slide 06 title and Slide 09 x-axis label needed spacing corrections.
+- Decision: use byte-backed PNG blobs; shorten the Slide 06 title; move the Slide 09 axis label down.
+- Result: rebuilt the editable deck and regenerated artifact previews.
+
+Round 2 — independent saved-PPTX audit
+- Finding: an officecli alt-text round-trip changed the PPTX canvas and introduced structural drift.
+- Decision: discard that mutated copy and rebuild directly from the artifact-tool source; do not post-process the final PPTX through officecli.
+- Result: final canvas restored to 16:9, slides_test passed, officecli validate passed, and exact embedded source hashes were verified.
+
+Round 3 — final visual and source audit
+- Finding: officecli retains five missing-picture-description diagnostics and fourteen conservative multiline overflow warnings; visual render evidence shows no clipping or overlap.
+- Decision: retain the editable artifact-tool export, record the exporter accessibility limitation, and treat the warnings as non-blocking with evidence.
+- Final result: SHA-256 1d21f8577755c07acda20e0b217b7c1f8ca0a98fad77f62984f776952b909be2.

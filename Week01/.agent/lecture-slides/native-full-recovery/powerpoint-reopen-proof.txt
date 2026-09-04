@@ -1,0 +1,7 @@
+PowerPoint native reopen proof
+
+Date: 2026-09-01
+File: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/Lecture_Slides_Week01.pptx
+Method: Microsoft PowerPoint native Save As over the prior canonical file, close, then reopen from PowerPoint Recents.
+Observed result: opened as "Lecture_Slides_Week01" with 12 slides and no repair prompt.
+SHA-256: 1b5a5567ab031d9405cc558cd906d9eeb97c663163793cf490da737adbca8581

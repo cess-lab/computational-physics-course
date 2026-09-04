@@ -1,0 +1,19 @@
+{
+  "round": 1,
+  "generator": {
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "medium",
+    "changes": [
+      "Rebuilt editable PPTX via artifact-tool",
+      "added source blocks and alt text",
+      "used retained LaTeX equation assets and MATLAB plot"
+    ],
+    "visual_inspection": "pass: all 14 rendered slides inspected; title/contact-sheet review completed",
+    "structural_checks": "pass: officecli validation and issues checks clean; slides_test clean",
+    "status": "ready for independent auditor"
+  },
+  "final_sha256": "fdbdfbb70c51301bd21d97973f29d64bd1e6e2ef20345cb8305b2fbaa4eb4144",
+  "known_risks": [
+    "Artifact-tool export required reproducible officecli alt-text post-processing; no PDF derivative was made."
+  ]
+}

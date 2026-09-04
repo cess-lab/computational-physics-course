@@ -1,0 +1,18 @@
+\documentclass[border=12pt]{standalone}
+\usepackage{amsmath}
+\usepackage{booktabs,array,xcolor}
+\definecolor{weeknavy}{HTML}{243B53}
+\begin{document}
+\color{weeknavy}
+\renewcommand{\arraystretch}{1.45}
+\begin{tabular}{>{\centering\arraybackslash}m{1.4cm} >{\centering\arraybackslash}m{3.0cm} >{\centering\arraybackslash}m{2.0cm} >{\centering\arraybackslash}m{3.2cm} >{\centering\arraybackslash}m{3.2cm}}
+\toprule
+\textbf{iteration} & \textbf{current bracket (degree)} & \textbf{midpoint (degree)} & \textbf{$f(\text{mid})$ (m)} & \textbf{keep}\\
+\midrule
+1 & [20, 40] & 30 & +0.31194 & [20, 30]\\
+2 & [20, 30] & 25 & -3.7648 & [25, 30]\\
+3 & [25, 30] & 27.5 & -1.5993 & [27.5, 30]\\
+4 & [27.5, 30] & 28.75 & -0.61095 & [28.75, 30]\\
+\bottomrule
+\end{tabular}
+\end{document}

@@ -1,0 +1,43 @@
+{
+  "slide": 7,
+  "title": "The missing dot changes the operation",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 7,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nTeach Year-2 physics students to move from a familiar vertical-motion model to named MATLAB variables, sampled arrays, element-wise operations, a labelled plot, and one executable physical validation check.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"This Week 01 lecture repairs uncertain MATLAB foundations through one familiar model: a ball launched vertically upward with air resistance neglected. Students predict the motion, identify variables and units, create a time array, use MATLAB indexing and element-wise operators, plot height against time, and validate the known launch value.\",\n    \"core_claim\": \"A physical model becomes trustworthy computational evidence only when its variables, arrays, operations, plot, and validation check stay connected.\",\n    \"canonical_terms\": [\n      \"vertical motion\",\n      \"physical model\",\n      \"variables and units\",\n      \"time array\",\n      \"MATLAB indexing starts at 1\",\n      \"element-wise operators\",\n      \"labelled plot\",\n      \"boundary check\",\n      \"physical interpretation\"\n    ],\n    \"locked_model\": {\n      \"equation\": \"y(t) = y0 + v0 t - (1/2) g t^2\",\n      \"assumptions\": [\n        \"upward is positive\",\n        \"air resistance is neglected\"\n      ],\n      \"values\": {\n        \"y0\": \"0 m\",\n        \"v0\": \"20 m s^-1\",\n        \"g\": \"9.81 m s^-2\",\n        \"time\": \"0:0.1:4 s\"\n      },\n      \"predictions\": [\n        \"starts at y = 0 m\",\n        \"rises to one maximum\",\n        \"falls back toward the launch height\"\n      ],\n      \"required_validation\": \"y(0) = 0 m, represented in MATLAB as y_m(1)\"\n    }\n  },\n  \"slide_local_context\": \"Use the exact MATLAB fragments 20 * 3, v0_mps .* t_s, and t_s.^2. Explain that the dot means apply the operation element by element. Keep the discussed dot as the only strongly emphasised operator.\"\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware — Muted Academic Blue + Sage\",\n  \"visual_direction\": \"clear, friendly, modern educational slide system with strong hierarchy, approachable labelled diagrams, moderate information density, and restrained semantic colour\",\n  \"color_palette\": \"warm white or cool-gray canvas; deep navy #243B53 for titles and structure; dusty blue #6E8FB3 for model content; quiet sage #7AA69B for expected or validated states; muted ochre #C7A35A for occasional prompts or warnings only; subdued coral #BF7A70 only for a real defect or failure\",\n  \"typography\": \"projection-readable sans-serif; bold for main titles only; semibold for short headings and key labels; regular for explanatory copy, bullets, sublabels, and notes; italic mathematics where useful; monospaced regular MATLAB code with only the discussed operator emphasised\",\n  \"texture_and_finish\": \"flat clean educational finish with pale fills, thin lines, direct labels, simple diagrams, generous alignment, no dark-filled blocks, no gradients, no decorative clutter, and no repeated oversized prompt cards\",\n  \"prompt_rule\": \"Ochre/yellow is an optional sparse accent. Use a compact inline prompt, small marker, or no prompt depending on the teaching point; never make a large prompt box a deck-wide requirement.\",\n  \"deck_consistency\": \"keep the same palette, typography hierarchy, icon language, spacing, and approachable scientific tone across all slides while varying composition by teaching role\"\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png — approved sample slide style reference; match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content\n\n\n## Slide\n{\n  \"number\": 7,\n  \"title\": \"The missing dot changes the operation\",\n  \"role\": \"misconception repair\",\n  \"intent\": \"Isolate the most important Week 1 distinction: scalar arithmetic versus element-wise array operations.\"\n}\n\n## Text\n{\n  \"title\": \"The missing dot changes the operation\",\n  \"key_points\": [\n    \"20 * 3 produces one scalar.\",\n    \"v0_mps .* t_s produces one value per time.\",\n    \"t_s.^2 squares every stored time value.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"three comparison modules across the slide: scalar, element-wise multiplication, and element-wise power; a small bottom checkpoint asks which expression returns an array\",\n  \"variation\": \"comparison layout; no large prompt card\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"a time array flowing to one scalar versus one result per sample\",\n  \"supporting_elements\": \"neutral scalar module, dusty-blue multiplication module, sage or ochre operator cue, and a compact checkpoint marker\"\n}\n\n## Source Image Rules\nRender the exact MATLAB punctuation as strict text; no source image required.\n\n## Constraints\n[\n  \"Exact MATLAB punctuation is essential.\",\n  \"Do not replace operators with prose-only descriptions.\",\n  \"No slide number.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_07.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+      "role": "approved sample slide style reference",
+      "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the selected Theme 1 mockup, the strict vertical-motion asset, and all slide-level source assets with view_image before delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

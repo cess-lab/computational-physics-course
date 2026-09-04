@@ -1,0 +1,11 @@
+Slides: 14
+Total shapes: 163
+Text boxes: 150
+Pictures: 7
+Words: 687
+Slides without title: 1
+Pictures without alt text: 7
+
+Font usage:
+  Nunito: 110 occurrence(s)
+  IBM Plex Mono: 43 occurrence(s)

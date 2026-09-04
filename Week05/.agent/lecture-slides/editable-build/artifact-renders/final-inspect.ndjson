@@ -1,0 +1,441 @@
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster2.xml","name":"PHY4605 Borderless White Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Opening","placeholders":[{"name":"body","type":"body"},{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Content T1","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Content T2","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Content T3","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"slide","id":"sl/y90nupkv","slide":1,"title":"PHY4605 Computational Methods in Physics","textShapes":10}
+{"kind":"textbox","id":"sh/i1w3yp8f","slide":1,"name":"slide-1-course-tag","text":"PHY4605 Computational Methods in Physics","textPreview":"PHY4605 Computational Methods in Physics","textChars":40,"textLines":1,"bbox":[115,126,900,38]}
+{"kind":"textbox","id":"sh/547294r6","slide":1,"name":"slide-1-opening-title","text":"From a Physical Target\nto a Checkable Root","textPreview":"From a Physical Target | to a Checkable Root","textChars":42,"textLines":2,"bbox":[115,245,1080,210]}
+{"kind":"textbox","id":"sh/k3yl0zql","slide":1,"name":"slide-1-opening-subtitle","text":"Week 5 | Root finding","textPreview":"Week 5 | Root finding","textChars":21,"textLines":1,"bbox":[115,475,1180,80]}
+{"kind":"textbox","id":"sh/7qp4be9c","slide":1,"name":"slide-1-question","text":"Which launch angle makes the range equal to 35 m?","textPreview":"Which launch angle makes the range equal to 35 m?","textChars":49,"textLines":1,"bbox":[115,650,1030,54]}
+{"kind":"textbox","id":"sh/65g3298r","slide":1,"name":"slide-1-given","text":"v0 = 20 m/s","textPreview":"v0 = 20 m/s","textChars":11,"textLines":1,"bbox":[115,720,300,40]}
+{"kind":"textbox","id":"sh/ts7md4r2","slide":1,"name":"slide-1-target","text":"target range = 35 m","textPreview":"target range = 35 m","textChars":19,"textLines":1,"bbox":[425,720,400,40]}
+{"kind":"shape","id":"sh/sryl4zqx","slide":1,"name":"slide-1-ground","bbox":[1270,735,465,1]}
+{"kind":"shape","id":"sh/fu94fe98","slide":1,"name":"slide-1-arc-1","bbox":[1290,634.17,33.33,100.83]}
+{"kind":"shape","id":"sh/utg3698n","slide":1,"name":"slide-1-arc-2","bbox":[1323.33,551.67,33.33,82.5]}
+{"kind":"shape","id":"sh/wn6dc7eh","slide":1,"name":"slide-1-arc-3","bbox":[1356.67,487.5,33.33,64.17]}
+{"kind":"shape","id":"sh/hofulsf2","slide":1,"name":"slide-1-arc-4","bbox":[1390,441.67,33.33,45.83]}
+{"kind":"shape","id":"sh/ul4vaxgb","slide":1,"name":"slide-1-arc-5","bbox":[1423.33,414.17,33.33,27.5]}
+{"kind":"shape","id":"sh/vmdcj2xw","slide":1,"name":"slide-1-arc-6","bbox":[1456.67,405,33.33,9.17]}
+{"kind":"shape","id":"sh/4r6dg7et","slide":1,"name":"slide-1-arc-7","bbox":[1490,405,33.33,9.17]}
+{"kind":"shape","id":"sh/5sfepcfe","slide":1,"name":"slide-1-arc-8","bbox":[1523.33,414.17,33.33,27.5]}
+{"kind":"shape","id":"sh/ipovexwn","slide":1,"name":"slide-1-arc-9","bbox":[1556.67,441.67,33.33,45.83]}
+{"kind":"shape","id":"sh/3qxwn2x8","slide":1,"name":"slide-1-arc-10","bbox":[1590,487.5,33.33,64.17]}
+{"kind":"shape","id":"sh/sfqdkrep","slide":1,"name":"slide-1-arc-11","bbox":[1623.33,551.67,33.33,82.5]}
+{"kind":"shape","id":"sh/dgzetcfa","slide":1,"name":"slide-1-arc-12","bbox":[1656.67,634.17,33.33,100.83]}
+{"kind":"shape","id":"sh/1cvuxc7e","slide":1,"name":"slide-1-launch-ball","bbox":[1276,721,28,28]}
+{"kind":"shape","id":"sh/0bmd476t","slide":1,"name":"slide-1-target-ring","bbox":[1669,714,42,42]}
+{"kind":"shape","id":"sh/zadcv2p8","slide":1,"name":"slide-1-target-stem","bbox":[1690,620,1,115]}
+{"kind":"textbox","id":"sh/e94v2hon","slide":1,"name":"slide-1-target-label","text":"35 m target","textPreview":"35 m target","textChars":11,"textLines":1,"bbox":[1570,575,240,38]}
+{"kind":"shape","id":"sh/90ve1w7q","slide":1,"name":"slide-1-launch-arrow","bbox":[1285,650,60,70]}
+{"kind":"textbox","id":"sh/ozmd8r65","slide":1,"name":"slide-1-speed-label","text":"v0 = 20 m/s","textPreview":"v0 = 20 m/s","textChars":11,"textLines":1,"bbox":[1240,770,240,36]}
+{"kind":"textbox","id":"sh/nydczmpk","slide":1,"name":"slide-1-angle-label","text":"theta","textPreview":"theta","textChars":5,"textLines":1,"bbox":[1298,690,90,32]}
+{"kind":"shape","id":"sh/mx4v6hoz","slide":1,"name":"slide-1-angle-marker","bbox":[1300,705,30,30]}
+{"kind":"textbox","id":"sh/p4bu5s76","slide":1,"name":"slide-1-chain","text":"physical target  →  residual  →  root","textPreview":"physical target  →  residual  →  root","textChars":37,"textLines":1,"bbox":[115,860,880,48]}
+{"kind":"notes","id":"nt/y90nupkv","slide":1,"text":"Open by asking students to name the physical quantity that is unknown before they name a numerical method.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m"}
+{"kind":"slide","id":"sl/hwbqtkby","slide":2,"title":"A target becomes a residual","textShapes":10}
+{"kind":"textbox","id":"sh/mxgjm5s7","slide":2,"name":"slide-2-title","text":"A target becomes a residual","textPreview":"A target becomes a residual","textChars":27,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/9072xkry","slide":2,"name":"slide-2-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/ozy1ofad","slide":2,"name":"slide-2-subtitle","text":"Model range minus target range becomes a quantity a solver can drive to zero","textPreview":"Model range minus target range becomes a quantity a solver can drive to zero","textChars":76,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/b29kza94","slide":2,"name":"slide-2-number","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/a10jqpsj","slide":2,"name":"slide-2-physical model-stage","bbox":[115,300,500,250]}
+{"kind":"textbox","id":"sh/x4r21kru","slide":2,"name":"slide-2-physical model-label","text":"PHYSICAL MODEL","textPreview":"PHYSICAL MODEL","textChars":14,"textLines":1,"bbox":[147,330,436,38]}
+{"kind":"textbox","id":"sh/w3i1sfa9","slide":2,"name":"slide-2-physical model-value","text":"R(theta)\nfrom the projectile","textPreview":"R(theta) | from the projectile","textChars":28,"textLines":2,"bbox":[147,394,436,90]}
+{"kind":"shape","id":"sh/r65knqtk","slide":2,"name":"slide-2-target condition-stage","bbox":[710,300,500,250]}
+{"kind":"textbox","id":"sh/q5wjelsz","slide":2,"name":"slide-2-target condition-label","text":"TARGET CONDITION","textPreview":"TARGET CONDITION","textChars":16,"textLines":1,"bbox":[742,330,436,38]}
+{"kind":"textbox","id":"sh/ove9o7yd","slide":2,"name":"slide-2-target condition-value","text":"R(theta) = 35 m","textPreview":"R(theta) = 35 m","textChars":15,"textLines":1,"bbox":[742,394,436,90]}
+{"kind":"shape","id":"sh/9wnqhczy","slide":2,"name":"slide-2-residual zero-stage","bbox":[1305,300,500,250]}
+{"kind":"textbox","id":"sh/mtwrmxg7","slide":2,"name":"slide-2-residual zero-label","text":"RESIDUAL ZERO","textPreview":"RESIDUAL ZERO","textChars":13,"textLines":1,"bbox":[1337,330,436,38]}
+{"kind":"textbox","id":"sh/nu58f2hs","slide":2,"name":"slide-2-residual zero-value","text":"f(theta) = 0","textPreview":"f(theta) = 0","textChars":12,"textLines":1,"bbox":[1337,394,436,90]}
+{"kind":"shape","id":"sh/wjy9sry9","slide":2,"name":"slide-2-arrow-1","bbox":[635,395,54,30]}
+{"kind":"shape","id":"sh/xk7qlczu","slide":2,"name":"slide-2-arrow-2","bbox":[1230,395,54,30]}
+{"kind":"shape","id":"sh/bip8jmho","slide":2,"name":"slide-2-units-strip","bbox":[340,825,1240,72]}
+{"kind":"textbox","id":"sh/cnupgny5","slide":2,"name":"slide-2-units","text":"root variable: theta (degree)    |    residual: metres","textPreview":"root variable: theta (degree)    |    residual: metres","textChars":54,"textLines":1,"bbox":[380,844,1160,32]}
+{"kind":"image","id":"im/xwne10je","slide":2,"name":"","alt":"Projectile range model, target condition, and residual definition","bbox":[350,585,1220,205]}
+{"kind":"notes","id":"nt/hwbqtkby","slide":2,"text":"Emphasise that the residual is not a new physical law. It is the model prediction compared with the target, expressed in metres.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/model_residual.png"}
+{"kind":"slide","id":"sl/ofy9wn61","slide":3,"title":"The residual sign tells you which way to move","textShapes":18}
+{"kind":"textbox","id":"sh/by1svqlc","slide":3,"name":"slide-3-title","text":"The residual sign tells you which way to move","textPreview":"The residual sign tells you which way to move","textChars":45,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/cza94vmx","slide":3,"name":"slide-3-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/d0jax03i","slide":3,"name":"slide-3-subtitle","text":"The sign is a physical error: below target or above target","textPreview":"The sign is a physical error: below target or above target","textChars":58,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/298ryl4v","slide":3,"name":"slide-3-number","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/3ah8rqlg","slide":3,"name":"slide-3-sign-map","bbox":[115,270,760,570]}
+{"kind":"textbox","id":"sh/obq90bml","slide":3,"name":"slide-3-sign-heading","text":"Read the sign as a range error","textPreview":"Read the sign as a range error","textChars":30,"textLines":1,"bbox":[155,305,680,44]}
+{"kind":"shape","id":"sh/pcjqtg36","slide":3,"name":"slide-3-sign-line","bbox":[210,530,580,1]}
+{"kind":"shape","id":"sh/m5cra54z","slide":3,"name":"slide-3-negative-half","bbox":[210,530,260,1]}
+{"kind":"shape","id":"sh/n6ls3alk","slide":3,"name":"slide-3-positive-half","bbox":[550,530,240,1]}
+{"kind":"shape","id":"sh/n2l4fq98","slide":3,"name":"slide-3-zero-marker","bbox":[494,514,32,32]}
+{"kind":"textbox","id":"sh/m1c3mlsn","slide":3,"name":"slide-3-negative-sign","text":"f(theta) < 0","textPreview":"f(theta) < 0","textChars":12,"textLines":1,"bbox":[225,455,220,42]}
+{"kind":"textbox","id":"sh/943mhgre","slide":3,"name":"slide-3-negative-body","text":"range below\ntarget","textPreview":"range below | target","textChars":18,"textLines":2,"bbox":[225,575,220,70]}
+{"kind":"textbox","id":"sh/83ulovat","slide":3,"name":"slide-3-zero-sign","text":"f(theta) = 0","textPreview":"f(theta) = 0","textChars":12,"textLines":1,"bbox":[430,455,160,42]}
+{"kind":"textbox","id":"sh/v6l4jq94","slide":3,"name":"slide-3-zero-body","text":"exact target","textPreview":"exact target","textChars":12,"textLines":1,"bbox":[430,575,160,40]}
+{"kind":"textbox","id":"sh/a5c3ql8z","slide":3,"name":"slide-3-positive-sign","text":"f(theta) > 0","textPreview":"f(theta) > 0","textChars":12,"textLines":1,"bbox":[580,455,210,42]}
+{"kind":"textbox","id":"sh/x8nml0ra","slide":3,"name":"slide-3-positive-body","text":"range above\ntarget","textPreview":"range above | target","textChars":18,"textLines":2,"bbox":[580,575,210,70]}
+{"kind":"textbox","id":"sh/w7ulsvqp","slide":3,"name":"slide-3-branch-note","text":"On the low-angle branch","textPreview":"On the low-angle branch","textChars":23,"textLines":1,"bbox":[170,705,650,36]}
+{"kind":"shape","id":"sh/ja54na9g","slide":3,"name":"slide-3-move-panel","bbox":[955,270,850,570]}
+{"kind":"textbox","id":"sh/i9w3u58v","slide":3,"name":"slide-3-move-heading","text":"Turn sign into a direction","textPreview":"Turn sign into a direction","textChars":26,"textLines":1,"bbox":[995,305,770,44]}
+{"kind":"shape","id":"sh/e10f2twf","slide":3,"name":"slide-3-move-blue","bbox":[1019,409,42,42]}
+{"kind":"textbox","id":"sh/f29gbyx0","slide":3,"name":"slide-3-move-blue-text","text":"negative residual","textPreview":"negative residual","textChars":17,"textLines":1,"bbox":[1090,405,610,34]}
+{"kind":"textbox","id":"sh/03ix43e5","slide":3,"name":"slide-3-move-blue-body","text":"the model falls short of 35 m","textPreview":"the model falls short of 35 m","textChars":29,"textLines":1,"bbox":[1090,445,610,34]}
+{"kind":"shape","id":"sh/14ryd8fq","slide":3,"name":"slide-3-move-arrow-up","bbox":[1030,520,70,32]}
+{"kind":"textbox","id":"sh/6d0fytg3","slide":3,"name":"slide-3-move-up-text","text":"move to a larger angle on this branch","textPreview":"move to a larger angle on this branch","textChars":37,"textLines":1,"bbox":[1120,512,620,42]}
+{"kind":"shape","id":"sh/re9g7yxo","slide":3,"name":"slide-3-move-gold","bbox":[1019,609,42,42]}
+{"kind":"textbox","id":"sh/sfix03y9","slide":3,"name":"slide-3-move-gold-text","text":"positive residual","textPreview":"positive residual","textChars":17,"textLines":1,"bbox":[1090,605,610,34]}
+{"kind":"textbox","id":"sh/tgry9ofu","slide":3,"name":"slide-3-move-gold-body","text":"the model overshoots 35 m","textPreview":"the model overshoots 35 m","textChars":25,"textLines":1,"bbox":[1090,645,610,34]}
+{"kind":"shape","id":"sh/a9kfadwn","slide":3,"name":"slide-3-move-arrow-down","bbox":[1030,720,70,32]}
+{"kind":"textbox","id":"sh/batgjixs","slide":3,"name":"slide-3-move-down-text","text":"move to a smaller angle on this branch","textPreview":"move to a smaller angle on this branch","textChars":38,"textLines":1,"bbox":[1120,712,620,42]}
+{"kind":"notes","id":"nt/ofy9wn61","slide":3,"text":"Use the sign as a directional cue on the low-angle branch: a negative residual is too short and a positive residual is too long.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/signs.png"}
+{"kind":"slide","id":"sl/jyx0ra1s","slide":4,"title":"The graph gives us a bracket","textShapes":10}
+{"kind":"textbox","id":"sh/e9sj2tsv","slide":4,"name":"slide-4-title","text":"The graph gives us a bracket","textPreview":"The graph gives us a bracket","textChars":28,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/1cj2d8b6","slide":4,"name":"slide-4-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/0ba143al","slide":4,"name":"slide-4-subtitle","text":"A sign change marks the low-angle interval we will keep","textPreview":"A sign change marks the low-angle interval we will keep","textChars":55,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/rm1k7yt4","slide":4,"name":"slide-4-number","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/ql8jytsj","slide":4,"name":"slide-4-bracket-panel","bbox":[115,265,425,610]}
+{"kind":"textbox","id":"sh/doj29oba","slide":4,"name":"slide-4-panel-heading","text":"Scan before solving","textPreview":"Scan before solving","textChars":19,"textLines":1,"bbox":[150,305,355,42]}
+{"kind":"textbox","id":"sh/sna103ap","slide":4,"name":"slide-4-scan","text":"theta = 10:1:70 degree","textPreview":"theta = 10:1:70 degree","textChars":22,"textLines":1,"bbox":[150,375,355,36]}
+{"kind":"shape","id":"sh/3ihk3et8","slide":4,"name":"slide-4-panel-rule","bbox":[150,438,355,1]}
+{"kind":"textbox","id":"sh/ih8ju9sn","slide":4,"name":"slide-4-left-endpoint","text":"f(20 degree) = -8.7905 m","textPreview":"f(20 degree) = -8.7905 m","textChars":24,"textLines":1,"bbox":[150,485,355,68]}
+{"kind":"textbox","id":"sh/kbm987y5","slide":4,"name":"slide-4-right-endpoint","text":"f(40 degree) = +5.1553 m","textPreview":"f(40 degree) = +5.1553 m","textChars":24,"textLines":1,"bbox":[150,585,355,68]}
+{"kind":"textbox","id":"sh/5cva1cfq","slide":4,"name":"slide-4-opposite","text":"opposite signs","textPreview":"opposite signs","textChars":14,"textLines":1,"bbox":[150,690,355,36]}
+{"kind":"textbox","id":"sh/i94r6xgz","slide":4,"name":"slide-4-bracket","text":"bracket = [20, 40] degree","textPreview":"bracket = [20, 40] degree","textChars":25,"textLines":1,"bbox":[150,735,355,46]}
+{"kind":"textbox","id":"sh/jadsz2xk","slide":4,"name":"slide-4-prompt","text":"Where does f(theta) cross zero?","textPreview":"Where does f(theta) cross zero?","textChars":31,"textLines":1,"bbox":[150,815,355,34]}
+{"kind":"image","id":"im/7ad43q1c","slide":4,"name":"","alt":"MATLAB-generated projectile-range residual plot with low-angle bracket evidence","bbox":[585,250,1195,660]}
+{"kind":"notes","id":"nt/jyx0ra1s","slide":4,"text":"Read the graph quantitatively. The low-angle bracket is the chosen Core route; the higher crossing is not developed here.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/week05_projectile_residual.png"}
+{"kind":"slide","id":"sl/i107q5of","slide":5,"title":"Bisection keeps a sign change alive","textShapes":24}
+{"kind":"textbox","id":"sh/qd0bahob","slide":5,"name":"slide-5-title","text":"Bisection keeps a sign change alive","textPreview":"Bisection keeps a sign change alive","textChars":35,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/dgbulwnm","slide":5,"name":"slide-5-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/cf2tcr61","slide":5,"name":"slide-5-subtitle","text":"Bracket first, test the midpoint, keep the half that still straddles zero","textPreview":"Bracket first, test the midpoint, keep the half that still straddles zero","textChars":73,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/z2tcnm5s","slide":5,"name":"slide-5-number","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/yhkbe1o7","slide":5,"name":"slide-5-top-label","text":"start with [20, 40] degree","textPreview":"start with [20, 40] degree","textChars":26,"textLines":1,"bbox":[150,280,410,38]}
+{"kind":"shape","id":"sh/l4bupwny","slide":5,"name":"slide-5-top-line","bbox":[185,385,380,1]}
+{"kind":"shape","id":"sh/032tgr6d","slide":5,"name":"slide-5-top-left","bbox":[168,368,34,34]}
+{"kind":"shape","id":"sh/n6dcr65o","slide":5,"name":"slide-5-top-zero","bbox":[360,370,30,30]}
+{"kind":"shape","id":"sh/m5kbi1oj","slide":5,"name":"slide-5-top-right","bbox":[548,368,34,34]}
+{"kind":"textbox","id":"sh/w32dkbuh","slide":5,"name":"slide-5-top-left-label","text":"f(20) < 0","textPreview":"f(20) < 0","textChars":9,"textLines":1,"bbox":[135,435,100,30]}
+{"kind":"textbox","id":"sh/x4vedgvm","slide":5,"name":"slide-5-top-right-label","text":"f(40) > 0","textPreview":"f(40) > 0","textChars":9,"textLines":1,"bbox":[515,435,100,30]}
+{"kind":"shape","id":"sh/ahkvi1cb","slide":5,"name":"slide-5-arrow-1","bbox":[615,370,70,30]}
+{"kind":"textbox","id":"sh/v2twb6dw","slide":5,"name":"slide-5-mid-label","text":"test midpoint 30 degree","textPreview":"test midpoint 30 degree","textChars":23,"textLines":1,"bbox":[735,280,410,38]}
+{"kind":"shape","id":"sh/k7mxovud","slide":5,"name":"slide-5-mid-line","bbox":[770,385,340,1]}
+{"kind":"shape","id":"sh/58vehgvy","slide":5,"name":"slide-5-mid-left","bbox":[753,368,34,34]}
+{"kind":"shape","id":"sh/i54fmlc7","slide":5,"name":"slide-5-mid-point","bbox":[921,366,38,38]}
+{"kind":"shape","id":"sh/j6dwfqds","slide":5,"name":"slide-5-mid-right","bbox":[1093,368,34,34]}
+{"kind":"textbox","id":"sh/sb6xsvu9","slide":5,"name":"slide-5-mid-value","text":"f(30) = +0.31194 m","textPreview":"f(30) = +0.31194 m","textChars":18,"textLines":1,"bbox":[790,435,300,32]}
+{"kind":"shape","id":"sh/tcfel0vu","slide":5,"name":"slide-5-arrow-2","bbox":[1165,370,70,30]}
+{"kind":"textbox","id":"sh/hgrmpwj2","slide":5,"name":"slide-5-keep-label","text":"keep the sign-changing half","textPreview":"keep the sign-changing half","textChars":27,"textLines":1,"bbox":[1290,280,420,38]}
+{"kind":"shape","id":"sh/gfi5grih","slide":5,"name":"slide-5-keep-line","bbox":[1320,385,330,1]}
+{"kind":"shape","id":"sh/fe94nm1w","slide":5,"name":"slide-5-keep-left","bbox":[1303,368,34,34]}
+{"kind":"shape","id":"sh/ud0ne10b","slide":5,"name":"slide-5-keep-right","bbox":[1633,368,34,34]}
+{"kind":"textbox","id":"sh/pkr6tgjy","slide":5,"name":"slide-5-keep-value","text":"new bracket [20, 30] degree","textPreview":"new bracket [20, 30] degree","textChars":27,"textLines":1,"bbox":[1320,435,330,32]}
+{"kind":"shape","id":"sh/4ji5kbid","slide":5,"name":"slide-5-step-1","bbox":[125,662,56,56]}
+{"kind":"textbox","id":"sh/3i94r61s","slide":5,"name":"slide-5-step-1-number","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[129,666,48,48]}
+{"kind":"textbox","id":"sh/2h0ni107","slide":5,"name":"slide-5-step-1-heading","text":"choose endpoints","textPreview":"choose endpoints","textChars":16,"textLines":1,"bbox":[193,662,270,38]}
+{"kind":"textbox","id":"sh/5o7mhcju","slide":5,"name":"slide-5-step-1-body","text":"opposite signs","textPreview":"opposite signs","textChars":14,"textLines":1,"bbox":[193,706,270,70]}
+{"kind":"shape","id":"sh/kny587i9","slide":5,"name":"slide-5-step-2","bbox":[505,662,56,56]}
+{"kind":"textbox","id":"sh/atcjidg7","slide":5,"name":"slide-5-step-2-number","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[509,666,48,48]}
+{"kind":"textbox","id":"sh/vu5kbihc","slide":5,"name":"slide-5-step-2-heading","text":"compute midpoint","textPreview":"compute midpoint","textChars":16,"textLines":1,"bbox":[573,662,270,38]}
+{"kind":"textbox","id":"sh/wve1knyx","slide":5,"name":"slide-5-step-2-body","text":"m = (a + b)/2","textPreview":"m = (a + b)/2","textChars":13,"textLines":1,"bbox":[573,706,270,70]}
+{"kind":"shape","id":"sh/xwn2dszi","slide":5,"name":"slide-5-step-3","bbox":[885,662,56,56]}
+{"kind":"textbox","id":"sh/ihw3mxg3","slide":5,"name":"slide-5-step-3-number","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[889,666,48,48]}
+{"kind":"textbox","id":"sh/ji5kf2ho","slide":5,"name":"slide-5-step-3-heading","text":"evaluate residual","textPreview":"evaluate residual","textChars":17,"textLines":1,"bbox":[953,662,270,38]}
+{"kind":"textbox","id":"sh/kjelony9","slide":5,"name":"slide-5-step-3-body","text":"read f(m)","textPreview":"read f(m)","textChars":9,"textLines":1,"bbox":[953,706,270,70]}
+{"kind":"shape","id":"sh/5kn2hszu","slide":5,"name":"slide-5-step-4","bbox":[1265,662,56,56]}
+{"kind":"textbox","id":"sh/e1sjatgz","slide":5,"name":"slide-5-step-4-number","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1269,666,48,48]}
+{"kind":"textbox","id":"sh/zmlk3yhk","slide":5,"name":"slide-5-step-4-heading","text":"keep the sign change","textPreview":"keep the sign change","textChars":20,"textLines":1,"bbox":[1333,662,270,38]}
+{"kind":"textbox","id":"sh/fid07u98","slide":5,"name":"slide-5-step-4-body","text":"replace one endpoint","textPreview":"replace one endpoint","textChars":20,"textLines":1,"bbox":[1333,706,270,70]}
+{"kind":"shape","id":"sh/ehkzepsn","slide":5,"name":"slide-5-question-box","bbox":[115,835,1560,72]}
+{"kind":"textbox","id":"sh/1kvi94re","slide":5,"name":"slide-5-question","text":"Why is the midpoint not enough?","textPreview":"Why is the midpoint not enough?","textChars":31,"textLines":1,"bbox":[155,851,520,36]}
+{"kind":"textbox","id":"sh/gjmhgzqt","slide":5,"name":"slide-5-answer","text":"Because bisection needs a bracket whose endpoint residuals have opposite signs.","textPreview":"Because bisection needs a bracket whose endpoint residuals have opposite signs.","textChars":79,"textLines":1,"bbox":[690,851,930,36]}
+{"kind":"notes","id":"nt/i107q5of","slide":5,"text":"Pause after the midpoint. Students should explain why the midpoint value alone is not enough; the endpoint sign change is the invariant.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m"}
+{"kind":"slide","id":"sl/x8f69ofe","slide":6,"title":"Bisection shrinks the bracket","textShapes":41}
+{"kind":"textbox","id":"sh/lkrqp4ra","slide":6,"name":"slide-6-title","text":"Bisection shrinks the bracket","textPreview":"Bisection shrinks the bracket","textChars":29,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/yhg7epsj","slide":6,"name":"slide-6-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/zi98nu94","slide":6,"name":"slide-6-subtitle","text":"Every row repeats the same four decisions","textPreview":"Every row repeats the same four decisions","textChars":41,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/87ipkzal","slide":6,"name":"slide-6-number","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/98rqt4r6","slide":6,"name":"slide-6-algorithm","bbox":[115,265,470,585]}
+{"kind":"textbox","id":"sh/ml07i9sv","slide":6,"name":"slide-6-algorithm-heading","text":"Plain-language algorithm","textPreview":"Plain-language algorithm","textChars":24,"textLines":1,"bbox":[150,300,400,42]}
+{"kind":"shape","id":"sh/7m98ru9g","slide":6,"name":"slide-6-alg-1","bbox":[151,356,48,48]}
+{"kind":"textbox","id":"sh/oryp8fah","slide":6,"name":"slide-6-alg-num-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[151,356,48,48]}
+{"kind":"textbox","id":"sh/pc76hkr2","slide":6,"name":"slide-6-alg-text-1","text":"Start with opposite endpoint signs","textPreview":"Start with opposite endpoint signs","textChars":34,"textLines":1,"bbox":[215,357,330,52]}
+{"kind":"shape","id":"sh/h4bupgn6","slide":6,"name":"slide-6-alg-line-1","bbox":[175,405,1,31]}
+{"kind":"shape","id":"sh/w32twb6l","slide":6,"name":"slide-6-alg-2","bbox":[151,438,48,48]}
+{"kind":"textbox","id":"sh/v2tcn650","slide":6,"name":"slide-6-alg-num-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[151,438,48,48]}
+{"kind":"textbox","id":"sh/u1kbu1ov","slide":6,"name":"slide-6-alg-text-2","text":"Compute the midpoint","textPreview":"Compute the midpoint","textChars":20,"textLines":1,"bbox":[215,439,330,52]}
+{"kind":"shape","id":"sh/5svutgni","slide":6,"name":"slide-6-alg-line-2","bbox":[175,487,1,31]}
+{"kind":"shape","id":"sh/47mt0b6x","slide":6,"name":"slide-6-alg-3","bbox":[151,520,48,48]}
+{"kind":"textbox","id":"sh/j6dcr65c","slide":6,"name":"slide-6-alg-num-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[151,520,48,48]}
+{"kind":"textbox","id":"sh/i54bylor","slide":6,"name":"slide-6-alg-text-3","text":"Evaluate f(mid)","textPreview":"Evaluate f(mid)","textChars":15,"textLines":1,"bbox":[215,521,330,52]}
+{"kind":"shape","id":"sh/twfux0ne","slide":6,"name":"slide-6-alg-line-3","bbox":[175,569,1,31]}
+{"kind":"shape","id":"sh/svmt4v6t","slide":6,"name":"slide-6-alg-4","bbox":[151,602,48,48]}
+{"kind":"textbox","id":"sh/cbe5g3ih","slide":6,"name":"slide-6-alg-num-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[151,602,48,48]}
+{"kind":"textbox","id":"sh/dcnm98zm","slide":6,"name":"slide-6-alg-text-4","text":"Replace one endpoint","textPreview":"Replace one endpoint","textChars":20,"textLines":1,"bbox":[215,603,330,52]}
+{"kind":"shape","id":"sh/qpwnet0b","slide":6,"name":"slide-6-alg-line-4","bbox":[175,651,1,31]}
+{"kind":"shape","id":"sh/bq547yhw","slide":6,"name":"slide-6-alg-5","bbox":[151,684,48,48]}
+{"kind":"textbox","id":"sh/0fy5k3id","slide":6,"name":"slide-6-alg-num-5","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[151,684,48,48]}
+{"kind":"textbox","id":"sh/lg76d8zy","slide":6,"name":"slide-6-alg-text-5","text":"Repeat with the smaller bracket","textPreview":"Repeat with the smaller bracket","textChars":31,"textLines":1,"bbox":[215,685,330,52]}
+{"kind":"textbox","id":"sh/ydgnit07","slide":6,"name":"slide-6-invariant","text":"invariant: f(a) and f(b) keep opposite signs","textPreview":"invariant: f(a) and f(b) keep opposite signs","textChars":44,"textLines":1,"bbox":[150,790,400,54]}
+{"kind":"shape","id":"sh/zep4byhs","slide":6,"name":"slide-6-table-bg","bbox":[650,265,1155,416]}
+{"kind":"shape","id":"sh/gju58ji9","slide":6,"name":"slide-6-table-v-0","bbox":[755,265,1,416]}
+{"kind":"shape","id":"sh/1k3mhozu","slide":6,"name":"slide-6-table-v-1","bbox":[1005,265,1,416]}
+{"kind":"shape","id":"sh/jet8nm1c","slide":6,"name":"slide-6-table-v-2","bbox":[1225,265,1,416]}
+{"kind":"shape","id":"sh/idk7ehkr","slide":6,"name":"slide-6-table-v-3","bbox":[1465,265,1,416]}
+{"kind":"shape","id":"sh/50bqpcj2","slide":6,"name":"slide-6-table-header-rule","bbox":[650,337,1155,1]}
+{"kind":"shape","id":"sh/4f2pgr2h","slide":6,"name":"slide-6-table-h-1","bbox":[650,423,1155,1]}
+{"kind":"shape","id":"sh/va98j210","slide":6,"name":"slide-6-table-h-2","bbox":[650,509,1155,1]}
+{"kind":"shape","id":"sh/u907axkf","slide":6,"name":"slide-6-table-h-3","bbox":[650,595,1155,1]}
+{"kind":"textbox","id":"sh/hcrqlcj6","slide":6,"name":"slide-6-table-0-0","text":"iteration","textPreview":"iteration","textChars":9,"textLines":1,"bbox":[658,279,89,52]}
+{"kind":"textbox","id":"sh/wbipc72l","slide":6,"name":"slide-6-table-0-1","text":"current bracket (degree)","textPreview":"current bracket (degree)","textChars":24,"textLines":1,"bbox":[763,279,234,52]}
+{"kind":"textbox","id":"sh/7698f214","slide":6,"name":"slide-6-table-0-2","text":"midpoint (degree)","textPreview":"midpoint (degree)","textChars":17,"textLines":1,"bbox":[1013,279,204,52]}
+{"kind":"textbox","id":"sh/m5076xkj","slide":6,"name":"slide-6-table-0-3","text":"f(mid) (m)","textPreview":"f(mid) (m)","textChars":10,"textLines":1,"bbox":[1233,279,224,52]}
+{"kind":"textbox","id":"sh/2dkbalg3","slide":6,"name":"slide-6-table-0-4","text":"keep","textPreview":"keep","textChars":4,"textLines":1,"bbox":[1473,279,324,52]}
+{"kind":"textbox","id":"sh/netcjqxo","slide":6,"name":"slide-6-table-1-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[658,351,89,66]}
+{"kind":"textbox","id":"sh/of2tcvy9","slide":6,"name":"slide-6-table-1-1","text":"[20, 40]","textPreview":"[20, 40]","textChars":8,"textLines":1,"bbox":[763,351,234,66]}
+{"kind":"textbox","id":"sh/pgbul0fu","slide":6,"name":"slide-6-table-1-2","text":"30","textPreview":"30","textChars":2,"textLines":1,"bbox":[1013,351,204,66]}
+{"kind":"textbox","id":"sh/ep0b6lg7","slide":6,"name":"slide-6-table-1-3","text":"+0.31194","textPreview":"+0.31194","textChars":8,"textLines":1,"bbox":[1233,351,224,66]}
+{"kind":"textbox","id":"sh/fq9cfqxc","slide":6,"name":"slide-6-table-1-4","text":"[20, 30]","textPreview":"[20, 30]","textChars":8,"textLines":1,"bbox":[1473,351,324,66]}
+{"kind":"textbox","id":"sh/0r2t8vyx","slide":6,"name":"slide-6-table-2-0","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[658,437,89,66]}
+{"kind":"textbox","id":"sh/1sbuh0fi","slide":6,"name":"slide-6-table-2-1","text":"[20, 30]","textPreview":"[20, 30]","textChars":8,"textLines":1,"bbox":[763,437,234,66]}
+{"kind":"textbox","id":"sh/ql0b21gv","slide":6,"name":"slide-6-table-2-2","text":"25","textPreview":"25","textChars":2,"textLines":1,"bbox":[1013,437,204,66]}
+{"kind":"textbox","id":"sh/rm9sb6xg","slide":6,"name":"slide-6-table-2-3","text":"-3.7648","textPreview":"-3.7648","textChars":7,"textLines":1,"bbox":[1233,437,224,66]}
+{"kind":"textbox","id":"sh/9gfeh4zy","slide":6,"name":"slide-6-table-2-4","text":"[25, 30]","textPreview":"[25, 30]","textChars":8,"textLines":1,"bbox":[1473,437,324,66]}
+{"kind":"textbox","id":"sh/8f6x8jid","slide":6,"name":"slide-6-table-3-0","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[658,523,89,66]}
+{"kind":"textbox","id":"sh/7exwfehs","slide":6,"name":"slide-6-table-3-1","text":"[25, 30]","textPreview":"[25, 30]","textChars":8,"textLines":1,"bbox":[763,523,234,66]}
+{"kind":"textbox","id":"sh/mdof6907","slide":6,"name":"slide-6-table-3-2","text":"27.5","textPreview":"27.5","textChars":4,"textLines":1,"bbox":[1013,523,204,66]}
+{"kind":"textbox","id":"sh/lcfed4z2","slide":6,"name":"slide-6-table-3-3","text":"-1.5993","textPreview":"-1.5993","textChars":7,"textLines":1,"bbox":[1233,523,224,66]}
+{"kind":"textbox","id":"sh/kb6d4zih","slide":6,"name":"slide-6-table-3-4","text":"[27.5, 30]","textPreview":"[27.5, 30]","textChars":10,"textLines":1,"bbox":[1473,523,324,66]}
+{"kind":"textbox","id":"sh/zaxwbuhw","slide":6,"name":"slide-6-table-4-0","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[658,609,89,66]}
+{"kind":"textbox","id":"sh/y94v2p0b","slide":6,"name":"slide-6-table-4-1","text":"[27.5, 30]","textPreview":"[27.5, 30]","textChars":10,"textLines":1,"bbox":[763,609,234,66]}
+{"kind":"textbox","id":"sh/x8ve9kzq","slide":6,"name":"slide-6-table-4-2","text":"28.75","textPreview":"28.75","textChars":5,"textLines":1,"bbox":[1013,609,204,66]}
+{"kind":"textbox","id":"sh/c7md0zi5","slide":6,"name":"slide-6-table-4-3","text":"-0.61095","textPreview":"-0.61095","textChars":8,"textLines":1,"bbox":[1233,609,224,66]}
+{"kind":"textbox","id":"sh/o3a5cjud","slide":6,"name":"slide-6-table-4-4","text":"[28.75, 30]","textPreview":"[28.75, 30]","textChars":11,"textLines":1,"bbox":[1473,609,324,66]}
+{"kind":"shape","id":"sh/p4j6loby","slide":6,"name":"slide-6-takeaway","bbox":[115,925,1560,82]}
+{"kind":"textbox","id":"sh/21snatc7","slide":6,"name":"slide-6-takeaway-text","text":"The bracket width halves; the sign change is the invariant","textPreview":"The bracket width halves; the sign change is the invariant","textChars":58,"textLines":1,"bbox":[150,947,1490,38]}
+{"kind":"notes","id":"nt/x8f69ofe","slide":6,"text":"Trace the four rows aloud. The important habit is to recompute the midpoint, evaluate it, and update exactly one endpoint.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/bisection_first_four.png"}
+{"kind":"slide","id":"sl/gnmp4jqx","slide":7,"title":"The scaffold makes each decision visible","textShapes":18}
+{"kind":"textbox","id":"sh/batcbq94","slide":7,"name":"slide-7-title","text":"The scaffold makes each decision visible","textPreview":"The scaffold makes each decision visible","textChars":40,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/cb2tkvap","slide":7,"name":"slide-7-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/dcbud0ra","slide":7,"name":"slide-7-subtitle","text":"The loop is short because the physical decision is explicit","textPreview":"The loop is short because the physical decision is explicit","textChars":59,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/ydkbm5sv","slide":7,"name":"slide-7-number","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/zedcfa9g","slide":7,"name":"slide-7-pseudocode","bbox":[115,270,525,585]}
+{"kind":"textbox","id":"sh/kzmdova1","slide":7,"name":"slide-7-pseudo-heading","text":"Read the loop in plain language","textPreview":"Read the loop in plain language","textChars":31,"textLines":1,"bbox":[150,305,455,44]}
+{"kind":"shape","id":"sh/l0vuh0rm","slide":7,"name":"slide-7-pseudo-1","bbox":[156,368,44,44]}
+{"kind":"textbox","id":"sh/eh0ba1sr","slide":7,"name":"slide-7-pseudo-num-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[156,368,44,44]}
+{"kind":"textbox","id":"sh/fi9c369c","slide":7,"name":"slide-7-pseudo-text-1","text":"choose left and right","textPreview":"choose left and right","textChars":21,"textLines":1,"bbox":[220,369,370,42]}
+{"kind":"shape","id":"sh/baxkjqlk","slide":7,"name":"slide-7-pseudo-line-1","bbox":[178,414,1,30]}
+{"kind":"shape","id":"sh/a9ojq5kz","slide":7,"name":"slide-7-pseudo-2","bbox":[156,446,44,44]}
+{"kind":"textbox","id":"sh/xcz2l03q","slide":7,"name":"slide-7-pseudo-num-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[156,446,44,44]}
+{"kind":"textbox","id":"sh/cbq1sv25","slide":7,"name":"slide-7-pseudo-text-2","text":"compute midpoint","textPreview":"compute midpoint","textChars":16,"textLines":1,"bbox":[220,447,370,42]}
+{"kind":"shape","id":"sh/n6x0fqlo","slide":7,"name":"slide-7-pseudo-line-2","bbox":[178,492,1,30]}
+{"kind":"shape","id":"sh/25ojml43","slide":7,"name":"slide-7-pseudo-3","bbox":[156,524,44,44]}
+{"kind":"textbox","id":"sh/p8fih03e","slide":7,"name":"slide-7-pseudo-num-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[156,524,44,44]}
+{"kind":"textbox","id":"sh/o761ov2t","slide":7,"name":"slide-7-pseudo-text-3","text":"evaluate residual","textPreview":"evaluate residual","textChars":17,"textLines":1,"bbox":[220,525,370,42]}
+{"kind":"shape","id":"sh/f2d0b6lc","slide":7,"name":"slide-7-pseudo-line-3","bbox":[178,570,1,30]}
+{"kind":"shape","id":"sh/eh4jil4r","slide":7,"name":"slide-7-pseudo-4","bbox":[156,602,44,44]}
+{"kind":"textbox","id":"sh/id4ju1oz","slide":7,"name":"slide-7-pseudo-num-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[156,602,44,44]}
+{"kind":"textbox","id":"sh/jedkn654","slide":7,"name":"slide-7-pseudo-text-4","text":"if small, stop","textPreview":"if small, stop","textChars":14,"textLines":1,"bbox":[220,603,370,42]}
+{"kind":"shape","id":"sh/4fm1wb6p","slide":7,"name":"slide-7-pseudo-line-4","bbox":[178,648,1,30]}
+{"kind":"shape","id":"sh/50v2pgna","slide":7,"name":"slide-7-pseudo-5","bbox":[156,680,44,44]}
+{"kind":"textbox","id":"sh/q143ylov","slide":7,"name":"slide-7-pseudo-num-5","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[156,680,44,44]}
+{"kind":"textbox","id":"sh/r2dkrq5g","slide":7,"name":"slide-7-pseudo-text-5","text":"otherwise keep the sign change","textPreview":"otherwise keep the sign change","textChars":30,"textLines":1,"bbox":[220,681,370,42]}
+{"kind":"textbox","id":"sh/s3ml0v61","slide":7,"name":"slide-7-tolerance","text":"tolerance_m = 1e-3 m","textPreview":"tolerance_m = 1e-3 m","textChars":20,"textLines":1,"bbox":[150,790,430,36]}
+{"kind":"shape","id":"sh/d4f2t0nm","slide":7,"name":"slide-7-code-box","bbox":[700,270,1105,585]}
+{"kind":"textbox","id":"sh/e5o32lor","slide":7,"name":"slide-7-code-label","text":"MATLAB","textPreview":"MATLAB","textChars":6,"textLines":1,"bbox":[740,305,240,38]}
+{"kind":"textbox","id":"sh/f6xkvq5c","slide":7,"name":"slide-7-code","text":"mid_deg = (left_deg + right_deg)/2;\nf_mid_m = (v0_mps^2/g_mps2)*sind(2*mid_deg) - target_m;\nif abs(f_mid_m) < tolerance_m\n    break\nend\nf_left_m = (v0_mps^2/g_mps2)*sind(2*left_deg) - target_m;\nif f_left_m*f_mid_m < 0\n    right_deg = mid_deg;\nelse\n    left_deg = mid_deg;\nend","textPreview":"mid_deg = (left_deg + right_deg)/2; | f_mid_m = (v0_mps^2/g_mps2)*sind(2*mid_deg) - target_m; | if abs(f_mid_m) < tolerance_m |     break...","textChars":275,"textLines":11,"bbox":[740,365,1030,390]}
+{"kind":"textbox","id":"sh/p0zmlk7u","slide":7,"name":"slide-7-code-prompt","text":"Which line protects the bracket?","textPreview":"Which line protects the bracket?","textChars":32,"textLines":1,"bbox":[740,790,720,34]}
+{"kind":"notes","id":"nt/gnmp4jqx","slide":7,"text":"Point to each line in the scaffold and ask which physical decision it represents. The code is short because the algorithm is explicit.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/code/bisection_scaffold.png"}
+{"kind":"slide","id":"sl/fu1gfa1s","slide":8,"title":"Stop once, then substitute back","textShapes":10}
+{"kind":"textbox","id":"sh/elkf2pg7","slide":8,"name":"slide-8-title","text":"Stop once, then substitute back","textPreview":"Stop once, then substitute back","textChars":31,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/18byd4zy","slide":8,"name":"slide-8-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/g72x4zyd","slide":8,"name":"slide-8-subtitle","text":"A numerical angle matters only if it satisfies the original condition","textPreview":"A numerical angle matters only if it satisfies the original condition","textChars":69,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/ri9g7uhw","slide":8,"name":"slide-8-number","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/6h0fypgb","slide":8,"name":"slide-8-stop","bbox":[115,275,520,555]}
+{"kind":"textbox","id":"sh/tkby9kzm","slide":8,"name":"slide-8-stop-heading","text":"One Core stopping rule","textPreview":"One Core stopping rule","textChars":22,"textLines":1,"bbox":[155,315,440,42]}
+{"kind":"textbox","id":"sh/sjix0zy1","slide":8,"name":"slide-8-stop-rule","text":"abs(f_mid_m) < 1e-3 m","textPreview":"abs(f_mid_m) < 1e-3 m","textChars":21,"textLines":1,"bbox":[155,410,440,62]}
+{"kind":"textbox","id":"sh/je9g3ahk","slide":8,"name":"slide-8-stop-explain","text":"The residual is an error in range, so the tolerance is measured in metres.","textPreview":"The residual is an error in range, so the tolerance is measured in metres.","textChars":74,"textLines":1,"bbox":[155,510,430,110]}
+{"kind":"shape","id":"sh/id0fu50z","slide":8,"name":"slide-8-stop-arrow","bbox":[380,670,1,80]}
+{"kind":"textbox","id":"sh/o7ydoret","slide":8,"name":"slide-8-stop-pass","text":"then validate the root","textPreview":"then validate the root","textChars":22,"textLines":1,"bbox":[180,765,400,36]}
+{"kind":"shape","id":"sh/m5gvmhwn","slide":8,"name":"slide-8-validation-box","bbox":[705,650,1060,180]}
+{"kind":"textbox","id":"sh/n6pwfmd8","slide":8,"name":"slide-8-validation-title","text":"VALIDATION","textPreview":"VALIDATION","textChars":10,"textLines":1,"bbox":[745,680,240,34]}
+{"kind":"textbox","id":"sh/0jydkreh","slide":8,"name":"slide-8-validation-values","text":"theta* = 29.5679 degree    |    R(theta*) = 35.0004 m    |    f(theta*) = +4.1164e-4 m","textPreview":"theta* = 29.5679 degree    |    R(theta*) = 35.0004 m    |    f(theta*) = +4.1164e-4 m","textChars":86,"textLines":1,"bbox":[745,735,980,50]}
+{"kind":"shape","id":"sh/1k7edwv2","slide":8,"name":"slide-8-takeaway","bbox":[115,925,1560,82]}
+{"kind":"textbox","id":"sh/ehgvihwr","slide":8,"name":"slide-8-takeaway-text","text":"The root is useful because substitution returns the target range","textPreview":"The root is useful because substitution returns the target range","textChars":64,"textLines":1,"bbox":[150,947,1490,38]}
+{"kind":"image","id":"im/q1k7i9kr","slide":8,"name":"","alt":"Validated bisection root, direct range, and residual","bbox":[745,330,870,275]}
+{"kind":"notes","id":"nt/fu1gfa1s","slide":8,"text":"The stopping rule is one residual test. Then substitute the angle back into the original model so the result has physical meaning.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/validation.png; Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/bisection_validation.png"}
+{"kind":"slide","id":"sl/udsvah03","slide":9,"title":"Newton follows the local tangent","textShapes":12}
+{"kind":"textbox","id":"sh/eponml43","slide":9,"name":"slide-9-title","text":"Newton follows the local tangent","textPreview":"Newton follows the local tangent","textChars":32,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/1cfmhgne","slide":9,"name":"slide-9-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/0b65obm9","slide":9,"name":"slide-9-subtitle","text":"One estimate plus a local slope gives the next angle","textPreview":"One estimate plus a local slope gives the next angle","textChars":52,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/nex4jq5k","slide":9,"name":"slide-9-number","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/mdonql4z","slide":9,"name":"slide-9-curve-area","bbox":[115,270,875,595]}
+{"kind":"textbox","id":"sh/9gzml0nq","slide":9,"name":"slide-9-curve-heading","text":"A tangent predicts the next angle","textPreview":"A tangent predicts the next angle","textChars":33,"textLines":1,"bbox":[155,305,790,42]}
+{"kind":"shape","id":"sh/ofq5svm5","slide":9,"name":"slide-9-axis-x","bbox":[230,660,660,1]}
+{"kind":"shape","id":"sh/bih4na5w","slide":9,"name":"slide-9-axis-y","bbox":[230,390,1,270]}
+{"kind":"textbox","id":"sh/ah8nu54b","slide":9,"name":"slide-9-axis-x-label","text":"theta (degree)","textPreview":"theta (degree)","textChars":14,"textLines":1,"bbox":[460,748,250,30]}
+{"kind":"textbox","id":"sh/oza1gfyh","slide":9,"name":"slide-9-axis-y-label","text":"f(theta) (m)","textPreview":"f(theta) (m)","textChars":12,"textLines":1,"bbox":[155,470,110,90]}
+{"kind":"shape","id":"sh/p0ji9kf2","slide":9,"name":"slide-9-zero-line","bbox":[230,660,660,1]}
+{"kind":"textbox","id":"sh/2xsjepgb","slide":9,"name":"slide-9-zero-label","text":"f(theta) = 0","textPreview":"f(theta) = 0","textChars":12,"textLines":1,"bbox":[765,632,150,30]}
+{"kind":"shape","id":"sh/3y107axw","slide":9,"name":"slide-9-curve-1","bbox":[270,474.96,53.64,19.44]}
+{"kind":"shape","id":"sh/cnu1kzyd","slide":9,"name":"slide-9-curve-2","bbox":[323.64,494.4,53.64,18.36]}
+{"kind":"shape","id":"sh/do3id4fy","slide":9,"name":"slide-9-curve-3","bbox":[377.27,512.76,53.64,18.36]}
+{"kind":"shape","id":"sh/qlcjipgn","slide":9,"name":"slide-9-curve-4","bbox":[430.91,531.12,53.64,17.28]}
+{"kind":"shape","id":"sh/bml0buxs","slide":9,"name":"slide-9-curve-5","bbox":[484.55,548.4,53.64,12.96]}
+{"kind":"shape","id":"sh/0ru1ozyp","slide":9,"name":"slide-9-curve-6","bbox":[538.18,561.36,53.64,10.8]}
+{"kind":"shape","id":"sh/lsn2h4fa","slide":9,"name":"slide-9-curve-7","bbox":[591.82,572.16,53.64,9.72]}
+{"kind":"shape","id":"sh/98ji147e","slide":9,"name":"slide-9-curve-8","bbox":[645.45,581.88,53.64,8.64]}
+{"kind":"shape","id":"sh/87a18zqt","slide":9,"name":"slide-9-curve-9","bbox":[699.09,590.52,53.64,5.4]}
+{"kind":"shape","id":"sh/76h0zup8","slide":9,"name":"slide-9-curve-10","bbox":[752.73,595.92,53.64,4.32]}
+{"kind":"shape","id":"sh/ml8j6p8n","slide":9,"name":"slide-9-curve-11","bbox":[806.36,600.24,53.64,1.08]}
+{"kind":"shape","id":"sh/hcji5o7a","slide":9,"name":"slide-9-tangent","bbox":[411.4,651.36,345,2.64]}
+{"kind":"shape","id":"sh/wba1cjqp","slide":9,"name":"slide-9-current-point","bbox":[528.4,548.36,26,26]}
+{"kind":"shape","id":"sh/va103ep4","slide":9,"name":"slide-9-next-point","bbox":[604.1,646,28,28]}
+{"kind":"shape","id":"sh/u9sja98z","slide":9,"name":"slide-9-current-guide","bbox":[541.4,561.36,1,98.64]}
+{"kind":"shape","id":"sh/xgzitk76","slide":9,"name":"slide-9-next-guide","bbox":[618.1,660,1,24]}
+{"kind":"textbox","id":"sh/cf6h0fql","slide":9,"name":"slide-9-current-label","text":"current angle\n25 degree","textPreview":"current angle | 25 degree","textChars":23,"textLines":2,"bbox":[451.4,476.36,180,60]}
+{"kind":"textbox","id":"sh/2l4faloj","slide":9,"name":"slide-9-next-label","text":"next estimate\n29.115 degree","textPreview":"next estimate | 29.115 degree","textChars":27,"textLines":2,"bbox":[518.1,695,200,60]}
+{"kind":"textbox","id":"sh/nmdg3q54","slide":9,"name":"slide-9-slope-label","text":"local slope","textPreview":"local slope","textChars":11,"textLines":1,"bbox":[631.4,576.36,150,32]}
+{"kind":"shape","id":"sh/onmxcv69","slide":9,"name":"slide-9-equation-box","bbox":[1060,285,745,425]}
+{"kind":"textbox","id":"sh/apofe5of","slide":9,"name":"slide-9-unit-callout","text":"slope unit = metres per degree","textPreview":"slope unit = metres per degree","textChars":30,"textLines":1,"bbox":[1110,630,650,36]}
+{"kind":"shape","id":"sh/bqxg7q50","slide":9,"name":"slide-9-prompt-box","bbox":[1060,750,745,115]}
+{"kind":"textbox","id":"sh/cr6xgv6l","slide":9,"name":"slide-9-prompt","text":"What does the slope measure?","textPreview":"What does the slope measure?","textChars":28,"textLines":1,"bbox":[1100,785,665,42]}
+{"kind":"image","id":"im/6d8bapgj","slide":9,"name":"","alt":"Newton update and degree-based residual slope","bbox":[1100,350,665,245]}
+{"kind":"notes","id":"nt/udsvah03","slide":9,"text":"Introduce Newton as a tangent prediction. Keep the degree-to-radian factor visible; the slope is measured in metres per degree.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/newton_update_slope.png"}
+{"kind":"slide","id":"sl/m90b6t0r","slide":10,"title":"Newton can jump close to the root","textShapes":33}
+{"kind":"textbox","id":"sh/q9sn69kb","slide":10,"name":"slide-10-title","text":"Newton can jump close to the root","textPreview":"Newton can jump close to the root","textChars":33,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/xc3mho32","slide":10,"name":"slide-10-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/cbu58j2h","slide":10,"name":"slide-10-subtitle","text":"Four evaluations move from 25 degree to a validated root","textPreview":"Four evaluations move from 25 degree to a validated root","textChars":56,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/zelojyl8","slide":10,"name":"slide-10-number","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/ydcnatkn","slide":10,"name":"slide-10-table-heading","text":"Trace the current estimate, residual, slope, and next estimate","textPreview":"Trace the current estimate, residual, slope, and next estimate","textChars":62,"textLines":1,"bbox":[115,270,1160,42]}
+{"kind":"shape","id":"sh/l036l83y","slide":10,"name":"slide-10-table-bg","bbox":[115,340,1270,416]}
+{"kind":"shape","id":"sh/kzu5c32t","slide":10,"name":"slide-10-table-v-0","bbox":[205,340,1,416]}
+{"kind":"shape","id":"sh/725onyl4","slide":10,"name":"slide-10-table-v-1","bbox":[445,340,1,416]}
+{"kind":"shape","id":"sh/m1cnetkj","slide":10,"name":"slide-10-table-v-2","bbox":[730,340,1,416]}
+{"kind":"shape","id":"sh/s7yt4b21","slide":10,"name":"slide-10-table-v-3","bbox":[1025,340,1,416]}
+{"kind":"shape","id":"sh/d87uxg3m","slide":10,"name":"slide-10-table-header-rule","bbox":[115,412,1270,1]}
+{"kind":"shape","id":"sh/q5gb21kb","slide":10,"name":"slide-10-table-h-1","bbox":[115,498,1270,1]}
+{"kind":"shape","id":"sh/r6pcv6lw","slide":10,"name":"slide-10-table-h-2","bbox":[115,584,1270,1]}
+{"kind":"shape","id":"sh/0bit8b2d","slide":10,"name":"slide-10-table-h-3","bbox":[115,670,1270,1]}
+{"kind":"textbox","id":"sh/1cru1g3y","slide":10,"name":"slide-10-table-0-0","text":"eval","textPreview":"eval","textChars":4,"textLines":1,"bbox":[123,354,74,52]}
+{"kind":"textbox","id":"sh/e9gb61k7","slide":10,"name":"slide-10-table-0-1","text":"theta (degree)","textPreview":"theta (degree)","textChars":14,"textLines":1,"bbox":[213,354,224,52]}
+{"kind":"textbox","id":"sh/fapcz6ls","slide":10,"name":"slide-10-table-0-2","text":"f(theta) (m)","textPreview":"f(theta) (m)","textChars":12,"textLines":1,"bbox":[453,354,269,52]}
+{"kind":"textbox","id":"sh/ozitcv29","slide":10,"name":"slide-10-table-0-3","text":"slope (m/degree)","textPreview":"slope (m/degree)","textChars":16,"textLines":1,"bbox":[738,354,279,52]}
+{"kind":"textbox","id":"sh/p0ru503u","slide":10,"name":"slide-10-table-0-4","text":"next theta (degree)","textPreview":"next theta (degree)","textChars":19,"textLines":1,"bbox":[1033,354,344,52]}
+{"kind":"textbox","id":"sh/xwnupgvy","slide":10,"name":"slide-10-table-1-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[123,426,74,66]}
+{"kind":"textbox","id":"sh/wvetgbud","slide":10,"name":"slide-10-table-1-1","text":"25.000","textPreview":"25.000","textChars":6,"textLines":1,"bbox":[213,426,224,66]}
+{"kind":"textbox","id":"sh/bu5cnqd8","slide":10,"name":"slide-10-table-1-2","text":"-3.7648","textPreview":"-3.7648","textChars":7,"textLines":1,"bbox":[453,426,269,66]}
+{"kind":"textbox","id":"sh/atwbelcn","slide":10,"name":"slide-10-table-1-3","text":"0.91488","textPreview":"0.91488","textChars":7,"textLines":1,"bbox":[738,426,279,66]}
+{"kind":"textbox","id":"sh/lk7ut0va","slide":10,"name":"slide-10-table-1-4","text":"29.115","textPreview":"29.115","textChars":6,"textLines":1,"bbox":[1033,426,344,66]}
+{"kind":"textbox","id":"sh/kjytkvup","slide":10,"name":"slide-10-table-2-0","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[123,512,74,66]}
+{"kind":"textbox","id":"sh/jypcrqd4","slide":10,"name":"slide-10-table-2-1","text":"29.115","textPreview":"29.115","textChars":6,"textLines":1,"bbox":[213,512,224,66]}
+{"kind":"textbox","id":"sh/yxgbilcj","slide":10,"name":"slide-10-table-2-2","text":"-0.33461","textPreview":"-0.33461","textChars":8,"textLines":1,"bbox":[453,512,269,66]}
+{"kind":"textbox","id":"sh/1o3ahwvq","slide":10,"name":"slide-10-table-2-3","text":"0.74939","textPreview":"0.74939","textChars":7,"textLines":1,"bbox":[738,512,279,66]}
+{"kind":"textbox","id":"sh/0nut8rul","slide":10,"name":"slide-10-table-2-4","text":"29.562","textPreview":"29.562","textChars":6,"textLines":1,"bbox":[1033,512,344,66]}
+{"kind":"textbox","id":"sh/q9srixs3","slide":10,"name":"slide-10-table-3-0","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[123,598,74,66]}
+{"kind":"textbox","id":"sh/ru18r2to","slide":10,"name":"slide-10-table-3-1","text":"29.562","textPreview":"29.562","textChars":6,"textLines":1,"bbox":[213,598,224,66]}
+{"kind":"textbox","id":"sh/cva9k7a9","slide":10,"name":"slide-10-table-3-2","text":"-0.0042242","textPreview":"-0.0042242","textChars":10,"textLines":1,"bbox":[453,598,269,66]}
+{"kind":"textbox","id":"sh/dwjqtcbu","slide":10,"name":"slide-10-table-3-3","text":"0.73044","textPreview":"0.73044","textChars":7,"textLines":1,"bbox":[738,598,279,66]}
+{"kind":"textbox","id":"sh/exsrmhsf","slide":10,"name":"slide-10-table-3-4","text":"29.567","textPreview":"29.567","textChars":6,"textLines":1,"bbox":[1033,598,344,66]}
+{"kind":"textbox","id":"sh/zyl8vmt0","slide":10,"name":"slide-10-table-4-0","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[123,684,74,66]}
+{"kind":"textbox","id":"sh/0zu9ora5","slide":10,"name":"slide-10-table-4-1","text":"29.567","textPreview":"29.567","textChars":6,"textLines":1,"bbox":[213,684,224,66]}
+{"kind":"textbox","id":"sh/103qxcbq","slide":10,"name":"slide-10-table-4-2","text":"-7.1308e-7","textPreview":"-7.1308e-7","textChars":10,"textLines":1,"bbox":[453,684,269,66]}
+{"kind":"textbox","id":"sh/u187adsv","slide":10,"name":"slide-10-table-4-3","text":"0.73019","textPreview":"0.73019","textChars":7,"textLines":1,"bbox":[738,684,279,66]}
+{"kind":"textbox","id":"sh/f2h8jitg","slide":10,"name":"slide-10-table-4-4","text":"stop","textPreview":"stop","textChars":4,"textLines":1,"bbox":[1033,684,344,66]}
+{"kind":"shape","id":"sh/bmpgrah8","slide":10,"name":"slide-10-trace-note","bbox":[1420,340,385,430]}
+{"kind":"textbox","id":"sh/algfy50n","slide":10,"name":"slide-10-note-heading","text":"Each row","textPreview":"Each row","textChars":8,"textLines":1,"bbox":[1460,380,305,38]}
+{"kind":"textbox","id":"sh/xo7ytkzy","slide":10,"name":"slide-10-note-body","text":"evaluate\n↓\nslope\n↓\nupdate","textPreview":"evaluate | ↓ | slope | ↓ | update","textChars":25,"textLines":5,"bbox":[1460,455,305,220]}
+{"kind":"textbox","id":"sh/wnyx0fit","slide":10,"name":"slide-10-note-prompt","text":"What changes between rows?","textPreview":"What changes between rows?","textChars":26,"textLines":1,"bbox":[1450,700,325,42]}
+{"kind":"shape","id":"sh/jq9gvuh4","slide":10,"name":"slide-10-takeaway","bbox":[115,925,1560,82]}
+{"kind":"textbox","id":"sh/ip0f2p0j","slide":10,"name":"slide-10-takeaway-text","text":"At eval 4, |f(theta)| = 7.1308e-7 m < 1e-3 m","textPreview":"At eval 4, |f(theta)| = 7.1308e-7 m < 1e-3 m","textChars":44,"textLines":1,"bbox":[150,947,1490,38]}
+{"kind":"notes","id":"nt/m90b6t0r","slide":10,"text":"Trace the table row by row. At the fourth evaluation the residual is already well below the one-millimetre tolerance.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/newton_trace.png"}
+{"kind":"slide","id":"sl/jetc3ut0","slide":11,"title":"Working exposure: same root, different route","textShapes":12}
+{"kind":"textbox","id":"sh/a90z21on","slide":11,"name":"slide-11-title","text":"Working exposure: same root, different route","textPreview":"Working exposure: same root, different route","textChars":44,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/xcryxg7y","slide":11,"name":"slide-11-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/wbih4b6d","slide":11,"name":"slide-11-subtitle","text":"Bisection is guarded; Newton is locally fast","textPreview":"Bisection is guarded; Newton is locally fast","textChars":44,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/n69grmpw","slide":11,"name":"slide-11-number","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/250zy18b","slide":11,"name":"slide-11-bisection","bbox":[115,290,770,500]}
+{"kind":"textbox","id":"sh/98rytw72","slide":11,"name":"slide-11-bisection-heading","text":"BISECTION","textPreview":"BISECTION","textChars":9,"textLines":1,"bbox":[160,335,680,44]}
+{"kind":"shape","id":"sh/o7ih0r6h","slide":11,"name":"slide-11-bisection-count","bbox":[227,427,126,126]}
+{"kind":"textbox","id":"sh/72t03qp0","slide":11,"name":"slide-11-bisection-count-number","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[230,453,120,70]}
+{"kind":"textbox","id":"sh/61kzalof","slide":11,"name":"slide-11-bisection-count-label","text":"recorded\niterations","textPreview":"recorded | iterations","textChars":19,"textLines":2,"bbox":[370,458,210,70]}
+{"kind":"textbox","id":"sh/ofqtgnyt","slide":11,"name":"slide-11-bisection-body","text":"preserves a sign-changing bracket\n\nneeds a valid endpoint pair","textPreview":"preserves a sign-changing bracket |  | needs a valid endpoint pair","textChars":62,"textLines":3,"bbox":[160,615,680,100]}
+{"kind":"shape","id":"sh/9gza9sze","slide":11,"name":"slide-11-newton","bbox":[1020,290,770,500]}
+{"kind":"textbox","id":"sh/mdobedg3","slide":11,"name":"slide-11-newton-heading","text":"NEWTON","textPreview":"NEWTON","textChars":6,"textLines":1,"bbox":[1065,335,680,44]}
+{"kind":"shape","id":"sh/nehs7iho","slide":11,"name":"slide-11-newton-count","bbox":[1132,427,126,126]}
+{"kind":"textbox","id":"sh/0b6tc3yx","slide":11,"name":"slide-11-newton-count-number","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1135,453,120,70]}
+{"kind":"textbox","id":"sh/1cfa58zi","slide":11,"name":"slide-11-newton-count-label","text":"recorded\nevaluations","textPreview":"recorded | evaluations","textChars":20,"textLines":2,"bbox":[1275,458,210,70]}
+{"kind":"textbox","id":"sh/epobatgr","slide":11,"name":"slide-11-newton-body","text":"same low-angle root from 25 degree\n\nneeds a useful slope and start","textPreview":"same low-angle root from 25 degree |  | needs a useful slope and start","textChars":66,"textLines":3,"bbox":[1065,615,680,100]}
+{"kind":"shape","id":"sh/zaxs3yhc","slide":11,"name":"slide-11-shared-validation","bbox":[250,835,1420,72]}
+{"kind":"textbox","id":"sh/cn6t83y1","slide":11,"name":"slide-11-shared-validation-text","text":"Both still require residual validation","textPreview":"Both still require residual validation","textChars":38,"textLines":1,"bbox":[300,853,1320,36]}
+{"kind":"notes","id":"nt/jetc3ut0","slide":11,"text":"This is Working exposure. Fewer evaluations do not make Newton automatically more correct; both methods still need residual validation.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/method_comparison.png"}
+{"kind":"slide","id":"sl/8f2psfyx","slide":12,"title":"A midpoint is not enough: the bracket must change sign","textShapes":15}
+{"kind":"textbox","id":"sh/edk3ed4j","slide":12,"name":"slide-12-title","text":"A midpoint is not enough: the bracket must change sign","textPreview":"A midpoint is not enough: the bracket must change sign","textChars":54,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/1gbm9s3a","slide":12,"name":"slide-12-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/0f2lgnmp","slide":12,"name":"slide-12-subtitle","text":"The method only works when the endpoints still have opposite signs","textPreview":"The method only works when the endpoints still have opposite signs","textChars":66,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/ra943il8","slide":12,"name":"slide-12-number","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/q903ad4n","slide":12,"name":"slide-12-current-heading","text":"Current bracket","textPreview":"Current bracket","textChars":15,"textLines":1,"bbox":[115,270,500,40]}
+{"kind":"shape","id":"sh/dcbm583y","slide":12,"name":"slide-12-current-line","bbox":[180,370,355,1]}
+{"kind":"shape","id":"sh/sb2lcnmd","slide":12,"name":"slide-12-current-left","bbox":[163,353,34,34]}
+{"kind":"shape","id":"sh/b6d4f2lc","slide":12,"name":"slide-12-current-mid","bbox":[343,353,34,34]}
+{"kind":"shape","id":"sh/a543mx4r","slide":12,"name":"slide-12-current-right","bbox":[518,353,34,34]}
+{"kind":"textbox","id":"sh/wvupgz6t","slide":12,"name":"slide-12-current-label","text":"[20, 40] degree","textPreview":"[20, 40] degree","textChars":15,"textLines":1,"bbox":[180,425,355,36]}
+{"kind":"textbox","id":"sh/xw3q94ne","slide":12,"name":"slide-12-current-values","text":"f(20) < 0       f(30) > 0       f(40) > 0","textPreview":"f(20) < 0       f(30) > 0       f(40) > 0","textChars":41,"textLines":1,"bbox":[135,485,445,36]}
+{"kind":"shape","id":"sh/atc7epon","slide":12,"name":"slide-12-arrow","bbox":[640,350,72,34]}
+{"kind":"shape","id":"sh/bulo7u58","slide":12,"name":"slide-12-bad-box","bbox":[760,265,505,340]}
+{"kind":"textbox","id":"sh/orapcf6h","slide":12,"name":"slide-12-bad-heading","text":"BAD UPDATE","textPreview":"BAD UPDATE","textChars":10,"textLines":1,"bbox":[805,310,415,42]}
+{"kind":"textbox","id":"sh/9sj65kn2","slide":12,"name":"slide-12-bad-bracket","text":"[30, 40] degree","textPreview":"[30, 40] degree","textChars":15,"textLines":1,"bbox":[805,390,415,48]}
+{"kind":"textbox","id":"sh/mps7a5or","slide":12,"name":"slide-12-bad-reason","text":"both endpoint residuals are positive\n\nno sign change remains","textPreview":"both endpoint residuals are positive |  | no sign change remains","textChars":60,"textLines":3,"bbox":[805,475,415,100]}
+{"kind":"shape","id":"sh/nq1o3a5w","slide":12,"name":"slide-12-arrow-repair","bbox":[1330,350,72,34]}
+{"kind":"shape","id":"sh/0nap8f6l","slide":12,"name":"slide-12-good-box","bbox":[1450,265,355,340]}
+{"kind":"textbox","id":"sh/1oj61kn6","slide":12,"name":"slide-12-good-heading","text":"REPAIR","textPreview":"REPAIR","textChars":6,"textLines":1,"bbox":[1490,310,275,42]}
+{"kind":"textbox","id":"sh/hkbm5wzu","slide":12,"name":"slide-12-good-bracket","text":"[20, 30] degree","textPreview":"[20, 30] degree","textChars":15,"textLines":1,"bbox":[1490,400,275,48]}
+{"kind":"textbox","id":"sh/gj25cry9","slide":12,"name":"slide-12-good-reason","text":"f(20) < 0\nf(30) > 0","textPreview":"f(20) < 0 | f(30) > 0","textChars":19,"textLines":2,"bbox":[1490,485,275,70]}
+{"kind":"shape","id":"sh/fit436ho","slide":12,"name":"slide-12-check-box","bbox":[230,700,1450,145]}
+{"kind":"textbox","id":"sh/uh0na1g3","slide":12,"name":"slide-12-check-heading","text":"CHECK AFTER EVERY UPDATE","textPreview":"CHECK AFTER EVERY UPDATE","textChars":24,"textLines":1,"bbox":[275,735,510,34]}
+{"kind":"textbox","id":"sh/tgrm1wzy","slide":12,"name":"slide-12-check-rule","text":"f(a) * f(b) < 0","textPreview":"f(a) * f(b) < 0","textChars":15,"textLines":1,"bbox":[880,727,370,48]}
+{"kind":"textbox","id":"sh/sfi58ryd","slide":12,"name":"slide-12-check-body","text":"If the signs agree, the bracket is not safe","textPreview":"If the signs agree, the bracket is not safe","textChars":43,"textLines":1,"bbox":[1280,735,345,34]}
+{"kind":"notes","id":"nt/8f2psfyx","slide":12,"text":"Show the failure state with [30,40]. Both endpoint residuals are positive, so the bracket has lost the sign change and must be repaired.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m"}
+{"kind":"slide","id":"sl/hgzapcr6","slide":13,"title":"The residual pattern transfers to new physics","textShapes":12}
+{"kind":"textbox","id":"sh/dsr6t8bu","slide":13,"name":"slide-13-title","text":"The residual pattern transfers to new physics","textPreview":"The residual pattern transfers to new physics","textChars":45,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/q50nydsj","slide":13,"name":"slide-13-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/bq9orito","slide":13,"name":"slide-13-subtitle","text":"Change the model; keep the reasoning chain","textPreview":"Change the model; keep the reasoning chain","textChars":42,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/o3i5w3ad","slide":13,"name":"slide-13-number","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/p4r6p8by","slide":13,"name":"slide-13-chain","text":"physical target  →  residual  →  root  →  validation","textPreview":"physical target  →  residual  →  root  →  validation","textChars":52,"textLines":1,"bbox":[115,255,1690,42]}
+{"kind":"shape","id":"sh/21gnuts7","slide":13,"name":"slide-13-thin-lens","bbox":[115,345,810,420]}
+{"kind":"textbox","id":"sh/32ponyts","slide":13,"name":"slide-13-thin-lens-heading","text":"THIN LENS","textPreview":"THIN LENS","textChars":9,"textLines":1,"bbox":[160,385,720,42]}
+{"kind":"textbox","id":"sh/gzy5s3a1","slide":13,"name":"slide-13-thin-lens-target","text":"target: image distance","textPreview":"target: image distance","textChars":22,"textLines":1,"bbox":[180,470,680,36]}
+{"kind":"textbox","id":"sh/1076lobm","slide":13,"name":"slide-13-thin-lens-unknown","text":"unknown: d_i","textPreview":"unknown: d_i","textChars":12,"textLines":1,"bbox":[180,525,680,36]}
+{"kind":"textbox","id":"sh/hcfy9k3u","slide":13,"name":"slide-13-thin-lens-check","text":"validate by substitution into the lens equation","textPreview":"validate by substitution into the lens equation","textChars":47,"textLines":1,"bbox":[180,640,680,70]}
+{"kind":"shape","id":"sh/gb6x0zm9","slide":13,"name":"slide-13-rc","bbox":[995,345,810,420]}
+{"kind":"textbox","id":"sh/vaxg7ulo","slide":13,"name":"slide-13-rc-heading","text":"RC THRESHOLD","textPreview":"RC THRESHOLD","textChars":12,"textLines":1,"bbox":[1040,385,720,42]}
+{"kind":"textbox","id":"sh/u9ofyp43","slide":13,"name":"slide-13-rc-target","text":"target: threshold voltage","textPreview":"target: threshold voltage","textChars":25,"textLines":1,"bbox":[1060,470,680,36]}
+{"kind":"textbox","id":"sh/t8fy5k3i","slide":13,"name":"slide-13-rc-unknown","text":"unknown: t","textPreview":"unknown: t","textChars":10,"textLines":1,"bbox":[1060,525,680,36]}
+{"kind":"textbox","id":"sh/876xwfmx","slide":13,"name":"slide-13-rc-check","text":"validate by checking V(t) against the target","textPreview":"validate by checking V(t) against the target","textChars":44,"textLines":1,"bbox":[1060,640,680,70]}
+{"kind":"image","id":"im/8bq1ovul","slide":13,"name":"","alt":"Thin-lens and RC residual forms","bbox":[460,785,1000,105]}
+{"kind":"notes","id":"nt/hgzapcr6","slide":13,"text":"Make the transfer explicit: change the physical model, keep the residual habit. Students should be able to identify the unknown and target.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- Visual/equation asset: Week05/.agent/lecture-slides/codex-ppt/assets/strict/equations/transfer_residuals.png"}
+{"kind":"slide","id":"sl/6lsnupw7","slide":14,"title":"Exit ticket: explain a root to a future you","textShapes":16}
+{"kind":"textbox","id":"sh/a9gvid8v","slide":14,"name":"slide-14-title","text":"Exit ticket: explain a root to a future you","textPreview":"Exit ticket: explain a root to a future you","textChars":43,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"shape","id":"sh/xc7eds76","slide":14,"name":"slide-14-title-rule","bbox":[115,148,1580,1]}
+{"kind":"textbox","id":"sh/wbydknq1","slide":14,"name":"slide-14-subtitle","text":"Define it, bracket it, update it, check it","textPreview":"Define it, bracket it, update it, check it","textChars":42,"textLines":1,"bbox":[115,160,1580,44]}
+{"kind":"textbox","id":"sh/jepwf2pc","slide":14,"name":"slide-14-number","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/idgvmx8r","slide":14,"name":"slide-14-define-card","bbox":[115,300,360,470]}
+{"kind":"shape","id":"sh/5grehs7i","slide":14,"name":"slide-14-define-icon","bbox":[253,353,84,84]}
+{"kind":"textbox","id":"sh/kfidonqx","slide":14,"name":"slide-14-define-icon-text","text":"=","textPreview":"=","textChars":1,"textLines":1,"bbox":[243,365,104,60]}
+{"kind":"textbox","id":"sh/zi5c3y98","slide":14,"name":"slide-14-define-label","text":"DEFINE","textPreview":"DEFINE","textChars":6,"textLines":1,"bbox":[145,490,300,38]}
+{"kind":"textbox","id":"sh/ehwvat8n","slide":14,"name":"slide-14-define-prompt","text":"write the physical target\nand residual","textPreview":"write the physical target | and residual","textChars":38,"textLines":2,"bbox":[147,575,296,100]}
+{"kind":"shape","id":"sh/c3e1gjyd","slide":14,"name":"slide-14-bracket-card","bbox":[530,300,360,470]}
+{"kind":"shape","id":"sh/x4ni9ofy","slide":14,"name":"slide-14-bracket-icon","bbox":[668,353,84,84]}
+{"kind":"textbox","id":"sh/a1wze9g7","slide":14,"name":"slide-14-bracket-icon-text","text":"< >","textPreview":"< >","textChars":3,"textLines":1,"bbox":[658,365,104,60]}
+{"kind":"textbox","id":"sh/b2507exs","slide":14,"name":"slide-14-bracket-label","text":"BRACKET","textPreview":"BRACKET","textChars":7,"textLines":1,"bbox":[560,490,300,38]}
+{"kind":"textbox","id":"sh/kre1k3y9","slide":14,"name":"slide-14-bracket-prompt","text":"explain what opposite\nendpoint signs mean","textPreview":"explain what opposite | endpoint signs mean","textChars":41,"textLines":2,"bbox":[562,575,296,100]}
+{"kind":"shape","id":"sh/ls7idofu","slide":14,"name":"slide-14-update-card","bbox":[945,300,360,470]}
+{"kind":"shape","id":"sh/y5wjitgj","slide":14,"name":"slide-14-update-icon","bbox":[1083,353,84,84]}
+{"kind":"textbox","id":"sh/z650byxo","slide":14,"name":"slide-14-update-icon-text","text":"→","textPreview":"→","textChars":1,"textLines":1,"bbox":[1073,365,104,60]}
+{"kind":"textbox","id":"sh/0buh8zy5","slide":14,"name":"slide-14-update-label","text":"UPDATE","textPreview":"UPDATE","textChars":6,"textLines":1,"bbox":[975,490,300,38]}
+{"kind":"textbox","id":"sh/1w3i14fq","slide":14,"name":"slide-14-update-prompt","text":"describe one bisection midpoint\nor Newton tangent step","textPreview":"describe one bisection midpoint | or Newton tangent step","textChars":54,"textLines":2,"bbox":[977,575,296,100]}
+{"kind":"shape","id":"sh/hsvy50re","slide":14,"name":"slide-14-check-card","bbox":[1360,300,360,470]}
+{"kind":"shape","id":"sh/grmxwvqt","slide":14,"name":"slide-14-check-icon","bbox":[1498,353,84,84]}
+{"kind":"textbox","id":"sh/fqdg3q98","slide":14,"name":"slide-14-check-icon-text","text":"✓","textPreview":"✓","textChars":1,"textLines":1,"bbox":[1488,365,104,60]}
+{"kind":"textbox","id":"sh/up4fal83","slide":14,"name":"slide-14-check-label","text":"CHECK","textPreview":"CHECK","textChars":5,"textLines":1,"bbox":[1390,490,300,38]}
+{"kind":"textbox","id":"sh/pwvy90rq","slide":14,"name":"slide-14-check-prompt","text":"substitute the root into the residual\nand state its physical unit","textPreview":"substitute the root into the residual | and state its physical unit","textChars":65,"textLines":2,"bbox":[1392,575,296,100]}
+{"kind":"shape","id":"sh/4vmh0vq5","slide":14,"name":"slide-14-transfer-ribbon","bbox":[270,825,1380,72]}
+{"kind":"textbox","id":"sh/3udg7q9k","slide":14,"name":"slide-14-transfer-text","text":"practical transfer: projectile range  •  thin lens  •  RC threshold","textPreview":"practical transfer: projectile range  •  thin lens  •  RC threshold","textChars":67,"textLines":1,"bbox":[310,844,1300,36]}
+{"kind":"notes","id":"nt/6lsnupw7","slide":14,"text":"Use the four prompts as retrieval. Do not provide the answer key; ask students to explain the chain in their own words before practical work.\n\n[Sources]\n- PHY4605 Week 05 course materials: Week05/README.md and Week05/.agent/manifests/Week05_Content_Manifest.md\n- Demonstration source: Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m"}

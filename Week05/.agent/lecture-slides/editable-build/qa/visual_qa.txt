@@ -1,0 +1,9 @@
+PHY4605 Week 05 visual QA
+
+- Artifact-tool render of the final in-memory build: all 14 slides inspected at 1920 x 1080.
+- Artifact-tool round-trip render of the saved PPTX: all 14 slides available at 1920 x 1080; slides 8, 11, 12, and 14 were explicitly rechecked after round-trip because their raster bytes differed from the in-memory preview.
+- LibreOffice render of the saved PPTX: all 14 slides inspected at full resolution; the final PNGs are byte-identical to the previously inspected clean render set.
+- Slide 09 was explicitly inspected at full resolution: equation asset, tangent diagram, labels, and prompt are readable with no clipping or overlap.
+- Visual result is consistent with the approved PHY4605 master style: borderless white canvas, navy title rule, rounded scientific cards, navy/blue/gold/green accents, and restrained monospace code/data callouts.
+- No visible clipping, overlap, broken glyphs, or misplaced strict source content was found.
+- The bundled headless LibreOffice preview substitutes a serif fallback for the installed Nunito font, while the PPTX font metadata retains Nunito and IBM Plex Mono. Artifact-tool renders use the intended sans-serif appearance; this is recorded as a preview-runtime limitation, not a source-level font change.

@@ -1,0 +1,249 @@
+{"kind":"deck","id":"pr/w0nnkn","name":"Deck"}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster2.xml","name":"PHY4605 Borderless White Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Opening","placeholders":[{"name":"body","type":"body"},{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Content T1","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Content T2","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Content T3","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"slide","id":"sl/emtov4","slide":1,"title":"From Nearby Values","textShapes":5}
+{"kind":"textbox","id":"sh/9gfe10n6","slide":1,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"From Nearby Values\nto an Instantaneous Rate","textPreview":"From Nearby Values | to an Instantaneous Rate","textChars":43,"textLines":2,"bbox":[115,245,1080,210]}
+{"kind":"textbox","id":"sh/mdovqlov","slide":1,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Week 6 | Numerical differentiation with vertical motion","textPreview":"Week 6 | Numerical differentiation with vertical motion","textChars":55,"textLines":1,"bbox":[115,475,1180,80]}
+{"kind":"textbox","id":"sh/nexwzq50","slide":1,"name":"tag","text":"PHY4605 Computational Methods in Physics","textPreview":"PHY4605 Computational Methods in Physics","textChars":40,"textLines":1,"bbox":[115,126,760,38]}
+{"kind":"shape","id":"sh/0b6dob6p","slide":1,"name":"axis","bbox":[1390,310,0,410]}
+{"kind":"shape","id":"sh/1cfexgna","slide":1,"name":"ground","bbox":[1260,720,515,0]}
+{"kind":"shape","id":"sh/epovmloj","slide":1,"name":"marker-t0","bbox":[1470,470,28,28]}
+{"kind":"shape","id":"sh/zqxwv654","slide":1,"name":"marker-next","bbox":[1540,520,28,28]}
+{"kind":"shape","id":"sh/cnmdkb6d","slide":1,"name":"velocity","bbox":[1450,325,0,145]}
+{"kind":"textbox","id":"sh/dovetgny","slide":1,"name":"hero-y","text":"vertical position, y","textPreview":"vertical position, y","textChars":20,"textLines":1,"bbox":[1280,250,280,35]}
+{"kind":"textbox","id":"sh/xkzi54je","slide":1,"name":"hero-q","text":"How can two nearby values estimate velocity at one instant?","textPreview":"How can two nearby values estimate velocity at one instant?","textChars":59,"textLines":1,"bbox":[115,860,1450,45]}
+{"kind":"notes","id":"nt/emtov4","slide":1,"text":"Week 06 slide 1. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}
+{"kind":"slide","id":"sl/w5oksj","slide":2,"title":"A derivative is a physical rate","textShapes":13}
+{"kind":"textbox","id":"sh/fqx87qds","slide":2,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"A derivative is a physical rate","textPreview":"A derivative is a physical rate","textChars":31,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/gr69gvud","slide":2,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Read the quantity, then derive its unit from the variables","textPreview":"Read the quantity, then derive its unit from the variables","textChars":58,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/1sfq90vy","slide":2,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/614ra1cb","slide":2,"name":"rate-0","bbox":[115,310,500,350]}
+{"kind":"textbox","id":"sh/r2x836dg","slide":2,"name":"rate-in-0","text":"position y(t)","textPreview":"position y(t)","textChars":13,"textLines":1,"bbox":[150,365,430,45]}
+{"kind":"shape","id":"sh/s369cbu1","slide":2,"name":"rate-arrow-0","bbox":[335,432,60,35]}
+{"kind":"textbox","id":"sh/tofq5gvm","slide":2,"name":"rate-out-0","text":"velocity dy/dt","textPreview":"velocity dy/dt","textChars":14,"textLines":1,"bbox":[150,500,430,46]}
+{"kind":"textbox","id":"sh/ix4761cz","slide":2,"name":"rate-unit-0","text":"m/s","textPreview":"m/s","textChars":3,"textLines":1,"bbox":[150,590,430,43]}
+{"kind":"shape","id":"sh/jyd8z6dk","slide":2,"name":"rate-1","bbox":[680,310,500,350]}
+{"kind":"textbox","id":"sh/fi9sf2p4","slide":2,"name":"rate-in-1","text":"potential V(x)","textPreview":"potential V(x)","textChars":14,"textLines":1,"bbox":[715,365,430,45]}
+{"kind":"shape","id":"sh/uh0bmxoz","slide":2,"name":"rate-arrow-1","bbox":[900,432,60,35]}
+{"kind":"textbox","id":"sh/hkbahc7a","slide":2,"name":"rate-out-1","text":"electric field −dV/dx","textPreview":"electric field −dV/dx","textChars":21,"textLines":1,"bbox":[715,500,430,46]}
+{"kind":"textbox","id":"sh/gj2to76p","slide":2,"name":"rate-unit-1","text":"V/m","textPreview":"V/m","textChars":3,"textLines":1,"bbox":[715,590,430,43]}
+{"kind":"shape","id":"sh/36tsjmpg","slide":2,"name":"rate-2","bbox":[1245,310,500,350]}
+{"kind":"textbox","id":"sh/2lkbqhov","slide":2,"name":"rate-in-2","text":"temperature T(t)","textPreview":"temperature T(t)","textChars":16,"textLines":1,"bbox":[1280,365,430,45]}
+{"kind":"shape","id":"sh/p8bulc7m","slide":2,"name":"rate-arrow-2","bbox":[1465,432,60,35]}
+{"kind":"textbox","id":"sh/472tsr61","slide":2,"name":"rate-out-2","text":"cooling rate dT/dt","textPreview":"cooling rate dT/dt","textChars":18,"textLines":1,"bbox":[1280,500,430,46]}
+{"kind":"textbox","id":"sh/japs7ipw","slide":2,"name":"rate-unit-2","text":"K/s","textPreview":"K/s","textChars":3,"textLines":1,"bbox":[1280,590,430,43]}
+{"kind":"textbox","id":"sh/ipgbedor","slide":2,"name":"unit-rule","text":"For y in metres and t in seconds, dy/dt has unit m/s","textPreview":"For y in metres and t in seconds, dy/dt has unit m/s","textChars":52,"textLines":1,"bbox":[115,760,1560,55]}
+{"kind":"notes","id":"nt/w5oksj","slide":2,"text":"Week 06 slide 2. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}
+{"kind":"slide","id":"sl/mow03c","slide":3,"title":"Numerical differentiation uses two nearby values","textShapes":7}
+{"kind":"textbox","id":"sh/9w32h8nm","slide":3,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Numerical differentiation uses two nearby values","textPreview":"Numerical differentiation uses two nearby values","textChars":48,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/m9cj6dob","slide":3,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"A forward difference divides a position change by a time step","textPreview":"A forward difference divides a position change by a time step","textChars":61,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/nalkfi5w","slide":3,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/x0n2lsny","slide":3,"name":"xaxis","bbox":[155,760,720,0]}
+{"kind":"shape","id":"sh/axc3ado7","slide":3,"name":"yaxis","bbox":[190,350,0,440]}
+{"kind":"shape","id":"sh/vylkji5s","slide":3,"name":"secant","bbox":[390,460,330,175]}
+{"kind":"shape","id":"sh/k3elgn69","slide":3,"name":"p0","bbox":[380,625,22,22]}
+{"kind":"shape","id":"sh/54n2psnu","slide":3,"name":"ph","bbox":[710,450,22,22]}
+{"kind":"textbox","id":"sh/h4jux0z6","slide":3,"name":"t0","text":"t₀","textPreview":"t₀","textChars":2,"textLines":1,"bbox":[360,785,75,34]}
+{"kind":"textbox","id":"sh/g3adovil","slide":3,"name":"t0h","text":"t₀ + h","textPreview":"t₀ + h","textChars":6,"textLines":1,"bbox":[680,785,95,34]}
+{"kind":"textbox","id":"sh/v21cvq10","slide":3,"name":"meaning","text":"numerator: change in position\ndenominator: change in time","textPreview":"numerator: change in position | denominator: change in time","textChars":57,"textLines":2,"bbox":[1060,410,590,120]}
+{"kind":"shape","id":"sh/u1svml0v","slide":3,"name":"unit","bbox":[1060,600,570,150]}
+{"kind":"textbox","id":"sh/5s3u10zi","slide":3,"name":"unit-label","text":"metres / seconds = m/s","textPreview":"metres / seconds = m/s","textChars":22,"textLines":1,"bbox":[1100,650,490,45]}
+{"kind":"image","id":"im/dw32xk36","slide":3,"name":"","alt":"Forward-difference definition","bbox":[155,275,780,150]}
+{"kind":"notes","id":"nt/mow03c","slide":3,"text":"Week 06 slide 3. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/lecture-slides/equations/forward-difference.tex"}
+{"kind":"slide","id":"sl/bqe8f0","slide":4,"title":"A familiar vertical-motion model","textShapes":12}
+{"kind":"textbox","id":"sh/w7q50vql","slide":4,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"A familiar vertical-motion model","textPreview":"A familiar vertical-motion model","textChars":32,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/v6ho7ap0","slide":4,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Keep the physics fixed while the numerical approximation changes","textPreview":"Keep the physics fixed while the numerical approximation changes","textChars":64,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/a58ny58f","slide":4,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/4ba54fqh","slide":4,"name":"var-0","text":"y₀","textPreview":"y₀","textChars":2,"textLines":1,"bbox":[1120,490,130,38]}
+{"kind":"textbox","id":"sh/ja1obapw","slide":4,"name":"value-0","text":"0 m","textPreview":"0 m","textChars":3,"textLines":1,"bbox":[1300,490,280,38]}
+{"kind":"shape","id":"sh/i98n258b","slide":4,"name":"rule-0","bbox":[1110,542,480,0]}
+{"kind":"textbox","id":"sh/t0j6hk7y","slide":4,"name":"var-1","text":"v₀","textPreview":"v₀","textChars":2,"textLines":1,"bbox":[1120,575,130,38]}
+{"kind":"textbox","id":"sh/sza58fqt","slide":4,"name":"value-1","text":"20 m/s","textPreview":"20 m/s","textChars":6,"textLines":1,"bbox":[1300,575,280,38]}
+{"kind":"shape","id":"sh/qhojex87","slide":4,"name":"rule-1","bbox":[1110,627,480,0]}
+{"kind":"textbox","id":"sh/bix0729s","slide":4,"name":"var-2","text":"g","textPreview":"g","textChars":1,"textLines":1,"bbox":[1120,660,130,38]}
+{"kind":"textbox","id":"sh/cj61g7qd","slide":4,"name":"value-2","text":"9.81 m/s²","textPreview":"9.81 m/s²","textChars":9,"textLines":1,"bbox":[1300,660,280,38]}
+{"kind":"shape","id":"sh/dkfi9cri","slide":4,"name":"rule-2","bbox":[1110,712,480,0]}
+{"kind":"textbox","id":"sh/ylojih83","slide":4,"name":"var-3","text":"t₀","textPreview":"t₀","textChars":2,"textLines":1,"bbox":[1120,745,130,38]}
+{"kind":"textbox","id":"sh/zmx0b29o","slide":4,"name":"value-3","text":"1.0 s","textPreview":"1.0 s","textChars":5,"textLines":1,"bbox":[1300,745,280,38]}
+{"kind":"shape","id":"sh/0n61k7q9","slide":4,"name":"rule-3","bbox":[1110,797,480,0]}
+{"kind":"shape","id":"sh/loz2dcru","slide":4,"name":"assumption","bbox":[115,690,1475,105]}
+{"kind":"textbox","id":"sh/ep4z6d8z","slide":4,"name":"assume","text":"Assumption: constant gravitational acceleration and negligible air resistance","textPreview":"Assumption: constant gravitational acceleration and negligible air resistance","textChars":77,"textLines":1,"bbox":[150,720,1400,42]}
+{"kind":"image","id":"im/sb6p4n2t","slide":4,"name":"","alt":"Vertical position model","bbox":[115,285,870,145]}
+{"kind":"notes","id":"nt/bqe8f0","slide":4,"text":"Week 06 slide 4. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/lecture-slides/equations/vertical-motion-model.tex"}
+{"kind":"slide","id":"sl/cvqj7q","slide":5,"title":"Prediction before computing","textShapes":9}
+{"kind":"textbox","id":"sh/ozq9wru9","slide":5,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Prediction before computing","textPreview":"Prediction before computing","textChars":27,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/nyx83mdo","slide":5,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"At t₀ = 1.0 s, the projectile is still moving upward","textPreview":"At t₀ = 1.0 s, the projectile is still moving upward","textChars":52,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/2xoruhc3","slide":5,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/1wfq1cvi","slide":5,"name":"positive","bbox":[180,320,440,290]}
+{"kind":"textbox","id":"sh/0b69s7ux","slide":5,"name":"p1","text":"positive","textPreview":"positive","textChars":8,"textLines":1,"bbox":[220,375,360,55]}
+{"kind":"textbox","id":"sh/fax8z2dc","slide":5,"name":"p1b","text":"velocity remains upward","textPreview":"velocity remains upward","textChars":23,"textLines":1,"bbox":[220,485,360,52]}
+{"kind":"shape","id":"sh/e9orqhcr","slide":5,"name":"less","bbox":[740,320,440,290]}
+{"kind":"textbox","id":"sh/d8fqxcvm","slide":5,"name":"p2","text":"below 20 m/s","textPreview":"below 20 m/s","textChars":12,"textLines":1,"bbox":[775,375,370,55]}
+{"kind":"textbox","id":"sh/s7m9o7u1","slide":5,"name":"p2b","text":"gravity has reduced the initial speed","textPreview":"gravity has reduced the initial speed","textChars":37,"textLines":1,"bbox":[775,485,370,52]}
+{"kind":"shape","id":"sh/y587idkn","slide":5,"name":"check","bbox":[1300,320,440,290]}
+{"kind":"textbox","id":"sh/j6h8bil8","slide":5,"name":"p3","text":"check sign and unit","textPreview":"check sign and unit","textChars":19,"textLines":1,"bbox":[1335,375,370,55]}
+{"kind":"textbox","id":"sh/k7q9kn2t","slide":5,"name":"p3b","text":"wrong sign or missing m/s needs investigation","textPreview":"wrong sign or missing m/s needs investigation","textChars":45,"textLines":1,"bbox":[1335,485,370,52]}
+{"kind":"notes","id":"nt/cvqj7q","slide":5,"text":"Week 06 slide 5. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}
+{"kind":"slide","id":"sl/mvtsr4","slide":6,"title":"One forward difference by hand","textShapes":12}
+{"kind":"textbox","id":"sh/6x03elsv","slide":6,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"One forward difference by hand","textPreview":"One forward difference by hand","textChars":30,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/t0rm9grm","slide":6,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Use h = 0.5 s and retain units in every line","textPreview":"Use h = 0.5 s and retain units in every line","textChars":44,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/szilgba1","slide":6,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/itg3a1sz","slide":6,"name":"hand-l-0","text":"y(1.0 s)","textPreview":"y(1.0 s)","textChars":8,"textLines":1,"bbox":[150,435,300,38]}
+{"kind":"textbox","id":"sh/5wrm5gra","slide":6,"name":"hand-r-0","text":"15.095 m","textPreview":"15.095 m","textChars":8,"textLines":1,"bbox":[490,435,1050,40]}
+{"kind":"shape","id":"sh/kvilcba5","slide":6,"name":"hand-line-0","bbox":[150,490,1390,0]}
+{"kind":"textbox","id":"sh/vqpkzm98","slide":6,"name":"hand-l-1","text":"y(1.5 s)","textPreview":"y(1.5 s)","textChars":8,"textLines":1,"bbox":[150,525,300,38]}
+{"kind":"textbox","id":"sh/a5g361sn","slide":6,"name":"hand-r-1","text":"18.96375 m","textPreview":"18.96375 m","textChars":10,"textLines":1,"bbox":[490,525,1050,40]}
+{"kind":"shape","id":"sh/czqdw7at","slide":6,"name":"hand-line-1","bbox":[150,580,1390,0]}
+{"kind":"textbox","id":"sh/dkzepcbe","slide":6,"name":"hand-l-2","text":"Δy / h","textPreview":"Δy / h","textChars":6,"textLines":1,"bbox":[150,615,300,38]}
+{"kind":"textbox","id":"sh/qx8vuhsn","slide":6,"name":"hand-r-2","text":"(18.96375 − 15.095) m / 0.5 s","textPreview":"(18.96375 − 15.095) m / 0.5 s","textChars":29,"textLines":1,"bbox":[490,615,1050,40]}
+{"kind":"shape","id":"sh/ryhwn2t8","slide":6,"name":"hand-line-2","bbox":[150,670,1390,0]}
+{"kind":"textbox","id":"sh/4v6ds7ax","slide":6,"name":"hand-l-3","text":"vfd(1.0 s)","textPreview":"vfd(1.0 s)","textChars":10,"textLines":1,"bbox":[150,705,300,38]}
+{"kind":"textbox","id":"sh/pwzulcbi","slide":6,"name":"hand-r-3","text":"7.7375 m/s","textPreview":"7.7375 m/s","textChars":10,"textLines":1,"bbox":[490,705,1050,40]}
+{"kind":"shape","id":"sh/2tovqxsr","slide":6,"name":"hand-line-3","bbox":[150,760,1390,0]}
+{"kind":"shape","id":"sh/3uxcj2tc","slide":6,"name":"hand-result","bbox":[1120,760,420,90]}
+{"kind":"textbox","id":"sh/8rad4ra1","slide":6,"name":"hand-final","text":"7.7375 m/s","textPreview":"7.7375 m/s","textChars":10,"textLines":1,"bbox":[1150,785,360,35]}
+{"kind":"image","id":"im/218jmpgf","slide":6,"name":"","alt":"Forward difference","bbox":[125,265,750,125]}
+{"kind":"notes","id":"nt/mvtsr4","slide":6,"text":"Week 06 slide 6. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/lecture-slides/equations/forward-difference.tex"}
+{"kind":"slide","id":"sl/u35xxy","slide":7,"title":"Pseudocode before MATLAB","textShapes":16}
+{"kind":"textbox","id":"sh/0futgj2h","slide":7,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Pseudocode before MATLAB","textPreview":"Pseudocode before MATLAB","textChars":24,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/zelc7e1w","slide":7,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"The algorithm names the model evaluations before code syntax appears","textPreview":"The algorithm names the model evaluations before code syntax appears","textChars":68,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/edcbe9kb","slide":7,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/94nudojy","slide":7,"name":"step-0","bbox":[115,300,52,52]}
+{"kind":"textbox","id":"sh/o3utkj2d","slide":7,"name":"step-no-0","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[115,307,52,35]}
+{"kind":"textbox","id":"sh/n2lcbe1s","slide":7,"name":"step-text-0","text":"choose t₀ and h","textPreview":"choose t₀ and h","textChars":15,"textLines":1,"bbox":[190,307,400,42]}
+{"kind":"shape","id":"sh/m1cbitk7","slide":7,"name":"step-arrow-0","bbox":[590,310,55,32]}
+{"kind":"shape","id":"sh/p8ju143u","slide":7,"name":"step-1","bbox":[680,300,52,52]}
+{"kind":"textbox","id":"sh/47at8z29","slide":7,"name":"step-no-1","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[680,307,52,35]}
+{"kind":"textbox","id":"sh/ux8zq10j","slide":7,"name":"step-text-1","text":"evaluate y(t₀)","textPreview":"evaluate y(t₀)","textChars":14,"textLines":1,"bbox":[755,307,400,42]}
+{"kind":"shape","id":"sh/vyhgzmh4","slide":7,"name":"step-arrow-1","bbox":[1155,310,55,32]}
+{"kind":"shape","id":"sh/wzahsrip","slide":7,"name":"step-2","bbox":[1245,300,52,52]}
+{"kind":"textbox","id":"sh/h0jy1wza","slide":7,"name":"step-no-2","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1245,307,52,35]}
+{"kind":"textbox","id":"sh/i1szu10v","slide":7,"name":"step-text-2","text":"evaluate y(t₀ + h)","textPreview":"evaluate y(t₀ + h)","textChars":18,"textLines":1,"bbox":[1320,307,400,42]}
+{"kind":"shape","id":"sh/j21g36hg","slide":7,"name":"step-3","bbox":[115,540,52,52]}
+{"kind":"textbox","id":"sh/4nahwbi1","slide":7,"name":"step-no-3","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[115,547,52,35]}
+{"kind":"textbox","id":"sh/5oji5gz6","slide":7,"name":"step-text-3","text":"subtract positions","textPreview":"subtract positions","textChars":18,"textLines":1,"bbox":[190,547,400,42]}
+{"kind":"shape","id":"sh/6pszyl0r","slide":7,"name":"step-arrow-3","bbox":[590,550,55,32]}
+{"kind":"shape","id":"sh/rq1076hc","slide":7,"name":"step-4","bbox":[680,540,52,52]}
+{"kind":"textbox","id":"sh/3ulgfqxk","slide":7,"name":"step-no-4","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[680,547,52,35]}
+{"kind":"textbox","id":"sh/2tcfmlwz","slide":7,"name":"step-text-4","text":"divide by h","textPreview":"divide by h","textChars":11,"textLines":1,"bbox":[755,547,400,42]}
+{"kind":"shape","id":"sh/pw3yhgfq","slide":7,"name":"step-arrow-4","bbox":[1155,550,55,32]}
+{"kind":"shape","id":"sh/ovuxobe5","slide":7,"name":"step-5","bbox":[1245,540,52,52]}
+{"kind":"textbox","id":"sh/fqlgb6x8","slide":7,"name":"step-no-5","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1245,547,52,35]}
+{"kind":"textbox","id":"sh/epsfi1w3","slide":7,"name":"step-text-5","text":"compare with reference","textPreview":"compare with reference","textChars":22,"textLines":1,"bbox":[1320,547,400,42]}
+{"kind":"shape","id":"sh/1s3ydgfe","slide":7,"name":"repeat","bbox":[420,795,1080,75]}
+{"kind":"textbox","id":"sh/gruxkbet","slide":7,"name":"repeat-text","text":"Repeat only for the supplied step-size array h = [0.5 0.2 0.1 0.05] s","textPreview":"Repeat only for the supplied step-size array h = [0.5 0.2 0.1 0.05] s","textChars":69,"textLines":1,"bbox":[455,815,1010,34]}
+{"kind":"notes","id":"nt/u35xxy","slide":7,"text":"Week 06 slide 7. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}
+{"kind":"slide","id":"sl/wivw5w","slide":8,"title":"MATLAB scaffold","textShapes":12}
+{"kind":"textbox","id":"sh/vmxkjih8","slide":8,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"MATLAB scaffold","textPreview":"MATLAB scaffold","textChars":15,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/wn6lsnit","slide":8,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Trace the supplied expressions and identify the denominator","textPreview":"Trace the supplied expressions and identify the denominator","textChars":59,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/xof2lsze","slide":8,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/i9o3ud0z","slide":8,"name":"codebox","bbox":[115,265,1080,550]}
+{"kind":"textbox","id":"sh/jaxknihk","slide":8,"name":"code","text":"t0_s = 1.0;\nh_s = [0.5 0.2 0.1 0.05];\ny_now_m = y0_m + v0_mps*t0_s - 0.5*g_mps2*t0_s^2;\ny_forward_m = y0_m + v0_mps*(t0_s+h_s) - 0.5*g_mps2*(t0_s+h_s).^2;\nv_forward_mps = (y_forward_m-y_now_m)./h_s;","textPreview":"t0_s = 1.0; | h_s = [0.5 0.2 0.1 0.05]; | y_now_m = y0_m + v0_mps*t0_s - 0.5*g_mps2*t0_s^2; | y_forward_m = y0_m + v0_mps*(t0_s+h_s) - 0....","textChars":198,"textLines":5,"bbox":[150,305,1010,470]}
+{"kind":"shape","id":"sh/kbqlwnip","slide":8,"name":"lab-0","bbox":[1285,285,430,88]}
+{"kind":"textbox","id":"sh/5cz2psza","slide":8,"name":"labt-0","text":"TARGET","textPreview":"TARGET","textChars":6,"textLines":1,"bbox":[1310,301,380,27]}
+{"kind":"textbox","id":"sh/yd4jit0f","slide":8,"name":"labb-0","text":"t0_s","textPreview":"t0_s","textChars":4,"textLines":1,"bbox":[1310,333,380,25]}
+{"kind":"shape","id":"sh/zedkby10","slide":8,"name":"lab-1","bbox":[1285,410,430,88]}
+{"kind":"textbox","id":"sh/zedczql8","slide":8,"name":"labt-1","text":"STEP ARRAY","textPreview":"STEP ARRAY","textChars":10,"textLines":1,"bbox":[1310,426,380,27]}
+{"kind":"textbox","id":"sh/ydkbql4n","slide":8,"name":"labb-1","text":"h_s","textPreview":"h_s","textChars":3,"textLines":1,"bbox":[1310,458,380,25]}
+{"kind":"shape","id":"sh/lgvu103e","slide":8,"name":"lab-2","bbox":[1285,535,430,88]}
+{"kind":"textbox","id":"sh/0fmdsvmt","slide":8,"name":"labt-2","text":"TWO VALUES","textPreview":"TWO VALUES","textChars":10,"textLines":1,"bbox":[1310,551,380,27]}
+{"kind":"textbox","id":"sh/batcvqlc","slide":8,"name":"labb-2","text":"y_now_m and y_forward_m","textPreview":"y_now_m and y_forward_m","textChars":23,"textLines":1,"bbox":[1310,583,380,25]}
+{"kind":"shape","id":"sh/q9kbml4r","slide":8,"name":"lab-3","bbox":[1285,660,430,88]}
+{"kind":"textbox","id":"sh/dcbuxg32","slide":8,"name":"labt-3","text":"DIVIDE BY STEP","textPreview":"DIVIDE BY STEP","textChars":14,"textLines":1,"bbox":[1310,676,380,27]}
+{"kind":"textbox","id":"sh/cb2tobmh","slide":8,"name":"labb-3","text":"./h_s","textPreview":"./h_s","textChars":5,"textLines":1,"bbox":[1310,708,380,25]}
+{"kind":"notes","id":"nt/wivw5w","slide":8,"text":"Week 06 slide 8. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}
+{"kind":"slide","id":"sl/9k4udg","slide":9,"title":"Smaller steps give a more local estimate","textShapes":4}
+{"kind":"textbox","id":"sh/0futc72h","slide":9,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Smaller steps give a more local estimate","textPreview":"Smaller steps give a more local estimate","textChars":40,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/zelc321w","slide":9,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Read the table and plot together before interpreting the trend","textPreview":"Read the table and plot together before interpreting the trend","textChars":62,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/edcbaxkb","slide":9,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/n2lc7m1s","slide":9,"name":"trend","bbox":[115,730,1560,92]}
+{"kind":"textbox","id":"sh/m1cbehk7","slide":9,"name":"trend-text","text":"Over this supplied range, a smaller h makes the secant more local and the measured error smaller","textPreview":"Over this supplied range, a smaller h makes the secant more local and the measured error smaller","textChars":96,"textLines":1,"bbox":[155,760,1480,34]}
+{"kind":"table","id":"tb/wbu9cbqt","slide":9,"name":"","rows":5,"cols":4,"preview":"h (s) | forward estimate (m/s) | absolute error (m/s) | relative error (%)","bbox":[115,275,1010,380]}
+{"kind":"image","id":"im/xcbip0bq","slide":9,"name":"","alt":"MATLAB forward-difference geometry","bbox":[1170,260,600,420]}
+{"kind":"notes","id":"nt/9k4udg","slide":9,"text":"Week 06 slide 9. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/matlab/assets/week06_forward_difference_geometry.png; MATLAB-generated evidence"}
+{"kind":"slide","id":"sl/89i79e","slide":10,"title":"Analytic validation","textShapes":9}
+{"kind":"textbox","id":"sh/h0jyxg76","slide":10,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Analytic validation","textPreview":"Analytic validation","textChars":19,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/ux8f218v","slide":10,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Use an independent reference at the same target time","textPreview":"Use an independent reference at the same target time","textChars":52,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/fyhgv6p0","slide":10,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/twzytw7a","slide":10,"name":"reference","bbox":[1080,275,540,180]}
+{"kind":"textbox","id":"sh/6t8fyh8j","slide":10,"name":"ref-title","text":"reference at t₀ = 1.0 s","textPreview":"reference at t₀ = 1.0 s","textChars":23,"textLines":1,"bbox":[1110,315,480,40]}
+{"kind":"textbox","id":"sh/7uhgrm94","slide":10,"name":"ref-value","text":"10.19 m/s","textPreview":"10.19 m/s","textChars":9,"textLines":1,"bbox":[1110,375,480,54]}
+{"kind":"shape","id":"sh/kr6xwrqd","slide":10,"name":"check-arrow","bbox":[800,540,220,55]}
+{"kind":"shape","id":"sh/5szypwry","slide":10,"name":"num","bbox":[280,600,520,160]}
+{"kind":"textbox","id":"sh/5wjypg7m","slide":10,"name":"num-title","text":"smallest supplied h","textPreview":"smallest supplied h","textChars":19,"textLines":1,"bbox":[320,635,440,35]}
+{"kind":"textbox","id":"sh/4vahgbq1","slide":10,"name":"num-value","text":"9.94475 m/s","textPreview":"9.94475 m/s","textChars":11,"textLines":1,"bbox":[320,690,440,42]}
+{"kind":"shape","id":"sh/ju1gn6pg","slide":10,"name":"validation","bbox":[1050,600,580,160]}
+{"kind":"textbox","id":"sh/itsze18v","slide":10,"name":"valid-title","text":"validation statement","textPreview":"validation statement","textChars":20,"textLines":1,"bbox":[1090,635,500,35]}
+{"kind":"textbox","id":"sh/h8jylw7q","slide":10,"name":"valid-value","text":"positive and close to the reference","textPreview":"positive and close to the reference","textChars":35,"textLines":1,"bbox":[1090,690,500,42]}
+{"kind":"image","id":"im/xwnml8va","slide":10,"name":"","alt":"Analytic velocity","bbox":[200,280,730,135]}
+{"kind":"notes","id":"nt/89i79e","slide":10,"text":"Week 06 slide 10. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/lecture-slides/equations/analytic-velocity.tex"}
+{"kind":"slide","id":"sl/fqrxyy","slide":11,"title":"Simple error with a physical unit","textShapes":8}
+{"kind":"textbox","id":"sh/lw3yh0fa","slide":11,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Simple error with a physical unit","textPreview":"Simple error with a physical unit","textChars":33,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/ytsfmlwz","slide":11,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Absolute error keeps m/s; relative error reports a percentage","textPreview":"Absolute error keeps m/s; relative error reports a percentage","textChars":61,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/julgfqxk","slide":11,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/tk3yl0fm","slide":11,"name":"abs","bbox":[180,500,600,220]}
+{"kind":"textbox","id":"sh/6hcfq5wv","slide":11,"name":"abs-head","text":"At h = 0.05 s","textPreview":"At h = 0.05 s","textChars":13,"textLines":1,"bbox":[220,540,520,38]}
+{"kind":"textbox","id":"sh/7ilgjaxg","slide":11,"name":"abs-val","text":"0.24525 m/s","textPreview":"0.24525 m/s","textChars":11,"textLines":1,"bbox":[220,600,520,54]}
+{"kind":"shape","id":"sh/gnehwfex","slide":11,"name":"rel","bbox":[1040,500,600,220]}
+{"kind":"textbox","id":"sh/honypkfi","slide":11,"name":"rel-head","text":"Relative error","textPreview":"Relative error","textChars":14,"textLines":1,"bbox":[1080,540,520,38]}
+{"kind":"textbox","id":"sh/l0321gz2","slide":11,"name":"rel-val","text":"2.4068%","textPreview":"2.4068%","textChars":7,"textLines":1,"bbox":[1080,600,520,54]}
+{"kind":"textbox","id":"sh/0za1sbix","slide":11,"name":"warning","text":"State which estimate and reference you compared","textPreview":"State which estimate and reference you compared","textChars":47,"textLines":1,"bbox":[115,800,1560,38]}
+{"kind":"image","id":"im/5onapk7m","slide":11,"name":"","alt":"Absolute error definition","bbox":[145,285,800,130]}
+{"kind":"notes","id":"nt/fqrxyy","slide":11,"text":"Week 06 slide 11. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/lecture-slides/equations/absolute-error.tex"}
+{"kind":"slide","id":"sl/n5q3ke","slide":12,"title":"A finite secant approximates a local tangent","textShapes":9}
+{"kind":"textbox","id":"sh/tczypwjq","slide":12,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"A finite secant approximates a local tangent","textPreview":"A finite secant approximates a local tangent","textChars":44,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/6p8fehkz","slide":12,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Forward difference uses an interval h, so it estimates rather than reproduces the derivative","textPreview":"Forward difference uses an interval h, so it estimates rather than reproduces the derivative","textChars":92,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/7ahgnm1k","slide":12,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/hgjytgjm","slide":12,"name":"reason-0","bbox":[1080,305,580,105]}
+{"kind":"textbox","id":"sh/ud8fi1kv","slide":12,"name":"reason-h-0","text":"coarse h","textPreview":"coarse h","textChars":8,"textLines":1,"bbox":[1110,325,180,35]}
+{"kind":"textbox","id":"sh/ve1gr61g","slide":12,"name":"reason-b-0","text":"secant spans a larger interval","textPreview":"secant spans a larger interval","textChars":30,"textLines":1,"bbox":[1305,323,320,55]}
+{"kind":"shape","id":"sh/4jahobid","slide":12,"name":"reason-1","bbox":[1080,455,580,105]}
+{"kind":"textbox","id":"sh/5kjyxgji","slide":12,"name":"reason-h-1","text":"smaller h","textPreview":"smaller h","textChars":9,"textLines":1,"bbox":[1110,475,180,35]}
+{"kind":"textbox","id":"sh/pk7u1gni","slide":12,"name":"reason-b-1","text":"secant samples closer to t₀","textPreview":"secant samples closer to t₀","textChars":27,"textLines":1,"bbox":[1305,473,320,55]}
+{"kind":"shape","id":"sh/ojydsbmx","slide":12,"name":"reason-2","bbox":[1080,605,580,105]}
+{"kind":"textbox","id":"sh/3ipcz65c","slide":12,"name":"reason-h-2","text":"derivative","textPreview":"derivative","textChars":10,"textLines":1,"bbox":[1110,625,180,35]}
+{"kind":"textbox","id":"sh/2hgbql47","slide":12,"name":"reason-b-2","text":"tangent rate at t₀","textPreview":"tangent rate at t₀","textChars":18,"textLines":1,"bbox":[1305,623,320,55]}
+{"kind":"image","id":"im/dwf69wne","slide":12,"name":"","alt":"MATLAB secant and tangent geometry","bbox":[180,270,740,510]}
+{"kind":"notes","id":"nt/n5q3ke","slide":12,"text":"Week 06 slide 12. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/matlab/assets/week06_forward_difference_geometry.png; MATLAB-generated evidence"}
+{"kind":"slide","id":"sl/vvw18q","slide":13,"title":"Working exposure: central difference and error behaviour","textShapes":6}
+{"kind":"textbox","id":"sh/fal876dk","slide":13,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Working exposure: central difference and error behaviour","textPreview":"Working exposure: central difference and error behaviour","textChars":56,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/gbu9gbe5","slide":13,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Interpret supplied evidence only; no independent central-difference implementation is required","textPreview":"Interpret supplied evidence only; no independent central-difference implementation is required","textChars":94,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/1c3a9gvq","slide":13,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/r6183mdo","slide":13,"name":"central-note","bbox":[1080,270,610,190]}
+{"kind":"textbox","id":"sh/s7a9cre9","slide":13,"name":"central-title","text":"symmetric samples","textPreview":"symmetric samples","textChars":17,"textLines":1,"bbox":[1110,310,550,36]}
+{"kind":"textbox","id":"sh/t83q5wve","slide":13,"name":"central-body","text":"For this quadratic model, the supplied expression matches the analytic derivative to floating-point precision","textPreview":"For this quadratic model, the supplied expression matches the analytic derivative to floating-point precision","textChars":109,"textLines":1,"bbox":[1120,365,530,72]}
+{"kind":"textbox","id":"sh/ji18zmdc","slide":13,"name":"qual","text":"Qualitative reading: an extremely small h is not a universal guarantee of a better answer","textPreview":"Qualitative reading: an extremely small h is not a universal guarantee of a better answer","textChars":89,"textLines":1,"bbox":[1030,600,610,95]}
+{"kind":"image","id":"im/rmlkz61g","slide":13,"name":"","alt":"Central-difference definition","bbox":[130,280,850,130]}
+{"kind":"image","id":"im/7qh0n21c","slide":13,"name":"","alt":"MATLAB error versus step-size plot","bbox":[155,500,760,350]}
+{"kind":"notes","id":"nt/vvw18q","slide":13,"text":"Week 06 slide 13. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week06/.agent/lecture-slides/equations/central-difference.tex; Week06/.agent/matlab/assets/week06_forward_error_vs_step.png; MATLAB-generated evidence"}
+{"kind":"slide","id":"sl/7c8bg6","slide":14,"title":"Transfer and exit ticket","textShapes":17}
+{"kind":"textbox","id":"sh/5g7mpk3i","slide":14,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Transfer and exit ticket","textPreview":"Transfer and exit ticket","textChars":24,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/idgnu5kr","slide":14,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Use the same reasoning chain in another familiar physical context","textPreview":"Use the same reasoning chain in another familiar physical context","textChars":65,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/3ep4nalc","slide":14,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/s3i50z2t","slide":14,"name":"transfer-0","bbox":[115,280,450,190]}
+{"kind":"textbox","id":"sh/d4r6t43e","slide":14,"name":"trh-0","text":"vertical motion","textPreview":"vertical motion","textChars":15,"textLines":1,"bbox":[140,325,400,42]}
+{"kind":"textbox","id":"sh/qhgnypkn","slide":14,"name":"trb-0","text":"dy/dt in m/s","textPreview":"dy/dt in m/s","textChars":12,"textLines":1,"bbox":[140,405,400,40]}
+{"kind":"shape","id":"sh/ri9orul8","slide":14,"name":"transfer-1","bbox":[675,280,450,190]}
+{"kind":"textbox","id":"sh/07i54z25","slide":14,"name":"trh-1","text":"electric potential","textPreview":"electric potential","textChars":18,"textLines":1,"bbox":[700,325,400,42]}
+{"kind":"textbox","id":"sh/18r6x43a","slide":14,"name":"trb-1","text":"E = −dV/dx in V/m","textPreview":"E = −dV/dx in V/m","textChars":17,"textLines":1,"bbox":[700,405,400,40]}
+{"kind":"shape","id":"sh/pcze543q","slide":14,"name":"transfer-2","bbox":[1235,280,450,190]}
+{"kind":"textbox","id":"sh/obqxwz25","slide":14,"name":"trh-2","text":"cooling","textPreview":"cooling","textChars":7,"textLines":1,"bbox":[1260,325,400,42]}
+{"kind":"textbox","id":"sh/nahw3ulk","slide":14,"name":"trb-2","text":"dT/dt in K/s","textPreview":"dT/dt in K/s","textChars":12,"textLines":1,"bbox":[1260,405,400,40]}
+{"kind":"shape","id":"sh/298fupkf","slide":14,"name":"exit-0","bbox":[115,610,350,190]}
+{"kind":"textbox","id":"sh/x0jy9432","slide":14,"name":"exit-h-0","text":"meaning","textPreview":"meaning","textChars":7,"textLines":1,"bbox":[140,650,300,35]}
+{"kind":"textbox","id":"sh/cfqx0j2h","slide":14,"name":"exit-b-0","text":"What rate or gradient?","textPreview":"What rate or gradient?","textChars":22,"textLines":1,"bbox":[145,715,290,55]}
+{"kind":"shape","id":"sh/behw7elw","slide":14,"name":"exit-1","bbox":[515,610,350,190]}
+{"kind":"textbox","id":"sh/ad8fy9kb","slide":14,"name":"exit-h-1","text":"unit","textPreview":"unit","textChars":4,"textLines":1,"bbox":[540,650,300,35]}
+{"kind":"textbox","id":"sh/d4fexk3i","slide":14,"name":"exit-b-1","text":"What unit follows?","textPreview":"What unit follows?","textChars":18,"textLines":1,"bbox":[545,715,290,55]}
+{"kind":"shape","id":"sh/sj6xof2x","slide":14,"name":"exit-2","bbox":[915,610,350,190]}
+{"kind":"textbox","id":"sh/knax4fat","slide":14,"name":"exit-h-2","text":"formula","textPreview":"formula","textChars":7,"textLines":1,"bbox":[940,650,300,35]}
+{"kind":"textbox","id":"sh/5ojedkbe","slide":14,"name":"exit-b-2","text":"Which two values?","textPreview":"Which two values?","textChars":17,"textLines":1,"bbox":[945,715,290,55]}
+{"kind":"shape","id":"sh/il8f25s3","slide":14,"name":"exit-3","bbox":[1315,610,350,190]}
+{"kind":"textbox","id":"sh/jm1wbat8","slide":14,"name":"exit-h-3","text":"check","textPreview":"check","textChars":5,"textLines":1,"bbox":[1340,650,300,35]}
+{"kind":"textbox","id":"sh/srax8za5","slide":14,"name":"exit-b-3","text":"What reference validates it?","textPreview":"What reference validates it?","textChars":28,"textLines":1,"bbox":[1345,715,290,55]}
+{"kind":"notes","id":"nt/7c8bg6","slide":14,"text":"Week 06 slide 14. Ask students to state the physical quantity and its unit before reading the numerical result.\n\n[Sources]\n- Week06/.agent/lecture-slides/outline.md\n- Week06/.agent/manifests/Week06_Content_Manifest.md\n- Week06/Week06_Lecture_Demonstration_Numerical_Differentiation_of_Vertical_Motion.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}

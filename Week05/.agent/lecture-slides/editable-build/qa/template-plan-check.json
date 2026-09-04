@@ -1,0 +1,141 @@
+{
+  "status": "fail",
+  "checkedAt": "2026-09-02T15:22:44.209Z",
+  "workspace": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build",
+  "mapPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-frame-map.json",
+  "inspectPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/editable-build/template-inspect/template-inspect.ndjson",
+  "sourceSlideCount": 9,
+  "issueCount": 10,
+  "issues": [
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/i54bylor\" was not found on source slide 6.",
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "targetIndex": 7,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/i54bylor"
+      },
+      "shapeId": "sh/i54bylor"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/svmt4v6t\" was not found on source slide 6.",
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "targetIndex": 8,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/svmt4v6t"
+      },
+      "shapeId": "sh/svmt4v6t"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/cbe5g3ih\" was not found on source slide 6.",
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "targetIndex": 9,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/cbe5g3ih"
+      },
+      "shapeId": "sh/cbe5g3ih"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/dcnm98zm\" was not found on source slide 6.",
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "targetIndex": 10,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/dcnm98zm"
+      },
+      "shapeId": "sh/dcnm98zm"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/qpwnet0b\" was not found on source slide 6.",
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "targetIndex": 11,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/qpwnet0b"
+      },
+      "shapeId": "sh/qpwnet0b"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/i54bylor\" was not found on source slide 6.",
+      "outputSlide": 10,
+      "sourceSlide": 6,
+      "targetIndex": 7,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/i54bylor"
+      },
+      "shapeId": "sh/i54bylor"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/svmt4v6t\" was not found on source slide 6.",
+      "outputSlide": 10,
+      "sourceSlide": 6,
+      "targetIndex": 8,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/svmt4v6t"
+      },
+      "shapeId": "sh/svmt4v6t"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/cbe5g3ih\" was not found on source slide 6.",
+      "outputSlide": 10,
+      "sourceSlide": 6,
+      "targetIndex": 9,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/cbe5g3ih"
+      },
+      "shapeId": "sh/cbe5g3ih"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/dcnm98zm\" was not found on source slide 6.",
+      "outputSlide": 10,
+      "sourceSlide": 6,
+      "targetIndex": 10,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/dcnm98zm"
+      },
+      "shapeId": "sh/dcnm98zm"
+    },
+    {
+      "severity": "fail",
+      "id": "unknown-shape-id",
+      "message": "Referenced inherited shape id \"sh/qpwnet0b\" was not found on source slide 6.",
+      "outputSlide": 10,
+      "sourceSlide": 6,
+      "targetIndex": 11,
+      "target": {
+        "action": "rewrite",
+        "sourceElementId": "sh/qpwnet0b"
+      },
+      "shapeId": "sh/qpwnet0b"
+    }
+  ]
+}

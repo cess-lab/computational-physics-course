@@ -1,0 +1,268 @@
+{
+  "success": true,
+  "data": {
+    "matches": 13,
+    "results": [
+      {
+        "path": "/slide[1]/picture[@id=12]",
+        "type": "picture",
+        "preview": "Picture 11",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 11",
+          "id": 12,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 1022984,
+          "x": "920pt",
+          "y": "187.5pt",
+          "width": "230pt",
+          "height": "345pt",
+          "zorder": 1
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[1]/picture[@id=17]",
+        "type": "picture",
+        "preview": "Picture 16",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 16",
+          "id": 17,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 1022984,
+          "x": "12501563emu",
+          "y": "131.25pt",
+          "width": "285pt",
+          "height": "427.5pt",
+          "zorder": 6
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[2]/picture[@id=14]",
+        "type": "picture",
+        "preview": "Picture 13",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 13",
+          "id": 14,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 999164,
+          "x": "866.25pt",
+          "y": "187.5pt",
+          "width": "225pt",
+          "height": "337.5pt",
+          "zorder": 7
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[5]/picture[@id=13]",
+        "type": "picture",
+        "preview": "Picture 12",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 12",
+          "id": 13,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 965775,
+          "x": "871.25pt",
+          "y": "195pt",
+          "width": "215pt",
+          "height": "322.5pt",
+          "zorder": 6
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[5]/picture[@id=14]",
+        "type": "picture",
+        "preview": "Picture 13",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 13",
+          "id": 14,
+          "alt": "(missing)",
+          "relId": "rId4",
+          "contentType": "image/png",
+          "fileSize": 539496,
+          "x": "810pt",
+          "y": "3237816emu",
+          "width": "12.7cm",
+          "height": "2573117emu",
+          "zorder": 7
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[8]/picture[@id=18]",
+        "type": "picture",
+        "preview": "Picture 17",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 17",
+          "id": 18,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 107522,
+          "x": "11144696emu",
+          "y": "457.5pt",
+          "width": "4190109emu",
+          "height": "217.5pt",
+          "zorder": 7
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[8]/picture[@id=20]",
+        "type": "picture",
+        "preview": "Picture 19",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 19",
+          "id": 20,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 107522,
+          "x": "11144696emu",
+          "y": "457.5pt",
+          "width": "4190109emu",
+          "height": "217.5pt",
+          "zorder": 9
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[9]/picture[@id=15]",
+        "type": "picture",
+        "preview": "Picture 14",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 14",
+          "id": 15,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 107522,
+          "x": "697.5pt",
+          "y": "2549621emu",
+          "width": "19.05cm",
+          "height": "4521007emu",
+          "zorder": 7
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[9]/picture[@id=16]",
+        "type": "picture",
+        "preview": "Picture 15",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 15",
+          "id": 16,
+          "alt": "(missing)",
+          "relId": "rId4",
+          "contentType": "image/png",
+          "fileSize": 621084,
+          "x": "810pt",
+          "y": "3294267emu",
+          "width": "375pt",
+          "height": "1983966emu",
+          "zorder": 8
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[10]/picture[@id=14]",
+        "type": "picture",
+        "preview": "Picture 13",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 13",
+          "id": 14,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 1393580,
+          "x": "862.5pt",
+          "y": "187.5pt",
+          "width": "225pt",
+          "height": "337.5pt",
+          "zorder": 7
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[11]/picture[@id=14]",
+        "type": "picture",
+        "preview": "Picture 13",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 13",
+          "id": 14,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 6622,
+          "x": "735pt",
+          "y": "292.14pt",
+          "width": "420pt",
+          "height": "90.72pt",
+          "zorder": 7
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[12]/picture[@id=18]",
+        "type": "picture",
+        "preview": "Picture 17",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 17",
+          "id": 18,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 107522,
+          "x": "11144696emu",
+          "y": "457.5pt",
+          "width": "4190109emu",
+          "height": "217.5pt",
+          "zorder": 7
+        },
+        "children": []
+      },
+      {
+        "path": "/slide[12]/picture[@id=20]",
+        "type": "picture",
+        "preview": "Picture 19",
+        "childCount": 0,
+        "format": {
+          "name": "Picture 19",
+          "id": 20,
+          "alt": "(missing)",
+          "relId": "rId3",
+          "contentType": "image/png",
+          "fileSize": 107522,
+          "x": "11144696emu",
+          "y": "457.5pt",
+          "width": "4190109emu",
+          "height": "217.5pt",
+          "zorder": 9
+        },
+        "children": []
+      }
+    ]
+  }
+}

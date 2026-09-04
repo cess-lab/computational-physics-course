@@ -1,22 +1,7 @@
-# PHY4605 Editable Lecture-Slide System
+# Retired PHY4605 Editable Lecture-Slide System
 
-This hidden course-level folder contains the reusable production system for PHY4605 lecture and practical-brief PowerPoint decks.
+This directory preserves historical masters, fonts, tokens, source code, renderings, and QA evidence from the retired editable-first PowerPoint route.
 
-The canonical output is an editable PPTX. PDF and flattened-PPTX files are optional distribution derivatives only.
+Do not use any file in this directory as a production input, typography requirement, master, template, or validation contract for a new lecture or practical-brief deck. In particular, Nunito, IBM Plex Mono, `Presentations`, `@oai/artifact-tool`, and the editable master are not requirements for current PHY4605 slide production.
 
-## Required assets before the first weekly build
-
-- `fonts/Nunito[wght].ttf` and its OFL licence;
-- `fonts/IBMPlexMono-Regular.ttf`;
-- `fonts/IBMPlexMono-SemiBold.ttf` and the IBM Plex licence;
-- `masters/PHY4605_Editable_Slide_Master.pptx` after an independent Sol Medium audit pass and lecturer acceptance;
-- rendered title and component proofs under `qa/`.
-
-Do not silently substitute fonts when these files are unavailable. Stage them from their official licensed sources before building or repairing the reusable master.
-
-## Source of truth
-
-- Human-readable design and production rules: `PHY4605_Lecture_Slide_Design_Spec.md` at the course root.
-- Machine-readable builder and validator tokens: `PHY4605_Lecture_Slide_Tokens.json` in this folder.
-
-If the two disagree, stop and reconcile them before producing course slides.
+New decks must follow the installed `codex-ppt` skill and the course-level `PHY4605_Lecture_Slide_Design_Spec.md`. The canonical output is a 16:9 image-based PPTX with one complete generated image per slide and English presenter notes assembled from `speech.md`.

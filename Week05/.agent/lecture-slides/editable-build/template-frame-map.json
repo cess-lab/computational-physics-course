@@ -1,0 +1,353 @@
+{
+  "sourcePptx": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/.agent/lecture-slide-system/masters/PHY4605_Editable_Slide_Master.pptx",
+  "outputSlides": [
+    {
+      "outputSlide": 1,
+      "sourceSlide": 1,
+      "narrativeRole": "opening thesis",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/547294r6" },
+        { "action": "rewrite", "sourceElementId": "sh/k3yl0zql" },
+        { "action": "rewrite", "sourceElementId": "sh/65g3298r" },
+        { "action": "rewrite", "sourceElementId": "sh/ts7md4r2" },
+        { "action": "rewrite", "sourceElementId": "sh/sryl4zqx" },
+        { "action": "replace", "sourceElementId": "im/mh4v6dwr" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 1338, "top": 200, "width": 353, "height": 530 },
+          "reason": "Place the purpose-built projectile visual in the inherited opening hero frame.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 2,
+      "sourceSlide": 7,
+      "narrativeRole": "representation change",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/id4ju1oz" },
+        { "action": "rewrite", "sourceElementId": "sh/cb2tkvap" },
+        { "action": "replace", "sourceElementId": "im/gb25wj6t" },
+        { "action": "delete", "sourceElementId": "im/vat4ne5o" },
+        { "action": "rewrite", "sourceElementId": "sh/zedcfa9g" },
+        { "action": "rewrite", "sourceElementId": "sh/l0vuh0rm" },
+        { "action": "rewrite", "sourceElementId": "sh/eh0ba1sr" },
+        { "action": "rewrite", "sourceElementId": "sh/baxkjqlk" },
+        { "action": "rewrite", "sourceElementId": "sh/a9ojq5kz" },
+        { "action": "rewrite", "sourceElementId": "sh/cbq1sv25" },
+        { "action": "rewrite", "sourceElementId": "sh/n6x0fqlo" },
+        { "action": "rewrite", "sourceElementId": "sh/p8fih03e" },
+        { "action": "rewrite", "sourceElementId": "sh/o761ov2t" },
+        { "action": "rewrite", "sourceElementId": "sh/f2d0b6lc" }
+      ]
+    },
+    {
+      "outputSlide": 3,
+      "sourceSlide": 9,
+      "narrativeRole": "concept meaning",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/wba1cjqp" },
+        { "action": "rewrite", "sourceElementId": "sh/1cfmhgne" },
+        { "action": "rewrite", "sourceElementId": "sh/ofq5svm5" },
+        { "action": "rewrite", "sourceElementId": "sh/bih4na5w" },
+        { "action": "rewrite", "sourceElementId": "sh/ah8nu54b" },
+        { "action": "rewrite", "sourceElementId": "sh/p0ji9kf2" },
+        { "action": "rewrite", "sourceElementId": "sh/2xsjepgb" },
+        { "action": "rewrite", "sourceElementId": "sh/3y107axw" },
+        { "action": "rewrite", "sourceElementId": "sh/do3id4fy" },
+        { "action": "rewrite", "sourceElementId": "sh/qlcjipgn" },
+        { "action": "rewrite", "sourceElementId": "sh/bml0buxs" },
+        { "action": "rewrite", "sourceElementId": "sh/lsn2h4fa" },
+        { "action": "rewrite", "sourceElementId": "sh/98ji147e" },
+        { "action": "rewrite", "sourceElementId": "sh/87a18zqt" },
+        { "action": "rewrite", "sourceElementId": "sh/ml8j6p8n" },
+        { "action": "rewrite", "sourceElementId": "sh/hcji5o7a" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 115, "top": 270, "width": 1515, "height": 400 },
+          "reason": "Add simple native sign-state baselines inside the four inherited concept frames.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 4,
+      "sourceSlide": 3,
+      "narrativeRole": "graph reading and bracket selection",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/a5c3ql8z" },
+        { "action": "rewrite", "sourceElementId": "sh/cza94vmx" },
+        { "action": "rewrite", "sourceElementId": "sh/298ryl4v" },
+        { "action": "rewrite", "sourceElementId": "sh/3ah8rqlg" },
+        { "action": "rewrite", "sourceElementId": "sh/pcjqtg36" },
+        { "action": "rewrite", "sourceElementId": "sh/m5cra54z" },
+        { "action": "rewrite", "sourceElementId": "sh/n6ls3alk" },
+        { "action": "rewrite", "sourceElementId": "sh/m1c3mlsn" },
+        { "action": "rewrite", "sourceElementId": "sh/83ulovat" },
+        { "action": "replace", "sourceElementId": "im/ulcnalwf" },
+        { "action": "replace", "sourceElementId": "im/vmlojqd0" },
+        { "action": "replace", "sourceElementId": "im/8ju58bep" }
+      ]
+    },
+    {
+      "outputSlide": 5,
+      "sourceSlide": 2,
+      "narrativeRole": "algorithm intuition",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/et8zmto7" },
+        { "action": "rewrite", "sourceElementId": "sh/9072xkry" },
+        { "action": "replace", "sourceElementId": "im/wbax8ful" },
+        { "action": "rewrite", "sourceElementId": "sh/je9crql0" },
+        { "action": "rewrite", "sourceElementId": "sh/69wbilcj" },
+        { "action": "rewrite", "sourceElementId": "sh/svedkvup" },
+        { "action": "rewrite", "sourceElementId": "sh/exgvmlcv" },
+        { "action": "rewrite", "sourceElementId": "sh/gzydovul" },
+        { "action": "rewrite", "sourceElementId": "sh/a1cba1wb" },
+        { "action": "rewrite", "sourceElementId": "sh/0vq1o36x" },
+        { "action": "rewrite", "sourceElementId": "sh/1wzix87i" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 488, "top": 215, "width": 943, "height": 410 },
+          "reason": "Add an editable bracket-to-midpoint-to-retained-half process within the inherited visual frame.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 6,
+      "sourceSlide": 5,
+      "narrativeRole": "worked iteration trace",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/kny587i9" },
+        { "action": "rewrite", "sourceElementId": "sh/dgbulwnm" },
+        { "action": "delete", "sourceElementId": "sh/032tgr6d" },
+        { "action": "delete", "sourceElementId": "sh/ahkvi1cb" },
+        { "action": "delete", "sourceElementId": "sh/j6dwfqds" },
+        { "action": "delete", "sourceElementId": "sh/fe94nm1w" },
+        { "action": "delete", "sourceElementId": "im/5gfi9krm" },
+        { "action": "delete", "sourceElementId": "im/4f6hgfq1" },
+        { "action": "delete", "sourceElementId": "im/jex07a9g" },
+        { "action": "delete", "sourceElementId": "im/id4ze58b" },
+        { "action": "delete", "sourceElementId": "im/t4fid4ry" },
+        { "action": "delete", "sourceElementId": "im/sj61kzqd" },
+        { "action": "delete", "sourceElementId": "im/rix0bu9s" },
+        { "action": "delete", "sourceElementId": "im/6hozip87" },
+        { "action": "rewrite", "sourceElementId": "sh/2h0ni107" },
+        { "action": "rewrite", "sourceElementId": "sh/5o7mhcju" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 115, "top": 260, "width": 1575, "height": 570 },
+          "reason": "Place the strict four-row bisection trace table in the inherited evidence area.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 7,
+      "sourceSlide": 6,
+      "narrativeRole": "MATLAB code tracing",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/bq547yhw" },
+        { "action": "rewrite", "sourceElementId": "sh/yhg7epsj" },
+        { "action": "rewrite", "sourceElementId": "sh/zi98nu94" },
+        { "action": "rewrite", "sourceElementId": "sh/98rqt4r6" },
+        { "action": "rewrite", "sourceElementId": "sh/oryp8fah" },
+        { "action": "rewrite", "sourceElementId": "sh/w32twb6l" },
+        { "action": "rewrite", "sourceElementId": "sh/5svutgni" },
+        { "action": "rewrite", "sourceElementId": "sh/i54bylor" },
+        { "action": "rewrite", "sourceElementId": "sh/svmt4v6t" },
+        { "action": "rewrite", "sourceElementId": "sh/cbe5g3ih" },
+        { "action": "rewrite", "sourceElementId": "sh/dcnm98zm" },
+        { "action": "rewrite", "sourceElementId": "sh/qpwnet0b" }
+      ]
+    },
+    {
+      "outputSlide": 8,
+      "sourceSlide": 4,
+      "narrativeRole": "validation",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/g36tgryd" },
+        { "action": "rewrite", "sourceElementId": "sh/1cj2d8b6" },
+        { "action": "rewrite", "sourceElementId": "sh/0ba143al" },
+        { "action": "rewrite", "sourceElementId": "sh/doj29oba" },
+        { "action": "rewrite", "sourceElementId": "sh/3ihk3et8" },
+        { "action": "rewrite", "sourceElementId": "sh/kbm987y5" },
+        { "action": "rewrite", "sourceElementId": "sh/jadsz2xk" },
+        { "action": "rewrite", "sourceElementId": "sh/w72947yt" },
+        { "action": "rewrite", "sourceElementId": "sh/a5kr2xg3" },
+        { "action": "replace", "sourceElementId": "im/m1s7e9k3" },
+        { "action": "replace", "sourceElementId": "im/n2187e1o" },
+        { "action": "replace", "sourceElementId": "im/83apgj29" }
+      ]
+    },
+    {
+      "outputSlide": 9,
+      "sourceSlide": 7,
+      "narrativeRole": "method concept",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/id4ju1oz" },
+        { "action": "rewrite", "sourceElementId": "sh/cb2tkvap" },
+        { "action": "replace", "sourceElementId": "im/gb25wj6t" },
+        { "action": "delete", "sourceElementId": "im/vat4ne5o" },
+        { "action": "rewrite", "sourceElementId": "sh/zedcfa9g" },
+        { "action": "rewrite", "sourceElementId": "sh/l0vuh0rm" },
+        { "action": "rewrite", "sourceElementId": "sh/eh0ba1sr" },
+        { "action": "rewrite", "sourceElementId": "sh/baxkjqlk" },
+        { "action": "rewrite", "sourceElementId": "sh/a9ojq5kz" },
+        { "action": "rewrite", "sourceElementId": "sh/cbq1sv25" },
+        { "action": "rewrite", "sourceElementId": "sh/n6x0fqlo" },
+        { "action": "rewrite", "sourceElementId": "sh/p8fih03e" },
+        { "action": "rewrite", "sourceElementId": "sh/o761ov2t" },
+        { "action": "rewrite", "sourceElementId": "sh/f2d0b6lc" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 620, "top": 370, "width": 560, "height": 320 },
+          "reason": "Add a simple native tangent construction within the inherited visual frame.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 10,
+      "sourceSlide": 6,
+      "narrativeRole": "MATLAB code and iteration trace",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/bq547yhw" },
+        { "action": "rewrite", "sourceElementId": "sh/yhg7epsj" },
+        { "action": "rewrite", "sourceElementId": "sh/zi98nu94" },
+        { "action": "rewrite", "sourceElementId": "sh/98rqt4r6" },
+        { "action": "rewrite", "sourceElementId": "sh/oryp8fah" },
+        { "action": "rewrite", "sourceElementId": "sh/w32twb6l" },
+        { "action": "rewrite", "sourceElementId": "sh/5svutgni" },
+        { "action": "rewrite", "sourceElementId": "sh/i54bylor" },
+        { "action": "rewrite", "sourceElementId": "sh/svmt4v6t" },
+        { "action": "rewrite", "sourceElementId": "sh/cbe5g3ih" },
+        { "action": "rewrite", "sourceElementId": "sh/dcnm98zm" },
+        { "action": "rewrite", "sourceElementId": "sh/qpwnet0b" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 115, "top": 260, "width": 760, "height": 570 },
+          "reason": "Use the inherited algorithm column for the exact four-evaluation Newton trace.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 11,
+      "sourceSlide": 8,
+      "narrativeRole": "comparison",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/ehgvihwr" },
+        { "action": "rewrite", "sourceElementId": "sh/18byd4zy" },
+        { "action": "rewrite", "sourceElementId": "sh/g72x4zy" },
+        { "action": "rewrite", "sourceElementId": "sh/6h0fypgb" },
+        { "action": "rewrite", "sourceElementId": "sh/tkby9kzm" },
+        { "action": "rewrite", "sourceElementId": "sh/sjix0zy1" },
+        { "action": "rewrite", "sourceElementId": "sh/id0fu50z" },
+        { "action": "rewrite", "sourceElementId": "sh/0jydkreh" },
+        { "action": "replace", "sourceElementId": "im/0rmpoj2t" },
+        { "action": "rewrite", "sourceElementId": "sh/1k7edwv2" }
+      ]
+    },
+    {
+      "outputSlide": 12,
+      "sourceSlide": 4,
+      "narrativeRole": "debugging and setup diagnosis",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/g36tgryd" },
+        { "action": "rewrite", "sourceElementId": "sh/1cj2d8b6" },
+        { "action": "rewrite", "sourceElementId": "sh/0ba143al" },
+        { "action": "rewrite", "sourceElementId": "sh/doj29oba" },
+        { "action": "rewrite", "sourceElementId": "sh/3ihk3et8" },
+        { "action": "rewrite", "sourceElementId": "sh/kbm987y5" },
+        { "action": "rewrite", "sourceElementId": "sh/jadsz2xk" },
+        { "action": "rewrite", "sourceElementId": "sh/w72947yt" },
+        { "action": "rewrite", "sourceElementId": "sh/a5kr2xg3" },
+        { "action": "delete", "sourceElementId": "im/q5onm50v" },
+        { "action": "delete", "sourceElementId": "im/m1s7e9k3" },
+        { "action": "delete", "sourceElementId": "im/n2187e1o" },
+        { "action": "delete", "sourceElementId": "im/83apgj29" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 115, "top": 390, "width": 1575, "height": 330 },
+          "reason": "Add the two simple bracket diagrams inside the inherited diagnosis panels.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 13,
+      "sourceSlide": 5,
+      "narrativeRole": "transfer and practical preparation",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/kny587i9" },
+        { "action": "rewrite", "sourceElementId": "sh/dgbulwnm" },
+        { "action": "delete", "sourceElementId": "sh/032tgr6d" },
+        { "action": "delete", "sourceElementId": "sh/ahkvi1cb" },
+        { "action": "delete", "sourceElementId": "sh/j6dwfqds" },
+        { "action": "delete", "sourceElementId": "sh/fe94nm1w" },
+        { "action": "delete", "sourceElementId": "im/5gfi9krm" },
+        { "action": "delete", "sourceElementId": "im/4f6hgfq1" },
+        { "action": "delete", "sourceElementId": "im/jex07a9g" },
+        { "action": "delete", "sourceElementId": "im/id4ze58b" },
+        { "action": "delete", "sourceElementId": "im/t4fid4ry" },
+        { "action": "delete", "sourceElementId": "im/sj61kzqd" },
+        { "action": "delete", "sourceElementId": "im/rix0bu9s" },
+        { "action": "delete", "sourceElementId": "im/6hozip87" },
+        { "action": "rewrite", "sourceElementId": "sh/2h0ni107" },
+        { "action": "rewrite", "sourceElementId": "sh/5o7mhcju" },
+        {
+          "action": "add",
+          "newPrimitiveAllowed": true,
+          "zone": { "left": 115, "top": 300, "width": 1575, "height": 520 },
+          "reason": "Place the strict transfer residual equations and shared workflow in the inherited table zone.",
+          "mustNotOverlapInherited": true
+        }
+      ]
+    },
+    {
+      "outputSlide": 14,
+      "sourceSlide": 9,
+      "narrativeRole": "recap and bridge",
+      "reuseMode": "duplicate-slide",
+      "editTargets": [
+        { "action": "rewrite", "sourceElementId": "sh/wba1cjqp" },
+        { "action": "rewrite", "sourceElementId": "sh/1cfmhgne" },
+        { "action": "rewrite", "sourceElementId": "sh/ofq5svm5" },
+        { "action": "rewrite", "sourceElementId": "sh/bih4na5w" },
+        { "action": "rewrite", "sourceElementId": "sh/ah8nu54b" },
+        { "action": "rewrite", "sourceElementId": "sh/p0ji9kf2" },
+        { "action": "rewrite", "sourceElementId": "sh/2xsjepgb" },
+        { "action": "rewrite", "sourceElementId": "sh/3y107axw" },
+        { "action": "rewrite", "sourceElementId": "sh/do3id4fy" },
+        { "action": "rewrite", "sourceElementId": "sh/qlcjipgn" },
+        { "action": "rewrite", "sourceElementId": "sh/bml0buxs" },
+        { "action": "rewrite", "sourceElementId": "sh/lsn2h4fa" },
+        { "action": "rewrite", "sourceElementId": "sh/98ji147e" },
+        { "action": "rewrite", "sourceElementId": "sh/87a18zqt" },
+        { "action": "rewrite", "sourceElementId": "sh/ml8j6p8n" },
+        { "action": "rewrite", "sourceElementId": "sh/hcji5o7a" }
+      ]
+    }
+  ]
+}

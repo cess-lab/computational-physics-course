@@ -1,0 +1,616 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "codex-ppt",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the selected Theme 1 mockup, the strict vertical-motion asset, and all slide-level source assets with view_image before delegation.",
+    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Physics to Arrays and Plots",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/projectile-visual-matte.png",
+          "role": "strict input asset; main vertical-motion illustration",
+          "fidelity": "preserve launch, peak, return direction, gravity arrow, and blue/gold colour meaning"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbb-1eed-73c2-9edc-55bfd32dfe00",
+        "agent_nickname": "Locke",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "83679067bcca43ae05b364e80d1c22a37dcd3f4e68dcbd604c6cf4f1387e14f4",
+        "dispatched_at": "2026-09-01T16:08:59Z"
+      },
+      "result": {
+        "agent_id": "01a05dbb-1eed-73c2-9edc-55bfd32dfe00",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbb-1eed-73c2-9edc-55bfd32dfe00/exec-d33a1bff-249c-46db-a30b-eea4f4cb7d18.png",
+        "selected_source_sha256": "c43ac8dbc80dcaf8fe63b75651d6f3c984a61b98f99930747fb1da6f6408c68b",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "c43ac8dbc80dcaf8fe63b75651d6f3c984a61b98f99930747fb1da6f6408c68b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Cover is readable and uses the approved muted navy/blue/sage hierarchy; the supplied projectile visual preserves launch, peak, return, gravity direction, and blue/gold meaning.",
+        "recorded_at": "2026-09-01T16:11:30Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Before MATLAB, sketch what must happen",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equation-motion-vertical-matte-v2.png",
+          "role": "strict input asset; one-dimensional vertical-motion cutaway",
+          "fidelity": "preserve the five physical positions, arrows, and state mapping"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_02.png",
+        "accepted_sample": true,
+        "backend_used": "built-in image tool",
+        "selected_source": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02-slide2/slide_02-revision-candidate.png",
+        "selected_source_sha256": "d3b106af53aa34c23dd408bbbd07b6b0fab9d3777fb8a3745edf05dc5cb89497",
+        "final_image_sha256": "d3b106af53aa34c23dd408bbbd07b6b0fab9d3777fb8a3745edf05dc5cb89497",
+        "expected_backend": "built-in image tool",
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent-owned regeneration: remove the confusing Blue/Green/Yellow colour legend while preserving the five-position motion sequence, prediction panel, and restrained semantic accents.",
+        "recorded_at": "2026-09-01T17:08:18Z",
+        "repair": {
+          "owner": "coordinating parent",
+          "method": "built-in image tool",
+          "mode": "edit",
+          "candidate": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02-slide2/slide_02-revision-candidate.png",
+          "performed_at": "2026-09-01T17:08:18Z",
+          "reason": "Parent-owned regeneration: remove the confusing Blue/Green/Yellow colour legend while preserving the five-position motion sequence, prediction panel, and restrained semantic accents."
+        }
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Decide what the computer must remember",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbb-2037-77a3-85fb-c77d0b43a68a",
+        "agent_nickname": "Aquinas",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "a21b221740bb2cdcb09f5241238afeaf707abc48907f6ea28c98b9c9cf85b8eb",
+        "dispatched_at": "2026-09-01T16:08:59Z"
+      },
+      "result": {
+        "agent_id": "01a05dbb-2037-77a3-85fb-c77d0b43a68a",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbb-2037-77a3-85fb-c77d0b43a68a/exec-c43a7728-5b9b-49d3-9939-f036fb8df00f.png",
+        "selected_source_sha256": "48c4049799ce4b50d1a627bc0df2f6a458e2005aaa6b7119da1e094740753e68",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "48c4049799ce4b50d1a627bc0df2f6a458e2005aaa6b7119da1e094740753e68",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Mapping table is projection-readable with regular explanatory text and semibold labels, matches the approved muted navy-and-sage style, and introduces no altered source asset.",
+        "recorded_at": "2026-09-01T16:11:30Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Sampling is a choice, not the motion itself",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/array-sampled-motion-matte-v2.png",
+          "role": "strict input asset; sampled-motion array illustration",
+          "fidelity": "preserve the index-to-time relationship and physical state mapping"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbb-2271-7be1-996c-db0a013bdb93",
+        "agent_nickname": "Arendt",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "e41864ce14089e2e17176e9d2dfd6114d80d6411de1e964febb46b4d936f41a8",
+        "dispatched_at": "2026-09-01T16:09:02Z"
+      },
+      "result": {
+        "agent_id": "01a05dbb-2271-7be1-996c-db0a013bdb93",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbb-2271-7be1-996c-db0a013bdb93/exec-66db05b1-86c8-47b5-980c-185c387c5a4b.png",
+        "selected_source_sha256": "b0b2fe668bf3469fe7cc138eb12f9adfbdf1a9a4c4b0a0bb8ea58e6400c22c49",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "b0b2fe668bf3469fe7cc138eb12f9adfbdf1a9a4c4b0a0bb8ea58e6400c22c49",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Text and MATLAB code are legible, the muted blue-and-sage instructional style matches the approved sample, and the sampled-motion asset’s index-to-time mapping is retained visibly.",
+        "recorded_at": "2026-09-01T16:11:31Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "One index represents one physical moment",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbb-3327-7ed1-88a3-02c3ff22fa73",
+        "agent_nickname": "Anscombe",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "fa6433fd73b6ced9c3c32880dc48ceb1f5940dd9b82a4b5a3905bee41dc10654",
+        "dispatched_at": "2026-09-01T16:09:06Z"
+      },
+      "result": {
+        "agent_id": "01a05dbb-3327-7ed1-88a3-02c3ff22fa73",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbb-3327-7ed1-88a3-02c3ff22fa73/exec-7d48f53e-9999-45a2-af34-7ab36996ca62.png",
+        "selected_source_sha256": "32089bce8a21e5e4c97d60ded77e60e4578e3dbe47f98e4d4a636db06e495f39",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "32089bce8a21e5e4c97d60ded77e60e4578e3dbe47f98e4d4a636db06e495f39",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Text is readable and the muted blue-and-sage hierarchy is consistent; the array, index 1, index 11, 0.0 s, 1.0 s, and 4.0 s mapping is visible without a strict source asset.",
+        "recorded_at": "2026-09-01T16:10:50Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Make one equation work for many times",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/vertical-motion-position-equation.png",
+          "role": "strict input asset; exact vertical-motion position equation",
+          "fidelity": "preserve every symbol, sign, fraction, superscript, and spacing"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbd-d32f-7a41-b070-095ede0837c7",
+        "agent_nickname": "Helmholtz",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "339d2753784438466b1124eb05e39dfdbdd068f38d47ad4f04c596337b985931",
+        "dispatched_at": "2026-09-01T16:11:56Z"
+      },
+      "result": {
+        "agent_id": "01a05dbd-d32f-7a41-b070-095ede0837c7",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbd-d32f-7a41-b070-095ede0837c7/exec-1acea0a4-ac2c-4964-af13-8f55e7108471.png",
+        "selected_source_sha256": "af7afdbd6cac0749956c5d5787181b8a5e8eb7076b7812a148fef9358a04c74d",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "af7afdbd6cac0749956c5d5787181b8a5e8eb7076b7812a148fef9358a04c74d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Text is readable and the approved muted blue-and-sage hierarchy is consistent; the strict equation asset is visibly faithful and linked to the three physical contributions.",
+        "recorded_at": "2026-09-01T16:14:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "The missing dot changes the operation",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbd-d54f-7ed3-8714-c26e1ea5d97a",
+        "agent_nickname": "Beauvoir",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "3cee2a4b7a3a2618bd88e16b274b3e2069ba65cecfce66378beffe05aa164250",
+        "dispatched_at": "2026-09-01T16:11:58Z"
+      },
+      "result": {
+        "agent_id": "01a05dbd-d54f-7ed3-8714-c26e1ea5d97a",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbd-d54f-7ed3-8714-c26e1ea5d97a/exec-6c1f72a7-a2f2-45a2-9957-ce4c6359b03b.png",
+        "selected_source_sha256": "d495a0741231196f5bf495aad4e7137d7ce769c5afbd79491eeae866b5937ef5",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "d495a0741231196f5bf495aad4e7137d7ce769c5afbd79491eeae866b5937ef5",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "The comparison modules are projection-readable, use restrained semantic colour, and render the scalar versus element-wise MATLAB distinction without a strict source asset.",
+        "recorded_at": "2026-09-01T16:14:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Build the algorithm before writing syntax",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbd-db55-7a80-8a32-b6c58f59d088",
+        "agent_nickname": "Hume",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "7cf5f4efe086eb4a428502689d8d6996141c601d4cacabac40278bd38901dabd",
+        "dispatched_at": "2026-09-01T16:12:00Z"
+      },
+      "result": {
+        "agent_id": "01a05dbd-db55-7a80-8a32-b6c58f59d088",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbd-db55-7a80-8a32-b6c58f59d088/exec-845a21bb-93e1-494e-b1a4-d71e4487cc40.png",
+        "selected_source_sha256": "8e341d5dd1ea4b9a2117d3b46fcccc7fe12e01fb60a808037265aa222638db46",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "8e341d5dd1ea4b9a2117d3b46fcccc7fe12e01fb60a808037265aa222638db46",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "The five-step algorithm pathway is projection-readable, follows the approved muted courseware style, and avoids a repeated oversized prompt treatment.",
+        "recorded_at": "2026-09-01T16:14:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Read the Live Script in the order the physics runs",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dbd-e5bf-7f51-ba4d-d49ce9dd6da2",
+        "agent_nickname": "Tesla",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "8720d5d22ea30664938e9666da6deeb7d9952d723e3ee9c236f31c4ec377d21c",
+        "dispatched_at": "2026-09-01T16:12:03Z"
+      },
+      "result": {
+        "agent_id": "01a05dbd-e5bf-7f51-ba4d-d49ce9dd6da2",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dbd-e5bf-7f51-ba4d-d49ce9dd6da2/exec-f168a3a0-57b3-44c7-a9c4-7d4cd9dc76a4.png",
+        "selected_source_sha256": "36f791f481ed88ccc0a383a2455764106195906c773665500cfb0db97859c2a7",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "36f791f481ed88ccc0a383a2455764106195906c773665500cfb0db97859c2a7",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Code and trace labels are readable, the exact MATLAB punctuation is preserved, and the approved muted navy-and-sage hierarchy is consistent.",
+        "recorded_at": "2026-09-01T16:14:12Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Compare the prediction with the plotted evidence",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/matlab-figures/height_time_evidence.png",
+          "role": "strict input asset; main MATLAB evidence plot",
+          "fidelity": "preserve data, axes, labels, units, ticks, grid, curve, and values; do not redraw"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dc0-7320-7782-adf1-5a06bb0df31c",
+        "agent_nickname": "Hilbert",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "2569567f75025b917a3845ff7107c87433931a320f901ec0b4305a709c233746",
+        "dispatched_at": "2026-09-01T16:14:48Z"
+      },
+      "result": {
+        "agent_id": "01a05dc0-7320-7782-adf1-5a06bb0df31c",
+        "backend_used": "built-in image tool",
+        "selected_source": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02-plot/slide_10-revision-candidate.png",
+        "selected_source_sha256": "df2718e7cf1f3d09402b591378275c45b2c2054bfebfc6a4c7529a0638cee09c",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "df2718e7cf1f3d09402b591378275c45b2c2054bfebfc6a4c7529a0638cee09c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent-owned regeneration: restore a realistic plotted height-time graph with visible axes, ticks, units, grid, and curve while keeping the three explanatory labels locally attached to the start, peak, and descending segment.",
+        "recorded_at": "2026-09-01T16:56:15Z",
+        "repair": {
+          "owner": "coordinating parent",
+          "method": "built-in image tool",
+          "mode": "edit",
+          "candidate": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02-plot/slide_10-revision-candidate.png",
+          "performed_at": "2026-09-01T16:56:15Z",
+          "reason": "Parent-owned regeneration: restore a realistic plotted height-time graph with visible axes, ticks, units, grid, and curve while keeping the three explanatory labels locally attached to the start, peak, and descending segment.",
+          "strict_graph_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/matlab-figures/height_time_evidence.png"
+        },
+        "repair_history": [
+          {
+            "owner": "coordinating parent",
+            "method": "built-in image tool",
+            "mode": "generate",
+            "candidate": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02/slide_10-revision-candidate.png",
+            "performed_at": "2026-09-01T16:38:55Z",
+            "reason": "Parent-owned regeneration: replace the MATLAB plot and ambiguous crossing leader lines with a fully generated qualitative curve and direct local labels."
+          }
+        ]
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Use a check the model must pass",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/launch-boundary-condition-matte.png",
+          "role": "strict input asset; launch boundary illustration",
+          "fidelity": "preserve launch state and validation meaning"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/computed-first-value.png",
+          "role": "strict input asset; computed first value expression",
+          "fidelity": "preserve exact expression and value"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/assets/equations/launch-time.png",
+          "role": "strict input asset; launch time expression",
+          "fidelity": "preserve exact time statement"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dc0-7409-7872-98a8-c1572af61a9e",
+        "agent_nickname": "Poincare",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "4a3a0260ef7ae2eba8b81dd46169e3c050132b420ad7a3382591b984768fef38",
+        "dispatched_at": "2026-09-01T16:14:48Z"
+      },
+      "result": {
+        "agent_id": "01a05dc0-7409-7872-98a8-c1572af61a9e",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05dc0-7409-7872-98a8-c1572af61a9e/exec-620e7555-a62e-4fb4-a98e-adf0d97e78b1.png",
+        "selected_source_sha256": "70dcb8c9bd9071448bcd09f42cd3395b97e10fa7f599fd0e4d21042db02a54fc",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "70dcb8c9bd9071448bcd09f42cd3395b97e10fa7f599fd0e4d21042db02a54fc",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "The supplied launch and equation assets remain visibly faithful, the executable boundary check and pass state are readable, and the approved muted blue-and-sage style is consistent.",
+        "recorded_at": "2026-09-01T16:19:43Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "State what the computation lets us claim",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dc0-7504-76e0-bf8f-ea8962810f99",
+        "agent_nickname": "Hegel",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "f5fa01f584a479a734325628082ec8a1ee3dc64fa4d82004bde51567f6e524bc",
+        "dispatched_at": "2026-09-01T16:14:50Z"
+      },
+      "result": {
+        "agent_id": "01a05dc0-7504-76e0-bf8f-ea8962810f99",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05cf3-0777-7c02-b5ac-b2793da2f5ee/exec-6e81df78-bfdb-40fd-911d-58eba5b2d6bf.png",
+        "selected_source_sha256": "0aafc617ee31503267d8a5434cb98b97daa805c0c6746b51c4850add946726ab",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "0aafc617ee31503267d8a5434cb98b97daa805c0c6746b51c4850add946726ab",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent-owned localized built-in-image-tool edit removed fabricated graph values and replaced them with a clearly qualitative curve; all other panels retain the approved muted style and readable text.",
+        "recorded_at": "2026-09-01T16:18:22Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Week 1 exit ticket",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved sample slide style reference",
+          "fidelity": "match palette, typography hierarchy, density, texture, and visual identity only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a05dc0-7e37-7550-8938-92d92b2b5774",
+        "agent_nickname": "Meitner",
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "143fbabdf26d15b8ad37cdcffdbe910cf74fc56f50d90bf60cee8875b1f9e696",
+        "dispatched_at": "2026-09-01T16:14:53Z"
+      },
+      "result": {
+        "agent_id": "01a05dc0-7e37-7550-8938-92d92b2b5774",
+        "backend_used": "built-in image tool",
+        "selected_source": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02-outer-frame/slide_13-revision-candidate.png",
+        "selected_source_sha256": "2bdc654f5daea08e5c075fce51a492fd6c9a149706eb0cddc058a221460fde79",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "2bdc654f5daea08e5c075fce51a492fd6c9a149706eb0cddc058a221460fde79",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent-owned regeneration: retain the four bordered exit-ticket cards while removing the outer frame, corner patterns, decorative background shapes, and boxed bottom banner for consistency with the open white deck.",
+        "recorded_at": "2026-09-01T17:02:58Z",
+        "repair": {
+          "owner": "coordinating parent",
+          "method": "built-in image tool",
+          "mode": "edit",
+          "candidate": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02-outer-frame/slide_13-revision-candidate.png",
+          "performed_at": "2026-09-01T17:02:58Z",
+          "reason": "Parent-owned regeneration: retain the four bordered exit-ticket cards while removing the outer frame, corner patterns, decorative background shapes, and boxed bottom banner for consistency with the open white deck."
+        },
+        "repair_history": [
+          {
+            "owner": "coordinating parent",
+            "method": "built-in image tool",
+            "mode": "generate",
+            "candidate": "Week01/.agent/lecture-slides/codex-ppt/qa/repairs-2026-09-02/slide_13-revision-candidate.png",
+            "performed_at": "2026-09-01T16:38:55Z",
+            "reason": "Parent-owned regeneration: replace the text-only vertical prompt list with a graphical two-by-two exit-ticket layout and four labelled conceptual icons."
+          }
+        ]
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-01T17:08:18Z"
+}

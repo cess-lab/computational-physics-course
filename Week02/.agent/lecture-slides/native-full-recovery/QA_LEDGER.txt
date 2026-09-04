@@ -1,0 +1,44 @@
+PHY4605 lecture-deck QA ledger — Week 02
+
+Scope
+- Restore the visual teaching evidence that was lost in the earlier repair-safe text-only recovery.
+- Required evidence: diverse generated illustrations, LaTeX validation equation, MATLAB-generated plots, editable MATLAB code cards, loop tracing, debugging, and physical interpretation.
+
+Paired production contract
+- Generator: gpt-5.6-terra, medium reasoning; owns the editable source, assets, stage PPTX, and source revisions.
+- Auditor: gpt-5.6-sol, medium reasoning; read-only review of rendered slides and QA evidence.
+- Production route: @oai/artifact-tool stage -> Microsoft PowerPoint native Save As -> close/reopen verification.
+- Prohibited: post-export JSZip, officecli mutation, or raw XML mutation.
+
+Round 1
+- Generator decision: rebuild the deck from the approved PHY4605 visual master and restore the Week 02 pseudocode/loop/debugging teaching sequence.
+- Initial auditor result: FAIL. Findings included missing teaching visuals, weak/empty modification and interpretation evidence, overlapping slide content, generic provenance, missing alt text, and stale evidence binding.
+- Decision: continue to Round 2 source revision.
+
+Round 2
+- Generator decision: add a vertical-launch hero, prediction/stroboscopic illustrations, LaTeX known-initial-value equation, MATLAB parameter-change plot, and editable loop/tracing/debugging code cards.
+- Decision: continue to Round 3 visual diversification and cleanup.
+
+Round 3
+- Generator decision: add distinct ImageGen visuals rather than reusing Week 01 assets: loop-tracing-matte.png and debugging-magnifier-matte.png; separate the plots into readable lower panels and retain the LaTeX validation equation.
+- Stage: Week02_artifact-stage.pptx; SHA-256 09b92f3d00e2d801f26ecd706694fbfce7dd836d35666656a16d9b84b13f4863.
+- Stage evidence: 13 slides, 13 embedded pictures, editable IBM Plex Mono code cards, distinct ImageGen illustrations, MATLAB plots, and LaTeX validation equation.
+
+Final canonical evidence
+- File: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week02/Lecture_Slides_Week02.pptx
+- SHA-256: d3e3d23d984dfbe01ae43335864dac85155d59ce3aaaf51738687a64590e9888.
+- Native PowerPoint reopen: PASS; opened directly as “Lecture_Slides_Week02”, 13 slides, no repair prompt observed.
+- Structure: officecli validate PASS; unzip -t PASS; 16:9; 13 slides; 13 pictures; 86 total shapes; 385 words.
+- Render evidence: qa/round-3/canonical-render/, canonical-contact.png, title-contact.png.
+- Query evidence: pictures.json, canonical-stats.json, canonical-issues.json.
+
+Final auditor decision (gpt-5.6-sol, medium): FAIL on residual presentation/accessibility issues, while repair-free opening and visual recovery passed.
+- W2 slide 9 graph/illustration still competes with the explanatory claim and lower callout; slides 8 and 12 plots are small for projection-scale axes/legend reading.
+- officecli reports title overflow on slides 5 and 11; pictures lack alt text after native save; no structural title objects are recognized.
+- These residuals are retained as evidence rather than silently edited after the three-round cap.
+
+Asset provenance
+- New ImageGen visuals: imagegen/loop-tracing-matte.png and imagegen/debugging-magnifier-matte.png.
+- Additional retained ImageGen visuals: imagegen/vertical-launch-prediction.png, imagegen/stroboscopic-sampled-positions.png, imagegen/debugging-validation-sign.png, vertical-launch-matte.png.
+- LaTeX-rendered equation assets: equations/known-initial-value.png and equations/vertical-launch-model.png with supporting .tex/.svg files.
+- MATLAB-generated evidence: ../matlab/assets/week02_loop_position.png and retained source data under Week02/.agent/matlab/.

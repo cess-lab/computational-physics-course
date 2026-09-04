@@ -1,0 +1,18 @@
+{
+  "success": true,
+  "data": {
+    "slides": 14,
+    "totalShapes": 233,
+    "textBoxes": 233,
+    "pictures": 5,
+    "charts": 0,
+    "oleObjects": 0,
+    "words": 728,
+    "slidesWithoutTitle": 14,
+    "picturesWithoutAlt": 0,
+    "fontUsage": {
+      "Nunito": 149,
+      "IBM Plex Mono": 27
+    }
+  }
+}

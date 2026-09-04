@@ -1,0 +1,23 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+FILE: Week07/Week07_Lecture_Demonstration_Numerical_Integration_of_Decaying_Force.m
+NOPTS line 18: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 40: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 47: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 52: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 68: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 73: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 76: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 82: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 83: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 84: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 94: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 95: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 100: Add a semicolon after the statement to hide the output (in a script).
+NOPTS line 104: Add a semicolon after the statement to hide the output (in a script).
+FILE: Week07/Week07_Practical_AI_Enabled_Numerical_Integration_Challenge_Set.m

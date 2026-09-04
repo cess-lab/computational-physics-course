@@ -1,0 +1,156 @@
+[
+  {
+    "id": "/ppt/slideMasters/slideMaster1.xml",
+    "name": "Master",
+    "parentLayoutId": "",
+    "placeholders": [
+      {
+        "name": "title",
+        "type": "title",
+        "text": ""
+      },
+      {
+        "name": "subtitle",
+        "type": "subtitle",
+        "text": ""
+      },
+      {
+        "name": "slideNumber",
+        "type": "slideNumber",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "id": "/ppt/slideLayouts/slideLayout1.xml",
+    "name": "Title Slide",
+    "parentLayoutId": "/ppt/slideMasters/slideMaster1.xml",
+    "placeholders": [
+      {
+        "name": "title",
+        "type": "title",
+        "text": ""
+      },
+      {
+        "name": "subtitle",
+        "type": "subtitle",
+        "text": ""
+      },
+      {
+        "name": "slideNumber",
+        "type": "slideNumber",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "id": "/ppt/slideMasters/slideMaster2.xml",
+    "name": "PHY4605 Borderless White Master",
+    "parentLayoutId": "",
+    "placeholders": [
+      {
+        "name": "title",
+        "type": "title",
+        "text": ""
+      },
+      {
+        "name": "subtitle",
+        "type": "subtitle",
+        "text": ""
+      },
+      {
+        "name": "slideNumber",
+        "type": "slideNumber",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "id": "/ppt/slideLayouts/slideLayout2.xml",
+    "name": "Opening",
+    "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "placeholders": [
+      {
+        "name": "body",
+        "type": "body",
+        "text": ""
+      },
+      {
+        "name": "title",
+        "type": "title",
+        "text": ""
+      },
+      {
+        "name": "subtitle",
+        "type": "subtitle",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "id": "/ppt/slideLayouts/slideLayout3.xml",
+    "name": "Content T1",
+    "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "placeholders": [
+      {
+        "name": "title",
+        "type": "title",
+        "text": ""
+      },
+      {
+        "name": "subtitle",
+        "type": "subtitle",
+        "text": ""
+      },
+      {
+        "name": "slideNumber",
+        "type": "slideNumber",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "id": "/ppt/slideLayouts/slideLayout4.xml",
+    "name": "Content T2",
+    "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "placeholders": [
+      {
+        "name": "title",
+        "type": "title",
+        "text": ""
+      },
+      {
+        "name": "subtitle",
+        "type": "subtitle",
+        "text": ""
+      },
+      {
+        "name": "slideNumber",
+        "type": "slideNumber",
+        "text": ""
+      }
+    ]
+  },
+  {
+    "id": "/ppt/slideLayouts/slideLayout5.xml",
+    "name": "Content T3",
+    "parentLayoutId": "/ppt/slideMasters/slideMaster2.xml",
+    "placeholders": [
+      {
+        "name": "title",
+        "type": "title",
+        "text": ""
+      },
+      {
+        "name": "subtitle",
+        "type": "subtitle",
+        "text": ""
+      },
+      {
+        "name": "slideNumber",
+        "type": "slideNumber",
+        "text": ""
+      }
+    ]
+  }
+]

@@ -1,0 +1,48 @@
+{
+  "slide": 3,
+  "title": "One Decaying-Force Model",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 3,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nTeach Year-2 physics students to translate physical accumulation into sampled trapezoidal geometry, MATLAB trapz with explicit coordinates, refinement evidence, analytic-reference validation, simple error, and physical interpretation.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"deck_context\": \"Week 07 uses one familiar exponentially decaying force model so the new cognitive load is numerical integration. The visible reasoning chain is physical quantity and limits, units, sampled curve, one trapezoid, composite rule, pseudocode, MATLAB trapz, refinement, independent reference, error, validation, and physical interpretation.\",\n    \"core_claim\": \"A numerical integral is a physical accumulated area whose unit combines the vertical and horizontal axes. A computed value becomes credible only after its coordinates, units, refinement behaviour, independent reference, and physical meaning have been checked.\",\n    \"locked_model\": \"F(t) = F0*exp(-t/tau), F0 = 12 N, tau = 0.8 s, 0 <= t <= T = 2.0 s. Impulse J = integral_0^T F(t) dt has unit N s = kg m/s. Core interval counts are 4, 8, and 16 with spacings 0.500, 0.250, and 0.125 s.\",\n    \"locked_evidence\": \"J_exact = 8.8119840132 N s. Trapezoidal estimates for 4, 8, and 16 intervals are 9.0969821492, 8.8835796745, and 8.8299047499 N s. Finest absolute error is 0.0179207367 N s and finest relative error is 0.203368%. The physical bound is 0 < J < 24 N s. The supplied eight-interval Simpson result is 8.8124455163 N s with absolute error about 0.0004615030 N s.\",\n    \"exactness\": \"Equations, MATLAB code, variable names, array indices, endpoint weights, limits, sample counts, values, signs, units, axes, validation statements, and numerical evidence are strict teaching content. Do not invent, paraphrase, omit, or approximate them.\",\n    \"canonical_terms\": [\n      \"numerical integration\",\n      \"physical accumulation\",\n      \"impulse\",\n      \"integration limits\",\n      \"trapezoidal rule\",\n      \"sample coordinates\",\n      \"trapz(t,F)\",\n      \"refinement\",\n      \"analytic reference\",\n      \"absolute error\",\n      \"relative error\",\n      \"physical interpretation\"\n    ]\n  },\n  \"slide_local_context\": \"Include exact parameter code: F0_N = 12; tau_s = 0.8; T_s = 2.0; coarse_intervals = 4; impulse_upper_bound_Ns = F0_N*T_s;\"\n}\n\n## Global Style\n{\n  \"name\": \"PHY4605 Teaching Courseware - Muted Academic Blue + Sage\",\n  \"visual_direction\": \"Clear modern educational slide system matching the approved Week 07 sample and recent Week 03-04 decks, with strong hierarchy, approachable scientific diagrams, and moderate information density.\",\n  \"color_palette\": \"Warm-white canvas; deep navy for titles and structure; dusty blue for model content; quiet sage or teal for validated states; muted ochre for prompts; subdued coral only for genuine defects.\",\n  \"typography\": \"Large bold navy sans-serif title aligned flush left; projection-readable body copy; readable monospaced MATLAB code; exact mathematical symbols and units.\",\n  \"title_treatment\": \"Every content slide uses a large left-aligned navy title near the upper-left margin and one thin deep-navy horizontal separator immediately below it, extending nearly across the full slide width. Content starts clearly below the rule.\",\n  \"density_rule\": \"One dominant learning object, concise supporting copy, and visible whitespace. Split graph, code, and validation into clearly aligned zones.\",\n  \"texture_and_finish\": \"Flat clean educational finish, pale fills, thin functional lines, direct labels, no gradients, no decorative clutter, and no thick outer frame.\",\n  \"deck_consistency\": \"Match the approved Slide 06 sample's palette, title scale, left alignment, separator line, spacing rhythm, panel treatment, and approachable scientific tone while varying composition by slide role.\",\n  \"prohibited\": [\n    \"centered titles on content slides\",\n    \"missing title separator line\",\n    \"thick outer frame\",\n    \"slide numbers\",\n    \"timings\",\n    \"source labels\",\n    \"production metadata\",\n    \"unrelated logos\",\n    \"tiny text\",\n    \"unlabelled decorative graphs\"\n  ]\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/.codex/worktrees/bda2/computational-physics-course/Week07/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png — approved Week 07 Teaching Courseware sample and deck-level style reference; match palette, typography scale, left-aligned title, horizontal separator, density, spacing, texture, panel treatment, and visual identity; do not copy the exact Slide 06 layout\n- Image 2: /Users/khairuladib/.codex/worktrees/bda2/computational-physics-course/Week07/.agent/matlab/assets/week07_impulse_trapezoids.png — reference-only numerical geometry for the decaying force; redraw the model curve; preserve parameter values, limits, and axis meaning\n\n\n## Slide\n{\n  \"number\": 3,\n  \"title\": \"One Decaying-Force Model\",\n  \"role\": \"model, parameters, and physical bound\",\n  \"intent\": \"Lock the physical model and prediction before numerical integration.\"\n}\n\n## Text\n{\n  \"title\": \"One Decaying-Force Model\",\n  \"key_points\": [\n    \"F(t) = 12 exp(-t/0.8) N for 0 <= t <= 2.0 s.\",\n    \"Force remains positive and decreases continuously.\",\n    \"Prediction: 0 < J < 12 x 2 = 24 N s.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"model equation and parameter code on the left, smooth decay curve inside a 24 N s bounding rectangle on the right\",\n  \"variation\": \"model-plus-bound\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"smooth positive decaying curve compared with the rectangular upper bound\",\n  \"supporting_elements\": \"small parameter code and bound statement\"\n}\n\n## Constraints\n[\n  \"Preserve 12, 0.8, 2.0, and 24 exactly.\",\n  \"No numerical integral result yet.\",\n  \"No slide number or outer frame.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_03.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/.codex/worktrees/bda2/computational-physics-course/Week07/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
+      "role": "approved Week 07 Teaching Courseware sample and deck-level style reference",
+      "fidelity": "match palette, typography scale, left-aligned title, horizontal separator, density, spacing, texture, panel treatment, and visual identity; do not copy the exact Slide 06 layout"
+    },
+    {
+      "path": "/Users/khairuladib/.codex/worktrees/bda2/computational-physics-course/Week07/.agent/matlab/assets/week07_impulse_trapezoids.png",
+      "role": "reference-only numerical geometry for the decaying force",
+      "fidelity": "redraw the model curve; preserve parameter values, limits, and axis meaning"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "Week 07 Slide 06 revision prompt using the initial Slide 06 sample plus Week 03-04 approved PHY4605 slide images as visual-style references",
+    "size": "16:9 landscape, 1672 x 941 output from built-in backend",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/.codex/worktrees/bda2/computational-physics-course/Week07/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
+    "input_context_preparation": "Parent inspected the Week 07 MATLAB reference figure and representative Week 03-04 slides with view_image before generating and approving the sample.",
+    "handoff_rule": "Subagents must use the same built-in image tool in edit mode with local reference images prepared via view_image; return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

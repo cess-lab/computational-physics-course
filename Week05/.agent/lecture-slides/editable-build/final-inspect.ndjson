@@ -1,0 +1,354 @@
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster1.xml","name":"Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout1.xml","name":"Title Slide","type":"title","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideMasters/slideMaster2.xml","name":"PHY4605 Borderless White Master","type":"master","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout2.xml","name":"Opening","placeholders":[{"name":"body","type":"body"},{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout3.xml","name":"Content T1","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout4.xml","name":"Content T2","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"layout","layoutId":"/ppt/slideLayouts/slideLayout5.xml","name":"Content T3","placeholders":[{"name":"title","type":"title"},{"name":"subtitle","type":"subtitle"},{"name":"slideNumber","type":"slideNumber"}]}
+{"kind":"slide","id":"sl/s0i56n","slide":1,"title":"From a Physical Target","textShapes":10}
+{"kind":"textbox","id":"sh/50zyd47u","slide":1,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"From a Physical Target\nto a Checkable Root","textPreview":"From a Physical Target | to a Checkable Root","textChars":42,"textLines":2,"bbox":[115,245,1080,210]}
+{"kind":"textbox","id":"sh/ixozi9o3","slide":1,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Week 5 | Root finding with bisection and Newton","textPreview":"Week 5 | Root finding with bisection and Newton","textChars":47,"textLines":1,"bbox":[115,475,1180,80]}
+{"kind":"textbox","id":"sh/jyxgbepo","slide":1,"name":"course-tag","text":"PHY4605 Computational Methods in Physics","textPreview":"PHY4605 Computational Methods in Physics","textChars":40,"textLines":1,"bbox":[115,126,760,38]}
+{"kind":"textbox","id":"sh/xwfy947i","slide":1,"name":"hero-label-left","text":"same launch speed","textPreview":"same launch speed","textChars":17,"textLines":1,"bbox":[1230,760,260,36]}
+{"kind":"textbox","id":"sh/atozepo7","slide":1,"name":"hero-label-right","text":"different angles","textPreview":"different angles","textChars":16,"textLines":1,"bbox":[1505,760,270,36]}
+{"kind":"shape","id":"sh/vuxg7ups","slide":1,"name":"workflow-1","bbox":[115,860,339,64]}
+{"kind":"textbox","id":"sh/grqhsj6h","slide":1,"name":"workflow-label-1","text":"physical model","textPreview":"physical model","textChars":14,"textLines":1,"bbox":[127,874,315,36]}
+{"kind":"shape","id":"sh/hsjilon2","slide":1,"name":"workflow-arrow-1","bbox":[466,881,28,22]}
+{"kind":"shape","id":"sh/xwfidc76","slide":1,"name":"workflow-2","bbox":[502,860,339,64]}
+{"kind":"textbox","id":"sh/cv6hk7ql","slide":1,"name":"workflow-label-2","text":"residual","textPreview":"residual","textChars":8,"textLines":1,"bbox":[514,874,315,36]}
+{"kind":"shape","id":"sh/bux0b290","slide":1,"name":"workflow-arrow-2","bbox":[853,881,28,22]}
+{"kind":"shape","id":"sh/atozix8f","slide":1,"name":"workflow-3","bbox":[889,860,339,64]}
+{"kind":"textbox","id":"sh/psvi9sru","slide":1,"name":"workflow-label-3","text":"bracket","textPreview":"bracket","textChars":7,"textLines":1,"bbox":[901,874,315,36]}
+{"kind":"shape","id":"sh/ormhg7q9","slide":1,"name":"workflow-arrow-3","bbox":[1240,881,28,22]}
+{"kind":"shape","id":"sh/nqd07294","slide":1,"name":"workflow-4","bbox":[1276,860,339,64]}
+{"kind":"textbox","id":"sh/2p4zex8j","slide":1,"name":"workflow-label-4","text":"validation","textPreview":"validation","textChars":10,"textLines":1,"bbox":[1288,874,315,36]}
+{"kind":"textbox","id":"sh/9ozilw7e","slide":1,"name":"opening-note","text":"Find the angle that makes the predicted range meet the target","textPreview":"Find the angle that makes the predicted range meet the target","textChars":61,"textLines":1,"bbox":[115,950,1500,34]}
+{"kind":"image","id":"im/9ovm1s7q","slide":1,"name":"","alt":"Two projectile trajectories with different ranges","bbox":[1230,175,545,570]}
+{"kind":"notes","id":"nt/s0i56n","slide":1,"text":"## Slide 1: From a physical target to a checkable root\n\nStart with the physical question rather than the numerical method. A projectile leaves level ground at 20 metres per second, and the target range is 35 metres. The unknown is a launch angle: we want an input that makes the model output meet a specified condition.\n\nAsk students to predict what a useful answer should look like. It should be an angle, not a distance, and it should be checked against the target range. The rest of the lecture turns that physical question into a computation we can inspect.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- visual"}
+{"kind":"slide","id":"sl/bnp8iw","slide":2,"title":"Turn the target condition into a residual","textShapes":10}
+{"kind":"textbox","id":"sh/mls72pwz","slide":2,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Turn the target condition into a residual","textPreview":"Turn the target condition into a residual","textChars":41,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/98jqdkva","slide":2,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"The root is the angle that makes predicted range equal the target","textPreview":"The root is the angle that makes predicted range equal the target","textChars":65,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/8nap4fep","slide":2,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/ziho7ad8","slide":2,"name":"model-stage-1","bbox":[115,285,460,105]}
+{"kind":"textbox","id":"sh/yh87y5wn","slide":2,"name":"model-stage-heading-1","text":"physical model","textPreview":"physical model","textChars":14,"textLines":1,"bbox":[143,318,404,42]}
+{"kind":"shape","id":"sh/lkjq9kve","slide":2,"name":"model-stage-arrow-1","bbox":[590,327,62,28]}
+{"kind":"shape","id":"sh/kjqp0fet","slide":2,"name":"model-stage-2","bbox":[680,285,460,105]}
+{"kind":"textbox","id":"sh/jel8jedc","slide":2,"name":"model-stage-heading-2","text":"target condition","textPreview":"target condition","textChars":16,"textLines":1,"bbox":[708,318,404,42]}
+{"kind":"shape","id":"sh/idc7a9wr","slide":2,"name":"model-stage-arrow-2","bbox":[1155,327,62,28]}
+{"kind":"shape","id":"sh/4bql8z29","slide":2,"name":"model-stage-3","bbox":[1245,285,460,105]}
+{"kind":"textbox","id":"sh/pwz214ju","slide":2,"name":"model-stage-heading-3","text":"residual = 0","textPreview":"residual = 0","textChars":12,"textLines":1,"bbox":[1273,318,404,42]}
+{"kind":"textbox","id":"sh/3ahkzu1o","slide":2,"name":"residual-explanation","text":"The residual is the signed miss: predicted range minus target range","textPreview":"The residual is the signed miss: predicted range minus target range","textChars":67,"textLines":1,"bbox":[220,720,1480,50]}
+{"kind":"shape","id":"sh/g7614f2d","slide":2,"name":"workflow-1","bbox":[115,815,468,64]}
+{"kind":"textbox","id":"sh/h8f2xkjy","slide":2,"name":"workflow-label-1","text":"predict range","textPreview":"predict range","textChars":13,"textLines":1,"bbox":[127,829,444,36]}
+{"kind":"shape","id":"sh/u5oj2pk7","slide":2,"name":"workflow-arrow-1","bbox":[595,836,28,22]}
+{"kind":"shape","id":"sh/f6xkvuls","slide":2,"name":"workflow-2","bbox":[631,815,468,64]}
+{"kind":"textbox","id":"sh/s3610f21","slide":2,"name":"workflow-label-2","text":"subtract 35 m","textPreview":"subtract 35 m","textChars":13,"textLines":1,"bbox":[643,829,444,36]}
+{"kind":"shape","id":"sh/t4f2tk3m","slide":2,"name":"workflow-arrow-2","bbox":[1111,836,28,22]}
+{"kind":"shape","id":"sh/9onqhcre","slide":2,"name":"workflow-3","bbox":[1147,815,468,64]}
+{"kind":"textbox","id":"sh/8ne987qt","slide":2,"name":"workflow-label-3","text":"seek zero","textPreview":"seek zero","textChars":9,"textLines":1,"bbox":[1159,829,444,36]}
+{"kind":"image","id":"im/hofilwja","slide":2,"name":"","alt":"LaTeX-rendered projectile range model and residual definition","bbox":[190,455,1540,230]}
+{"kind":"notes","id":"nt/bnp8iw","slide":2,"text":"## Slide 2: Turn the target condition into a residual\n\nThe projectile model gives the range as a function of launch angle. The target condition is that this range equals 35 metres. A numerical root finder works with the residual, which is the model output minus the target: `f(theta) = R(theta) - 35 m`.\n\nThe key distinction is between the unknown and the mismatch. The root is an angle in degree. The residual is a distance in metres. At a root, the residual is zero because the model and target agree. Keep those two units separate as we move into the graph.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- model"}
+{"kind":"slide","id":"sl/51qyu1","slide":3,"title":"Read the residual sign as physics","textShapes":16}
+{"kind":"textbox","id":"sh/c3up8nuh","slide":3,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Read the residual sign as physics","textPreview":"Read the residual sign as physics","textChars":33,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/b2l8zidw","slide":3,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"A residual carries direction, not just error size","textPreview":"A residual carries direction, not just error size","textChars":49,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/ahc76dcr","slide":3,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/pg3qx8v6","slide":3,"name":"sign-card-1","bbox":[115,285,500,410]}
+{"kind":"textbox","id":"sh/ofup43ul","slide":3,"name":"sign-heading-1","text":"undershoot","textPreview":"undershoot","textChars":10,"textLines":1,"bbox":[147,325,436,42]}
+{"kind":"shape","id":"sh/ne1ovyd0","slide":3,"name":"sign-baseline-1","bbox":[195,455,340,0]}
+{"kind":"shape","id":"sh/2ds72dcf","slide":3,"name":"sign-target-1","bbox":[353,443,24,24]}
+{"kind":"shape","id":"sh/1cj6t8vu","slide":3,"name":"sign-ball-1","bbox":[275,425,48,48]}
+{"kind":"shape","id":"sh/0bap03u9","slide":3,"name":"sign-travel-1","bbox":[255,425,82,0]}
+{"kind":"textbox","id":"sh/y1sreh4n","slide":3,"name":"sign-symbol-1","text":"negative","textPreview":"negative","textChars":8,"textLines":1,"bbox":[147,520,436,48]}
+{"kind":"textbox","id":"sh/j218nm58","slide":3,"name":"sign-body-1","text":"range below target","textPreview":"range below target","textChars":18,"textLines":1,"bbox":[147,590,436,40]}
+{"kind":"textbox","id":"sh/kna9grmt","slide":3,"name":"sign-arrow-1","text":"shorter","textPreview":"shorter","textChars":7,"textLines":1,"bbox":[147,635,436,32]}
+{"kind":"shape","id":"sh/lojqpcne","slide":3,"name":"sign-card-2","bbox":[710,285,500,410]}
+{"kind":"textbox","id":"sh/ax8rax4r","slide":3,"name":"sign-heading-2","text":"exact hit","textPreview":"exact hit","textChars":9,"textLines":1,"bbox":[742,325,436,42]}
+{"kind":"shape","id":"sh/byh8j25c","slide":3,"name":"sign-baseline-2","bbox":[790,455,340,0]}
+{"kind":"shape","id":"sh/cza9c7mh","slide":3,"name":"sign-target-2","bbox":[948,443,24,24]}
+{"kind":"shape","id":"sh/x0jqlcn2","slide":3,"name":"sign-ball-2","bbox":[948,425,48,48]}
+{"kind":"shape","id":"sh/2t876x4f","slide":3,"name":"sign-travel-2","bbox":[850,425,128,0]}
+{"kind":"textbox","id":"sh/nuh8f250","slide":3,"name":"sign-symbol-2","text":"zero","textPreview":"zero","textChars":4,"textLines":1,"bbox":[742,520,436,48]}
+{"kind":"textbox","id":"sh/rydonyls","slide":3,"name":"sign-body-2","text":"range matches target","textPreview":"range matches target","textChars":20,"textLines":1,"bbox":[742,590,436,40]}
+{"kind":"textbox","id":"sh/qd4netk7","slide":3,"name":"sign-arrow-2","text":"root","textPreview":"root","textChars":4,"textLines":1,"bbox":[742,635,436,32]}
+{"kind":"shape","id":"sh/d0f6p83y","slide":3,"name":"sign-card-3","bbox":[1305,285,500,410]}
+{"kind":"textbox","id":"sh/szm5g32d","slide":3,"name":"sign-heading-3","text":"overshoot","textPreview":"overshoot","textChars":9,"textLines":1,"bbox":[1337,325,436,42]}
+{"kind":"shape","id":"sh/f2xoryl4","slide":3,"name":"sign-baseline-3","bbox":[1385,455,340,0]}
+{"kind":"shape","id":"sh/e1onitkj","slide":3,"name":"sign-target-3","bbox":[1543,443,24,24]}
+{"kind":"shape","id":"sh/14f6t83u","slide":3,"name":"sign-ball-3","bbox":[1685,425,48,48]}
+{"kind":"shape","id":"sh/0365k329","slide":3,"name":"sign-travel-3","bbox":[1445,425,224,0]}
+{"kind":"textbox","id":"sh/v6t4felk","slide":3,"name":"sign-symbol-3","text":"positive","textPreview":"positive","textChars":8,"textLines":1,"bbox":[1337,520,436,48]}
+{"kind":"textbox","id":"sh/u5kn69kz","slide":3,"name":"sign-body-3","text":"range above target","textPreview":"range above target","textChars":18,"textLines":1,"bbox":[1337,590,436,40]}
+{"kind":"textbox","id":"sh/kbilgfix","slide":3,"name":"sign-arrow-3","text":"longer","textPreview":"longer","textChars":6,"textLines":1,"bbox":[1337,635,436,32]}
+{"kind":"shape","id":"sh/y903e50r","slide":3,"name":"sign-takeaway","bbox":[115,878,1560,62]}
+{"kind":"textbox","id":"sh/ja9kna1c","slide":3,"name":"sign-takeaway-text","text":"The sign tells the algorithm which direction of miss must be corrected","textPreview":"The sign tells the algorithm which direction of miss must be corrected","textChars":70,"textLines":1,"bbox":[150,891,1490,36]}
+{"kind":"image","id":"im/uls72dkb","slide":3,"name":"","alt":"LaTeX-rendered residual sign meanings","bbox":[255,745,1410,112]}
+{"kind":"notes","id":"nt/51qyu1","slide":3,"text":"## Slide 3: Read the residual sign as physics\n\nBefore iterating, make the sign meaningful. A negative residual means the model range is shorter than 35 metres, so the projectile undershoots. A positive residual means the model range is longer, so it overshoots. Zero means the target condition is met.\n\nThis interpretation gives every later numerical value a physical meaning. When a bisection midpoint has a negative residual, we know which side of the target it lies on. The sign is not decoration attached to the output; it is the direction of the model error.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- signs"}
+{"kind":"slide","id":"sl/4x7fa3","slide":4,"title":"Find the zero crossing before coding","textShapes":13}
+{"kind":"textbox","id":"sh/tkbexczi","slide":4,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Find the zero crossing before coding","textPreview":"Find the zero crossing before coding","textChars":36,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/6hkf2hg7","slide":4,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Bracket first: opposite endpoint signs fence a root","textPreview":"Bracket first: opposite endpoint signs fence a root","textChars":51,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/7itwv2hs","slide":4,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/gnmx8ry9","slide":4,"name":"bracket-evidence","bbox":[115,285,450,565]}
+{"kind":"textbox","id":"sh/hove1wzu","slide":4,"name":"bracket-heading","text":"candidate bracket","textPreview":"candidate bracket","textChars":17,"textLines":1,"bbox":[150,325,380,42]}
+{"kind":"textbox","id":"sh/ul4f6hg3","slide":4,"name":"bracket-a-label","text":"left endpoint","textPreview":"left endpoint","textChars":13,"textLines":1,"bbox":[155,410,170,30]}
+{"kind":"textbox","id":"sh/vmdwzmho","slide":4,"name":"bracket-a-value","text":"20 degree","textPreview":"20 degree","textChars":9,"textLines":1,"bbox":[155,443,330,42]}
+{"kind":"textbox","id":"sh/4bmxcry5","slide":4,"name":"bracket-a-residual","text":"f(20 degree) = −8.7905 m","textPreview":"f(20 degree) = −8.7905 m","textChars":24,"textLines":1,"bbox":[155,490,360,36]}
+{"kind":"shape","id":"sh/5cvy5wzq","slide":4,"name":"bracket-rule","bbox":[155,552,370,0]}
+{"kind":"textbox","id":"sh/9sj218ra","slide":4,"name":"bracket-b-label","text":"right endpoint","textPreview":"right endpoint","textChars":14,"textLines":1,"bbox":[155,595,170,30]}
+{"kind":"textbox","id":"sh/8rqls3ap","slide":4,"name":"bracket-b-value","text":"40 degree","textPreview":"40 degree","textChars":9,"textLines":1,"bbox":[155,628,330,42]}
+{"kind":"textbox","id":"sh/nqhkzy94","slide":4,"name":"bracket-b-residual","text":"f(40 degree) = +5.1553 m","textPreview":"f(40 degree) = +5.1553 m","textChars":24,"textLines":1,"bbox":[155,675,360,36]}
+{"kind":"shape","id":"sh/mp83qdsj","slide":4,"name":"bracket-conclusion","bbox":[150,750,380,64]}
+{"kind":"textbox","id":"sh/xgj2psrm","slide":4,"name":"bracket-conclusion-text","text":"opposite signs → keep [20, 40]","textPreview":"opposite signs → keep [20, 40]","textChars":30,"textLines":1,"bbox":[170,766,340,34]}
+{"kind":"textbox","id":"sh/vu1k3i9g","slide":4,"name":"graph-callout","text":"zero crossing","textPreview":"zero crossing","textChars":13,"textLines":1,"bbox":[1120,328,240,34]}
+{"kind":"shape","id":"sh/ats3udsv","slide":4,"name":"graph-callout-line","bbox":[1220,365,0,60]}
+{"kind":"shape","id":"sh/dkf2tor2","slide":4,"name":"graph-takeaway","bbox":[610,888,1120,52]}
+{"kind":"textbox","id":"sh/cz61kjah","slide":4,"name":"graph-takeaway-text","text":"The graph suggests where to look; the endpoint signs make the start defensible","textPreview":"The graph suggests where to look; the endpoint signs make the start defensible","textChars":78,"textLines":1,"bbox":[640,899,1060,30]}
+{"kind":"image","id":"im/3i1ofqdg","slide":4,"name":"","alt":"MATLAB-generated projectile-range residual plot for a 35 m target","bbox":[610,280,1120,600]}
+{"kind":"notes","id":"nt/4x7fa3","slide":4,"text":"## Slide 4: Find the zero crossing before coding\n\nThe residual graph lets us see the root before we ask MATLAB to iterate. For the locked scan from 10 to 70 degrees, the low-angle residual is negative at 20 degrees and positive at 40 degrees: approximately -8.7905 metres and +5.1553 metres.\n\nThat sign change selects the low-angle bracket `[20, 40]` degrees. The graph also contains a higher-angle crossing, but it is not part of today's Core route. Our immediate job is to choose and defend one bracket for one physical root.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- plot"}
+{"kind":"slide","id":"sl/2z9v1z","slide":5,"title":"Bisection keeps a sign change alive","textShapes":25}
+{"kind":"textbox","id":"sh/25cnqxgv","slide":5,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Bisection keeps a sign change alive","textPreview":"Bisection keeps a sign change alive","textChars":35,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/p83mlcfm","slide":5,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Test the midpoint, then keep the sign-changing half","textPreview":"Test the midpoint, then keep the sign-changing half","textChars":51,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/o7u5s7y1","slide":5,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/f2l4fihk","slide":5,"name":"bisection-axis-label","text":"launch angle, theta (degree)","textPreview":"launch angle, theta (degree)","textChars":28,"textLines":1,"bbox":[115,252,520,36]}
+{"kind":"shape","id":"sh/ehcnmdgz","slide":5,"name":"bisection-top-axis","bbox":[210,375,350,0]}
+{"kind":"shape","id":"sh/143mhsfa","slide":5,"name":"bisection-top-left","bbox":[198,363,24,24]}
+{"kind":"shape","id":"sh/g3u5ony5","slide":5,"name":"bisection-top-right","bbox":[548,363,24,24]}
+{"kind":"textbox","id":"sh/7e14bih8","slide":5,"name":"bisection-top-min","text":"20 degree","textPreview":"20 degree","textChars":9,"textLines":1,"bbox":[144,403,132,34]}
+{"kind":"textbox","id":"sh/6ds3idgn","slide":5,"name":"bisection-top-max","text":"40 degree","textPreview":"40 degree","textChars":9,"textLines":1,"bbox":[494,403,132,34]}
+{"kind":"shape","id":"sh/k3u5obm5","slide":5,"name":"bisection-top-mid","bbox":[371,361,28,28]}
+{"kind":"shape","id":"sh/l43mxgnq","slide":5,"name":"bisection-top-mid-tick","bbox":[385,389,0,38]}
+{"kind":"textbox","id":"sh/y1s3m14z","slide":5,"name":"bisection-top-mid-label","text":"30 degree","textPreview":"30 degree","textChars":9,"textLines":1,"bbox":[313,435,144,34]}
+{"kind":"textbox","id":"sh/z214v65k","slide":5,"name":"bisection-zero-label","text":"zero residual","textPreview":"zero residual","textChars":13,"textLines":1,"bbox":[315,295,180,32]}
+{"kind":"shape","id":"sh/czalkrm9","slide":5,"name":"bisection-zero-marker","bbox":[385,327,0,36]}
+{"kind":"textbox","id":"sh/x0jmtwnu","slide":5,"name":"bisection-test","text":"test the midpoint","textPreview":"test the midpoint","textChars":17,"textLines":1,"bbox":[650,292,250,36]}
+{"kind":"textbox","id":"sh/qxs3i143","slide":5,"name":"bisection-keep","text":"keep the sign-changing half","textPreview":"keep the sign-changing half","textChars":27,"textLines":1,"bbox":[1140,292,470,36]}
+{"kind":"shape","id":"sh/by14rm5o","slide":5,"name":"bisection-top-arrow-1","bbox":[600,355,72,34]}
+{"kind":"shape","id":"sh/wve5wvmd","slide":5,"name":"bisection-top-arrow-2","bbox":[1000,355,72,34]}
+{"kind":"shape","id":"sh/hwnm503y","slide":5,"name":"bisection-mid-axis","bbox":[735,375,230,0]}
+{"kind":"shape","id":"sh/50zutwrq","slide":5,"name":"bisection-mid-left","bbox":[723,363,24,24]}
+{"kind":"shape","id":"sh/4fqd0ra5","slide":5,"name":"bisection-mid-right","bbox":[953,363,24,24]}
+{"kind":"textbox","id":"sh/jehcrm9k","slide":5,"name":"bisection-mid-min","text":"20 degree","textPreview":"20 degree","textChars":9,"textLines":1,"bbox":[669,403,132,34]}
+{"kind":"textbox","id":"sh/id8vyhsf","slide":5,"name":"bisection-mid-max","text":"30 degree","textPreview":"30 degree","textChars":9,"textLines":1,"bbox":[899,403,132,34]}
+{"kind":"textbox","id":"sh/hczupwru","slide":5,"name":"bisection-mid-left-value","text":"f(20 degree) = −8.7905 m","textPreview":"f(20 degree) = −8.7905 m","textChars":24,"textLines":1,"bbox":[640,425,360,34]}
+{"kind":"textbox","id":"sh/wb6dwra9","slide":5,"name":"bisection-mid-right-value","text":"f(30 degree) = +0.31194 m","textPreview":"f(30 degree) = +0.31194 m","textChars":25,"textLines":1,"bbox":[1010,425,360,34]}
+{"kind":"shape","id":"sh/vaxcnm9o","slide":5,"name":"step-number-1","bbox":[115,610,54,54]}
+{"kind":"textbox","id":"sh/u9ovuhs3","slide":5,"name":"step-number-text-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[115,617,54,40]}
+{"kind":"textbox","id":"sh/98fulcri","slide":5,"name":"step-title-1","text":"choose opposite signs","textPreview":"choose opposite signs","textChars":21,"textLines":1,"bbox":[187,614,283,52]}
+{"kind":"shape","id":"sh/876ds7ax","slide":5,"name":"bisection-step-arrow-1","bbox":[470,626,44,28]}
+{"kind":"shape","id":"sh/yd4r2d8v","slide":5,"name":"step-number-2","bbox":[530,610,54,54]}
+{"kind":"textbox","id":"sh/zedsvipg","slide":5,"name":"step-number-text-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[530,617,54,40]}
+{"kind":"textbox","id":"sh/0fmt4nq1","slide":5,"name":"step-title-2","text":"compute midpoint","textPreview":"compute midpoint","textChars":16,"textLines":1,"bbox":[602,614,283,52]}
+{"kind":"shape","id":"sh/lgvaxs7m","slide":5,"name":"bisection-step-arrow-2","bbox":[885,626,44,28]}
+{"kind":"shape","id":"sh/qpkryt8z","slide":5,"name":"step-number-3","bbox":[945,610,54,54]}
+{"kind":"textbox","id":"sh/batsrypk","slide":5,"name":"step-number-text-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[945,617,54,40]}
+{"kind":"textbox","id":"sh/cb2903qp","slide":5,"name":"step-title-3","text":"evaluate residual","textPreview":"evaluate residual","textChars":17,"textLines":1,"bbox":[1017,614,283,52]}
+{"kind":"shape","id":"sh/dcbat87a","slide":5,"name":"bisection-step-arrow-3","bbox":[1300,626,44,28]}
+{"kind":"shape","id":"sh/2l0rut8n","slide":5,"name":"step-number-4","bbox":[1360,610,54,54]}
+{"kind":"textbox","id":"sh/3mtsny98","slide":5,"name":"step-number-text-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1360,617,54,40]}
+{"kind":"textbox","id":"sh/fydozut4","slide":5,"name":"step-title-4","text":"keep the sign change","textPreview":"keep the sign change","textChars":20,"textLines":1,"bbox":[1432,614,283,52]}
+{"kind":"shape","id":"sh/uxk7qpcj","slide":5,"name":"bisection-question","bbox":[115,760,1560,120]}
+{"kind":"shape","id":"sh/h0v614ba","slide":5,"name":"bisection-question-mark","bbox":[150,788,64,64]}
+{"kind":"textbox","id":"sh/gzmpszup","slide":5,"name":"bisection-question-mark-text","text":"?","textPreview":"?","textChars":1,"textLines":1,"bbox":[150,796,64,50]}
+{"kind":"textbox","id":"sh/7atovuts","slide":5,"name":"bisection-question-title","text":"Why is the midpoint not enough?","textPreview":"Why is the midpoint not enough?","textChars":31,"textLines":1,"bbox":[250,785,560,36]}
+{"kind":"textbox","id":"sh/69knmpc7","slide":5,"name":"bisection-question-body","text":"Because bisection needs a bracket whose endpoint residuals have opposite signs","textPreview":"Because bisection needs a bracket whose endpoint residuals have opposite signs","textChars":78,"textLines":1,"bbox":[250,830,1250,34]}
+{"kind":"notes","id":"nt/2z9v1z","slide":5,"text":"## Slide 5: Bisection keeps a sign change alive\n\nBisection uses the bracket as its safety structure. We calculate the midpoint of the current interval, evaluate its residual, and retain the half whose endpoints still have opposite signs. In the first step, the midpoint is 30 degrees and its residual is positive, so the valid sign-changing half is `[20, 30]` degrees.\n\nThe midpoint alone is not the guarantee. The guarantee comes from keeping opposite endpoint signs alive after each update. That is the idea students should be able to say in plain language before reading the loop.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}
+{"kind":"slide","id":"sl/6qdzlh","slide":6,"title":"Trace the first four bisection updates","textShapes":13}
+{"kind":"textbox","id":"sh/rmdcfedo","slide":6,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Trace the first four bisection updates","textPreview":"Trace the first four bisection updates","textChars":38,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/cnmt8je9","slide":6,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Track the interval and the residual before the next midpoint","textPreview":"Track the interval and the residual before the next midpoint","textChars":60,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/dovuhovu","slide":6,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"6","textPreview":"6","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/3itcbudc","slide":6,"name":"trace-diagram-heading","text":"the sign-changing half survives","textPreview":"the sign-changing half survives","textChars":31,"textLines":1,"bbox":[1340,292,430,46]}
+{"kind":"textbox","id":"sh/4j2t4zex","slide":6,"name":"trace-range-label-1","text":"row 1","textPreview":"row 1","textChars":5,"textLines":1,"bbox":[1320,382,90,30]}
+{"kind":"shape","id":"sh/pkbud4vi","slide":6,"name":"trace-range-line-1","bbox":[1450,410,240,0]}
+{"kind":"shape","id":"sh/ut0bypwv","slide":6,"name":"trace-range-left-1","bbox":[1439,399,22,22]}
+{"kind":"shape","id":"sh/futc7uxg","slide":6,"name":"trace-range-right-1","bbox":[1679,399,22,22]}
+{"kind":"textbox","id":"sh/z21cfqp4","slide":6,"name":"trace-range-text-1","text":"[20, 40]","textPreview":"[20, 40]","textChars":8,"textLines":1,"bbox":[1410,440,340,30]}
+{"kind":"textbox","id":"sh/y18b6l8j","slide":6,"name":"trace-range-label-2","text":"row 2","textPreview":"row 2","textChars":5,"textLines":1,"bbox":[1320,474,90,30]}
+{"kind":"shape","id":"sh/l4juh07a","slide":6,"name":"trace-range-line-2","bbox":[1450,502,120,0]}
+{"kind":"shape","id":"sh/k3at8vqp","slide":6,"name":"trace-range-left-2","bbox":[1439,491,22,22]}
+{"kind":"shape","id":"sh/761c3qp0","slide":6,"name":"trace-range-right-2","bbox":[1559,491,22,22]}
+{"kind":"textbox","id":"sh/m5sval8f","slide":6,"name":"trace-range-text-2","text":"[20, 30]","textPreview":"[20, 30]","textChars":8,"textLines":1,"bbox":[1410,532,340,30]}
+{"kind":"textbox","id":"sh/98ju5076","slide":6,"name":"trace-range-label-3","text":"row 3","textPreview":"row 3","textChars":5,"textLines":1,"bbox":[1320,566,90,30]}
+{"kind":"shape","id":"sh/87adcvql","slide":6,"name":"trace-range-line-3","bbox":[1510,594,60,0]}
+{"kind":"shape","id":"sh/3ahc769w","slide":6,"name":"trace-range-left-3","bbox":[1499,583,22,22]}
+{"kind":"shape","id":"sh/29oby18b","slide":6,"name":"trace-range-right-3","bbox":[1559,583,22,22]}
+{"kind":"textbox","id":"sh/65wf69sz","slide":6,"name":"trace-range-text-3","text":"[25, 30]","textPreview":"[25, 30]","textChars":8,"textLines":1,"bbox":[1410,624,340,30]}
+{"kind":"textbox","id":"sh/r65wfe9k","slide":6,"name":"trace-range-label-4","text":"row 4","textPreview":"row 4","textChars":5,"textLines":1,"bbox":[1320,658,90,30]}
+{"kind":"shape","id":"sh/srex8ja5","slide":6,"name":"trace-range-line-4","bbox":[1540,686,30,0]}
+{"kind":"shape","id":"sh/ts7yh4rq","slide":6,"name":"trace-range-left-4","bbox":[1529,675,22,22]}
+{"kind":"shape","id":"sh/i1wf2psn","slide":6,"name":"trace-range-right-4","bbox":[1559,675,22,22]}
+{"kind":"textbox","id":"sh/j25wbu98","slide":6,"name":"trace-range-text-4","text":"[27.5, 30]","textPreview":"[27.5, 30]","textChars":10,"textLines":1,"bbox":[1410,716,340,30]}
+{"kind":"shape","id":"sh/43ex4zat","slide":6,"name":"trace-takeaway","bbox":[115,845,1560,62]}
+{"kind":"textbox","id":"sh/54ned4re","slide":6,"name":"trace-takeaway-text","text":"Each row leaves one sign change intact, so the root stays inside the next bracket","textPreview":"Each row leaves one sign change intact, so the root stays inside the next bracket","textChars":81,"textLines":1,"bbox":[150,859,1490,34]}
+{"kind":"table","id":"tb/v25sbud8","slide":6,"name":"","rows":5,"cols":5,"preview":"iteration | current bracket (degree) | midpoint (degree) | f(mid) (m) | keep","bbox":[115,290,1180,500]}
+{"kind":"notes","id":"nt/6qdzlh","slide":6,"text":"## Slide 6: Trace the first four bisection updates\n\nRead the table row by row. The first midpoint, 30 degrees, overshoots, so the right endpoint moves to 30. The next midpoint, 25 degrees, undershoots, so the left endpoint moves to 25. The third and fourth rows repeat the same sign decision.\n\nThe important pattern is midpoint, residual, retained half. The interval becomes smaller because the sign-changing evidence is preserved, not because the midpoint is automatically close to the answer.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/bisection_first_four.tex"}
+{"kind":"slide","id":"sl/7ehka4","slide":7,"title":"Read the bisection scaffold, line by line","textShapes":14}
+{"kind":"textbox","id":"sh/m9knytk3","slide":7,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Read the bisection scaffold, line by line","textPreview":"Read the bisection scaffold, line by line","textChars":41,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/9cvmt8je","slide":7,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"The loop is a translation of the sign-preserving algorithm","textPreview":"The loop is a translation of the sign-preserving algorithm","textChars":58,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/ob25032t","slide":7,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"7","textPreview":"7","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/z6t4ny1c","slide":7,"name":"bisection-code-card","bbox":[115,285,1690,560]}
+{"kind":"textbox","id":"sh/e5k3utkr","slide":7,"name":"bisection-code-label","text":"MATLAB scaffold","textPreview":"MATLAB scaffold","textChars":15,"textLines":1,"bbox":[150,315,320,36]}
+{"kind":"textbox","id":"sh/18bmpoji","slide":7,"name":"bisection-code","text":"bis_left_deg = left_deg;\nbis_right_deg = right_deg;\nfor iteration = 1:max_iterations\n    mid_deg = (bis_left_deg + bis_right_deg)/2;\n    f_mid_m = (v0_mps^2/g_mps2)*sind(2*mid_deg) - target_m;\n    if abs(f_mid_m) < tolerance_m\n        break\n    end\n    f_bis_left_m = (v0_mps^2/g_mps2)*sind(2*bis_left_deg) - target_m;\n    if f_bis_left_m*f_mid_m < 0\n        bis_right_deg = mid_deg;\n    else\n        bis_left_deg = mid_deg;\n    end\nend\nbisection_root_deg = mid_deg;","textPreview":"bis_left_deg = left_deg; | bis_right_deg = right_deg; | for iteration = 1:max_iterations |     mid_deg = (bis_left_deg + bis_right_deg)/2...","textChars":466,"textLines":16,"bbox":[150,360,1620,430]}
+{"kind":"shape","id":"sh/0725wj2x","slide":7,"name":"code-callout-circle-1","bbox":[150,815,34,34]}
+{"kind":"textbox","id":"sh/ri94je1g","slide":7,"name":"code-callout-number-1","text":"1","textPreview":"1","textChars":1,"textLines":1,"bbox":[150,819,34,24]}
+{"kind":"textbox","id":"sh/qh03q9kv","slide":7,"name":"code-callout-label-1","text":"midpoint","textPreview":"midpoint","textChars":8,"textLines":1,"bbox":[198,815,300,30]}
+{"kind":"shape","id":"sh/0n2l4ji9","slide":7,"name":"code-callout-circle-2","bbox":[555,815,34,34]}
+{"kind":"textbox","id":"sh/1ob2d4ju","slide":7,"name":"code-callout-number-2","text":"2","textPreview":"2","textChars":1,"textLines":1,"bbox":[555,819,34,24]}
+{"kind":"textbox","id":"sh/elk32903","slide":7,"name":"code-callout-label-2","text":"stop on residual","textPreview":"stop on residual","textChars":16,"textLines":1,"bbox":[603,815,300,30]}
+{"kind":"shape","id":"sh/fmtkbe1o","slide":7,"name":"code-callout-circle-3","bbox":[960,815,34,34]}
+{"kind":"textbox","id":"sh/sjil0z2x","slide":7,"name":"code-callout-number-3","text":"3","textPreview":"3","textChars":1,"textLines":1,"bbox":[960,819,34,24]}
+{"kind":"textbox","id":"sh/dkr294ji","slide":7,"name":"code-callout-label-3","text":"test left sign","textPreview":"test left sign","textChars":14,"textLines":1,"bbox":[1008,815,300,30]}
+{"kind":"shape","id":"sh/qx03ypk7","slide":7,"name":"code-callout-circle-4","bbox":[1365,815,34,34]}
+{"kind":"textbox","id":"sh/ry9k7u1c","slide":7,"name":"code-callout-number-4","text":"4","textPreview":"4","textChars":1,"textLines":1,"bbox":[1365,819,34,24]}
+{"kind":"textbox","id":"sh/cfmlc3ih","slide":7,"name":"code-callout-label-4","text":"replace one bound","textPreview":"replace one bound","textChars":17,"textLines":1,"bbox":[1413,815,300,30]}
+{"kind":"shape","id":"sh/xgvmlojm","slide":7,"name":"code-prompt","bbox":[115,875,1560,50]}
+{"kind":"textbox","id":"sh/5cr25ob6","slide":7,"name":"code-prompt-text","text":"Which line protects the sign change?","textPreview":"Which line protects the sign change?","textChars":36,"textLines":1,"bbox":[150,885,1490,30]}
+{"kind":"notes","id":"nt/7ehka4","slide":7,"text":"## Slide 7: Read the bisection scaffold, line by line\n\nNow connect the code to the trace. `mid_deg` is the centre of the current bracket. `f_mid_m` evaluates the physical residual in metres. The condition `abs(f_mid_m) < tolerance_m` is the one supplied Core stopping rule.\n\nThe sign-product test is the branch that decides which endpoint changes. If the left residual and midpoint residual have opposite signs, the midpoint becomes the new right endpoint. Otherwise the midpoint becomes the new left endpoint. The code is simply the earlier reasoning written in MATLAB.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week05/.agent/lecture-slides/codex-ppt/assets/strict/code/bisection_scaffold.tex"}
+{"kind":"slide","id":"sl/5epg6a","slide":8,"title":"Stop once, then substitute back","textShapes":10}
+{"kind":"textbox","id":"sh/krm18n61","slide":8,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Stop once, then substitute back","textPreview":"Stop once, then substitute back","textChars":31,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/j6dkfi5g","slide":8,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"A small residual matters only after checking the physical model","textPreview":"A small residual matters only after checking the physical model","textChars":63,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/i54j6dov","slide":8,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"8","textPreview":"8","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/twf2lsni","slide":8,"name":"bisection-result-card","bbox":[115,285,590,535]}
+{"kind":"textbox","id":"sh/sv61cn6x","slide":8,"name":"bisection-result-heading","text":"bisection result","textPreview":"bisection result","textChars":16,"textLines":1,"bbox":[150,330,520,42]}
+{"kind":"textbox","id":"sh/7uxkji5c","slide":8,"name":"bisection-root","text":"29.5679 degree","textPreview":"29.5679 degree","textChars":14,"textLines":1,"bbox":[150,420,520,62]}
+{"kind":"textbox","id":"sh/6tojador","slide":8,"name":"bisection-iterations","text":"13 recorded iterations","textPreview":"13 recorded iterations","textChars":22,"textLines":1,"bbox":[150,510,520,40]}
+{"kind":"shape","id":"sh/90b2987e","slide":8,"name":"bisection-stop-rule","bbox":[160,615,500,86]}
+{"kind":"textbox","id":"sh/8z21g36t","slide":8,"name":"bisection-stop-rule-text","text":"stop: |residual| < 1e-3 m","textPreview":"stop: |residual| < 1e-3 m","textChars":25,"textLines":1,"bbox":[180,640,460,36]}
+{"kind":"textbox","id":"sh/yx07adsf","slide":8,"name":"bisection-result-note","text":"Use the root as an input to the model, not as the final claim","textPreview":"Use the root as an input to the model, not as the final claim","textChars":61,"textLines":1,"bbox":[160,745,500,52]}
+{"kind":"shape","id":"sh/zy9o3it0","slide":8,"name":"validation-card","bbox":[800,285,1005,535]}
+{"kind":"textbox","id":"sh/0zipcna5","slide":8,"name":"validation-heading","text":"substitution check","textPreview":"substitution check","textChars":18,"textLines":1,"bbox":[840,325,925,42]}
+{"kind":"shape","id":"sh/n29o7itw","slide":8,"name":"validation-takeaway","bbox":[115,860,1560,58]}
+{"kind":"textbox","id":"sh/832pgnah","slide":8,"name":"validation-takeaway-text","text":"Validation closes the loop: the reported angle reproduces the target range","textPreview":"Validation closes the loop: the reported angle reproduces the target range","textChars":74,"textLines":1,"bbox":[150,874,1490,32]}
+{"kind":"table","id":"tb/t4fu507m","slide":8,"name":"","rows":4,"cols":3,"preview":"check | result | interpretation","bbox":[840,565,925,210]}
+{"kind":"image","id":"im/6ds7yxw7","slide":8,"name":"","alt":"LaTeX-rendered root substitution and residual check","bbox":[865,385,875,155]}
+{"kind":"notes","id":"nt/5epg6a","slide":8,"text":"## Slide 8: Stop once, then substitute back\n\nThe bisection scaffold stops when the residual magnitude is below `1e-3 m`. It reaches `29.5679 degree` after 13 recorded iterations, with residual `+4.1164e-4 m`.\n\nDo not accept the result because the loop stopped. Substitute the angle back into the original range model. The model returns `35.0004 m`, and the residual is below the supplied tolerance. The physical statement is that this low-angle launch makes the model range meet the 35 metre target within the stated check.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- validation"}
+{"kind":"slide","id":"sl/m8tq4t","slide":9,"title":"Newton follows the local tangent","textShapes":11}
+{"kind":"textbox","id":"sh/gr29k36h","slide":9,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Newton follows the local tangent","textPreview":"Newton follows the local tangent","textChars":32,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/fq98by5w","slide":9,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"A tangent turns the residual into a local correction","textPreview":"A tangent turns the residual into a local correction","textChars":52,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/ep0ritob","slide":9,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"9","textPreview":"9","textChars":1,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/pwbqh8ny","slide":9,"name":"newton-geometry-card","bbox":[115,285,900,560]}
+{"kind":"shape","id":"sh/ov29o36d","slide":9,"name":"newton-schematic-x-axis","bbox":[220,730,690,0]}
+{"kind":"shape","id":"sh/3ut8fy58","slide":9,"name":"newton-schematic-y-axis","bbox":[235,370,0,360]}
+{"kind":"shape","id":"sh/2tkrmton","slide":9,"name":"newton-schematic-zero","bbox":[235,525,675,0]}
+{"kind":"shape","id":"sh/xkvqlsna","slide":9,"name":"newton-schematic-curve","bbox":[235,345,690,410]}
+{"kind":"shape","id":"sh/cjm9sn6p","slide":9,"name":"newton-schematic-current","bbox":[584,494,22,22]}
+{"kind":"shape","id":"sh/mhkbip43","slide":9,"name":"newton-schematic-tangent","bbox":[595,505,270,20]}
+{"kind":"shape","id":"sh/7idcrul8","slide":9,"name":"newton-schematic-root","bbox":[853,513,24,24]}
+{"kind":"textbox","id":"sh/8jmtkzmt","slide":9,"name":"newton-schematic-current-label","text":"current θ","textPreview":"current θ","textChars":9,"textLines":1,"bbox":[525,527,140,34]}
+{"kind":"textbox","id":"sh/9kvut43e","slide":9,"name":"newton-schematic-root-label","text":"next θ","textPreview":"next θ","textChars":6,"textLines":1,"bbox":[795,473,140,34]}
+{"kind":"textbox","id":"sh/ul4bm94z","slide":9,"name":"newton-schematic-zero-label","text":"residual = 0","textPreview":"residual = 0","textChars":12,"textLines":1,"bbox":[240,492,160,30]}
+{"kind":"textbox","id":"sh/vmdcvelk","slide":9,"name":"newton-schematic-slope-label","text":"local slope","textPreview":"local slope","textChars":11,"textLines":1,"bbox":[665,605,160,34]}
+{"kind":"textbox","id":"sh/w7mtojm5","slide":9,"name":"newton-geometry-caption","text":"use the local slope to predict a better angle","textPreview":"use the local slope to predict a better angle","textChars":45,"textLines":1,"bbox":[185,785,760,36]}
+{"kind":"shape","id":"sh/h8vuxo3q","slide":9,"name":"newton-equation-card","bbox":[1080,285,725,560]}
+{"kind":"textbox","id":"sh/ap0ba54v","slide":9,"name":"newton-equation-heading","text":"Newton update","textPreview":"Newton update","textChars":13,"textLines":1,"bbox":[1120,330,645,42]}
+{"kind":"textbox","id":"sh/fi50vmxw","slide":9,"name":"newton-unit-note","text":"Because theta is in degree, the slope must be in m per degree","textPreview":"Because theta is in degree, the slope must be in m per degree","textChars":61,"textLines":1,"bbox":[1140,690,605,76]}
+{"kind":"shape","id":"sh/uhwz2hgb","slide":9,"name":"newton-takeaway","bbox":[115,875,1560,50]}
+{"kind":"textbox","id":"sh/1knixwfm","slide":9,"name":"newton-takeaway-text","text":"Newton moves by residual divided by local slope","textPreview":"Newton moves by residual divided by local slope","textChars":47,"textLines":1,"bbox":[150,885,1490,30]}
+{"kind":"image","id":"im/gza5wf6h","slide":9,"name":"","alt":"LaTeX-rendered Newton update and degree-based residual slope","bbox":[1130,420,625,210]}
+{"kind":"notes","id":"nt/m8tq4t","slide":9,"text":"## Slide 9: Newton follows the local tangent\n\nNewton uses a different local picture. Instead of keeping a bracket, it uses the current angle, the residual there, and the local slope. The tangent predicts where the residual curve would cross zero, giving the update current angle minus residual divided by slope.\n\nBecause the angle is stored in degrees, the derivative includes `2*pi/180`. That conversion makes the slope unit metres per degree, which must match the units used in the update. Newton can be efficient, but the physical residual and its units remain the anchor.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- newton"}
+{"kind":"slide","id":"sl/344qj9","slide":10,"title":"Trace Newton from 25 degree","textShapes":7}
+{"kind":"textbox","id":"sh/hsvutw3a","slide":10,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Trace Newton from 25 degree","textPreview":"Trace Newton from 25 degree","textChars":27,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/upkbyhkj","slide":10,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Starting at 25 degree reaches the same low-angle root in four evaluations","textPreview":"Starting at 25 degree reaches the same low-angle root in four evaluations","textChars":73,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/vqdcrml4","slide":10,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/4vmt4b2l","slide":10,"name":"newton-code-card","bbox":[115,285,790,520]}
+{"kind":"textbox","id":"sh/5gvuxg36","slide":10,"name":"newton-code-label","text":"short update fragment","textPreview":"short update fragment","textChars":21,"textLines":1,"bbox":[150,325,720,36]}
+{"kind":"textbox","id":"sh/it4b21kv","slide":10,"name":"newton-code-fragment","text":"newton_theta_deg = newton_theta_deg - f_current_m/slope_m_per_deg;","textPreview":"newton_theta_deg = newton_theta_deg - f_current_m/slope_m_per_deg;","textChars":66,"textLines":1,"bbox":[150,470,720,90]}
+{"kind":"textbox","id":"sh/judcv6lg","slide":10,"name":"newton-code-note","text":"read the direction: residual and slope set the correction","textPreview":"read the direction: residual and slope set the correction","textChars":57,"textLines":1,"bbox":[150,690,720,70]}
+{"kind":"shape","id":"sh/l0balc32","slide":10,"name":"newton-stop-badge","bbox":[115,845,1560,62]}
+{"kind":"textbox","id":"sh/hcf298jm","slide":10,"name":"newton-stop-badge-text","text":"At iteration 4, the residual is below 1e-3 m, so the update stops","textPreview":"At iteration 4, the residual is below 1e-3 m, so the update stops","textChars":65,"textLines":1,"bbox":[150,859,1490,34]}
+{"kind":"table","id":"tb/to3qxwfq","slide":10,"name":"","rows":5,"cols":5,"preview":"iteration | theta (degree) | residual (m) | slope (m/degree) | next angle (degree)","bbox":[960,285,845,520]}
+{"kind":"notes","id":"nt/344qj9","slide":10,"text":"## Slide 10: Trace Newton from 25 degree\n\nStart at 25 degrees. The first residual is -3.7648 metres and the slope is 0.91488 metres per degree, so the next estimate is 29.115 degrees. The next evaluations move to 29.562 and then 29.567 degrees.\n\nAt the fourth evaluation the residual is `-7.1308e-7 m`, so the same residual stopping rule is satisfied. Ask students to notice that the table records the quantities needed to explain each update: current angle, residual, slope, and next angle.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week05/.agent/lecture-slides/codex-ppt/assets/strict/code/newton_scaffold.tex\n- Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/newton_trace.tex"}
+{"kind":"slide","id":"sl/0dkdpd","slide":11,"title":"Working exposure: same root, different route","textShapes":8}
+{"kind":"textbox","id":"sh/badsrmpo","slide":11,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Working exposure: same root, different route","textPreview":"Working exposure: same root, different route","textChars":44,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/wbmtkr6t","slide":11,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Compare what each method preserves and what it needs","textPreview":"Compare what each method preserves and what it needs","textChars":52,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/xcvatw7e","slide":11,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"textbox","id":"sh/yd4bm1oz","slide":11,"name":"comparison-left-tag","text":"BRACKETED","textPreview":"BRACKETED","textChars":9,"textLines":1,"bbox":[115,285,790,38]}
+{"kind":"textbox","id":"sh/jedsv6pk","slide":11,"name":"comparison-right-tag","text":"LOCAL","textPreview":"LOCAL","textChars":5,"textLines":1,"bbox":[1015,285,790,38]}
+{"kind":"shape","id":"sh/lgvaxw7q","slide":11,"name":"comparison-check","bbox":[115,750,1690,120]}
+{"kind":"textbox","id":"sh/6h4bq1ob","slide":11,"name":"comparison-check-title","text":"shared validation","textPreview":"shared validation","textChars":17,"textLines":1,"bbox":[150,775,260,34]}
+{"kind":"textbox","id":"sh/7ixcz6pg","slide":11,"name":"comparison-check-body","text":"Substitute the reported angle back into the range model before interpreting the result","textPreview":"Substitute the reported angle back into the range model before interpreting the result","textChars":86,"textLines":1,"bbox":[445,772,1310,48]}
+{"kind":"textbox","id":"sh/36xcbmhg","slide":11,"name":"comparison-note","text":"Working exposure: method choice is about evidence and conditions, not just speed","textPreview":"Working exposure: method choice is about evidence and conditions, not just speed","textChars":80,"textLines":1,"bbox":[115,900,1690,34]}
+{"kind":"table","id":"tb/d4be5sbi","slide":11,"name":"","rows":3,"cols":4,"preview":"method | update idea | recorded evaluations | what it preserves / needs","bbox":[115,345,1690,330]}
+{"kind":"notes","id":"nt/0dkdpd","slide":11,"text":"## Slide 11: Working exposure: same root, different route\n\nBoth methods approach the same low-angle physical root, but they carry different evidence. Bisection takes 13 recorded iterations here and keeps a sign-changing bracket. Newton takes 4 recorded evaluations from the chosen start and uses a local slope.\n\nThe iteration count is only a limited cost measure. It does not replace validation. The shared requirement is still to substitute the result into the residual and explain what the root means physically.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- Week05/.agent/lecture-slides/codex-ppt/assets/strict/tables/method_comparison.tex"}
+{"kind":"slide","id":"sl/f2jv18","slide":12,"title":"A midpoint is not enough: the bracket must change sign","textShapes":16}
+{"kind":"textbox","id":"sh/l4nqp8re","slide":12,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"A midpoint is not enough: the bracket must change sign","textPreview":"A midpoint is not enough: the bracket must change sign","textChars":54,"textLines":1,"bbox":[115,60,1580,138]}
+{"kind":"textbox","id":"sh/y1w7edsn","slide":12,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"A midpoint helps only after you prove the endpoints straddle a zero","textPreview":"A midpoint helps only after you prove the endpoints straddle a zero","textChars":67,"textLines":1,"bbox":[115,205,1580,44]}
+{"kind":"textbox","id":"sh/z258ny98","slide":12,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/cfupc3ax","slide":12,"name":"same-sign-card","bbox":[115,335,700,440]}
+{"kind":"textbox","id":"sh/x0nql8ri","slide":12,"name":"same-sign-heading","text":"same-sign start","textPreview":"same-sign start","textChars":15,"textLines":1,"bbox":[155,375,620,42]}
+{"kind":"shape","id":"sh/adc7qtsr","slide":12,"name":"same-sign-line-axis","bbox":[235,520,455,0]}
+{"kind":"shape","id":"sh/belojy9c","slide":12,"name":"same-sign-line-left","bbox":[223,508,24,24]}
+{"kind":"shape","id":"sh/obupojal","slide":12,"name":"same-sign-line-right","bbox":[678,508,24,24]}
+{"kind":"textbox","id":"sh/pc36hor6","slide":12,"name":"same-sign-line-min","text":"20 degree","textPreview":"20 degree","textChars":9,"textLines":1,"bbox":[169,548,132,34]}
+{"kind":"textbox","id":"sh/l0f65k7u","slide":12,"name":"same-sign-line-max","text":"30 degree","textPreview":"30 degree","textChars":9,"textLines":1,"bbox":[624,548,132,34]}
+{"kind":"shape","id":"sh/kz65wf6p","slide":12,"name":"same-sign-line-mid","bbox":[448,506,28,28]}
+{"kind":"shape","id":"sh/zyx43ap4","slide":12,"name":"same-sign-line-mid-tick","bbox":[462,534,0,38]}
+{"kind":"textbox","id":"sh/yxonu5oj","slide":12,"name":"same-sign-line-mid-label","text":"midpoint","textPreview":"midpoint","textChars":8,"textLines":1,"bbox":[390,580,144,34]}
+{"kind":"textbox","id":"sh/xwfm107y","slide":12,"name":"same-sign-residuals","text":"both endpoint residuals are negative","textPreview":"both endpoint residuals are negative","textChars":36,"textLines":1,"bbox":[175,635,580,40]}
+{"kind":"textbox","id":"sh/cv65sv6d","slide":12,"name":"same-sign-blocked","text":"blocked start","textPreview":"blocked start","textChars":13,"textLines":1,"bbox":[175,700,580,38]}
+{"kind":"shape","id":"sh/bux4zqps","slide":12,"name":"repair-arrow","bbox":[855,512,190,38]}
+{"kind":"textbox","id":"sh/atonq5o7","slide":12,"name":"repair-label","text":"check signs first","textPreview":"check signs first","textChars":17,"textLines":1,"bbox":[835,460,230,34]}
+{"kind":"shape","id":"sh/p8vmx07m","slide":12,"name":"sign-changing-card","bbox":[1110,335,695,440]}
+{"kind":"textbox","id":"sh/o7m5ov6h","slide":12,"name":"sign-changing-heading","text":"sign-changing start","textPreview":"sign-changing start","textChars":19,"textLines":1,"bbox":[1150,375,615,42]}
+{"kind":"shape","id":"sh/gbq54vyd","slide":12,"name":"sign-changing-line-axis","bbox":[1225,520,460,0]}
+{"kind":"shape","id":"sh/1cz6d0fi","slide":12,"name":"sign-changing-line-left","bbox":[1213,508,24,24]}
+{"kind":"shape","id":"sh/e98n2lg7","slide":12,"name":"sign-changing-line-right","bbox":[1673,508,24,24]}
+{"kind":"textbox","id":"sh/fahobqxs","slide":12,"name":"sign-changing-line-min","text":"20 degree","textPreview":"20 degree","textChars":9,"textLines":1,"bbox":[1159,548,132,34]}
+{"kind":"textbox","id":"sh/snq50by1","slide":12,"name":"sign-changing-line-max","text":"40 degree","textPreview":"40 degree","textChars":9,"textLines":1,"bbox":[1619,548,132,34]}
+{"kind":"textbox","id":"sh/tozm9gfm","slide":12,"name":"sign-changing-residuals","text":"endpoint residuals have opposite signs","textPreview":"endpoint residuals have opposite signs","textChars":38,"textLines":1,"bbox":[1170,635,575,40]}
+{"kind":"textbox","id":"sh/6lonylgv","slide":12,"name":"sign-changing-valid","text":"bisection can update","textPreview":"bisection can update","textChars":20,"textLines":1,"bbox":[1170,700,575,38]}
+{"kind":"shape","id":"sh/rmx47qxg","slide":12,"name":"bracket-warning","bbox":[115,840,1560,72]}
+{"kind":"textbox","id":"sh/cja5cfe5","slide":12,"name":"bracket-warning-text","text":"A midpoint is a test point; the bracket is the guarantee","textPreview":"A midpoint is a test point; the bracket is the guarantee","textChars":56,"textLines":1,"bbox":[150,858,1490,36]}
+{"kind":"notes","id":"nt/f2jv18","slide":12,"text":"## Slide 12: A midpoint is not enough: the bracket must change sign\n\nA midpoint can be calculated for almost any pair of endpoints. That arithmetic alone does not justify bisection. The Core setup needs endpoint residuals with opposite signs, because that is the evidence that the interval contains a zero crossing for the method's update logic.\n\nContrast the same-sign defective bracket with the valid `[20, 40]` degree bracket. The repair path is simple: inspect the graph, check the endpoint signs, and only then start the iteration. A same-sign interval does not prove that no root exists elsewhere; it simply does not provide the required bracket evidence.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}
+{"kind":"slide","id":"sl/tv6e3p","slide":13,"title":"Transfer the residual pattern to new physics","textShapes":13}
+{"kind":"textbox","id":"sh/qdkj6d03","slide":13,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Transfer the residual pattern to new physics","textPreview":"Transfer the residual pattern to new physics","textChars":44,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/dgb218ju","slide":13,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Any physical equation can become a root problem","textPreview":"Any physical equation can become a root problem","textChars":47,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/sf2183i9","slide":13,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/3atkvy1s","slide":13,"name":"thin-lens-card","bbox":[115,285,760,380]}
+{"kind":"textbox","id":"sh/i9kj2t07","slide":13,"name":"thin-lens-heading","text":"thin lens","textPreview":"thin lens","textChars":9,"textLines":1,"bbox":[150,325,690,42]}
+{"kind":"textbox","id":"sh/5cb2x8jy","slide":13,"name":"thin-lens-question","text":"Find the image distance that makes the lens equation balance","textPreview":"Find the image distance that makes the lens equation balance","textChars":60,"textLines":1,"bbox":[165,410,660,76]}
+{"kind":"textbox","id":"sh/4b2143id","slide":13,"name":"thin-lens-bracket","text":"bracket a distance, then preserve the sign change","textPreview":"bracket a distance, then preserve the sign change","textChars":49,"textLines":1,"bbox":[165,545,660,40]}
+{"kind":"shape","id":"sh/n6dk721w","slide":13,"name":"rc-card","bbox":[1045,285,760,380]}
+{"kind":"textbox","id":"sh/2543ex0b","slide":13,"name":"rc-heading","text":"RC charging","textPreview":"RC charging","textChars":11,"textLines":1,"bbox":[1080,325,690,42]}
+{"kind":"textbox","id":"sh/gvy9sb6p","slide":13,"name":"rc-question","text":"Find the time at which the capacitor reaches a threshold voltage","textPreview":"Find the time at which the capacitor reaches a threshold voltage","textChars":64,"textLines":1,"bbox":[1095,410,660,76]}
+{"kind":"textbox","id":"sh/hw7q1g7a","slide":13,"name":"rc-bracket","text":"bracket a time, then validate by substitution","textPreview":"bracket a time, then validate by substitution","textChars":45,"textLines":1,"bbox":[1095,545,660,40]}
+{"kind":"shape","id":"sh/vup8z6p4","slide":13,"name":"workflow-1","bbox":[115,865,339,64]}
+{"kind":"textbox","id":"sh/8rypob6t","slide":13,"name":"workflow-label-1","text":"define residual","textPreview":"define residual","textChars":15,"textLines":1,"bbox":[127,879,315,36]}
+{"kind":"shape","id":"sh/ts7qxg7e","slide":13,"name":"workflow-arrow-1","bbox":[466,886,28,22]}
+{"kind":"shape","id":"sh/mpw7m1on","slide":13,"name":"workflow-2","bbox":[502,865,339,64]}
+{"kind":"textbox","id":"sh/7qp8v6p8","slide":13,"name":"workflow-label-2","text":"bracket or start","textPreview":"bracket or start","textChars":16,"textLines":1,"bbox":[514,879,315,36]}
+{"kind":"shape","id":"sh/knepkr6h","slide":13,"name":"workflow-arrow-2","bbox":[853,886,28,22]}
+{"kind":"shape","id":"sh/lonqtw72","slide":13,"name":"workflow-3","bbox":[889,865,339,64]}
+{"kind":"textbox","id":"sh/18ve1ovu","slide":13,"name":"workflow-label-3","text":"update","textPreview":"update","textChars":6,"textLines":1,"bbox":[901,879,315,36]}
+{"kind":"shape","id":"sh/07mx8je9","slide":13,"name":"workflow-arrow-3","bbox":[1240,886,28,22]}
+{"kind":"shape","id":"sh/f6dwzydo","slide":13,"name":"workflow-4","bbox":[1276,865,339,64]}
+{"kind":"textbox","id":"sh/e54f6tw3","slide":13,"name":"workflow-label-4","text":"substitute back","textPreview":"substitute back","textChars":15,"textLines":1,"bbox":[1288,879,315,36]}
+{"kind":"image","id":"im/54bi54v6","slide":13,"name":"","alt":"LaTeX-rendered thin-lens and RC residual definitions","bbox":[210,685,1500,165]}
+{"kind":"notes","id":"nt/tv6e3p","slide":13,"text":"## Slide 13: Transfer the residual pattern to new physics\n\nThe equation changes in the practical, but the reasoning pattern stays stable. For a thin lens, the root is image distance `v` in metres and the residual is an inverse-length mismatch in `m^-1`. For RC charging, the root is threshold time `t` in seconds and the residual is a voltage mismatch in volts.\n\nFor either context, state the model, define the residual, choose a bracket or starting value, apply the update, use the supplied residual stopping rule, substitute the result back, and interpret the physical root. The practical asks students to carry this structure into an analogous model without relying on the projectile answer.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md\n- transfer"}
+{"kind":"slide","id":"sl/pla10h","slide":14,"title":"Exit ticket — explain a root to a future you","textShapes":18}
+{"kind":"textbox","id":"sh/4ne58rul","slide":14,"name":"PHY4605 inherited title treatment","placeholder":"title","text":"Exit ticket — explain a root to a future you","textPreview":"Exit ticket — explain a root to a future you","textChars":44,"textLines":1,"bbox":[115,60,1580,88]}
+{"kind":"textbox","id":"sh/jm54f6t0","slide":14,"name":"PHY4605 inherited subtitle treatment","placeholder":"subtitle","text":"Make the reasoning chain visible in one minute","textPreview":"Make the reasoning chain visible in one minute","textChars":46,"textLines":1,"bbox":[115,152,1580,44]}
+{"kind":"textbox","id":"sh/ilwn61cf","slide":14,"name":"PHY4605 inherited slide-number treatment","placeholder":"slideNumber","text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1764,976,40,28]}
+{"kind":"shape","id":"sh/hknmdwba","slide":14,"name":"exit-card-1","bbox":[115,300,350,390]}
+{"kind":"textbox","id":"sh/wje54rup","slide":14,"name":"exit-card-heading-1","text":"model","textPreview":"model","textChars":5,"textLines":1,"bbox":[141,340,298,42]}
+{"kind":"shape","id":"sh/vi54bmt4","slide":14,"name":"exit-card-rule-1","bbox":[175,412,230,0]}
+{"kind":"textbox","id":"sh/uhwn2hcj","slide":14,"name":"exit-card-question-1","text":"What physical quantity are you matching?","textPreview":"What physical quantity are you matching?","textChars":40,"textLines":1,"bbox":[149,480,282,130]}
+{"kind":"textbox","id":"sh/1gr6pgbe","slide":14,"name":"exit-card-prompt-1","text":"write one sentence","textPreview":"write one sentence","textChars":18,"textLines":1,"bbox":[149,630,282,34]}
+{"kind":"shape","id":"sh/gfy5gbut","slide":14,"name":"exit-card-2","bbox":[512,300,350,390]}
+{"kind":"textbox","id":"sh/ixc325on","slide":14,"name":"exit-card-heading-2","text":"residual","textPreview":"residual","textChars":8,"textLines":1,"bbox":[538,340,298,42]}
+{"kind":"shape","id":"sh/jylkvap8","slide":14,"name":"exit-card-rule-2","bbox":[572,412,230,0]}
+{"kind":"textbox","id":"sh/kzul4v6t","slide":14,"name":"exit-card-question-2","text":"What does zero mean here?","textPreview":"What does zero mean here?","textChars":25,"textLines":1,"bbox":[546,480,282,130]}
+{"kind":"textbox","id":"sh/5032x07e","slide":14,"name":"exit-card-prompt-2","text":"write one sentence","textPreview":"write one sentence","textChars":18,"textLines":1,"bbox":[546,630,282,34]}
+{"kind":"shape","id":"sh/a9sjylor","slide":14,"name":"exit-card-3","bbox":[909,300,350,390]}
+{"kind":"textbox","id":"sh/va1krqpw","slide":14,"name":"exit-card-heading-3","text":"method","textPreview":"method","textChars":6,"textLines":1,"bbox":[935,340,298,42]}
+{"kind":"shape","id":"sh/wba10v6h","slide":14,"name":"exit-card-rule-3","bbox":[969,412,230,0]}
+{"kind":"textbox","id":"sh/xcj2t072","slide":14,"name":"exit-card-question-3","text":"How did your bracket or slope move the guess?","textPreview":"How did your bracket or slope move the guess?","textChars":45,"textLines":1,"bbox":[943,480,282,130]}
+{"kind":"textbox","id":"sh/e5w3apov","slide":14,"name":"exit-card-prompt-3","text":"write one sentence","textPreview":"write one sentence","textChars":18,"textLines":1,"bbox":[943,630,282,34]}
+{"kind":"shape","id":"sh/f65k3upg","slide":14,"name":"exit-card-4","bbox":[1306,300,350,390]}
+{"kind":"textbox","id":"sh/bax0vm5s","slide":14,"name":"exit-card-heading-4","text":"validation","textPreview":"validation","textChars":10,"textLines":1,"bbox":[1332,340,298,42]}
+{"kind":"shape","id":"sh/q9ozmh47","slide":14,"name":"exit-card-rule-4","bbox":[1366,412,230,0]}
+{"kind":"textbox","id":"sh/dcfixcny","slide":14,"name":"exit-card-question-4","text":"What did substitution prove?","textPreview":"What did substitution prove?","textChars":28,"textLines":1,"bbox":[1340,480,282,130]}
+{"kind":"textbox","id":"sh/cb6hormd","slide":14,"name":"exit-card-prompt-4","text":"write one sentence","textPreview":"write one sentence","textChars":18,"textLines":1,"bbox":[1340,630,282,34]}
+{"kind":"shape","id":"sh/zeh0zm5o","slide":14,"name":"exit-workflow","bbox":[115,750,1560,112]}
+{"kind":"textbox","id":"sh/yd8zqh4j","slide":14,"name":"exit-workflow-label","text":"your explanation","textPreview":"your explanation","textChars":16,"textLines":1,"bbox":[145,770,230,34]}
+{"kind":"textbox","id":"sh/lgzi1wnu","slide":14,"name":"exit-workflow-text","text":"physical model  →  residual  →  algorithm  →  code  →  check  →  interpretation","textPreview":"physical model  →  residual  →  algorithm  →  code  →  check  →  interpretation","textChars":79,"textLines":1,"bbox":[385,770,1240,50]}
+{"kind":"textbox","id":"sh/0fqhsrm9","slide":14,"name":"exit-final","text":"A root is not just a number: it is a defensible physical match","textPreview":"A root is not just a number: it is a defensible physical match","textChars":62,"textLines":1,"bbox":[115,900,1690,36]}
+{"kind":"notes","id":"nt/pla10h","slide":14,"text":"## Slide 14: Exit ticket — explain a root to a future you\n\nClose with four short explanations. Define the target and residual. Explain what opposite endpoint signs mean. Describe one midpoint or tangent update. Then perform the substitution check and state the unit of the root.\n\nThe goal is not to recite function names. It is to show the reasoning chain from a physical condition to a checkable numerical result. The same chain will be used for projectile range, thin-lens image distance, and RC threshold time in the practical.\n[Sources]\n- Week05/README.md\n- Week05/.agent/manifests/Week05_Content_Manifest.md\n- Week05/Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m\n- PHY4605_Lecture_Slide_Design_Spec.md"}

@@ -1,0 +1,36 @@
+{
+  "round": 3,
+  "generator": {
+    "model": "gpt-5.6-terra",
+    "reasoning_effort": "medium",
+    "status": "final generator QA passed",
+    "changes": [
+      "Integrated three distinct ImageGen scientific visuals once each",
+      "retained approved master layouts and editable typography",
+      "rendered canonical PPTX at 1920x1080"
+    ],
+    "checks": {
+      "slides_test": "pass",
+      "office_validate": "pass",
+      "office_issues": "pass; 0 issues",
+      "font_roles": "Nunito 110; IBM Plex Mono 43",
+      "pictures_without_alt": "0",
+      "slide_numbers": "present on content-slide inherited layout"
+    },
+    "visual_inspection": "pass: all 14 slides reviewed in final 1920x1080 contact sheet; title contact sheet retained",
+    "evidence": [
+      "render-1920/",
+      "final-contact-sheet.png",
+      "title-contact-sheet.png",
+      "slides-test.txt",
+      "officecli-validate.txt",
+      "officecli-issues-final.txt",
+      "officecli-stats-final.txt",
+      "final-sha256.txt"
+    ]
+  },
+  "final_sha256": "93bd3339a6f6ff47125b9f73a81dcdd5c49fe611800a11e9ed6a773b0f4470c7",
+  "known_limitations": [
+    "No PDF distribution derivative was made."
+  ]
+}
