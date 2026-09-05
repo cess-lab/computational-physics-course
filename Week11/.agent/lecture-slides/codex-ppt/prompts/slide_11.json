@@ -1,0 +1,46 @@
+{
+  "slide": 11,
+  "title": "Working Exposure: Compare a Second Uncertain Input",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 11,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nTeach one-at-a-time sensitivity reasoning: a plausible input range gives a defensible deterministic output range, distinct from numerical approximation error and model limitation.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"For ideal Hooke's law x=F/k, hold F=10 N fixed and treat stiffness k=95-105 N/m as a plausible uncertainty around the 100 N/m baseline. Evaluate lower, baseline and upper values, report the output range, validate the baseline and distinguish parameter uncertainty from numerical approximation error and model limitation.\",\n    \"locked_values\": \"k=[95,100,105] N/m gives x=[0.10526,0.10000,0.09524] m. Force Working-exposure sweep F=[9.8,10.0,10.2] N at k=100 N/m gives x=[0.098,0.100,0.102] m. Supplied first-order independent result is 5.39%, ux≈0.00539 m for uF=0.2 N and uk=5 N/m.\",\n    \"universal_constraints\": \"Use title-only top band and a thin straight divider. Do not render headers, slide numbers, page footers, borders, logos, timings, production metadata, or unapproved numerical claims.\"\n  },\n  \"slide_local_context\": \"Student modification: predict and calculate force variation; do not claim stiffness is universally more important.\"\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware - PHY4605 approved sample\",\n  \"visual_direction\": \"Open white canvas; title-only navy band with a thin straight navy divider below; large bold navy sans-serif title; muted navy structure with restrained teal, sage, and ochre accents; generous spacing; quantitative teaching visuals; no outer border or top mini-header.\",\n  \"color_palette\": \"white/light neutral, navy, teal, sage green, muted ochre, occasional coral only for genuine defects\",\n  \"typography\": \"large bold sans-serif title, readable regular sans-serif body, short monospaced MATLAB code only when required\",\n  \"deck_consistency\": \"Use the approved sample for visual rhythm; vary internal composition by slide role; no slide number, logo, watermark, or decorative perimeter.\"\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png — approved Week 11 sample slide style reference; match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate\n- Image 2: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/matlab/week11_one_at_a_time_comparison.png — strict numerical MATLAB reference; preserve bar heights 0.004 m Force and 0.010025 m Stiffness, axis Full extension span (m), categories and relative magnitudes in a full-slide redraw\n\n\n## Slide\n{\n  \"number\": 11,\n  \"title\": \"Working Exposure: Compare a Second Uncertain Input\",\n  \"role\": \"student modification and comparison\",\n  \"intent\": \"Change force while holding stiffness fixed.\"\n}\n\n## Text\n{\n  \"title\": \"Working Exposure: Compare a Second Uncertain Input\",\n  \"key_points\": [\n    \"Hold k = 100 N/m; vary F = 9.8-10.2 N\",\n    \"Force output range: 0.098-0.102 m\",\n    \"Stiffness gives the larger effect for these supplied ranges\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"large cohesive redraw of two-bar output-span comparison\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"Force versus Stiffness bar comparison\"\n}\n\n## Constraints\n[\n  \"State clearly that the comparison is only for the supplied input ranges.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_11.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+      "role": "approved Week 11 sample slide style reference",
+      "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/matlab/week11_one_at_a_time_comparison.png",
+      "role": "strict numerical MATLAB reference",
+      "fidelity": "preserve bar heights 0.004 m Force and 0.010025 m Stiffness, axis Full extension span (m), categories and relative magnitudes in a full-slide redraw"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved Week 11 Slide 7 sample prompt",
+    "input_context_preparation": "parent inspected local strict MATLAB references with view_image; approved sample supplied as style reference",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+    "handoff_rule": "Use the built-in image_gen tool in generate/reference mode only; return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

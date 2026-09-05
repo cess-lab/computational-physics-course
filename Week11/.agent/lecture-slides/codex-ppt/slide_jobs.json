@@ -1,0 +1,566 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Lecture_Slides_Week11",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved Week 11 Slide 7 sample prompt",
+    "input_context_preparation": "parent inspected local strict MATLAB references with view_image; approved sample supplied as style reference",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+    "handoff_rule": "Use the built-in image_gen tool in generate/reference mode only; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 3,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Sensitivity and Uncertainty Propagation",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "6e42bc183e40ad8e5ccb3fbceccafcecdf5c9c85658d8356b5f041e01e82f2e4",
+        "dispatched_at": "2026-09-05T10:44:59Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-47afa93d-d9a6-46b7-a91c-6348f84e9b60.png",
+        "selected_source_sha256": "554d2068d81f19f7b5a59bb80be52f947992b47de791ff18a69e23e3c46269e5",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "554d2068d81f19f7b5a59bb80be52f947992b47de791ff18a69e23e3c46269e5",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: labelled spring, fixed load, input-model-output chain and approved title divider are clear.",
+        "recorded_at": "2026-09-05T10:48:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "One Familiar Model, a New Question",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "d27d2a934f475c4256fcdf79980408c9d632d33890a17b8891e13897df7aba3e",
+        "dispatched_at": "2026-09-05T10:44:59Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-da45372f-c1c7-45fd-8a95-49b94100ba15.png",
+        "selected_source_sha256": "e8246a788ea4a534f111ef11adad427e8c0f96946b05f5fffc41e399cd626d1c",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "e8246a788ea4a534f111ef11adad427e8c0f96946b05f5fffc41e399cd626d1c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: Hooke model, fixed force and plausible stiffness range are exact and legible.",
+        "recorded_at": "2026-09-05T10:48:21Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Predict Before Computing",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "aa4a4d90a9f7bfbd75e6f163c6a26054003d492e63244aea48e25925b53a0ddb",
+        "dispatched_at": "2026-09-05T10:49:32Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-9a50375f-c47d-4ef0-8758-1f4413a6e40f.png",
+        "selected_source_sha256": "3ac1d86c94f40ee82ff85a45b901719bcec9830635b7f9ffacc33496ed817a3b",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "3ac1d86c94f40ee82ff85a45b901719bcec9830635b7f9ffacc33496ed817a3b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: three fixed-force cases correctly show lower k giving larger extension and output straddling 0.10 m.",
+        "recorded_at": "2026-09-05T10:51:24Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Baseline, Lower, and Upper Values",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "d4ffe7e9e1524bf4e1b28efbb037b680f5fa095e835f90dd108e46571dc220bf",
+        "dispatched_at": "2026-09-05T10:49:32Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-d13debb9-902d-4b55-856a-c2dd21245ba6.png",
+        "selected_source_sha256": "b521912d0002ceaf1a9221c4a79aa13dc167bef6ecfd58a9dda216c709eac1a5",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "b521912d0002ceaf1a9221c4a79aa13dc167bef6ecfd58a9dda216c709eac1a5",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: lower-baseline-upper cases and fixed versus changing controls are legible and correct.",
+        "recorded_at": "2026-09-05T10:51:24Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "One-at-a-Time Algorithm",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "4b47e544665d0bec71b18ff7f4925b72dbae145a2309116ae4a3a3eba4c613ad",
+        "dispatched_at": "2026-09-05T10:49:32Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-95f06617-3aee-4d9a-abcc-9b638421a368.png",
+        "selected_source_sha256": "7981c46d42b6752ddf79fcf088c382dcb1cdf7650a6658d7b2dfb17281f6adad",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "7981c46d42b6752ddf79fcf088c382dcb1cdf7650a6658d7b2dfb17281f6adad",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: algorithm stages and one-changing-input discipline are clear.",
+        "recorded_at": "2026-09-05T10:51:24Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Trace the MATLAB Scaffold",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "a58865bf864af6e9d5cea6901e66f38d2d4838aa4be856fd23d2e43ca26022e6",
+        "dispatched_at": "2026-09-05T10:52:42Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-4d716f12-f5f6-4f81-ba34-d967b44b95c3.png",
+        "selected_source_sha256": "ff153eef918a36707937b047007fce038d4346a133c341e1194c57459f682f78",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "ff153eef918a36707937b047007fce038d4346a133c341e1194c57459f682f78",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: vectorised MATLAB scaffold and element-wise division are readable and correct.",
+        "recorded_at": "2026-09-05T10:55:27Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "What Range Does the Model Predict?",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_07.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Report the Result Without False Precision",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "462282ba73ab0a47b2c554e7d374ada74522ad813c703a23819529ee759ff52c",
+        "dispatched_at": "2026-09-05T10:52:42Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-69fe9f9d-b2a1-4bbf-bd36-4d300ababfac.png",
+        "selected_source_sha256": "21b54a0ac9402cc3a8d46f52fd22d36c6422c0ae0d8f8ff9dcddd65702021ab6",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "21b54a0ac9402cc3a8d46f52fd22d36c6422c0ae0d8f8ff9dcddd65702021ab6",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: weak versus defensible report and all prescribed units/values are legible.",
+        "recorded_at": "2026-09-05T10:55:27Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Core Validation: Check the Baseline",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "dd48716cfabed3cc5837a365539b5b7480911ebd2ac93c810220d17d9bac338f",
+        "dispatched_at": "2026-09-05T10:52:42Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-69bc0f5d-8443-4cb4-b96e-efdfeda87ce8.png",
+        "selected_source_sha256": "7e4047b131fdad8295848ca47e096ac10cf800b5cfd2277e2675131efd4bf22d",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "7e4047b131fdad8295848ca47e096ac10cf800b5cfd2277e2675131efd4bf22d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: hand calculation, units, trend and smooth-graph warning are correct.",
+        "recorded_at": "2026-09-05T10:55:27Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Three Different Reasons a Prediction Can Be Imperfect",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "e2d2440a05d8b300530153e518a5279df2e611a9f5eb5d50e5434fed4452d94a",
+        "dispatched_at": "2026-09-05T10:56:46Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-322a9992-767f-4853-9a96-07ea5aca2d5b.png",
+        "selected_source_sha256": "77bef7f7197343ef7b9a2564408fa05e760a9f4fa6fe3ca1ab28fcb16b70151d",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "77bef7f7197343ef7b9a2564408fa05e760a9f4fa6fe3ca1ab28fcb16b70151d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size worker and parent QA passed: the three imperfection categories and direct-Hooke caveat are clear.",
+        "recorded_at": "2026-09-05T10:58:30Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Working Exposure: Compare a Second Uncertain Input",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/matlab/week11_one_at_a_time_comparison.png",
+          "role": "strict numerical MATLAB reference",
+          "fidelity": "preserve bar heights 0.004 m Force and 0.010025 m Stiffness, axis Full extension span (m), categories and relative magnitudes in a full-slide redraw"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "9260b72c59830e3e354f4e2c0e6378dcca562de30b31310be4c00c6eb0c01ea0",
+        "dispatched_at": "2026-09-05T10:56:46Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-9306fb67-346e-4089-9f3c-53b7c118e0d2.png",
+        "selected_source_sha256": "25b08ac7fada3531e802b19f7fa093209f9f8d47bbfb748dc378c6655908dbad",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "25b08ac7fada3531e802b19f7fa093209f9f8d47bbfb748dc378c6655908dbad",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size worker and parent QA passed against strict MATLAB reference: Force 0.004 m and Stiffness 0.010025 m bars, categories and limitation are correct.",
+        "recorded_at": "2026-09-05T10:58:30Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Working Exposure: Percentage Sensitivity",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "9c27d3cd44b26e4c5defc286f8a7c81b77fc8789b4614aaa7e08deed8e0a54fc",
+        "dispatched_at": "2026-09-05T10:56:47Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-0ea7d75c-83ea-4f8b-a834-cf5fa2ac8ddb.png",
+        "selected_source_sha256": "9d47f4ebc0bd91fb369b9a2e0304bc3b281bca48e8c95f083c721a4f8bbe1b56",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "9d47f4ebc0bd91fb369b9a2e0304bc3b281bca48e8c95f083c721a4f8bbe1b56",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size worker and parent QA passed: Working-exposure sensitivity signs and interpretation are correct.",
+        "recorded_at": "2026-09-05T10:58:30Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Working Exposure: Supplied First-Order Propagation",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "7769c621d5c634eb92932ab20836533cbc98a5a40ecabef8756c0982e04635e1",
+        "dispatched_at": "2026-09-05T10:59:30Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-45ab2ad1-17a5-4ad1-b223-f3f430ddf8e6.png",
+        "selected_source_sha256": "7fa68ed98dd881a06ae3bab4126181a8d385ab987ebb35cd913a847b60aeab09",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "7fa68ed98dd881a06ae3bab4126181a8d385ab987ebb35cd913a847b60aeab09",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size worker and parent QA passed: supplied formula, values and independent-small-uncertainty condition are correct.",
+        "recorded_at": "2026-09-05T11:01:08Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Exit Ticket: What Can You Defend?",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week11/.agent/lecture-slides/codex-ppt/origin_image/slide_07.png",
+          "role": "approved Week 11 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its graph layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "9fb64e97637fd292f57829e6be7c2e43fb28ff914fa250c16258e8d4144a0087",
+        "dispatched_at": "2026-09-05T10:59:30Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-14565997-8840-439b-a825-a39abc79bb4e.png",
+        "selected_source_sha256": "6c396c46f8385d5e8e741a1b9a9241b19e057bcc87738197e3922360c93e8319",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "6c396c46f8385d5e8e741a1b9a9241b19e057bcc87738197e3922360c93e8319",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size worker and parent QA passed: exit-ticket response cards and limitation classification prompt are clear.",
+        "recorded_at": "2026-09-05T11:01:08Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-05T11:01:08Z"
+}

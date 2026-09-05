@@ -1,0 +1,571 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Lecture_Slides_Week10",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "model_config": "built-in default",
+    "prompt_source": "approved Week 10 Slide 8 revision prompt",
+    "input_context_preparation": "parent inspected local strict MATLAB references with view_image; approved sample supplied as style reference",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+    "handoff_rule": "Use the built-in image_gen tool in edit/reference mode only; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 3,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Can Random Motion Produce a Stable Pattern?",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "e157be53daf48e54ec3f2601c203f8341ec1fad67c92e0d085a695866211fb8f",
+        "dispatched_at": "2026-09-05T10:33:26Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-b9754c12-572f-4166-bc82-5d1b47c18b4f.png",
+        "selected_source_sha256": "33c67bc4fc42377a4a95c3439d99489e72e67d139496b80eee3a8e9753f7cb45",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "33c67bc4fc42377a4a95c3439d99489e72e67d139496b80eee3a8e9753f7cb45",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: title-only band and divider match the approved sample; legible text; balanced random-kick visual; no outer frame or slide number.",
+        "recorded_at": "2026-09-05T10:34:29Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Define One Random Trial Before Coding",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "de3cb7b2575b807dac13168c071241a31027b79b9cff947ee05e20d3dbbfd732",
+        "dispatched_at": "2026-09-05T10:33:26Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-455554dc-b1da-4820-91f9-d999b9cc0561.png",
+        "selected_source_sha256": "22775ccbe6f4f929da4312f183b56bdbfcf1c970f5edcbd714dbf0be14ea6128",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "22775ccbe6f4f929da4312f183b56bdbfcf1c970f5edcbd714dbf0be14ea6128",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: clearly separates N steps per path from M repeated paths; title divider, text and open canvas match sample.",
+        "recorded_at": "2026-09-05T10:35:15Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Read the Random-Step Rule in Physics Language",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "cfcdd85e463d10f2540221c4afec0028f43861ea14b7ba7a4e3be8a7b72fd7aa",
+        "dispatched_at": "2026-09-05T10:33:26Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-a8970f7e-1a7f-4f1c-92c0-bbc80e62b35d.png",
+        "selected_source_sha256": "56beaafadf6d3505779f90a9a71259332a53abb86988a990813d75f0a8daf944",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "56beaafadf6d3505779f90a9a71259332a53abb86988a990813d75f0a8daf944",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: N process versus M evidence distinction, units and equal-probability diagram are readable; title-only sample style retained.",
+        "recorded_at": "2026-09-05T10:35:16Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Plan the Monte Carlo Experiment",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "baca952b1c314df467f944701c9fdd29617d4eca47721e271cfaebdb8f618e28",
+        "dispatched_at": "2026-09-05T10:35:52Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-a80b89e1-04ec-404b-9112-5f8662db624f.png",
+        "selected_source_sha256": "f34e7ea50f9ca5bc0f0e34e41cc4f4c3d8fa215dd6336b12ba764ea84c43ce91",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "f34e7ea50f9ca5bc0f0e34e41cc4f4c3d8fa215dd6336b12ba764ea84c43ce91",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: legible five-stage model-to-validation workflow and approved title/divider treatment.",
+        "recorded_at": "2026-09-05T10:37:53Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Use a Seed for a Reproducible Random Sequence",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "eb66f878d121efe48b3050be5a2bea4e7565a1ec03dc68bc8f4ae1d609017ec7",
+        "dispatched_at": "2026-09-05T10:35:52Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-4801f8fa-8241-4c6f-929f-09296e8476c7.png",
+        "selected_source_sha256": "05d414a211fba86e68a122541689b9112103147faaaef7f1d4f9ce1edff41642",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "05d414a211fba86e68a122541689b9112103147faaaef7f1d4f9ce1edff41642",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: reproducibility comparison is legible, seed remains distinct from validation, and approved style is retained.",
+        "recorded_at": "2026-09-05T10:37:53Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Read the Random-Sampling Scaffold",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "e72f76811c98ddb9ac7b27b0d0b2d2194bf7df6da7830907e4c592ec10eb43db",
+        "dispatched_at": "2026-09-05T10:35:52Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-a7f55eef-815c-4ad4-acbb-ee9998e437bd.png",
+        "selected_source_sha256": "7b62e11f4e055ef54132fe3762a9815542a70780be01065c3c37a6d33405d645",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "7b62e11f4e055ef54132fe3762a9815542a70780be01065c3c37a6d33405d645",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: all required MATLAB lines are exact and readable; physical mapping is clear; approved style retained.",
+        "recorded_at": "2026-09-05T10:37:53Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "One Trajectory Is One Possible History",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/matlab/week10_random_walk_trajectory.png",
+          "role": "strict numerical MATLAB reference",
+          "fidelity": "preserve axes Step number and Position x (mm), line path, highlighted markers, values and relationships in a full-slide redraw"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "7fbc0b57ac342d1bb6c4e582c34d9547f6441e14de9e1ab8fd98b59d7f14e13d",
+        "dispatched_at": "2026-09-05T10:38:34Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-23b37609-386f-4597-b2e4-1b2f3e6fc4a4.png",
+        "selected_source_sha256": "f0dd807651b447c5b618374a3bcf102b2039e4b3978c761a6e3d952b07d0f020",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "f0dd807651b447c5b618374a3bcf102b2039e4b3978c761a6e3d952b07d0f020",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed against strict MATLAB trajectory reference: axes, path, markers, ranges and units preserved in cohesive redraw.",
+        "recorded_at": "2026-09-05T10:40:25Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Repeat the Trial to Build a Distribution",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_08.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Mean and Spread Answer Different Questions",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "acb7ecb1af6518bc30f440e2b7a3221ec43f11c47f376acaa672b69d2e87df93",
+        "dispatched_at": "2026-09-05T10:38:34Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-45e06294-5baa-4797-9ba8-2cbdf52194da.png",
+        "selected_source_sha256": "c6f348cb0bb6278b7e460d59a852a57949d1ed7b3ee4949b71bca927b44b94d4",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "c6f348cb0bb6278b7e460d59a852a57949d1ed7b3ee4949b71bca927b44b94d4",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: mean and spread are correctly separated and locked values are legible.",
+        "recorded_at": "2026-09-05T10:40:26Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "More Trials Do Not Remove Physical Variability",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "39d3995f929c3a090f34042d14c480bb638bae96bcdb696cb6849dbf7c05e3f2",
+        "dispatched_at": "2026-09-05T10:38:34Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-4ee3a749-9e3e-4961-9b01-5253b953ad3c.png",
+        "selected_source_sha256": "ae8af5f7792d21c00c60be09fcde7e643d2b44f444137123c27a612357697738",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "ae8af5f7792d21c00c60be09fcde7e643d2b44f444137123c27a612357697738",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: all locked M, mean and spread values are correct; physical variability interpretation is clear.",
+        "recorded_at": "2026-09-05T10:40:26Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Monte Carlo Convergence Need Not Be Monotonic",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/matlab/week10_random_walk_sample_size.png",
+          "role": "strict numerical MATLAB reference",
+          "fidelity": "preserve log-scale trial-count axis, zero line, three points, axes, units and non-monotonic relationship in a full-slide redraw"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "883cddda4729c0f564a0176bcd0de7b37301cdeb10a076590da36f37f2f83b91",
+        "dispatched_at": "2026-09-05T10:41:00Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-ac9e9c2b-bd37-434a-8631-17eb9ecdebe5.png",
+        "selected_source_sha256": "562bdfe2107f094d20293e77cedc1600ff483e65e80392dff5a4e144ab8aa057",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "562bdfe2107f094d20293e77cedc1600ff483e65e80392dff5a4e144ab8aa057",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed against strict MATLAB graph: log scale, zero line, estimates and non-monotonic relation preserved.",
+        "recorded_at": "2026-09-05T10:43:55Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Validate With Symmetry and the Step Rule",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide02",
+        "agent_nickname": "w10_slide02",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "5ff9295a7fc1976272a051881d36ebcb88da6b187cc313340e51cbb69acea402",
+        "dispatched_at": "2026-09-05T10:41:00Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-1c94-7c72-acd9-1ecd3a392852/exec-d848cead-346f-4c17-853c-8b2f424b917c.png",
+        "selected_source_sha256": "ac45179f81b951fe7b092a5bbdc649ef01f30f67a2cc87bc2117ea99fcffc8f7",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "ac45179f81b951fe7b092a5bbdc649ef01f30f67a2cc87bc2117ea99fcffc8f7",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: symmetry and even-integer checks are correct and legible.",
+        "recorded_at": "2026-09-05T10:43:55Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Working Exposure: Precision and Random-Walk Scaling",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide03",
+        "agent_nickname": "w10_slide03",
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "d7b81f9ded415e8a2b2b9a5a2f355740302dcfb8c459360432fb4c901a9f50f3",
+        "dispatched_at": "2026-09-05T10:41:00Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07121-3aca-7a11-8675-4624d096b3f2/exec-534028f8-a93f-4fa2-ace6-98d26dd503f2.png",
+        "selected_source_sha256": "0b1de1bad3e94bc6d78cd4e3fc94081e48c9ae50e20b289aaddfb3126a447f5d",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "0b1de1bad3e94bc6d78cd4e3fc94081e48c9ae50e20b289aaddfb3126a447f5d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: Working-exposure labels, precision/scaling values and standard-error distinction are accurate.",
+        "recorded_at": "2026-09-05T10:43:55Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Explain One Trial, One Statistic, and One Check",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
+          "role": "approved Week 10 sample slide style reference",
+          "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/w10_slide01",
+        "agent_nickname": "w10_slide01",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "f800e5b678f3c94e00b8d518df57fe425ea6d8134f222d4def7bdcebf130d11e",
+        "dispatched_at": "2026-09-05T10:44:59Z"
+      },
+      "result": {
+        "agent_id": "/root/w10_slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07120-fec4-7e02-befe-1c0b295633ff/exec-87e890a9-0388-48e0-b7ad-c3f641367069.png",
+        "selected_source_sha256": "40b5600ee2b2f76b1eabd9536c0b5443601932b13abfd638fb19676e08e7c345",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "40b5600ee2b2f76b1eabd9536c0b5443601932b13abfd638fb19676e08e7c345",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: three spacious exit-ticket prompts, no outer frame, and title divider match deck style.",
+        "recorded_at": "2026-09-05T10:48:20Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-05T10:48:20Z"
+}
