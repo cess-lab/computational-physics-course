@@ -1,0 +1,80 @@
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+rate_initial_Cps =
+
+   -0.6000
+
+
+T_after_one_step_C =
+
+    50
+
+
+rate_second_Cps =
+
+   -0.3000
+
+
+T_after_two_steps_C =
+
+    35
+
+
+number_of_values =
+
+     7
+
+
+number_of_updates =
+
+     6
+
+
+first_three_values =
+
+  3×2 table
+
+    Time_s    EulerTemperature_C
+    ______    __________________
+
+       0              80        
+      50              50        
+     100              35        
+
+
+comparison =
+
+  3×4 table
+
+    Timestep_s    EulerAt300s_C    ExactAt300s_C    AbsoluteError_C
+    __________    _____________    _____________    _______________
+
+         50          20.938           22.987             2.0497    
+         25          21.901           22.987             1.0866    
+       12.5          22.434           22.987            0.55309    
+
+
+changed_exact_endpoint_C =
+
+   33.3878
+
+
+wrong_first_value_C =
+
+   79.4000
+
+
+correct_first_value_C =
+
+    50
+
+
+ode45_max_difference_C =
+
+   2.4009e-05
+
+26.2.0.3340147 (R2026b) Prerelease Update 3
+WEEK08_LECTURE_VALIDATION_PASSED

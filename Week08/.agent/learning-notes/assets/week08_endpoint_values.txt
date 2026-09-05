@@ -1,0 +1,4 @@
+Exact T(300 s) = 22.9872241021 degC
+Euler h = 50 s: T(300 s) = 20.9375000000 degC; abs. endpoint error = 2.0497241021 degC
+Euler h = 25 s: T(300 s) = 21.9005811214 degC; abs. endpoint error = 1.0866429806 degC
+Euler h = 12.5 s: T(300 s) = 22.4341342258 degC; abs. endpoint error = 0.5530898762 degC

@@ -21,6 +21,7 @@ The standard AI-assisted revision pattern is `initial attempt -> Socratic guidan
 
 ## Current materials
 
+- [Week 08 — ODE simulation](Week08/README.md): lecture deck, learning note, lecture demonstration, and AI-enabled group practical.
 - Week 01: package pending rebuild
 - [Course topic and difficulty blueprint](PHY4605_Course_Topic_Blueprint.md)
 - [Course-material production blueprint](AGENTS.md)

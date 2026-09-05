@@ -1,0 +1,14 @@
+# Week 08 Pre-Practical Diagnostic Draft
+
+Use this draft only after Week 08 material and questions are approved. Configure one ungraded Google Form quiz through the corresponding Week 08 Google Classroom coursework item; do not create a course-wide routing Form. Collect verified institutional email if identification is required. The six items preserve the standard prediction, units, algorithm/code, diagnosis, validation, and confidence pattern.
+
+| Part | Student prompt | Response format | Answer key and misconception cue |
+| --- | --- | --- | --- |
+| Physical prediction | A positive capacitor voltage obeys `dV/dt=-V/(RC)`. Before calculation, what happens to `V`? | Multiple choice: decreases / remains constant / increases / cannot tell | **Decreases.** Address the misconception that a positive state requires a positive derivative. |
+| Units and scaling | For `dv/dt=g-(c/m)v`, what is the unit of `dv/dt`? | Multiple choice: `m/s` / `m/s^2` / `kg/s` / `N` | **m/s^2.** Address confusing velocity with acceleration. |
+| Algorithm and code | Which order correctly applies one Euler step? A. calculate slope -> store initial value -> make next value -> repeat; B. store initial value -> calculate slope -> make next value -> repeat; C. store initial value -> make next value -> calculate slope -> repeat; D. repeat -> calculate slope -> store initial value -> make next value. | Multiple choice | **B.** Address missing initial conditions or calculating a next value before a slope. |
+| Numerical or defect diagnosis | A passive RC-discharge loop uses `V(n+1)=V(n)+dt*V(n)/(R*C)`. Which change repairs it? A. `V(n+1)=V(n)+dt*(-V(n)/(R*C))`; B. `V(n+1)=V(n)*dt*V(n)/(R*C)`; C. `V(n+1)=V(n)+dt*V(n)/(R+C)`; D. `V(n+1)=V(n)-dt*R*C/V(n)`. | Multiple choice | **A.** Address an incorrect sign that still runs. |
+| Validation reasoning | In one or two sentences, name one valid check for an Euler radioactive-decay result and explain what it tests. | Short response | Expected evidence: compare with the supplied half-life `N(4 s)=N0/2`, exact reference, initial value, positive-count bound, or a decreasing timestep comparison. Address confusing a labelled graph or AI agreement with validation. |
+| Confidence calibration | How confident are you that you can explain why reducing `dt` may change an Euler result? | Linear scale: 1 not yet confident to 5 very confident | No score required. Use responses to identify whether a 10-15 minute optional remediation should target timestep versus physical-parameter confusion. |
+
+If the dominant misconception is the Euler sign or timestep distinction, publish one optional 10-15 minute Classroom remediation: show one corrected RC update, one retry with a changed `dt`, reveal the reasoning, and repeat the confidence question. Keep it optional and do not make it a prerequisite for the practical.

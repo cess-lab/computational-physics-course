@@ -1,0 +1,573 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Lecture_Slides_Week08",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "Week08/.agent/lecture-slides/codex-ppt/qa/sample_generation_record.md and the approved Slide 05 refinement sequence",
+    "size": "16:9 landscape, 1672 x 941 output from built-in backend",
+    "quality": "built-in default",
+    "model_config": "built-in preferred gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+    "input_context_preparation": "Parent inspected the MATLAB numerical references and previous Week 05-07 course slides with view_image. Workers must attach the approved sample as style-only reference and attach any slide-level strict MATLAB graph reference.",
+    "handoff_rule": "Use the same built-in image_gen tool in generation or precise-edit mode as needed; treat the approved sample as style-only; return a blocker if the built-in tool or required image context is unavailable."
+  },
+  "max_concurrent_slides": 3,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Can a Cooling Rate Predict a Temperature?",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "6a8895a1-52b8-53ad-a028-75854e9e54a2",
+        "agent_nickname": "slide_01",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "fe7b7fab2d1d15ea459dbe84b93f047f12c4be99b3baf6baf715d4e3806c692a",
+        "dispatched_at": "2026-09-05T02:16:57Z"
+      },
+      "result": {
+        "agent_id": "6a8895a1-52b8-53ad-a028-75854e9e54a2",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f5a-b65a-7351-a3dd-4b219c2df4e1/exec-4ee2e494-97dc-4aa0-9dcb-818747803583.png",
+        "selected_source_sha256": "41a9b8a137713458c7043ae1c2dd592d41eeff76605c0e0538b0efcfac89f508",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "41a9b8a137713458c7043ae1c2dd592d41eeff76605c0e0538b0efcfac89f508",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: 80 C object, 20 C room, outward heat flow and prediction choices are exact; title divider and open-canvas style match the approved sample.",
+        "recorded_at": "2026-09-05T02:20:19Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Name the State, Rate, and Initial Condition",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "63059cde-3832-5b07-a4d7-361930e5ae9a",
+        "agent_nickname": "slide_02",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "9962ffaebdcfaf1800e24601b42d95e2ba4296df4d5984a63f70e5856c4d23e8",
+        "dispatched_at": "2026-09-05T02:17:12Z"
+      },
+      "result": {
+        "agent_id": "63059cde-3832-5b07-a4d7-361930e5ae9a",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f5a-eef1-7192-910d-efadd24b5478/exec-ac73d071-6e2e-4590-ad57-636c347d75aa.png",
+        "selected_source_sha256": "5403d14b36d98ae2af6a022d42c5ab4a3294d98037ae7ab746fe2e3ac5891cf6",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "5403d14b36d98ae2af6a022d42c5ab4a3294d98037ae7ab746fe2e3ac5891cf6",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: exact state, derivative, initial condition, parameters and units are readable; approved title divider and open-canvas style are present.",
+        "recorded_at": "2026-09-05T02:18:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Read the Cooling Law in Words",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "020ce97d-9f01-5af1-8950-e4a3eb14bea0",
+        "agent_nickname": "slide_03",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "95d9ba8b51248ed70f9baccdb0d6b5fd459fd1ada4e2dfe98da1d43b5a73d0d5",
+        "dispatched_at": "2026-09-05T02:17:27Z"
+      },
+      "result": {
+        "agent_id": "020ce97d-9f01-5af1-8950-e4a3eb14bea0",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f5b-26d2-7320-8e33-fc8b4c466257/exec-b4d9a295-56ba-40c6-a1cf-8dcd8e5086b3.png",
+        "selected_source_sha256": "d18a20d3fa77e8cfdacdbff890c8b3daf65090f1fcff9ac3ad66835561fcf5b7",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "d18a20d3fa77e8cfdacdbff890c8b3daf65090f1fcff9ac3ad66835561fcf5b7",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: equation, sign, initial-rate substitution and C/s unit are exact and legible; title divider and open-canvas style match the approved sample.",
+        "recorded_at": "2026-09-05T02:18:59Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Turn the Current Rate into One Step",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "bc21eca1-9b1d-5f45-a451-0cb001bdcd1a",
+        "agent_nickname": "slide_04",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "874336d690eeb84a2ca6ec303f1b39f13c4d8054dbeba83542f44e4bf940f828",
+        "dispatched_at": "2026-09-05T02:20:35Z"
+      },
+      "result": {
+        "agent_id": "bc21eca1-9b1d-5f45-a451-0cb001bdcd1a",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f5e-06e4-7ca0-ab1a-1a661278bc72/exec-53612026-a9b3-40ad-9388-2ee27e98edaf.png",
+        "selected_source_sha256": "71495ca1beff285bd6cd402e58a2aa597600303df3955031052cabbe75a4045d",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "71495ca1beff285bd6cd402e58a2aa597600303df3955031052cabbe75a4045d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: approved title divider present; Euler current-rate-next flow, signs, subscripts, and dimensional relation are legible and match the strict prompt.",
+        "recorded_at": "2026-09-05T02:22:31Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Trace Two Euler Updates",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_05.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Plan the Algorithm Before MATLAB",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_06",
+        "agent_nickname": "slide_06",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "ea9799fc52fcc15019eba5c01547d93766455813011e8a9c4a7287d412686bfb",
+        "dispatched_at": "2026-09-05T02:22:14Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_06",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f5e-437d-7841-8259-cfcf8ad91092/exec-cf7951bc-c1b4-4347-8d78-8a0a777bb35d.png",
+        "selected_source_sha256": "634059a5336b4fea0c0fac8e213e477f41d4258d81af30346a385102879c1bc1",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "634059a5336b4fea0c0fac8e213e477f41d4258d81af30346a385102879c1bc1",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; all ten workflow stages, loop direction, exact reference, units, and validation goal are legible.",
+        "recorded_at": "2026-09-05T02:22:54Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Seven Values Represent Six Intervals",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_07",
+        "agent_nickname": "slide_07",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "c2c589be481d55dc30e8f879b6ffab28fc03561ab5b317210683ba19d886af76",
+        "dispatched_at": "2026-09-05T02:22:15Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_07",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f5f-5337-7992-a900-a70c2c7c0165/exec-32b665bd-59f5-45fc-a3df-82672ab19b9d.png",
+        "selected_source_sha256": "fef0f4cb62872e7928a453b09929d8aecb6f1ef54714e76b651f5e22b6372975",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "fef0f4cb62872e7928a453b09929d8aecb6f1ef54714e76b651f5e22b6372975",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; seven physical times, one-based indices, six 50 s intervals, temperatures, and MATLAB array code are exact and legible.",
+        "recorded_at": "2026-09-05T02:23:42Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Read the Euler Loop",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_08",
+        "agent_nickname": "slide_08",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "1008c51fbf64d2858c45dc58aec1a91c85f56b25ce272b2700b468418a32a8a3",
+        "dispatched_at": "2026-09-05T02:24:15Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_08",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f61-19f0-7b90-9d6a-d86dedc29b80/exec-331e1c63-ada2-4ae5-a28c-51555bca2d43.png",
+        "selected_source_sha256": "dc050423fcb09977c9c727c39e386c615eaaebca9b7b675c288fae8244ec7c11",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "dc050423fcb09977c9c727c39e386c615eaaebca9b7b675c288fae8244ec7c11",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; MATLAB loop tokens and end statement are legible; n=2 trace reads T_C(2), writes T_C(3), and array-bound explanation is correct.",
+        "recorded_at": "2026-09-05T02:25:16Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Check the Trajectory Before Trusting It",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/matlab/cooling_timestep_reference.png",
+          "role": "strict numerical reference for exact cooling and Euler h=50 s",
+          "fidelity": "redraw the complete slide cohesively; preserve axes, units, exact curve, h=50 markers, room line, and curve relationships"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_09",
+        "agent_nickname": "slide_09",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "3b309d0648ee22f6313c6b84f1f9b7b71e07800b5f38cb9819bce14f621a2727",
+        "dispatched_at": "2026-09-05T02:24:15Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_09",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f61-32b0-7801-94c8-ffa550a0f091/exec-c3dea2ef-05fc-4797-9654-57b058d5ef5d.png",
+        "selected_source_sha256": "5333de4c76593667d955240acfbd13e343a2bc3d5cde9fa6d687ce7ca55e8ee1",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "5333de4c76593667d955240acfbd13e343a2bc3d5cde9fa6d687ce7ca55e8ee1",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; exact and h=50 s Euler trajectories, 20 C room line, axes, physical checks, and numerical-accuracy caveat are legible and scientifically consistent.",
+        "recorded_at": "2026-09-05T02:25:54Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Change the Timestep, Keep the Physics Fixed",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/matlab/cooling_timestep_reference.png",
+          "role": "strict numerical reference for all trajectories",
+          "fidelity": "redraw cohesively; preserve exact axes, legend, data markers, endpoint ordering, room line, and curve relationships"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_10",
+        "agent_nickname": "slide_10",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "a2e3c61d6a47de79fd1f980cdef14692d115e524a3ee5a5ae10e4ab406bab56b",
+        "dispatched_at": "2026-09-05T02:24:15Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_10",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f61-4b5c-7012-a64f-167af4d27be3/exec-889f44ea-c8d6-46d8-af33-7e5935d55d52.png",
+        "selected_source_sha256": "e12e0e86cb36d42b9f2c3c911315190ac5c14be01b68370883a28f3b4bfc2226",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "e12e0e86cb36d42b9f2c3c911315190ac5c14be01b68370883a28f3b4bfc2226",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA after regeneration: title divider present; strict exact/Euler comparison graph is coherent; fixed T_room, T(0), tau, and t_final cards are correct; all timestep-refinement conclusions are explicit.",
+        "recorded_at": "2026-09-05T02:27:31Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Measure Error Against a Supplied Reference",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_11",
+        "agent_nickname": "slide_11",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "c70d6520c610a0d3a61b268b0e0ceaf863158bc914e967b330ae415b4834aa32",
+        "dispatched_at": "2026-09-05T02:28:04Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_11",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f64-950e-72a1-8afa-77672915fdb8/exec-a377b7de-84cd-4a93-bf06-475d9828278b.png",
+        "selected_source_sha256": "0f0417aecd2c2f82318b13ef1f17d48c0efb2dc62ea01abce2ad45742a48748b",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "0f0417aecd2c2f82318b13ef1f17d48c0efb2dc62ea01abce2ad45742a48748b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; exact solution, endpoint and absolute-error table values, units, bar lengths, and refinement conclusion are accurate and legible.",
+        "recorded_at": "2026-09-05T02:38:42Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Spot a Runnable but Wrong Update",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_12",
+        "agent_nickname": "slide_12",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "b96cc855f0ffc56603375fbc6b0bac2ccfc56fe13eb56998ed6fab638022a7b2",
+        "dispatched_at": "2026-09-05T02:28:04Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_12",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f64-b182-72a0-977f-d53d2b9196ad/exec-7e66b099-4633-4d8a-8aae-0591b61b99ab.png",
+        "selected_source_sha256": "df8a2af06675e3f720f071bacf39d193c902e930bda845d26586fc9b20d40747",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "df8a2af06675e3f720f071bacf39d193c902e930bda845d26586fc9b20d40747",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; runnable-but-wrong and repaired MATLAB updates are exact; dimensional diagnosis and validation warning are correct and legible.",
+        "recorded_at": "2026-09-05T02:41:43Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Predict a Slower Cooling Model",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_13",
+        "agent_nickname": "slide_13",
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "6779f90b7a514d9108bf18a92e78624b2ecd717a5f8aaba7c9779cd99e7f6dad",
+        "dispatched_at": "2026-09-05T02:28:05Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_13",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f64-c8c1-7851-9aa1-fcf68d14cd99/exec-2f644574-f4b5-4cf0-9fb5-66153d2376af.png",
+        "selected_source_sha256": "ef9e837e7ab9a57919917c6f4b79c0cfe63606110531c88b39a357ee79bec2fb",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "ef9e837e7ab9a57919917c6f4b79c0cfe63606110531c88b39a357ee79bec2fb",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; tau=100 and 200 s curves, endpoints, initial rate change, physical-vs-numerical distinction, and model limitation are correct and legible.",
+        "recorded_at": "2026-09-05T02:41:43Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Explain One Update and One Check",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/lecture-slides/codex-ppt/origin_image/slide_05.png",
+          "role": "approved Week 08 Teaching Courseware sample and deck-level style reference",
+          "fidelity": "Match the palette, title scale, thin full-width horizontal title divider, typography, spacing, functional cards, and visual identity; do not copy the exact Slide 05 layout."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_14",
+        "agent_nickname": "slide_14",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "c244ec0b059b46c9e2e8bbfd9867e0b7a98a24450d485a4046c699e5e80e7aee",
+        "dispatched_at": "2026-09-05T02:41:57Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_14",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a06f71-8cc4-7810-b33b-62905081058b/exec-f6cccf27-a3cd-4984-b1ed-428bc7a5aaa7.png",
+        "selected_source_sha256": "6b57c0f413c9f257ad5d98047d0f58ba1f467f055e5aa3617c893ec0cd223554",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "6b57c0f413c9f257ad5d98047d0f58ba1f467f055e5aa3617c893ec0cd223554",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size parent QA: title divider present; four exit-ticket prompts, h=25 s first update, state/rate/initial-condition facts, repeated-rate explanation, and validation choices are correct and legible.",
+        "recorded_at": "2026-09-05T02:44:35Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-05T02:44:35Z"
+}

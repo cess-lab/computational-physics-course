@@ -1,0 +1,2 @@
+group_id,student_name,completed_defence_count,latest_score_out_of_8,selection_eligible,next_action
+REPLACE_GROUP_ID,REPLACE_STUDENT_NAME,0,,yes,Await first random draw or record a make-up defence if absent.

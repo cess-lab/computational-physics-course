@@ -1,0 +1,66 @@
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+rc_first_two_updates_V =
+
+   12.0000    9.0000    6.7500
+
+
+rc_max_error_V =
+
+    0.6177
+
+
+rc_timestep_table =
+
+  3×2 table
+
+    Timestep_s    FinalVoltageAbsoluteError_V
+    __________    ___________________________
+
+        0.5                0.099517          
+       0.25                 0.05251          
+      0.125                0.026883          
+
+
+rc_ode45_final_table =
+
+  1×2 table
+
+    Ode45FinalVoltage_V    ExactFinalVoltage_V
+    ___________________    ___________________
+
+          0.21979                0.21979      
+
+
+fall_timestep_table =
+
+  3×2 table
+
+    Timestep_s    FinalVelocityAbsoluteError_m_per_s
+    __________    __________________________________
+
+        0.5                     0.16271             
+       0.25                    0.085853             
+      0.125                    0.043954             
+
+
+decay_max_error_N =
+
+   13.2301
+
+
+context_comparison =
+
+  3×6 table
+
+             Context              StateVariable    DerivativeUnit             EulerUpdate                       ReferenceCheck                         ModelLimitation           
+    __________________________    _____________    ______________    ______________________________    _________________________________    _____________________________________
+
+    "RC discharge"                     "V"           "V/s"           "V(n+1)=V(n)+dt[-V(n)/(RC)]"      "Exact exponential"                  "REPLACE_WITH_ONE_RC_LIMITATION"     
+    "Falling with linear drag"         "v"           "m/s^2"         "v(n+1)=v(n)+dt[g-(c/m)v(n)]"     "Exact terminal-velocity curve"      "REPLACE_WITH_ONE_FALLING_LIMITATION"
+    "Radioactive decay"                "N"           "nuclei/s"      "N(n+1)=N(n)+dt[-lambda*N(n)]"    "Half-life and exact exponential"    "REPLACE_WITH_ONE_DECAY_LIMITATION"  
+
+WEEK08_PRACTICAL_BASELINE_PASSED

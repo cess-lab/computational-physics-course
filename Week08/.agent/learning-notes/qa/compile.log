@@ -1,0 +1,8 @@
+Root: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/learning-notes/Week08_ODE_Simulation.tex
+Compiler: tectonic
+Command: /Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic -X compile --outdir /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/learning-notes/build --outfmt pdf --print --untrusted Week08_ODE_Simulation.tex
+Exit code: 0
+PDF: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week08/.agent/learning-notes/build/Week08_ODE_Simulation.pdf
+
+Attempts:
+- tectonic: passed (exit 0)

@@ -1,0 +1,2 @@
+week,group_id,student_name,attempt_date,question_slot,variant_id,completed,score_out_of_8,status,make_up_due,notes
+Week08,REPLACE_GROUP_ID,REPLACE_STUDENT_NAME,YYYY-MM-DD,,,no,,pending,,Add one row per defence attempt; do not overwrite prior entries.
