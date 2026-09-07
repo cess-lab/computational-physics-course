@@ -1,0 +1,131 @@
+{
+  "pptx": "Week12/Lecture_Slides_Week12.pptx",
+  "rules": [
+    {
+      "slide": 1,
+      "status": "repositioned",
+      "title_bottom_px": 84,
+      "line_px": 98,
+      "line_y_inches": 0.5858,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 2,
+      "status": "repositioned",
+      "title_bottom_px": 84,
+      "line_px": 88,
+      "line_y_inches": 0.526,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 3,
+      "status": "repositioned",
+      "title_bottom_px": 118,
+      "line_px": 132,
+      "line_y_inches": 0.7891,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 4,
+      "status": "repositioned",
+      "title_bottom_px": 105,
+      "line_px": 119,
+      "line_y_inches": 0.7113,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 5,
+      "status": "repositioned",
+      "title_bottom_px": 123,
+      "line_px": 137,
+      "line_y_inches": 0.8189,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 6,
+      "status": "repositioned",
+      "title_bottom_px": 96,
+      "line_px": 100,
+      "line_y_inches": 0.5978,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 7,
+      "status": "repositioned",
+      "title_bottom_px": 112,
+      "line_px": 126,
+      "line_y_inches": 0.7532,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 8,
+      "status": "repositioned",
+      "title_bottom_px": 107,
+      "line_px": 111,
+      "line_y_inches": 0.6635,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 9,
+      "status": "repositioned",
+      "title_bottom_px": 82,
+      "line_px": 86,
+      "line_y_inches": 0.5141,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 10,
+      "status": "repositioned",
+      "title_bottom_px": 94,
+      "line_px": 108,
+      "line_y_inches": 0.6456,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 11,
+      "status": "repositioned",
+      "title_bottom_px": 94,
+      "line_px": 108,
+      "line_y_inches": 0.6456,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 12,
+      "status": "repositioned",
+      "title_bottom_px": 86,
+      "line_px": 90,
+      "line_y_inches": 0.538,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 13,
+      "status": "repositioned",
+      "title_bottom_px": 109,
+      "line_px": 123,
+      "line_y_inches": 0.7353,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    },
+    {
+      "slide": 14,
+      "status": "repositioned",
+      "title_bottom_px": 162,
+      "line_px": 176,
+      "line_y_inches": 1.0521,
+      "line_color": "#0D2B62",
+      "line_width_pt": 2.25
+    }
+  ]
+}

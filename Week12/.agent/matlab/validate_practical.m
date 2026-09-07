@@ -1,0 +1,18 @@
+root = '/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course';
+out = fullfile(root,'Week12','.agent','matlab');
+set(groot,'defaultFigureVisible','off');
+run(fullfile(root,'Week12','Week12_Practical_Integrated_Method_Selection_and_Capstone_Studio.m'));
+assert(height(context_cards)==3 && projectile_45_check_passed);
+assert(abs(projectile_range_m(1)-projectile_range_m(end))<1e-10);
+assert(all(projectile_range_variant_m>projectile_range_m));
+assert(rc_sign_defect_flagged && all(diff(rc_voltage_euler_V)>0));
+assert(all(rc_voltage_euler_V>=0 & rc_voltage_euler_V<=rc_supply_V));
+assert(rc_endpoint_error_V<0.03);
+assert(decay_half_life_check_passed && decay_nonnegative_check);
+assert(submission_state=="DRAFT_NOT_YET_LOCKED");
+writetable(projectile_table,fullfile(out,'practical_projectile_evidence.csv'));
+writetable(rc_audit_table,fullfile(out,'practical_rc_evidence.csv'));
+writetable(table(decay_half_ratio,decay_half_life_error_fraction,decay_nonnegative_check),fullfile(out,'practical_decay_evidence.csv'));
+exportgraphics(gcf,fullfile(out,'week12_practical_rc_validation.png'),'Resolution',180);
+disp(version);
+disp('WEEK12_PRACTICAL_FRESH_PROCESS_PASS');

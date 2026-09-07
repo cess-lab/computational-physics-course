@@ -1,0 +1,184 @@
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+context_cards =
+
+  3×6 table
+
+           context_name                           problem_signal                         method_name                          required_input                         principal_output                            key_limitation                     
+    __________________________    _______________________________________________    ___________________    ___________________________________________________    _____________________    ________________________________________________________
+
+    "A. Projectile range"         "range changes when launch angle changes"          "Parameter sweep"      "speed, angle, gravity"                                "range versus angle"     "level landing and no air drag"                         
+    "B. RC capacitor charging"    "voltage changes with the present voltage gap"     "Forward Euler ODE"    "supply voltage, resistance, capacitance, timestep"    "voltage versus time"    "constant circuit parameters and finite timestep"       
+    "C. Radioactive decay"        "expected count changes with the present count"    "Forward Euler ODE"    "initial count, half-life, timestep"                   "count versus time"      "deterministic expected-count model and finite timestep"
+
+
+selected_context_record =
+
+  1×4 table
+
+                Context                             RequiredInput                               PrincipalOutput                           KeyLimitation          
+    _______________________________    ________________________________________    _________________________________________    _________________________________
+
+    "REPLACE_WITH_CONTEXT_A_B_OR_C"    "REPLACE_WITH_REQUIRED_INPUTS_AND_UNITS"    "REPLACE_WITH_PRINCIPAL_OUTPUT_AND_UNITS"    "REPLACE_WITH_ONE_KEY_LIMITATION"
+
+
+algorithm_table =
+
+  7×2 table
+
+    Step                      PlainLanguageAction                  
+    ____    _______________________________________________________
+
+     1      "identify model, assumptions, and units"               
+     2      "set supplied parameters and one approved modification"
+     3      "make the time, position, or input array"              
+     4      "apply the supplied method at each required point"     
+     5      "store one principal graph or table"                   
+     6      "run the required check and the chosen check"          
+     7      "interpret the result and state one limitation"        
+
+
+projectile_table =
+
+  5×3 table
+
+    Angle_deg    BaselineRange_m    VariantRange_m
+    _________    _______________    ______________
+
+       20             21.23             26.209    
+       35            31.036             38.316    
+       45            33.028             40.775    
+       55            31.036             38.316    
+       70             21.23             26.209    
+
+
+rc_audit_table =
+
+  1×4 table
+
+    WrongSignEndpoint_V    CorrectEulerEndpoint_V    ExactEndpoint_V    AbsoluteError_V
+    ___________________    ______________________    _______________    _______________
+
+          -211.7                   4.9303                4.9084            0.021879    
+
+
+decay_table =
+
+  25×3 table
+
+    Time_h    EulerExpectedCount    ExactExpectedCount
+    ______    __________________    __________________
+
+       0              1000                  1000      
+       1            887.81                 890.9      
+       2            788.21                 793.7      
+       3            699.78                707.11      
+       4            621.28                629.96      
+       5            551.58                561.23      
+       6             489.7                   500      
+       7            434.76                445.45      
+       8            385.98                396.85      
+       9            342.68                353.55      
+      10            304.24                314.98      
+      11             270.1                280.62      
+      12             239.8                   250      
+      13             212.9                222.72      
+      14            189.01                198.43      
+      15            167.81                176.78      
+      16            148.98                157.49      
+      17            132.27                140.31      
+      18            117.43                   125      
+      19            104.26                111.36      
+      20            92.559                99.213      
+      21            82.175                88.388      
+      22            72.956                78.745      
+      23            64.771                70.154      
+      24            57.505                  62.5      
+
+
+method_comparison_table =
+
+  2×3 table
+
+            EvidencePath            Endpoint_V    AbsoluteDifferenceFromExact_V
+    ____________________________    __________    _____________________________
+
+    "Forward Euler, dt = 0.25 s"      4.9303                0.021879           
+    "Exact supplied expression"       4.9084                       0           
+
+
+validation_menu =
+
+  6×2 table
+
+       validation_check_name                   validation_check_purpose            
+    ___________________________    ________________________________________________
+
+    "Known or exact reference"     "compare the main result with supplied evidence"
+    "Initial condition"            "confirm the state starts at the stated value"  
+    "Expected sign or bound"       "test a physical direction or allowable range"  
+    "Refinement or convergence"    "compare two numerical resolutions"             
+    "Conservation or balance"      "test a quantity that should balance"           
+    "Independent calculation"      "repeat one result by a different calculation"  
+
+
+capstone_check_record =
+
+  2×3 table
+
+    CheckRole                       CheckName                                          Evidence                     
+    __________    _____________________________________________    _________________________________________________
+
+    "Required"    "REPLACE_WITH_LECTURER_AGREED_REQUIRED_CHECK"    "REPLACE_WITH_REQUIRED_CHECK_RESULT_AND_LOCATION"
+    "Chosen"      "REPLACE_WITH_GROUP_CHOSEN_SECOND_CHECK"         "REPLACE_WITH_CHOSEN_CHECK_RESULT_AND_LOCATION"  
+
+
+capstone_evidence_table =
+
+  10×2 table
+
+         EvidenceItem                              GroupEntry                     
+    _______________________    ___________________________________________________
+
+    "Problem space"            "REPLACE_WITH_APPROVED_CONTEXT"                    
+    "Model and assumptions"    "REPLACE_WITH_MODEL_EQUATION_AND_ASSUMPTIONS"      
+    "Variables and units"      "REPLACE_WITH_VARIABLES_AND_UNITS"                 
+    "Pseudocode"               "REPLACE_WITH_COMPLETED_OR_REFINED_PSEUDOCODE"     
+    "One modification"         "REPLACE_WITH_ONE_CHANGED_PARAMETER_OR_ASSUMPTION" 
+    "Principal output"         "REPLACE_WITH_ONE_GRAPH_OR_TABLE_AND_UNITS"        
+    "Required check"           "REPLACE_WITH_REQUIRED_CHECK_RESULT"               
+    "Chosen check"             "REPLACE_WITH_CHOSEN_CHECK_RESULT"                 
+    "Interpretation"           "REPLACE_WITH_PHYSICAL_MEANING_OF_PRINCIPAL_RESULT"
+    "Limitation"               "REPLACE_WITH_ONE_MODEL_OR_NUMERICAL_LIMITATION"   
+
+
+defence_rehearsal_table =
+
+  3×2 table
+
+               Member                             RehearsalFocus               
+    ____________________________    ___________________________________________
+
+    "Member 1"                      "REPLACE_WITH_MEMBER_1_TRACE_AND_FOLLOW_UP"
+    "Member 2"                      "REPLACE_WITH_MEMBER_2_TRACE_AND_FOLLOW_UP"
+    "Member 3 or not applicable"    "REPLACE_WITH_MEMBER_3_TRACE_AND_FOLLOW_UP"
+
+
+reproducibility_table =
+
+  5×2 table
+
+             Item                                RecordedValue                   
+    ______________________    ___________________________________________________
+
+    "MATLAB release"          "2026b"                                            
+    "Toolbox requirement"     "Base MATLAB"                                      
+    "Run order"               "Top to bottom in a fresh session"                 
+    "Random seed"             "Not applicable"                                   
+    "Locked code baseline"    "Supplied contexts and baseline calculations above"
+
+26.2.0.3340147 (R2026b) Prerelease Update 3
+WEEK12_PRACTICAL_FRESH_PROCESS_PASS

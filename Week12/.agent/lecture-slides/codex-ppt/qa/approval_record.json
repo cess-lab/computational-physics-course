@@ -1,0 +1,11 @@
+{
+  "outline_approval": "The outline is approved.",
+  "source_mapping": "approved with outline",
+  "style": "Teaching Courseware as explicitly prescribed by user course instructions",
+  "backend": "built-in ImageGen as explicitly prescribed by user course instructions",
+  "tool_availability_checked": "image_gen__imagegen is callable",
+  "sample_slide": 9,
+  "sample_status": "approved by user in current task: Okay, approved, finish the slide deck",
+  "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+  "full_generation_authorized": true
+}

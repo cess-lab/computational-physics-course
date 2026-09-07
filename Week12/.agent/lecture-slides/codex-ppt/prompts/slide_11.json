@@ -1,0 +1,41 @@
+{
+  "slide": 11,
+  "title": "Change One Parameter and Explain the Physics",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 11,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nTeach integrated method recognition, supplied-code auditing, validation, and formative capstone evidence assembly without introducing a new required numerical method.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"Week 12 integrates familiar computational methods. Students start with the output sought, identify the matching learned method and limitation, audit supplied or AI-assisted code, trace one algorithmic step, choose a validation check, and assemble a bounded capstone evidence packet for Week 13.\",\n    \"locked_model\": \"Newton cooling: dT/dt=-(T-Tenv)/tau, Tenv=20 deg C, T0=80 deg C, tau=100 s, 0<=t<=200 s. Euler dt=20 s endpoint 26.4425 deg C; Euler dt=10 s endpoint 27.2946 deg C; exact endpoint 28.1201 deg C. Defective plus-sign first update gives 92 deg C. tau=150 s is a controlled physical modification that predicts slower cooling.\",\n    \"canonical_terms\": [\n      \"physical model\",\n      \"algorithm\",\n      \"code trace\",\n      \"validation\",\n      \"reproducibility\",\n      \"required check\",\n      \"chosen check\",\n      \"limitation\",\n      \"AI decision record\"\n    ],\n    \"assessment_boundary\": \"Week 12 studio is formative. It does not add a graded portfolio packet or new defence entry. Week 13 retains the final bounded investigation, individual defence and handoff.\",\n    \"universal_constraints\": \"All equations, signs, code identifiers, units, values and graph relationships are strict source facts. Use supplied evidence; do not introduce a new required method or confidential assessment content.\"\n  },\n  \"slide_local_context\": \"No invented numerical curve; the lecturer MATLAB script computes and checks the modification.\"\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware - PHY4605 Week 12 approved sample\",\n  \"visual_direction\": \"Open white canvas with large navy sans-serif title, restrained blue/teal/sage/ochre accents, clear quantitative teaching visuals, generous spacing, varied layouts by slide role, and no outer frame.\",\n  \"color_palette\": \"white/light neutral, navy, cool gray, muted blue, teal, sage green, muted ochre, coral only for genuine defects\",\n  \"typography\": \"large bold sans-serif titles, readable regular sans-serif body, monospaced MATLAB code only when required\",\n  \"deck_consistency\": \"match the approved sample's open canvas, navy title hierarchy, blue/green evidence language and moderate density; vary composition by role; no slide numbers, logos, watermarks, timings or decorative perimeter\"\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png — approved Week 12 sample style reference; match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout\n\n\n## Slide\n{\n  \"number\": 11,\n  \"title\": \"Change One Parameter and Explain the Physics\",\n  \"role\": \"controlled modification\",\n  \"intent\": \"Use a single physical change to practise prediction and interpretation.\"\n}\n\n## Text\n{\n  \"title\": \"Change One Parameter and Explain the Physics\",\n  \"key_points\": [\n    \"Change tau from 100 s to 150 s\",\n    \"Hold other inputs fixed\",\n    \"Predict slower cooling\",\n    \"Compare with the corresponding exact reference\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"before/after parameter table with predicted direction arrow\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"controlled-change card and slower-cooling trajectory concept\"\n}\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_11.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+      "role": "approved Week 12 sample style reference",
+      "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved Week 12 Slide 9 prompt and graph-fidelity revision",
+    "input_context_preparation": "parent inspected the local MATLAB graph with view_image and supplied it as strict numerical reference; sample redraw generated with built-in image_gen",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+    "handoff_rule": "Use built-in image_gen generate mode; use the approved sample as style reference and strict MATLAB graph sources only where listed; return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

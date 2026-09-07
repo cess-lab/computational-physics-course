@@ -1,0 +1,566 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "Lecture_Slides_Week12",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved Week 12 Slide 9 prompt and graph-fidelity revision",
+    "input_context_preparation": "parent inspected the local MATLAB graph with view_image and supplied it as strict numerical reference; sample redraw generated with built-in image_gen",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+    "handoff_rule": "Use built-in image_gen generate mode; use the approved sample as style reference and strict MATLAB graph sources only where listed; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 4,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Which Computation Answers the Physics Question?",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_01",
+        "agent_nickname": "slide_01",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "bfd39325629f81a20b4ab49033166fc7783409f9a4d3d0674ec086ba7d230175",
+        "dispatched_at": "2026-09-07T03:58:46Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a04-549a-77f2-9a13-5d85b0d26005/exec-f6c02a49-dd1a-4f50-9038-361b613bd778.png",
+        "selected_source_sha256": "dbacf57cadd0ecfd59c0aa7c379e8ea70ff3033eb6050197721b078bee72600c",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "dbacf57cadd0ecfd59c0aa7c379e8ea70ff3033eb6050197721b078bee72600c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection: readable title and three-stage flow; no clipping or outer frame; accepted as coherent Teaching Courseware opening.",
+        "recorded_at": "2026-09-07T04:00:01Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Name the Output Before Choosing the Method",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_02",
+        "agent_nickname": "slide_02",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "0d5822fe1d63e08d16d68fbfe639e9bea11db95af2bd713ab5658723f661feb7",
+        "dispatched_at": "2026-09-07T03:58:46Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a04-6a43-72d3-babf-4a0288e4eddb/exec-31d99a7f-cda5-41f1-8b82-222a51920c2e.png",
+        "selected_source_sha256": "d1a60d4b6ef07078410632152dd5d38f70ff334680d4b4cc41cc8e6926fff284",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "d1a60d4b6ef07078410632152dd5d38f70ff334680d4b4cc41cc8e6926fff284",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection: four output-to-method mappings are readable, arrows and palette are coherent, no clipping or outer frame.",
+        "recorded_at": "2026-09-07T04:00:26Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Inputs, Output, and One Limitation",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_03",
+        "agent_nickname": "slide_03",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "0ccde7dba80a27248c9745de44d7d3ae71e2f4e6c33442cd2af92d1d4184556c",
+        "dispatched_at": "2026-09-07T03:58:46Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_03",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a04-8023-70e2-930e-e5fb4823de8e/exec-f0d7a94e-3d16-4aa5-bc2d-ab6c575a0b9e.png",
+        "selected_source_sha256": "12ea9c802eb5defe9deb8da53c55dc80fc0c050f4f2a65f72ae0267e93b3358a",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "12ea9c802eb5defe9deb8da53c55dc80fc0c050f4f2a65f72ae0267e93b3358a",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection: inputs, output, assumptions, limitation and cooling visual are readable; open white canvas and no clipping.",
+        "recorded_at": "2026-09-07T04:00:57Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Predict the Cooling Before Running MATLAB",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_04",
+        "agent_nickname": "slide_04",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "6c2e30637ac23e30ac1f88d24b6a26717ec7d700576f2a8b98baedceb0a55169",
+        "dispatched_at": "2026-09-07T03:58:46Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_04",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a04-990f-73c0-8172-12cb87c865fa/exec-a88fdb5d-b2a7-4f30-9848-664a7e6366b5.png",
+        "selected_source_sha256": "13affcef2f461ae30e7e23f9a5772ead389c8f67fe7a6b788702e3f17cd1b3a0",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "13affcef2f461ae30e7e23f9a5772ead389c8f67fe7a6b788702e3f17cd1b3a0",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection: prediction states, direction, values and checklist are readable; no clipping or outer frame.",
+        "recorded_at": "2026-09-07T04:00:27Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Connect the Rate to the Update",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_05",
+        "agent_nickname": "slide_05",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "6598563ce43479ea0baabace7ace0f2fbc80f1380c37bcaa37cc07402524c76b",
+        "dispatched_at": "2026-09-07T04:01:39Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_05",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a06-ef58-7782-a534-91cdbfcf100d/exec-8e309757-037e-490d-bdaf-becee4e637ed.png",
+        "selected_source_sha256": "59c0484a616ede4778d36eb14dabbffc76c7be5acfe836dc0b46b55b5fb17978",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "59c0484a616ede4778d36eb14dabbffc76c7be5acfe836dc0b46b55b5fb17978",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: title, Newton cooling law, negative sign, Euler update, unit annotations, current/next state distinction, and key points are legible; Teaching Courseware style matches the approved sample.",
+        "recorded_at": "2026-09-07T04:04:46Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Read the Algorithm Before the Code",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_06",
+        "agent_nickname": "slide_06",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "86d5cf5e32965e79f691b811dce55b99e5b0856b90b9b8671d8526712b85adbd",
+        "dispatched_at": "2026-09-07T04:01:39Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_06",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a07-089f-7870-bc42-52c20d31b6f3/exec-f74ec13d-f1ed-4b8c-a217-cc2574c0cd55.png",
+        "selected_source_sha256": "2847757e8a96dafd3637a3883a69fd3d196d8c2ebc2d3e976e3863bcb42df811",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "2847757e8a96dafd3637a3883a69fd3d196d8c2ebc2d3e976e3863bcb42df811",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: title, five-step workflow, equations, and readable labels are present; palette and teaching density match the approved sample.",
+        "recorded_at": "2026-09-07T04:04:46Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Trace One Euler Step",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_07",
+        "agent_nickname": "slide_07",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "a6e34c510ed0f66d1fd2e48cb29e5cd0547d406901b3b7bd0d451969c3f2b010",
+        "dispatched_at": "2026-09-07T04:01:39Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_07",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a07-2385-75b1-a56a-76779883150b/exec-ac24e295-d9c3-46b4-905c-96328530e871.png",
+        "selected_source_sha256": "f79d3fc2f485e0029005be1cd3840fa9877102f5067ff756e13d32cf4d48182f",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "f79d3fc2f485e0029005be1cd3840fa9877102f5067ff756e13d32cf4d48182f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: clear code-to-table Euler trace with exact values, indices, times, units, signs, and calculation chain; style matches the approved sample.",
+        "recorded_at": "2026-09-07T04:04:46Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "A Script Can Run and Still Be Wrong",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_08",
+        "agent_nickname": "slide_08",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "9cadc6ee113fa1b4f25d28a8927c231fe9c0e7df27e9561b608d051e4e78e2bf",
+        "dispatched_at": "2026-09-07T04:01:39Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_08",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a07-4297-7ee2-a26b-467b8eb3a1bb/exec-d019daf6-417e-474c-8f8d-82c1cc44f74c.png",
+        "selected_source_sha256": "fd81a449aaa7a1a73d4ae5a90f5d241c9fbd939619f8cfd87a7282b9936d81bb",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "fd81a449aaa7a1a73d4ae5a90f5d241c9fbd939619f8cfd87a7282b9936d81bb",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: defective plus-sign line is isolated and labeled, corrected minus-sign repair is shown, 92 deg C defect fact and physical trend arrows are explicit.",
+        "recorded_at": "2026-09-07T04:04:46Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Validate Against the Supplied Reference",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/matlab/week12_cooling_validation.png",
+          "role": "strict numerical MATLAB reference; use for graph fidelity only",
+          "fidelity": "preserve axes, values, series ordering, endpoints, room line and curve relationships in a cohesive full-slide redraw"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_09.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Choose a Check That Tests the Claim",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_10",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "3bafb2d4b488786c7b499ff7283173c4002b969c7ae43596c1402885b6f8a2ac",
+        "dispatched_at": "2026-09-07T04:05:14Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_10",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a0a-73c8-74e0-bc2f-769ea366d6b0/exec-ca1a32c1-1683-4fa4-9a21-cac40715078d.png",
+        "selected_source_sha256": "324de85c3a689301663f4f03fd70b10b8cd8e55d7044c71602afdbd702b8e70e",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "324de85c3a689301663f4f03fd70b10b8cd8e55d7044c71602afdbd702b8e70e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: title and all four validation statements are legible; highlighted Euler cooling claim-to-check example is clear; palette and open Teaching Courseware layout match the approved sample.",
+        "recorded_at": "2026-09-07T04:07:46Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Change One Parameter and Explain the Physics",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_11",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "675d3d67b7bc02e28fe32b5615d4c87ecd0b88544b1c499e575bc795daeda823",
+        "dispatched_at": "2026-09-07T04:05:29Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_11",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a0a-c970-79c3-a31a-2e7c420b7570/exec-0f4b99a5-035c-41bf-903c-ea1d0e7c0acd.png",
+        "selected_source_sha256": "ec9f574798a019980ca3dfbda8dd6108d9a3f7ba406d81371138026cf27025b1",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "ec9f574798a019980ca3dfbda8dd6108d9a3f7ba406d81371138026cf27025b1",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: tau change from 100 s to 150 s is clear, all other inputs held fixed, slower cooling is shown, and no invented numerical curves appear.",
+        "recorded_at": "2026-09-07T04:07:00Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Assemble the Capstone Evidence",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_12",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "ea28ca910a20c68010f6a07e17f9070338641e765586ba0f30a2d46e78587eea",
+        "dispatched_at": "2026-09-07T04:05:39Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_12",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_12.png",
+        "selected_source_sha256": "06b46dde7487279a8e4b2cef15af96a1f25e40380998c96cb80711ec495988eb",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "06b46dde7487279a8e4b2cef15af96a1f25e40380998c96cb80711ec495988eb",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: the physical-model-to-interpretation chain, five required evidence items, required/chosen labels, and evidence package guidance are crisp and legible.",
+        "recorded_at": "2026-09-07T04:07:52Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Reproduce and Rehearse the Defence",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_13",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "013742cd52b00546f4adfe587556c8482dc65d4b79471ede5b20dd47ffe8f546",
+        "dispatched_at": "2026-09-07T04:05:50Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_13",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07a0b-214e-7ae3-81ea-c4ef41d85972/exec-2fa149ca-6765-488f-9eea-6a96b84d189e.png",
+        "selected_source_sha256": "144d5812bbf8d7aaba86cb3d8829bfacd6fb7d9b061636636cf501f675e6863e",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "144d5812bbf8d7aaba86cb3d8829bfacd6fb7d9b061636636cf501f675e6863e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: fresh-session reproducibility checklist and individual defence rehearsal path are clear, legible, and consistent with the approved Teaching Courseware style.",
+        "recorded_at": "2026-09-07T04:08:14Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "What Makes Your Result Trustworthy?",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+          "role": "approved Week 12 sample style reference",
+          "fidelity": "match typography mood, palette, open canvas, spacing and teaching density only; do not copy graph layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide_14",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "04769da276a8d94fdd9a6926f17958c503e95705f05912a232e28d7b064998e8",
+        "dispatched_at": "2026-09-07T04:08:28Z"
+      },
+      "result": {
+        "agent_id": "/root/slide_14",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week12/.agent/lecture-slides/codex-ppt/origin_image/slide_14.png",
+        "selected_source_sha256": "027452d766948bac683e6a98bbe507e054992d06b066f5423d4505873218f43b",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "027452d766948bac683e6a98bbe507e054992d06b066f5423d4505873218f43b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Full-size inspection passed: title and all three exit-ticket prompts are crisp, correctly spelled, legible, and within the canvas.",
+        "recorded_at": "2026-09-07T04:09:46Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-07T04:09:46Z"
+}

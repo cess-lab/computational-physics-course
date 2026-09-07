@@ -1,0 +1,17 @@
+root = '/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course';
+out = fullfile(root,'Week12','.agent','matlab');
+set(groot,'defaultFigureVisible','off');
+run(fullfile(root,'Week12','Week12_Lecture_Demonstration_Integrated_Method_Selection.m'));
+assert(abs(exact_endpoint_C-28.120116994197)<1e-10);
+assert(abs(T_20_C(end)-26.442450944)<1e-10);
+assert(abs(T_10_C(end)-27.294599275434)<1e-10);
+assert(T_20_C(2)==68 && T_wrong_plus_C(2)==92);
+assert(all(diff(T_20_C)<0) && all(T_20_C>T_env_C));
+assert(changed_tau_check_passed);
+exportgraphics(gcf,fullfile(out,'week12_cooling_validation.png'),'Resolution',180);
+writetable(reference_table,fullfile(out,'cooling_endpoint_evidence.csv'));
+writetable(table(t_exact_s',T_exact_fine_C','VariableNames',{'Time_s','ExactTemperature_C'}),fullfile(out,'cooling_exact_curve.csv'));
+writetable(table(t_20_s',T_20_C','VariableNames',{'Time_s','EulerTemperature_C'}),fullfile(out,'cooling_euler20.csv'));
+writetable(table(t_10_s',T_10_C','VariableNames',{'Time_s','EulerTemperature_C'}),fullfile(out,'cooling_euler10.csv'));
+disp(version);
+disp('WEEK12_LECTURE_FRESH_PROCESS_PASS');

@@ -1,0 +1,325 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,array,enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx,listings,tikz,float,needspace}
+\usetikzlibrary{arrows.meta,positioning}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\newcommand{\course}{PHY4605 Computational Methods in Physics}
+\newcommand{\units}[1]{\,\mathrm{#1}}
+\newtcolorbox{keybox}{colback=RoyalBlue!5,colframe=RoyalBlue!65!black,boxrule=.7pt,arc=2mm}
+\newtcolorbox{checkbox}{colback=ForestGreen!5,colframe=ForestGreen!55!black,boxrule=.7pt,arc=2mm}
+\newtcolorbox{aibox}{colback=BurntOrange!7,colframe=BurntOrange!80!black,boxrule=.7pt,arc=2mm}
+\lstdefinestyle{matlabstyle}{language=Matlab,basicstyle=\ttfamily\footnotesize,keywordstyle=\color{RoyalBlue!75!black},commentstyle=\color{ForestGreen!55!black},stringstyle=\color{BurntOrange!80!black},numbers=left,numberstyle=\scriptsize\color{black!50},numbersep=5pt,frame=single,rulecolor=\color{RoyalBlue!25},backgroundcolor=\color{RoyalBlue!3},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=true}
+\begin{document}
+{\large\textsc{\course}}\\[-2pt]
+{\small Learning Note \textbar\ Week 12}\par\vspace{4pt}
+{\LARGE\bfseries Integrated Method Selection and Capstone Studio}\par\vspace{3pt}
+\textit{Recognise the learned method, audit supplied code, and assemble reproducible evidence that can be explained in an individual defence.}
+
+\begin{keybox}\textbf{Physical question.} When a familiar physics problem is presented with a supplied script or numerical output, how do we identify the appropriate learned method, find a clear defect, validate one result, and prepare evidence for a bounded capstone investigation?\end{keybox}
+
+\section*{Core learning outcomes}
+\begin{enumerate}[nosep,leftmargin=5mm]
+\item match a familiar physical question to the learned method, required input, output, and one key limitation;
+\item inspect and trace a supplied or AI-assisted MATLAB script, then choose and justify one validation check; and
+\item assemble capstone evidence for the model, pseudocode, one modification, output, validation, interpretation, limitation, and individual defence.
+\end{enumerate}
+
+\section*{How to use this note}
+Read the physical question before looking at the code or result. For each case, state the input, output, units, algorithm, and check in plain language. This week does not add a new required numerical method. It brings the methods from Weeks 01--11 together so that a result can be inspected and defended rather than merely displayed.
+
+\begin{keybox}\textbf{The course chain.} \emph{Physical model $\rightarrow$ scale and units $\rightarrow$ discretisation or data arrangement $\rightarrow$ algorithm $\rightarrow$ code $\rightarrow$ error or uncertainty $\rightarrow$ validation $\rightarrow$ physical interpretation.} A capstone packet should make this chain visible in a compact form.\end{keybox}
+
+\section*{1. Start from the output the question requests}
+Method selection is a physical match. First ask what the calculation must produce, then identify the learned method whose algorithm produces that output. A MATLAB function name is only a clue; the model, inputs, units, and limitations still need to agree.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}p{.20\linewidth}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}p{.20\linewidth}}
+\toprule
+\textbf{Output sought} & \textbf{Familiar route} & \textbf{Input or evidence to inspect} & \textbf{One key limitation} \\
+\midrule
+Values of a known relation at many inputs & Array evaluation and plot & input array, output array, labels and units & the model and units must be appropriate \\
+Several unknowns constrained together & Two-by-two linear system & coefficient matrix, source vector, reconstructed quantities & wrong equations can still give plausible numbers \\
+The effect of changing one input & Parameter sweep & changed parameter array and held-fixed inputs & changing several inputs hides the cause \\
+The value that makes a residual zero & Root finding & residual, bracket or supplied iteration & the root belongs to the stated equation and interval \\
+A rate or gradient from nearby values & Numerical differentiation & sample spacing and derivative units & the estimate depends on the step size \\
+An accumulated total or area & Numerical integration & samples, interval, and spacing & coarse sampling can change the result \\
+A state as it changes in time & ODE simulation or Euler & initial state, rate law, timestep, and horizon & timestep and model assumptions limit confidence \\
+Parameters inferred from measurements & Data fitting & data, fitted parameters, units, and residual pattern & a fit does not prove the model \\
+An estimate from repeated random trials & Monte Carlo sampling & number of trials, output spread, and seed if supplied & random estimates vary with sample size \\
+An output range from uncertain inputs & Sensitivity or uncertainty sweep & varied input, baseline, and held-fixed quantities & the range depends on stated assumptions \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+For example, a request for temperature at many times asks for a time trajectory, so a supplied ODE or Euler update is the natural route. If an exact expression is supplied, it is a reference for checking the numerical trajectory. The reference does not replace the method being assessed.
+
+\begin{checkbox}\textbf{Recognition checkpoint.} For any supplied case, say one sentence in this form: ``The output is \ldots, so I use \ldots; its key input is \ldots, and one limitation is \ldots.'' Include the units of the output.\end{checkbox}
+
+\section*{2. Audit supplied code before trusting its output}
+A script can run and still encode the wrong physics. Use the same short audit every time:
+
+\begin{enumerate}[nosep,leftmargin=7mm]
+\item \textbf{Model:} write the physical law in words and check that the code has the same sign, terms, and assumptions.
+\item \textbf{Units:} identify the unit of each input, intermediate rate, step, and output; check that additions combine like units.
+\item \textbf{Arrays and indexing:} check the number of stored values, the first index, the current value, and the next value.
+\item \textbf{Algorithm:} match each loop or calculation to one pseudocode step and verify that the update uses the intended current state.
+\item \textbf{Output and validation:} confirm that the graph or table answers the question, then choose one check from a known value, trend, bound, reference, residual, refinement, or conservation relation.
+\end{enumerate}
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.22\linewidth}>{\raggedright\arraybackslash}p{.33\linewidth}>{\raggedright\arraybackslash}p{.33\linewidth}}
+\toprule
+\textbf{Audit question} & \textbf{Evidence in the script} & \textbf{What a defect can do} \\
+\midrule
+Does the equation match the physical direction? & signs and terms in the rate or model line & produce a smooth but physically reversed trend \\
+Do units match? & names such as \texttt{dt\_s} and \texttt{rate\_C\_per\_s} & make a numerical value look reasonable at the wrong scale \\
+Does the index refer to the current state? & \texttt{state(n)} and \texttt{state(n+1)} & skip, overwrite, or repeat a state \\
+Does the output answer the request? & selected endpoint, table, or labelled graph & report a convenient quantity instead of the required one \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{3. Trace the method before changing it}
+Tracing connects the algorithm to the numbers. Mark the first one or two iterations by hand before accepting an AI suggestion or editing a supplied line. For an update of the form
+\[
+\text{next state}=\text{current state}+\text{step}\times\text{current rate},
+\]
+identify the current state, calculate the rate with its units, multiply by the step, and then add the change. This small trace often exposes a wrong sign, a stale variable, a missing element-wise operator, or an incorrect loop bound.
+
+\begin{aibox}\textbf{Responsible AI record.} If AI assistance is used, record the request, the part accepted, the part modified or rejected, and the independent check that supported the decision. A polished answer or complete chat history is not a validation record.\end{aibox}
+
+\section*{4. Worked example: Euler updates for Newton cooling}
+\subsection*{Physical picture and model}
+A hot object is placed in a cooler room. Its temperature falls quickly at first and then changes more slowly as it approaches the room temperature. The familiar Newton-cooling rate law is
+\[
+\frac{dT}{dt}=-\frac{T-T_{\mathrm{env}}}{\tau}.
+\]
+The difference $T-T_{\mathrm{env}}$ is a temperature difference. Its numerical value is the same in degrees Celsius and kelvin, so degrees Celsius may be used consistently here. The timescale $\tau$ must be in seconds because the rate is measured in degrees Celsius per second.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.22\linewidth}>{\raggedright\arraybackslash}p{.25\linewidth}>{\raggedright\arraybackslash}p{.40\linewidth}}
+\toprule
+\textbf{Quantity} & \textbf{Value} & \textbf{Meaning and unit} \\
+\midrule
+$T_{\mathrm{env}}$ & $20\units{^\circ C}$ & constant environment temperature \\
+$T_0=T(0)$ & $80\units{^\circ C}$ & initial object temperature \\
+$\tau$ & $100\units{s}$ & cooling timescale \\
+$t_{\mathrm{final}}$ & $200\units{s}$ & end of the simulated horizon \\
+$h$ & $20\units{s}$ or $10\units{s}$ & Euler timestep \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\begin{checkbox}\textbf{Prediction checkpoint.} The object starts at $80\units{^\circ C}$, cools toward $20\units{^\circ C}$, and should remain between those values for these timesteps. A result that rises away from the room temperature, crosses below it, or changes in the wrong direction needs an audit.\end{checkbox}
+
+\subsection*{Euler's algorithm in words}
+Euler's method uses the current rate over one short interval:
+\[
+T_{n+1}=T_n+h\left(-\frac{T_n-T_{\mathrm{env}}}{\tau}\right).
+\]
+The rate has units $\units{^\circ C\,s^{-1}}$. Multiplying it by $h$ gives a temperature change in $\units{^\circ C}$, which can be added to $T_n$.
+
+\begin{enumerate}[nosep,leftmargin=7mm]
+\item state $T_{\mathrm{env}}$, $T_0$, $\tau$, $h$, and the final time with units;
+\item create time positions from $0$ to $t_{\mathrm{final}}$;
+\item reserve one temperature value for every time position and place $T_0$ in the first position;
+\item for each current index, calculate the cooling rate from the current temperature;
+\item store the next temperature using the Euler update;
+\item repeat with $h=20\units{s}$ and $h=10\units{s}$, then compare the endpoints with the supplied exact reference; and
+\item record one validation check, the physical interpretation, and one limitation.
+\end{enumerate}
+
+\subsection*{Trace the first updates}
+For $h=20\units{s}$, the initial rate is
+\[
+\left.\frac{dT}{dt}\right|_{T=80}=-\frac{80-20}{100}=-0.6\units{^\circ C\,s^{-1}}.
+\]
+The first two steps are therefore
+\[
+T_1=80+20(-0.6)=68\units{^\circ C},
+\qquad
+T_2=68+20\left(-\frac{68-20}{100}\right)=58.4\units{^\circ C}.
+\]
+Here $T_1$ means the state after one Euler step. In MATLAB it is stored as \texttt{T\_C(2)}, because \texttt{T\_C(1)} stores the initial value $T_0$ at $t=0$.
+
+For $h=10\units{s}$, the first two values are $T(10)=74\units{^\circ C}$ and $T(20)=68.6\units{^\circ C}$. These traces are quick evidence that the current temperature, not the original temperature, is used at every step.
+
+\begin{center}\small
+\begin{tabular}{rrrrr}
+\toprule
+\textbf{Timestep} & $T(0)$ ($^\circ$C) & $T(20)$ ($^\circ$C) & $T(40)$ ($^\circ$C) & $T(200)$ ($^\circ$C) \\
+\midrule
+$h=20\units{s}$ & 80.000 & 68.000 & 58.400 & 26.4425 \\
+$h=10\units{s}$ & 80.000 & 68.600 & 59.366 & 27.2946 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{MATLAB scaffold}
+The following script is self-contained. The names carry units, the first array entry stores the initial condition, and the loop writes the next state from the current state.
+
+\begin{lstlisting}[style=matlabstyle,caption={Euler cooling scaffold: inputs and initial state}]
+T_env_C = 20;
+T_initial_C = 80;
+tau_s = 100;
+t_final_s = 200;
+dt_s = 20;                 % repeat with 10 s
+
+nSteps = t_final_s / dt_s;
+t_s = (0:nSteps) * dt_s;
+T_C = zeros(size(t_s));
+T_C(1) = T_initial_C;      % T(0)
+\end{lstlisting}
+
+The first temperature is at MATLAB index 1. At the first Euler update, $T_1$ is therefore written to index 2. The loop uses the current index $n$ and writes the next index $n+1$.
+
+\begin{lstlisting}[style=matlabstyle,caption={Euler cooling scaffold: current-state update}]
+for n = 1:nSteps
+    rate_C_per_s = -(T_C(n) - T_env_C) / tau_s;
+    T_C(n+1) = T_C(n) + dt_s * rate_C_per_s;
+end
+\end{lstlisting}
+
+\begin{lstlisting}[style=matlabstyle,caption={Cooling reference, endpoint error, and labelled output}]
+T_exact_C = T_env_C + (T_initial_C - T_env_C) * exp(-t_s/tau_s);
+endpoint_error_C = abs(T_C(end) - T_exact_C(end));
+
+plot(t_s,T_C,'o-','LineWidth',1.2)
+xlabel('Time, t (s)')
+ylabel('Temperature, T (degrees Celsius)')
+grid on
+\end{lstlisting}
+
+Run the three listings in order from the top after changing only \texttt{dt\_s = 10}. The supplied exact reference for this model is
+\[
+T_{\mathrm{exact}}(t)=20+60e^{-t/100},
+\]
+so $T_{\mathrm{exact}}(200\units{s})=28.1201169942\units{^\circ C}$. The exact expression is used as a reference check; students do not need to derive it for the Core route.
+
+\begin{center}\small
+\begin{tabular}{rrrr}
+\toprule
+\textbf{$h$ (s)} & \textbf{Euler $T(200\units{s})$ ($^\circ$C)} & \textbf{Exact reference ($^\circ$C)} & \textbf{Absolute endpoint error ($^\circ$C)} \\
+\midrule
+20 & 26.4425 & 28.1201 & 1.6777 \\
+10 & 27.2946 & 28.1201 & 0.8255 \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{A clear plus-sign defect}
+The rate law contains a minus sign for a reason. When $T>T_{\mathrm{env}}$, the difference $T-T_{\mathrm{env}}$ is positive, so the minus sign makes the rate negative and the object cools. If the object is colder than the environment, the difference is negative and the same minus sign makes the rate positive, so the object warms toward the environment.
+
+\begin{lstlisting}[style=matlabstyle,caption={A script that runs but reverses the cooling direction}]
+for n = 1:nSteps
+    rate_C_per_s = +(T_C(n) - T_env_C) / tau_s;  % physical defect
+    T_C(n+1) = T_C(n) + dt_s * rate_C_per_s;
+end
+\end{lstlisting}
+
+With $h=20\units{s}$, the defective line gives $T(20)=92\units{^\circ C}$ instead of $68\units{^\circ C}$. The code is syntactically valid, but the sign makes the temperature move away from the environment. Restore
+\texttt{rate\_C\_per\_s = -(T\_C(n) - T\_env\_C) / tau\_s;} and rerun from a fresh session. An initial-value check alone would not catch this defect because both scripts begin at $80\units{^\circ C}$; the cooling-direction check and the exact endpoint comparison do.
+
+\section*{5. One Core validation and its interpretation}
+For this worked example, select the supplied exact solution as the principal validation because it gives a known temperature at the same endpoint. The numerical evidence is:
+
+\begin{checkbox}\textbf{Validation result.} Reducing the timestep from $20\units{s}$ to $10\units{s}$ changes the endpoint from $26.4425$ to $27.2946\units{^\circ C}$ and reduces the absolute error from $1.6777$ to $0.8255\units{^\circ C}$ against $28.1201\units{^\circ C}$. The initial value and cooling direction are also physically consistent. For the stated model and horizon, the $10\units{s}$ result is better supported by the supplied evidence.\end{checkbox}
+
+The result is not a claim that every smaller timestep is automatically reliable. It shows what happens for this model and these two choices. The Euler approximation remains below the exact cooling curve at $200\units{s}$ because each explicit step uses the rate at the beginning of its interval. The physical model also assumes a constant environment temperature, a uniform object temperature, and one constant cooling timescale. Airflow, changing material properties, or internal heat generation would limit that model.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedright\arraybackslash}p{.29\linewidth}>{\raggedright\arraybackslash}p{.37\linewidth}}
+\toprule
+\textbf{Evidence} & \textbf{Question answered} & \textbf{Interpretation} \\
+\midrule
+Initial value & Does the trajectory start at $T_0$? & the first stored state is the stated physical condition \\
+Cooling direction and bound & Does the object approach $T_{\mathrm{env}}$? & the sign and trend agree with the model for this case \\
+Exact endpoint reference & Does refinement improve the requested endpoint? & $h=10\units{s}$ is closer than $h=20\units{s}$ for the supplied horizon \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\section*{6. Capstone studio: assemble evidence that can be defended}
+The capstone is a bounded investigation using an approved starter Live Script and problem space. Complete the evidence in the order below. The code may be supplied, completed, or AI-assisted; the reasoning and checks must remain visible.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.23\linewidth}>{\raggedright\arraybackslash}p{.43\linewidth}>{\raggedright\arraybackslash}p{.23\linewidth}}
+\toprule
+\textbf{Evidence item} & \textbf{What to record} & \textbf{Quick quality question} \\
+\midrule
+Model and units & physical question, assumptions, variables, parameters, outputs, and units & could another student identify what each value means? \\
+Pseudocode & ordered steps from input to output and check & does each step have one clear purpose? \\
+Method and trace & supplied method, relevant code lines, and one traced update or calculation & can each group member explain one code section? \\
+One modification & one changed physical parameter or assumption, with other choices stated & is the change controlled and predicted before running? \\
+Principal output & one labelled graph or table that answers the question & is the requested quantity visible with units? \\
+Required and chosen check & the lecturer-required check plus one chosen check & does the evidence support the numerical claim? \\
+Interpretation and limitation & trend, physical meaning, and one condition that limits the conclusion & does the explanation go beyond describing the shape? \\
+Reproducibility and AI record & clean-session steps and accepted, modified, or rejected assistance & could the group rerun and explain the final result? \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+\subsection*{A clean-session reproduction check}
+Use this short checklist before locking the packet:
+
+\begin{enumerate}[nosep,leftmargin=7mm]
+\item close or restart MATLAB and open the approved starter script;
+\item run the complete script from the first section, with no hidden Workspace variables;
+\item confirm that the final parameter or assumption modification is visible in the script;
+\item confirm that the principal graph or table has quantities, units, and a readable label;
+\item rerun both the required and chosen validations and record the numerical evidence; and
+\item save the final script and evidence together so another person can reproduce the result.
+\end{enumerate}
+
+\begin{aibox}\textbf{Decision record example.} ``We asked AI to explain the supplied Euler loop. We accepted its description of the index roles, modified its proposed sign after checking the physical cooling direction, and rejected an unnecessary replacement solver. Our independent check was the supplied exact endpoint and the initial-value/trend check.'' This is the level of decision evidence needed; a full transcript is not required.\end{aibox}
+
+\subsection*{Individual defence rehearsal}
+Each group member should be able to point to one relevant code section and answer these prompts without reading a prepared paragraph:
+
+\begin{enumerate}[nosep,leftmargin=7mm]
+\item What physical quantity does this variable represent, and what is its unit?
+\item Which line implements the chosen method, and what does it do to the current state or data?
+\item What would you predict if the changed parameter were increased or decreased?
+\item Which validation check did you choose, and why is it appropriate to this output?
+\item What limitation should a reader keep in mind when interpreting the result?
+\end{enumerate}
+
+For cooling, identify $T_n$, explain the minus sign, trace $80\rightarrow68\rightarrow58.4\units{^\circ C}$ for $h=20\units{s}$, and justify the exact endpoint check.
+
+\section*{Working exposure: compare supplied evidence}
+Sometimes two supplied results can answer a closely related question. Compare them using the physical output, the stated inputs, and the evidence available. Do not add a new implementation burden simply because another method is shown.
+
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.27\linewidth}>{\raggedright\arraybackslash}p{.30\linewidth}>{\raggedright\arraybackslash}p{.32\linewidth}}
+\toprule
+\textbf{Supplied comparison} & \textbf{Compare} & \textbf{State} \\
+\midrule
+Euler with $h=20\units{s}$ versus $h=10\units{s}$ & endpoint, trend, and reference error & whether refinement supports the chosen result for the stated horizon \\
+Bisection versus Newton for a supplied residual & root value and supplied iteration evidence & which result is supported by the bracket or residual check \\
+Forward versus central difference from supplied values & derivative estimate and units & how the step choice affects the estimate \\
+\texttt{ode45} output versus a supplied Euler trajectory & trajectory and endpoint evidence & which output is being used as a reference and why \\
+\bottomrule
+\end{tabular}
+\end{center}
+
+The comparison is evidence-based and bounded. A smooth line, a smaller iteration count, or a familiar function name is not enough by itself.
+
+\section*{Optional stretch}
+For distinction-level extension, transfer the audit to an unfamiliar but supplied case with limited scaffolding, design a second independent validation check, or implement one optional extension. These activities are not required for the Core pathway or for a defensible ordinary capstone submission.
+
+\section*{Three takeaways}
+\begin{enumerate}[nosep,leftmargin=6mm]
+\item Choose a learned method from the physical output requested, then name its required input, output, and one limitation.
+\item Audit model, units, arrays, and algorithm before trusting supplied or AI-assisted code; trace one part and perform one justified validation check.
+\item A capstone becomes reproducible and defensible when its model, pseudocode, controlled modification, output, validation, interpretation, limitation, and AI decisions are recorded together.
+\end{enumerate}
+
+\begin{keybox}\textbf{Preparation for the practical and capstone studio.} Bring the approved starter Live Script and be ready to state the physical question, variables and units, selected method, one controlled modification, the validation check required by the activity, and one limitation. For the capstone, record both the required and chosen checks. Each group member should practise tracing one code section and explaining the associated physical result.\end{keybox}
+
+\end{document}
