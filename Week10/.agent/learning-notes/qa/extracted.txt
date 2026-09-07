@@ -1,0 +1,215 @@
+PHY4605 Computational Methods in Physics
+Learning Note | Week 10
+
+Random Sampling and Monte Carlo:
+From One Random Path to Reliable Evidence
+Use repeated random trials to describe physical variability, test reproducibility, and see how sample size
+affects a Monte Carlo estimate.
+Physical question. A small particle receives random left-or-right kicks. One path is unpredictable, but if we simulate many particles under the same rule, what stable pattern can we
+extract from their final positions?
+
+Core learning outcomes
+1. explain what one random trial represents physically and reproduce a supplied random-sampling scaffold;
+2. calculate and interpret the mean and spread of repeated outcomes; and
+3. compare several sample sizes, use a fixed random seed when required, and validate the result against
+the physical model.
+
+1. A random model still needs a physical rule
+The lecture model is a one-dimensional symmetric random walk. A particle starts at
+x0 = 0 mm.
+Every second it moves exactly one step of length
+a = 1 mm,
+either to the right or to the left with equal probability. After N = 100 steps, the particle has one final
+position. We do not know that position in advance because the sequence of directions is random.
+The randomness is bounded by a precise model: every step has the same magnitude, the two directions
+are equally likely, and successive steps are treated as independent. If any of those assumptions changes,
+the expected distribution of final positions also changes.
+Prediction checkpoint. The model has no preferred direction. Across many independent particles, the average final position should therefore be near 0 mm. Individual particles should still
+finish at many different positions.
+
+2. What exactly is one Monte Carlo trial?
+For this model, one trial is one complete 100-step path. One trial contains many random draws,
+but it produces one main repeated outcome: the final position after 100 steps.
+Repeating the Monte Carlo experiment means simulating many independent 100-step paths under the
+same physical assumptions. The number of repeated paths is the Monte Carlo sample size M .
+Keep these two counts separate:
+
+1
+
+Quantity
+
+Week 10 value
+
+Meaning
+
+N
+a
+M
+
+100 steps/trial
+1 mm/step
+100, 1000, or 10000 trials
+
+Physical duration of one random path
+Physical step length
+Number of independent paths used for the
+estimate
+
+Increasing N changes the physical walk itself. Increasing M gives more repeated evidence about the
+same 100-step model.
+
+3. Turn random draws into physical steps
+The computational rule is simple:
+1. choose N , a, M , and a random seed when an exact rerun is required;
+2. generate one random number for every step of every trial;
+3. map values below 0.5 to −a and values at least 0.5 to +a;
+4. cumulatively sum the steps to obtain trajectories;
+5. extract the final position from each trial;
+6. calculate the mean and spread of the final positions;
+7. compare summaries for several values of M ; and
+8. validate the numerical evidence against symmetry and the known step rule.
+This is the same course reasoning chain used in earlier weeks: physical model → algorithm → code →
+numerical evidence → validation → interpretation.
+
+4. MATLAB random-sampling scaffold
+Base MATLAB provides the random numbers. The Week 10 learning target is reading and modifying
+the scaffold, not deriving a random-number generator.
+1 n_steps = 100;
+2 step_length_mm = 1;
+3 maximum_trials = 10000;
+4
+5 rng(4605,'twister')
+6 u = rand(n_steps,maximum_trials);
+7 direction = 2*(u >= 0.5)-1;
+8 step_mm = step_length_mm*direction;
+9
+10 trajectory_mm = cumsum(step_mm,1);
+11 final_position_mm = trajectory_mm(end,:);
+
+The expression u >= 0.5 produces logical values. Multiplying by 2 and subtracting 1 converts them to
+−1 or +1. Multiplying by step_length_mm attaches the physical step scale.
+Do not confuse the seed with a physical parameter. The seed chooses a reproducible
+random-number sequence. It does not represent time, position, temperature, or a property of the
+particle. Changing the seed should change finite-sample details while preserving the statistical
+behaviour of a correct model.
+
+5. One trajectory is one possible history
+The first simulated path below is produced with the locked seed. Another valid seed can produce a very
+different-looking path.
+
+2
+
+Figure 1: One 100-step random-walk trajectory. The path is physically possible under the model, but it
+is not the unique or “correct” path.
+A trajectory is useful for connecting the code to motion, but one trajectory cannot tell us the long-run
+mean or spread. Those require repeated trials.
+
+6. Repeated trials produce a distribution
+With M = 10000 independent paths, the locked simulation gives a distribution of final positions.
+
+Figure 2: Final positions after 100 steps for 10000 repeated trials. The distribution is centred near zero
+but individual final positions vary widely.
+For these 10000 trials,
+xﬁnal = −0.128 mm,
+
+sﬁnal = 9.9423 mm.
+3
+
+The mean describes the centre of the repeated outcomes. The spread describes how widely individual
+outcomes vary around that centre. A mean near zero does not mean every particle finishes at zero.
+Core interpretation check. If the final-position mean is close to 0 mm but the spread is about
+10 mm, the two results are not contradictory. Symmetry controls the centre; accumulated random
+steps create the variability.
+
+7. Sample size changes the estimate, not the physical walk
+Use the first 100, 1000, and 10000 trials from the same reproducible simulation:
+Repeated trials M
+
+Mean final position (mm)
+
+Spread (mm)
+
+100
+1000
+10000
+
+0.040
+0.066
+-0.128
+
+10.6320
+9.8122
+9.9423
+
+The mean does not move monotonically toward zero: 0.040, 0.066, then −0.128 mm. Random convergence can fluctuate. What matters is that all three values are small compared with the roughly 10 mm
+spread and are consistent with a centre near zero.
+
+Figure 3: The finite-sample mean changes as more trials are included. More trials generally stabilise an
+estimate, but one random sequence need not approach the reference monotonically.
+The spread stays near 10 mm for all three sample sizes because the underlying 100-step physical process
+has not changed. More Monte Carlo trials improve our evidence about the distribution; they do not
+make individual random walks less variable.
+
+8. Validate with the model, not with appearance alone
+Two Core checks follow directly from the physical rule.
+Symmetry check. Equal left/right probabilities imply a long-run mean near 0 mm. The locked mean
+−0.128 mm is small compared with the width of the distribution.
+
+4
+
+Step-rule check. After exactly 100 steps of ±1 mm, every final position must be an even integer
+number of millimetres. A result such as 7.3 mm would violate the model even if it appeared inside a
+plausible-looking histogram.
+A reproducible wrong model is still wrong. Resetting a seed can reproduce a coding defect
+perfectly. Always pair reproducibility with a physical or numerical validation check.
+
+9. Worked reasoning chain
+Step
+
+Week 10 evidence
+
+Physical model
+Scale and units
+Algorithm
+Code
+Variability
+Validation
+Interpretation
+
+symmetric 1D walk, 100 steps of ±1 mm
+position and step length in mm; trial count is dimensionless
+random draw → direction → cumulative position → repeat
+supplied rng, rand, logical mapping, cumsum
+distribution of final positions, mean, and spread
+symmetry near zero plus even-integer final-position rule
+more trials stabilise estimates without removing physical randomness
+
+In an assessment, syntax may be supplied. You still need to define one trial, explain what repeated
+outcomes mean, keep physical units, distinguish mean from spread, and justify a validation check.
+
+Working exposure: standard error and random-walk scaling
+A supplied standard-error estimate for the mean is
+s
+SE(x) ≈ √ .
+M
+For the locked simulation, the supplied values are about 1.063, 0.310, and 0.099 mm for M = 100, 1000,
+and 10000. Standard error describes precision of the estimated mean, not particle spread.
+For the ideal symmetric walk, the supplied final-position scaling is
+√
+sx ∼ a N .
+With a = 1 mm and N = 100, this gives 10 mm; the simulated 9.9423 mm is close. Interpreting the
+scaling is Working exposure; deriving it is not required.
+
+Optional stretch
+Distribution derivations, statistical mechanics, variance reduction, MCMC diagnostics, and formal convergence theory are outside the Week 10 Core route.
+
+Three takeaways
+1. One trial needs a physical meaning; here it is one complete 100-step path.
+2. Mean describes the centre; spread describes variability of individual outcomes.
+3. A fixed seed supports reproducibility; sample-size and physical checks support trustworthiness.
+Preparation for the practical. Be ready to identify one random trial, trace a supplied randomsampling scaffold, interpret a histogram or summary table, compare sample sizes, use a fixed seed
+when needed, and validate the Monte Carlo result against independent physical evidence.
+
+5
+
+

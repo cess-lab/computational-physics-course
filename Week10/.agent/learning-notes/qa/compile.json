@@ -1,0 +1,105 @@
+{
+  "attempts": [
+    {
+      "command": [
+        "/Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic",
+        "-X",
+        "compile",
+        "--outdir",
+        "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/build",
+        "--outfmt",
+        "pdf",
+        "--print",
+        "--untrusted",
+        "Week10_Random_Sampling_and_Monte_Carlo.tex"
+      ],
+      "compiler": "tectonic",
+      "exitCode": 0,
+      "log": "atim.sty) (environ.sty (trimspaces.sty)) (etoolbox.sty)\n(tcbraster.code.tex\nLibrary (tcolorbox): 'tcbraster.code.tex' version '5.0.2'\n) (tcbskins.code.tex\nLibrary (tcolorbox): 'tcbskins.code.tex' version '5.0.2'\n(tcbskinsjigsaw.code.tex\nLibrary (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'\n)) (tcbbreakable.code.tex\nLibrary (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'\n(pdfcol.sty (ltxcmds.sty) (infwarerr.sty))) (tcbhooks.code.tex\nLibrary (tcolorbox): 'tcbhooks.code.tex' version '5.0.2'\n) (tcbtheorems.code.tex\nLibrary (tcolorbox): 'tcbtheorems.code.tex' version '5.0.2'\n) (tcbfitting.code.tex\nLibrary (tcolorbox): 'tcbfitting.code.tex' version '5.0.2'\n) (tcbxparse.code.tex\nLibrary (tcolorbox): 'tcbxparse.code.tex' version '5.0.2'\n(xparse.sty (expl3.sty (l3backend-xetex.def)))) (tcblistingsutf8.code.tex\nLibrary (tcolorbox): 'tcblistingsutf8.code.tex' version '5.0.2'\n(tcblistings.code.tex\nLibrary (tcolorbox): 'tcblistings.code.tex' version '5.0.2'\n(tcblistingscore.code.tex\nLibrary (tcolorbox): 'tcblistingscore.code.tex' version '5.0.2'\n(tcbprocessing.code.tex\nLibrary (tcolorbox): 'tcbprocessing.code.tex' version '5.0.2'\n(pdftexcmds.sty) (shellesc.sty\n\nPackage shellesc Warning: Shell escape disabled on input line 73.\n\n))))) (tcbexternal.code.tex\nLibrary (tcolorbox): 'tcbexternal.code.tex' version '5.0.2'\n) (tcbmagazine.code.tex\nLibrary (tcolorbox): 'tcbmagazine.code.tex' version '5.0.2'\n) (tcbvignette.code.tex\nLibrary (tcolorbox): 'tcbvignette.code.tex' version '5.0.2'\n(tikzlibraryfadings.code.tex (pgflibraryfadings.code.tex))) (tcbposter.code.tex\n\nLibrary (tcolorbox): 'tcbposter.code.tex' version '5.0.2'\n)) (hyperref.sty (kvsetkeys.sty) (kvdefinekeys.sty) (pdfescape.sty)\n(hycolor.sty) (letltxmacro.sty) (auxhook.sty) (kvoptions.sty) (pd1enc.def)\n(intcalc.sty) (etexcmds.sty) (puenc.def) (url.sty) (bitset.sty (bigintcalc.sty)\n) (atbegshi-ltx.sty)) (hxetex.def (stringenc.sty) (rerunfilecheck.sty\n(atveryend-ltx.sty) (uniquecounter.sty)))\nNo file Week10_Random_Sampling_and_Monte_Carlo.aux.\n(ts1cmr.fd)\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty))\n\nPackage hyperref Warning: Rerun to get /PageLabels entry.\n\n(umsa.fd) (umsb.fd) [1] (lstlang1.sty) [2] [3] [4] [5]\n(Week10_Random_Sampling_and_Monte_Carlo.aux)\n\nPackage rerunfilecheck Warning: File `Week10_Random_Sampling_and_Monte_Carlo.ou\nt' has changed.\n(rerunfilecheck)                Rerun to get outlines right\n(rerunfilecheck)                or use package `bookmark'.\n\n )\nOutput written on Week10_Random_Sampling_and_Monte_Carlo.xdv (5 pages, 120240 b\nytes).\nTranscript written on Week10_Random_Sampling_and_Monte_Carlo.log.\nnote: Rerunning TeX because \"Week10_Random_Sampling_and_Monte_Carlo.aux\" changed ...\n(Week10_Random_Sampling_and_Monte_Carlo.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\n(size11.clo)) (geometry.sty (keyval.sty) (ifvtex.sty (iftex.sty))) (amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(amstext.sty (amsgen.sty)) (amsbsy.sty) (amsopn.sty)) (amssymb.sty\n(amsfonts.sty)) (mathtools.sty (calc.sty) (mhsetup.sty)) (booktabs.sty)\n(array.sty) (enumitem.sty) (xcolor.sty (color.cfg) (xetex.def) (dvipsnam.def))\n(graphicx.sty (graphics.sty (trig.sty) (graphics.cfg))) (listings.sty\n(lstmisc.sty) (listings.cfg)) (tikz.sty (pgf.sty (pgfrcs.sty\n(pgfutil-common.tex (pgfutil-common-lists.tex)) (pgfutil-latex.def)\n(pgfrcs.code.tex (pgf.revision.tex))) (pgfcore.sty (pgfsys.sty (pgfsys.code.tex\n(pgfkeys.code.tex (pgfkeysfiltered.code.tex)) (pgf.cfg) (pgfsys-xetex.def\n(pgfsys-dvipdfmx.def (pgfsys-common-pdf.def)))) (pgfsyssoftpath.code.tex)\n(pgfsysprotocol.code.tex)) (pgfcore.code.tex (pgfmath.code.tex\n(pgfmathcalc.code.tex (pgfmathutil.code.tex) (pgfmathparser.code.tex)\n(pgfmathfunctions.code.tex (pgfmathfunctions.basic.code.tex)\n(pgfmathfunctions.trigonometric.code.tex) (pgfmathfunctions.random.code.tex)\n(pgfmathfunctions.comparison.code.tex) (pgfmathfunctions.base.code.tex)\n(pgfmathfunctions.round.code.tex) (pgfmathfunctions.misc.code.tex)\n(pgfmathfunctions.integerarithmetics.code.tex))) (pgfmathfloat.code.tex))\n(pgfint.code.tex) (pgfcorepoints.code.tex) (pgfcorepathconstruct.code.tex)\n(pgfcorepathusage.code.tex) (pgfcorescopes.code.tex)\n(pgfcoregraphicstate.code.tex) (pgfcoretransformations.code.tex)\n(pgfcorequick.code.tex) (pgfcoreobjects.code.tex)\n(pgfcorepathprocessing.code.tex) (pgfcorearrows.code.tex)\n(pgfcoreshade.code.tex) (pgfcoreimage.code.tex (pgfcoreexternal.code.tex))\n(pgfcorelayers.code.tex) (pgfcoretransparency.code.tex)\n(pgfcorepatterns.code.tex) (pgfcorerdf.code.tex))) (pgfmoduleshapes.code.tex)\n(pgfmoduleplot.code.tex) (pgfcomp-version-0-65.sty) (pgfcomp-version-1-18.sty))\n (pgffor.sty (pgfkeys.sty (pgfkeys.code.tex)) (pgfmath.sty (pgfmath.code.tex))\n(pgffor.code.tex (pgfmath.code.tex))) (tikz.code.tex\n(pgflibraryplothandlers.code.tex) (pgfmodulematrix.code.tex)\n(tikzlibrarytopaths.code.tex))) (float.sty) (needspace.sty)\n(pgflibraryarrows.meta.code.tex) (tikzlibrarypositioning.code.tex)\n(tcolorbox.sty (verbatim.sty) (environ.sty (trimspaces.sty)) (etoolbox.sty)\n(tcbraster.code.tex\nLibrary (tcolorbox): 'tcbraster.code.tex' version '5.0.2'\n) (tcbskins.code.tex\nLibrary (tcolorbox): 'tcbskins.code.tex' version '5.0.2'\n(tcbskinsjigsaw.code.tex\nLibrary (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'\n)) (tcbbreakable.code.tex\nLibrary (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'\n(pdfcol.sty (ltxcmds.sty) (infwarerr.sty))) (tcbhooks.code.tex\nLibrary (tcolorbox): 'tcbhooks.code.tex' version '5.0.2'\n) (tcbtheorems.code.tex\nLibrary (tcolorbox): 'tcbtheorems.code.tex' version '5.0.2'\n) (tcbfitting.code.tex\nLibrary (tcolorbox): 'tcbfitting.code.tex' version '5.0.2'\n) (tcbxparse.code.tex\nLibrary (tcolorbox): 'tcbxparse.code.tex' version '5.0.2'\n(xparse.sty (expl3.sty (l3backend-xetex.def)))) (tcblistingsutf8.code.tex\nLibrary (tcolorbox): 'tcblistingsutf8.code.tex' version '5.0.2'\n(tcblistings.code.tex\nLibrary (tcolorbox): 'tcblistings.code.tex' version '5.0.2'\n(tcblistingscore.code.tex\nLibrary (tcolorbox): 'tcblistingscore.code.tex' version '5.0.2'\n(tcbprocessing.code.tex\nLibrary (tcolorbox): 'tcbprocessing.code.tex' version '5.0.2'\n(pdftexcmds.sty) (shellesc.sty\n\nPackage shellesc Warning: Shell escape disabled on input line 73.\n\n))))) (tcbexternal.code.tex\nLibrary (tcolorbox): 'tcbexternal.code.tex' version '5.0.2'\n) (tcbmagazine.code.tex\nLibrary (tcolorbox): 'tcbmagazine.code.tex' version '5.0.2'\n) (tcbvignette.code.tex\nLibrary (tcolorbox): 'tcbvignette.code.tex' version '5.0.2'\n(tikzlibraryfadings.code.tex (pgflibraryfadings.code.tex))) (tcbposter.code.tex\n\nLibrary (tcolorbox): 'tcbposter.code.tex' version '5.0.2'\n)) (hyperref.sty (kvsetkeys.sty) (kvdefinekeys.sty) (pdfescape.sty)\n(hycolor.sty) (letltxmacro.sty) (auxhook.sty) (kvoptions.sty) (pd1enc.def)\n(intcalc.sty) (etexcmds.sty) (puenc.def) (url.sty) (bitset.sty (bigintcalc.sty)\n) (atbegshi-ltx.sty)) (hxetex.def (stringenc.sty) (rerunfilecheck.sty\n(atveryend-ltx.sty) (uniquecounter.sty)))\n(Week10_Random_Sampling_and_Monte_Carlo.aux) (ts1cmr.fd)\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty))\n(Week10_Random_Sampling_and_Monte_Carlo.out)\n(Week10_Random_Sampling_and_Monte_Carlo.out) (umsa.fd) (umsb.fd) [1]\n(lstlang1.sty) [2] [3] [4] [5] (Week10_Random_Sampling_and_Monte_Carlo.aux) )\nOutput written on Week10_Random_Sampling_and_Monte_Carlo.xdv (5 pages, 120240 b\nytes).\nTranscript written on Week10_Random_Sampling_and_Monte_Carlo.log.\nnote: Running xdvipdfmx ...\n[1][2][3][4][5]200070 bytes written\nnote: Writing `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/build/Week10_Random_Sampling_and_Monte_Carlo.pdf` (195.380859375 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n",
+      "pdfExists": true,
+      "pdfPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/build/Week10_Random_Sampling_and_Monte_Carlo.pdf"
+    }
+  ],
+  "command": [
+    "/Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic",
+    "-X",
+    "compile",
+    "--outdir",
+    "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/build",
+    "--outfmt",
+    "pdf",
+    "--print",
+    "--untrusted",
+    "Week10_Random_Sampling_and_Monte_Carlo.tex"
+  ],
+  "compiler": "tectonic",
+  "exitCode": 0,
+  "log": "atim.sty) (environ.sty (trimspaces.sty)) (etoolbox.sty)\n(tcbraster.code.tex\nLibrary (tcolorbox): 'tcbraster.code.tex' version '5.0.2'\n) (tcbskins.code.tex\nLibrary (tcolorbox): 'tcbskins.code.tex' version '5.0.2'\n(tcbskinsjigsaw.code.tex\nLibrary (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'\n)) (tcbbreakable.code.tex\nLibrary (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'\n(pdfcol.sty (ltxcmds.sty) (infwarerr.sty))) (tcbhooks.code.tex\nLibrary (tcolorbox): 'tcbhooks.code.tex' version '5.0.2'\n) (tcbtheorems.code.tex\nLibrary (tcolorbox): 'tcbtheorems.code.tex' version '5.0.2'\n) (tcbfitting.code.tex\nLibrary (tcolorbox): 'tcbfitting.code.tex' version '5.0.2'\n) (tcbxparse.code.tex\nLibrary (tcolorbox): 'tcbxparse.code.tex' version '5.0.2'\n(xparse.sty (expl3.sty (l3backend-xetex.def)))) (tcblistingsutf8.code.tex\nLibrary (tcolorbox): 'tcblistingsutf8.code.tex' version '5.0.2'\n(tcblistings.code.tex\nLibrary (tcolorbox): 'tcblistings.code.tex' version '5.0.2'\n(tcblistingscore.code.tex\nLibrary (tcolorbox): 'tcblistingscore.code.tex' version '5.0.2'\n(tcbprocessing.code.tex\nLibrary (tcolorbox): 'tcbprocessing.code.tex' version '5.0.2'\n(pdftexcmds.sty) (shellesc.sty\n\nPackage shellesc Warning: Shell escape disabled on input line 73.\n\n))))) (tcbexternal.code.tex\nLibrary (tcolorbox): 'tcbexternal.code.tex' version '5.0.2'\n) (tcbmagazine.code.tex\nLibrary (tcolorbox): 'tcbmagazine.code.tex' version '5.0.2'\n) (tcbvignette.code.tex\nLibrary (tcolorbox): 'tcbvignette.code.tex' version '5.0.2'\n(tikzlibraryfadings.code.tex (pgflibraryfadings.code.tex))) (tcbposter.code.tex\n\nLibrary (tcolorbox): 'tcbposter.code.tex' version '5.0.2'\n)) (hyperref.sty (kvsetkeys.sty) (kvdefinekeys.sty) (pdfescape.sty)\n(hycolor.sty) (letltxmacro.sty) (auxhook.sty) (kvoptions.sty) (pd1enc.def)\n(intcalc.sty) (etexcmds.sty) (puenc.def) (url.sty) (bitset.sty (bigintcalc.sty)\n) (atbegshi-ltx.sty)) (hxetex.def (stringenc.sty) (rerunfilecheck.sty\n(atveryend-ltx.sty) (uniquecounter.sty)))\nNo file Week10_Random_Sampling_and_Monte_Carlo.aux.\n(ts1cmr.fd)\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty))\n\nPackage hyperref Warning: Rerun to get /PageLabels entry.\n\n(umsa.fd) (umsb.fd) [1] (lstlang1.sty) [2] [3] [4] [5]\n(Week10_Random_Sampling_and_Monte_Carlo.aux)\n\nPackage rerunfilecheck Warning: File `Week10_Random_Sampling_and_Monte_Carlo.ou\nt' has changed.\n(rerunfilecheck)                Rerun to get outlines right\n(rerunfilecheck)                or use package `bookmark'.\n\n )\nOutput written on Week10_Random_Sampling_and_Monte_Carlo.xdv (5 pages, 120240 b\nytes).\nTranscript written on Week10_Random_Sampling_and_Monte_Carlo.log.\nnote: Rerunning TeX because \"Week10_Random_Sampling_and_Monte_Carlo.aux\" changed ...\n(Week10_Random_Sampling_and_Monte_Carlo.tex\nLaTeX2e <2021-11-15> patch level 1\nL3 programming layer <2022-02-24> (article.cls\nDocument Class: article 2021/10/04 v1.4n Standard LaTeX document class\n(size11.clo)) (geometry.sty (keyval.sty) (ifvtex.sty (iftex.sty))) (amsmath.sty\nFor additional information on amsmath, use the `?' option.\n(amstext.sty (amsgen.sty)) (amsbsy.sty) (amsopn.sty)) (amssymb.sty\n(amsfonts.sty)) (mathtools.sty (calc.sty) (mhsetup.sty)) (booktabs.sty)\n(array.sty) (enumitem.sty) (xcolor.sty (color.cfg) (xetex.def) (dvipsnam.def))\n(graphicx.sty (graphics.sty (trig.sty) (graphics.cfg))) (listings.sty\n(lstmisc.sty) (listings.cfg)) (tikz.sty (pgf.sty (pgfrcs.sty\n(pgfutil-common.tex (pgfutil-common-lists.tex)) (pgfutil-latex.def)\n(pgfrcs.code.tex (pgf.revision.tex))) (pgfcore.sty (pgfsys.sty (pgfsys.code.tex\n(pgfkeys.code.tex (pgfkeysfiltered.code.tex)) (pgf.cfg) (pgfsys-xetex.def\n(pgfsys-dvipdfmx.def (pgfsys-common-pdf.def)))) (pgfsyssoftpath.code.tex)\n(pgfsysprotocol.code.tex)) (pgfcore.code.tex (pgfmath.code.tex\n(pgfmathcalc.code.tex (pgfmathutil.code.tex) (pgfmathparser.code.tex)\n(pgfmathfunctions.code.tex (pgfmathfunctions.basic.code.tex)\n(pgfmathfunctions.trigonometric.code.tex) (pgfmathfunctions.random.code.tex)\n(pgfmathfunctions.comparison.code.tex) (pgfmathfunctions.base.code.tex)\n(pgfmathfunctions.round.code.tex) (pgfmathfunctions.misc.code.tex)\n(pgfmathfunctions.integerarithmetics.code.tex))) (pgfmathfloat.code.tex))\n(pgfint.code.tex) (pgfcorepoints.code.tex) (pgfcorepathconstruct.code.tex)\n(pgfcorepathusage.code.tex) (pgfcorescopes.code.tex)\n(pgfcoregraphicstate.code.tex) (pgfcoretransformations.code.tex)\n(pgfcorequick.code.tex) (pgfcoreobjects.code.tex)\n(pgfcorepathprocessing.code.tex) (pgfcorearrows.code.tex)\n(pgfcoreshade.code.tex) (pgfcoreimage.code.tex (pgfcoreexternal.code.tex))\n(pgfcorelayers.code.tex) (pgfcoretransparency.code.tex)\n(pgfcorepatterns.code.tex) (pgfcorerdf.code.tex))) (pgfmoduleshapes.code.tex)\n(pgfmoduleplot.code.tex) (pgfcomp-version-0-65.sty) (pgfcomp-version-1-18.sty))\n (pgffor.sty (pgfkeys.sty (pgfkeys.code.tex)) (pgfmath.sty (pgfmath.code.tex))\n(pgffor.code.tex (pgfmath.code.tex))) (tikz.code.tex\n(pgflibraryplothandlers.code.tex) (pgfmodulematrix.code.tex)\n(tikzlibrarytopaths.code.tex))) (float.sty) (needspace.sty)\n(pgflibraryarrows.meta.code.tex) (tikzlibrarypositioning.code.tex)\n(tcolorbox.sty (verbatim.sty) (environ.sty (trimspaces.sty)) (etoolbox.sty)\n(tcbraster.code.tex\nLibrary (tcolorbox): 'tcbraster.code.tex' version '5.0.2'\n) (tcbskins.code.tex\nLibrary (tcolorbox): 'tcbskins.code.tex' version '5.0.2'\n(tcbskinsjigsaw.code.tex\nLibrary (tcolorbox): 'tcbskinsjigsaw.code.tex' version '5.0.2'\n)) (tcbbreakable.code.tex\nLibrary (tcolorbox): 'tcbbreakable.code.tex' version '5.0.2'\n(pdfcol.sty (ltxcmds.sty) (infwarerr.sty))) (tcbhooks.code.tex\nLibrary (tcolorbox): 'tcbhooks.code.tex' version '5.0.2'\n) (tcbtheorems.code.tex\nLibrary (tcolorbox): 'tcbtheorems.code.tex' version '5.0.2'\n) (tcbfitting.code.tex\nLibrary (tcolorbox): 'tcbfitting.code.tex' version '5.0.2'\n) (tcbxparse.code.tex\nLibrary (tcolorbox): 'tcbxparse.code.tex' version '5.0.2'\n(xparse.sty (expl3.sty (l3backend-xetex.def)))) (tcblistingsutf8.code.tex\nLibrary (tcolorbox): 'tcblistingsutf8.code.tex' version '5.0.2'\n(tcblistings.code.tex\nLibrary (tcolorbox): 'tcblistings.code.tex' version '5.0.2'\n(tcblistingscore.code.tex\nLibrary (tcolorbox): 'tcblistingscore.code.tex' version '5.0.2'\n(tcbprocessing.code.tex\nLibrary (tcolorbox): 'tcbprocessing.code.tex' version '5.0.2'\n(pdftexcmds.sty) (shellesc.sty\n\nPackage shellesc Warning: Shell escape disabled on input line 73.\n\n))))) (tcbexternal.code.tex\nLibrary (tcolorbox): 'tcbexternal.code.tex' version '5.0.2'\n) (tcbmagazine.code.tex\nLibrary (tcolorbox): 'tcbmagazine.code.tex' version '5.0.2'\n) (tcbvignette.code.tex\nLibrary (tcolorbox): 'tcbvignette.code.tex' version '5.0.2'\n(tikzlibraryfadings.code.tex (pgflibraryfadings.code.tex))) (tcbposter.code.tex\n\nLibrary (tcolorbox): 'tcbposter.code.tex' version '5.0.2'\n)) (hyperref.sty (kvsetkeys.sty) (kvdefinekeys.sty) (pdfescape.sty)\n(hycolor.sty) (letltxmacro.sty) (auxhook.sty) (kvoptions.sty) (pd1enc.def)\n(intcalc.sty) (etexcmds.sty) (puenc.def) (url.sty) (bitset.sty (bigintcalc.sty)\n) (atbegshi-ltx.sty)) (hxetex.def (stringenc.sty) (rerunfilecheck.sty\n(atveryend-ltx.sty) (uniquecounter.sty)))\n(Week10_Random_Sampling_and_Monte_Carlo.aux) (ts1cmr.fd)\n*geometry* driver: auto-detecting\n*geometry* detected driver: xetex\n(nameref.sty (refcount.sty) (gettitlestring.sty))\n(Week10_Random_Sampling_and_Monte_Carlo.out)\n(Week10_Random_Sampling_and_Monte_Carlo.out) (umsa.fd) (umsb.fd) [1]\n(lstlang1.sty) [2] [3] [4] [5] (Week10_Random_Sampling_and_Monte_Carlo.aux) )\nOutput written on Week10_Random_Sampling_and_Monte_Carlo.xdv (5 pages, 120240 b\nytes).\nTranscript written on Week10_Random_Sampling_and_Monte_Carlo.log.\nnote: Running xdvipdfmx ...\n[1][2][3][4][5]200070 bytes written\nnote: Writing `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/build/Week10_Random_Sampling_and_Monte_Carlo.pdf` (195.380859375 KiB)\nnote: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)\n",
+  "pdfExists": true,
+  "pdfPath": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/build/Week10_Random_Sampling_and_Monte_Carlo.pdf",
+  "rootFile": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/Week10_Random_Sampling_and_Monte_Carlo.tex",
+  "tectonic": {
+    "checked": [
+      {
+        "path": "/Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic",
+        "source": "bundled"
+      }
+    ],
+    "path": "/Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic",
+    "reason": "Tectonic executable is available.",
+    "source": "bundled",
+    "status": "available",
+    "version": "Tectonic 0.17.0"
+  },
+  "tectonicSuitability": {
+    "reasons": [],
+    "scannedFiles": [
+      "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/learning-notes/Week10_Random_Sampling_and_Monte_Carlo.tex"
+    ],
+    "suitable": true
+  },
+  "texliveDetection": {
+    "activeBinDir": null,
+    "commands": {
+      "biber": {
+        "path": null,
+        "version": null
+      },
+      "kpsewhich": {
+        "path": null,
+        "version": null
+      },
+      "latexmk": {
+        "path": null,
+        "version": null
+      },
+      "lualatex": {
+        "path": null,
+        "version": null
+      },
+      "pdflatex": {
+        "path": null,
+        "version": null
+      },
+      "xelatex": {
+        "path": null,
+        "version": null
+      }
+    },
+    "knownTexBinDirs": [],
+    "missingRecommended": [
+      "xelatex",
+      "lualatex",
+      "biber"
+    ],
+    "missingRequired": [
+      "latexmk",
+      "pdflatex",
+      "kpsewhich"
+    ],
+    "reason": "No TeX Live or MacTeX tools were found on PATH or known TeX locations.",
+    "searchPath": "/Users/khairuladib/.local/bin:/Library/Frameworks/Python.framework/Versions/3.14/bin:/Applications/MATLAB R2026b.app/bin:/usr/local/bin:/System/Cryptexes/App/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/local/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/bin:/var/run/com.apple.security.cryptexd/codex.system/bootstrap/usr/appleinternal/bin:/pkg/env/global/bin:/opt/homebrew/bin:/Users/khairuladib/.codex/tmp/arg0/codex-arg0q9NcKo:/Users/khairuladib/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/override:/Users/khairuladib/.cache/codex-runtimes/codex-primary-runtime/dependencies/bin/fallback:/Applications/ChatGPT.app/Contents/Resources",
+    "status": "missing",
+    "texmfroot": null
+  }
+}

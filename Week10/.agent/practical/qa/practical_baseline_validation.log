@@ -1,0 +1,77 @@
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+photon_sample_table =
+
+  3×3 table
+
+    Trials    MeanDetectedCount    SpreadDetectedCount
+    ______    _________________    ___________________
+
+      100           25.92                2.6445       
+      500          25.798                2.8707       
+     2000          25.932                2.9306       
+
+
+seed_reproduction_passed =
+
+  logical
+
+   1
+
+
+new_seed_differs =
+
+  logical
+
+   1
+
+
+shield_sample_table =
+
+  3×3 table
+
+    Particles    EstimatedTransmission    AbsoluteError
+    _________    _____________________    _____________
+
+        200              0.335               0.033806  
+       2000              0.314               0.012806  
+      20000             0.3065              0.0053058  
+
+
+faulty_estimated_transmission =
+
+     1
+
+
+probability_range_check_passed =
+
+  logical
+
+   1
+
+
+walk_validation_table =
+
+  1×4 table
+
+    mean_final_x_mm    mean_final_y_mm    rms_radial_displacement_mm    expected_rms_radial_mm
+    _______________    _______________    __________________________    ______________________
+
+        -0.173              -0.2                    4.3822                      4.4721        
+
+
+context_comparison =
+
+  3×5 table
+
+           Context                       OneTrial                      RepeatedOutput                ValidationCheck                 LargerSampleImproves        
+    _____________________    _________________________________    _________________________    ___________________________    ___________________________________
+
+    "Photon detection"       "40-photon measurement"              "detected count"             "REPLACE_WITH_PHOTON_CHECK"    "REPLACE_WITH_PHOTON_SAMPLE_EFFECT"
+    "Shield transmission"    "one particle transmission event"    "transmission fraction"      "REPLACE_WITH_SHIELD_CHECK"    "REPLACE_WITH_SHIELD_SAMPLE_EFFECT"
+    "2D random walk"         "80-step path"                       "final position / radius"    "REPLACE_WITH_WALK_CHECK"      "REPLACE_WITH_WALK_SAMPLE_EFFECT"  
+
+WEEK10_PRACTICAL_FRESH_RUN_PASSED

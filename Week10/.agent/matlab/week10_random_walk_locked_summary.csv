@@ -1,0 +1,2 @@
+StepsPerTrial,StepLength_mm,Trials,MeanFinalPosition_mm,SpreadFinalPosition_mm,ExpectedSpread_mm,SpreadRatio
+100,1,10000,-0.128,9.94229430262456,10,0.994229430262456

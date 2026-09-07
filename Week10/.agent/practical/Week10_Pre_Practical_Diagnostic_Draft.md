@@ -1,0 +1,14 @@
+# Week 10 Pre-Practical Diagnostic Draft
+
+Use this draft only after the Week 10 materials and questions are approved. Configure one ungraded Google Form quiz through the corresponding Week 10 Google Classroom coursework item; do not create a course-wide routing Form. The canonical mapping currently contains no Week 10 Form, so this remains a local draft. Collect verified institutional email if identification is required. The six items preserve the standard prediction, units/scaling, algorithm/code, numerical diagnosis, validation, and confidence pattern.
+
+| Part | Student prompt | Response format | Answer key and misconception cue |
+| --- | --- | --- | --- |
+| Physical prediction | A symmetric random walk has equally likely left and right steps. Across many trials, where should the average final position tend to lie? | Multiple choice: far left / near zero / far right / cannot say anything | **Near zero.** Address confusing unpredictability of one trial with absence of a long-run prediction. |
+| Units and scaling | A step length is `0.5 mm`. Which quantity should also be reported in mm? | Multiple choice: random seed / trial count / final position / probability | **Final position.** Address assigning units to dimensionless computational settings. |
+| Algorithm and code | Which order best matches the Core Monte Carlo workflow? A. histogram -> seed -> invent model -> report; B. define trial -> sample -> repeat -> summarise -> validate; C. validate -> randomise units -> report; D. repeat -> delete variation -> average. | Multiple choice | **B.** Address sampling before defining what one trial physically represents. |
+| Numerical or defect diagnosis | A transmission probability is calculated as `1.2`. What is the clearest problem? | Multiple choice: too many trials / invalid probability range / wrong plot title / seed too small | **Invalid probability range.** Probabilities must lie from 0 to 1. |
+| Validation reasoning | In one or two sentences, name one independent check for a symmetric 1D random-walk simulation and explain what it tests. | Short response | Expected evidence: mean near zero by symmetry; final-position parity/step rule; supplied spread scaling. Do not accept “same answer after resetting seed” as the only validation. |
+| Confidence calibration | How confident are you that you can explain why two correct Monte Carlo runs may produce different finite-sample answers? | Linear scale: 1 not yet confident to 5 very confident | No score required. Use responses to decide whether optional remediation should focus on randomness versus reproducibility. |
+
+If the dominant misconception is “different run = wrong code” or “fixed seed proves correctness,” publish one optional 10-15 minute Classroom remediation: show two valid seeds, compare their finite-sample means, verify the same symmetry check for both, then repeat the confidence item. Keep it optional and do not make it a prerequisite for the practical.
