@@ -1,0 +1,221 @@
+PHY4605 Computational Methods in Physics
+Learning Note | Week 9
+
+Data Fitting and Uncertainty:
+From Measurements to Parameters
+Use a small physical dataset to estimate a parameter, inspect where the model misses the data, and report
+only the uncertainty the evidence supports.
+Physical question. A resistor is labelled 47 Ω, but measured voltage and current are not perfectly
+exact. What resistance is supported by the full dataset, how can residuals reveal model mismatch,
+and how precise should the reported answer be?
+
+Core learning outcomes
+1. fit a supplied simple physical relationship and interpret each fitted parameter with its unit;
+2. calculate and interpret residuals to judge whether a model misses visible structure; and
+3. validate a fitted result and state uncertainty cautiously using a supplied repeatability range.
+
+1. Measurements are not the same as model parameters
+The experiment supplies pairs of current I and voltage V . These are measured quantities. We propose
+the simple relationship
+V = RI + b,
+where R is the resistance and b is a small voltage offset. The values of R and b are fitted parameters:
+they are inferred from the pattern across all measurements.
+The units follow directly from the equation. Because voltage is in volts and current is in amperes,
+[R] =
+
+V
+= Ω,
+A
+
+[b] = V.
+
+The unit check is already useful: if a reported slope were labelled only in volts, its physical interpretation
+would be incomplete.
+Prediction checkpoint. For a resistor near 47 Ω, increasing current by 0.01 A should increase
+voltage by about 0.47 V. The voltage–current graph should therefore have a positive slope near
+47 V/A.
+
+2. Start with the data, then choose the fit
+The locked teaching dataset is small enough to inspect directly.
+I (A)
+
+V (V)
+
+I (A)
+
+V (V)
+
+0.01
+0.02
+0.03
+0.04
+
+0.48
+0.93
+1.43
+1.86
+
+0.05
+0.06
+0.07
+0.08
+
+2.36
+2.83
+3.28
+3.77
+
+Plotting before fitting matters. A command can always return coeﬀicients, but a visibly curved trend,
+one extreme point, or a unit mistake may make the proposed straight-line model inappropriate.
+
+1
+
+3. A fitting algorithm in plain language
+For this week, the least-squares calculation itself is supplied. The Core reasoning is the sequence around
+it:
+1. plot the measured data with labelled axes and units;
+2. state the proposed relationship and identify the parameter units;
+3. fit a straight line to all measured pairs;
+4. evaluate the fitted model at the measured current values;
+5. calculate residual = measured voltage − fitted voltage;
+6. inspect whether the residuals scatter around zero or show a pattern;
+7. validate the fitted resistance against independent physical evidence; and
+8. report only the precision supported by the repeatability evidence.
+
+4. MATLAB fitting scaffold
+Base MATLAB provides polyfit and polyval. A degree of 1 requests a straight line. The first coeﬀicient
+is the slope and the second is the intercept.
+1 I_A = (0.01:0.01:0.08)';
+2 V_measured_V = [0.48 0.93 1.43 1.86 ...
+3
+2.36 2.83 3.28 3.77]';
+4
+5 p = polyfit(I_A,V_measured_V,1);
+6 R_fit_ohm = p(1);
+7 offset_fit_V = p(2);
+8
+9 V_fit_V = polyval(p,I_A);
+10 residual_V = V_measured_V - V_fit_V;
+
+The fitted values are
+R = 47.0000 Ω,
+
+b = 0.0025 V.
+
+The slope is the physically interesting resistance. The small fitted intercept can be read as a possible
+voltage zero offset in this simple measurement model.
+Do not confuse a fitted parameter with a measured value. No row in the table “measures
+R = 47 Ω” directly. The resistance estimate comes from the change of voltage with current across
+the dataset.
+
+5. Overlay the model and measurements
+The fitted line follows the overall trend while individual measurements sit slightly above or below it.
+
+2
+
+Figure 1: Locked MATLAB reference: measured voltage-current points and the fitted V = RI + b model.
+The slope is 47.0000 Ω.
+An overlay is useful, but visual closeness alone is not enough. The next step asks where and by how
+much the model misses each measurement.
+
+6. Residuals make model–data disagreement visible
+For measurement i, define
+ri = Vi,measured − Vi,ﬁt .
+A positive residual means the measured voltage is above the fitted line. A negative residual means it is
+below. Residuals have unit volts because they are voltage differences.
+For the locked data, the residual root-mean-square value is about
+RMSEr = 0.0130 V,
+and the largest absolute residual is 0.0225 V.
+
+3
+
+Figure 2: Residuals alternate around zero and show no obvious curved pattern in this small dataset.
+The absence of obvious structure supports the straight-line model over this measured range. It does not
+prove that the resistor is perfectly ohmic at every current or temperature.
+Core model-quality check. Small residuals are not enough by themselves. Ask whether they
+show a pattern. A U-shaped sequence—positive at both ends and negative in the middle—would
+suggest missing curvature or another systematic effect.
+
+7. Validate the fitted resistance with a physical reference
+The resistor is labelled 47 Ω with a nominal 5% tolerance. The manufacturer range is therefore
+47(1 − 0.05) = 44.65 Ω,
+
+47(1 + 0.05) = 49.35 Ω.
+
+The fitted value 47.0000 Ω lies inside this range. This is an independent physical/reference check because
+the nominal component information did not come from the fitting calculation.
+Tolerance is not fit uncertainty. The 5% label describes the component specification. It
+does not tell us how much the fitted resistance would change if we repeated this measurement
+procedure. Keep these two ideas separate.
+
+8. State uncertainty only as strongly as the evidence allows
+Three supplied repeat runs give fitted slopes
+47.00,
+
+47.06,
+
+47.27 Ω.
+
+For Week 9, use the observed span as a simple repeatability range:
+47.0 to 47.3 Ω.
+A defensible statement is:
+Cautious result. The fitted resistance is about 47.1 Ω, with repeat runs spanning roughly 47.0–
+47.3 Ω for this supplied measurement procedure. This range is not a formal confidence interval
+and does not include every possible systematic error.
+
+4
+
+Notice the reporting precision. Writing 47.111111 Ω would imply more certainty than the repeated data
+support.
+
+9. Worked reasoning chain
+Use the same chain whenever a familiar physical dataset is fitted:
+Step
+
+Week 9 evidence
+
+Physical model
+Variables and units
+Algorithm
+Code
+Error/uncertainty
+Validation
+Interpretation
+
+V = RI + b for an approximately ohmic resistor
+I in A, V and b in V, R in Ω
+plot → fit → predict → residuals → validate
+supplied polyfit and polyval scaffold
+residual scatter and repeat-run range
+fitted R inside the independent nominal component range
+linear model is adequate over the supplied current range
+
+This sequence is more important than memorising a fitting function name. In an assessment, the syntax
+may be supplied; you still need to explain the physical parameter, unit, residual evidence, and justified
+conclusion.
+
+Working exposure: one fit-quality statistic
+You may be shown a supplied coeﬀicient of determination, R2 . Values closer to 1 indicate that the fitted
+predictions account for more of the observed variation in that dataset. Treat it as supporting evidence
+only. A high R2 does not repair wrong units, a poor physical model, a structured residual pattern, or
+an unverified data-entry error.
+You may also be shown two plausible simple models and their residual evidence. Compare the supplied
+evidence; independent reproduction of advanced selection metrics is not required.
+
+Optional stretch
+Weighted fitting, nonlinear fitting, covariance matrices, regularisation, and formal confidence intervals
+are outside the Week 9 Core route. They are not required for ordinary pass-level work here.
+
+Three takeaways
+1. A fitted parameter must keep the unit implied by the physical equation.
+2. Residuals show where the model misses the measurements; visible structure can reveal a poor model
+even when the overlay looks convincing.
+3. Report uncertainty only to the level supported by the evidence, and keep repeatability distinct from
+manufacturer tolerance or formal confidence intervals.
+Preparation for the practical. Be ready to fit a supplied straight-line scaffold, state parameter
+units, read residual structure, use one independent check, and report uncertainty only to justified
+precision.
+
+5
+
+

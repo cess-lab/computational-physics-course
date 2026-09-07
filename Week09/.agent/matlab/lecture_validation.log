@@ -1,0 +1,94 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+measurement_table =
+
+  8×2 table
+
+    Current_A    MeasuredVoltage_V
+    _________    _________________
+
+      0.01             0.48       
+      0.02             0.93       
+      0.03             1.43       
+      0.04             1.86       
+      0.05             2.36       
+      0.06             2.83       
+      0.07             3.28       
+      0.08             3.77       
+
+
+R_fit_ohm =
+
+    47
+
+
+offset_fit_V =
+
+    0.0025
+
+
+parameter_summary =
+
+  1×2 table
+
+    FittedResistance_ohm    FittedOffset_V
+    ____________________    ______________
+
+             47                 0.0025    
+
+
+residual_RMSE_V =
+
+    0.0130
+
+
+largest_absolute_residual_V =
+
+    0.0225
+
+
+residual_table =
+
+  8×4 table
+
+    Current_A    MeasuredVoltage_V    FittedVoltage_V    Residual_V
+    _________    _________________    _______________    __________
+
+      0.01             0.48               0.4725           0.0075  
+      0.02             0.93               0.9425          -0.0125  
+      0.03             1.43               1.4125           0.0175  
+      0.04             1.86               1.8825          -0.0225  
+      0.05             2.36               2.3525           0.0075  
+      0.06             2.83               2.8225           0.0075  
+      0.07             3.28               3.2925          -0.0125  
+      0.08             3.77               3.7625           0.0075  
+
+
+R_nominal_range_ohm =
+
+   44.6500   49.3500
+
+
+fit_within_nominal_tolerance =
+
+  logical
+
+   1
+
+
+R_repeatability_range_ohm =
+
+   47.0000   47.2738
+
+
+R_squared =
+
+    0.9999
+
+WEEK09_LECTURE_FRESH_RUN_PASSED

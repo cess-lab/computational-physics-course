@@ -1,0 +1,18 @@
+# Week 09 Post-Submission Variant Bank
+
+Use variants only after the group file is locked. Assign one challenge slot and either Variant A or B below. If a slot is reused for another group, use the other variant and record the exact variant ID in the event ledger. The guidance supports marking; students must still explain their own model, fitting output, residual evidence, validation, and physical interpretation.
+
+| Challenge slot | Variant A | Variant B | Expected answer guidance |
+| --- | --- | --- | --- |
+| 1 | If spring extension is reported in cm instead of m, what happens to the numerical slope value and unit? | If force is doubled at every extension, what happens to the fitted slope? | A: numerical slope becomes N/cm and is 100 times smaller than N/m; unit conversion restores the same physics. B: slope approximately doubles. |
+| 2 | Replace the last spring force with `2.10 N`; predict whether fitted `k` rises or falls. | Replace the first spring force with `0.20 N`; predict whether fitted `k` rises or falls. | A tends to increase the fitted slope; B also tends to increase slope by lowering the low-x end. Exact number may be obtained from the supplied scaffold. |
+| 3 | One spring residual is `+0.020 N`. Interpret its sign. | One spring residual is `-0.015 N`. Interpret its sign. | A measured force is 0.020 N above the fitted prediction; B is 0.015 N below. |
+| 4 | Repeat slopes are `[24.9, 25.0, 25.4] N/m`; give a cautious range statement. | Repeat slopes are `[24.7, 25.2, 25.1] N/m`; give a cautious range statement. | State the observed span and avoid calling it a formal confidence interval. |
+| 5 | A cart linear fit gives `v=0.80 m/s`; what does the slope physically represent? | A cart fit gives intercept `-0.05 m`; what does the intercept represent? | A: fitted constant-speed parameter. B: fitted position at `t=0` under the straight-line model. |
+| 6 | Residuals are positive at both ends and negative in the middle. What is the model warning? | Residuals alternate small positive/negative values around zero. What does that support? | A: missing curvature/systematic behaviour. B: no obvious structure, supporting the simple model over the measured range. |
+| 7 | Largest residual occurs at `t=4 s`; what should you do before correcting the value? | Two points have similarly large residuals; can you delete both immediately? | Verify raw notes/instrument record first. Residual size alone does not justify deletion. |
+| 8 | For `T^2` vs `L`, state the slope unit. | If `L` is accidentally entered in cm while labelled m, what happens to inferred `g`? | A: s^2/m. B: slope scaling is wrong and inferred `g` becomes wrong by a factor tied to the 100-fold length-unit error. |
+| 9 | Fitted pendulum `g=9.70 m/s^2`; compare cautiously with `9.81`. | Fitted pendulum `g=10.05 m/s^2`; compare cautiously with `9.81`. | Quantify the difference and discuss measurement/model limits; do not claim exact agreement or failure from one threshold alone. |
+| 10 | Choose one context and name a model limitation plus a different validation check. | Explain why high `R^2` alone is insufficient in any one context. | Accept a physically correct limitation and a usable unit/reference/residual/repeatability check; reject presentation quality or AI agreement as validation. |
+
+Do not require weighted fitting, nonlinear optimisation, covariance matrices, regularisation, or formal confidence intervals. Keep the defence on supplied simple relationships, fitted parameter units, residual pattern, a physical/reference check, cautious uncertainty, and the concise AI decision record.

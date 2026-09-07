@@ -1,0 +1,40 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+spring_repeatability_range_N_per_m =
+
+   24.8000   25.3000
+
+
+cart_model_comparison =
+
+  1×3 table
+
+    LinearRMSE_m    QuadraticRMSE_m    InferredAcceleration_m_per_s2
+    ____________    _______________    _____________________________
+
+      0.17258          0.014498                  0.099286           
+
+
+cart_suspect_time_s =
+
+     4
+
+
+context_comparison =
+
+  3×6 table
+
+          Context           MeasuredQuantities        FittedParameter        ParameterUnit    ResidualUnit       ValidationOrModelCheck    
+    ____________________    __________________    _______________________    _____________    ____________    _____________________________
+
+    "Spring calibration"          "x, F"          "k"                           "N/m"            "N"          "REPLACE_WITH_SPRING_CHECK"  
+    "Cart motion"                 "t, x"          "v for linear model"          "m/s"            "m"          "REPLACE_WITH_CART_CHECK"    
+    "Pendulum"                    "L, T"          "g inferred from slope"       "m/s^2"          "s^2"        "REPLACE_WITH_PENDULUM_CHECK"
+
+WEEK09_PRACTICAL_FRESH_RUN_PASSED
