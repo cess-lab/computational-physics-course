@@ -1,0 +1,231 @@
+PHY4605 Computational Methods in Physics
+Learning Note | Week 11
+
+Sensitivity and Uncertainty Propagation
+Use controlled parameter variation to turn plausible input uncertainty into an output range that can be
+validated and interpreted physically.
+
+   Physical question. A spring is loaded by a known force, but its stiffness is only known within a
+   plausible range. What range of extension should we report, and what does that range say about
+   the reliability of the prediction?
+
+
+
+Core learning outcomes
+1. convert one uncertain input into lower, baseline, and upper one-at-a-time model evaluations;
+2. report and validate the resulting output range without false precision; and
+3. distinguish parameter uncertainty, numerical approximation error, and model limitation in plain
+   language.
+
+
+1. From a parameter sweep to uncertainty evidence
+In Week 4, changing a model parameter helped reveal a physical trend. Week 11 uses the same compu-
+tational move for a different purpose: the input is not known exactly, so a plausible input range becomes
+uncertainty evidence.
+The familiar model is the ideal linear spring,
+                                                               F
+                                            F = kx,       x=     .
+                                                               k
+In words: for a fixed applied force, the predicted extension is the force divided by the spring stiffness.
+We use
+                                     F = 10 N,      k0 = 100 N m−1 ,
+with a plausible stiffness range from 95 to 105 N m−1 .
+
+    Quantity                Week 11 value                 Meaning
+    F                       10 N                          applied force held fixed in the Core sweep
+    k                       95, 100, 105 N m−1            plausible lower, baseline, and upper stiffness
+                                                          values
+    x                       m                             model output: predicted extension
+
+
+
+   Prediction checkpoint. Because x = F/k, lower stiffness should produce larger extension.
+   The 95 N m−1 case should therefore give the largest x, while the 105 N m−1 case should give the
+   smallest.
+
+
+
+2. One-at-a-time uncertainty reasoning
+A one-at-a-time sweep changes one uncertain input while keeping the model and every other input fixed.
+This allows the resulting output change to be attributed to that one input range.
+
+
+
+
+                                                      1
+                          Choose plausible       Hold model and      Evaluate lower,
+                            input range         other inputs fixed   baseline, upper
+
+
+                             Interpret source     Report output           Validate
+                              and limitation         range                baseline
+
+
+ The computational recipe is:
+   1. define the model, baseline, units, and one plausible input range;
+   2. hold all other inputs and assumptions fixed;
+   3. evaluate the lower, baseline, and upper cases;
+   4. collect the minimum and maximum output;
+   5. validate one known or hand-calculated case; and
+   6. state what the output range means physically.
+
+     Do not vary several uncertain inputs at once when the question asks which input
+     caused the change. Simultaneous variation can be useful for other analyses, but it no longer
+     isolates one input’s effect.
+
+
+
+ 3. MATLAB scaffold: three controlled cases
+ The Core calculation needs only a short array and element-wise division. The three stiffness values form
+ three controlled evaluations of the same deterministic equation.
+1 force_baseline_N = 10;
+2 stiffness_baseline_Npm = 100;
+3 stiffness_cases_Npm = [95 100 105];
+4
+5 extension_cases_m = force_baseline_N./stiffness_cases_Npm;
+6 extension_baseline_m = force_baseline_N/stiffness_baseline_Npm;
+7 extension_range_m = [min(extension_cases_m) max(extension_cases_m)];
+
+
+ The dot in ./ means that the scalar force is divided by each stored stiffness value. The calculation gives
+
+                                                x0 = 0.10000 m,
+
+ and the range
+                                        0.09524 m ≲ x ≲ 0.10526 m.
+
+
+
+ 4. Report a range, not just a long decimal
+ The exact-looking statement “x = 0.10000 m” describes only the baseline case. It hides the fact that the
+ stiffness itself is uncertain over the supplied range.
+ A more defensible statement is:
+
+     Range-based result. For a 10 N load and stiffness between 95 and 105 N m−1 , the ideal Hooke
+     model predicts an extension of about 0.095 to 0.105 m.
+
+ Extra displayed decimal places do not improve knowledge of the spring stiffness. Numerical display
+ precision and physical parameter uncertainty are different ideas.
+
+
+
+
+                                                       2
+ Figure 1: Predicted extension for the supplied stiffness values. These points are controlled parameter
+ cases, not repeated random trials.
+
+ 5. Core validation: check the baseline independently
+ The baseline is simple enough to calculate by hand:
+                                                   10 N
+                                         x0 =             = 0.10 m.
+                                                100 N m−1
+ The units also reduce correctly:
+                                                   N
+                                                       = m.
+                                                 N m−1
+1 reference_baseline_m = 10/100;
+2 baseline_check_passed = abs(extension_baseline_m-reference_baseline_m) < 1e-12;
+3 assert(baseline_check_passed,'Baseline Hooke-law validation failed.')
+
+
+
+     Validation result. The baseline matches the independent calculation, the units are metres, and
+     the trend is physically consistent: decreasing k increases x at fixed F . A smooth graph alone
+     would not establish these checks.
+
+
+
+ 6. Three different reasons a prediction can be imperfect
+ The word “error” is too vague unless its source is identified.
+
+    Source                    Meaning                                 Week 11 example
+    Parameter uncertainty     an input is not known exactly           spring stiffness is plausible from 95 to
+                                                                      105 N m−1
+    Numerical                 a mathematical operation is             a finite timestep changes an ODE
+    approximation error       approximated numerically                simulation result
+    Model limitation          the equation’s assumptions do not       Hooke’s law may fail outside the
+                              fully represent reality                 linear elastic range
+
+ The direct Core Hooke calculation has no meaningful timestep, grid, or iterative approximation. Its
+ uncertainty range comes from the stated stiffness range. Even a perfectly evaluated equation can still
+ inherit uncertainty from its inputs and limitations from its assumptions.
+
+                                                      3
+7. Worked reasoning chain
+
+  Step                          Week 11 evidence
+  Physical model                ideal linear spring, x = F/k
+  Scale and units               F in N, k in N/m, x in m
+  Uncertain input               k = 95, 100, 105 N m−1
+  Algorithm                     hold F fixed, evaluate the same model for lower/baseline/upper k
+  Output range                  approximately 0.09524 to 0.10526 m
+  Validation                    hand-check 10/100 = 0.10 m plus units and trend
+  Interpretation                stiffness uncertainty creates a range of plausible model predictions
+
+
+This chain is more important than memorising a MATLAB function name. In an assessment, syntax may
+be supplied; the physical model, held-fixed conditions, uncertainty source, validation, and interpretation
+still need to be defended.
+
+
+Working exposure: compare a second uncertain input
+Now hold k = 100 N m−1 fixed and vary the force from 9.8 to 10.2 N. The corresponding extension range
+is 0.098 to 0.102 m, with a full span of 0.004 m.
+For the stiffness range, the full extension span is about 0.01003 m. For the supplied uncertainty ranges,
+stiffness therefore changes the output more than force. This conclusion depends on the ranges that were
+supplied; it is not a universal statement that stiffness must always dominate force.
+
+
+
+
+Figure 2: One-at-a-time output spans for the supplied stiffness and force ranges. The comparison isolates
+one input range at a time.
+
+
+
+
+                                                      4
+Working exposure: supplied sensitivity and propagation formulas
+A supplied normalized sensitivity can compare fractional output change with fractional input change
+near a baseline:
+                                                ∆x/x0
+                                           S≈          .
+                                                ∆p/p0
+For x = F/k, the supplied local interpretation is approximately Sk = −1 and SF = +1. The sign
+gives the direction of response; the magnitude describes the fractional responsiveness near the baseline.
+Deriving these sensitivities is not Core Week 11 work.
+If small force and stiffness uncertainties are treated as independent standard uncertainties, a supplied
+first-order relation is                        √( )
+                                         ux        u F 2 ( u k )2
+                                            ≈            +        .
+                                          x        F         k
+Using uF = 0.2 N and uk = 5 N m−1 gives a relative estimate of about 5.39% and
+
+                                            ux ≈ 0.00539 m.
+
+This combined estimate answers a different question from the isolated one-at-a-time ranges. The formula
+is supplied for interpretation only.
+
+
+Optional stretch
+Independent derivative-based propagation, Monte Carlo uncertainty propagation, correlated inputs, in-
+teraction effects, and global sensitivity methods are outside the Week 11 Core route.
+
+
+Three takeaways
+ 1. An uncertain input should be represented by a justified baseline and plausible range before evaluating
+    the model.
+ 2. A one-at-a-time sweep converts that input range into an interpretable output range while keeping
+    other inputs fixed.
+ 3. Parameter uncertainty, numerical approximation error, and model limitation describe different rea-
+    sons a prediction may be imperfect.
+
+   Preparation for the practical. Be ready to identify one uncertain input and its units, predict
+   the direction of the output change, compute a lower/baseline/upper range using a supplied model,
+   perform one independent check, and explain the result without false precision.
+
+
+
+
+                                                    5
+

@@ -1,0 +1,54 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+resistance_table =
+
+  3×2 table
+
+    Resistance_ohm    Current_A
+    ______________    _________
+
+          95           0.12632 
+         100              0.12 
+         105           0.11429 
+
+
+ohm_comparison =
+
+  2×2 table
+
+    UncertainInput    FullCurrentSpan_A
+    ______________    _________________
+
+     "Resistance"          0.01203     
+     "Voltage"               0.004     
+
+
+attenuation_comparison =
+
+  2×2 table
+
+    UncertainInput    FullOutputSpan_cps
+    ______________    __________________
+
+     "mu"                   45.221      
+     "thickness"            24.102      
+
+
+context_comparison =
+
+  3×5 table
+
+             Context                      UncertainInput                      Output                     ValidationCheck                        ModelLimitation           
+    _________________________    ________________________________    ________________________    ________________________________    _____________________________________
+
+    "Ohmic resistor"             "REPLACE_WITH_OHM_INPUT"            "current"                   "REPLACE_WITH_OHM_CHECK"            "REPLACE_WITH_OHM_LIMITATION"        
+    "Small-angle pendulum"       "REPLACE_WITH_PENDULUM_INPUT"       "period"                    "REPLACE_WITH_PENDULUM_CHECK"       "REPLACE_WITH_PENDULUM_LIMITATION"   
+    "Exponential attenuation"    "REPLACE_WITH_ATTENUATION_INPUT"    "transmitted count rate"    "REPLACE_WITH_ATTENUATION_CHECK"    "REPLACE_WITH_ATTENUATION_LIMITATION"
+
+WEEK11_PRACTICAL_FRESH_RUN_PASSED

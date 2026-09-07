@@ -1,0 +1,9 @@
+baseline_extension_m=0.1000000000
+stiffness_output_min_m=0.0952380952
+stiffness_output_max_m=0.1052631579
+stiffness_output_span_m=0.0100250627
+force_output_min_m=0.0980000000
+force_output_max_m=0.1020000000
+force_output_span_m=0.0040000000
+relative_combined_uncertainty=0.0538516481
+first_order_u_extension_m=0.0053851648

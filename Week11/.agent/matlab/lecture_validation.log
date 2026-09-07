@@ -1,0 +1,63 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+stiffness_uncertainty_table =
+
+  3×2 table
+
+    Stiffness_N_per_m    Extension_m
+    _________________    ___________
+
+            95             0.10526  
+           100                 0.1  
+           105            0.095238  
+
+
+reported_range_m =
+
+    0.0952    0.1053
+
+
+maximum_departure_from_baseline_m =
+
+    0.0053
+
+
+baseline_check_passed =
+
+  logical
+
+   1
+
+
+one_at_a_time_summary =
+
+  2×2 table
+
+    UncertainInput    FullOutputSpan_m
+    ______________    ________________
+
+     "Stiffness"          0.010025    
+     "Force"                 0.004    
+
+
+normalized_sensitivity_k =
+
+   -1.0025
+
+
+normalized_sensitivity_F =
+
+    1.0000
+
+
+first_order_u_extension_m =
+
+    0.0054
+
+WEEK11_LECTURE_FRESH_RUN_PASSED
