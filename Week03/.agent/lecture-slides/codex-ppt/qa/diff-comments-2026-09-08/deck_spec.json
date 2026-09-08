@@ -1,0 +1,162 @@
+{
+  "deck_name": "Week03_diff_comments_20260908",
+  "language": "English",
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 4,
+  "goal": "Repair the three commented Week 03 lecture slides while retaining the approved Teaching Courseware style and exact physics content.",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and approved Slide 06 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the prior approved Teaching Courseware sample and all revised strict inputs with view_image before each delegated generation.",
+    "handoff_rule": "Use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "role": "approved revised Week 03 sample slide style reference",
+    "fidelity": "match style only; do not copy exact layout or content"
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slides with strong hierarchy, labelled diagrams, moderate information density, and restrained semantic colour",
+    "color_palette": "warm-white canvas; deep navy #243B53; dusty blue #6E8FB3; quiet sage #7AA69B; muted ochre #C7A35A; subdued coral #BF7A70 only for genuine defects",
+    "typography": "projection-readable sans-serif with readable monospaced MATLAB code; preserve mathematical symbols and units exactly",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin functional lines, direct labels, generous alignment, no gradients or thick frame",
+    "prompt_rule": "Use ochre as a functional cue and vary composition by teaching role.",
+    "prohibited": ["thick outer frame", "slide numbers", "timings", "source labels", "production metadata", "unrelated logos", "unlabelled decorative graphs"]
+  },
+  "deck_context": {
+    "deck_context": "Week 03 uses a two-loop DC circuit as the Core model. The optional bridge preview uses three clockwise mesh currents I1, I2, and I3; R7 couples I1-I2, diagonal Rb couples I2-I3, and I1/I3 share no branch.",
+    "core_claim": "A matrix is a compact representation of physical equations; a solver result is credible only after the original equations are checked and interpreted.",
+    "locked_model": "Two clockwise mesh currents I1 and I2; R1=2 ohm; R2=3 ohm; Rs=1 ohm; V1=5 V; V2=2 V; Ishared=I1-I2; A_ohm=[3 -1; -1 4]; b_V=[5;2]; x_A=A_ohm\\b_V; I1_A=2 A; I2_A=1 A; Ishared_A=1 A.",
+    "exactness": "Keep strict circuit, equations, values, signs, units, bridge topology, and optional-scope labels exact. Do not show a completed bridge solution."
+  },
+  "slides": [
+    {
+      "number": 3,
+      "title": "Walk each loop in words before writing symbols",
+      "role": "derivation",
+      "intent": "Show one circuit once, then make the two loop walks distinct before writing equations.",
+      "key_points": [
+        "One physical loop gives one Kirchhoff equation.",
+        "Use one circuit drawing as the shared anchor; do not repeat identical circuit images.",
+        "Left shared contribution follows I1 - I2; the right shared contribution is reversed.",
+        "Every resistance-current term has volts."
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/circuit_mesh_model.png",
+          "role": "strict two-loop circuit shown once as the visual anchor",
+          "fidelity": "preserve topology, values, polarities, labels, arrows, and units; include one instance only"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/kvl_equations.png",
+          "role": "strict KVL equations and units",
+          "fidelity": "preserve signs, subscripts, terms, and units exactly"
+        }
+      ],
+      "layout": "one central circuit with distinct left/right loop-walk lanes and exact equations",
+      "visual_elements": "single circuit anchor, two different text pathways, exact KVL, units cue",
+      "source_image_rules": "Circuit and equation inputs are strict. Include the circuit once and never duplicate the same full circuit or loop graphic.",
+      "constraints": ["No numerical matrix yet.", "The left and right explanations must be visibly distinct.", "No slide number or outer frame."]
+    },
+    {
+      "number": 6,
+      "title": "Audit the matrix before asking MATLAB to solve",
+      "role": "coefficient tracing",
+      "intent": "Read every coefficient back as physics with one unambiguous semantic colour path.",
+      "key_points": [
+        "A11 = R1 + Rs = 3 ohm.",
+        "A12 = -Rs = -1 ohm.",
+        "A21 = -Rs = -1 ohm.",
+        "A22 = R2 + Rs = 4 ohm.",
+        "Cell, coefficient number, connector, and physical-origin callout share one colour."
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_audit.png",
+          "role": "strict coefficient audit table",
+          "fidelity": "preserve entries, signs, units, and origins"
+        }
+      ],
+      "layout": "matrix with matched-colour cells, connectors, and origin table",
+      "visual_elements": "same-hue cell-number-connector-callout mapping; row, column, sign, unit",
+      "source_image_rules": "Audit table is strict; preserve all four entries and physical origins.",
+      "constraints": [
+        "Tie off-diagonal signs to the shared branch.",
+        "Use blue for A11 and A22, ochre for A12, and sage for A21.",
+        "The cell fill, coefficient number, connector, and origin callout must use the same semantic colour.",
+        "Do not place a green number in a blue cell or a blue number in a green cell.",
+        "No slide number or outer frame."
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Future exposure — the same pattern scales to a bridge circuit",
+      "role": "optional transfer preview",
+      "intent": "Show the corrected bridge geometry and three-mesh representation without a worked derivation.",
+      "key_points": [
+        "Three clockwise mesh currents I1, I2, and I3 lead to three Kirchhoff equations.",
+        "R7 couples I1-I2; diagonal Rb couples I2-I3; I1 and I3 share no branch.",
+        "Rows are equations; columns are mesh-current unknowns.",
+        "MATLAB can solve a 3x3 A*x=b after assembly, but no solution is shown here."
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_mesh_model.png",
+          "role": "corrected strict bridge-style network",
+          "fidelity": "preserve the rotated diagonal Rb, face-contained clockwise I1/I2/I3 arrows, source label, resistor labels, and no-numerical-values design"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_matrix_scaffold.png",
+          "role": "strict symbolic 3x3 coefficient-matrix scaffold",
+          "fidelity": "preserve the I1/I2/I3 unknown vector, coefficient-matrix label, source vector, and placeholders"
+        }
+      ],
+      "layout": "corrected bridge network left to symbolic 3x3 scaffold right",
+      "visual_elements": "three face-contained clockwise loops, diagonal resistor, optional tag, three-equation mapping",
+      "source_image_rules": "Bridge assets are strict future-exposure inputs, not a completed example.",
+      "constraints": ["Keep Rb aligned with the diagonal branch, not horizontal across it.", "Keep each current arrow inside its actual mesh face.", "Use I1, I2, and I3 consistently.", "No numerical coefficients or solved vector.", "Label optional/future exposure.", "No slide number or outer frame."],
+      "local_context": {
+        "topology": "R7 separates mesh faces I1 and I2; diagonal Rb separates I2 and I3; meshes I1 and I3 share no branch. All three mesh currents are clockwise. The bridge source Vs has its upper terminal positive and lower terminal negative."
+      }
+    },
+    {
+      "number": 13,
+      "title": "Self-activity — sketch the bridge matrix before MATLAB",
+      "role": "guided self-activity",
+      "intent": "Give a bounded decomposition activity using the corrected bridge drawing without revealing a finished matrix.",
+      "key_points": [
+        "Mark I1, I2, I3 and list shared branches R7 and Rb.",
+        "Predict matrix dimension and row/column meaning.",
+        "Separate self-resistance from shared-branch entries.",
+        "Sketch one validation check.",
+        "Stop at scaffold; no coefficients required today."
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_mesh_model.png",
+          "role": "corrected strict bridge-style network",
+          "fidelity": "preserve the rotated diagonal Rb, face-contained I1/I2/I3 arrows, labels, and resistor names"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_matrix_scaffold.png",
+          "role": "strict blank 3x3 scaffold",
+          "fidelity": "preserve placeholders, I1/I2/I3 unknown vector, coefficient-matrix label, and source labels"
+        }
+      ],
+      "layout": "corrected network top, five prompts below, blank scaffold side",
+      "visual_elements": "count, map, sign, validate, stop",
+      "source_image_rules": "Do not fill in the scaffold or provide a worked solution. Preserve the corrected bridge orientation and I1/I2/I3 notation.",
+      "constraints": ["Use I1, I2, and I3 consistently.", "Identify R7 as the I1-I2 shared branch and Rb as the I2-I3 shared branch.", "No completed matrix or step-by-step solution.", "Optional/future exposure, not Core.", "No slide number or outer frame."],
+      "local_context": {
+        "topology": "R7 separates mesh faces I1 and I2; diagonal Rb separates I2 and I3; meshes I1 and I3 share no branch. All three mesh currents are clockwise. Stop at the blank symbolic scaffold; do not provide coefficients or a solution."
+      }
+    }
+  ]
+}

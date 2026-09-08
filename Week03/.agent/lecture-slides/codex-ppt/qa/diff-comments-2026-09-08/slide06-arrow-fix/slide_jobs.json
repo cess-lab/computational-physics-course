@@ -1,0 +1,56 @@
+{
+  "run_status": "slides_dispatched",
+  "deck_name": "Week03_diff_comments_20260908_slide06_arrows",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and approved Slide 06 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the approved sample, current Slide 06, and strict audit table with view_image before generation.",
+    "handoff_rule": "Use the same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 1,
+  "slides": [
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Audit the matrix before asking MATLAB to solve",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
+          "role": "current Slide 06 edit base",
+          "fidelity": "preserve the title, matrix entries, table content, values, signs, units, physical-origin text, and lower takeaway; correct the connector geometry and origin anchors"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_audit.png",
+          "role": "strict coefficient audit table",
+          "fidelity": "preserve A11=3 Ω, A12=−1 Ω, A21=−1 Ω, A22=4 Ω and every physical-origin statement exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "dispatched",
+      "dispatch": {
+        "agent_id": "01a08139-4d84-7b20-8b31-9dabcabe1ed7",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "c7f592c9e2cdab7bf1a2f4c26bd9d59e9d1101f0878bc8ae541cfea5a71575db",
+        "dispatched_at": "2026-09-08T13:33:43Z"
+      },
+      "result": null,
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-08T13:33:43Z"
+}

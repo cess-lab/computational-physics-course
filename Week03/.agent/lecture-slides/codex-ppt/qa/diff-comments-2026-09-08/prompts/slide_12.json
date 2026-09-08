@@ -1,0 +1,53 @@
+{
+  "slide": 12,
+  "title": "Future exposure — the same pattern scales to a bridge circuit",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 12,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nRepair the three commented Week 03 lecture slides while retaining the approved Teaching Courseware style and exact physics content.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"deck_context\": \"Week 03 uses a two-loop DC circuit as the Core model. The optional bridge preview uses three clockwise mesh currents I1, I2, and I3; R7 couples I1-I2, diagonal Rb couples I2-I3, and I1/I3 share no branch.\",\n    \"core_claim\": \"A matrix is a compact representation of physical equations; a solver result is credible only after the original equations are checked and interpreted.\",\n    \"locked_model\": \"Two clockwise mesh currents I1 and I2; R1=2 ohm; R2=3 ohm; Rs=1 ohm; V1=5 V; V2=2 V; Ishared=I1-I2; A_ohm=[3 -1; -1 4]; b_V=[5;2]; x_A=A_ohm\\\\b_V; I1_A=2 A; I2_A=1 A; Ishared_A=1 A.\",\n    \"exactness\": \"Keep strict circuit, equations, values, signs, units, bridge topology, and optional-scope labels exact. Do not show a completed bridge solution.\"\n  },\n  \"slide_local_context\": {\n    \"topology\": \"R7 separates mesh faces I1 and I2; diagonal Rb separates I2 and I3; meshes I1 and I3 share no branch. All three mesh currents are clockwise. The bridge source Vs has its upper terminal positive and lower terminal negative.\"\n  }\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware — Muted Academic Blue + Sage\",\n  \"visual_direction\": \"clear, friendly, modern educational slides with strong hierarchy, labelled diagrams, moderate information density, and restrained semantic colour\",\n  \"color_palette\": \"warm-white canvas; deep navy #243B53; dusty blue #6E8FB3; quiet sage #7AA69B; muted ochre #C7A35A; subdued coral #BF7A70 only for genuine defects\",\n  \"typography\": \"projection-readable sans-serif with readable monospaced MATLAB code; preserve mathematical symbols and units exactly\",\n  \"texture_and_finish\": \"flat clean educational finish with pale fills, thin functional lines, direct labels, generous alignment, no gradients or thick frame\",\n  \"prompt_rule\": \"Use ochre as a functional cue and vary composition by teaching role.\",\n  \"prohibited\": [\n    \"thick outer frame\",\n    \"slide numbers\",\n    \"timings\",\n    \"source labels\",\n    \"production metadata\",\n    \"unrelated logos\",\n    \"unlabelled decorative graphs\"\n  ]\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png — approved revised Week 03 sample slide style reference; match style only; do not copy exact layout or content\n- Image 2: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_mesh_model.png — corrected strict bridge-style network; preserve the rotated diagonal Rb, face-contained clockwise I1/I2/I3 arrows, source label, resistor labels, and no-numerical-values design\n- Image 3: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_matrix_scaffold.png — strict symbolic 3x3 coefficient-matrix scaffold; preserve the I1/I2/I3 unknown vector, coefficient-matrix label, source vector, and placeholders\n\n\n## Slide\n{\n  \"number\": 12,\n  \"title\": \"Future exposure — the same pattern scales to a bridge circuit\",\n  \"role\": \"optional transfer preview\",\n  \"intent\": \"Show the corrected bridge geometry and three-mesh representation without a worked derivation.\"\n}\n\n## Text\n{\n  \"title\": \"Future exposure — the same pattern scales to a bridge circuit\",\n  \"key_points\": [\n    \"Three clockwise mesh currents I1, I2, and I3 lead to three Kirchhoff equations.\",\n    \"R7 couples I1-I2; diagonal Rb couples I2-I3; I1 and I3 share no branch.\",\n    \"Rows are equations; columns are mesh-current unknowns.\",\n    \"MATLAB can solve a 3x3 A*x=b after assembly, but no solution is shown here.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\ncorrected bridge network left to symbolic 3x3 scaffold right\n\n## Visual Elements\nthree face-contained clockwise loops, diagonal resistor, optional tag, three-equation mapping\n\n## Source Image Rules\nBridge assets are strict future-exposure inputs, not a completed example.\n\n## Constraints\n[\n  \"Keep Rb aligned with the diagonal branch, not horizontal across it.\",\n  \"Keep each current arrow inside its actual mesh face.\",\n  \"Use I1, I2, and I3 consistently.\",\n  \"No numerical coefficients or solved vector.\",\n  \"Label optional/future exposure.\",\n  \"No slide number or outer frame.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_12.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+      "role": "approved revised Week 03 sample slide style reference",
+      "fidelity": "match style only; do not copy exact layout or content"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_mesh_model.png",
+      "role": "corrected strict bridge-style network",
+      "fidelity": "preserve the rotated diagonal Rb, face-contained clockwise I1/I2/I3 arrows, source label, resistor labels, and no-numerical-values design"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_matrix_scaffold.png",
+      "role": "strict symbolic 3x3 coefficient-matrix scaffold",
+      "fidelity": "preserve the I1/I2/I3 unknown vector, coefficient-matrix label, source vector, and placeholders"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and approved Slide 06 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the prior approved Teaching Courseware sample and all revised strict inputs with view_image before each delegated generation.",
+    "handoff_rule": "Use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

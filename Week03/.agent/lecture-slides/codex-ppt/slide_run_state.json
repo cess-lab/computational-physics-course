@@ -18,7 +18,47 @@
       "to": "slides_recorded",
       "at": "2026-09-02T02:38:15Z",
       "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "jobs_prepared",
+      "at": "2026-09-08T12:02:20Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-09-08T12:14:01Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-09-08T12:16:15Z",
+      "note": "all slide images recorded"
     }
   ],
-  "updated_at": "2026-09-02T02:38:15Z"
+  "updated_at": "2026-09-08T13:41:20Z",
+  "revision": {
+    "id": "diff-comments-2026-09-08",
+    "status": "complete",
+    "affected_slides": [3, 6, 12, 13],
+    "reviewer": {
+      "agent_id": "01a08115-08dd-7f32-91cc-41172ef8649a",
+      "model": "gpt-5.6-sol",
+      "reasoning_effort": "medium"
+    },
+    "auxiliary_revision_jobs": "qa/diff-comments-2026-09-08/slide_jobs.json",
+    "qa_record": "qa/diff-comments-2026-09-08/review.md",
+    "final_sha256": "bdb059ef3dde541060989f7c67dc6752c7137732a069173d768a181d1f64d32c",
+    "follow_up_arrow_fix": {
+      "id": "slide06-arrow-fix-2026-09-08-v2",
+      "status": "complete",
+      "slide": 6,
+      "worker_id": "01a0813d-27da-7132-af54-aa066d79def9",
+      "auxiliary_revision_jobs": "qa/diff-comments-2026-09-08/slide06-arrow-fix-v2/slide_jobs.json",
+      "qa_record": "qa/diff-comments-2026-09-08/review.md",
+      "final_sha256": "b3237f7a3218bf2f4e76de460a935d94551b9c1286f1c83f0bd9e68b90e28ca9"
+    }
+  }
 }

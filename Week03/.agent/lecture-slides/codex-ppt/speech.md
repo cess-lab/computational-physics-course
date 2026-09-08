@@ -1,85 +1,61 @@
 # Week 03 speaker notes
 
-## Slide 1: From a circuit sketch to a checkable current
+## Slide 1: Linear Systems: Assemble and validate two-loop Kirchhoff equations
 
-This week we turn a familiar two-loop DC circuit into a small computational model. The central question is not simply whether MATLAB can return two numbers. It is whether those numbers still represent the circuit we started with.
+This week we turn a familiar two-loop DC circuit into a small computational model. The point is not simply to ask MATLAB for two numbers. We want to keep the circuit, equations, matrix, solve, check, and physical interpretation connected.
 
-Keep the reasoning chain visible: circuit, equations, matrix, solve, check, interpretation. The matrix is a compact storage format for the physical equations. It is not a replacement for choosing directions, tracking units, or explaining what a current sign means.
+## Slide 2: Choose current directions at the junction before writing equations
 
-## Slide 2: Predict the current directions before solving
+Start with the directions, before any algebra. Both mesh arrows are clockwise. At the top junction, I1 arrives from the left, while I2 continues to the right and the assigned shared current leaves downward. That gives I1 = I2 + I_shared, or I_shared = I1 - I2. The source values and private resistances suggest I1 should be larger than I2. We will treat that as a prediction to check later, not as a proof.
 
-Begin with the physical picture. We choose both mesh currents clockwise and state the source polarities and resistance values before doing algebra. Because both sources drive the chosen directions, we expect positive mesh currents. The larger left source and smaller left private resistance suggest that I1 will be greater than I2.
+## Slide 3: Walk each loop in words before writing symbols
 
-This prediction is useful later. A result that disagrees with it is not automatically wrong, but it is evidence that deserves explanation. The prediction gives us a physical reference before the matrix and solver can make the work look abstract.
+Use the single circuit drawing as our anchor; we do not need to redraw the same circuit twice. First walk the left loop: I1 passes through its private resistor and then down the shared branch. Then walk the right loop: I2 passes through its private resistor, while the shared-branch contribution is reversed relative to the assigned downward direction. The two distinct walks produce the two exact KVL equations, and every resistance-current term has voltage units.
 
-## Slide 3: The shared resistor is where the two loop currents meet
+## Slide 4: Turn each Kirchhoff equation into one matrix row
 
-The shared resistor is not traversed by two independent physical currents. The two mesh contributions oppose one another in that branch. If the shared-branch direction follows mesh 1, then `Ishared = I1 - I2`.
+Now change representation carefully. The first equation becomes row one, the second becomes row two, and the source terms keep the same order in b. The matrix is only useful because each entry can still be traced back to a term in the circuit equations.
 
-The sign is a statement about the direction we assigned. If the computed value is negative, the calculation may still be correct; the actual branch current would simply run opposite to the assigned direction. This difference is also the physical source of the off-diagonal signs that will couple the two equations.
+## Slide 5: Keep the units visible in A*x=b
 
-## Slide 4: Walk each loop in words before writing symbols
+The numerical entries are not unitless. A carries ohms, x carries amperes, and b carries volts, so A*x also carries volts. Keeping those units visible helps us catch a matrix that looks numerically plausible but represents the wrong physical quantities.
 
-Before writing a matrix, walk around each loop in words. For the left loop, the private-resistor drop and the shared-resistor drop combine to match the left source rise. For the right loop, the shared-resistor contribution is reversed because the mesh direction is opposite through the shared branch.
+## Slide 6: Audit the matrix before asking MATLAB to solve
 
-One physical loop gives one equation. Every resistance-times-current term has units of volts because ohms multiplied by amperes gives volts. The equations should be understandable before they are compressed into matrix notation.
+Before solving, audit each coefficient and follow the colour path from cell to connector to physical-origin callout. The blue cells are A11 and A22, the ochre cell is A12, and the sage cell is A21; those same colours must stay attached to the corresponding explanations. The diagonal entries collect the resistances multiplying a mesh current, while the negative off-diagonal entries come from the shared branch and opposing directions. Ask which row, which column, which sign, and which unit before trusting the matrix.
 
-## Slide 5: Turn each Kirchhoff equation into one matrix row
+## Slide 7: Solve the supplied system with MATLAB backslash
 
-Now collect coefficients without losing their origin. Use the unknown order `x = [I1; I2]`. The first Kirchhoff equation becomes row 1, the second becomes row 2, and the source rises become the matching entries of `b`.
+The MATLAB code is supplied so that our attention stays on the physical model and verification. The variables store the resistances and sources, A and b preserve the equation order, and backslash returns the two mesh-current entries. Read the output with the units and directions already defined.
 
-The important habit is bidirectional tracing. Starting from an equation, we should be able to build its row. Starting from a row, we should be able to reconstruct the equation. If a coefficient cannot be explained physically, it is not ready to be trusted.
+## Slide 8: Reconstruct the current in the shared branch
 
-## Slide 6: Keep the units visible in A*x=b
+The mesh currents are convenient unknowns, but the shared resistor carries their difference. Subtract I2 from I1 using the assigned shared direction. If the result were negative, that would tell us the actual branch direction is opposite to the arrow we chose.
 
-With the locked values, the system is A = [3 -1; -1 4] ohm, x = [I1; I2] A, and b = [5; 2] V. The matrix entries are not just four unitless numbers. They are resistance coefficients, so multiplying A by a current vector produces volts.
+## Slide 9: Validate the original equations directly
 
-Use the dimensional check as a quick audit: ohms times amperes equals volts. A unit mismatch can reveal that a physical quantity has been placed in the wrong part of the computational representation even when MATLAB accepts the syntax.
+A solver call is not the validation. Substitute the currents back into the original KVL equations. Both reconstructed values reproduce their source terms, and the difference vector is zero within tolerance. This checks the physical equations that the matrix was meant to represent.
 
-## Slide 7: Audit the matrix before asking MATLAB to solve
+## Slide 10: Read the numbers back into the circuit
 
-Read each matrix entry back as a circuit statement. A11 is R1 + Rs, so it is 3 ohm. A12 is -Rs because I2 opposes the shared-resistor current in the left loop. The same shared-resistor logic gives A21 = -1 ohm, while A22 is R2 + Rs = 4 ohm.
+Return to the circuit. The positive currents agree with the assumed clockwise directions, and I1 > I2 matches the initial prediction. The shared current therefore follows the mesh-1 direction. A negative value would be a direction statement, not automatically a MATLAB failure.
 
-Ask four questions for any entry: which row, which unknown, which sign, and which unit? This is a modelling audit, not a memorisation exercise. The negative off-diagonal entries come from the chosen directions and the shared physical branch.
+## Slide 11: A plausible matrix can still encode the wrong circuit
 
-## Slide 8: Solve the supplied system with MATLAB backslash
+Here is the important debugging contrast. If one shared-resistance sign is flipped, MATLAB can still return finite numbers. The failure appears when those numbers are tested in the correct original equations. Syntax success is not physical correctness.
 
-The supplied MATLAB code now follows the representation we have already audited. It stores the resistances and sources, builds `A_ohm` and `b_V` in the stated order, solves with `x_A = A_ohm\b_V`, and reads the two entries with `x_A(1)` and `x_A(2)`.
+## Slide 12: Future exposure — the same pattern scales to a bridge circuit
 
-The backslash operator is the supplied method for this small linear system. Students do not need to implement a solver from scratch here. The code is useful because each line can be mapped to a physical object: parameters, matrix, source vector, unknown vector, and named currents.
+This is optional future exposure rather than a new Core derivation. Notice the corrected geometry: R7 separates I1 and I2, while the diagonal resistor Rb separates I2 and I3. The three clockwise arrows sit inside their actual faces, and the diagonal resistor follows its branch. The same modelling pattern leads to three equations and a 3×3 system, but we are not solving this network step by step today.
 
-## Slide 9: Reconstruct the current in the shared branch
+## Slide 13: Self-activity — sketch the bridge matrix before MATLAB
 
-The solved vector gives the two mesh currents, but the shared resistor carries their difference. Use `Ishared_A = I1_A - I2_A`. With I1_A = 2 A and I2_A = 1 A, the shared current is 1 A in the direction assigned to mesh 1.
+Use the bridge as a short self-activity. Mark I1, I2, and I3, identify R7 as the I1-I2 shared branch and Rb as the I2-I3 shared branch, predict the 3×3 matrix size, and decide which entries come from self-resistance or shared branches. Then state one validation check you would use. Stop at the scaffold; the point is decomposition, not completing the coefficients today.
 
-This is a reminder that the choice of unknowns is a modelling convenience. We solve for mesh currents because they make the equations compact, then reconstruct the branch quantity that has direct physical meaning.
+## Slide 14: Working exposure — separate representation changes from physical input changes
 
-## Slide 10: Validate the original equations directly
+These two cases look similar computationally but mean different things physically. Reordering A and b together changes the representation while preserving the solution. Changing V2 changes the physical input, so both coupled current entries move. Keep residual, rank, conditioning, and power balance as optional stretch checks.
 
-Do not accept the currents just because MATLAB returned finite values. Substitute them into the original equations. The left equation gives 3(2) - 1(1) = 5 V. The right equation gives -1(2) + 4(1) = 2 V.
+## Slide 15: Exit ticket — carry the model-to-check chain forward
 
-The validation code reconstructs both voltages, forms `validation_difference_V`, and asserts that the largest absolute difference is below `1e-12`. This check targets the equations that represent the circuit. It is stronger than checking only that the solver executed.
-
-## Slide 11: Read the numbers back into the circuit
-
-Both solved mesh currents are positive, so they follow the clockwise arrows we chose before solving. The inequality I1 > I2 matches the qualitative prediction. Their difference is positive, so the shared-branch current follows the mesh-1 direction.
-
-If a current had been negative, the result would not automatically be a failed calculation. It would say that the actual current direction is opposite to the assumed arrow. Numerical output becomes physical evidence only after this interpretation step.
-
-## Slide 12: A plausible matrix can still encode the wrong circuit
-
-Here the first off-diagonal shared-resistance coefficient has been changed from -Rs to +Rs. MATLAB can still solve that defective system and return finite values. Syntax success is therefore not enough.
-
-Evaluate the wrong currents with the correct original equations. The mismatch vector contains a left-equation error of -1.6923 V. The defect is physical or logical: the shared-resistor term was translated with the wrong sign. The repair is to return to the arrows and original Kirchhoff equations, not merely to ask whether MATLAB ran.
-
-## Slide 13: Working exposure — keep the representation and the physics paired
-
-Two bounded comparisons reinforce the representation idea. If we swap the two equation rows, we must swap the matching entries of `b`; then the physical system is unchanged and the maximum solution difference is zero. That is a representation change.
-
-If V2 changes from 2.0 V to 2.1 V, the physical input changes. Because the loops are coupled, both current entries change: the perturbed vector is [2.0091; 1.0273] A and the change is [0.0091; 0.0273] A. Residual, rank, conditioning, and power balance are useful stretch checks, but they are not required for the Core route today.
-
-## Slide 14: Exit ticket — explain the 2x2 solve to a future you
-
-Close by asking for four short pieces of evidence. State the unknowns, directions, and units. Map one matrix coefficient to its Kirchhoff term. Explain why A*x has units of volts. Write one direct-substitution check and explain what a negative current would mean.
-
-The practical will transfer the same workflow to another two-loop circuit and to a two-node KCL model. The physical context will change, but the habits remain: define the model, preserve signs and units, solve the supplied system, validate the original equations, and interpret the result.
+Close with four short pieces of evidence. Predict the unknowns and directions, map one coefficient to its physical term, write one direct-substitution check, and interpret a negative current together with one limitation. The same chain will transfer to larger mesh or node-voltage models.

@@ -1,20 +1,21 @@
-# Week 03 lecture slide delivery record
+# Week 03 lecture slide delivery record — 2026-09-08 revision + comment fixes + Slide 06 arrow fix
 
 - Final student-facing artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/Lecture_Slides_Week03.pptx`
 - Hidden canonical artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/Lecture_Slides_Week03.pptx`
-- Deck: 14 image-based 16:9 slides.
-- Content source: approved Week 03 outline, Week 03 content manifest, lecture demonstration, practical transfer context, and existing Week 03 learning note.
-- Design source: existing Week 02 lecture deck, adapted through the installed Teaching Courseware style.
+- Deck: 15 image-based 16:9 slides.
+- Revision scope: merged the prediction/shared-current sequence; corrected junction directions; added optional bridge future exposure and self-activity; redesigned working exposure and exit ticket.
+- Comment revision: regenerated Slides 03, 06, 12, and 13 to remove the duplicate circuit, align matrix colour coding, and correct the diagonal bridge-resistor orientation and mesh-current arrows; then regenerated Slide 06 again to correct the entry-to-row arrow geometry.
+- Revision-specific evidence: `qa/diff-comments-2026-09-08/review.md`, its `deck_spec.json`, `slide_jobs.json`, `slide_run_state.json`, prompts, recorded origin images, and `slide06-arrow-fix-v2/`.
+- Content source: revised Week 03 outline, strict circuit/bridge/comparison assets, lecture demonstration, and existing approved Week 03 content.
+- Design source: approved revised Slide 02 sample in the installed Teaching Courseware style.
 - Backend: built-in image tool (`image_gen`), edit mode.
 - Coordinating model/effort: `gpt-5.6-luna` / `max`.
-- Worker dispatch: 13 non-sample slides produced by inherited full-history workers with `fork_context=true` (equivalent to `fork_turns="all"`); model and reasoning-effort overrides omitted.
-- Sample gate: Slide 06 approved by lecturer on 2026-09-02 and preserved unchanged.
-- State gate: 1 accepted sample, 13 recorded worker results, 0 pending, 0 dispatched, 0 blocked.
-- Strict source inputs: circuit topology, equations, matrix mapping, MATLAB code, numerical outputs, validation evidence, wrong-sign evidence, and working-exposure values were rendered deterministically and inspected before use.
-- Fresh-session MATLAB evidence: `qa/live_script_fresh_session_2026-09-02.log`; the Week 03 lecture demonstration exited with code 0 and reproduced the locked matrix, currents, direct-substitution differences, wrong-sign mismatch, perturbation values, and optional stretch checks.
-- Visual QA: all 14 origin images were inspected at full size; all 14 rendered PPTX pages were inspected after PDF conversion. No slide number, outer frame, watermark, obvious clipping, or unreadable required content was found.
-- Speaker notes: 14 non-empty English note sections embedded; OpenXML inspection found 14 notes pages with non-empty text.
-- PPTX QA: `unzip -t` passed; `officecli validate` passed; OpenXML inspection found 14 slides, 14 notes pages, 14 media images, and one full-slide picture per slide. Dimensions are 9144000 x 5143500 EMU (16:9).
-- Render QA: PDF conversion produced 14 pages at 720 x 405.014 points.
-- Final SHA-256: `caf295e1c204800cdd604494d527c20fbac2d8d01d01134fbec8d547676cee6d`
-- Predecessor: no Week 03 student-facing lecture deck existed before this request.
+- Worker dispatch: 14 non-sample slides produced by inherited full-history workers with `fork_context=true` (equivalent to `fork_turns="all"`); model and reasoning-effort overrides omitted.
+- Sample gate: revised Slide 02 generated with the built-in backend and continued after the lecturer's `please continue` approval.
+- State gate: 1 accepted sample, 14 recorded worker results, 0 pending, 0 dispatched, 0 blocked; `slide_run_state.json` is `slides_recorded`.
+- Strict source inputs: updated circuit topology and arrows, equations, matrix mapping, MATLAB code, numerical outputs, validation evidence, wrong-sign evidence, bridge scaffold, and working-exposure values were inspected before use.
+- Visual QA: all 15 origin images were inspected at full size, including the four regenerated comment-fix slides and the final Slide 06 arrow retry. No slide number, outer frame, watermark, obvious clipping, duplicate circuit anchor, matrix colour mismatch, incorrect bridge-resistor orientation, shared/ambiguous matrix connector, or unreadable required content was found.
+- Speaker notes: 15 non-empty English note sections embedded; OpenXML inspection found 15 notes pages with non-empty text.
+- PPTX QA: `unzip -t` and `officecli validate` passed; OpenXML inspection found 15 slides, 15 notes pages, 15 media images, and one full-slide picture per slide. Dimensions are 9144000 x 5143500 EMU (16:9).
+- Final SHA-256: `b3237f7a3218bf2f4e76de460a935d94551b9c1286f1c83f0bd9e68b90e28ca9`
+- Unchanged scope: no learning-note, MATLAB Live Script, or practical edit was made during this lecture-deck revision pass; the student-facing README was updated only to describe the revised 15-slide deck and optional bridge exposure.

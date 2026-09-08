@@ -1,0 +1,73 @@
+{
+  "deck_name": "Week03_diff_comments_20260908_slide06_arrows_v2",
+  "language": "English",
+  "aspect_ratio": "16:9",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and approved Slide 06 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the approved sample, current Slide 06, and strict audit table with view_image before generation.",
+    "handoff_rule": "Use the same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slide with strong hierarchy, labelled matrix audit, restrained semantic colour, and generous whitespace",
+    "color_palette": "warm-white canvas; deep navy #243B53; dusty blue #6E8FB3; quiet sage #7AA69B; muted ochre #C7A35A; subdued coral #BF7A70 only for genuine defects",
+    "typography": "projection-readable sans-serif with readable mathematical symbols and units",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin functional lines, direct labels, no gradients or thick frame",
+    "deck_consistency": "match the approved Slide 02 palette, typography mood, texture, density, and visual identity"
+  },
+  "deck_context": {
+    "source_summary": "Week 03 teaches students to read a two-loop Kirchhoff matrix as a compact representation of physical equations before solving in MATLAB.",
+    "core_claim": "A coefficient is trustworthy only when its value, sign, matrix position, and physical origin agree.",
+    "canonical_terms": ["coefficient matrix A", "A11", "A12", "A21", "A22", "physical origin", "shared branch"]
+  },
+  "slides": [
+    {
+      "number": 6,
+      "title": "Audit the matrix before asking MATLAB to solve",
+      "role": "coefficient tracing",
+      "intent": "Correct only the semantic mapping arrows while preserving the current student-facing slide copy and content.",
+      "key_points": [
+        "Every coefficient should read back as physics.",
+        "Check the value, the sign, and the physical origin of each matrix entry before solving in MATLAB."
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
+          "role": "current Slide 06 edit base",
+          "fidelity": "preserve the title, 2x2 coefficient matrix, audit table, matrix values, signs, units, physical-origin text, and the existing lower takeaway; edit only the connector arrows and their source anchors"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_audit.png",
+          "role": "strict coefficient audit table",
+          "fidelity": "preserve A11=3 Ω, A12=−1 Ω, A21=−1 Ω, A22=4 Ω and every physical-origin statement exactly"
+        }
+      ],
+      "layout": "retain the current matrix-left and table-right composition; reserve a clean connector gutter between them and keep the original bottom takeaway",
+      "visual_elements": "four independent colour-matched semantic arrows map A11→row 1, A12→row 2, A21→row 3, and A22→row 4",
+      "source_image_rules": "Use the current Slide 06 as the edit base. Use the audit table as a strict source. The arrows are semantic entry-to-row mapping arrows, not circuit-current arrows.",
+      "constraints": [
+        "A11→row 1, A12→row 2, A21→row 3, and A22→row 4. Every arrowhead must point into the matching Entry-column row beside the correct entry label, never toward the Value or Physical origin columns.",
+        "Use four separate source dots on the correct cells. A21 must start on the A21 cell's top edge; it must never start on A22 or share A22's anchor. A22 must start on the A22 cell's bottom edge.",
+        "Follow this geometry exactly: A11 rises from its top edge to the row-1 centreline then travels right; A12 is a straight horizontal arrow; A21 rises from its top edge, travels above A22 to the gutter, drops to row 3, then turns right; A22 drops below the matrix then travels right along row 4.",
+        "Use separate paths, one arrowhead per path, and no shared segments, shared junctions, crossings, or contact with another coefficient cell.",
+        "If the table border blocks the arrowhead, place a small matching target dot inside the left half of the corresponding Entry cell and terminate the arrowhead at that dot; do not stop ambiguously at the outer table border.",
+        "Keep the semantic colour map: blue for A11/A22, ochre for A12, sage for A21. Matching cell, coefficient number, connector, target, and row tint must use the same colour.",
+        "Preserve the existing student-facing lower takeaway exactly: Every coefficient should read back as physics. Check the value, the sign, and the physical origin of each matrix entry before solving in MATLAB.",
+        "Do not add a bullet list of equations, internal production instructions, arrow explanations, new captions, or any other new copy. No slide number, outer frame, watermark, unrelated logo, or altered numerical content."
+      ]
+    }
+  ]
+}

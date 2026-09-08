@@ -1,0 +1,53 @@
+{
+  "slide": 6,
+  "title": "Audit the matrix before asking MATLAB to solve",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 6,\n  \"render_slide_number\": false\n}\n\n## Required Background\n{\n  \"deck_context\": {\n    \"source_summary\": \"Week 03 teaches students to read a two-loop Kirchhoff matrix as a compact representation of physical equations before solving in MATLAB.\",\n    \"core_claim\": \"A coefficient is trustworthy only when its value, sign, matrix position, and physical origin agree.\",\n    \"canonical_terms\": [\n      \"coefficient matrix A\",\n      \"A11\",\n      \"A12\",\n      \"A21\",\n      \"A22\",\n      \"physical origin\",\n      \"shared branch\"\n    ]\n  }\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware — Muted Academic Blue + Sage\",\n  \"visual_direction\": \"clear, friendly, modern educational slide with strong hierarchy, labelled matrix audit, restrained semantic colour, and generous whitespace\",\n  \"color_palette\": \"warm-white canvas; deep navy #243B53; dusty blue #6E8FB3; quiet sage #7AA69B; muted ochre #C7A35A; subdued coral #BF7A70 only for genuine defects\",\n  \"typography\": \"projection-readable sans-serif with readable mathematical symbols and units\",\n  \"texture_and_finish\": \"flat clean educational finish with pale fills, thin functional lines, direct labels, no gradients or thick frame\",\n  \"deck_consistency\": \"match the approved Slide 02 palette, typography mood, texture, density, and visual identity\"\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png — approved revised Week 03 sample slide style reference; match style only; do not copy exact layout or content\n- Image 2: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png — current Slide 06 edit base; preserve the title, 2x2 coefficient matrix, audit table, matrix values, signs, units, physical-origin text, and the existing lower takeaway; edit only the connector arrows and their source anchors\n- Image 3: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_audit.png — strict coefficient audit table; preserve A11=3 Ω, A12=−1 Ω, A21=−1 Ω, A22=4 Ω and every physical-origin statement exactly\n\n\n## Slide\n{\n  \"number\": 6,\n  \"title\": \"Audit the matrix before asking MATLAB to solve\",\n  \"role\": \"coefficient tracing\",\n  \"intent\": \"Correct only the semantic mapping arrows while preserving the current student-facing slide copy and content.\"\n}\n\n## Text\n{\n  \"title\": \"Audit the matrix before asking MATLAB to solve\",\n  \"key_points\": [\n    \"Every coefficient should read back as physics.\",\n    \"Check the value, the sign, and the physical origin of each matrix entry before solving in MATLAB.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\nretain the current matrix-left and table-right composition; reserve a clean connector gutter between them and keep the original bottom takeaway\n\n## Visual Elements\nfour independent colour-matched semantic arrows map A11→row 1, A12→row 2, A21→row 3, and A22→row 4\n\n## Source Image Rules\nUse the current Slide 06 as the edit base. Use the audit table as a strict source. The arrows are semantic entry-to-row mapping arrows, not circuit-current arrows.\n\n## Constraints\n[\n  \"A11→row 1, A12→row 2, A21→row 3, and A22→row 4. Every arrowhead must point into the matching Entry-column row beside the correct entry label, never toward the Value or Physical origin columns.\",\n  \"Use four separate source dots on the correct cells. A21 must start on the A21 cell's top edge; it must never start on A22 or share A22's anchor. A22 must start on the A22 cell's bottom edge.\",\n  \"Follow this geometry exactly: A11 rises from its top edge to the row-1 centreline then travels right; A12 is a straight horizontal arrow; A21 rises from its top edge, travels above A22 to the gutter, drops to row 3, then turns right; A22 drops below the matrix then travels right along row 4.\",\n  \"Use separate paths, one arrowhead per path, and no shared segments, shared junctions, crossings, or contact with another coefficient cell.\",\n  \"If the table border blocks the arrowhead, place a small matching target dot inside the left half of the corresponding Entry cell and terminate the arrowhead at that dot; do not stop ambiguously at the outer table border.\",\n  \"Keep the semantic colour map: blue for A11/A22, ochre for A12, sage for A21. Matching cell, coefficient number, connector, target, and row tint must use the same colour.\",\n  \"Preserve the existing student-facing lower takeaway exactly: Every coefficient should read back as physics. Check the value, the sign, and the physical origin of each matrix entry before solving in MATLAB.\",\n  \"Do not add a bullet list of equations, internal production instructions, arrow explanations, new captions, or any other new copy. No slide number, outer frame, watermark, unrelated logo, or altered numerical content.\"\n]\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_06.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+      "role": "approved revised Week 03 sample slide style reference",
+      "fidelity": "match style only; do not copy exact layout or content"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
+      "role": "current Slide 06 edit base",
+      "fidelity": "preserve the title, 2x2 coefficient matrix, audit table, matrix values, signs, units, physical-origin text, and the existing lower takeaway; edit only the connector arrows and their source anchors"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_audit.png",
+      "role": "strict coefficient audit table",
+      "fidelity": "preserve A11=3 Ω, A12=−1 Ω, A21=−1 Ω, A22=4 Ω and every physical-origin statement exactly"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "edit",
+    "prompt_source": "qa/sample_generation_method.md and approved Slide 06 sample edit prompt",
+    "size": "16:9 landscape, built-in default resolution",
+    "quality": "built-in default",
+    "model_config": "built-in default gpt-image-2 path",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the approved sample, current Slide 06, and strict audit table with view_image before generation.",
+    "handoff_rule": "Use the same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

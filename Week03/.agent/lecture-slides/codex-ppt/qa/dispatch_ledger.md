@@ -1,26 +1,27 @@
-# Week 03 slide-worker dispatch ledger
+# Week 03 slide-worker dispatch ledger — 2026-09-08 revision
 
 - Coordinating model: `gpt-5.6-luna`
 - Coordinating reasoning effort: `max`
 - Inheritance method: full-history fork (`fork_context=true`, equivalent to `fork_turns="all"`); worker model and reasoning-effort overrides omitted.
 - Selected image backend: `built-in image tool` / `image_gen` / edit mode.
-- Sample: `origin_image/slide_06.png`, approved by lecturer on 2026-09-02.
+- Sample: `origin_image/slide_02.png`, continued after lecturer approval with `please continue`.
 
 ## Dispatch records
 
 | Slide | Worker ID | Worker nickname | Prompt file | Status |
 | --- | --- | --- | --- | --- |
-| 01 | `01a05ff2-fb46-7f31-b2c5-e1ea62ac57fa` | Goodall | `prompts/slide_01.json` | recorded |
-| 02 | `01a05ff2-fa2b-7c42-a9cb-9dbef2c0f591` | Euler | `prompts/slide_02.json` | recorded |
-| 03 | `01a05ff3-0849-7631-86cc-cd7716b920f5` | Carver | `prompts/slide_03.json` | recorded |
-| 04 | `01a05ff2-fdac-7fc2-aaa5-32dd0824347c` | Archimedes | `prompts/slide_04.json` | recorded |
-| 05 | `01a05ff5-619d-75b0-af96-19dc26b4cdcf` | Bohr | `prompts/slide_05.json` | recorded |
-| 06 | — | — | approved sample `origin_image/slide_06.png` | accepted |
-| 07 | `01a05ff5-6129-70e2-9f85-9e075cfb7c33` | Harvey | `prompts/slide_07.json` | recorded |
-| 08 | `01a05ff5-67d1-7bd2-ae95-621a5fee594b` | Anscombe | `prompts/slide_08.json` | recorded |
-| 09 | `01a05ff5-6367-71e0-b550-7a487e0b0733` | Confucius | `prompts/slide_09.json` | recorded |
-| 10 | `01a05ff7-73df-7801-b69c-3bb0b32cb8fd` | Pasteur | `prompts/slide_10.json` | recorded |
-| 11 | `01a05ff7-7326-74d3-8a5a-ac0768438f85` | Schrodinger | `prompts/slide_11.json` | recorded |
-| 12 | `01a05ff7-fc97-7703-ae3a-d45f3bac2f7a` | Gauss | `prompts/slide_12.json` | recorded |
-| 13 | `01a05ff8-e3bb-7a61-9939-8107364d01a8` | Boyle | `prompts/slide_13.json` | recorded |
-| 14 | `01a05ff9-57d9-75b0-bb13-a73ea4dd7a05` | Cicero | `prompts/slide_14.json` | recorded |
+| 01 | `01a080e6-3b72-7920-91a4-2a0f395dea13` | Lagrange | `prompts/slide_01.json` | recorded |
+| 02 | — | — | accepted sample `origin_image/slide_02.png` | accepted |
+| 03 | `01a080e6-3dd9-7a11-b414-561d097e8cd5` | Cicero | `prompts/slide_03.json` | recorded |
+| 04 | `01a080e6-3c3a-78d3-a2e6-6d6b80447b43` | Anscombe | `prompts/slide_04.json` | recorded |
+| 05 | `01a080e6-3f34-72f3-85a8-76978688dda9` | Herschel | `prompts/slide_05.json` | recorded |
+| 06 | `01a080ea-618a-7e10-9eb5-dc2ff92db709` | Mencius | `prompts/slide_06.json` | recorded |
+| 07 | `01a080ea-60fc-7672-ac28-68b0e81fca16` | Galileo | `prompts/slide_07.json` | recorded |
+| 08 | `01a080ea-62ff-7e61-b956-b523410682f4` | Lorentz | `prompts/slide_08.json` | recorded |
+| 09 | `01a080ea-621c-7221-9fb1-34edc9c0f994` | Harvey | `prompts/slide_09.json` | recorded |
+| 10 | `01a080ed-3fb5-7f20-943b-db0d14588da2` | Bohr | `prompts/slide_10.json` | recorded |
+| 11 | `01a080ed-3f3b-7db2-ab3a-e43c599d0af8` | Ramanujan | `prompts/slide_11.json` | recorded |
+| 12 | `01a080ed-427d-7ad1-ae90-874b8b1fb6e0` | Descartes | `prompts/slide_12.json` | recorded |
+| 13 | `01a080ed-404d-7ec0-97ec-d7bf49c2f91d` | Boyle | `prompts/slide_13.json` | recorded |
+| 14 | `01a080f0-5aed-7ef0-ad8e-e0a1e9963030` | Linnaeus | `prompts/slide_14.json` | recorded |
+| 15 | `01a080f0-5b89-76f2-b2b5-71067f7fd05c` | Parfit | `prompts/slide_15.json` | recorded |

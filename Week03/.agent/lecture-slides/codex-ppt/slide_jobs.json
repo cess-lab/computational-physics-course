@@ -6,643 +6,708 @@
     "backend_used": "built-in image tool",
     "tool_name": "image_gen",
     "mode": "edit",
-    "prompt_source": "qa/sample_generation_method.md and the approved Slide 06 sample edit prompt",
+    "prompt_source": "qa/sample_generation_method.md and approved Slide 06 sample edit prompt",
     "size": "16:9 landscape, built-in default resolution",
     "quality": "built-in default",
     "model_config": "built-in default gpt-image-2 path",
-    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-    "input_context_preparation": "Parent inspected the approved Week 02 sample, all strict Week 03 source assets, and the approved Week 03 Slide 06 sample with view_image before delegation.",
-    "handoff_rule": "Subagents must use this same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+    "input_context_preparation": "Parent inspected the revised strict circuit, shared-current equation, and approved revised Slide 02 sample with view_image before generation.",
+    "handoff_rule": "Use the same built-in image tool, image-edit mode, and local-image context preparation; return a blocker if unavailable."
   },
   "max_concurrent_slides": 4,
   "slides": [
     {
       "slide_id": "slide_01",
       "number": 1,
-      "title": "From a circuit sketch to a checkable current",
+      "title": "Linear Systems: Assemble and validate two-loop Kirchhoff equations",
       "job": "prompts/slide_01.json",
       "out": "origin_image/slide_01.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff2-fb46-7f31-b2c5-e1ea62ac57fa",
-        "agent_nickname": "Goodall",
+        "agent_id": "01a080e6-3b72-7920-91a4-2a0f395dea13",
+        "agent_nickname": "Lagrange",
         "prompt": "prompts/slide_01.json",
-        "prompt_sha256": "b9b06bfe6753865757d6512b7c277bfde2db3a4a21ce34f5482fc2d560926da5",
-        "dispatched_at": "2026-09-02T02:29:21Z"
+        "prompt_sha256": "342bd110a8e0ac1d462232629bd46611f3e88073d19a08da72fb8dd390c7a775",
+        "dispatched_at": "2026-09-08T12:03:03Z"
       },
       "result": {
-        "agent_id": "01a05ff2-fb46-7f31-b2c5-e1ea62ac57fa",
+        "agent_id": "01a080e6-3b72-7920-91a4-2a0f395dea13",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff2-fb46-7f31-b2c5-e1ea62ac57fa/exec-fbfbef7a-5d1b-48b9-b68d-5ca758a629d0.png",
-        "selected_source_sha256": "b95cf2a4584c26049d8633b5a8b6dc7e3891adcd0fd7bfb3c5dc2b5b97fc5824",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a080e6-3b72-7920-91a4-2a0f395dea13/exec-ab049053-7ce2-4787-8629-949d2c6a0dde.png",
+        "selected_source_sha256": "1de0e97202277a934c957041884801d7e03599c75a67c8d2687b2329fce93cd6",
         "final_image": "origin_image/slide_01.png",
-        "final_image_sha256": "b95cf2a4584c26049d8633b5a8b6dc7e3891adcd0fd7bfb3c5dc2b5b97fc5824",
+        "final_image_sha256": "1de0e97202277a934c957041884801d7e03599c75a67c8d2687b2329fce93cd6",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "Readable cover with a clear conceptual circuit-to-validation flow, consistent styling, and no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:30:45Z"
+        "qa_note": "Visually inspected at original resolution; title and conceptual circuit-to-matrix-to-validation flow are legible, style matches the approved reference, and exact circuit numerical values are absent as required.",
+        "recorded_at": "2026-09-08T12:06:59Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_02",
       "number": 2,
-      "title": "Predict the current directions before solving",
+      "title": "Choose current directions at the junction before writing equations",
       "job": "prompts/slide_02.json",
       "out": "origin_image/slide_02.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
           "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/circuit_mesh_model.png",
-          "role": "strict input; exact circuit topology, component values, source values, polarities, and clockwise mesh-current arrows",
-          "fidelity": "preserve every label, sign, arrow, value, and physical relationship"
-        }
-      ],
-      "requires_context_images": true,
-      "status": "recorded",
-      "dispatch": {
-        "agent_id": "01a05ff2-fa2b-7c42-a9cb-9dbef2c0f591",
-        "agent_nickname": "Euler",
-        "prompt": "prompts/slide_02.json",
-        "prompt_sha256": "6909d5de41182255ef77e44e7b04ad3ef6909e73b8d45d6e688618ee34781f53",
-        "dispatched_at": "2026-09-02T02:29:21Z"
-      },
-      "result": {
-        "agent_id": "01a05ff2-fa2b-7c42-a9cb-9dbef2c0f591",
-        "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff2-fa2b-7c42-a9cb-9dbef2c0f591/exec-4ae16eee-cfdf-4ec6-8101-fecb5b5a4059.png",
-        "selected_source_sha256": "2282e1d1d748335b1ae6c8aedeb65f8f94796a13e3615f7c875cc9a0d2590519",
-        "final_image": "origin_image/slide_02.png",
-        "final_image_sha256": "2282e1d1d748335b1ae6c8aedeb65f8f94796a13e3615f7c875cc9a0d2590519",
-        "expected_backend": "built-in image tool",
-        "expected_backend_labels": [
-          "built-in image tool",
-          "image_gen"
-        ],
-        "sample_generation_method_matched": true,
-        "qa_note": "The circuit asset, labels, polarities, values, and mesh-current arrows remain legible and faithful, with no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:31:13Z"
-      },
-      "blocker": null
-    },
-    {
-      "slide_id": "slide_03",
-      "number": 3,
-      "title": "The shared resistor is where the two loop currents meet",
-      "job": "prompts/slide_03.json",
-      "out": "origin_image/slide_03.png",
-      "input_images": [
-        {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
-        },
-        {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/circuit_mesh_model.png",
-          "role": "strict input; physical source context for the shared resistor",
-          "fidelity": "preserve topology, arrows, labels, polarities, values, and units"
+          "role": "strict circuit with clockwise mesh and top-junction arrows",
+          "fidelity": "preserve topology, values, polarities, labels, arrows, and units"
         },
         {
           "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/shared_current_equation.png",
-          "role": "strict mathematical input; shared current equation and direction meaning",
-          "fidelity": "preserve Ishared = I1 - I2 and the direction statement exactly"
-        }
-      ],
-      "requires_context_images": true,
-      "status": "recorded",
-      "dispatch": {
-        "agent_id": "01a05ff3-0849-7631-86cc-cd7716b920f5",
-        "agent_nickname": "Carver",
-        "prompt": "prompts/slide_03.json",
-        "prompt_sha256": "e10a87212dee46e15555dbf2902d850b967f62a923180278f25fe3db26ff48a2",
-        "dispatched_at": "2026-09-02T02:29:20Z"
-      },
-      "result": {
-        "agent_id": "01a05ff3-0849-7631-86cc-cd7716b920f5",
-        "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff3-0849-7631-86cc-cd7716b920f5/exec-831517c3-0658-4121-95d6-3162c2e0edc6.png",
-        "selected_source_sha256": "38e540de07d3ed4890ccc863d65b2ba4269ab1e12a4e3aadf3337b7f7058b553",
-        "final_image": "origin_image/slide_03.png",
-        "final_image_sha256": "38e540de07d3ed4890ccc863d65b2ba4269ab1e12a4e3aadf3337b7f7058b553",
-        "expected_backend": "built-in image tool",
-        "expected_backend_labels": [
-          "built-in image tool",
-          "image_gen"
-        ],
-        "sample_generation_method_matched": true,
-        "qa_note": "Slide is readable, preserves the circuit and shared-current relationship, and has no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:31:13Z"
-      },
-      "blocker": null
-    },
-    {
-      "slide_id": "slide_04",
-      "number": 4,
-      "title": "Walk each loop in words before writing symbols",
-      "job": "prompts/slide_04.json",
-      "out": "origin_image/slide_04.png",
-      "input_images": [
-        {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
-        },
-        {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/kvl_equations.png",
-          "role": "strict equation input; two symbolic KVL equations and dimensional relationship",
-          "fidelity": "preserve signs, subscripts, terms, and Omega times A equals V exactly"
-        }
-      ],
-      "requires_context_images": true,
-      "status": "recorded",
-      "dispatch": {
-        "agent_id": "01a05ff2-fdac-7fc2-aaa5-32dd0824347c",
-        "agent_nickname": "Archimedes",
-        "prompt": "prompts/slide_04.json",
-        "prompt_sha256": "1af3db0daa7a3d73135c0d1bee4d71f781a64d351672dedd8b4f91f6211595ac",
-        "dispatched_at": "2026-09-02T02:29:20Z"
-      },
-      "result": {
-        "agent_id": "01a05ff2-fdac-7fc2-aaa5-32dd0824347c",
-        "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff2-fdac-7fc2-aaa5-32dd0824347c/exec-3eae9062-ca29-4dbe-816e-f826d4b5d7d1.png",
-        "selected_source_sha256": "f528d4401a5bf3614e8ff4246c87fee8e4433780cba0cc8a1a3fcb2a91a912c2",
-        "final_image": "origin_image/slide_04.png",
-        "final_image_sha256": "f528d4401a5bf3614e8ff4246c87fee8e4433780cba0cc8a1a3fcb2a91a912c2",
-        "expected_backend": "built-in image tool",
-        "expected_backend_labels": [
-          "built-in image tool",
-          "image_gen"
-        ],
-        "sample_generation_method_matched": true,
-        "qa_note": "Readability, equation signs and units, layout clearance, and the absence of a slide number or outer frame were visually checked.",
-        "recorded_at": "2026-09-02T02:31:32Z"
-      },
-      "blocker": null
-    },
-    {
-      "slide_id": "slide_05",
-      "number": 5,
-      "title": "Turn each Kirchhoff equation into one matrix row",
-      "job": "prompts/slide_05.json",
-      "out": "origin_image/slide_05.png",
-      "input_images": [
-        {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
-        },
-        {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_map.png",
-          "role": "strict mathematical input; symbolic coefficient matrix, unknown vector, source vector, and units",
-          "fidelity": "preserve row/column order, signs, symbols, and unit labels exactly"
-        }
-      ],
-      "requires_context_images": true,
-      "status": "recorded",
-      "dispatch": {
-        "agent_id": "01a05ff5-619d-75b0-af96-19dc26b4cdcf",
-        "agent_nickname": "Bohr",
-        "prompt": "prompts/slide_05.json",
-        "prompt_sha256": "254b8f236e0de1ce48199bafbdba653ca5c2e6c66917105c1c60723c067777f1",
-        "dispatched_at": "2026-09-02T02:31:56Z"
-      },
-      "result": {
-        "agent_id": "01a05ff5-619d-75b0-af96-19dc26b4cdcf",
-        "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff5-619d-75b0-af96-19dc26b4cdcf/exec-f90404ec-0874-4ceb-b994-fcf832ccdec8.png",
-        "selected_source_sha256": "b648780c9b08021a6b74808c5414942d0ab3bdd0d09bc6a9666334dedbecc6da",
-        "final_image": "origin_image/slide_05.png",
-        "final_image_sha256": "b648780c9b08021a6b74808c5414942d0ab3bdd0d09bc6a9666334dedbecc6da",
-        "expected_backend": "built-in image tool",
-        "expected_backend_labels": [
-          "built-in image tool",
-          "image_gen"
-        ],
-        "sample_generation_method_matched": true,
-        "qa_note": "Readable equation-to-row mapping with strict matrix content preserved, clear connectors, and no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:34:07Z"
-      },
-      "blocker": null
-    },
-    {
-      "slide_id": "slide_06",
-      "number": 6,
-      "title": "Keep the units visible in A*x=b",
-      "job": "prompts/slide_06.json",
-      "out": "origin_image/slide_06.png",
-      "input_images": [
-        {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/numeric_system_units/numeric_system_units.png",
-          "role": "strict mathematical input; locked numeric system and units",
-          "fidelity": "preserve matrix entries, vector entries, subscripts, and Omega times A equals V exactly"
+          "role": "strict shared-current equation",
+          "fidelity": "preserve Ishared = I1 - I2 and direction meaning"
         }
       ],
       "requires_context_images": true,
       "status": "accepted",
       "dispatch": null,
       "result": {
-        "final_image": "origin_image/slide_06.png",
+        "final_image": "origin_image/slide_02.png",
         "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Walk each loop in words before writing symbols",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/kvl_equations.png",
+          "role": "strict KVL equations and units",
+          "fidelity": "preserve signs, subscripts, terms, and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a080e6-3dd9-7a11-b414-561d097e8cd5",
+        "agent_nickname": "Cicero",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "0b0f3341e7ddcd4b1bd9467218c48bdb683e2fba1c310f484bf9678b6fbd22b4",
+        "dispatched_at": "2026-09-08T12:03:03Z"
+      },
+      "result": {
+        "agent_id": "01a080e6-3dd9-7a11-b414-561d097e8cd5",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_03.png",
+        "selected_source_sha256": "ce5aa3e31435372b3132989332d865c505fe57744bba59ea916144f285825838",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "ce5aa3e31435372b3132989332d865c505fe57744bba59ea916144f285825838",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually inspected at original resolution; loop walks, clockwise directions, equations, signs, units, and source ordering are legible and preserved.",
+        "recorded_at": "2026-09-08T12:06:59Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Turn each Kirchhoff equation into one matrix row",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_map.png",
+          "role": "strict symbolic matrix mapping",
+          "fidelity": "preserve row/column order, signs, symbols, and units"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a080e6-3c3a-78d3-a2e6-6d6b80447b43",
+        "agent_nickname": "Anscombe",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "5a9613f899dd0f587dcc754a44fe03b5ae6b18890e26ac7bf0c5474f68d6c093",
+        "dispatched_at": "2026-09-08T12:03:03Z"
+      },
+      "result": {
+        "agent_id": "01a080e6-3c3a-78d3-a2e6-6d6b80447b43",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_04.png",
+        "selected_source_sha256": "82c5b48fef4412ae4c88365863b069333468323ba9684797bfb58478804a4729",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "82c5b48fef4412ae4c88365863b069333468323ba9684797bfb58478804a4729",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually inspected at original resolution; equation-to-matrix row mapping is legible and unambiguous, with correct signs, units, and source ordering.",
+        "recorded_at": "2026-09-08T12:06:59Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Keep the units visible in A*x=b",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/numeric_system_units/numeric_system_units.png",
+          "role": "strict numeric system and units",
+          "fidelity": "preserve locked entries, vectors, subscripts, and units exactly"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a080e6-3f34-72f3-85a8-76978688dda9",
+        "agent_nickname": "Herschel",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "187d295098d17c5cd6566bea2279659acb98035f3ea9f73bf389bf9b37e6a7c1",
+        "dispatched_at": "2026-09-08T12:03:03Z"
+      },
+      "result": {
+        "agent_id": "01a080e6-3f34-72f3-85a8-76978688dda9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a080e6-3f34-72f3-85a8-76978688dda9/exec-5ef58c25-ca07-4c62-8a1f-d6814f7a0e33.png",
+        "selected_source_sha256": "e9f66f2061b6f219307424bb9380a486ce0824fe0dac7b251df184513cd18f92",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "e9f66f2061b6f219307424bb9380a486ce0824fe0dac7b251df184513cd18f92",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually inspected at original resolution; the exact numerical system, current units, and coefficient/source roles are readable and consistent with the approved style.",
+        "recorded_at": "2026-09-08T12:06:59Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Audit the matrix before asking MATLAB to solve",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_audit.png",
+          "role": "strict coefficient audit",
+          "fidelity": "preserve entries, signs, units, and origins"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a080ea-618a-7e10-9eb5-dc2ff92db709",
+        "agent_nickname": "Mencius",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "b797f7af8384d35a94c2301409a6afb540ea144e5c412fae13808412a5902716",
+        "dispatched_at": "2026-09-08T12:07:29Z"
+      },
+      "result": {
+        "agent_id": "01a080ea-618a-7e10-9eb5-dc2ff92db709",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
+        "selected_source_sha256": "e29c3d545dd24b10ccb9cf795353b26a7e39d11107f6a403d3df27af054ae34a",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "e29c3d545dd24b10ccb9cf795353b26a7e39d11107f6a403d3df27af054ae34a",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually inspected at full size; title, audit table, matrix entries, signs, units, and physical origins are legible and preserved.",
+        "recorded_at": "2026-09-08T12:09:01Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_07",
       "number": 7,
-      "title": "Audit the matrix before asking MATLAB to solve",
+      "title": "Solve the supplied system with MATLAB backslash",
       "job": "prompts/slide_07.json",
       "out": "origin_image/slide_07.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/matrix_audit.png",
-          "role": "strict text/matrix input; coefficient values, signs, units, and physical origins",
-          "fidelity": "preserve all four entries and origin statements exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/solve_code.png",
+          "role": "strict MATLAB code",
+          "fidelity": "preserve names, punctuation, line breaks, backslash, indexing"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/solve_output.png",
+          "role": "strict numerical output",
+          "fidelity": "preserve I1_A = 2 A and I2_A = 1 A"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff5-6129-70e2-9f85-9e075cfb7c33",
-        "agent_nickname": "Harvey",
+        "agent_id": "01a080ea-60fc-7672-ac28-68b0e81fca16",
+        "agent_nickname": "Galileo",
         "prompt": "prompts/slide_07.json",
-        "prompt_sha256": "fcda995879b05f7f63d696364ea4deaaa7718045f1d04cf4321a13ad85881c3a",
-        "dispatched_at": "2026-09-02T02:31:56Z"
+        "prompt_sha256": "1f40f86b3f657a691d58fe6bb98ff41a10e89c2ff9508ae96271f97f1d66ce52",
+        "dispatched_at": "2026-09-08T12:07:29Z"
       },
       "result": {
-        "agent_id": "01a05ff5-6129-70e2-9f85-9e075cfb7c33",
+        "agent_id": "01a080ea-60fc-7672-ac28-68b0e81fca16",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff5-6129-70e2-9f85-9e075cfb7c33/exec-b1e9d7ec-1e37-436e-9531-56a1ca0d0178.png",
-        "selected_source_sha256": "acd21e5679e7a774c0e7db82c5fd1cc889eb3c446f27f059a340c106bb08059d",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a080ea-60fc-7672-ac28-68b0e81fca16/exec-77880866-8e10-4601-b31b-2ba8ae1aa99b.png",
+        "selected_source_sha256": "2c66f288d030393ca805434fe5721e5c8ea082acfb28c66f9aeb9fe024ed0318",
         "final_image": "origin_image/slide_07.png",
-        "final_image_sha256": "acd21e5679e7a774c0e7db82c5fd1cc889eb3c446f27f059a340c106bb08059d",
+        "final_image_sha256": "2c66f288d030393ca805434fe5721e5c8ea082acfb28c66f9aeb9fe024ed0318",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "The audit table and coefficient signs, values, units, and physical-origin statements remain readable and faithful, with no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:35:41Z"
+        "qa_note": "Visually inspected at original resolution; title, supplied MATLAB code, backslash solve, exact current outputs, units, callouts, and next-step validation cue are legible and consistent with the approved style.",
+        "recorded_at": "2026-09-08T12:09:43Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_08",
       "number": 8,
-      "title": "Solve the supplied system with MATLAB backslash",
+      "title": "Reconstruct the current in the shared branch",
       "job": "prompts/slide_08.json",
       "out": "origin_image/slide_08.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/solve_code.png",
-          "role": "strict MATLAB code input; parameters, matrix construction, backslash, and indexing",
-          "fidelity": "preserve variable names, punctuation, line breaks, backslash, and indices exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/shared_current_equation.png",
+          "role": "strict subtraction and direction",
+          "fidelity": "preserve equation and direction"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/solve_output.png",
-          "role": "strict numerical output input; solved mesh-current values",
-          "fidelity": "preserve I1_A = 2 A and I2_A = 1 A exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/shared_current_result.png",
+          "role": "strict shared-current result",
+          "fidelity": "preserve solved values exactly"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff5-67d1-7bd2-ae95-621a5fee594b",
-        "agent_nickname": "Anscombe",
+        "agent_id": "01a080ea-62ff-7e61-b956-b523410682f4",
+        "agent_nickname": "Lorentz",
         "prompt": "prompts/slide_08.json",
-        "prompt_sha256": "83e6a92d4d15a508d6a1ea04752725ead1acf27b65127a46e91958534bfc3452",
-        "dispatched_at": "2026-09-02T02:31:56Z"
+        "prompt_sha256": "c9e506405e89ea4490010a1cbf998d2010c9cf2fde6531b65d284aeddab57436",
+        "dispatched_at": "2026-09-08T12:07:29Z"
       },
       "result": {
-        "agent_id": "01a05ff5-67d1-7bd2-ae95-621a5fee594b",
+        "agent_id": "01a080ea-62ff-7e61-b956-b523410682f4",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff5-67d1-7bd2-ae95-621a5fee594b/exec-20eaa9a9-407b-489f-86b0-74a02fdbd6d1.png",
-        "selected_source_sha256": "d77981e2030f20bd88ef1e139c3ccdb8b2134c18183b043c4bfed50309f4a07c",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a080ea-62ff-7e61-b956-b523410682f4/exec-58e7519c-b91d-4c51-baf0-dd2f0b0b8492.png",
+        "selected_source_sha256": "251955fd60e4b7af2b082412cab54e2b9aebc0dc260d8142763207bb0752627e",
         "final_image": "origin_image/slide_08.png",
-        "final_image_sha256": "d77981e2030f20bd88ef1e139c3ccdb8b2134c18183b043c4bfed50309f4a07c",
+        "final_image_sha256": "251955fd60e4b7af2b082412cab54e2b9aebc0dc260d8142763207bb0752627e",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "Visually checked: the strict code and output remain readable and faithful, with no clipping, extra slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:34:07Z"
+        "qa_note": "Visually inspected at original resolution; strict circuit, subtraction flow, exact values, units, and negative-direction note are legible and the approved academic style is preserved.",
+        "recorded_at": "2026-09-08T12:09:43Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_09",
       "number": 9,
-      "title": "Reconstruct the current in the shared branch",
+      "title": "Validate the original equations directly",
       "job": "prompts/slide_09.json",
       "out": "origin_image/slide_09.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/shared_current_equation.png",
-          "role": "strict mathematical input; shared-current subtraction and direction meaning",
-          "fidelity": "preserve equation and direction statement exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/validation_equations.png",
+          "role": "strict reconstructed equations",
+          "fidelity": "preserve equations and sources"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/shared_current_result.png",
-          "role": "strict numerical input; mesh and shared current values",
-          "fidelity": "preserve all current values and units exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/validation_code.png",
+          "role": "strict MATLAB validation",
+          "fidelity": "preserve variables, difference vector, and assertion"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff5-6367-71e0-b550-7a487e0b0733",
-        "agent_nickname": "Confucius",
+        "agent_id": "01a080ea-621c-7221-9fb1-34edc9c0f994",
+        "agent_nickname": "Harvey",
         "prompt": "prompts/slide_09.json",
-        "prompt_sha256": "b2f179e71d8756747f2e285b62b589f78b078d511bad2dd9e688730120d398d4",
-        "dispatched_at": "2026-09-02T02:31:57Z"
+        "prompt_sha256": "c6722e6db2dba9715b66bc4c56c6bae5d6fa0642d69d41bf856a2eccbb282604",
+        "dispatched_at": "2026-09-08T12:07:29Z"
       },
       "result": {
-        "agent_id": "01a05ff5-6367-71e0-b550-7a487e0b0733",
+        "agent_id": "01a080ea-621c-7221-9fb1-34edc9c0f994",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff5-6367-71e0-b550-7a487e0b0733/exec-2edea893-8a7f-47f5-a1e6-f3182b9da60b.png",
-        "selected_source_sha256": "5a1c98d3da9161d635681ea9dc3c7d0089bbd4c9b97129b9e8aaba4bb44fa59d",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_09.png",
+        "selected_source_sha256": "b5ae55291580c802e9f1f599873f5ceb506837d8615a5f44133c1876d3745ba1",
         "final_image": "origin_image/slide_09.png",
-        "final_image_sha256": "5a1c98d3da9161d635681ea9dc3c7d0089bbd4c9b97129b9e8aaba4bb44fa59d",
+        "final_image_sha256": "b5ae55291580c802e9f1f599873f5ceb506837d8615a5f44133c1876d3745ba1",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "Strict equation and result assets are preserved; the slide is readable, unclipped, and has no extra slide number or outer frame.",
-        "recorded_at": "2026-09-02T02:34:42Z"
+        "qa_note": "Visually inspected at original resolution; exact validation equations and MATLAB code are legible, the minus sign is restored, the direct-substitution outcome is prominent, and the approved slide style is preserved.",
+        "recorded_at": "2026-09-08T12:10:15Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_10",
       "number": 10,
-      "title": "Validate the original equations directly",
+      "title": "Read the numbers back into the circuit",
       "job": "prompts/slide_10.json",
       "out": "origin_image/slide_10.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/validation_equations.png",
-          "role": "strict mathematical input; reconstructed left and right KVL values",
-          "fidelity": "preserve both arithmetic checks and volt units exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/circuit_mesh_model.png",
+          "role": "strict circuit interpretation context",
+          "fidelity": "preserve topology, values, labels, arrows, and units"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/validation_code.png",
-          "role": "strict MATLAB code input; reconstructed values, difference vector, and assertion",
-          "fidelity": "preserve variable names, arithmetic, tolerance, and error string exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/solution_summary.png",
+          "role": "strict solved-current summary",
+          "fidelity": "preserve sign interpretation"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff7-73df-7801-b69c-3bb0b32cb8fd",
-        "agent_nickname": "Pasteur",
+        "agent_id": "01a080ed-3fb5-7f20-943b-db0d14588da2",
+        "agent_nickname": "Bohr",
         "prompt": "prompts/slide_10.json",
-        "prompt_sha256": "c0043711e7163cce034fc7888a2053f9a84bbef01eae209320e57035921781aa",
-        "dispatched_at": "2026-09-02T02:34:09Z"
+        "prompt_sha256": "f4b2109ef51e790871c7e38da45eb5728555801993c837ede98b56fd001b3803",
+        "dispatched_at": "2026-09-08T12:10:39Z"
       },
       "result": {
-        "agent_id": "01a05ff7-73df-7801-b69c-3bb0b32cb8fd",
+        "agent_id": "01a080ed-3fb5-7f20-943b-db0d14588da2",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff7-73df-7801-b69c-3bb0b32cb8fd/exec-d1bae70f-01d0-42c0-8e80-16dfa7712ca7.png",
-        "selected_source_sha256": "7eb6f731f7b73639317ca0ce3e68bc616d1f27547cb2507608ea2d26c8e7b988",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a080ed-3fb5-7f20-943b-db0d14588da2/exec-8b93d757-07c6-4d77-87ea-66166356a8f4.png",
+        "selected_source_sha256": "08367094a0b801131dadd0d55db97cd796aeb43852899fb23108ec3cbf2fc318",
         "final_image": "origin_image/slide_10.png",
-        "final_image_sha256": "7eb6f731f7b73639317ca0ce3e68bc616d1f27547cb2507608ea2d26c8e7b988",
+        "final_image_sha256": "08367094a0b801131dadd0d55db97cd796aeb43852899fb23108ec3cbf2fc318",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "Validation equations and MATLAB code are fully readable and retained exactly, with clear evidence hierarchy and no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:36:11Z"
+        "qa_note": "Visually inspected at original resolution; the strict circuit and solved-current values are preserved, interpretation points are legible, and the approved academic style is maintained.",
+        "recorded_at": "2026-09-08T12:12:46Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_11",
       "number": 11,
-      "title": "Read the numbers back into the circuit",
+      "title": "A plausible matrix can still encode the wrong circuit",
       "job": "prompts/slide_11.json",
       "out": "origin_image/slide_11.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/circuit_mesh_model.png",
-          "role": "strict input; exact circuit interpretation context",
-          "fidelity": "preserve topology, arrows, labels, polarities, values, and units"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/wrong_sign_matrix.png",
+          "role": "strict wrong-sign system",
+          "fidelity": "preserve flipped coefficient and wrong vector"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/solution_summary.png",
-          "role": "strict numerical/text input; solved currents and sign comparison",
-          "fidelity": "preserve solved values, inequalities, and units exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/wrong_sign_validation.png",
+          "role": "strict mismatch evidence",
+          "fidelity": "preserve mismatch and units"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff7-7326-74d3-8a5a-ac0768438f85",
-        "agent_nickname": "Schrodinger",
+        "agent_id": "01a080ed-3f3b-7db2-ab3a-e43c599d0af8",
+        "agent_nickname": "Ramanujan",
         "prompt": "prompts/slide_11.json",
-        "prompt_sha256": "7d5845476cdb4d5f8a361f5780940b12a43cdc960147ab26dee4b869268d4ad0",
-        "dispatched_at": "2026-09-02T02:34:10Z"
+        "prompt_sha256": "728422fff7dec0965384933c28b77ef50c06562d6203bc15f438a3348c9eb711",
+        "dispatched_at": "2026-09-08T12:10:39Z"
       },
       "result": {
-        "agent_id": "01a05ff7-7326-74d3-8a5a-ac0768438f85",
+        "agent_id": "01a080ed-3f3b-7db2-ab3a-e43c599d0af8",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff7-7326-74d3-8a5a-ac0768438f85/exec-39c762ab-d60d-484c-8abb-dc8af8465905.png",
-        "selected_source_sha256": "b997bd9fed175debe81730eeaf0d7dbe1476b26b4220a55b56fe6c989186566e",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_11.png",
+        "selected_source_sha256": "6f2679bdfb354df94ddde8f3384996c3e44b79fbfe6b4ed954994d83eacc6714",
         "final_image": "origin_image/slide_11.png",
-        "final_image_sha256": "b997bd9fed175debe81730eeaf0d7dbe1476b26b4220a55b56fe6c989186566e",
+        "final_image_sha256": "6f2679bdfb354df94ddde8f3384996c3e44b79fbfe6b4ed954994d83eacc6714",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "The slide is readable, preserves the supplied circuit and solution content, and has no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:37:06Z"
+        "qa_note": "Visually inspected at original resolution; the strict wrong-sign matrix and -1.6923 V mismatch are preserved, the defect is appropriately scoped, and the approved academic style is maintained.",
+        "recorded_at": "2026-09-08T12:13:09Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_12",
       "number": 12,
-      "title": "A plausible matrix can still encode the wrong circuit",
+      "title": "Future exposure — the same pattern scales to a bridge circuit",
       "job": "prompts/slide_12.json",
       "out": "origin_image/slide_12.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/wrong_sign_matrix.png",
-          "role": "strict defect input; single flipped off-diagonal coefficient and finite wrong solution",
-          "fidelity": "preserve the coefficient sign, variable names, values, and punctuation exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_mesh_model.png",
+          "role": "strict bridge-style network with three mesh currents",
+          "fidelity": "preserve topology, labels, arrows, no-numerical-values design"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/wrong_sign_validation.png",
-          "role": "strict failure evidence; correct-equation mismatch and volt units",
-          "fidelity": "preserve -1.6923 V and the zero second mismatch exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_matrix_scaffold.png",
+          "role": "strict symbolic 3x3 scaffold",
+          "fidelity": "preserve scaffold, unknown vector, source vector, labels"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff7-fc97-7703-ae3a-d45f3bac2f7a",
-        "agent_nickname": "Gauss",
+        "agent_id": "01a080ed-427d-7ad1-ae90-874b8b1fb6e0",
+        "agent_nickname": "Descartes",
         "prompt": "prompts/slide_12.json",
-        "prompt_sha256": "37365be44185b742ca80d7c1f3fe4c457a2a9012d194ea14eabe41eda8489510",
-        "dispatched_at": "2026-09-02T02:34:43Z"
+        "prompt_sha256": "4548a2e4cc5376c643f27ca30056c19686e79abed40e8ecdfc7bbb2f1ed15092",
+        "dispatched_at": "2026-09-08T12:10:39Z"
       },
       "result": {
-        "agent_id": "01a05ff7-fc97-7703-ae3a-d45f3bac2f7a",
+        "agent_id": "01a080ed-427d-7ad1-ae90-874b8b1fb6e0",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff7-fc97-7703-ae3a-d45f3bac2f7a/exec-8b96e5c1-6858-4ff8-b627-519948d996e2.png",
-        "selected_source_sha256": "b2c27930d78d52fcb4189618fd700c83d3ffad1b44f19880b5d45bd3af94489c",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a080ed-427d-7ad1-ae90-874b8b1fb6e0/exec-039e1f9e-8345-4ebb-a78a-6c36ccce492d.png",
+        "selected_source_sha256": "388e7e9d87fa2a18ed60f55d47493ba3525c62743b908e28d3d1ee18d496a87f",
         "final_image": "origin_image/slide_12.png",
-        "final_image_sha256": "b2c27930d78d52fcb4189618fd700c83d3ffad1b44f19880b5d45bd3af94489c",
+        "final_image_sha256": "388e7e9d87fa2a18ed60f55d47493ba3525c62743b908e28d3d1ee18d496a87f",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "Strict defect and validation assets remain readable and faithful; the slide is unclipped and has no slide number or outer frame.",
-        "recorded_at": "2026-09-02T02:36:45Z"
+        "qa_note": "Visually inspected at original resolution; the strict bridge circuit and symbolic 3×3 scaffold are preserved, the optional future-exposure framing is explicit, and text is legible.",
+        "recorded_at": "2026-09-08T12:12:46Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_13",
       "number": 13,
-      "title": "Working exposure — keep the representation and the physics paired",
+      "title": "Self-activity — sketch the bridge matrix before MATLAB",
       "job": "prompts/slide_13.json",
       "out": "origin_image/slide_13.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
         },
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/reordering_perturbation.png",
-          "role": "strict numerical input; equivalent row ordering and V2 perturbation results",
-          "fidelity": "preserve zero reordering difference, 2.0 to 2.1 V change, perturbed vector, and current changes exactly"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_mesh_model.png",
+          "role": "strict bridge-style network",
+          "fidelity": "preserve topology, labels, arrows, resistor names"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/bridge_matrix_scaffold.png",
+          "role": "strict blank 3x3 scaffold",
+          "fidelity": "preserve placeholders and labels"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff8-e3bb-7a61-9939-8107364d01a8",
+        "agent_id": "01a080ed-404d-7ec0-97ec-d7bf49c2f91d",
         "agent_nickname": "Boyle",
         "prompt": "prompts/slide_13.json",
-        "prompt_sha256": "188a3f275202eb52f150de057b8b27eb2e2d631cadc46be3ec3893b144b5a7c6",
-        "dispatched_at": "2026-09-02T02:35:42Z"
+        "prompt_sha256": "c5f178de950894b45bb421d0f15a5a873aabf4e841a176d5329daf4a3fac35b8",
+        "dispatched_at": "2026-09-08T12:10:39Z"
       },
       "result": {
-        "agent_id": "01a05ff8-e3bb-7a61-9939-8107364d01a8",
+        "agent_id": "01a080ed-404d-7ec0-97ec-d7bf49c2f91d",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff8-e3bb-7a61-9939-8107364d01a8/exec-82b59dec-dcb9-4b35-a555-c4a8dde1d8b9.png",
-        "selected_source_sha256": "c31a5baa78fa43af535dee68322aa1f46f9700da7737fcd5af4d6394fdd14546",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_13.png",
+        "selected_source_sha256": "1c9e24f3038a2aefcea6a0b267eab68a30e25038db767a495c672dff63fdae12",
         "final_image": "origin_image/slide_13.png",
-        "final_image_sha256": "c31a5baa78fa43af535dee68322aa1f46f9700da7737fcd5af4d6394fdd14546",
+        "final_image_sha256": "1c9e24f3038a2aefcea6a0b267eab68a30e25038db767a495c672dff63fdae12",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "The controlled-comparison layout preserves the strict numerical evidence, keeps optional stretch material secondary, and has no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:37:55Z"
+        "qa_note": "Visually inspected at original resolution; the strict bridge network and blank 3×3 scaffold are legible, prompts are readable, and no completed matrix or solution is shown.",
+        "recorded_at": "2026-09-08T12:12:46Z"
       },
       "blocker": null
     },
     {
       "slide_id": "slide_14",
       "number": 14,
-      "title": "Exit ticket — explain the 2x2 solve to a future you",
+      "title": "Working exposure — separate representation changes from physical input changes",
       "job": "prompts/slide_14.json",
       "out": "origin_image/slide_14.png",
       "input_images": [
         {
-          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_06.png",
-          "role": "approved Week 03 sample slide style reference",
-          "fidelity": "match palette, typography, density, texture, and visual identity only; do not copy exact layout or content"
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/reorder_evidence.png",
+          "role": "strict reordering evidence",
+          "fidelity": "preserve maximum_reordering_difference_A = 0"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/assets/strict/source_perturbation_evidence.png",
+          "role": "strict source perturbation evidence",
+          "fidelity": "preserve V2 change and exact vectors"
         }
       ],
       "requires_context_images": true,
       "status": "recorded",
       "dispatch": {
-        "agent_id": "01a05ff9-57d9-75b0-bb13-a73ea4dd7a05",
-        "agent_nickname": "Cicero",
+        "agent_id": "01a080f0-5aed-7ef0-ad8e-e0a1e9963030",
+        "agent_nickname": "Linnaeus",
         "prompt": "prompts/slide_14.json",
-        "prompt_sha256": "4ca4857166c0f076dfb90132f19b846c66d1a0d02b7361a92d6f9933a54fb595",
-        "dispatched_at": "2026-09-02T02:36:15Z"
+        "prompt_sha256": "1a15c5a63f21d473a16bdeb754aad9d747fe0294c61f5f3306a4dfb8130c4582",
+        "dispatched_at": "2026-09-08T12:14:01Z"
       },
       "result": {
-        "agent_id": "01a05ff9-57d9-75b0-bb13-a73ea4dd7a05",
+        "agent_id": "01a080f0-5aed-7ef0-ad8e-e0a1e9963030",
         "backend_used": "built-in image tool",
-        "selected_source": "/Users/khairuladib/.codex/generated_images/01a05ff9-57d9-75b0-bb13-a73ea4dd7a05/exec-56c27499-a00f-4a48-908e-310ff1479ce6.png",
-        "selected_source_sha256": "29e3a2617558f35fb1d2cd56509b13f73a39c1c3939441fa22823dfa992d981d",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_14.png",
+        "selected_source_sha256": "7045370626588e550859d27458321d85913c5a3ccb3c9647472cf3832a4c1833",
         "final_image": "origin_image/slide_14.png",
-        "final_image_sha256": "29e3a2617558f35fb1d2cd56509b13f73a39c1c3939441fa22823dfa992d981d",
+        "final_image_sha256": "7045370626588e550859d27458321d85913c5a3ccb3c9647472cf3832a4c1833",
         "expected_backend": "built-in image tool",
         "expected_backend_labels": [
           "built-in image tool",
           "image_gen"
         ],
         "sample_generation_method_matched": true,
-        "qa_note": "All four exit-ticket prompts and the transfer bridge are legible, with no clipping, slide number, or outer frame.",
-        "recorded_at": "2026-09-02T02:38:15Z"
+        "qa_note": "Visually inspected at original resolution; both comparison narratives, exact numerical evidence, optional stretch checks, readable labels, and the approved visual style are preserved.",
+        "recorded_at": "2026-09-08T12:16:14Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_15",
+      "number": 15,
+      "title": "Exit ticket — carry the model-to-check chain forward",
+      "job": "prompts/slide_15.json",
+      "out": "origin_image/slide_15.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_02.png",
+          "role": "approved revised Week 03 sample slide style reference",
+          "fidelity": "match style only; do not copy exact layout or content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a080f0-5b89-76f2-b2b5-71067f7fd05c",
+        "agent_nickname": "Parfit",
+        "prompt": "prompts/slide_15.json",
+        "prompt_sha256": "ac5fb8c9bbb9147231321b1a6c5f116ae604aae24ac51340bfe0d3f196acd27a",
+        "dispatched_at": "2026-09-08T12:14:01Z"
+      },
+      "result": {
+        "agent_id": "01a080f0-5b89-76f2-b2b5-71067f7fd05c",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/origin_image/slide_15.png",
+        "selected_source_sha256": "94bfe47d6059eeb53416b63716c20930367a2b7396314fd334ee93aaab52dcc5",
+        "final_image": "origin_image/slide_15.png",
+        "final_image_sha256": "94bfe47d6059eeb53416b63716c20930367a2b7396314fd334ee93aaab52dcc5",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Visually inspected at original resolution; the balanced 2×2 grid, exact prompts, compact transfer cue, consistent style, and absence of slide number or outer frame are confirmed.",
+        "recorded_at": "2026-09-08T12:16:15Z"
       },
       "blocker": null
     }
   ],
-  "updated_at": "2026-09-02T02:38:15Z"
+  "updated_at": "2026-09-08T12:16:15Z"
 }

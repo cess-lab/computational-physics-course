@@ -6,6 +6,7 @@
 \definecolor{weeknavy}{HTML}{243B53}
 \definecolor{weekblue}{HTML}{6E8FB3}
 \definecolor{weeksage}{HTML}{7AA69B}
+\definecolor{weekochre}{HTML}{C7A35A}
 \begin{document}
 \begin{tikzpicture}[>=Latex,thick,scale=1.05]
 % Two-loop DC resistor circuit. Long battery plate is positive.
@@ -37,7 +38,12 @@
 \draw (6.45,1.33) node[right] {$V_2=2\,\mathrm{V}$};
 \draw (5.55,1.08) node[left=2pt] {$+$};
 \draw (5.55,1.58) node[left=2pt] {$-$};
+% Clockwise mesh arrows are shown in the lower half; junction arrows make
+% the branch-current convention explicit at the top shared junction.
 \draw[->,weekblue] (2.05,0.78) arc[start angle=0,end angle=-180,radius=0.60] node[midway,above=2pt] {$I_1$};
 \draw[->,weeksage!70!black] (5.15,0.78) arc[start angle=0,end angle=-180,radius=0.60] node[midway,above=2pt] {$I_2$};
+\draw[->,weekblue] (2.10,3)--(2.72,3) node[midway,above=2pt] {$I_1$};
+\draw[->,weeksage!70!black] (3.28,3)--(3.90,3) node[midway,above=2pt] {$I_2$};
+\draw[->,weekochre!90!black] (3.42,2.62)--(3.42,2.12) node[midway,right=3pt] {$I_{\mathrm{shared}}$};
 \end{tikzpicture}
 \end{document}
