@@ -1,0 +1,69 @@
+{
+  "requested_by": "user",
+  "scope": "Slide 7 and 8 style/writing/layout alignment to slide 6",
+  "backend": "built-in image tool",
+  "executor": "coordinator /root",
+  "mode": "edit",
+  "references": [
+    "slide_06.png",
+    "previous target slide"
+  ],
+  "scientific_qa": "Topic and week mappings preserved; numerical diagrams schematic; integration depicts straight trapezoidal segments.",
+  "changes": {
+    "7": {
+      "headings": [
+        "Locate",
+        "Estimate",
+        "Accumulate",
+        "Evolve"
+      ],
+      "weeks": [
+        "Week 5",
+        "Week 6",
+        "Week 7",
+        "Week 8"
+      ],
+      "topics": [
+        "Root finding",
+        "Numerical differentiation",
+        "Numerical integration",
+        "ODE simulation"
+      ],
+      "captions": [
+        "A physical solution",
+        "A physical rate",
+        "An accumulated quantity",
+        "A changing state"
+      ],
+      "footer": "Known reference. Step-size check. Explain the result."
+    },
+    "8": {
+      "headings": [
+        "Explore",
+        "Audit",
+        "Defend"
+      ],
+      "weeks": [
+        "Weeks 9–11",
+        "Week 12",
+        "Weeks 13–14"
+      ],
+      "topics": [
+        "Data and uncertainty",
+        "Method selection",
+        "Computational investigation"
+      ],
+      "captions": [
+        "Data fitting (9) • Monte Carlo (10); Sensitivity analysis (11)",
+        "Capstone studio",
+        "Present and explain; Reproduce and hand off"
+      ],
+      "footer": "Present. Defend. Reproduce and hand off.",
+      "continuation": "Week 14 continues this phase; no new core topic."
+    }
+  },
+  "sources": {
+    "slide07": "/Users/khairuladib/.codex/generated_images/01a10b54-9499-7721-97ef-f675679709ad/exec-43267ab6-b603-48de-b9c5-5345aaa1bdf1.png",
+    "slide08": "/Users/khairuladib/.codex/generated_images/01a10b54-9499-7721-97ef-f675679709ad/exec-7abb71e7-bb6f-4725-9b2c-1834ecd59ef8.png"
+  }
+}

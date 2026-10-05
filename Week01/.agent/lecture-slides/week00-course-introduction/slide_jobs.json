@@ -1,0 +1,563 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "week00-course-introduction",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "generate",
+    "repair_mode": "edit for a scientific correction, same built-in backend",
+    "model_config": "built-in default, tool does not expose model or quality parameters",
+    "size": "16:9 requested; approved output 1672x941",
+    "prompt_source": "qa/sample-prompt.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+    "input_context_preparation": "view_image inspected local style reference, then referenced_image_paths attached it to built-in tool. Workers inspect approved sample and attach it as style-only.",
+    "handoff_rule": "Use same built-in tool generation path with style input; repair using same backend if needed. Stop if unavailable."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Computational Methods in Physics",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide01",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "47db2bfd7e3d631bf886669ef82da8fa7166586febd0cc80bd1f635707a718a1",
+        "dispatched_at": "2026-10-05T10:12:26Z"
+      },
+      "result": {
+        "agent_id": "/root/slide01",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b8c-cf2f-7973-bdac-6ad2bc053a35/exec-6f3e5c1d-4a07-4517-a080-e217d0179729.png",
+        "selected_source_sha256": "29c3bf5dab11a2e1c3279aa7e9e78d95cfe51eeaaa6090e13c13b65801abc0d8",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "29c3bf5dab11a2e1c3279aa7e9e78d95cfe51eeaaa6090e13c13b65801abc0d8",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: title, identity, sparse cover and scientifically consistent model pass.",
+        "recorded_at": "2026-10-05T10:16:34Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Why compute in physics?",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide02",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "e40f3a8ed8780dd0d569c848ad829d12da7c98c8f6a38c3df4e031e1f8505c14",
+        "dispatched_at": "2026-10-05T10:13:17Z"
+      },
+      "result": {
+        "agent_id": "/root/slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b8d-9659-7ac1-9f50-924316c35689/exec-49f15880-c347-4e57-9f82-0bb41448d9d5.png",
+        "selected_source_sha256": "4d10e75d29337d717fb1f0c3af5030a605338cb3924f59289527e5bca2caa343",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "4d10e75d29337d717fb1f0c3af5030a605338cb3924f59289527e5bca2caa343",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: content, labels and style pass.",
+        "recorded_at": "2026-10-05T10:16:57Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "A result needs a physical check",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_03.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "What you will learn to do",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide04",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "5b8979a0dacf932f81387d95290b045a535e36ee376889a3d4f716e21eaa63b9",
+        "dispatched_at": "2026-10-05T10:13:37Z"
+      },
+      "result": {
+        "agent_id": "/root/slide04",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b8d-def3-7cb0-a465-b41cd44a313e/exec-b80fc26c-bcf8-495b-9ab2-38e6b3d28939.png",
+        "selected_source_sha256": "cd204f2e0fb85aea685a4bbd43b0f88322434b00db5e8b4b85fa92dcc0759bb7",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "cd204f2e0fb85aea685a4bbd43b0f88322434b00db5e8b4b85fa92dcc0759bb7",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: four outcomes readable, units correct, graph explicitly conceptual.",
+        "recorded_at": "2026-10-05T10:18:08Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "How we build a trustworthy computation",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide05",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "47f9cf63edcaf89ad04cfd4ce93ccab389fc78d0f619cd258412fe9f1dc0cdb8",
+        "dispatched_at": "2026-10-05T10:13:56Z"
+      },
+      "result": {
+        "agent_id": "/root/slide05",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b8e-2ca2-7551-a77c-edee966ffa7d/exec-6e168561-18ee-42d4-91aa-a765548648f3.png",
+        "selected_source_sha256": "bfefefe93bdb9b4bee748cf9b670f9b96f98cbeab445ef5d898a344815fff04f",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "bfefefe93bdb9b4bee748cf9b670f9b96f98cbeab445ef5d898a344815fff04f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: content, labels and style pass.",
+        "recorded_at": "2026-10-05T10:16:58Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Your journey: build the foundations",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide06",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "267bad99685aa37b0ad3746583edc39537046d18fd23ade651599844f8c48b85",
+        "dispatched_at": "2026-10-05T10:14:17Z"
+      },
+      "result": {
+        "agent_id": "/root/slide06",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b8e-754e-7140-a577-505f013ef440/exec-1ae17069-7511-433a-8310-1d3fed54e6f1.png",
+        "selected_source_sha256": "36acd9786fdb5176722a9e9d7aac97d9be5c2bfd27c1521574dabec5cc19ade5",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "36acd9786fdb5176722a9e9d7aac97d9be5c2bfd27c1521574dabec5cc19ade5",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: four weeks accurate; battery source and spring extension corrected.",
+        "recorded_at": "2026-10-05T10:19:50Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Your journey: learn numerical methods",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide07",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "2564d544de51d6095a2141dcd7a2307817255cd0e2845e4086760982060dc3e5",
+        "dispatched_at": "2026-10-05T10:14:38Z"
+      },
+      "result": {
+        "agent_id": "/root/slide07",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b8e-c7e9-7543-be62-bc4cc37cb586/exec-39ebaf7d-a621-4118-b92b-ce9e82510e70.png",
+        "selected_source_sha256": "7786817a47f8b1be4caa4cc6ed1c7e9808f8bd5168a660f464112d586624b37f",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "7786817a47f8b1be4caa4cc6ed1c7e9808f8bd5168a660f464112d586624b37f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: four methods correctly ordered, schematic diagrams explicitly labelled conceptual.",
+        "recorded_at": "2026-10-05T10:18:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Your journey: investigate and defend",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide08",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "6c9909975abfe7e2a127a2a075425b0c147a1c672f1d5d7d9ae6be7ab965389f",
+        "dispatched_at": "2026-10-05T10:17:47Z"
+      },
+      "result": {
+        "agent_id": "/root/slide08",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b91-a076-7a30-a4fc-51b036390d64/exec-222e3e7e-a7ce-4a94-8065-61de7a270682.png",
+        "selected_source_sha256": "a36fe76b57116ea0ffa67d3e39f07620653d032b0d26222d55eace94246fa926",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "a36fe76b57116ea0ffa67d3e39f07620653d032b0d26222d55eace94246fa926",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: roadmap phases, Week 9-14 sequence and Week 14 continuation accurate.",
+        "recorded_at": "2026-10-05T10:19:37Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Use each course material for a purpose",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide09",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "8ebfe5a468df512a8e9f43cf3e62d5d68648cecc4b87b09588172dd07798786c",
+        "dispatched_at": "2026-10-05T10:18:28Z"
+      },
+      "result": {
+        "agent_id": "/root/slide09",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b92-4d4d-7f53-8bd0-828c0ddcc94a/exec-cea836df-edb4-4878-8e45-fbd7879537b8.png",
+        "selected_source_sha256": "db2148a51b1501a00dd38106e0c3fb8faa207d09fa16a0596c940dccee7b56b0",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "db2148a51b1501a00dd38106e0c3fb8faa207d09fa16a0596c940dccee7b56b0",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: four material types and purposes readable and accurate.",
+        "recorded_at": "2026-10-05T10:22:25Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Where learning and submission happen",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide10",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "e7ea8748a1a035fd7a36db8bbda3105ae74350d0d6a48366191f66efd0fdc6f0",
+        "dispatched_at": "2026-10-05T10:19:03Z"
+      },
+      "result": {
+        "agent_id": "/root/slide10",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b92-d0d2-7750-8f33-430a1f99d072/exec-25cba89a-8b2a-4f18-a95b-13eaa7589e58.png",
+        "selected_source_sha256": "6cae17672c6fc11f69f78562da6fd2f068736bea19d65503f4e84a10971eb8ad",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "6cae17672c6fc11f69f78562da6fd2f068736bea19d65503f4e84a10971eb8ad",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: clear platform functions, official Classroom hub, repeated footer removed.",
+        "recorded_at": "2026-10-05T10:26:55Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Your weekly learning routine",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide11",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "0af70d05434c88c357dfb17ea7789c900b42ec7bf0b8d7c3dfb688ec6d3d1c64",
+        "dispatched_at": "2026-10-05T10:20:08Z"
+      },
+      "result": {
+        "agent_id": "/root/slide11",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b93-d985-7681-ab88-2e26b72cead9/exec-28614f09-878c-4594-82c0-19e3045f9f2a.png",
+        "selected_source_sha256": "454d0187a0077eb39b30630a32de5c7015db736685f5e52dcf20b6c832f450ff",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "454d0187a0077eb39b30630a32de5c7015db736685f5e52dcf20b6c832f450ff",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: weekly cycle and fresh-session action clear, accurate and readable.",
+        "recorded_at": "2026-10-05T10:22:59Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "How your learning is assessed",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide12",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "b28d2f2fb3ee3b8e3c2741f64340dec784e77f78c3d1b8a546813f1d6fde1125",
+        "dispatched_at": "2026-10-05T10:20:27Z"
+      },
+      "result": {
+        "agent_id": "/root/slide12",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b94-20d4-7362-b23e-57515a90e148/exec-06699440-a900-4059-88f9-48350f34edcd.png",
+        "selected_source_sha256": "170908bdb96bf65dc2191a3def1499423f57e9c7f94c3d903b7956a64ed61e95",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "170908bdb96bf65dc2191a3def1499423f57e9c7f94c3d903b7956a64ed61e95",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: all six percentages and AI/open-book conditions correct, total 100 percent.",
+        "recorded_at": "2026-10-05T10:24:48Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Use AI and take responsibility for the result",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide13",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "5448e73323aef8d4550dbceb39e9d8a202b938833b567ae9de9f219b614efd14",
+        "dispatched_at": "2026-10-05T10:20:46Z"
+      },
+      "result": {
+        "agent_id": "/root/slide13",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b94-67bc-7aa0-ba5b-74f67f87bcf1/exec-faf49991-1e8e-4116-b041-ca5e7400422b.png",
+        "selected_source_sha256": "7572395d578b5e56ff0175129158a57285dbc56a6cd162313c906bf66de51e3f",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "7572395d578b5e56ff0175129158a57285dbc56a6cd162313c906bf66de51e3f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: exact copy, process/physics and layout pass.",
+        "recorded_at": "2026-10-05T10:25:22Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Start with a prediction",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+          "role": "approved sample, style only",
+          "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide14",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "316996e6df247dcb09cb04d99918a64aa2a70d2975f4e0517e5151fd178523da",
+        "dispatched_at": "2026-10-05T10:21:08Z"
+      },
+      "result": {
+        "agent_id": "/root/slide14",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b94-bc34-74f3-9cc4-7b8035b9a0d2/exec-de578ac2-1708-4882-a4d3-154ff8c0f757.png",
+        "selected_source_sha256": "705f7de72f92d85f06fc66aa04d83168a78f35eafec8bd7c0a407f4e7000d910",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "705f7de72f92d85f06fc66aa04d83168a78f35eafec8bd7c0a407f4e7000d910",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: exact copy, process/physics and layout pass.",
+        "recorded_at": "2026-10-05T10:25:22Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-10-05T10:26:55Z"
+}

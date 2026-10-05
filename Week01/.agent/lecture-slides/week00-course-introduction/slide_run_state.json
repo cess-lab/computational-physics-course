@@ -1,0 +1,36 @@
+{
+  "status": "delivered",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-10-05T10:12:07Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-10-05T10:21:08Z",
+      "note": "all slide jobs dispatched"
+    },
+    {
+      "from": "slides_dispatched",
+      "to": "slides_recorded",
+      "at": "2026-10-05T10:26:55Z",
+      "note": "all slide images recorded"
+    },
+    {
+      "from": "slides_recorded",
+      "to": "blocked",
+      "at": "2026-10-05T10:29:51Z",
+      "note": "Final model audit: all 13 workers use gpt-5.6-luna medium despite fork_turns=all. Exact coordinator match required; no final publication."
+    },
+    {
+      "from": "blocked",
+      "to": "delivered",
+      "at": "2026-10-05T11:24:17Z",
+      "note": "User instructed moving the reviewed deck to Week01 and committing/pushing; historical worker mismatch preserved in QA evidence."
+    }
+  ],
+  "updated_at": "2026-10-05T11:24:17Z"
+}

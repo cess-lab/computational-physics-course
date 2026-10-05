@@ -1,0 +1,10 @@
+{
+  "artifact": "Week01/Lecture_Slides_Week00.pptx",
+  "slides": 14,
+  "aspect_ratio": "16:9",
+  "english_notes": 14,
+  "sha256": "284622ed7182341a212969eead87cad9b583dd5a84411acb32d1e057a68809f5",
+  "user_delivery_authorization": "pindahkan slide deck ini dlm subfolder week 1. commit dan push",
+  "model_audit": "Earlier worker model mismatch disclosed to user; historical evidence preserved. Current directive authorizes delivery of reviewed deck.",
+  "revision": "Slide 7 and 8 style aligned to slide 6; revision provenance supersedes original result records."
+}

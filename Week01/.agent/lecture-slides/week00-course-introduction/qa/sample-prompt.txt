@@ -1,0 +1,19 @@
+Generate exactly ONE complete 16:9 landscape lecture slide image, ideally 3840x2160, for PHY4605 Week 0 course introduction. This is slide 3, a representative sample for lecturer approval. Use attached reference strictly for visual style only: current PHY4605 Week 1. Do not reproduce the reference content or crowded layout. Teaching Courseware, open white canvas, deep navy title and main text, muted blue scientific objects, sage green verified checks, optional tiny muted ochre emphasis. Projection-readable sans serif; title bold, headings semibold, body regular. No decorative outer border, no slide number, no eyebrow, no subtitle, no logo, no watermark. Low density, calm academic, ample whitespace. One learning point.
+
+Exact title at top: "A result needs a physical check"
+
+Below title, three equally balanced unboxed stages arranged left to right, joined by two short subtle arrows. Headers: "Predict" / "Compute" / "Check". Each stage has one meaningful scientific illustration and concise exact copy.
+
+Left stage Predict: a simple matte blue ball at start, peak and descending positions; upward initial arrow and downward returning arrow, clear labels "Start", "Peak", "Return". The ball starts at launch height and returns to the same height. Exact caption: "Sketch the motion before coding."
+
+Middle stage Compute: a tidy conceptual array with five cells showing height-symbol entries rather than invented numerical values, labelled "Height samples". Above array display exact physical equation with correct mathematical typesetting: y(t) = v₀t − ½gt². Below equation short assumption line "Upward positive; no air resistance". Exact caption below illustration: "Use the model to calculate height."
+No quantitative graph or decorative curve. This equation assumes launch height zero.
+
+Right stage Check: an illustrated small ball at launch point next to a clearly labelled horizontal launch-height line "Launch height". Beside it a sage check and exact equation "y(0) = 0 m". Exact caption: "Check a known value, then interpret."
+A short text near check, "Starts at the launch height", in regular navy.
+
+At bottom, a quiet single-line takeaway in navy with modest sage emphasis (no large prompt box): "Explain the model. Check the result. Trust the evidence."
+
+All written text English and exact. Scientific content must be consistent: upward-thrown ball, y0=0, constant positive g, no air resistance. Avoid unnecessary labels, extra formulas, numeric tables or code, tiny text, repeated bordered cards, thick frame, ornate texture, gradients on slide background, excessive bold. Diagram objects may have gentle matte shading matching reference. Deliver one polished full-slide image.
+
+Scientific repair: remove the horizontal arch trajectory and show three separate vertical-motion state snapshots; add label Vertical motion; preserve all other slide content.

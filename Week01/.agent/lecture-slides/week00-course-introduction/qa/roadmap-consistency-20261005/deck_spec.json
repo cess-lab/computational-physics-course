@@ -1,0 +1,161 @@
+{
+  "deck_name": "roadmap-consistency-20261005",
+  "language": "English",
+  "goal": "Orient Year-2 PHY4605 students to motivation, course journey, materials, workflow and assessment.",
+  "deck_context": {
+    "core_claim": "Physical reasoning and independent checks turn computation into defensible evidence.",
+    "source_summary": "Current PHY4605 blueprints and approved 14-slide Week 0 outline. MATLAB prerequisite retention is uncertain; foundations are repaired in Weeks 1–2. Supplied scaffolds support Core learning. Weeks 13–14 are capstone presentations, defence and handoff.",
+    "canonical_terms": [
+      "physical model",
+      "variables and units",
+      "algorithm",
+      "validation",
+      "physical interpretation",
+      "reproducibility"
+    ],
+    "assessment_weights": {
+      "Test 1": 10,
+      "Test 2": 10,
+      "Final examination": 40,
+      "Practical portfolio": 15,
+      "Individual lab test": 10,
+      "Capstone investigation": 15
+    }
+  },
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 6,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "edit",
+    "repair_mode": "edit for a scientific correction, same built-in backend",
+    "model_config": "built-in default, tool does not expose model or quality parameters",
+    "size": "16:9 requested; approved output 1672x941",
+    "prompt_source": "qa/sample-prompt.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+    "input_context_preparation": "view_image inspected local style reference, then referenced_image_paths attached it to built-in tool. Workers inspect approved sample and attach it as style-only.",
+    "handoff_rule": "Use same built-in tool generation path with style input; repair using same backend if needed. Stop if unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slide system with strong hierarchy, approachable labelled diagrams, moderate information density, and restrained semantic colour",
+    "color_palette": "warm white or cool-gray canvas; deep navy #243B53 for titles and structure; dusty blue #6E8FB3 for model content; quiet sage #7AA69B for expected or validated states; muted ochre #C7A35A for occasional prompts or warnings only; subdued coral #BF7A70 only for a real defect or failure",
+    "typography": "projection-readable sans-serif; bold for main titles only; semibold for short headings and key labels; regular for explanatory copy, bullets, sublabels, and notes; italic mathematics where useful; monospaced regular MATLAB code with only the discussed operator emphasised",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin lines, direct labels, simple diagrams, generous alignment, no dark-filled blocks, no gradients, no decorative clutter, and no repeated oversized prompt cards",
+    "prompt_rule": "Ochre/yellow is an optional sparse accent. Use a compact inline prompt, small marker, or no prompt depending on the teaching point; never make a large prompt box a deck-wide requirement.",
+    "deck_consistency": "keep the same palette, typography hierarchy, icon language, spacing, and approachable scientific tone across all slides while varying composition by teaching role"
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_06.png",
+    "role": "user-selected layout, visual and writing reference",
+    "fidelity": "Match hierarchy and composition closely."
+  },
+  "slides": [
+    {
+      "number": 7,
+      "title": "Your journey: learn numerical methods",
+      "role": "timeline",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Locate — Week 5: Root finding",
+        "Estimate — Week 6: Numerical differentiation",
+        "Accumulate — Week 7: Numerical integration",
+        "Evolve — Week 8: ODE simulation"
+      ],
+      "local_context": "Four aligned milestones continuing foundation roadmap. Short descriptions: Locate a physical solution; Estimate a rate; Accumulate a quantity; Evolve a state. Use conceptual axes only where clearly labelled Conceptual; prefer non-quantitative small diagrams root crossing, tangent, trapezoid area, sequential state boxes. Do not invent numeric plots. Footer: Compare with a known or supplied reference.",
+      "layout": {
+        "composition": "Use slide 6 layout: pale numbered circles with action headings; bold week below, regular topic, scientific diagram, concise caption, thin footer rule and bold navy/sage takeaway. Three columns for slide 8; four for slide 7.",
+        "reference": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_06.png"
+      },
+      "visual_elements": {
+        "main_visual": "Four aligned milestones continuing foundation roadmap. Short descriptions: Locate a physical solution; Estimate a rate; Accumulate a quantity; Evolve a state. Use conceptual axes only where clearly labelled Conceptual; prefer non-quantitative small diagrams root crossing, tangent, trapezoid area, sequential state boxes. Do not invent numeric plots. Footer: Compare with a known or supplied reference."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false,
+      "revision_brief": {
+        "headings": [
+          "Locate",
+          "Estimate",
+          "Accumulate",
+          "Evolve"
+        ],
+        "weeks": [
+          "Week 5",
+          "Week 6",
+          "Week 7",
+          "Week 8"
+        ],
+        "topics": [
+          "Root finding",
+          "Numerical differentiation",
+          "Numerical integration",
+          "ODE simulation"
+        ],
+        "captions": [
+          "A physical solution",
+          "A physical rate",
+          "An accumulated quantity",
+          "A changing state"
+        ],
+        "footer": "Known reference. Step-size check. Explain the result."
+      }
+    },
+    {
+      "number": 8,
+      "title": "Your journey: investigate and defend",
+      "role": "timeline",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Explore — Weeks 9–11: Data and uncertainty",
+        "Audit — Week 12: Method selection",
+        "Defend — Weeks 13–14: Computational investigation"
+      ],
+      "local_context": "Three connected phases with readable sublabels. Explore: Data fitting (Week 9), Monte Carlo sampling (Week 10), Sensitivity analysis (Week 11). Audit: Method selection; Capstone studio. Defend: Present; Explain; Reproduce and hand off. Footer: Week 14 continues presentations and defences; no new core topic. Spacious layout, avoid a 14-row table.",
+      "layout": {
+        "composition": "Use slide 6 layout: pale numbered circles with action headings; bold week below, regular topic, scientific diagram, concise caption, thin footer rule and bold navy/sage takeaway. Three columns for slide 8; four for slide 7.",
+        "reference": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_06.png"
+      },
+      "visual_elements": {
+        "main_visual": "Three connected phases with readable sublabels. Explore: Data fitting (Week 9), Monte Carlo sampling (Week 10), Sensitivity analysis (Week 11). Audit: Method selection; Capstone studio. Defend: Present; Explain; Reproduce and hand off. Footer: Week 14 continues presentations and defences; no new core topic. Spacious layout, avoid a 14-row table."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false,
+      "revision_brief": {
+        "headings": [
+          "Explore",
+          "Audit",
+          "Defend"
+        ],
+        "weeks": [
+          "Weeks 9–11",
+          "Week 12",
+          "Weeks 13–14"
+        ],
+        "topics": [
+          "Data and uncertainty",
+          "Method selection",
+          "Computational investigation"
+        ],
+        "captions": [
+          "Data fitting (9) • Monte Carlo (10); Sensitivity analysis (11)",
+          "Capstone studio",
+          "Present and explain; Reproduce and hand off"
+        ],
+        "footer": "Present. Defend. Reproduce and hand off.",
+        "continuation": "Week 14 continues this phase; no new core topic."
+      }
+    }
+  ]
+}

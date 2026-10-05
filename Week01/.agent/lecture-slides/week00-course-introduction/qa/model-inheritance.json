@@ -1,0 +1,620 @@
+{
+  "main_model": "gpt-6.1-sol",
+  "main_effort": "medium",
+  "required_exact_match": true,
+  "verified_exact_match": false,
+  "status": "blocked",
+  "reason": "Runtime worker turn_context overrides fork inheritance despite omitted overrides.",
+  "workers": [
+    {
+      "slide": "slide_01",
+      "worker_id": "/root/slide01",
+      "worker_thread_id": "01a10b8c-cf2f-7973-bdac-6ad2bc053a35",
+      "prompt_path": "prompts/slide_01.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:12:27.460Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:12:19.929Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:12:19.929Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:12:19.929Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:12:19.929Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:12:19.929Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:12:27.460Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-12-19-01a10b8c-cf2f-7973-bdac-6ad2bc053a35.jsonl"
+    },
+    {
+      "slide": "slide_02",
+      "worker_id": "/root/slide02",
+      "worker_thread_id": "01a10b8d-9659-7ac1-9f50-924316c35689",
+      "prompt_path": "prompts/slide_02.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:13:13.865Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:13:10.915Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:10.915Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:10.916Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:10.916Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:10.916Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:13.865Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-13-10-01a10b8d-9659-7ac1-9f50-924316c35689.jsonl"
+    },
+    {
+      "slide": "slide_04",
+      "worker_id": "/root/slide04",
+      "worker_thread_id": "01a10b8d-def3-7cb0-a465-b41cd44a313e",
+      "prompt_path": "prompts/slide_04.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:16:18.400Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:13:29.508Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:29.508Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:29.509Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:29.509Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:29.509Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:34.179Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:16:18.400Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-13-29-01a10b8d-def3-7cb0-a465-b41cd44a313e.jsonl"
+    },
+    {
+      "slide": "slide_05",
+      "worker_id": "/root/slide05",
+      "worker_thread_id": "01a10b8e-2ca2-7551-a77c-edee966ffa7d",
+      "prompt_path": "prompts/slide_05.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:13:53.554Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:13:49.388Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:49.388Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:49.388Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:49.388Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:49.388Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:13:53.554Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-13-49-01a10b8e-2ca2-7551-a77c-edee966ffa7d.jsonl"
+    },
+    {
+      "slide": "slide_06",
+      "worker_id": "/root/slide06",
+      "worker_thread_id": "01a10b8e-754e-7140-a577-505f013ef440",
+      "prompt_path": "prompts/slide_06.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:17:58.665Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:14:07.993Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:07.993Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:07.993Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:07.993Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:07.993Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:11.551Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:24.765Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:58.665Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-14-07-01a10b8e-754e-7140-a577-505f013ef440.jsonl"
+    },
+    {
+      "slide": "slide_07",
+      "worker_id": "/root/slide07",
+      "worker_thread_id": "01a10b8e-c7e9-7543-be62-bc4cc37cb586",
+      "prompt_path": "prompts/slide_07.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:17:17.639Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:14:29.140Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:29.140Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:29.140Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:29.140Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:29.140Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:14:34.744Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:17.639Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-14-29-01a10b8e-c7e9-7543-be62-bc4cc37cb586.jsonl"
+    },
+    {
+      "slide": "slide_08",
+      "worker_id": "/root/slide08",
+      "worker_thread_id": "01a10b91-a076-7a30-a4fc-51b036390d64",
+      "prompt_path": "prompts/slide_08.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:17:38.871Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:17:35.647Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:35.647Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:35.647Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:35.648Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:35.648Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:17:38.871Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-17-35-01a10b91-a076-7a30-a4fc-51b036390d64.jsonl"
+    },
+    {
+      "slide": "slide_09",
+      "worker_id": "/root/slide09",
+      "worker_thread_id": "01a10b92-4d4d-7f53-8bd0-828c0ddcc94a",
+      "prompt_path": "prompts/slide_09.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:18:22.589Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:18:19.887Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:19.887Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:19.887Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:19.887Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:19.887Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:22.589Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-18-19-01a10b92-4d4d-7f53-8bd0-828c0ddcc94a.jsonl"
+    },
+    {
+      "slide": "slide_10",
+      "worker_id": "/root/slide10",
+      "worker_thread_id": "01a10b92-d0d2-7750-8f33-430a1f99d072",
+      "prompt_path": "prompts/slide_10.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:22:39.467Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:18:53.558Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:53.558Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:53.558Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:53.558Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:53.559Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:18:58.676Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:22:39.467Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-18-53-01a10b92-d0d2-7750-8f33-430a1f99d072.jsonl"
+    },
+    {
+      "slide": "slide_11",
+      "worker_id": "/root/slide11",
+      "worker_thread_id": "01a10b93-d985-7681-ab88-2e26b72cead9",
+      "prompt_path": "prompts/slide_11.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:20:05.413Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:20:01.321Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:01.321Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:01.321Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:01.321Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:01.321Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:05.413Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-20-01-01a10b93-d985-7681-ab88-2e26b72cead9.jsonl"
+    },
+    {
+      "slide": "slide_12",
+      "worker_id": "/root/slide12",
+      "worker_thread_id": "01a10b94-20d4-7362-b23e-57515a90e148",
+      "prompt_path": "prompts/slide_12.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:20:22.282Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:20:19.576Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:19.576Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:19.576Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:19.576Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:19.576Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:22.282Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-20-19-01a10b94-20d4-7362-b23e-57515a90e148.jsonl"
+    },
+    {
+      "slide": "slide_13",
+      "worker_id": "/root/slide13",
+      "worker_thread_id": "01a10b94-67bc-7aa0-ba5b-74f67f87bcf1",
+      "prompt_path": "prompts/slide_13.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:20:40.345Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:20:37.727Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:37.727Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:37.727Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:37.727Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:37.727Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:40.345Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-20-37-01a10b94-67bc-7aa0-ba5b-74f67f87bcf1.jsonl"
+    },
+    {
+      "slide": "slide_14",
+      "worker_id": "/root/slide14",
+      "worker_thread_id": "01a10b94-bc34-74f3-9cc4-7b8035b9a0d2",
+      "prompt_path": "prompts/slide_14.json",
+      "inheritance_method": "fork_turns=all; model and effort overrides omitted",
+      "actual_last_context": {
+        "timestamp": "2026-10-05T10:21:02.342Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium"
+      },
+      "contexts": [
+        {
+          "timestamp": "2026-10-05T10:20:59.349Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:59.349Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:59.349Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:59.349Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:20:59.349Z",
+          "model": "gpt-6.1-sol",
+          "effort": "medium"
+        },
+        {
+          "timestamp": "2026-10-05T10:21:02.342Z",
+          "model": "gpt-5.6-luna",
+          "effort": "medium"
+        }
+      ],
+      "evidence": "/Users/khairuladib/.codex/sessions/2026/10/05/rollout-2026-10-05T18-20-59-01a10b94-bc34-74f3-9cc4-7b8035b9a0d2.jsonl"
+    }
+  ]
+}

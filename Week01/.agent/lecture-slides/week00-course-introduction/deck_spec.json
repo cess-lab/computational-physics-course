@@ -1,0 +1,493 @@
+{
+  "deck_name": "week00-course-introduction",
+  "language": "English",
+  "goal": "Orient Year-2 PHY4605 students to motivation, course journey, materials, workflow and assessment.",
+  "deck_context": {
+    "core_claim": "Physical reasoning and independent checks turn computation into defensible evidence.",
+    "source_summary": "Current PHY4605 blueprints and approved 14-slide Week 0 outline. MATLAB prerequisite retention is uncertain; foundations are repaired in Weeks 1–2. Supplied scaffolds support Core learning. Weeks 13–14 are capstone presentations, defence and handoff.",
+    "canonical_terms": [
+      "physical model",
+      "variables and units",
+      "algorithm",
+      "validation",
+      "physical interpretation",
+      "reproducibility"
+    ],
+    "assessment_weights": {
+      "Test 1": 10,
+      "Test 2": 10,
+      "Final examination": 40,
+      "Practical portfolio": 15,
+      "Individual lab test": 10,
+      "Capstone investigation": 15
+    }
+  },
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 6,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "generate",
+    "repair_mode": "edit for a scientific correction, same built-in backend",
+    "model_config": "built-in default, tool does not expose model or quality parameters",
+    "size": "16:9 requested; approved output 1672x941",
+    "prompt_source": "qa/sample-prompt.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+    "input_context_preparation": "view_image inspected local style reference, then referenced_image_paths attached it to built-in tool. Workers inspect approved sample and attach it as style-only.",
+    "handoff_rule": "Use same built-in tool generation path with style input; repair using same backend if needed. Stop if unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware — Muted Academic Blue + Sage",
+    "visual_direction": "clear, friendly, modern educational slide system with strong hierarchy, approachable labelled diagrams, moderate information density, and restrained semantic colour",
+    "color_palette": "warm white or cool-gray canvas; deep navy #243B53 for titles and structure; dusty blue #6E8FB3 for model content; quiet sage #7AA69B for expected or validated states; muted ochre #C7A35A for occasional prompts or warnings only; subdued coral #BF7A70 only for a real defect or failure",
+    "typography": "projection-readable sans-serif; bold for main titles only; semibold for short headings and key labels; regular for explanatory copy, bullets, sublabels, and notes; italic mathematics where useful; monospaced regular MATLAB code with only the discussed operator emphasised",
+    "texture_and_finish": "flat clean educational finish with pale fills, thin lines, direct labels, simple diagrams, generous alignment, no dark-filled blocks, no gradients, no decorative clutter, and no repeated oversized prompt cards",
+    "prompt_rule": "Ochre/yellow is an optional sparse accent. Use a compact inline prompt, small marker, or no prompt depending on the teaching point; never make a large prompt box a deck-wide requirement.",
+    "deck_consistency": "keep the same palette, typography hierarchy, icon language, spacing, and approachable scientific tone across all slides while varying composition by teaching role"
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+    "role": "approved sample, style only",
+    "fidelity": "Match palette, typographic hierarchy, open canvas, scientific matte blue objects; vary composition and replace content."
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Computational Methods in Physics",
+      "role": "cover",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "PHY4605",
+        "Dr. Muhammad Khairul Adib",
+        "Turn a physical question into a computation you can explain and trust."
+      ],
+      "local_context": "Sparse title left, single conceptual physics-to-evidence illustration right; short labelled chain Model → Compute → Check. Course code below title, lecturer at lower left. Blue ball/vertical-motion snapshots, small array, sage checked result. No code or quantitative graph.",
+      "layout": {
+        "composition": "Sparse title left, single conceptual physics-to-evidence illustration right; short labelled chain Model → Compute → Check. Course code below title, lecturer at lower left. Blue ball/vertical-motion snapshots, small array, sage checked result. No code or quantitative graph.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Sparse title left, single conceptual physics-to-evidence illustration right; short labelled chain Model → Compute → Check. Course code below title, lecturer at lower left. Blue ball/vertical-motion snapshots, small array, sage checked result. No code or quantitative graph."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 2,
+      "title": "Why compute in physics?",
+      "role": "motivation",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Explore a parameter change",
+        "Approximate a difficult solution",
+        "Investigate how a system behaves"
+      ],
+      "local_context": "Three approachable labelled physical examples: Motion: change launch speed; Circuit: solve coupled currents; Cooling: follow temperature over time. One simple illustration for each, no equations or graphs with invented values. Headings explain motivation, short example labels attach to illustration.",
+      "layout": {
+        "composition": "Three approachable labelled physical examples: Motion: change launch speed; Circuit: solve coupled currents; Cooling: follow temperature over time. One simple illustration for each, no equations or graphs with invented values. Headings explain motivation, short example labels attach to illustration.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Three approachable labelled physical examples: Motion: change launch speed; Circuit: solve coupled currents; Cooling: follow temperature over time. One simple illustration for each, no equations or graphs with invented values. Headings explain motivation, short example labels attach to illustration."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 3,
+      "title": "A result needs a physical check",
+      "role": "sample",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Predict",
+        "Compute",
+        "Check"
+      ],
+      "local_context": "Reuse approved sample unchanged.",
+      "layout": {
+        "composition": "Reuse approved sample unchanged.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Reuse approved sample unchanged."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": true
+    },
+    {
+      "number": 4,
+      "title": "What you will learn to do",
+      "role": "outcomes",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Identify the model and units",
+        "Plan an algorithm",
+        "Read, complete or modify code",
+        "Validate and explain the result"
+      ],
+      "local_context": "Four balanced quadrants, each with small functional illustration and one concise sentence. Model/units: labelled physical variable with m; algorithm: short flow; code: code lines as conceptual placeholder without invented syntax; validation: check beside output. Footer: Start with supplied scaffolds. Build confidence through practice.",
+      "layout": {
+        "composition": "Four balanced quadrants, each with small functional illustration and one concise sentence. Model/units: labelled physical variable with m; algorithm: short flow; code: code lines as conceptual placeholder without invented syntax; validation: check beside output. Footer: Start with supplied scaffolds. Build confidence through practice.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Four balanced quadrants, each with small functional illustration and one concise sentence. Model/units: labelled physical variable with m; algorithm: short flow; code: code lines as conceptual placeholder without invented syntax; validation: check beside output. Footer: Start with supplied scaffolds. Build confidence through practice."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 5,
+      "title": "How we build a trustworthy computation",
+      "role": "reasoning chain",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Define: Physical model • Scale and units",
+        "Implement: Discretisation • Algorithm • Code",
+        "Evaluate: Error and uncertainty • Validation • Physical interpretation"
+      ],
+      "local_context": "Three broad horizontal bands connected top to bottom. Each band has its heading and individual readable stages connected left-to-right. Preserve all eight stages and their order. No extra explanatory paragraphs, no arrows skipping steps. Small return arrow from evaluation to model suggests refinement.",
+      "layout": {
+        "composition": "Three broad horizontal bands connected top to bottom. Each band has its heading and individual readable stages connected left-to-right. Preserve all eight stages and their order. No extra explanatory paragraphs, no arrows skipping steps. Small return arrow from evaluation to model suggests refinement.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Three broad horizontal bands connected top to bottom. Each band has its heading and individual readable stages connected left-to-right. Preserve all eight stages and their order. No extra explanatory paragraphs, no arrows skipping steps. Small return arrow from evaluation to model suggests refinement."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 6,
+      "title": "Your journey: build the foundations",
+      "role": "timeline",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Week 1 — Arrays and plots",
+        "Week 2 — Algorithms and debugging",
+        "Week 3 — Linear systems",
+        "Week 4 — Parameter sweeps"
+      ],
+      "local_context": "Four spacious sequential milestones with action labels Represent, Trace, Solve, Compare. Small physical model icons and one short example label each: vertical motion, algorithm flow, two-loop circuit, spring extension. No circuit quantitative claims; no eigenproblem. Footer: Familiar physics. Supplied code. One check at a time.",
+      "layout": {
+        "composition": "Four spacious sequential milestones with action labels Represent, Trace, Solve, Compare. Small physical model icons and one short example label each: vertical motion, algorithm flow, two-loop circuit, spring extension. No circuit quantitative claims; no eigenproblem. Footer: Familiar physics. Supplied code. One check at a time.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Four spacious sequential milestones with action labels Represent, Trace, Solve, Compare. Small physical model icons and one short example label each: vertical motion, algorithm flow, two-loop circuit, spring extension. No circuit quantitative claims; no eigenproblem. Footer: Familiar physics. Supplied code. One check at a time."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 7,
+      "title": "Your journey: learn numerical methods",
+      "role": "timeline",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Locate — Week 5: Root finding",
+        "Estimate — Week 6: Numerical differentiation",
+        "Accumulate — Week 7: Numerical integration",
+        "Evolve — Week 8: ODE simulation"
+      ],
+      "local_context": "Four aligned milestones continuing foundation roadmap. Short descriptions: Locate a physical solution; Estimate a rate; Accumulate a quantity; Evolve a state. Use conceptual axes only where clearly labelled Conceptual; prefer non-quantitative small diagrams root crossing, tangent, trapezoid area, sequential state boxes. Do not invent numeric plots. Footer: Compare with a known or supplied reference.",
+      "layout": {
+        "composition": "Use slide 6 layout: pale numbered circles with action headings; bold week below, regular topic, scientific diagram, concise caption, thin footer rule and bold navy/sage takeaway. Three columns for slide 8; four for slide 7.",
+        "reference": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_06.png"
+      },
+      "visual_elements": {
+        "main_visual": "Four aligned milestones continuing foundation roadmap. Short descriptions: Locate a physical solution; Estimate a rate; Accumulate a quantity; Evolve a state. Use conceptual axes only where clearly labelled Conceptual; prefer non-quantitative small diagrams root crossing, tangent, trapezoid area, sequential state boxes. Do not invent numeric plots. Footer: Compare with a known or supplied reference."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false,
+      "revision_brief": {
+        "headings": [
+          "Locate",
+          "Estimate",
+          "Accumulate",
+          "Evolve"
+        ],
+        "weeks": [
+          "Week 5",
+          "Week 6",
+          "Week 7",
+          "Week 8"
+        ],
+        "topics": [
+          "Root finding",
+          "Numerical differentiation",
+          "Numerical integration",
+          "ODE simulation"
+        ],
+        "captions": [
+          "A physical solution",
+          "A physical rate",
+          "An accumulated quantity",
+          "A changing state"
+        ],
+        "footer": "Known reference. Step-size check. Explain the result."
+      }
+    },
+    {
+      "number": 8,
+      "title": "Your journey: investigate and defend",
+      "role": "timeline",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Explore — Weeks 9–11: Data and uncertainty",
+        "Audit — Week 12: Method selection",
+        "Defend — Weeks 13–14: Computational investigation"
+      ],
+      "local_context": "Three connected phases with readable sublabels. Explore: Data fitting (Week 9), Monte Carlo sampling (Week 10), Sensitivity analysis (Week 11). Audit: Method selection; Capstone studio. Defend: Present; Explain; Reproduce and hand off. Footer: Week 14 continues presentations and defences; no new core topic. Spacious layout, avoid a 14-row table.",
+      "layout": {
+        "composition": "Use slide 6 layout: pale numbered circles with action headings; bold week below, regular topic, scientific diagram, concise caption, thin footer rule and bold navy/sage takeaway. Three columns for slide 8; four for slide 7.",
+        "reference": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_06.png"
+      },
+      "visual_elements": {
+        "main_visual": "Three connected phases with readable sublabels. Explore: Data fitting (Week 9), Monte Carlo sampling (Week 10), Sensitivity analysis (Week 11). Audit: Method selection; Capstone studio. Defend: Present; Explain; Reproduce and hand off. Footer: Week 14 continues presentations and defences; no new core topic. Spacious layout, avoid a 14-row table."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false,
+      "revision_brief": {
+        "headings": [
+          "Explore",
+          "Audit",
+          "Defend"
+        ],
+        "weeks": [
+          "Weeks 9–11",
+          "Week 12",
+          "Weeks 13–14"
+        ],
+        "topics": [
+          "Data and uncertainty",
+          "Method selection",
+          "Computational investigation"
+        ],
+        "captions": [
+          "Data fitting (9) • Monte Carlo (10); Sensitivity analysis (11)",
+          "Capstone studio",
+          "Present and explain; Reproduce and hand off"
+        ],
+        "footer": "Present. Defend. Reproduce and hand off.",
+        "continuation": "Week 14 continues this phase; no new core topic."
+      }
+    },
+    {
+      "number": 9,
+      "title": "Use each course material for a purpose",
+      "role": "materials",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Lecture slides — Follow the main ideas",
+        "Learning notes — Revisit explanations and examples",
+        "MATLAB Live Scripts — Run, modify and check the model",
+        "Practical challenges — Investigate and record evidence"
+      ],
+      "local_context": "Four horizontal rows with medium meaningful document illustrations at left and bold material label plus concise purpose at right. Distinguish .pptx, .pdf, .m and practical evidence; avoid browser screenshots, decorative thumbnails, long file names. Footer: Start with the materials in the relevant week.",
+      "layout": {
+        "composition": "Four horizontal rows with medium meaningful document illustrations at left and bold material label plus concise purpose at right. Distinguish .pptx, .pdf, .m and practical evidence; avoid browser screenshots, decorative thumbnails, long file names. Footer: Start with the materials in the relevant week.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Four horizontal rows with medium meaningful document illustrations at left and bold material label plus concise purpose at right. Distinguish .pptx, .pdf, .m and practical evidence; avoid browser screenshots, decorative thumbnails, long file names. Footer: Start with the materials in the relevant week."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 10,
+      "title": "Where learning and submission happen",
+      "role": "platform roles",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Google Classroom — Materials, announcements, submissions and feedback",
+        "MATLAB — Run models and produce reproducible evidence",
+        "NotebookLM — Revise with course-grounded questions and hints"
+      ],
+      "local_context": "Classroom large left anchor as official course hub, MATLAB upper right execution workspace, NotebookLM lower right tutoring. Use simple labelled interface/functional icons rather than logos. Arrows labelled Access materials, Submit evidence, Revise reasoning as appropriate. Show NotebookLM as hints and questions; never imply official submission or automatic marks there.",
+      "layout": {
+        "composition": "Classroom large left anchor as official course hub, MATLAB upper right execution workspace, NotebookLM lower right tutoring. Use simple labelled interface/functional icons rather than logos. Arrows labelled Access materials, Submit evidence, Revise reasoning as appropriate. Show NotebookLM as hints and questions; never imply official submission or automatic marks there.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Classroom large left anchor as official course hub, MATLAB upper right execution workspace, NotebookLM lower right tutoring. Use simple labelled interface/functional icons rather than logos. Arrows labelled Access materials, Submit evidence, Revise reasoning as appropriate. Show NotebookLM as hints and questions; never imply official submission or automatic marks there."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 11,
+      "title": "Your weekly learning routine",
+      "role": "cycle",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Before — Read, predict and complete the diagnostic when released",
+        "During — Trace, modify and check",
+        "Practical — Investigate and record evidence",
+        "After — Submit, explain and reflect"
+      ],
+      "local_context": "Four-stage open cycle around short central label Model → Evidence. Each stage has readable action text and simple functional icon. No duration or timing agenda. Show progression without tiny labels. Rerun from a fresh MATLAB session as short note beside practical.",
+      "layout": {
+        "composition": "Four-stage open cycle around short central label Model → Evidence. Each stage has readable action text and simple functional icon. No duration or timing agenda. Show progression without tiny labels. Rerun from a fresh MATLAB session as short note beside practical.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Four-stage open cycle around short central label Model → Evidence. Each stage has readable action text and simple functional icon. No duration or timing agenda. Show progression without tiny labels. Rerun from a fresh MATLAB session as short note beside practical."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 12,
+      "title": "How your learning is assessed",
+      "role": "assessment comparison",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Test 1 — 10%",
+        "Test 2 — 10%",
+        "Final examination — 40%",
+        "Practical portfolio — 15%",
+        "Individual lab test — 10%",
+        "Capstone investigation — 15%"
+      ],
+      "local_context": "Two spacious columns, no pie chart. Left heading Written assessments, sublabel Open book • AI-free, three large percentage rows Test 1 10%, Test 2 10%, Final examination 40%. Right heading Computational investigations, sublabel AI allowed and declared, three large percentage rows Practical portfolio 15%, Individual lab test 10%, Capstone investigation 15%. Footer: Show the model, reasoning, checks and physical meaning. Exactly these six percentages sum to 100, no dates or rubric table.",
+      "layout": {
+        "composition": "Two spacious columns, no pie chart. Left heading Written assessments, sublabel Open book • AI-free, three large percentage rows Test 1 10%, Test 2 10%, Final examination 40%. Right heading Computational investigations, sublabel AI allowed and declared, three large percentage rows Practical portfolio 15%, Individual lab test 10%, Capstone investigation 15%. Footer: Show the model, reasoning, checks and physical meaning. Exactly these six percentages sum to 100, no dates or rubric table.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Two spacious columns, no pie chart. Left heading Written assessments, sublabel Open book • AI-free, three large percentage rows Test 1 10%, Test 2 10%, Final examination 40%. Right heading Computational investigations, sublabel AI allowed and declared, three large percentage rows Practical portfolio 15%, Individual lab test 10%, Capstone investigation 15%. Footer: Show the model, reasoning, checks and physical meaning. Exactly these six percentages sum to 100, no dates or rubric table."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 13,
+      "title": "Use AI and take responsibility for the result",
+      "role": "practical process",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Investigate — Groups of 2–3; ten micro-challenges",
+        "Verify — Check independently; rerun from a fresh session",
+        "Submit — Record AI decisions and lock the evidence",
+        "Explain — A question and one eligible member are drawn after submission"
+      ],
+      "local_context": "Four steps in a two-by-two connected process, with readable one-sentence details. Functional icons: group/model, check/run, evidence packet, student explaining. Small bottom line: Every member must understand the model, code and result. Do not imply all members have a defence each week or require complete AI chat histories. AI-free restriction applies to written tests/final, not this practical.",
+      "layout": {
+        "composition": "Four steps in a two-by-two connected process, with readable one-sentence details. Functional icons: group/model, check/run, evidence packet, student explaining. Small bottom line: Every member must understand the model, code and result. Do not imply all members have a defence each week or require complete AI chat histories. AI-free restriction applies to written tests/final, not this practical.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Four steps in a two-by-two connected process, with readable one-sentence details. Functional icons: group/model, check/run, evidence packet, student explaining. Small bottom line: Every member must understand the model, code and result. Do not imply all members have a defence each week or require complete AI chat histories. AI-free restriction applies to written tests/final, not this practical."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    },
+    {
+      "number": 14,
+      "title": "Start with a prediction",
+      "role": "next steps",
+      "intent": "Introduce one course expectation clearly at low density.",
+      "key_points": [
+        "Complete MATLAB Onramp",
+        "Check access to Google Classroom and MATLAB",
+        "Open the Week 1 materials"
+      ],
+      "local_context": "Left third short three-item checklist. Right two-thirds vertical-motion sketch with separate start, peak, return snapshots of a ball, no curved horizontal trajectory. Large question: What should the height–time graph of an upward-thrown ball look like? Small assumption line: Upward positive; no air resistance. No answer graph, no formula; leave student to predict. Reuse blue balls and sage checks from approved sample.",
+      "layout": {
+        "composition": "Left third short three-item checklist. Right two-thirds vertical-motion sketch with separate start, peak, return snapshots of a ball, no curved horizontal trajectory. Large question: What should the height–time graph of an upward-thrown ball look like? Small assumption line: Upward positive; no air resistance. No answer graph, no formula; leave student to predict. Reuse blue balls and sage checks from approved sample.",
+        "variation_rule": "Choose page-specific composition; approved sample is style reference only."
+      },
+      "visual_elements": {
+        "main_visual": "Left third short three-item checklist. Right two-thirds vertical-motion sketch with separate start, peak, return snapshots of a ball, no curved horizontal trajectory. Large question: What should the height–time graph of an upward-thrown ball look like? Small assumption line: Upward positive; no air resistance. No answer graph, no formula; leave student to predict. Reuse blue balls and sage checks from approved sample."
+      },
+      "required_images": [],
+      "constraints": [
+        "All copy English and exact; large readable text, one learning object.",
+        "Open white 16:9 canvas, navy titles, blue objects, sage verified states. No outer border, no eyebrow, no slide number, no watermark.",
+        "No invented numerical graphs or equations. Label conceptual illustrations clearly when needed.",
+        "Regular body text; bold title, semibold labels only. No dense paragraphs."
+      ],
+      "sample_approved": false
+    }
+  ]
+}

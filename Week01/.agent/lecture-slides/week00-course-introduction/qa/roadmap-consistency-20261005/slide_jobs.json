@@ -1,0 +1,101 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "roadmap-consistency-20261005",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "edit",
+    "repair_mode": "edit for a scientific correction, same built-in backend",
+    "model_config": "built-in default, tool does not expose model or quality parameters",
+    "size": "16:9 requested; approved output 1672x941",
+    "prompt_source": "qa/sample-prompt.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_03.png",
+    "input_context_preparation": "view_image inspected local style reference, then referenced_image_paths attached it to built-in tool. Workers inspect approved sample and attach it as style-only.",
+    "handoff_rule": "Use same built-in tool generation path with style input; repair using same backend if needed. Stop if unavailable."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Your journey: learn numerical methods",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_06.png",
+          "role": "user-selected layout, visual and writing reference",
+          "fidelity": "Match hierarchy and composition closely."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "ab5b3da0257a7b584037848fca3852b82b6dc63411553c3464612dc295f36ad2",
+        "dispatched_at": "2026-10-05T11:20:23Z"
+      },
+      "result": {
+        "agent_id": "/root",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b54-9499-7721-97ef-f675679709ad/exec-43267ab6-b603-48de-b9c5-5345aaa1bdf1.png",
+        "selected_source_sha256": "e6f2e7ff9e010edf114f3ee9d7065b69857cd53a53b9a32e046e0d0c84098903",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "e6f2e7ff9e010edf114f3ee9d7065b69857cd53a53b9a32e046e0d0c84098903",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Coordinator full-size QA: slide 6 layout hierarchy, accurate weeks/topics, readable copy and coherent navy-blue-sage roadmap style.",
+        "recorded_at": "2026-10-05T11:20:24Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Your journey: investigate and defend",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week01/.agent/lecture-slides/week00-course-introduction/origin_image/slide_06.png",
+          "role": "user-selected layout, visual and writing reference",
+          "fidelity": "Match hierarchy and composition closely."
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "b3c4f104f74ff52a17a79a1368fe56fe3ad48f8ef73a4c120a80d1c4aa8b1fd0",
+        "dispatched_at": "2026-10-05T11:20:24Z"
+      },
+      "result": {
+        "agent_id": "/root",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a10b54-9499-7721-97ef-f675679709ad/exec-7abb71e7-bb6f-4725-9b2c-1834ecd59ef8.png",
+        "selected_source_sha256": "c51582182402acb166514412d6c11c58952e8c1ee6e65986f7977755569468a7",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "c51582182402acb166514412d6c11c58952e8c1ee6e65986f7977755569468a7",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen__imagegen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Coordinator full-size QA: slide 6 layout hierarchy, accurate weeks/topics, readable copy and coherent navy-blue-sage roadmap style.",
+        "recorded_at": "2026-10-05T11:20:24Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-10-05T11:20:24Z"
+}
