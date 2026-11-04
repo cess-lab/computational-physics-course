@@ -36,3 +36,21 @@ codegen/
 octave-workspace
 
 # End of https://www.toptal.com/developers/gitignore/api/matlab
+
+# Assessment papers, practice sets, answers, and their source/build assets
+/Assessments/Student-facing/Test_*
+/Assessments/Student-facing/Final_Examination_*
+/Assessments/Student-facing/Individual_Lab_Test_*
+/Assessments/Instructor/Test_*
+/Assessments/Instructor/Final_Examination_*
+/Assessments/Instructor/Individual_Lab_Test_*
+/Assessments/[Pp]ractice*/
+/Assessments/[Pp]ractise*/
+/Assessments/.agent/test-*/
+/Assessments/.agent/sample/
+
+# Paper copies in any folder and format (PDF, Markdown, TeX, ZIP, etc.)
+*_[Tt]est_[0-9]*
+*_[Qq]uestion_[Pp]aper.*
+*_[Mm]arking_[Ss]cheme.*
+*_[Ee]xamination_[Aa]nswer_[Kk]ey.*
