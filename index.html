@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore the bisection method one step at a time, with an interactive residual graph and a projectile-range example.">
+  <title>Bisection, step by step · PHY4605</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a href="./">PHY4605 <span>Computational Methods in Physics</span></a><span>Interactive laboratory</span></header>
+<main>
+  <section class="intro">
+    <h1>Bisection,<br> <em>step by step.</em></h1>
+    <div><p>Find a root by keeping the half that still brackets it.</p><p class="muted">Move through each decision, or use the iteration controls to see the interval shrink.</p></div>
+  </section>
+  <section class="lab" aria-label="Bisection demonstration">
+    <div class="plot-panel">
+      <div class="plot-heading"><h2 id="plot-title">Projectile-range residual</h2><label class="zoom"><input id="zoom" type="checkbox" checked> Follow interval</label></div>
+      <div id="chart-wrap"><svg id="chart" role="img" aria-labelledby="chart-title chart-description"></svg></div>
+      <div class="legend"><span><i class="curve-key"></i>Residual curve</span><span><i class="keep-key"></i>Current / retained interval</span><span><i class="discard-key"></i>Discarded interval</span><span>◆ Midpoint</span></div>
+      <div class="point-values" aria-label="Values at bracket endpoints and midpoint">
+        <div><span>Left endpoint, a</span><strong id="left-value"></strong><small id="left-residual"></small></div>
+        <div><span>Midpoint, m</span><strong id="mid-value"></strong><small id="mid-residual"></small></div>
+        <div><span>Right endpoint, b</span><strong id="right-value"></strong><small id="right-residual"></small></div>
+      </div>
+      <div class="iteration-controls">
+        <label for="iteration">Iteration <span id="iteration-count"></span></label>
+        <div class="slider-row"><input id="iteration" type="range" min="1" value="1" aria-label="Iteration slider"><input id="iteration-number" type="number" min="1" value="1" aria-label="Iteration number"></div>
+      </div>
+    </div>
+    <aside class="reasoning">
+      <label for="example">Example</label>
+      <select id="example"><option value="projectile">Projectile range</option><option value="square">Square root of two</option></select>
+      <p id="model-description" class="model-description"></p>
+      <div id="equation" class="equation"></div>
+      <nav class="phases" aria-label="Stages within an iteration">
+        <button type="button" data-phase="0">1 <span>Bracket</span></button>
+        <button type="button" data-phase="1">2 <span>Midpoint</span></button>
+        <button type="button" data-phase="2">3 <span>Keep half</span></button>
+      </nav>
+      <div class="decision" aria-live="polite" aria-atomic="true"><h2 id="stage-title"></h2><p id="stage-explanation"></p><div id="calculation" class="calculation"></div></div>
+      <div class="navigation"><button id="previous" type="button">← Back</button><button id="next" class="primary" type="button">Next step →</button></div>
+      <div class="width-summary"><span id="width-label">Current bracket width</span><strong id="width-value"></strong><div class="width-track"><div id="width-bar"></div></div><small id="width-fraction"></small></div>
+    </aside>
+  </section>
+  <section class="explanation" aria-label="How bisection works">
+    <div><h2>Why does it work?</h2><p>For a function that is <strong>continuous</strong> on [a, b], opposite signs at the endpoints guarantee at least one root between them. Each update keeps this sign change and halves the interval.</p><p>If the midpoint is exactly a root, stop immediately. Otherwise, repeat until the chosen tolerance is met.</p></div>
+    <div><h2>What should you check?</h2><p id="validation-description"></p><p class="muted">A small residual checks the target equation. It is different from an error bound on the root: the midpoint of a bracket has an error no greater than half that bracket’s width.</p></div>
+  </section>
+</main>
+<footer>PHY4605 · Root finding <span>Model → algorithm → validation → interpretation</span></footer>
+<noscript>This demonstration needs JavaScript enabled to update the graph and iteration controls.</noscript>
+</body>
+</html>
