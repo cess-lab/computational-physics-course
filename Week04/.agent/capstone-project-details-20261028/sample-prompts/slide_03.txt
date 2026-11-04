@@ -1,0 +1,34 @@
+Generate ONE complete 16:9 landscape high-resolution English educational slide for PHY4605 Year-2 capstone project 03. Match Teaching Courseware illustrated scientific editorial: open white/light neutral canvas, strong navy title, muted blue/sage accents with occasional soft ochre, clean readable sans-serif typography regular body text, correct scientific diagram with soft depth only in illustrative component objects. No outer frame, ornaments, watermark, logo or page numbers. Show project identifier as title. Moderate readable density. Title top; main learning object a large unambiguous circuit diagram in upper left/centre; temperature/model decision cue on upper right; five concise readable content groups below. Avoid full equations, quantitative charts and code. All text is English and must render exactly.
+
+TITLE:
+"Project 03"
+"RC Charging with Leakage and Temperature-Dependent Components"
+
+Exact text:
+"Scenario + objective"
+"A capacitor or sensor node charges while leakage and temperature alter its response. Investigate the change from an ideal RC baseline."
+
+"Physical reasoning"
+"Source current splits into capacitor current and leakage current. Temperature may change R, C or leakage; use supported dependencies."
+
+"Information needed"
+"Supply and initial voltage (V); R and leakage resistance (Ω); C (F); temperature range (°C or K); component-temperature information."
+
+"Scope decisions"
+"Which temperature dependence matters? Is one leakage path enough? Fixed-temperature cases are a useful start; self-heating is optional."
+
+"Possible evidence"
+"Compare voltage histories, charging time and final voltage. Use a no-leakage reference and check long-time behaviour."
+
+Footer:
+"Explain the effect on the sensor node and justify important omissions."
+
+SCIENTIFIC DIAGRAM STRICT TOPOLOGY:
+Draw one correct simple circuit, no ambiguous crossings. An ideal DC voltage source circle with + at top and − at bottom on left; bottom source terminal connected by a continuous horizontal return wire to a shared lower rail. Upper source terminal connects through a series resistor R to an upper junction marked V_C. From that upper junction, TWO separate vertical parallel branches connect down to exactly the same shared lower rail: a capacitor C branch at centre and leakage resistor R_leak at right. Capacitor symbol must be two equal parallel horizontal plates with a gap; no shorting wire through it. Leakage resistor must be a clear resistor symbol. Both branch lower terminals connect to the return rail and source negative terminal. Show junction dots where wires branch. Source label V_s; resistor label R; capacitor label C; leakage label R_leak; node label V_C. Source-current arrow I_s directed right along the wire from R into the junction; split-current arrows I_C downward in capacitor branch above the capacitor and I_leak downward in leakage branch above resistor. Only these labels, no unnecessary ground nodes or duplicate components. With a positive supply and initial uncharged capacitor, arrow directions denote the charging convention.
+
+Right of circuit put a restrained temperature icon/cue, not connected electrically, with exact labels:
+"Temperature cases"
+"Use supplied or justified changes in R, C or leakage."
+"Do not assume every parameter changes in the same direction."
+
+Make circuit the main teaching visual with sufficient negative space. Do not invent numerical values or results; do not draw a voltage curve, use the circuit and temperature cue only. Use five compact supporting text groups with strong headings, balanced whitespace and comfortably readable typography. Maintain professional mature academic teaching style.

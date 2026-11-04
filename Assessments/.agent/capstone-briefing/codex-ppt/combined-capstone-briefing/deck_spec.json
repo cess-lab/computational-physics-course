@@ -1,0 +1,140 @@
+{
+  "deck_name": "PHY4605_Capstone_Briefing",
+  "language": "English",
+  "goal": "Brief Year-2 physics students on an assigned capstone investigation: understand the scenario, build a defensible simulation, produce evidence, and explain and hand off the result.",
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 6,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved current-project slide 01 direction",
+    "input_context_preparation": "parent generated and visually inspected the approved current-project sample; no strict source raster assets are required",
+    "approved_sample_path": "origin_image/slide_01.png",
+    "handoff_rule": "Use built-in image_gen generate mode and the approved current-project sample as a style-only reference; do not reuse previous deck assets or wording."
+  },
+  "style": {
+    "name": "Teaching Courseware - PHY4605 illustrated scientific briefing",
+    "visual_direction": "Semi-realistic illustrated scientific editorial: clean outlines, soft shading, gentle depth and restrained perspective/material cues; recognisably illustrated rather than photographic or glossy photorealistic.",
+    "color_palette": "white and light neutral canvas, navy structure, muted blue, teal, sage, ochre and restrained coral for warnings or boundary questions",
+    "typography": "large bold readable sans-serif titles, regular sans-serif body text, short labels, clean icon headings, no decorative script",
+    "texture_and_finish": "polished teaching visual with open white space, soft illustrated scenes, clean cards and purposeful diagrams",
+    "deck_consistency": "keep the approved slide 01-02 visual language, palette, line quality, icon language and moderate density; vary composition by slide role; no slide numbers, logo, watermark or timing labels"
+  },
+  "approved_style_reference": {
+    "path": "origin_image/slide_01.png",
+    "role": "approved current-project style reference",
+    "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+  },
+  "deck_context": {
+    "source_summary": "Each group receives one assigned physical investigation. The group must define a defensible scope, identify assumptions and units, simulate the process, produce evidence, interpret limitations, and hand off a reproducible result.",
+    "core_claim": "A strong investigation is relevant, testable and defensible; more terms or more code do not automatically make a better simulation.",
+    "canonical_terms": ["assigned brief", "physical scenario", "model scope", "assumption", "variables and units", "simulation", "evidence", "validation", "limitation", "reproducible handoff", "AI decision record"],
+    "assignment_boundary": "Groups are assigned one project. The deck must not imply that students choose their project or that one common solution route is prescribed.",
+    "brief_detail_contract": "The twelve briefs communicate context/objective, possible realism dimensions, likely information categories and boundary questions. These are not a compulsory feature checklist and do not prescribe equations, methods, code structure, graphs, parameter changes or validation pairs.",
+    "assessment_boundary": "The deck shows one capstone rubric whose criterion weights total 100%. The lecturer explains separately how the completed rubric contributes to the course mark."
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "PHY4605 Capstone Investigation",
+      "role": "cover",
+      "sample_approved": true,
+      "intent": "Open with the assigned-investigation contract and the four-stage path from brief to handoff.",
+      "key_points": ["Each group is assigned one project.", "Understand the physical scenario, build a defensible simulation, and support the conclusion with evidence.", "Assigned brief → physical model → simulation and evidence → defence and handoff."]
+    },
+    {
+      "number": 2,
+      "title": "Your Assigned Investigation",
+      "role": "contract",
+      "sample_approved": true,
+      "intent": "Make the four student responsibilities explicit without implying project choice.",
+      "key_points": ["Understand the assigned scenario and boundary.", "Simulate a defensible model with variables and units.", "Show evidence through checks, interpretation and limitations.", "Defend the reasoning and hand off work another student can rerun."]
+    },
+    {
+      "number": 3,
+      "title": "The Brief Sets the Starting Boundary",
+      "role": "comparison",
+      "intent": "Separate what the assigned brief supplies from what the group must establish.",
+      "key_points": ["The assigned brief supplies the scenario, broad objective, starting information and context.", "The group establishes assumptions, variables, units, model scope, computational route and evidence.", "The assigned brief starts the investigation; the group makes the scope defensible."]
+    },
+    {
+      "number": 4,
+      "title": "Realism Means Relevance and Evidence",
+      "role": "concept explanation",
+      "intent": "Show a disciplined progression from baseline to relevant effects, checks and a defendable scope.",
+      "key_points": ["Start with a transparent baseline.", "Add effects that materially change the result and can be supported or tested.", "Check behaviour and defend important omissions.", "More terms do not automatically mean a better simulation."]
+    },
+    {
+      "number": 5,
+      "title": "Twelve Assigned Physical Investigations",
+      "role": "assignment overview",
+      "intent": "Map the twelve assigned briefs into six paired physical families.",
+      "key_points": ["Projectile 01–02: wind, drag and terrain.", "Circuit 03–04: leakage, temperature and loading.", "Radiation 05–06: background, dead time and decay mixtures.", "Thermal 07–08: radiation, ambient change and internal generation.", "Monte Carlo Physics 09–10: spin lattices and field estimation.", "Oscillatory 11–12: damping, finite-angle motion and energy.", "Each group is assigned one project; the same evidence standard applies to every group."]
+    },
+    {
+      "number": 6,
+      "title": "Briefs 01–02 | Projectile Motion",
+      "role": "paired brief detail",
+      "intent": "Present both projectile briefs with dense, category-level guidance and model-boundary questions.",
+      "key_points": ["Brief 01: crosswind delivery with quadratic drag; Brief 02: elevated-terrain launch under wind shear.", "For each: context and objective, possible realism dimensions, likely information and boundary questions.", "Examples include wind, drag, terrain, release variability, aerodynamic properties and evidence-supported scope decisions.", "Possible realism dimensions are examples, not a compulsory checklist."]
+    },
+    {
+      "number": 7,
+      "title": "Briefs 03–04 | Circuit Behaviour",
+      "role": "paired brief detail",
+      "intent": "Present the two circuit briefs using the approved dense four-section structure.",
+      "key_points": ["Brief 03: RC charging with leakage and temperature-dependent components.", "Brief 04: RC sensor circuit with internal source resistance and time-varying load.", "Each brief covers context/objective, possible realism dimensions, likely information and boundary questions.", "Focus on physically material non-ideal behaviour without prescribing one solution path."]
+    },
+    {
+      "number": 8,
+      "title": "Briefs 05–06 | Radiation and Detection",
+      "role": "paired brief detail",
+      "intent": "Present detector effects and mixed-source behaviour as two bounded investigations.",
+      "key_points": ["Brief 05: radioactive decay with background radiation and detector dead time.", "Brief 06: two-isotope decay mixture with efficiency and counting noise.", "Each brief covers context/objective, possible realism dimensions, likely information and boundary questions.", "Keep inference tied to the information and evidence actually available."]
+    },
+    {
+      "number": 9,
+      "title": "Briefs 07–08 | Thermal Behaviour",
+      "role": "paired brief detail",
+      "intent": "Present changing surroundings and internal heating as bounded thermal investigations.",
+      "key_points": ["Brief 07: cooling with thermal radiation and changing ambient temperature.", "Brief 08: cooling of a heated object with internal heat generation.", "Each brief covers context/objective, possible realism dimensions, likely information and boundary questions.", "Add heat-transfer effects only when they materially affect the objective and can be checked."]
+    },
+    {
+      "number": 10,
+      "title": "Briefs 09–10 | Monte Carlo Physics",
+      "role": "paired brief detail",
+      "intent": "Present two capstone-level Monte Carlo investigations with clear physical meaning, bounded realism and evidence requirements.",
+      "key_points": ["Brief 09: a bounded 2D Ising ferromagnet; investigate domains, magnetisation and energy as temperature changes.", "Brief 10: Monte Carlo estimation of the electric field of an irregular charged body with non-uniform charge density.", "Each brief covers context/objective, possible realism dimensions, likely information and boundary questions.", "Use a supplied or AI-assisted scaffold as needed, but make every random trial physically meaningful and defend reproducibility, spread and convergence."]
+    },
+    {
+      "number": 11,
+      "title": "Briefs 11–12 | Oscillatory Motion",
+      "role": "paired brief detail",
+      "intent": "Present the two pure-physics additions with a meaningful realism challenge beyond ideal textbook motion.",
+      "key_points": ["Brief 11: damped mass–spring response; examine dynamic behaviour, energy loss and a defensible damping scope.", "Brief 12: finite-angle pendulum motion; examine the limits of the small-angle approximation, pivot effects and energy behaviour.", "Use one main realism feature as the Core; keep other effects as boundary questions or Stretch.", "Evidence should show trends, checks and limits of the chosen model."]
+    },
+    {
+      "number": 12,
+      "title": "AI Can Assist — Your Group Must Verify",
+      "role": "responsible AI",
+      "intent": "Set a clear boundary: AI may help produce work, but the group owns understanding, execution, evidence and defence.",
+      "key_points": ["AI may help interpret the scenario, draft or improve MATLAB code, debug and suggest tests.", "The group must inspect, run, modify where needed, and check units, physical behaviour and evidence.", "Record what was accepted, changed or rejected and why.", "AI output is not evidence until the group runs it, checks it and defends it."]
+    },
+    {
+      "number": 13,
+      "title": "Capstone Rubric | 100%",
+      "role": "assessment rubric",
+      "intent": "Show one complete, student-readable rubric table with seven criteria and four performance levels. The row weights total 100% within the rubric; do not show a second grading panel or milestone weights.",
+      "key_points": ["One rubric contains seven criteria whose weights total 100%.", "Each criterion has Excellent, Good, Satisfactory, and Weak descriptors.", "Presentation and communication is an explicit criterion.", "The lecturer explains separately how the capstone rubric contributes to the course."]
+    },
+    {
+      "number": 14,
+      "title": "Present, Defend and Hand Off",
+      "role": "closing action",
+      "intent": "Close with the complete evidence chain and the final reproducibility expectation.",
+      "key_points": ["Show the assigned scenario and objective, model and realism decision, simulation and principal output.", "Show two checks, interpretation and limitation.", "Every group member must be ready to trace the work and answer a follow-up.", "Hand off a clean, reproducible package that can run from a fresh MATLAB session."]
+    }
+  ]
+}

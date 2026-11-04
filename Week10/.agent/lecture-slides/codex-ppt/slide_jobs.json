@@ -310,6 +310,11 @@
           "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
           "role": "approved Week 10 sample slide style reference",
           "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/matlab/week10_random_walk_histogram.png",
+          "role": "strict numerical MATLAB reference for the localized repair",
+          "fidelity": "preserve the source histogram's 0–900 frequency scale, central peak near 800, even-position bars, x-axis range, labels, and bell-shaped relationships"
         }
       ],
       "requires_context_images": true,
@@ -318,6 +323,18 @@
       "result": {
         "final_image": "origin_image/slide_08.png",
         "accepted_sample": true
+      },
+      "repair": {
+        "type": "parent-localized-built-in-imagegen-edit",
+        "backend_used": "built-in image tool",
+        "tool_name": "image_gen",
+        "mode": "edit",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a07bb8-4b27-7e02-9dc2-4fc947112b6a/exec-d7fc597c-07ea-4eb3-87e0-cf57ee7306aa.png",
+        "selected_source_sha256": "448107db5fe2c95c4603729f641ba9792cb81a283b7d884430371e1255a7cb1d",
+        "final_image_sha256": "448107db5fe2c95c4603729f641ba9792cb81a283b7d884430371e1255a7cb1d",
+        "strict_reference": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/matlab/week10_random_walk_histogram.png",
+        "dispatch_status": "not dispatched; parent-localized edit permitted for this localized repair",
+        "approval_status": "lecturer approval not independently evidenced"
       },
       "blocker": null
     },

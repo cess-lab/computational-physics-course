@@ -1,0 +1,27 @@
+Create ONE complete landscape 16:9 educational PowerPoint slide, high resolution, all English, for Year-2 PHY4605 capstone briefing. Scientific-educational infographic. Teaching Courseware visual system: open white/light-neutral canvas, navy headings, muted blue and sage accents, soft illustrated scientific editorial scene, clean dark outlines, restrained depth, professional readable sans-serif. No outer border, ornaments, logo, watermark or page number. Project identifier is allowed as title content. Moderate information density with readable regular-weight text; no tiny type. Compose a clear title at top, a large labelled scientific scene across upper/middle left, a small TOP VIEW inset, and five compact content groups arranged with a strong hierarchy. Give text and diagram sufficient space. Entire slide designed together, no photographic people.
+
+Exact title, two lines if necessary:
+"Project 01"
+"Projectile Delivery in Crosswind with Quadratic Drag"
+
+Exact content, all must be legible:
+"Scenario + objective"
+"A released package must reach a target region. Investigate how crosswind and air resistance change its flight and landing position."
+
+"Physical reasoning"
+"Gravity acts downward. Quadratic drag opposes velocity relative to the air. Crosswind can cause lateral drift."
+
+"Information needed"
+"Release position (m), velocity (m/s), mass (kg), wind vector (m/s), drag properties and target geometry. Separate supplied data from assumptions."
+
+"Scope decisions"
+"Is steady wind adequate? Is 3D motion needed? Can the package be treated as a point? Lift, spin and gusts are optional."
+
+"Possible evidence"
+"Compare trajectories and landing displacement across wind cases. Use a no-drag reference and a timestep check where appropriate."
+
+Bottom small but readable sentence:
+"Explain delivery accuracy and justify important omissions."
+
+Diagram specification: a clearly illustrative released package with a smooth airborne path toward a ground target, label "Release", "Gravity" downward from package, "Target region" at the landing area, "Conceptual illustration". Keep crosswind genuinely perpendicular to the nominal direction of travel, shown unambiguously in a separate TOP VIEW inset: horizontal dashed nominal path left-to-right to target, crosswind arrows bottom-to-top, a solid actual path bends gently above nominal path to a laterally offset landing point. Label inset "Top view", "Crosswind", "Nominal path", "Lateral drift". Actual landing may miss the target; avoid implying wind must always cause failure. No quantitative graph, numeric result or equation. Any drag arrow if used must oppose relative airflow velocity, but omit the drag vector rather than draw an ambiguous direction. Do not use a launcher/cannon; use a generic released delivery package. Visual should clarify the model and objective rather than decorate.
+

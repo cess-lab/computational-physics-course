@@ -1,0 +1,24 @@
+{
+  "student_facing_pptx": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/PHY4605_Capstone_Projects_Detailed.pptx",
+  "student_facing_pdf": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/PHY4605_Capstone_Projects_Detailed.pdf",
+  "hidden_project": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028",
+  "slides": 12,
+  "notes": 12,
+  "backend": "built-in image tool",
+  "coordinator_model": "gpt-6.1-sol",
+  "effort": "medium",
+  "inheritance": "fork_turns=all; no model or effort overrides",
+  "samples": "01 and 03 approved by user before full generation",
+  "states": "2 accepted samples; 10 recorded generated slides",
+  "parent_qa": "all 12 final images inspected full-size; PPTX image hashes and rendered PDF page comparisons verified",
+  "localized_repairs": [
+    5,
+    7,
+    9,
+    10,
+    11
+  ],
+  "predecessor_archive": "none; new companion deck, original briefing preserved",
+  "limitations": "Image-based slides; illustrations conceptual, not computed results.",
+  "taildrop": "Both PPTX and PDF attempts failed for iphone and ipad: configured device names could not be resolved. No delivery claimed; configuration unchanged."
+}

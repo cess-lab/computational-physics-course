@@ -1,8 +1,8 @@
 # PHY4605 Course Topic and Difficulty Blueprint
 
-This document is the source of truth for the topics, subtopics, difficulty tiers, and 13-week execution sequence of PHY4605. Use it before creating or revising weekly slides, learning notes, MATLAB Live Scripts, practicals, diagnostics, assessments, or capstone materials.
+This document is the source of truth for the topics, subtopics, difficulty tiers, 13-week core-content sequence, and Week 14 capstone continuation of PHY4605. Use it before creating or revising weekly slides, learning notes, MATLAB Live Scripts, practicals, diagnostics, assessments, or capstone materials.
 
-The course uses **13 planned instructional weeks plus one empty buffer week**. The buffer protects the course against public holidays or cancelled sessions and must not contain a new planned core topic.
+The course uses **13 planned instructional weeks followed by Week 14 for the continuation of capstone presentations, defences, and reproducibility handoffs**. Week 14 must not contain a new planned core topic.
 
 ## Cohort calibration
 
@@ -91,37 +91,36 @@ A distinction student may additionally:
 - diagnose subtler numerical failure modes; and
 - justify limitations and method choices independently.
 
-## Execution and buffer policy
+## Execution and Week 14 capstone policy
 
 - Plan and prepare new teaching content only for `Week01` through `Week13`.
-- Reserve `Week14` as the empty buffer/recovery week.
-- If a scheduled session is lost, shift the remaining instructional sequence into the buffer rather than deleting a core learning outcome without review.
-- If no session is lost, use the buffer only for optional revision, short remediation, capstone completion, deferred defence, or consultation.
-- Do not place a new numerical method, new assessable chapter, compulsory practical, or planned high-stakes deadline in the buffer.
-- Weekly package numbers represent the instructional sequence. Calendar dates and Classroom due dates may shift when the buffer is used.
+- Reserve `Week14` for the continuation or overflow of capstone presentations, individual defences, and reproducibility handoffs.
+- If a scheduled session is lost before the capstone sequence, the lecturer may use part of Week 14 for essential recovery before completing the scheduled capstone evidence.
+- Do not place a new numerical method, new assessable chapter, or compulsory practical in Week 14.
+- Weekly package numbers represent the instructional sequence. Calendar dates and Classroom due dates may shift when recovery is required.
 
 ## Thirteen-week topic map
 
 | Week | Topic | Core learning job | Working exposure | Stretch |
 | --- | --- | --- | --- | --- |
-| 01 | Physics to arrays and plots | Express one familiar model using variables, units, arrays, element-wise operations, indexing, and a labelled plot | Logical comparisons and simple tables | Compact vectorised alternatives |
-| 02 | Pseudocode, loops, and debugging | Turn an equation into ordered steps, trace a loop, modify a scaffold, and diagnose one clear defect | Preallocation and supplied helper functions | Write a reusable function from scratch |
-| 03 | Two-by-two linear systems | Derive two Kirchhoff equations, assemble and solve a 2×2 system, and check current balance | Alternative equation arrangement | Residuals, rank, conditioning, power balance, and plausible-but-wrong matrices |
-| 04 | Parameter sweeps and graph interpretation | Hold a model fixed, vary one parameter, compare curves, and explain the physical trend | Supplied two-parameter table or normalised comparison | Heatmaps and quantitative sensitivity measures |
-| 05 | Root finding | Understand a residual/root, bracket graphically, and complete scaffolded bisection and Newton iterations | One supplied stopping rule | Uniqueness proof, multiple stopping rules, `fzero`, safeguarding, and formal solver selection |
-| 06 | Numerical differentiation | Estimate a physical rate from values/data, compare step sizes, and check against an analytic derivative | Central difference and supplied error curve | Error-order derivation and detailed round-off analysis |
-| 07 | Numerical integration | Estimate an accumulated physical quantity with the trapezoidal rule and demonstrate refinement | MATLAB `trapz` and supplied Simpson comparison | Quadrature error-order derivation |
-| 08 | ODE simulation | Convert a first-order ODE into a scaffolded Euler update, vary timestep, and compare with a supplied reference | `ode45` as a supplied reference implementation | Stability boundaries and Runge–Kutta derivation |
-| 09 | Data fitting and uncertainty | Fit a simple physical relationship, interpret parameter units, inspect residual pattern, and state uncertainty cautiously | Fit-quality statistics supplied for interpretation | Weighted/nonlinear fitting and formal confidence intervals |
-| 10 | Random sampling and Monte Carlo | Run repeated random trials, interpret mean/spread, and show how sample size affects uncertainty | Standard error or convergence estimate supplied | Distribution theory and statistical-mechanics extensions |
-| 11 | Sensitivity and uncertainty propagation | Vary one uncertain input at a time, report output range, and distinguish uncertainty sources | Simple percentage sensitivity or supplied propagation formula | Derivative-based and Monte Carlo propagation |
-| 12 | Integrated method selection and capstone studio | Recognise methods in familiar cases, audit supplied/AI-assisted code, apply one validation check, and complete the capstone evidence package | Compare two feasible methods with supplied evidence | Transfer to an unfamiliar case with limited scaffolding |
-| 13 | Capstone presentation, defence, and handoff | Present one bounded investigation, trace the starter code/modification, defend validation, and interpret the result | Reproducibility and peer questions | Independent extension or deeper method comparison |
-| 14 | Buffer/recovery | No planned new core content | Optional revision, remediation, catch-up, or deferred defence | No new stretch chapter |
+| 01 | Arrays and Plots: Represent a physical model and compare prediction with evidence | Express one familiar model using variables, units, arrays, element-wise operations, indexing, and a labelled plot | Logical comparisons and simple tables | Compact vectorised alternatives |
+| 02 | Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes | Turn an equation into ordered steps, trace a loop, modify a scaffold, and diagnose one clear defect | Preallocation and supplied helper functions | Write a reusable function from scratch |
+| 03 | Linear Systems: Assemble and validate two-loop Kirchhoff equations | Derive two Kirchhoff equations, assemble and solve a 2×2 system, and check current balance | Alternative equation arrangement | Residuals, rank, conditioning, power balance, and plausible-but-wrong matrices |
+| 04 | Parameter Sweeps: Compare one controlled change and interpret the graph | Hold a model fixed, vary one parameter, compare curves, and explain the physical trend | Supplied two-parameter table or normalised comparison | Heatmaps and quantitative sensitivity measures |
+| 05 | Root Finding: Locate a physical solution and verify the residual | Understand a residual/root, bracket graphically, and complete scaffolded bisection and Newton iterations | One supplied stopping rule | Uniqueness proof, multiple stopping rules, `fzero`, safeguarding, and formal solver selection |
+| 06 | Numerical Differentiation: Estimate a physical rate and test the step size | Estimate a physical rate from values/data, compare step sizes, and check against an analytic derivative | Central difference and supplied error curve | Error-order derivation and detailed round-off analysis |
+| 07 | Numerical Integration: Accumulate a changing quantity and test convergence | Estimate an accumulated physical quantity with the trapezoidal rule and demonstrate refinement | MATLAB `trapz` and supplied Simpson comparison | Quadrature error-order derivation |
+| 08 | Ordinary Differential Equations: Simulate a changing state from an initial condition | Convert a first-order ODE into a scaffolded Euler update, vary timestep, and compare with a supplied reference | `ode45` as a supplied reference implementation | Stability boundaries and Runge–Kutta derivation |
+| 09 | Data Fitting: Infer a physical parameter and read residuals with uncertainty | Fit a simple physical relationship, interpret parameter units, inspect residual pattern, and state uncertainty cautiously | Fit-quality statistics supplied for interpretation | Weighted/nonlinear fitting and formal confidence intervals |
+| 10 | Monte Carlo Sampling: Use repeated random trials to estimate physical variation | Run repeated random trials, interpret mean/spread, and show how sample size affects uncertainty | Standard error or convergence estimate supplied | Distribution theory and statistical-mechanics extensions |
+| 11 | Sensitivity Analysis: Propagate input ranges into defensible output ranges | Vary one uncertain input at a time, report output range, and distinguish uncertainty sources | Simple percentage sensitivity or supplied propagation formula | Derivative-based and Monte Carlo propagation |
+| 12 | Method Selection: Audit a computation and prepare a reproducible capstone | Recognise methods in familiar cases, audit supplied/AI-assisted code, apply one validation check, and complete the capstone evidence package | Compare two feasible methods with supplied evidence | Transfer to an unfamiliar case with limited scaffolding |
+| 13 | Computational Investigation: Present, defend, and hand off a validated physical model | Present one bounded investigation, trace the starter code/modification, defend validation, and interpret the result | Reproducibility and peer questions | Independent extension or deeper method comparison |
+| 14 | Capstone Presentation: Continue presentations, defences, and reproducibility handoffs | Continue capstone presentations, individual defences, and reproducibility handoffs; no new core content | Deferred evidence, optional revision, remediation, catch-up, or consultation | No new stretch chapter |
 
 ## Detailed weekly subtopics
 
-### Week 01 — Physics to arrays and plots
+### Week 01 — Arrays and Plots: Represent a physical model and compare prediction with evidence
 
 Use one familiar analytical model. The week repairs Onramp knowledge through physics rather than treating Onramp completion as proof of retained skill.
 
@@ -148,7 +147,7 @@ Use one familiar analytical model. The week repairs Onramp knowledge through phy
 
 - compact vectorised alternatives or additional plot formatting.
 
-### Week 02 — Pseudocode, loops, and debugging
+### Week 02 — Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes
 
 Reuse a familiar physical model so the new cognitive load is algorithmic rather than mathematical.
 
@@ -177,7 +176,7 @@ Reuse a familiar physical model so the new cognitive load is algorithmic rather 
 - write a reusable MATLAB function independently;
 - design a second independent test.
 
-### Week 03 — Two-by-two linear systems through Kirchhoff circuits
+### Week 03 — Linear Systems: Assemble and validate two-loop Kirchhoff equations
 
 Keep the physical network small and use only two unknowns.
 
@@ -206,7 +205,7 @@ Keep the physical network small and use only two unknowns.
 - power-balance validation;
 - diagnosing a plausible matrix that encodes the wrong circuit.
 
-### Week 04 — Parameter sweeps and graph interpretation
+### Week 04 — Parameter Sweeps: Compare one controlled change and interpret the graph
 
 Replace eigenproblems completely. Use an accessible analytical model such as projectile motion or a mass–spring oscillator so attention remains on computational experimentation and graph meaning.
 
@@ -244,7 +243,7 @@ Replace eigenproblems completely. Use an accessible analytical model such as pro
 - eigen-equation residuals;
 - symmetry breaking and eigenproblem limiting cases.
 
-### Week 05 — Root finding
+### Week 05 — Root Finding: Locate a physical solution and verify the residual
 
 Use one physical equation with a visually understandable residual.
 
@@ -280,7 +279,7 @@ Use one physical equation with a visually understandable residual.
 - deliberately extreme small-derivative stress cases;
 - a 150-radian Newton-step example or equivalent advanced failure construction.
 
-### Week 06 — Numerical differentiation
+### Week 06 — Numerical Differentiation: Estimate a physical rate and test the step size
 
 Use a familiar position, field, or temperature relationship with a known derivative.
 
@@ -307,7 +306,7 @@ Use a familiar position, field, or temperature relationship with a known derivat
 - detailed truncation-versus-round-off analysis;
 - higher-order difference formulas.
 
-### Week 07 — Numerical integration
+### Week 07 — Numerical Integration: Accumulate a changing quantity and test convergence
 
 Use an accumulated physical quantity such as work, charge, impulse, or distance.
 
@@ -333,7 +332,7 @@ Use an accumulated physical quantity such as work, charge, impulse, or distance.
 - implement and compare several composite rules independently;
 - adaptive quadrature.
 
-### Week 08 — ODE simulation
+### Week 08 — Ordinary Differential Equations: Simulate a changing state from an initial condition
 
 Use one first-order physical system with a familiar differential equation and initial condition.
 
@@ -360,7 +359,7 @@ Use one first-order physical system with a familiar differential equation and in
 - determine a formal stability boundary;
 - stiff systems, event handling, or coupled nonlinear systems.
 
-### Week 09 — Data fitting and uncertainty
+### Week 09 — Data Fitting: Infer a physical parameter and read residuals with uncertainty
 
 Use a small physical dataset with meaningful parameter units.
 
@@ -388,7 +387,7 @@ Use a small physical dataset with meaningful parameter units.
 - formal confidence intervals;
 - covariance, regularisation, or advanced model-selection metrics.
 
-### Week 10 — Random sampling and Monte Carlo simulation
+### Week 10 — Monte Carlo Sampling: Use repeated random trials to estimate physical variation
 
 Use a physically accessible random walk or repeated-estimation problem.
 
@@ -415,7 +414,7 @@ Use a physically accessible random walk or repeated-estimation problem.
 - statistical-mechanics simulations;
 - variance-reduction methods or MCMC diagnostics.
 
-### Week 11 — Sensitivity and uncertainty propagation
+### Week 11 — Sensitivity Analysis: Propagate input ranges into defensible output ranges
 
 Build on the Week 04 parameter-sweep skill but now treat the input range as uncertainty evidence.
 
@@ -442,7 +441,7 @@ Build on the Week 04 parameter-sweep skill but now treat the input range as unce
 - Monte Carlo uncertainty propagation;
 - interaction effects, global sensitivity, or correlated inputs.
 
-### Week 12 — Integrated method selection and capstone studio
+### Week 12 — Method Selection: Audit a computation and prepare a reproducible capstone
 
 Use familiar cases and supplied evidence. Do not introduce a new required numerical method.
 
@@ -468,13 +467,13 @@ Use familiar cases and supplied evidence. Do not introduce a new required numeri
 - design a second independent validation check;
 - implement an optional extension independently.
 
-### Week 13 — Capstone presentation, defence, and handoff
+### Week 13 — Computational Investigation: Present, defend, and hand off a validated physical model
 
 The capstone is a bounded investigation, not an open-ended research project.
 
 **Core**
 
-- select from four to six lecturer-designed problem spaces;
+- receive one assigned brief from the twelve lecturer-designed physical investigations in the six paired families: projectile motion (01–02), circuit behaviour (03–04), radiation and detection (05–06), thermal behaviour (07–08), Monte Carlo physics (09–10), and oscillatory motion (11–12);
 - use a supplied starter Live Script;
 - state the model, assumptions, variables, and units;
 - complete or refine the pseudocode;
@@ -496,14 +495,13 @@ The capstone is a bounded investigation, not an open-ended research project.
 - compare methods or validation strategies;
 - investigate a less structured question.
 
-### Week 14 — Buffer/recovery
+### Week 14 — Capstone Presentation: Continue presentations, defences, and reproducibility handoffs
 
-No new topic is planned. If the buffer is unused, activities remain optional or restorative:
+No new topic is planned. Week 14 is used for the capstone presentation sequence and its completion evidence:
 
-- revision through familiar code-tracing and graph-reading cases;
-- short remediation for common diagnostic misconceptions;
-- capstone completion or deferred individual defence;
-- consultation and feedback;
+- capstone presentations and individual defences;
+- reproducibility handoffs and any deferred capstone evidence;
+- short remediation or consultation when needed;
 - no new compulsory practical, method, or assessable chapter.
 
 ## MATLAB literacy spiral

@@ -1,8 +1,8 @@
 # Week 07 Capstone Model, Method, and Validation Approval
 
-This is the second graded capstone milestone and is worth **3% of the course**. Submit one concise approval record per group through Google Classroom.
+This is a capstone model/method/validation approval checkpoint, not a separate course-mark component. Submit one concise approval record per group through Google Classroom. The final capstone is judged through one rubric whose criteria total 100%.
 
-Build directly on your approved Week 06 feasibility proposal. This week you must lock a defensible physical model, identify the supplied or selected computational method that will answer your question, and define a validation plan before substantial project development begins.
+Build directly on your assigned brief and Week 06 feasibility proposal. This week you must lock a defensible physical model, identify the supplied or selected computational method that will answer your question, and define a validation plan before substantial project development begins.
 
 ## Approval record
 

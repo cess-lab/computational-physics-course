@@ -40,7 +40,7 @@
   "slides": [
     {
       "number": 1,
-      "title": "From nearby values to an instantaneous rate",
+      "title": "Numerical Differentiation: Estimate a physical rate and test the step size",
       "role": "cover",
       "intent": "Open with a familiar projectile and a single driving question before formula vocabulary.",
       "key_points": ["Week 06 | Numerical Differentiation", "If a position model is known, how can two nearby values estimate the velocity at one instant?"],

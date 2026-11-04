@@ -1,4 +1,16 @@
-# Week 06 - Numerical Differentiation
+# Week 06 — Numerical Differentiation: Estimate a physical rate and test the step size
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the dedicated Week 06 diagnostic in Google Classroom when it is released, and predict the sign and approximate size of the rate.
+
+**During:** Follow `physical rate -> nearby values -> difference rule -> step size -> reference -> error -> interpretation`; run the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 06 is one of the ten counted practical packets; the best eight packets count for the group component.
 
 ## Student-Facing Package
 
@@ -7,7 +19,7 @@
 - `Week06_Practical_AI_Enabled_Numerical_Differentiation_Challenge_Set.m`
 - `Week06_Capstone_Feasibility_Proposal.md`
 
-The completed lecture deck is [Lecture_Slides_Week06.pptx](Lecture_Slides_Week06.pptx). Its reproducible full-slide image sources, prompts, speaker notes, and quality-assurance evidence are retained under `.agent/lecture-slides/`.
+The root-facing [Week 06 lecture deck](Lecture_Slides_Week06.pptx) and the hidden assembled copy at `.agent/lecture-slides/codex-ppt/codex-ppt.pptx` are byte-identical at SHA-256 `70c6b70c35c7ba0ca52bcce65d2f8acd687bb02e6c1a504e8a2ad1e61a1fc8c6`. The QA record preserves an authorised native MATLAB scientific-plot exception for Slide 1 after ImageGen coordinate repairs were rejected, together with the earlier rerun and audit history. Lecturer/sample approval remains a separate provenance gate.
 
 ## Learning Focus
 
@@ -39,11 +51,11 @@ The practical is an AI-enabled group challenge set using three supplied transfer
 
 ## Capstone Feasibility Milestone
 
-`Week06_Capstone_Feasibility_Proposal.md` is the first graded capstone milestone and is worth **2% of the course**. Groups select one bounded problem space and show that the proposed question, model, output, modification, and validation anchor are manageable. The numerical method is not locked in Week 06; method and validation-plan approval remains the Week 07 milestone.
+`Week06_Capstone_Feasibility_Proposal.md` is a capstone feedback checkpoint, not a separate course-mark component. Each group works from its assigned brief and shows that the proposed question, model, output, modification, and validation anchor are manageable. The numerical method is not locked in Week 06; method and validation-plan approval remains the Week 07 checkpoint. Test 1 targets academic Week 6 (16–22 November 2026), within the broad UPM Assessment I window of academic Weeks 4–6, after the Week 05 content and alongside this week; the exact local date is to be confirmed.
 
 ## Individual Pre-Practical Diagnostic
 
-A draft six-question Week 06 diagnostic key and cohort-analysis specification is retained at `../.agent/google-forms/Week06_Question_Key_and_AI_Analysis.md`. It is planning material only; no live Form or Classroom coursework is created until the Week 06 materials and wording are approved.
+Complete the dedicated Week 06 diagnostic through its Google Classroom coursework when released. If it reveals a common misconception, the lecturer may post an optional 10–15 minute remediation with one retry and confidence check; it is not a prerequisite for the next lecture. The local question key remains planning material until publication is approved.
 
 ## Instructor / QA Package
 
@@ -53,4 +65,4 @@ Hidden support materials are stored under `.agent/`:
 - content manifest under `.agent/manifests/`;
 - MATLAB figure generation and fresh-session QA under `.agent/matlab/`;
 - practical reference, variants, defence rubric, and rotation ledger under `.agent/practical/`;
-- lecture-deck outline only under `.agent/lecture-slides/`.
+- Codex-PPT lecture-deck sources, speaker notes, and QA under `.agent/lecture-slides/`; the root-facing and hidden PPTX now match, while the authorised Slide 1 exception and rerun history remain part of the record.

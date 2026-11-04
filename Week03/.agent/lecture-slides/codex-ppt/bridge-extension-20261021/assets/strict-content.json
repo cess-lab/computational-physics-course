@@ -1,0 +1,81 @@
+{
+  "mesh_boundaries": {
+    "I1": [
+      "R1",
+      "R4",
+      "R7",
+      "Vs"
+    ],
+    "I2": [
+      "R7",
+      "R5",
+      "R6",
+      "Rb"
+    ],
+    "I3": [
+      "R2",
+      "R3",
+      "R8",
+      "Rb"
+    ]
+  },
+  "equations": {
+    "1": [
+      "$\\mathbf{x}=[I_1;\\ I_2;\\ I_3]$",
+      "$R_7:\\ I_1-I_2\\quad\\mathrm{(mesh\\ 1\\ direction)}$",
+      "$R_b:\\ I_2-I_3\\quad\\mathrm{(mesh\\ 2\\ direction)}$",
+      "Mesh 1: R1, R4, R7, Vs",
+      "Mesh 2: R7, R5, R6, Rb",
+      "Mesh 3: R2, R3, R8, Rb"
+    ],
+    "2": [
+      "$R_1I_1+R_4I_1+R_7(I_1-I_2)=V_s$",
+      "$(R_1+R_4+R_7)I_1-R_7I_2+0I_3=V_s$",
+      "$\\mathrm{Row\\ 1:}\\quad[R_1+R_4+R_7,\\ -R_7,\\ 0]$"
+    ],
+    "3": [
+      "$R_7(I_2-I_1)+R_5I_2+R_6I_2+R_b(I_2-I_3)=0$",
+      "$-R_7I_1+(R_7+R_5+R_6+R_b)I_2-R_bI_3=0$",
+      "$\\mathrm{Row\\ 2:}\\quad[-R_7,\\ R_7+R_5+R_6+R_b,\\ -R_b]$"
+    ],
+    "4": [
+      "$R_2I_3+R_3I_3+R_8I_3+R_b(I_3-I_2)=0$",
+      "$0I_1-R_bI_2+(R_2+R_3+R_8+R_b)I_3=0$",
+      "$\\mathrm{Row\\ 3:}\\quad[0,\\ -R_b,\\ R_2+R_3+R_8+R_b]$"
+    ],
+    "6": [
+      "$A_{12}=A_{21}=-R_7$",
+      "$A_{23}=A_{32}=-R_b$",
+      "$A_{13}=A_{31}=0$",
+      "$[A]=\\Omega,\\quad[\\mathbf{x}]=\\mathrm{A},\\quad[\\mathbf{b}]=\\mathrm{V}$",
+      "Validate by substitution into all three original KVL equations."
+    ]
+  },
+  "matrix": [
+    [
+      "R_1+R_4+R_7",
+      "-R_7",
+      "0"
+    ],
+    [
+      "-R_7",
+      "R_7+R_5+R_6+R_b",
+      "-R_b"
+    ],
+    [
+      "0",
+      "-R_b",
+      "R_2+R_3+R_8+R_b"
+    ]
+  ],
+  "x": [
+    "I1",
+    "I2",
+    "I3"
+  ],
+  "b": [
+    "Vs",
+    "0",
+    "0"
+  ]
+}

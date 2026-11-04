@@ -1,4 +1,4 @@
-%[text] # Week 9 Practical Activity: AI-Enabled Data Fitting Challenge Set
+%[text] # Data Fitting: Infer a physical parameter and read residuals with uncertainty
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%
@@ -14,6 +14,9 @@ spring_extension_m = (0.01:0.01:0.08)';
 spring_force_N = [0.26 0.49 0.76 1.01 1.24 1.51 1.74 2.02]';
 spring_prediction = "REPLACE_WITH_SLOPE_SIGN_K_UNIT_AND_FORCE_TREND";
 %[text] **Required evidence:** proposed model, measured quantities and units, fitted-parameter unit, and prediction. **Defence hook:** explain why the slope unit is N/m rather than N.
+%%
+%[text] ## Algorithm / Pseudocode Checkpoint
+%[text] Before fitting, state the ordered computational steps: identify measured inputs and outputs with units, choose the physical model, fit the supplied relationship, calculate residuals, compare the fitted parameter with the reference or repeatability evidence, and interpret the result cautiously.
 %%
 %[text] ## Question 2: Fit and Overlay the Spring Model
 %[text] Plot the measured points first. Then use the supplied first-degree `polyfit` scaffold. Interpret coefficient 1 as the fitted spring constant and coefficient 2 as the force offset. Overlay the fitted line without changing the original measurements.

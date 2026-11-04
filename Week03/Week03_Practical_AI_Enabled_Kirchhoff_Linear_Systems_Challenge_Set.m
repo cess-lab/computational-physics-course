@@ -1,4 +1,4 @@
-%[text] # Week 3 Practical Activity: Kirchhoff Linear-Systems Challenge Set
+%[text] # Linear Systems: Assemble and validate two-loop Kirchhoff equations
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 AI-Enabled Group Investigation
 %%
@@ -21,6 +21,9 @@ sensor_Vb_V = 6;
 %[text] ## Question 2: Derive the Two Sensor-Circuit Equations
 %[text] Apply Kirchhoff's voltage law once around each sensor loop. Write both equations first in symbols, then substitute the supplied numerical values. Keep the shared-resistor current difference consistent with the clockwise mesh directions.
 %[text] **Required evidence:** two KVL equations and a one-sentence sign explanation for the shared-resistor term. **Defence hook:** point to the term that couples the two equations and explain why it appears in both.
+%%
+%[text] ## Algorithm / Pseudocode Checkpoint
+%[text] Before assembling or solving `A*x=b`, state the ordered computational steps: define the unknowns and sign convention, write the physical equations, map them into the matrix and vector, solve, reconstruct and check the currents, then interpret the result. Name the MATLAB variable for each step.
 %%
 %[text] ## Question 3: Map, Solve, Reconstruct, and Validate
 %[text] Translate your two sensor-circuit equations into `A_sensor_ohm*x_sensor_A=b_sensor_V`. Solve with MATLAB backslash, reconstruct the shared-branch current, then substitute the solved currents into both original KVL equations.

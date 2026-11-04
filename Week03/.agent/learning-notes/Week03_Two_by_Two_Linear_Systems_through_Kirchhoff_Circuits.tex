@@ -8,7 +8,10 @@
 \usepackage[most]{tcolorbox}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue}
-\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{2pt}
+\emergencystretch=2em
+\hyphenpenalty=8000
+\exhyphenpenalty=10000
 \newcommand{\course}{PHY4605 Computational Methods in Physics}
 \newcommand{\units}[1]{\,\mathrm{#1}}
 \newtcolorbox{keybox}{colback=RoyalBlue!5,colframe=RoyalBlue!65!black,boxrule=.7pt,arc=2mm}
@@ -18,17 +21,21 @@
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 3}\par\vspace{4pt}
-{\LARGE\bfseries Two-by-Two Linear Systems through Kirchhoff Circuits}\par\vspace{3pt}
+{\LARGE\bfseries Linear Systems: Assemble and validate two-loop Kirchhoff equations}\par\vspace{3pt}
 \textit{Turn two familiar circuit equations into a small linear system that can be solved, checked, and interpreted.}
 
 \begin{keybox}\textbf{Physical question.} Two resistor loops share one resistor. If the source voltages and resistances are known, how can we find the two loop currents without losing track of signs, units, or physical meaning?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item derive two consistent Kirchhoff equations from a stated current convention;
 \item map those equations to $A\mathbf{x}=\mathbf{b}$ and solve them with MATLAB backslash; and
 \item validate the solution by direct substitution and interpret the current signs physically.
 \end{enumerate}
+
+\textit{\textbf{How to use this note.} Follow the numbered route from circuit to equations, code, validation, and physical interpretation. Pause at each checkpoint and predict before reading the result.}
+
+\begin{keybox}\textbf{Capstone bridge.} Review the available capstone topics before the Week 04 preference checkpoint. Discuss one preferred and one alternate topic with your group; record the preference in Week 04. No capstone submission or grade is due in Week 03.\end{keybox}
 
 \section*{1. Start from the circuit, not the matrix}
 Choose both mesh currents clockwise. Let the left private resistor be $R_1=2\units{\Omega}$, the right private resistor $R_2=3\units{\Omega}$, and the shared resistor $R_s=1\units{\Omega}$. The source rises are $V_1=5\units{V}$ and $V_2=2\units{V}$. The battery polarities below make those rises explicit: the long plate is positive, so the left source is traversed upward and the right source downward by the clockwise mesh currents.
@@ -56,6 +63,9 @@ Choose both mesh currents clockwise. Let the left private resistor be $R_1=2\uni
 \draw (3,0)--(3,1.05);
 \draw[fill=ForestGreen!7] (2.80,1.05) rectangle (3.20,1.95);
 \draw (3,1.95)--(3,3);
+\draw[->,BurntOrange!80!black] (3.42,2.62)--(3.42,2.12) node[midway,right=3pt] {$I_{\mathrm{shared}}$};
+\draw[->,RoyalBlue] (2.10,3)--(2.72,3) node[midway,above=2pt] {$I_1$};
+\draw[->,ForestGreen!60!black] (3.28,3)--(3.90,3) node[midway,above=2pt] {$I_2$};
 \draw (1.5,3.28) node[above] {$R_1=2\,\Omega$};
 \draw (4.5,3.28) node[above] {$R_2=3\,\Omega$};
 \draw (3.20,1.5) node[right=5pt] {$R_s=1\,\Omega$};
@@ -71,15 +81,30 @@ Choose both mesh currents clockwise. Let the left private resistor be $R_1=2\uni
 \end{tikzpicture}
 \end{center}
 
-Across the shared resistor, the two mesh currents oppose each other. If we define the shared-branch direction to follow mesh 1, then
+Across the shared resistor, the two mesh currents oppose each other. At the top shared junction, $I_1$ enters from the left, while $I_2$ leaves to the right and $I_{\mathrm{shared}}$ leaves downward through $R_s$. The junction rule (KCL) therefore says that current entering equals current leaving:
+
+\[
+I_1=I_2+I_{\mathrm{shared}},
+\]
+so, if the shared-branch direction follows mesh 1,
 \[
 I_{\mathrm{shared}}=I_1-I_2.
 \]
 
+\begin{keybox}\textbf{Which Kirchhoff rule is used?} The \emph{junction rule} (KCL) gives the shared-branch relation above. The \emph{loop rule} (KVL) says that the algebraic sum of voltage changes around each closed loop is zero. We will use KCL at the shared junction, then KVL once around each loop to obtain two equations.\end{keybox}
+
 \begin{checkbox}\textbf{Prediction checkpoint.} Both chosen mesh-current directions should give positive currents. The larger source and smaller private resistance suggest $I_1>I_2$.\end{checkbox}
 
-\section*{2. Write Kirchhoff equations in words first}
-For the left loop: \emph{left private voltage drop plus shared-resistor voltage drop equals the left source rise}. Therefore
+\section*{2. Write Kirchhoff equations step by step}
+Use the loop rule in the form \emph{source rise minus resistor drops equals zero}. The circuit-to-equation mapping is shown term by term, using the clockwise directions and the KCL result above.
+
+\textbf{Left loop.} The clockwise path goes upward through the left source, across the private resistor $R_1$, and downward through the shared resistor. Thus the source contributes a rise $+V_1$, the private resistor contributes a drop $R_1I_1$, and the shared branch contributes a drop $R_s(I_1-I_2)$:
+\[
+\underbrace{+V_1}_{\text{source rise}}
+-\underbrace{R_1I_1}_{\text{private-resistor drop}}
+-\underbrace{R_s(I_1-I_2)}_{\text{shared-resistor drop}}=0.
+\]
+Rearranging gives
 \[
 R_1I_1+R_s(I_1-I_2)=V_1,
 \]
@@ -88,12 +113,18 @@ or
 (R_1+R_s)I_1-R_sI_2=V_1.
 \]
 
-For the right loop, the shared-resistor contribution is reversed:
+\textbf{Right loop.} The clockwise path goes downward through the right source, across the private resistor $R_2$, and upward through the shared resistor. In this upward traversal, the signed shared-branch current is $I_2-I_1$, so the shared-resistor drop is $R_s(I_2-I_1)$:
+\[
+\underbrace{+V_2}_{\text{source rise}}
+-\underbrace{R_2I_2}_{\text{private-resistor drop}}
+-\underbrace{R_s(I_2-I_1)}_{\text{shared-resistor drop}}=0.
+\]
+Therefore
 \[
 -R_sI_1+(R_2+R_s)I_2=V_2.
 \]
 
-Every term has units of volts because $\Omega\times\mathrm{A}=\mathrm{V}$.
+Every resistance-current product in the loop equations has voltage units: $\Omega\times\mathrm{A}=\mathrm{V}$.
 
 \section*{3. Map each equation to one matrix row}
 The two equations become
@@ -106,7 +137,7 @@ R_1+R_s & -R_s\\
 =
 \begin{bmatrix}V_1\\V_2\end{bmatrix}.
 \]
-With the locked values,
+With the values used in this example,
 \[
 \underbrace{\begin{bmatrix}3&-1\\-1&4\end{bmatrix}}_{A\;(\Omega)}
 \underbrace{\begin{bmatrix}I_1\\I_2\end{bmatrix}}_{\mathbf{x}\;(\mathrm A)}
@@ -154,7 +185,8 @@ Before solving, ask three questions for any entry: \emph{which physical equation
 \end{enumerate}
 
 \section*{6. Solve the supplied system in MATLAB}
-\begin{lstlisting}[style=matlabstyle]
+MATLAB's backslash operator solves the linear system $A\mathbf{x}=\mathbf{b}$; it is not ordinary division. Here, \texttt{A\_ohm\textbackslash b\_V} asks MATLAB to find the currents that satisfy both equations.
+\begin{lstlisting}[style=matlabstyle,caption={Assemble the two-loop Kirchhoff system and solve for the mesh currents.}]
 R1_ohm = 2; R2_ohm = 3; Rs_ohm = 1;
 V1_V = 5; V2_V = 2;
 A_ohm = [R1_ohm+Rs_ohm, -Rs_ohm; ...
@@ -170,7 +202,7 @@ The solution is $I_1=2\units{A}$ and $I_2=1\units{A}$. The reconstructed shared-
 I_{\mathrm{shared}}=2-1=1\units{A}.
 \]
 
-\section*{7. Core validation: substitute into the original equations}
+\section*{7. Required validation: substitute into the original equations}
 For the left equation,
 \[
 3(2)-1(1)=5\units{V},
@@ -181,7 +213,7 @@ which reproduces the 5 V source. For the right equation,
 \]
 which reproduces the 2 V source.
 
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Reconstruct each loop equation and test the voltage residuals.}]
 left_V = (R1_ohm+Rs_ohm)*I1_A - Rs_ohm*I2_A;
 right_V = -Rs_ohm*I1_A + (R2_ohm+Rs_ohm)*I2_A;
 check_V = [left_V-V1_V; right_V-V2_V];
@@ -191,18 +223,18 @@ assert(max(abs(check_V)) < 1e-12)
 \begin{checkbox}\textbf{Validation result.} Both reconstructed loop voltages match the original sources. This directly checks the equations that represent the circuit.\end{checkbox}
 
 \section*{8. Read the numerical solution back into the circuit}
-Both currents are positive, so the actual mesh currents follow the assumed clockwise arrows. If MATLAB had returned a negative value, that would not automatically mean the calculation failed; it would mean the actual current runs opposite to the arrow chosen before solving.
+Both currents are positive, so the actual mesh currents follow the assumed clockwise arrows. A negative result would mean that the actual current runs opposite to the chosen arrow, not automatically that the calculation failed.
 
-The two numbers also tell us something about the shared branch. Because $I_1=2\units{A}$ and $I_2=1\units{A}$ act in opposite directions through $R_s$,
+The shared-branch current is the difference because the mesh currents oppose one another:
 \[
 I_{\mathrm{shared}}=I_1-I_2=1\units{A}.
 \]
-The two mesh contributions partially cancel in that branch. A negative value of $I_{\mathrm{shared}}$ would simply mean that the actual shared-branch current flows opposite to the direction assigned before solving.
+The contributions partially cancel; a negative difference would mean the actual shared-branch current is opposite to the assigned direction.
 
-\section*{9. Diagnose a plausible wrong matrix}
-Suppose the first off-diagonal coefficient is accidentally entered as $+R_s$ instead of $-R_s$. MATLAB can still return numbers, but those currents no longer satisfy the correct physical equations. The right response is not ``MATLAB worked''; it is to substitute the solution into the original Kirchhoff equations and inspect the mismatch.
+\section*{9. Diagnose a plausible matrix error}
+If the first off-diagonal coefficient is entered as $+R_s$ instead of $-R_s$, MATLAB can still return a result, but it need not satisfy the physical equations. Substitute it into the original Kirchhoff equations and inspect the mismatch.
 
-\begin{aibox}\textbf{Responsible-AI caution.} An AI-generated matrix can be syntactically perfect and physically wrong. Before accepting it, trace each coefficient to the stated current direction and Kirchhoff equation, then validate the solved currents independently.\end{aibox}
+\begin{aibox}\textbf{Responsible-AI caution.} An AI-generated matrix can be syntactically perfect yet physically wrong. Trace each coefficient to the stated direction and equation, then validate the solved currents independently.\end{aibox}
 
 \begin{center}
 \small
@@ -218,14 +250,14 @@ Units mixed & numerical scale is physically meaningless & audit coefficient $\ti
 \end{tabular}
 \end{center}
 
-\subsection*{Working exposure: equivalent equation ordering}
-Swapping the two equation rows is harmless only if the same swap is applied to both $A$ and $\mathbf b$. The physical system is unchanged because the two equations are merely listed in a different order.
+\subsection*{Guided extension: equation ordering}
+Read the supplied reordered system: swapping rows is harmless only when the same swap is applied to $A$ and $\mathbf b$. This changes listing order, not the physical system.
 
-\subsection*{Working exposure: sensitivity intuition}
-If the right source changes slightly from $2.0$ V to $2.1$ V, both currents change because the loops are coupled through the shared resistor. At this stage, notice the coupling qualitatively; formal conditioning belongs to stretch work.
+\subsection*{Guided extension: sensitivity intuition}
+Read the supplied $V_2=2.1\units{V}$ comparison and interpret why both currents change through the shared resistor. Formal conditioning is not required.
 
-\subsection*{Optional stretch: residual, rank, conditioning, and power}
-Advanced diagnostics include the residual $A\mathbf x-\mathbf b$, `rank(A)`, and `cond(A)`. A second physical check for this resistor circuit is source power versus resistor dissipation. These are useful distinction-level extensions, but they are not required for the Core Week 3 route.
+\subsection*{Optional extension: residual, rank, conditioning, and power}
+If useful, read the supplied diagnostics $A\mathbf x-\mathbf b$, `rank(A)`, and `cond(A)`, then interpret source power versus resistor dissipation. These distinction-level checks are optional, not required for Week 3.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=6mm]

@@ -1,24 +1,26 @@
 # Week 06 Capstone Feasibility Proposal
 
-This is the first graded capstone milestone and is worth **2% of the course**. Submit one concise proposal per group through Google Classroom.
+This is a capstone feasibility checkpoint, not a separate course-mark component. Submit one concise proposal per group through Google Classroom. The final capstone is judged through one rubric whose criteria total 100%; the lecturer explains the overall course contribution separately.
 
-Your task is to show that one bounded problem space can become a manageable computational investigation. You are **not** required to lock the final numerical method this week. The approved model, method, and validation plan are the Week 07 milestone.
+Your task is to show that your assigned bounded brief can become a manageable computational investigation. You are **not** required to lock the final numerical method this week. The approved model, method, and validation plan are the Week 07 checkpoint.
 
-## Choose one bounded problem space
+## Assigned brief and scope
 
-| Option | Physical question | Example modification | Principal output | Plausible validation anchor |
-| --- | --- | --- | --- | --- |
-| A. Vertical launch and trajectory | How does one launch parameter change an ideal trajectory? | launch speed or launch angle | height-time or trajectory graph | initial condition or analytic reference |
-| B. Spring response | How does stiffness or mass change an ideal spring response? | spring stiffness or mass | force-extension or period comparison | Hooke-law point or known limiting case |
-| C. Thermal cooling | How does one thermal parameter change cooling toward ambient temperature? | cooling constant or initial temperature | temperature-time curve | initial value or supplied reference solution |
-| D. RC discharge | How does one circuit parameter change capacitor discharge? | resistance or capacitance | voltage-time curve | initial voltage or one-time-constant reference |
-| E. Parameter estimation from data | Which model parameter best represents a small physical dataset? | fitted slope/intercept or one model assumption | data-model overlay and residuals | known unit/sign or supplied reference dataset |
-| F. Random-walk transport | How do sampling choices change the spread of a simple random walk? | number of steps or number of trials | trajectory/distribution and spread | reproducible seed or expected scaling trend |
+Your group receives one of the twelve assigned briefs in the current Capstone Briefing deck. Record the exact brief number and title rather than choosing an old generic option.
+
+| Brief family | Assigned investigations |
+| --- | --- |
+| 01–02 Projectile motion | Crosswind delivery with quadratic drag; elevated-terrain launch under wind shear |
+| 03–04 Circuit behaviour | RC charging with leakage and temperature-dependent components; RC sensor circuit with internal source resistance and time-varying load |
+| 05–06 Radiation and detection | Decay with background radiation and detector dead time; two-isotope decay mixture with efficiency and counting noise |
+| 07–08 Thermal behaviour | Cooling with thermal radiation and changing ambient temperature; cooling of a heated object with internal heat generation |
+| 09–10 Monte Carlo physics | Bounded 2D Ising ferromagnet; field of an irregular charged body |
+| 11–12 Oscillatory motion | Damped mass–spring response; finite-angle pendulum motion |
 
 ## Proposal record
 
 1. **Group ID and members:**
-2. **Selected problem space:**
+2. **Assigned brief and family:**
 3. **Physical question in one sentence:**
 4. **Model/equation you expect to use:**
 5. **Main assumptions:**

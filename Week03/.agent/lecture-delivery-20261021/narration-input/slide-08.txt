@@ -1,0 +1,9 @@
+Kita sudah ada dua mesh current. Tetapi resistor tengah tidak membawa dua ampere tambah satu ampere. Ia dikongsi oleh dua mesh dengan sumbangan yang bertentangan arah. Jadi kita kembali kepada equation yang dibina di junction tadi: I shared sama dengan I satu tolak I dua.
+
+Dalam Live Script, jalankan section Reconstruct the Shared-Branch Current. Baris kodnya ialah I shared underscore A sama dengan I satu underscore A tolak I dua underscore A. Dengan nilai dua dan satu ampere, hasilnya satu ampere. Tanda positif bermaksud arus net mengikut reference shared yang kita pilih, iaitu ke bawah.
+
+Cuba terangkan menggunakan junction. Dua ampere datang dari kiri. Satu ampere meneruskan ke kanan. Maka satu ampere lagi turun melalui resistor tengah. Penjelasan ini membantu kita hubungkan unknown matematik dengan branch fizikal.
+
+Sekarang saya ubah soalan secara lisan sahaja. Jika subtraction menghasilkan negatif kosong perpuluhan empat ampere, adakah kita buang tanda negatif dan kata error? Tidak. Kita kata arus sebenar kosong perpuluhan empat ampere melawan reference yang dipilih. Magnitude dan direction perlu dibaca bersama.
+
+Bincang cepat dengan orang sebelah: satu ayat untuk beza mesh current dan branch current. Mesh current ialah unknown loop yang memudahkan pembentukan equation. Shared branch current ialah beza dua mesh contributions untuk convention ini. Kita tidak perlu tambah unknown baharu untuk branch tengah, sebab nilainya boleh direconstruct daripada dua unknown sedia ada.

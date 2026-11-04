@@ -1,0 +1,12 @@
+# Week 01 consolidated delivery record
+
+- Student-facing package: `Week01/` contains five final content files — `README.md`, `Lecture_Slides_Week01.pptx`, the lecture MATLAB Live Script, the learning-note PDF, and the practical MATLAB Live Script. No backend artifact is exposed at the package root.
+- Locked content: the deck, note, lecture script, and manifest agree on the upward-positive vertical-motion model, `y0_m=0 m`, `v0_mps=20 m s^-1`, `g_mps2=9.81 m s^-2`, `t_s=0:0.1:4 s`, and Core validation `y(0)=0 m` / `y_m(1)`.
+- Learning note: 4-page A4 PDF; bundled Tectonic 0.17.0 compile and rendered-page QA are recorded in `../../../learning-notes/qa/qa_record.md`; final PDF SHA-256 is `732d113ec9740baeb159e1fb523303be8d64ec9ab651b7b03b8b629d0808c44d`.
+- Lecture Live Script: fresh MATLAB R2026b Prerelease Update 3, base MATLAB only; retained QA reports 41 samples, the initial-value check, and the continuous peak reference passing.
+- Practical: ten question headings, ten required-evidence records, and ten defence hooks; the retained practical QA record covers the fresh-session baseline, validation checks, and AI-decision evidence.
+- Student-facing PPTX: `Week01/Lecture_Slides_Week01.pptx`; hidden Codex-PPT project: `Week01/.agent/lecture-slides/codex-ppt/`.
+- Deck production: 13 slides, built-in `image_gen` image backend, coordinating model/effort `gpt-5.6-luna` / `max`, one accepted sample (`slide_02`), 12 recorded worker results, and no pending, dispatched, or blocked jobs. Dispatch, state, sample, and rendered-final evidence are retained under the hidden project QA folder.
+- Deck QA: current PPTX and hidden assembled copy have the same SHA-256 (`4bd5c1f2b9cbb05711583c516179e7803d80807e7c920793a6d9c2f899deed3c`); OpenXML inspection confirms 13 slides, 13 notes pages, 13 media images, one picture per slide, zero native visible shapes, and normalized 16:9 slide/app metadata. All 13 retained rendered pages were inspected at full size before this metadata-only normalization; no material clipping, overlap, unreadable required content, outer frame, watermark, or unrequested slide number was found.
+- Archived predecessor: `Week01/.agent/lecture-slides/retired-codex-ppt-run-2026-09-01/Week01_Lecture_Slides_Week01-previous.pptx`.
+- Scope note: metadata was normalized without changing slide images, notes, or content. Lecturer/sample approval remains bound to the current hash and must be reconfirmed if required by the production gate.

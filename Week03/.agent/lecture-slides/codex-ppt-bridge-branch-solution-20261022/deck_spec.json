@@ -1,0 +1,299 @@
+{
+  "deck_name": "codex-ppt-bridge-branch-solution-20261022",
+  "language": "English",
+  "goal": "Explain and validate the five physical branch currents of the approved bridge circuit using two independent KCL equations and three KVL equations, reduce to three unknowns, solve with MATLAB, and interpret all currents.",
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 5,
+  "main_model": "gpt-6.1-sol",
+  "main_reasoning_effort": "high",
+  "deck_context": {
+    "source_summary": "Optional PHY4605 worked example using five physical branch currents for the lecturer-approved 24 V nine-resistor bridge circuit.",
+    "canonical_terms": [
+      "I1–I5 are PHYSICAL BRANCH CURRENTS. Do not introduce mesh currents.",
+      "A is upper interior junction, B lower interior junction, C lower-right junction.",
+      "I1 enters A from left through R1 and leaves B leftwards through R4 and source; I2 A to B downward through R7; I3 A to C down-right through Rb; I4 A to C through R2,R3,R8 rightward then downward; I5 C to B leftwards through R6,R5."
+    ],
+    "circuit": {
+      "source": "Vs=24 V, + at top, − at bottom",
+      "resistors_ohm": {
+        "R1": 3,
+        "R2": 1,
+        "R3": 2,
+        "R4": 3,
+        "R5": 2,
+        "R6": 4,
+        "R7": 6,
+        "R8": 3,
+        "Rb": 6
+      },
+      "topology": "Source left vertical. R1 upper-left into A. R4 lower-left from B. R7 vertical A-B. Rb diagonal A-C. R2 then R3 upper series from A, R8 right vertical to C. R5 then R6 lower series from B to C."
+    },
+    "equations": {
+      "KCL": [
+        "I1=I2+I3+I4",
+        "I5=I3+I4",
+        "I2+I5=I1 (dependent)"
+      ],
+      "KVL": [
+        "24=6I1+6I2",
+        "6I2=6I5+6I3",
+        "6I3=6I4"
+      ],
+      "reduced": [
+        "12I2+6I3+6I4=24",
+        "6I2-12I3-6I4=0",
+        "6I3-6I4=0"
+      ],
+      "matrix": "A=[12 6 6;6 -12 -6;0 6 -6], b=[24;0;0], x=[I2;I3;I4]=A\\b"
+    },
+    "verified_answers_A": {
+      "I1": 2.5,
+      "I2": 1.5,
+      "I3": 0.5,
+      "I4": 0.5,
+      "I5": 1
+    },
+    "verification": "Fresh MATLAB batch and independent nodal analysis agree. VA=16.5 V, VB=7.5 V, VC=13.5 V vs source negative. Power 60 W. Max reduced residual 1.33e-15 V."
+  },
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "edit",
+    "prompt_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/sample-prompt.draft.txt",
+    "model": "built-in default; model and quality not exposed by tool",
+    "size": "16:9 requested; output 1672x941",
+    "quality": "built-in default",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_03.png",
+    "input_context_preparation": "Parent inspected local question with view_image; referenced_image_paths supplied the strict circuit source. Workers must inspect every local image including the approved sample before editing.",
+    "handoff_rule": "Use same built-in image_gen__imagegen edit mode with referenced_image_paths. No CLI, local drawing, overlay or backend switching. Full-history inherited exact coordinator model/effort is mandatory."
+  },
+  "style": {
+    "name": "Teaching Courseware",
+    "visual_direction": "Open white academic canvas, navy bold sans-serif titles, light gray circuit symbols, readable regular explanatory text, precise mathematical typography. Muted-blue physical current arrows; sage for checked results.",
+    "color_palette": "white, navy, cool gray, restrained blue and sage",
+    "typography": "large bold sans-serif titles; regular readable text; clearly typeset equations; regular monospaced MATLAB code",
+    "deck_consistency": "Match the approved sample's visual identity while varying layout for each learning job. No enclosing frame."
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_03.png",
+    "role": "approved sample slide — style only",
+    "fidelity": "Match palette, typography mood and density; replace its content with this job's content and vary composition."
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Follow the five branch currents",
+      "role": "concept overview",
+      "intent": "Map each unknown to one physical series branch before applying Kirchhoff's laws.",
+      "key_points": [
+        "I₁: source, R₁ and R₄",
+        "I₂: R₇, from A to B",
+        "I₃: R_b, from A to C",
+        "I₄: R₂, R₃ and R₈, from A to C",
+        "I₅: R₆ and R₅, from C to B"
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/Week03_Bridge_Circuit_Question.png",
+          "role": "approved question image; strict scientific circuit asset",
+          "fidelity": "Preserve all nine resistor symbols and values, original wires/connectivity, source polarity, A/B/C, and straight I1–I5 branch arrows. Edit surrounding question prose into this slide's educational content. Do not invent a replacement circuit."
+        }
+      ],
+      "layout": {
+        "composition": "Large original circuit occupying roughly 68% on left; compact 5-row path key on right. Small instructional line below. No default three-card layout.",
+        "variation_rule": "Different from approved equation sample: diagram dominates and path key uses simple open text rows."
+      },
+      "visual_elements": {
+        "main_visual": "The exact approved circuit, edited to remove surrounding question prose; keep all component values and arrows large.",
+        "supporting_elements": "Bottom sentence: Components in one series path carry the same current."
+      },
+      "local_context": {
+        "show_answers": false
+      },
+      "constraints": [
+        "Exactly one complete 16:9 slide image, English, no slide/page numbers.",
+        "No outer frame or enclosing perimeter, no watermark, logo, decorative ornaments, timings, production metadata or eyebrow.",
+        "Maintain the approved sample's white/navy/light-gray visual identity, large bold sans-serif title, regular readable explanations and clear mathematical typography. Use blue only for branch directions and sage only for verified outcomes.",
+        "Every diagram must retain original circuit connections, resistor values, source polarity and branch labels. All arrows are straight physical branch arrows. No circular mesh-current arrows.",
+        "Do not include irrelevant equations or solution values from the style reference. Show only this slide's specified content.",
+        "Preserve exact signs, coefficients, decimal values, units, code tokens and unknown ordering. Do not add numbered sections.",
+        "Do not show numerical current answers yet. The same I1 appears before A and after B, and the same I4 appears on top and right; these are continuous series paths, not extra unknowns."
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Apply current conservation at the junctions",
+      "role": "concept explanation",
+      "intent": "Use two independent node equations to express I1 and I5 in terms of I2,I3,I4.",
+      "key_points": [
+        "At A: I₁ = I₂ + I₃ + I₄",
+        "At C: I₅ = I₃ + I₄",
+        "At B: I₂ + I₅ = I₁ repeats the same information.",
+        "Solve I₂, I₃ and I₄ first; recover I₁ and I₅ afterwards."
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/Week03_Bridge_Circuit_Question.png",
+          "role": "reference-only scientific map for the A and C junction diagrams",
+          "fidelity": "Strict node and arrow mapping. Derive labelled junction diagrams from this source: at A I1 enters from left, I2 leaves down, I3 leaves down-right, I4 leaves right; at C I3 arrives down-right from upper-left, I4 arrives down from above, I5 leaves left. The full circuit/question prose need not appear."
+        }
+      ],
+      "layout": {
+        "composition": "Two large open junction diagrams A and C side by side in upper half; each has its equation below. A narrow lower note explains node B dependence and the three chosen unknowns.",
+        "variation_rule": "Use two schematic learning objects rather than the sample's circuit-plus-three-equation column."
+      },
+      "visual_elements": {
+        "main_visual": "Clearly named node A and node C with branch arrows and labels, faithfully matching source current directions.",
+        "supporting_elements": "No numerical answers and no loop arrows; equations must be very readable."
+      },
+      "constraints": [
+        "Exactly one complete 16:9 slide image, English, no slide/page numbers.",
+        "No outer frame or enclosing perimeter, no watermark, logo, decorative ornaments, timings, production metadata or eyebrow.",
+        "Maintain the approved sample's white/navy/light-gray visual identity, large bold sans-serif title, regular readable explanations and clear mathematical typography. Use blue only for branch directions and sage only for verified outcomes.",
+        "Every diagram must retain original circuit connections, resistor values, source polarity and branch labels. All arrows are straight physical branch arrows. No circular mesh-current arrows.",
+        "Do not include irrelevant equations or solution values from the style reference. Show only this slide's specified content.",
+        "Preserve exact signs, coefficients, decimal values, units, code tokens and unknown ordering. Do not add numbered sections.",
+        "At C both I3 and I4 enter, I5 leaves. At A only I1 enters. Do not draw I2 at C or I5 at A."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Apply voltage conservation around closed paths",
+      "role": "worked example",
+      "intent": "Write three independent voltage equations using the physical branch-current definitions.",
+      "key_points": [
+        "Left path: 24 = (3 + 3)I₁ + 6I₂ = 6I₁ + 6I₂",
+        "Lower triangle: 6I₂ = (2 + 4)I₅ + 6I₃ = 6I₅ + 6I₃",
+        "Upper triangle: 6I₃ = (1 + 2 + 3)I₄ = 6I₄"
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/Week03_Bridge_Circuit_Question.png",
+          "role": "approved question image; strict scientific circuit asset",
+          "fidelity": "Preserve all nine resistor symbols and values, original wires/connectivity, source polarity, A/B/C, and straight I1–I5 branch arrows. Edit surrounding question prose into this slide's educational content. Do not invent a replacement circuit."
+        }
+      ],
+      "sample_approved": true,
+      "use_approved_style_reference": false,
+      "layout": {
+        "composition": "Approved sample: circuit left, three equation groups right."
+      },
+      "constraints": [
+        "Exactly one complete 16:9 slide image, English, no slide/page numbers.",
+        "No outer frame or enclosing perimeter, no watermark, logo, decorative ornaments, timings, production metadata or eyebrow.",
+        "Maintain the approved sample's white/navy/light-gray visual identity, large bold sans-serif title, regular readable explanations and clear mathematical typography. Use blue only for branch directions and sage only for verified outcomes.",
+        "Every diagram must retain original circuit connections, resistor values, source polarity and branch labels. All arrows are straight physical branch arrows. No circular mesh-current arrows.",
+        "Do not include irrelevant equations or solution values from the style reference. Show only this slide's specified content.",
+        "Preserve exact signs, coefficients, decimal values, units, code tokens and unknown ordering. Do not add numbered sections."
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Solve three independent branch currents",
+      "role": "algorithm and code",
+      "intent": "Show the reduced linear system and exact native MATLAB backslash solution.",
+      "key_points": [
+        "Unknown order: x = [I₂; I₃; I₄]",
+        "12I₂ + 6I₃ + 6I₄ = 24",
+        "6I₂ − 12I₃ − 6I₄ = 0",
+        "6I₃ − 6I₄ = 0",
+        "x = [1.50; 0.50; 0.50] A"
+      ],
+      "layout": {
+        "composition": "Reduced equations in an open upper zone; bottom half split into MATLAB code on left and labelled output vector on right. Moderate density with readable code. No circuit required.",
+        "variation_rule": "Equation-to-code worked example; different from adjacent circuit/node slides."
+      },
+      "visual_elements": {
+        "main_visual": "Exact three-line monospaced MATLAB code, with literal single backslash: A = [12 6 6; 6 -12 -6; 0 6 -6];\nb = [24; 0; 0];\nx = A\\b;",
+        "supporting_elements": "Short derivation line: Substitute I₁=I₂+I₃+I₄ and I₅=I₃+I₄. Output explicitly labels I2=1.50 A, I3=0.50 A, I4=0.50 A."
+      },
+      "local_context": {
+        "resistance_units": "A coefficients in ohms, b in volts, x in amperes",
+        "do_not_show_full_5by5_matrix": true
+      },
+      "constraints": [
+        "Exactly one complete 16:9 slide image, English, no slide/page numbers.",
+        "No outer frame or enclosing perimeter, no watermark, logo, decorative ornaments, timings, production metadata or eyebrow.",
+        "Maintain the approved sample's white/navy/light-gray visual identity, large bold sans-serif title, regular readable explanations and clear mathematical typography. Use blue only for branch directions and sage only for verified outcomes.",
+        "Every diagram must retain original circuit connections, resistor values, source polarity and branch labels. All arrows are straight physical branch arrows. No circular mesh-current arrows.",
+        "Do not include irrelevant equations or solution values from the style reference. Show only this slide's specified content.",
+        "Preserve exact signs, coefficients, decimal values, units, code tokens and unknown ordering. Do not add numbered sections.",
+        "MATLAB code must use A\\b, never A/b, A*b or inv(A)*b. Three output entries are I2,I3,I4 in that order. Avoid reproducing the circuit or other content from the style reference."
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Recover and interpret all five currents",
+      "role": "physical interpretation",
+      "intent": "Back-substitute into conservation equations and map the solved currents onto the exact circuit.",
+      "key_points": [
+        "I₁ = I₂ + I₃ + I₄ = 2.50 A",
+        "I₅ = I₃ + I₄ = 1.00 A",
+        "I₂ = 1.50 A; I₃ = 0.50 A; I₄ = 0.50 A",
+        "All currents are positive, so conventional current follows the assumed arrows."
+      ],
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/Week03_Bridge_Circuit_Question.png",
+          "role": "approved question image; strict scientific circuit asset",
+          "fidelity": "Preserve all nine resistor symbols and values, original wires/connectivity, source polarity, A/B/C, and straight I1–I5 branch arrows. Edit surrounding question prose into this slide's educational content. Do not invent a replacement circuit."
+        }
+      ],
+      "layout": {
+        "composition": "Wide central faithful circuit with branch arrows labelled with numerical answers, two compact back-substitution equations in an open bottom band. No repeated three-card equation panel.",
+        "variation_rule": "Result-focused circuit, full width rather than sample's diagram-left/equation-right format."
+      },
+      "visual_elements": {
+        "main_visual": "Approved circuit with all resistor values retained. Add current answers by the corresponding arrows: I1=2.50 A, I2=1.50 A, I3=0.50 A, I4=0.50 A, I5=1.00 A.",
+        "supporting_elements": "Use restrained sage for answer values while retaining muted-blue arrows; do not overcrowd component labels."
+      },
+      "constraints": [
+        "Exactly one complete 16:9 slide image, English, no slide/page numbers.",
+        "No outer frame or enclosing perimeter, no watermark, logo, decorative ornaments, timings, production metadata or eyebrow.",
+        "Maintain the approved sample's white/navy/light-gray visual identity, large bold sans-serif title, regular readable explanations and clear mathematical typography. Use blue only for branch directions and sage only for verified outcomes.",
+        "Every diagram must retain original circuit connections, resistor values, source polarity and branch labels. All arrows are straight physical branch arrows. No circular mesh-current arrows.",
+        "Do not include irrelevant equations or solution values from the style reference. Show only this slide's specified content.",
+        "Preserve exact signs, coefficients, decimal values, units, code tokens and unknown ordering. Do not add numbered sections.",
+        "Never assign the retired mesh-current answer I2=1.00 A. In this branch convention I2=1.50 A and I5=1.00 A. Add solved values without changing any resistor, node or arrow."
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Check current and voltage balances",
+      "role": "validation",
+      "intent": "Substitute the five computed currents back into original circuit relations with physical units.",
+      "key_points": [
+        "At A: 2.50 A = 1.50 A + 0.50 A + 0.50 A",
+        "At C: 1.00 A = 0.50 A + 0.50 A",
+        "Left path: 24 V = 15 V + 9 V",
+        "Lower triangle: 9 V = 6 V + 3 V",
+        "Upper triangle: 3 V = 3 V"
+      ],
+      "layout": {
+        "composition": "Two spacious columns: Current balance with two checked equations; Voltage balance with three checked equations. Small explanatory labels under the voltage rows. No full circuit required.",
+        "variation_rule": "Evidence/check layout with clean open groups and limited sage ticks, avoiding a repeated three-card design."
+      },
+      "visual_elements": {
+        "main_visual": "Exact unit-labelled equalities, with small sage verification marks.",
+        "supporting_elements": "Voltage source terms follow 6I1+6I2, 6I2=6I5+6I3, 6I3=6I4. Bottom sentence: Substitute the currents into the original circuit equations."
+      },
+      "constraints": [
+        "Exactly one complete 16:9 slide image, English, no slide/page numbers.",
+        "No outer frame or enclosing perimeter, no watermark, logo, decorative ornaments, timings, production metadata or eyebrow.",
+        "Maintain the approved sample's white/navy/light-gray visual identity, large bold sans-serif title, regular readable explanations and clear mathematical typography. Use blue only for branch directions and sage only for verified outcomes.",
+        "Every diagram must retain original circuit connections, resistor values, source polarity and branch labels. All arrows are straight physical branch arrows. No circular mesh-current arrows.",
+        "Do not include irrelevant equations or solution values from the style reference. Show only this slide's specified content.",
+        "Preserve exact signs, coefficients, decimal values, units, code tokens and unknown ordering. Do not add numbered sections.",
+        "Every addend in displayed balance results must have A or V units. Only these numerical checks appear; do not add invented error percentages or exact-zero floating-point residual claims."
+      ]
+    }
+  ],
+  "worker_policy_exception": {
+    "user_approved": true,
+    "instruction": "Pin GPT-6.1 Sol/high explicitly and regenerate five slides",
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "fork_turns": "none",
+    "reason": "Runtime full-history forks actually ran gpt-5.6-luna/medium despite documented inheritance behavior. User explicitly authorized pinning the exact coordinator model and effort."
+  }
+}

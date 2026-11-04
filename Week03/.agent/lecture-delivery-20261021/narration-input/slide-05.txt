@@ -1,0 +1,9 @@
+Sebelum solve, kita semak unit. Matrix A menyimpan resistance, jadi unit entrynya ohm. Vector x menyimpan current dalam ampere. Vector b menyimpan source voltage dalam volt. Maka A darab x mempunyai unit ohm kali ampere, iaitu volt. Kedua-dua belah persamaan mempunyai unit yang sama.
+
+Ada satu perkara yang boleh mengelirukan. Huruf besar A digunakan sebagai nama coefficient matrix. Simbol A juga digunakan untuk unit ampere. Dalam kod, kita gunakan nama A underscore ohm supaya jelas bahawa matrix itu mengandungi resistance. Nama x underscore A pula menunjukkan current dalam ampere. Suffix pada nama variable membantu pembaca, tetapi MATLAB tidak melakukan unit checking secara automatik hanya kerana nama itu ada perkataan ohm atau volt.
+
+Cuba baca terma pertama: tiga ohm darab I satu ampere. Hasilnya volt. Terma seterusnya, negatif satu ohm darab I dua ampere, juga volt. Kita hanya boleh tambah dan tolak kuantiti yang mempunyai unit serasi dalam persamaan ini.
+
+Jika seseorang memasukkan nilai current ke dalam b kerana tersilap salin, kod mungkin masih berjalan sebagai operasi nombor. Unit check membantu kita nampak bahawa model itu tidak konsisten. Tetapi unit yang betul sahaja belum membuktikan tanda dan sambungan litar betul. Kita perlukan kedua-duanya: unit yang konsisten dan coefficient yang sepadan dengan persamaan asal.
+
+Sekarang jawab secara ringkas: unit A apa, unit x apa, unit b apa? Kemudian terangkan satu terma dengan ayat penuh. Kita mahu boleh membaca nombor sebagai kuantiti fizikal.

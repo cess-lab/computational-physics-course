@@ -1,0 +1,57 @@
+[
+  {
+    "slide": "slide_01",
+    "worker_id": "/root/bridge_slide01",
+    "coordinator_model": "gpt-6.1-sol",
+    "coordinator_effort": "medium",
+    "fork_turns": "all",
+    "model_override": null,
+    "effort_override": null,
+    "inherited_exact_match": true,
+    "prompt": "prompts/slide_01.json"
+  },
+  {
+    "slide": "slide_02",
+    "worker_id": "/root/bridge_slide02",
+    "coordinator_model": "gpt-6.1-sol",
+    "coordinator_effort": "medium",
+    "fork_turns": "all",
+    "model_override": null,
+    "effort_override": null,
+    "inherited_exact_match": true,
+    "prompt": "prompts/slide_02.json"
+  },
+  {
+    "slide": "slide_04",
+    "worker_id": "/root/bridge_slide04",
+    "coordinator_model": "gpt-6.1-sol",
+    "coordinator_effort": "medium",
+    "fork_turns": "all",
+    "model_override": null,
+    "effort_override": null,
+    "inherited_exact_match": true,
+    "prompt": "prompts/slide_04.json"
+  },
+  {
+    "slide": "slide_05",
+    "worker_id": "/root/bridge_slide05",
+    "coordinator_model": "gpt-6.1-sol",
+    "coordinator_effort": "medium",
+    "fork_turns": "all",
+    "model_override": null,
+    "effort_override": null,
+    "inherited_exact_match": true,
+    "prompt": "prompts/slide_05.json"
+  },
+  {
+    "slide": "slide_06",
+    "worker_id": "/root/bridge_slide06",
+    "coordinator_model": "gpt-6.1-sol",
+    "coordinator_effort": "medium",
+    "fork_turns": "all",
+    "model_override": null,
+    "effort_override": null,
+    "inherited_exact_match": true,
+    "prompt": "prompts/slide_06.json"
+  }
+]

@@ -1,6 +1,6 @@
-# Week 12 Presenter Notes — Integrated Method Selection and Capstone Studio
+# Week 12 Presenter Notes — Method Selection: Audit a computation and prepare a reproducible capstone
 
-## Slide 1: Which Computation Answers the Physics Question?
+## Slide 1: Method Selection: Audit a computation and prepare a reproducible capstone
 
 This week brings the methods together around one practical question: what computation answers the physical question in front of us? We will start from the requested output, trace a supplied implementation, test it against evidence, and carry the same habits into the capstone studio.
 

@@ -1,0 +1,6 @@
+Root: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week09/.agent/learning-notes/Week09_Data_Fitting_and_Uncertainty.tex
+Compiler: bundled Tectonic 0.17.0
+Command: python3 scripts/compile_latex.py <root>.tex --compiler tectonic --output-directory ../build --json
+Exit code: 0
+Output: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week09/.agent/learning-notes/build/Week09_Data_Fitting_and_Uncertainty.pdf (5 pages)
+Result: passed; no fatal LaTeX errors. The standard rerun/hyperref and disabled shell-escape notices are non-fatal.

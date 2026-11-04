@@ -1,4 +1,4 @@
-# PHY4605 Week 04 Lecture Deck — Draft Outline
+# PHY4605 Week 04 — Parameter Sweeps: Compare one controlled change and interpret the graph
 
 **Status:** APPROVED — revised after slide-level feedback on title-slide density and diagnosis-slide density
 
@@ -10,7 +10,7 @@
 
 ## Slide sequence
 
-### 01 — Change one parameter, see the physics
+### 01 — Parameter Sweeps: Compare one controlled change and interpret the graph
 
 - **Key points:** Keep the cover deliberately light: `Week 04 | Parameter sweeps and graph interpretation`.
 - **Visual/layout:** Large title and one concise subtitle above a single spacious spring visual with a force arrow, labels `F`, `k`, `x`, and `x = F/k`; no workflow or explanatory panels.

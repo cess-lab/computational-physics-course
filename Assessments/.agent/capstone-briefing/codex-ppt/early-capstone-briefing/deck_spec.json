@@ -1,0 +1,536 @@
+{
+  "deck_name": "PHY4605_Capstone_Early_Briefing",
+  "language": "English",
+  "goal": "Brief Year-2 physics students in Week 03 on an open-ended, AI-assisted capstone investigation with ten distinct problem briefs and no prescribed common solution path.",
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 4,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved Deck A sample prompt for slide 04, Realism Is the Goal, Not Complexity",
+    "input_context_preparation": "parent generated and visually inspected the sample with the built-in image_gen tool; no strict source raster assets are required",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/early-capstone-briefing/origin_image/slide_04.png",
+    "handoff_rule": "Use built-in image_gen generate mode and the approved sample as a style-only reference; return a blocker if the same backend is unavailable."
+  },
+  "style": {
+    "name": "Teaching Courseware - PHY4605 capstone briefing",
+    "visual_direction": "Open white or light-neutral canvas with large navy sans-serif title hierarchy, cool-gray structure, restrained blue, teal, sage, ochre and occasional coral accents, clear labelled diagrams, generous spacing, and varied layouts by slide role.",
+    "color_palette": "white/light neutral, navy, cool gray, muted blue, teal, sage green, muted ochre, coral only for genuine warnings or defects",
+    "typography": "large bold readable sans-serif titles, regular sans-serif body text, short labels, no decorative script, no code typography unless explicitly needed",
+    "texture_and_finish": "flat polished teaching visual with clean cards, simple icons and restrained scientific illustration",
+    "deck_consistency": "match the approved slide 04 sample's palette, typography mood, open canvas, spacing and moderate density; vary composition by slide role; no slide numbers, outer frame, logo, watermark or timing labels"
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/early-capstone-briefing/origin_image/slide_04.png",
+    "role": "approved Deck A sample style reference",
+    "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact three-panel layout"
+  },
+  "deck_context": {
+    "source_summary": "PHY4605 students receive ten distinct lecturer-assigned real-world physics problem briefs. Each group interprets its scenario, chooses a defensible model scope and added physics, designs an algorithm, implements and tests a computation, interprets evidence and hands off a reproducible investigation.",
+    "core_claim": "The strongest capstone is the most physically faithful, relevant and defensible approximation to the real process, not the most complicated code.",
+    "canonical_terms": [
+      "physical scenario",
+      "model scope",
+      "assumption",
+      "numerical method",
+      "algorithm",
+      "evidence",
+      "validation",
+      "limitation",
+      "reproducibility",
+      "AI decision record"
+    ],
+    "assessment_boundary": "The capstone is provisionally 15%: Week 06 feasibility 2%, Week 07 design review 3%, Weeks 08-11 development evidence 3%, Weeks 13-14 final investigation 5%, and individual defence/handoff 2%. Week 04 and Week 12 are formative.",
+    "brief_assignment_boundary": "Ten groups receive ten distinct briefs. No starter Live Script is required, no common solution path is prescribed, and the deck must not reveal a prescribed method or final answer for any brief.",
+    "universal_constraints": "Keep visible text in English. Do not invent numerical results, equations, data, or solution paths. Do not prescribe one graph, one method, one parameter change, or one validation pair. AI can assist modelling and coding, but it is never the validator.",
+    "brief_detail_contract": "Slides 06-10 present paired brief descriptions. For each brief, show context and broad objective, possible realism dimensions as examples, likely information or data categories without implying that a specific dataset exists, and boundary questions about model scope. Do not prescribe equations, numerical methods, code structure, required graphs, parameter changes, validation pairs or a feature checklist. Students choose and justify the scope.",
+    "canonical_briefs": [
+      "Brief 01 — Projectile Delivery in Crosswind with Quadratic Drag",
+      "Brief 02 — Projectile Launch from Elevated Terrain under Wind Shear",
+      "Brief 03 — RC Charging with Leakage and Temperature-Dependent Components",
+      "Brief 04 — RC Sensor Circuit with Internal Source Resistance and Time-Varying Load",
+      "Brief 05 — Radioactive Decay with Background Radiation and Detector Dead Time",
+      "Brief 06 — Two-Isotope Decay Mixture with Efficiency and Counting Noise",
+      "Brief 07 — Cooling with Thermal Radiation and a Changing Ambient Temperature",
+      "Brief 08 — Cooling of a Heated Object with Internal Heat Generation",
+      "Brief 09 — Impulse on a Moving Body with Drag and Changing Force Direction",
+      "Brief 10 — Time-Varying Directional Actuator Force with Mass Change and Sensor Uncertainty"
+    ]
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Your PHY4605 Capstone Investigation",
+      "role": "cover",
+      "intent": "Open with the transition from a real-world scenario to a defensible computational investigation.",
+      "key_points": [
+        "Ten groups, ten distinct problem briefs",
+        "AI-assisted realistic simulation and analysis",
+        "A 15% course component built through staged evidence"
+      ],
+      "layout": {
+        "composition": "open cover with a labelled scenario-to-model-to-evidence flow and a restrained physics illustration"
+      },
+      "visual_elements": {
+        "main_visual": "three connected nodes labelled scenario, simulation and evidence",
+        "supporting_elements": "small group and validation cues"
+      },
+      "constraints": [
+        "Keep the cover concise and welcoming",
+        "No invented numerical example"
+      ]
+    },
+    {
+      "number": 2,
+      "title": "The New Capstone Contract",
+      "role": "contract-setting",
+      "intent": "Make the open-ended nature and student responsibility explicit before discussing milestones.",
+      "key_points": [
+        "Start from a detailed physical scenario and broad objective",
+        "There is no common starter Live Script",
+        "Your group makes and defends the modelling decisions"
+      ],
+      "layout": {
+        "composition": "large contract statement with three supporting commitments"
+      },
+      "visual_elements": {
+        "main_visual": "signed-agreement style visual translated into an academic investigation contract",
+        "supporting_elements": "clear do/decide distinction"
+      }
+    },
+    {
+      "number": 3,
+      "title": "What the Brief Gives You — and What You Must Decide",
+      "role": "comparison",
+      "intent": "Separate the supplied problem boundary from the group's modelling responsibility.",
+      "key_points": [
+        "Brief gives context, process, initial information or data, and broad objective",
+        "Group decides model, effects, assumptions, method, code, outputs and evidence",
+        "Ask questions when the boundary is ambiguous"
+      ],
+      "layout": {
+        "composition": "two-column provided-versus-decided comparison with a central boundary line"
+      },
+      "visual_elements": {
+        "main_visual": "left supplied brief folder and right group decision map",
+        "supporting_elements": "arrows showing handoff from brief to investigation"
+      }
+    },
+    {
+      "number": 4,
+      "title": "Realism Is the Goal, Not Complexity",
+      "role": "concept explanation",
+      "intent": "Show that relevant physical fidelity and defensibility matter more than adding terms.",
+      "key_points": [
+        "Start with a useful baseline prediction",
+        "Add effects that materially change the result",
+        "Justify assumptions and test the resulting model",
+        "Complexity without evidence is not high-quality work"
+      ],
+      "sample_approved": true,
+      "layout": {
+        "composition": "approved representative sample showing baseline, relevant effects and defensible realistic simulation"
+      },
+      "visual_elements": {
+        "main_visual": "approved sample slide itself as style anchor; redraw the concept for this final slide only if needed",
+        "supporting_elements": "baseline, evidence and defend labels"
+      }
+    },
+    {
+      "number": 5,
+      "title": "One Brief per Group, Ten Distinct Investigations",
+      "role": "assignment mechanics",
+      "intent": "Explain distinct group ownership without implying ten different marking standards.",
+      "key_points": [
+        "Each group receives one assigned brief",
+        "Scenarios, data and objectives are distinct",
+        "The same high-level standard applies to every group",
+        "Do not copy a common solution route"
+      ],
+      "layout": {
+        "composition": "ten labelled investigation lanes converging on a shared quality standard"
+      },
+      "visual_elements": {
+        "main_visual": "ten coloured brief cards with distinct icons and one shared evidence bar",
+        "supporting_elements": "no-solution-template warning"
+      }
+    },
+    {
+      "number": 6,
+      "title": "Projectile Investigations: Wind, Drag and Terrain",
+      "role": "paired brief detail",
+      "intent": "Explain Briefs 01 and 02 through context, broad objective, possible realism dimensions, likely information categories, and model-boundary questions without prescribing a method.",
+      "key_points": [
+        "BRIEF 01 — Projectile Delivery in Crosswind with Quadratic Drag | Context + objective: a package or test body moves through crosswind toward an intended delivery region; investigate how convincingly the delivery outcome can be represented.",
+        "Possible realism dimensions: 3D motion, relative airflow, varying crosswind, aerodynamic properties, release uncertainty, air-density variation, lift or spin.",
+        "Likely information categories: launch or release conditions, object properties, target region, wind measurements or ranges, and any reference-trial observations actually supplied.",
+        "Boundary questions: Is a steady crosswind adequate? Is 3D motion material? Can the body be treated as a point? Which aerodynamic effects are supported by evidence?",
+        "BRIEF 02 — Projectile Launch from Elevated Terrain under Wind Shear | Context + objective: an object launches from elevated or uneven terrain while wind changes with height; investigate whether it can reach an intended or acceptable landing region.",
+        "Possible realism dimensions: wind shear, terrain profile, non-level impact surface, launch variability, atmospheric variation and local obstructions.",
+        "Likely information categories: site elevations or terrain information, wind observations at selected heights, launch conditions, object properties, and an intended landing or safety region.",
+        "Boundary questions: How much terrain is needed? Is 2D defensible? What happens outside measured wind heights? Are gusts, turbulence or obstacles material but unsupported?",
+        "Aim for defensible realism: preserve a transparent baseline; add effects that materially affect the objective and can be supported or tested; justify important omissions."
+      ],
+      "layout": {
+        "composition": "two equal vertical brief cards; one brief per column; each card has title, context/objective, possible realism dimensions, likely information categories, and boundary questions; ochre footer strip across the bottom"
+      },
+      "visual_elements": {
+        "main_visual": "subtle labelled projectile trajectory and terrain/wind-shear icons integrated into the two cards; diagrams support the text without prescribing a solution",
+        "supporting_elements": "clearly labelled sections inside each card: Context + objective, Possible realism dimensions, Likely information, Boundary questions; bottom footer strip with the defensible-realism rule"
+      },
+      "constraints": [
+        "Keep all five labels visible and readable for both briefs.",
+        "Possible realism dimensions are examples, not a checklist or requirement.",
+        "Likely information is category-level language; do not imply that a specific dataset exists.",
+        "Do not prescribe equations, numerical methods, code structure, required graphs, parameter changes or validation pairs.",
+        "No equations, code, numeric results, company claims or invented data."
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Circuit Investigations: Non-Ideal Charging and Loading",
+      "role": "paired brief detail",
+      "intent": "Explain Briefs 03 and 04 through context, broad objective, possible realism dimensions, likely information categories, and model-boundary questions without prescribing a method.",
+      "key_points": [
+        "BRIEF 03 — RC Charging with Leakage and Temperature-Dependent Components | Context + objective: a capacitor circuit operates where leakage and temperature may alter charging; investigate whether its intended timing, storage or threshold function remains credible.",
+        "Possible realism dimensions: leakage pathways, temperature-dependent component behaviour, tolerance, supply variation, measurement loading, ageing or self-heating.",
+        "Likely information categories: nominal component specifications, tolerance or temperature ranges, supply information, temperature records, observed charging data if supplied, and the usable operating range.",
+        "Boundary questions: Is temperature imposed or coupled to circuit heating? Which variations matter? Are parasitics supported? Over what range are the stated properties credible?",
+        "BRIEF 04 — RC Sensor Circuit with Internal Source Resistance and Time-Varying Load | Context + objective: a sensor is supplied by a non-ideal source while its connected load changes; investigate whether the signal remains usable and physically credible.",
+        "Possible realism dimensions: internal source resistance, changing load demand, sensor output behaviour, wiring and measurement loading, switching transients and sensor noise.",
+        "Likely information categories: source, sensor and load specifications; a load schedule or trace if supplied; calibration readings, sampling information, and an acceptable signal range.",
+        "Boundary questions: Are load changes abrupt or gradual? Does source regulation matter? Which parasitics are material? Is noise central or secondary to the objective?",
+        "Aim for defensible realism: preserve a transparent baseline; add effects that materially affect the objective and can be supported or tested; justify important omissions."
+      ],
+      "layout": {
+        "composition": "two equal vertical brief cards with a compact circuit motif linking source, RC element, sensor and load; each card uses the same five labelled sections; ochre footer strip across the bottom"
+      },
+      "visual_elements": {
+        "main_visual": "simple labelled circuit iconography showing non-ideal source and changing load without equations or circuit solution",
+        "supporting_elements": "paired cards with Context + objective, Possible realism dimensions, Likely information, Boundary questions; bottom footer strip with the defensible-realism rule"
+      },
+      "constraints": [
+        "Keep all five labels visible and readable for both briefs.",
+        "Possible realism dimensions are examples, not a checklist or requirement.",
+        "Likely information is category-level language; do not imply that a specific dataset exists.",
+        "Do not prescribe equations, numerical methods, code structure, required graphs, parameter changes or validation pairs.",
+        "No equations, code, numeric results, device claims or invented data."
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Radiation Investigations: Detector Effects and Mixed Sources",
+      "role": "paired brief detail",
+      "intent": "Explain Briefs 05 and 06 through context, broad objective, possible realism dimensions, likely information categories, and model-boundary questions without prescribing a method.",
+      "key_points": [
+        "BRIEF 05 — Radioactive Decay with Background Radiation and Detector Dead Time | Context + objective: a detector records a decaying source plus unrelated background events while closely spaced events may be missed; investigate how reliably source behaviour can be inferred.",
+        "Possible realism dimensions: background variation, detector dead time, efficiency, finite counting intervals, source-detector geometry, shielding and random counting variation.",
+        "Likely information categories: time-stamped or interval counts, background-only observations, detector specifications or calibration information if supplied, source references and measurement geometry.",
+        "Boundary questions: Is background stable? Is the dead-time description adequate? Can efficiency and geometry be treated as constant? Are observations near a detector-response limit?",
+        "BRIEF 06 — Two-Isotope Decay Mixture with Efficiency and Counting Noise | Context + objective: measurements contain two radioactive components with different timescales; investigate what can defensibly be learned about their combined behaviour or composition.",
+        "Possible realism dimensions: different decay timescales, isotope-dependent efficiency, background counts, finite intervals, repeated observations and counting variability.",
+        "Likely information categories: count records, measurement times, candidate isotope information, efficiency or calibration evidence if supplied, background observations and repeated measurements if available.",
+        "Boundary questions: Are isotope identities known? Can the detector distinguish signals? Is efficiency stable? Is dead time material? How much uncertainty can the data support?",
+        "Aim for defensible realism: preserve a transparent baseline; add effects that materially affect the objective and can be supported or tested; justify important omissions."
+      ],
+      "layout": {
+        "composition": "two equal vertical brief cards with a restrained detector/counting visual between them; each card uses the same five labelled sections; ochre footer strip across the bottom"
+      },
+      "visual_elements": {
+        "main_visual": "subtle detector, decay-event and mixed-signal iconography; avoid isotope-specific claims or equations",
+        "supporting_elements": "paired cards with Context + objective, Possible realism dimensions, Likely information, Boundary questions; bottom footer strip with the defensible-realism rule"
+      },
+      "constraints": [
+        "Keep all five labels visible and readable for both briefs.",
+        "Possible realism dimensions are examples, not a checklist or requirement.",
+        "Likely information is category-level language; do not imply that a specific dataset or isotope is supplied.",
+        "Do not prescribe equations, numerical methods, code structure, required graphs, parameter changes or validation pairs.",
+        "No equations, code, numeric results, detector claims or invented data."
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Thermal Investigations: Changing Surroundings and Internal Heating",
+      "role": "paired brief detail",
+      "intent": "Explain Briefs 07 and 08 through context, broad objective, possible realism dimensions, likely information categories, and model-boundary questions without prescribing a method.",
+      "key_points": [
+        "BRIEF 07 — Cooling with Thermal Radiation and a Changing Ambient Temperature | Context + objective: a hot object cools in changing surroundings where radiation may matter; investigate its thermal history relative to a useful, safe or observable temperature range.",
+        "Possible realism dimensions: changing ambient conditions, convection, radiation, surface properties, geometry, environmental exposure and sensor response.",
+        "Likely information categories: initial and observed temperatures, ambient-temperature records, object dimensions, mass and material information, surface-property estimates, and any reference cooling run supplied.",
+        "Boundary questions: Is a uniform object temperature defensible? Do radiative surroundings match measured air temperature? Which heat-loss pathways matter? Are gradients, moisture or phase changes supportable?",
+        "BRIEF 08 — Cooling of a Heated Object with Internal Heat Generation | Context + objective: an object continues producing heat while losing energy; investigate whether its operating temperature remains acceptable and how behaviour changes during operation.",
+        "Possible realism dimensions: time-dependent or temperature-dependent heating, convection, radiation, conduction through supports, insulation, ambient variation and control action.",
+        "Likely information categories: power or operating records, measured temperatures, ambient conditions, geometry and thermal properties, operating limits and reference observations if supplied.",
+        "Boundary questions: Is heating spatially uniform? Can one temperature represent the object? Does temperature affect generation? Which support or enclosure pathways matter? Is control relevant?",
+        "Aim for defensible realism: preserve a transparent baseline; add effects that materially affect the objective and can be supported or tested; justify important omissions."
+      ],
+      "layout": {
+        "composition": "two equal vertical brief cards with a warm-to-cool thermal illustration spanning the card headers; each card uses the same five labelled sections; ochre footer strip across the bottom"
+      },
+      "visual_elements": {
+        "main_visual": "simple labelled hot-object, ambient and heat-flow icons; show changing surroundings without equations or solver instructions",
+        "supporting_elements": "paired cards with Context + objective, Possible realism dimensions, Likely information, Boundary questions; bottom footer strip with the defensible-realism rule"
+      },
+      "constraints": [
+        "Keep all five labels visible and readable for both briefs.",
+        "Possible realism dimensions are examples, not a checklist or requirement.",
+        "Likely information is category-level language; do not imply that a specific dataset exists.",
+        "Do not prescribe equations, numerical methods, code structure, required graphs, parameter changes or validation pairs.",
+        "No equations, code, numeric results, material constants or invented data."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Force Investigations: Direction, Drag, Mass and Measurement",
+      "role": "paired brief detail",
+      "intent": "Explain Briefs 09 and 10 through context, broad objective, possible realism dimensions, likely information categories, and model-boundary questions without prescribing a method.",
+      "key_points": [
+        "BRIEF 09 — Impulse on a Moving Body with Drag and Changing Force Direction | Context + objective: a moving body experiences a finite-duration force whose direction changes while resistance acts; investigate how the intervention alters subsequent motion.",
+        "Possible realism dimensions: force magnitude and direction history, drag, initial motion, dimensionality, body orientation, rotation and force-measurement uncertainty.",
+        "Likely information categories: force and direction records or ranges, event duration, body properties, initial motion, environmental information and any motion-tracking observations supplied.",
+        "Boundary questions: Is translation sufficient? Does the force act through the centre of mass? Is mass constant? Is this a short impulse or sustained actuation? Is the drag representation credible?",
+        "BRIEF 10 — Time-Varying Directional Actuator Force with Mass Change and Sensor Uncertainty | Context + objective: an actuator changes force direction while system mass changes and sensors are imperfect; investigate how confidently motion or actuator performance can be predicted.",
+        "Possible realism dimensions: commanded versus realised force, physical mass-change process, sensor bias/noise/delay, actuator limits, misalignment and external resistance.",
+        "Likely information categories: actuator commands or force records, orientation information, mass or payload history, sensor specifications and calibration evidence if supplied, initial state and reference tracking data.",
+        "Boundary questions: What enters or leaves as mass changes? Does transfer carry momentum? Are rotational effects material? Which sensor imperfections affect the objective? Is 2D defensible?",
+        "Aim for defensible realism: preserve a transparent baseline; add effects that materially affect the objective and can be supported or tested; justify important omissions."
+      ],
+      "layout": {
+        "composition": "two equal vertical brief cards with labelled force-vector and sensor/mass-change motifs; each card uses the same five labelled sections; ochre footer strip across the bottom"
+      },
+      "visual_elements": {
+        "main_visual": "restrained force-direction arrows, moving-body and changing-mass/sensor icons; keep the physical boundary question prominent",
+        "supporting_elements": "paired cards with Context + objective, Possible realism dimensions, Likely information, Boundary questions; bottom footer strip with the defensible-realism rule"
+      },
+      "constraints": [
+        "Keep all five labels visible and readable for both briefs.",
+        "Possible realism dimensions are examples, not a checklist or requirement.",
+        "Likely information is category-level language; do not imply that a specific dataset exists.",
+        "Do not prescribe equations, numerical methods, code structure, required graphs, parameter changes or validation pairs.",
+        "Changing mass is a physical process, not only a changing number; do not invent momentum-transfer details.",
+        "No equations, code, numeric results, device claims or invented data."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "From a Lecture Model to a Real Process",
+      "role": "concept bridge",
+      "intent": "Show a disciplined way to expand a familiar model without making the expansion arbitrary.",
+      "key_points": [
+        "Start from a taught process and identify a missing effect",
+        "Judge its relevance, available data and computability",
+        "Choose a model level you can test and defend",
+        "Keep the baseline visible for comparison"
+      ],
+      "layout": {
+        "composition": "layered baseline-to-extension ladder with decision questions between layers"
+      },
+      "visual_elements": {
+        "main_visual": "simple baseline physical sketch becoming a richer process diagram",
+        "supporting_elements": "relevance, data and testability gates"
+      }
+    },
+    {
+      "number": 12,
+      "title": "Your Investigation Reasoning Chain",
+      "role": "framework",
+      "intent": "Make the full reasoning chain visible from scenario interpretation to handoff.",
+      "key_points": [
+        "Scenario to physical interpretation",
+        "Model choices to algorithm and implementation",
+        "Tests and evidence to interpretation and limitations",
+        "Finish with a reproducible handoff"
+      ],
+      "layout": {
+        "composition": "wide numbered chain with grouped phases and a highlighted evidence loop"
+      },
+      "visual_elements": {
+        "main_visual": "scenario → model → algorithm → code → tests → interpretation → limitations → handoff",
+        "supporting_elements": "validation loop returning to model claim"
+      }
+    },
+    {
+      "number": 13,
+      "title": "How Groups Should Work",
+      "role": "group workflow",
+      "intent": "Set expectations for shared reasoning and individual understanding.",
+      "key_points": [
+        "Share physical reasoning, implementation, evidence and documentation",
+        "Rotate explanations instead of dividing the work into silos",
+        "Every member understands the final model and code",
+        "Record concise AI decisions and independent checks"
+      ],
+      "layout": {
+        "composition": "three-person group orbit around a shared model-and-evidence workspace"
+      },
+      "visual_elements": {
+        "main_visual": "collaborative workflow with rotating responsibility markers",
+        "supporting_elements": "explain, inspect and reproduce actions"
+      }
+    },
+    {
+      "number": 14,
+      "title": "Capstone Milestones and Weighting",
+      "role": "timeline",
+      "intent": "Show how a large investigation becomes manageable staged evidence.",
+      "key_points": [
+        "Week 03: assignment and orientation",
+        "Week 06 feasibility 2%; Week 07 design review 3%",
+        "Weeks 08-11 development evidence 3%",
+        "Weeks 13-14 final investigation 5% plus defence and handoff 2%",
+        "Week 04 and Week 12 are formative"
+      ],
+      "layout": {
+        "composition": "horizontal semester timeline with weighted milestone tags and formative checkpoints"
+      },
+      "visual_elements": {
+        "main_visual": "Weeks 03-14 timeline with separate formative and assessed markers",
+        "supporting_elements": "small 15% total badge"
+      },
+      "constraints": [
+        "Use exactly the stated weights and weeks",
+        "Do not imply Week 13 is a new briefing week"
+      ]
+    },
+    {
+      "number": 15,
+      "title": "Week 04: Understand the Assigned Brief",
+      "role": "formative checkpoint",
+      "intent": "Turn the assigned title into a precise investigation question before implementation.",
+      "key_points": [
+        "Restate the scenario and broad objective in your own words",
+        "Identify available information, data and unknowns",
+        "Clarify the real-world prediction or decision",
+        "Record ambiguity and questions for the lecturer"
+      ],
+      "layout": {
+        "composition": "brief-reading worksheet visual with four prompts around the scenario"
+      },
+      "visual_elements": {
+        "main_visual": "annotated scenario card leading to prediction and question list",
+        "supporting_elements": "formative checkpoint label"
+      }
+    },
+    {
+      "number": 16,
+      "title": "Week 06: Feasibility Proposal — 2%",
+      "role": "assessed milestone",
+      "intent": "Define the evidence of a manageable investigation without demanding final code.",
+      "key_points": [
+        "Propose a model direction and likely realism extension",
+        "List data, parameters and assumptions",
+        "Outline the computational route and verification intention",
+        "No final code or final method is required yet"
+      ],
+      "layout": {
+        "composition": "proposal canvas with scope, resources, route and verification quadrants"
+      },
+      "visual_elements": {
+        "main_visual": "four-part feasibility board with a manageable-scope gauge",
+        "supporting_elements": "2% assessment tag"
+      }
+    },
+    {
+      "number": 17,
+      "title": "Week 07: Model and Computational Design Review — 3%",
+      "role": "assessed milestone",
+      "intent": "Define what a defensible design review must make visible.",
+      "key_points": [
+        "Justify model scope and added physics",
+        "Identify data needs and assumptions",
+        "Justify a numerical approach without treating it as the only possible route",
+        "Plan testing, validation and sensitivity",
+        "Approval means defensible and feasible, not final correctness"
+      ],
+      "layout": {
+        "composition": "design-review panel with model, data, method and evidence sections"
+      },
+      "visual_elements": {
+        "main_visual": "review board with approval stamp labelled defensible and feasible",
+        "supporting_elements": "3% assessment tag"
+      }
+    },
+    {
+      "number": 18,
+      "title": "Weeks 08–11: Build Evidence Through Iteration — 3%",
+      "role": "development workflow",
+      "intent": "Encourage meaningful iteration and evidence rather than a retrospective chat diary.",
+      "key_points": [
+        "Record meaningful model and code decisions",
+        "Compare progressively improved approximations",
+        "Collect numerical tests and validation evidence",
+        "Record material AI decisions, not full chat histories"
+      ],
+      "layout": {
+        "composition": "circular iteration loop from model choice through test and revision"
+      },
+      "visual_elements": {
+        "main_visual": "four-stage loop with evidence snapshots",
+        "supporting_elements": "3% development evidence tag"
+      }
+    },
+    {
+      "number": 19,
+      "title": "Week 12: Freeze, Reproduce and Rehearse",
+      "role": "preparation",
+      "intent": "Make the final readiness criteria concrete before presentations begin.",
+      "key_points": [
+        "Freeze the final model and evidence",
+        "Rerun cleanly from a fresh MATLAB session",
+        "Check units, limiting behaviour, sensitivity and plausibility",
+        "Prepare reproducibility and individual explanation"
+      ],
+      "layout": {
+        "composition": "finalisation checklist beside a fresh-session rerun pathway"
+      },
+      "visual_elements": {
+        "main_visual": "freeze, rerun, check and rehearse sequence",
+        "supporting_elements": "Week 12 formative label"
+      }
+    },
+    {
+      "number": 20,
+      "title": "AI Tutorial: Use AI as a Modelling Partner, Not a Validator",
+      "role": "AI tutorial",
+      "intent": "Show safe productive uses of AI while keeping validation independent.",
+      "key_points": [
+        "Use AI to interpret a scenario and compare model levels",
+        "Ask for algorithm plans, code drafts, debugging and documentation help",
+        "Use MATLAB Copilot or ChatGPT for alternatives, not authority",
+        "Validate units, limits, sensitivity and physical meaning yourself"
+      ],
+      "layout": {
+        "composition": "AI-assisted workflow with a bold independent-validation boundary"
+      },
+      "visual_elements": {
+        "main_visual": "AI partner icon feeding model and code decisions, then stopping before validation",
+        "supporting_elements": "accepted, modified, rejected decision record"
+      },
+      "constraints": [
+        "Do not imply that AI output is evidence",
+        "Keep the independent check visually dominant"
+      ]
+    },
+    {
+      "number": 21,
+      "title": "Safe Prompts, Failure Modes and Your Next Action",
+      "role": "closing action",
+      "intent": "Close with practical prompt patterns, common failure modes and one immediate next action.",
+      "key_points": [
+        "Ask AI to expose assumptions, units and testable alternatives",
+        "Watch for invented values, unstable steps and unsupported physics",
+        "A polished plot can still be unverified",
+        "Next: read, frame and question the assigned brief"
+      ],
+      "layout": {
+        "composition": "three-column safe prompt, failure mode and next action layout with a strong closing callout"
+      },
+      "visual_elements": {
+        "main_visual": "green safe-prompt cards contrasted with ochre warning cards and a final action arrow",
+        "supporting_elements": "brief-reading next step"
+      }
+    }
+  ]
+}

@@ -8,7 +8,10 @@
 \usepackage[most]{tcolorbox}
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue}
-\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\setlength{\parindent}{0pt}\setlength{\parskip}{2pt}
+\emergencystretch=2em
+\hyphenpenalty=8000
+\exhyphenpenalty=10000
 \newcommand{\course}{PHY4605 Computational Methods in Physics}
 \newcommand{\units}[1]{\,\mathrm{#1}}
 \newtcolorbox{keybox}{colback=RoyalBlue!5,colframe=RoyalBlue!65!black,boxrule=.7pt,arc=2mm}
@@ -18,20 +21,22 @@
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 4}\par\vspace{4pt}
-{\LARGE\bfseries Parameter Sweeps and Graph Interpretation}\par\vspace{3pt}
+{\LARGE\bfseries Parameter Sweeps: Compare one controlled change and interpret the graph}\par\vspace{3pt}
 \textit{Use one familiar spring model to turn parameter variation into a controlled computational experiment.}
 
 \begin{keybox}\textbf{Physical question.} If the same forces are applied to springs with different stiffness values, how can we compare their extensions fairly and explain the trend using both the graph and Hooke's law?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item design a controlled sweep that varies one physical parameter while keeping the model and other inputs fixed;
 \item evaluate and overlay several parameter cases on common labelled axes; and
 \item validate a known or limiting case and explain the trend in physical language.
 \end{enumerate}
 
+\textit{\textbf{How to use this note.} Follow the numbered route from a controlled model change to a fair graph, validation, and physical interpretation. Pause at each checkpoint and predict before reading the result.}
+
 \section*{1. A parameter sweep is a controlled experiment}
-A parameter sweep asks the \emph{same physical question} several times while deliberately changing one input parameter. The comparison is meaningful only when the equation, independent-variable array, assumptions, and all other parameters remain the same.
+A parameter sweep repeats the \emph{same model} for several values of one chosen parameter. Here, applied force is the independent variable and the same force array is used for every curve; the equation, assumptions, and other inputs stay fixed.
 
 \begin{center}
 \begin{tikzpicture}[node distance=7mm and 7mm,every node/.style={font=\small,align=center},box/.style={draw=MidnightBlue,rounded corners=2mm,fill=RoyalBlue!7,minimum width=31mm,minimum height=10mm},check/.style={draw=ForestGreen!55!black,rounded corners=2mm,fill=ForestGreen!7,minimum width=31mm,minimum height=10mm},arrow/.style={-{Latex[length=2mm]},thick,MidnightBlue}]
@@ -45,7 +50,7 @@ A parameter sweep asks the \emph{same physical question} several times while del
 \end{tikzpicture}
 \end{center}
 
-\begin{aibox}\textbf{Common mistake.} If two parameters change at the same time, the graph may still look smooth, but the difference between curves can no longer be attributed to one cause. That is a confounded comparison, not a controlled sweep.\end{aibox}
+\begin{aibox}\textbf{Common mistake.} Changing two parameters together confounds their effects: even a smooth graph cannot show which change caused the difference.\end{aibox}
 
 \section*{2. Familiar model: an ideal spring}
 Within its linear elastic range, an ideal spring follows Hooke's law,
@@ -68,7 +73,7 @@ $x$ & \texttt{extension\_m} & spring extension, m; calculated output\\
 \end{tabular}
 \end{center}
 
-Use the common force array $F=0$ to $10\units{N}$ and three stiffnesses: $50$, $100$, and $200\units{N\,m^{-1}}$. Treat $100\units{N\,m^{-1}}$ as the baseline.
+Use the common force array $F=0$ to $10\units{N}$ and three stiffnesses: $50$, $100$, and $200\units{N\,m^{-1}}$. Use $100\units{N\,m^{-1}}$ as the reference (baseline) case.
 
 \begin{checkbox}\textbf{Prediction checkpoint.} At the same positive force, the $50\units{N\,m^{-1}}$ spring should extend the most and the $200\units{N\,m^{-1}}$ spring the least. At $F=0$, every ideal spring must have $x=0$.\end{checkbox}
 
@@ -90,7 +95,7 @@ This control statement is part of the scientific result. It tells the reader wha
 \section*{4. Pseudocode before MATLAB}
 \begin{enumerate}[nosep,leftmargin=7mm]
 \item define one common applied-force array;
-\item define a small array of stiffness values and identify the baseline;
+\item define a small array of stiffness values and identify the reference case;
 \item for each stiffness, calculate $x=F/k$ using the same force values;
 \item store one extension curve for each stiffness;
 \item overlay all curves using the same axes and a legend;
@@ -101,22 +106,22 @@ This control statement is part of the scientific result. It tells the reader wha
 
 \section*{5. Build a small parameter array}
 The force array contains the repeated physical inputs. The stiffness array contains the cases to compare.
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Define the common force array, swept stiffness values, and reference case.}]
 F_N = 0:0.5:10;       % common applied-force array (N)
 k_Npm = [50 100 200]; % swept spring stiffness values (N/m)
-baseline_k_Npm = 100; % baseline case (N/m)
+baseline_k_Npm = 100; % reference case (N/m)
 \end{lstlisting}
 The comparison uses only three stiffness values because the goal is to make the trend visible and traceable. A dense sweep is not automatically a better experiment.
 
 \section*{6. Evaluate the same model for every case}
 Preallocate one matrix row for each stiffness. The loop changes only the selected stiffness value; the force array and equation remain unchanged.
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Evaluate extension for each stiffness using the common force array.}]
 extension_m = zeros(length(k_Npm),length(F_N));
 for case_id = 1:length(k_Npm)
     extension_m(case_id,:) = F_N./k_Npm(case_id);
 end
 \end{lstlisting}
-Row 1 stores the $50\units{N\,m^{-1}}$ case, row 2 the baseline, and row 3 the $200\units{N\,m^{-1}}$ case. At $F=10\units{N}$,
+Row 1 stores the $50\units{N\,m^{-1}}$ case, row 2 the reference case, and row 3 the $200\units{N\,m^{-1}}$ case. At $F=10\units{N}$,
 \[
 x=\frac{10}{50}=0.20\units{m},\quad
 x=\frac{10}{100}=0.10\units{m},\quad
@@ -127,7 +132,7 @@ x=\frac{10}{200}=0.05\units{m}.
 
 \section*{7. Overlay curves so the comparison is fair}
 All parameter cases should share the same axes. A legend identifies which curve belongs to which stiffness.
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Plot all stiffness cases on common applied-force and extension axes.}]
 plot(F_N,extension_m.','LineWidth',2)
 grid on
 xlabel('Applied force, F (N)')
@@ -139,7 +144,7 @@ legend('k = 50 N/m','k = 100 N/m','k = 200 N/m')
 \begin{figure}[H]
 \centering
 \includegraphics[width=.88\linewidth]{../matlab/assets/week04_hooke_parameter_sweep.png}
-\caption{MATLAB-generated parameter sweep for the locked Hooke model. Every curve uses the same applied-force array; only spring stiffness changes.}
+\caption{MATLAB-generated parameter sweep for the Hooke model used in this example. Every curve uses the same applied-force array; only spring stiffness changes.}
 \end{figure}
 
 \section*{8. Read the graph as physics, not only as geometry}
@@ -147,13 +152,13 @@ The three curves are straight because $x$ is proportional to $F$ when $k$ is fix
 
 \begin{keybox}\textbf{Graph interpretation rule.} Do not stop at ``the blue line is steeper.'' State the physical cause: the smaller stiffness produces more extension at the same force because $x=F/k$.\end{keybox}
 
-\section*{9. Core validation: zero-force limiting case}
-At zero applied force,
+\section*{9. Required validation: zero-force limiting case}
+At zero applied force, the known limiting value is
 \[
 x(0)=\frac{0}{k}=0
 \]
-for every positive stiffness. This check is known before running the program and tests all swept cases simultaneously.
-\begin{lstlisting}[style=matlabstyle]
+for every positive stiffness. It is known before running the program and tests all swept cases together.
+\begin{lstlisting}[style=matlabstyle,caption={Check the zero-force limiting value for every stiffness case.}]
 zero_force_extension_m = extension_m(:,1);
 assert(max(abs(zero_force_extension_m)) < 1e-12,...
     'Zero-force limiting-case validation failed.')
@@ -161,12 +166,12 @@ assert(max(abs(zero_force_extension_m)) < 1e-12,...
 \begin{checkbox}\textbf{Validation result.} The first stored extension is 0 m for all three stiffness values, so the limiting case passes from a fresh MATLAB session.\end{checkbox}
 
 \section*{10. Diagnose a runnable but physically wrong model}
-Suppose the model is entered as \texttt{x = F.*k}. MATLAB can calculate that expression, but it no longer represents Hooke's law. The units are wrong and the trend reverses: larger stiffness would produce a larger numerical output.
+Suppose the model is entered as \texttt{x = F.*k}. MATLAB can calculate it, but it no longer represents Hooke's law: the units are wrong and larger stiffness produces a larger output.
 
 \begin{center}\small
 \begin{tabular}{>{\raggedright\arraybackslash}p{.27\linewidth}>{\raggedright\arraybackslash}p{.30\linewidth}>{\raggedright\arraybackslash}p{.29\linewidth}}
 \toprule
-\textbf{Check} & \textbf{Correct $x=F/k$} & \textbf{Wrong $F\,k$}\\
+\textbf{Check} & \textbf{Correct $x=F/k$} & \textbf{Incorrect product $F\,k$}\\
 \midrule
 Units & N /(N/m) = m & N(N/m), not m\\
 Stiffness trend & larger $k$ gives smaller $x$ & larger $k$ gives larger value\\
@@ -175,20 +180,20 @@ At $F=0$ & zero & also zero; this check alone cannot expose the formula error\\
 \end{tabular}
 \end{center}
 
-\begin{aibox}\textbf{Responsible-AI caution.} A generated script can pass one limiting-case check and still encode the wrong equation. Use several kinds of evidence together: physical model, units, expected trend, and the selected validation check.\end{aibox}
+\begin{aibox}\textbf{Responsible-AI caution.} Generated code can pass a limiting check yet use the wrong equation. Combine the physical model, units, expected trend, and validation evidence.\end{aibox}
 
-\section*{Working exposure: selected values and a two-parameter table}
-Selected-value tables can compare exact outputs at a few common forces. A supplied two-parameter table may broaden the comparison, but designing heatmaps is not Core Week 4 work.
+\section*{Guided extension: selected values and two parameters}
+Read the supplied table to compare outputs at common forces. A supplied two-parameter table broadens the comparison; designing heatmaps is not required in Week 4.
 
-\section*{Optional stretch: local sensitivity}
-At fixed force, $\partial x/\partial k=-F/k^2$. The negative sign formalises the Core trend: increasing stiffness reduces extension. Quantitative sensitivity is not required for the Week 4 pass-level route.
+\section*{Optional extension: local sensitivity}
+If useful, read the supplied fixed-force result $\partial x/\partial k=-F/k^2$. Its negative sign formalises the main trend; quantitative sensitivity is optional, not required in Week 4.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=6mm]
-\item A controlled parameter sweep changes one named parameter while keeping the model and other inputs fixed.
-\item Overlay curves on common labelled axes and compare the same physical input across cases.
-\item Explain the trend using the physical equation, then validate at least one known or limiting case before trusting the result.
+\item Change one named parameter while keeping the model and other inputs fixed.
+\item Overlay curves on common labelled axes and compare the same input across cases.
+\item Explain the trend with the physical equation, then complete the required limiting-case validation.
 \end{enumerate}
 
-\begin{keybox}\textbf{Preparation for the practical.} Be ready to transfer the same sweep logic to Ohm's law, vertical motion, and a small-angle pendulum. For every context, state what changes, what stays fixed, what the graph should show, and which independent check makes the comparison credible.\end{keybox}
+\begin{keybox}\textbf{Preparation for the practical.} Transfer the sweep logic to Ohm's law, vertical motion, or a small-angle pendulum. For each, state changed and fixed inputs, predict the graph, and name an independent check.\end{keybox}
 \end{document}

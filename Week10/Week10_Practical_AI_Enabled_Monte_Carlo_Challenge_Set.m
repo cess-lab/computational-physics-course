@@ -1,4 +1,4 @@
-%[text] # Week 10 Practical Activity: AI-Enabled Monte Carlo Challenge Set
+%[text] # Monte Carlo Sampling: Use repeated random trials to estimate physical variation
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%
@@ -15,6 +15,9 @@ detection_probability = 0.65;
 expected_detected_count = photons_per_trial*detection_probability;
 photon_prediction = "REPLACE_WITH_EXPECTED_COUNT_AND_VARIABILITY_STATEMENT";
 %[text] **Required evidence:** define one trial, give the expected count, and explain why individual trials can differ. **Defence hook:** distinguish probability 0.65 from a guarantee that exactly 65 percent of every set of 40 photons is detected.
+%%
+%[text] ## Algorithm / Pseudocode Checkpoint
+%[text] Before generating repeated outcomes, state the ordered computational steps: define one trial and its random rule, set the seed when reproducibility is required, generate many trials, summarise the distribution, compare sample sizes, and interpret the mean and spread physically.
 %%
 %[text] ## Question 2: Simulate Repeated Photon Counts
 %[text] Reset the supplied seed, generate 2,000 repeated measurements, count detections in each trial, then display the distribution. The scaffold compares each uniform random draw with the detection probability.

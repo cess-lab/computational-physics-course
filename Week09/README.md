@@ -1,4 +1,4 @@
-# Week 09 — Data Fitting and Uncertainty
+# Week 09 — Data Fitting: Infer a physical parameter and read residuals with uncertainty
 
 Use a small physical dataset to fit a model, interpret fitted parameters and units, inspect residuals, and report uncertainty without false precision.
 
@@ -7,7 +7,23 @@ Use a small physical dataset to fit a model, interpret fitted parameters and uni
 - [Learning note](Week09_Learning_Note_Data_Fitting_and_Uncertainty.pdf): Ohm's-law fitting, parameter interpretation, residuals, validation, and cautious uncertainty.
 - [Lecture demonstration](Week09_Lecture_Demonstration_Ohms_Law_Data_Fitting.m): complete lecturer-led fit of voltage-current measurements for a nominal 47 ohm resistor.
 - [Group practical](Week09_Practical_AI_Enabled_Data_Fitting_Challenge_Set.m): ten progressive challenges across spring calibration, cart motion, and pendulum data.
-- Lecture-slide outline: prepared under `.agent/lecture-slides/codex-ppt/outline.md` for later lecturer approval. No Week 09 slide images or PPTX have been created.
+- [Lecture slide deck](Lecture_Slides_Week09.pptx): completed 14-slide image-based Teaching Courseware deck, with final QA and dispatch records retained under `.agent/lecture-slides/codex-ppt/qa/`.
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the dedicated Week 09 diagnostic in Google Classroom when it is released, and predict the fitted trend and parameter units.
+
+**During:** Follow `measurements -> model -> fitted parameter -> residuals -> validation -> uncertainty -> interpretation`; run the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 09 is one of the ten counted practical packets; the best eight packets count for the group component.
+
+## Current slide-deck status
+
+The current deck is locally assembled and QA-recorded: 14 slides, 14 non-empty presenter-note sections, successful LibreOffice export, and no pending or blocked slide jobs. The retained records document the approved sample gate and final deck QA, but not a separate full-deck lecturer-approval record.
 
 ## Learning Focus
 
@@ -48,8 +64,8 @@ Work in groups of two or three. The practical contexts are Hooke-law spring cali
 
 Google Classroom is the official submission record. Complete and lock the group evidence before the question slot and individual defender are drawn. Follow the rotation rule and arrange a make-up defence for an absence. The Week 09 practical includes a compact capstone process checkpoint but introduces no new graded capstone milestone.
 
-The individual pre-practical diagnostic is drafted locally but has not been published.
+Complete the dedicated Week 09 diagnostic through its Google Classroom coursework when released. If it reveals a common misconception, the lecturer may post an optional 10–15 minute remediation with one retry and confidence check; it is not a prerequisite for the next lecture. The local question key remains planning material until publication is approved.
 
 ## Instructor Sources
 
-Hidden `.agent/` folders retain the learning-note LaTeX and rendered QA, strict MATLAB fitting evidence and plots, practical reference answers and defence records, the draft diagnostic, and the lecture-slide outline. The slide-production folder contains only the outline at this stage.
+Hidden `.agent/` folders retain the learning-note LaTeX and rendered QA, strict MATLAB fitting evidence and plots, practical reference answers and defence records, the draft diagnostic, and the lecture-deck source images, prompts, speaker notes, and final QA. The current student-facing deck is `Lecture_Slides_Week09.pptx`.

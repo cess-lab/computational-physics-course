@@ -46,20 +46,20 @@ Use the course-wide cognitive-weight guide when balancing materials and assessme
 
 | Week | Title and focus | Core materials and output | Delivery method and checkpoints |
 | --- | --- | --- | --- |
-| 01 | Physics to arrays and plots | One familiar analytical model; variables/units, arrays, indexing, element-wise operators, and a labelled plot. | Diagnose Onramp retention, explicitly repair MATLAB foundations, and compare a prediction with the graph. |
-| 02 | Pseudocode, loops, and debugging | Plain-language decomposition, short pseudocode, loop tracing, scaffold completion, parameter modification, and one clear defect. | Reuse familiar physics so the new load is algorithmic; distinguish syntax, array/operator, and physical/logical defects. |
-| 03 | Two-by-two linear systems | Kirchhoff equations, sign convention, 2×2 assembly, backslash solution, reconstructed currents, and direct current-balance validation. | Treat residuals, rank, conditioning, power balance, and plausible-but-wrong matrices as stretch material. Introduce bounded capstone problem spaces. |
-| 04 | Parameter sweeps and graph interpretation | Vary one parameter in a familiar analytical model, overlay labelled curves, explain the trend, and validate a baseline/limiting case. | Replace eigenproblems completely; reinforce arrays, loops, plots, controlled comparison, and physical interpretation. |
-| 05 | Root finding | Residual/root meaning, graphical bracket, scaffolded bisection, scaffolded Newton, one stopping rule, and residual substitution. | Move uniqueness proof, multiple stopping rules, `fzero`, safeguarding, and formal method selection to stretch; remove extreme stress cases. |
-| 06 | Numerical differentiation | Physical rate/gradient, forward difference, step-size comparison, analytic reference, units, and simple error. | Treat central difference and error curves as working exposure; detailed truncation/round-off theory is stretch. Capstone feasibility proposal is due. |
-| 07 | Numerical integration | Physical area/accumulation, trapezoidal rule, `trapz`, refinement, analytic/reference comparison, and units. | Simpson comparison is working exposure; quadrature error derivations are stretch. Approve capstone model, method, and validation plan. |
-| 08 | ODE simulation | First-order model, initial condition, Euler update, scaffolded loop, timestep comparison, supplied exact/`ode45` reference, and one check. | `ode45` use is working exposure; stability boundaries and Runge-Kutta derivation are stretch. |
-| 09 | Data fitting and uncertainty | Plot data, fit a simple physical relationship, interpret parameter units, inspect residual pattern, and state uncertainty cautiously. | Advanced fitting and formal uncertainty statistics are stretch. |
-| 10 | Random sampling and Monte Carlo | Repeated random trials, trajectory/distribution output, mean/spread, sample-size effect, and reproducibility. | Standard error is working exposure; distribution theory and statistical-mechanics extensions are stretch. |
-| 11 | Sensitivity and uncertainty propagation | One-at-a-time uncertainty sweep, output range, simple sensitivity interpretation, and distinction between numerical, parameter, and model limitations. | Formal propagation and Monte Carlo propagation are stretch. |
-| 12 | Integrated method selection and capstone studio | Familiar method-recognition cases, supplied/AI-assisted code audit, one validation choice, reproducibility, capstone completion, and defence rehearsal. | Do not introduce a new required method; unfamiliar transfer is stretch. |
-| 13 | Capstone presentation, defence, and handoff | Bounded investigation using a starter Live Script, one model modification, one principal output, required plus chosen validation, limitation, individual tracing, and reproducibility handoff. | Independent extensions and deeper method comparisons are stretch. |
-| 14 | Buffer/recovery | No planned new core content, compulsory practical, or new assessment chapter. | Use only to recover a lost session or, if unused, for optional revision, short remediation, capstone catch-up, deferred defence, or consultation. |
+| 01 | Arrays and Plots: Represent a physical model and compare prediction with evidence | One familiar analytical model; variables/units, arrays, indexing, element-wise operators, and a labelled plot. | Diagnose Onramp retention, explicitly repair MATLAB foundations, and compare a prediction with the graph. |
+| 02 | Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes | Plain-language decomposition, short pseudocode, loop tracing, scaffold completion, parameter modification, and one clear defect. | Reuse familiar physics so the new load is algorithmic; distinguish syntax, array/operator, and physical/logical defects. |
+| 03 | Linear Systems: Assemble and validate two-loop Kirchhoff equations | Kirchhoff equations, sign convention, 2×2 assembly, backslash solution, reconstructed currents, and direct current-balance validation. | Treat residuals, rank, conditioning, power balance, and plausible-but-wrong matrices as stretch material. Introduce bounded capstone problem spaces. |
+| 04 | Parameter Sweeps: Compare one controlled change and interpret the graph | Vary one parameter in a familiar analytical model, overlay labelled curves, explain the trend, and validate a baseline/limiting case. | Replace eigenproblems completely; reinforce arrays, loops, plots, controlled comparison, and physical interpretation. |
+| 05 | Root Finding: Locate a physical solution and verify the residual | Residual/root meaning, graphical bracket, scaffolded bisection, scaffolded Newton, one stopping rule, and residual substitution. | Move uniqueness proof, multiple stopping rules, `fzero`, safeguarding, and formal method selection to stretch; remove extreme stress cases. |
+| 06 | Numerical Differentiation: Estimate a physical rate and test the step size | Physical rate/gradient, forward difference, step-size comparison, analytic reference, units, and simple error. | Treat central difference and error curves as working exposure; detailed truncation/round-off theory is stretch. Capstone feasibility proposal is due. |
+| 07 | Numerical Integration: Accumulate a changing quantity and test convergence | Physical area/accumulation, trapezoidal rule, `trapz`, refinement, analytic/reference comparison, and units. | Simpson comparison is working exposure; quadrature error derivations are stretch. Approve capstone model, method, and validation plan. |
+| 08 | Ordinary Differential Equations: Simulate a changing state from an initial condition | First-order model, initial condition, Euler update, scaffolded loop, timestep comparison, supplied exact/`ode45` reference, and one check. | `ode45` use is working exposure; stability boundaries and Runge-Kutta derivation are stretch. |
+| 09 | Data Fitting: Infer a physical parameter and read residuals with uncertainty | Plot data, fit a simple physical relationship, interpret parameter units, inspect residual pattern, and state uncertainty cautiously. | Advanced fitting and formal uncertainty statistics are stretch. |
+| 10 | Monte Carlo Sampling: Use repeated random trials to estimate physical variation | Repeated random trials, trajectory/distribution output, mean/spread, sample-size effect, and reproducibility. | Standard error is working exposure; distribution theory and statistical-mechanics extensions are stretch. |
+| 11 | Sensitivity Analysis: Propagate input ranges into defensible output ranges | One-at-a-time uncertainty sweep, output range, simple sensitivity interpretation, and distinction between numerical, parameter, and model limitations. | Formal propagation and Monte Carlo propagation are stretch. |
+| 12 | Method Selection: Audit a computation and prepare a reproducible capstone | Familiar method-recognition cases, supplied/AI-assisted code audit, one validation choice, reproducibility, capstone completion, and defence rehearsal. | Do not introduce a new required method; unfamiliar transfer is stretch. |
+| 13 | Computational Investigation: Present, defend, and hand off a validated physical model | Begin the bounded capstone presentation sequence: starter Live Script, one model modification, one principal output, required plus chosen validation, limitation, individual tracing, and reproducibility handoff. | Independent extensions and deeper method comparisons are stretch. |
+| 14 | Capstone Presentation: Continue presentations, defences, and reproducibility handoffs | Continue capstone presentations, individual defences, and reproducibility handoffs; introduce no new core content, compulsory practical, or new assessment chapter. | Deferred evidence, optional revision, short remediation, and consultation. |
 
 ## Scope and progression
 
@@ -110,7 +110,7 @@ Do not require students to submit complete AI chat histories. Where AI use is re
 
 ### Individual pre-practical diagnostic
 
-Use **one dedicated Google Form quiz per practical week**, launched from the corresponding Google Classroom coursework. Do not create or reuse a single course-wide Week 01-13 routing Form. Do not create a Week 14 diagnostic unless the buffer is actually used for a recovered practical and the lecturer approves it.
+Use **one dedicated Google Form quiz per practical week**, launched from the corresponding Google Classroom coursework. Do not create or reuse a single course-wide Week 01-13 routing Form. Do not create a Week 14 diagnostic: Week 14 is reserved for capstone presentations, defences, and reproducibility handoffs rather than a new practical.
 
 For short pre-practical diagnostics containing several automatically countable conceptual questions plus a short response and confidence item, use one of these patterns in order of preference:
 
@@ -124,18 +124,18 @@ When a diagnostic exposes a common misconception, retain the planned schedule an
 
 ## Capstone progression
 
-- **Week 03:** introduce four to six lecturer-designed bounded problem spaces and examples.
-- **Week 04:** groups identify a preferred and alternate problem space while practising controlled parameter modification.
+- **Week 03:** introduce the twelve lecturer-designed assigned briefs in six paired physical families and examples.
+- **Week 04:** groups review the assigned brief and its paired family while practising controlled parameter modification.
 - **Week 06:** feasibility proposal due.
 - **Week 07:** approve the physical model, method, and validation plan.
 - **Weeks 08-11:** collect compact process checkpoints through practical submissions.
 - **Week 12:** capstone studio, final evidence assembly, reproducibility check, and defence rehearsal.
-- **Week 13:** final presentation, individual defence, and reproducibility handoff.
-- **Week 14:** buffer only; use for recovery or deferred defence if required, with no new planned milestone.
+- **Week 13:** first capstone presentation block, individual defence, and reproducibility handoff.
+- **Week 14:** continuation/overflow capstone presentation block, deferred individual defence, and reproducibility handoff; no new planned core topic.
 
 ## Material and folder convention
 
-Each completed instructional package lives in `Week01` through `Week13`. Reserve `Week14` for the buffer/recovery record and do not prepare a new core teaching package for it. Each week folder has two layers:
+Each completed instructional package lives in `Week01` through `Week13`. Use Week 14 for the scheduled capstone presentation/defence/handoff continuation and do not prepare a new core teaching package for it. Each week folder has two layers:
 
 1. **Student-facing layer:** place only the final, relevant materials directly inside `WeekXX/`:
    - one final lecture slide deck (`.pptx`, where applicable);

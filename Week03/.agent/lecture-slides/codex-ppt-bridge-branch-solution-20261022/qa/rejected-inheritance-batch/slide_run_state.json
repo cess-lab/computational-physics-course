@@ -1,0 +1,18 @@
+{
+  "status": "slides_dispatched",
+  "history": [
+    {
+      "from": "created",
+      "to": "jobs_prepared",
+      "at": "2026-10-22T01:32:43Z",
+      "note": "prepared slide prompt jobs"
+    },
+    {
+      "from": "jobs_prepared",
+      "to": "slides_dispatched",
+      "at": "2026-10-22T01:34:03Z",
+      "note": "all slide jobs dispatched"
+    }
+  ],
+  "updated_at": "2026-10-22T01:34:03Z"
+}

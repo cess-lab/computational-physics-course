@@ -1,0 +1,11 @@
+Lihat nilai komponen dahulu. Resistor persendirian di kiri ialah dua ohm. Di kanan, tiga ohm. Resistor yang dikongsi di tengah ialah satu ohm. Sumber kiri lima volt, dan sumber kanan dua volt. Kita gunakan model litar arus terus dengan resistor ideal dan nilai sumber yang tetap.
+
+Kita pilih kedua-dua mesh current mengikut arah jam. Pilihan arah ini ialah reference untuk tanda. Ia bukan jaminan bahawa arus sebenar mesti ikut arah yang kita pilih. Kalau jawapan negatif nanti, kita baca semula arah sebenar berbanding reference tersebut.
+
+Sekarang lihat junction di atas resistor tengah. Arus I satu masuk dari kiri. Arus I dua keluar ke kanan. Arus shared yang kita tandakan pula keluar ke bawah. Jadi, arus masuk sama dengan jumlah arus keluar. I satu sama dengan I dua tambah I shared. Susun semula: I shared sama dengan I satu tolak I dua.
+
+Mengapa bukan tambah? Sebab pada branch tengah, kedua-dua mesh current melalui arah yang bertentangan. Mesh kiri menyumbang ke bawah; mesh kanan menyumbang ke atas. Arus fizikal pada resistor tengah ialah beza dua sumbangan ini. Mesh current ialah unknown yang kita pilih untuk memudahkan persamaan. Branch current ialah arus sebenar dalam branch tersebut.
+
+Bincang dengan orang sebelah. Jika I satu dua ampere dan I dua satu ampere, berapa arus ke bawah? Kemudian uji sebaliknya: kalau I satu satu ampere dan I dua dua ampere, apakah maksud tanda negatif? Jawapannya satu ampere ke atas. Kita belum menyelesaikan litar; kita sedang melatih cara membaca tanda.
+
+Berdasarkan sumber dan rintangan ini, kita jangka I satu lebih besar daripada I dua. Anggap itu prediction yang munasabah untuk litar ini, bukan hukum umum bahawa sumber lebih besar sentiasa menghasilkan mesh current lebih besar. Loop ini saling berkait melalui resistor tengah. Kita akan semak prediction selepas solve.

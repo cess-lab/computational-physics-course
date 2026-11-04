@@ -1,0 +1,6 @@
+{
+  "model": "gpt-6.1-sol",
+  "effort": "medium",
+  "evidence": "Current session last turn_context metadata",
+  "workerInheritance": "fork_turns=all; omit model and reasoning_effort; API contract explicitly inherits both"
+}

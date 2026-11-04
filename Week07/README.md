@@ -1,4 +1,16 @@
-# Week 07 - Numerical Integration
+# Week 07 — Numerical Integration: Accumulate a changing quantity and test convergence
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the dedicated Week 07 diagnostic in Google Classroom when it is released, and predict the sign and physical bound of the accumulated quantity.
+
+**During:** Follow `physical quantity -> limits and units -> sampled values -> trapezoids -> refinement -> reference -> interpretation`; run the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 07 is one of the ten counted practical packets; the best eight packets count for the group component.
 
 ## Student-Facing Package
 
@@ -7,7 +19,7 @@
 - `Week07_Practical_AI_Enabled_Numerical_Integration_Challenge_Set.m`
 - `Week07_Capstone_Model_Method_Validation_Approval.md`
 
-The Week 07 lecture slide deck is approved for production through the installed `codex-ppt` workflow. The approved 14-slide outline and strict-asset mapping are retained at `.agent/lecture-slides/codex-ppt/outline.md`. Backend confirmation and one representative sample-slide approval are still required before full-deck generation. No Week 07 PPTX has been created yet.
+The current [Week 07 lecture slide deck](Lecture_Slides_Week07.pptx) is a completed 17-slide image-based Teaching Courseware deck. It retains the approved 14-slide production plus three inserted cart-context slides; final QA records report 17/17 speaker-note sections and no pending, dispatched, or blocked jobs. The initial 14-slide production record remains under `.agent/lecture-slides/codex-ppt/`, while the current revision and its final QA are under `.agent/lecture-slides/codex-ppt-cart-context/`.
 
 ## Learning Focus
 
@@ -39,11 +51,11 @@ The practical is an AI-enabled group challenge set using three transfer contexts
 
 ## Capstone Model/Method/Validation Milestone
 
-`Week07_Capstone_Model_Method_Validation_Approval.md` is the second graded capstone milestone and is worth **3% of the course**. Groups build on the Week 06 feasibility proposal and lock the physical model, supplied/selected computational method, principal output, one required validation check, one chosen independent check, expected physical behaviour, limitation, and reproducibility/AI-use plan before substantial development continues.
+`Week07_Capstone_Model_Method_Validation_Approval.md` is a capstone approval checkpoint, not a separate course-mark component. Groups build on the Week 06 feasibility record and lock the physical model, supplied/selected computational method, principal output, one required validation check, one chosen independent check, expected physical behaviour, limitation, and reproducibility/AI-use plan before substantial development continues. These decisions are later judged through the single 100% capstone rubric.
 
 ## Individual Pre-Practical Diagnostic
 
-A draft six-question Week 07 diagnostic key and cohort-analysis specification is retained at `../.agent/google-forms/Week07_Question_Key_and_AI_Analysis.md`. It is planning material only; no live Form or Classroom coursework is created until the Week 07 materials and wording are approved.
+Complete the dedicated Week 07 diagnostic through its Google Classroom coursework when released. If it reveals a common misconception, the lecturer may post an optional 10–15 minute remediation with one retry and confidence check; it is not a prerequisite for the next lecture. The local question key remains planning material until publication is approved.
 
 ## Instructor / QA Package
 
@@ -53,4 +65,4 @@ Hidden support materials are stored under `.agent/`:
 - content manifest under `.agent/manifests/`;
 - MATLAB figure generation and fresh-session QA under `.agent/matlab/`;
 - practical reference, variants, defence rubric, and rotation ledger under `.agent/practical/`; and
-- approved lecture-deck outline under `.agent/lecture-slides/codex-ppt/`; the remaining Codex-PPT production state will be created only after the required backend and sample approvals.
+- final 17-slide lecture-deck sources, speaker notes, and QA under `.agent/lecture-slides/codex-ppt-cart-context/`; the original 14-slide production state remains under `.agent/lecture-slides/codex-ppt/` as provenance.

@@ -1,4 +1,4 @@
-# Week 10 — Random Sampling and Monte Carlo Simulation
+# Week 10 — Monte Carlo Sampling: Use repeated random trials to estimate physical variation
 
 Use repeated random trials to turn a stochastic physical model into reproducible numerical evidence, then distinguish the centre of the outcomes from their physical spread and from uncertainty in an estimated mean.
 
@@ -7,7 +7,23 @@ Use repeated random trials to turn a stochastic physical model into reproducible
 - [Learning note](Week10_Learning_Note_Random_Sampling_and_Monte_Carlo.pdf): one-dimensional random walks, Monte Carlo trials, mean and spread, sample-size effects, reproducibility, and validation.
 - [Lecture demonstration](Week10_Lecture_Demonstration_Random_Walk_Monte_Carlo.m): complete lecturer-led symmetric random-walk simulation with one trajectory, 10,000 repeated paths, sample-size comparison, and physical checks.
 - [Group practical](Week10_Practical_AI_Enabled_Monte_Carlo_Challenge_Set.m): ten progressive challenges across photon detection, radiation shielding, and a two-dimensional random walk.
-- Lecture-slide outline: prepared under `.agent/lecture-slides/codex-ppt/outline.md` for later lecturer approval. No Week 10 slide images or PPTX have been created.
+- [Lecture slide deck](Lecture_Slides_Week10.pptx): assembled 14-slide image-based Teaching Courseware deck, with 14 recorded slide jobs, 14 source images, and 14 presenter-note sections retained under `.agent/lecture-slides/codex-ppt/`.
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the dedicated Week 10 diagnostic in Google Classroom when it is released, and predict the centre, spread, and reproducibility behaviour.
+
+**During:** Follow `random rule -> one trial -> repeated trials -> distribution -> mean/spread -> sample size -> validation -> interpretation`; run the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 10 is one of the ten counted practical packets; the best eight packets count for the group component.
+
+## Current slide-deck status
+
+The PPTX and hidden assembled copy are present and byte-identical. The current structural and fresh-render evidence is recorded in `.agent/lecture-slides/codex-ppt/qa/final_qa_delivery_record.md`. The endpoint-only title/closing normalization is approved under the course-level normalization approval record; the older full-deck production-provenance gap remains archived as historical evidence and is not retroactively asserted as complete.
 
 ## Learning Focus
 
@@ -33,8 +49,8 @@ Work in groups of two or three. The practical contexts are photon detection, rad
 
 Google Classroom is the official submission record. Complete and lock the group evidence before the question slot and individual defender are drawn. Follow the rotation rule and arrange a make-up defence for an absence. The Week 10 practical includes a compact capstone process checkpoint but introduces no new graded capstone milestone.
 
-The individual pre-practical diagnostic is drafted locally but has not been published.
+Complete the dedicated Week 10 diagnostic through its Google Classroom coursework when released. If it reveals a common misconception, the lecturer may post an optional 10–15 minute remediation with one retry and confidence check; it is not a prerequisite for the next lecture. The local question key remains planning material until publication is approved.
 
 ## Instructor Sources
 
-Hidden `.agent/` folders retain the learning-note LaTeX and rendered QA, strict MATLAB Monte Carlo evidence and plots, practical reference answers and defence records, the draft diagnostic, A/B variant bank, and the lecture-slide outline. The slide-production folder contains only the outline at this stage.
+Hidden `.agent/` folders retain the learning-note LaTeX and rendered QA, strict MATLAB Monte Carlo evidence and plots, practical reference answers and defence records, the draft diagnostic, A/B variant bank, and the lecture-deck source images, prompts, speaker notes, slide-job state, and current QA record. The endpoint-normalization approval and dispatch evidence are recorded at the course level; historical full-deck provenance remains separately archived.

@@ -15,15 +15,17 @@
 \newtcolorbox{checkbox}{colback=ForestGreen!5,colframe=ForestGreen!55!black,boxrule=.7pt,arc=2mm}
 \newtcolorbox{aibox}{colback=BurntOrange!7,colframe=BurntOrange!80!black,boxrule=.7pt,arc=2mm}
 \lstdefinestyle{matlabstyle}{language=Matlab,basicstyle=\ttfamily\footnotesize,keywordstyle=\color{RoyalBlue!75!black},commentstyle=\color{ForestGreen!55!black},stringstyle=\color{BurntOrange!80!black},numbers=left,numberstyle=\scriptsize\color{black!50},numbersep=5pt,frame=single,rulecolor=\color{RoyalBlue!25},backgroundcolor=\color{RoyalBlue!3},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=true}
+\hyphenation{pseudocode description radioactive}
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 2}\par\vspace{4pt}
-{\LARGE\bfseries Pseudocode, Loops, and Debugging}\par\vspace{3pt}
+{\LARGE\bfseries Numerical Algorithms: Turn physical reasoning into}\par\vspace{-1pt}
+{\LARGE\bfseries pseudocode, loops, and fixes}\par\vspace{3pt}
 \textit{Turn one familiar physics equation into a sequence that can be traced, checked, and repaired.}
 
 \begin{keybox}\textbf{Physical question.} A ball is launched straight upward. We already know its position equation. How can we make MATLAB calculate one position at a time in an order that another person can trace and verify?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item decompose a familiar physics calculation into short pseudocode;
 \item trace, complete, and modify a simple indexed \texttt{for} loop; and
@@ -87,7 +89,7 @@ One sensible pseudocode sequence is:
 
 \section*{4. A loop is a controlled repeated update}
 The time array and parameters are declared before the loop.
-\begin{lstlisting}[style=matlabstyle,caption={Locked inputs for the lecture example}]
+\begin{lstlisting}[style=matlabstyle,caption={Model values and time array used in this example}]
 y0_m = 0;
 v0_mps = 20;
 g_mps2 = 9.81;
@@ -124,7 +126,7 @@ Do not begin by staring at the whole loop. Follow one index at a time.
 \begin{checkbox}\textbf{Trace checkpoint.} Why does index 2 mean $0.5\units{s}$ rather than $2\units{s}$? Because MATLAB indexing counts storage locations; the stored values are set by the time array.\end{checkbox}
 
 \section*{6. Bounded completion instead of blank-page coding}
-Suppose the loop scaffold is supplied as
+Suppose a partly completed starter loop is supplied:
 \begin{lstlisting}[style=matlabstyle,caption={Complete only the missing calculation}]
 for sample_index = 1:n_samples
     current_time_s = t_s(sample_index);
@@ -133,22 +135,23 @@ end
 \end{lstlisting}
 
 Translate the current step back into words: \emph{use the current time, calculate one vertical position, and store it in the matching location}. The completed expression is
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Completed position expression for the current time}]
 y0_m + v0_mps*current_time_s - 0.5*g_mps2*current_time_s^2
 \end{lstlisting}
 
+\Needspace{85mm}
 \section*{7. Read the output, then modify one input}
 The retained MATLAB evidence uses exactly the same loop with $v_0=20\units{m\,s^{-1}}$ and then with only the launch speed changed to $15\units{m\,s^{-1}}$.
 
 \begin{figure}[H]
 \centering
-\includegraphics[width=.72\linewidth]{../matlab/assets/week02_loop_position.png}
-\caption{Loop-computed vertical position for the locked lecture model. The lower launch speed produces a lower sampled peak while the initial value remains unchanged.}
+\includegraphics[width=.48\linewidth]{../matlab/assets/week02_loop_position.png}
+\caption{Loop-computed vertical position for the model used in this example. The lower launch speed produces a lower sampled peak while the initial value remains unchanged.}
 \end{figure}
 
 \begin{checkbox}\textbf{Parameter prediction.} Before running the second loop, predict that lowering $v_0$ reduces the maximum height. Only the launch-speed input changes; the loop structure does not.\end{checkbox}
 
-\section*{8. One Core validation: the known initial value}
+\section*{8. Required validation: the known initial value}
 At the first stored time, $t=0$, the model must reproduce its stated initial condition. This value is known before the loop runs.
 \begin{lstlisting}[style=matlabstyle,caption={Executable initial-value validation}]
 assert(abs(y_m(1)-y0_m) < 1e-12, ...
@@ -162,7 +165,7 @@ The check is powerful but not magical. A wrong gravity sign still gives $y(0)=0$
 \section*{9. Debug by classifying the defect}
 Different defects need different evidence.
 
-\begin{center}\small\begin{tabular}{>{\raggedright\arraybackslash}p{.24\linewidth}>{\raggedright\arraybackslash}p{.31\linewidth}>{\raggedright\arraybackslash}p{.34\linewidth}}\toprule
+\begin{center}\footnotesize\begin{tabular}{>{\raggedright\arraybackslash}p{.24\linewidth}>{\raggedright\arraybackslash}p{.31\linewidth}>{\raggedright\arraybackslash}p{.34\linewidth}}\toprule
 \textbf{Defect type} & \textbf{What you may observe} & \textbf{Useful first evidence}\\ \midrule
 Syntax & MATLAB cannot complete the code structure & error location, surrounding punctuation, missing \texttt{end}\\
 Array/indexing/operator & code may run but reads/stores the wrong values & index-to-array mapping, sizes, selected entries, operator meaning\\
@@ -174,7 +177,7 @@ Use the MATLAB error location when MATLAB supplies one, but do not stop there. C
 \subsection*{Indexing example}
 This loop repeatedly overwrites only the first storage location:
 \Needspace{10\baselineskip}
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Indexing defect that overwrites the first output slot}]
 y_index_defect_m = zeros(size(t_s));
 for sample_index = 1:n_samples
     current_time_s = t_s(sample_index);
@@ -186,7 +189,7 @@ The repair is to store the current result in \texttt{y\_index\_defect\_m(sample\
 
 \subsection*{Physical-sign example}
 The line below is legal MATLAB but contradicts the upward-positive model:
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Physical-sign defect with an incorrect gravity contribution}]
 y_wrong_sign_m(sample_index) = y0_m + v0_mps*current_time_s ...
     + 0.5*g_mps2*current_time_s^2;
 \end{lstlisting}
@@ -194,21 +197,21 @@ The positive gravity contribution makes the computed trajectory bend upward. The
 
 \begin{aibox}\textbf{Debugging caution.} ``The code ran'' is not validation. A physically wrong expression can produce smooth, plausible-looking numbers without any MATLAB error.\end{aibox}
 
-\subsection*{Working exposure: loop and vectorised forms}
-The analytical model can also be evaluated with one vectorised expression:
-\begin{lstlisting}[style=matlabstyle]
+\subsection*{Guided extension: loop and vectorised forms}
+The supplied lecture files also show the analytical model evaluated with one vectorised expression:
+\begin{lstlisting}[style=matlabstyle,caption={Supplied vectorised evaluation of the same position model}]
 y_vectorised_m = y0_m + v0_mps.*t_s - 0.5*g_mps2.*t_s.^2;
 \end{lstlisting}
-Here \texttt{t\_s} is an array, so element-wise operators are required. In the explicit loop, \texttt{current\_time\_s} is a scalar. The two forms should agree numerically for the same model and inputs.
+Read and interpret this supplied comparison; you are not required to reproduce the alternative form independently. Here \texttt{t\_s} is an array, so element-wise operators are required. In the explicit loop, \texttt{current\_time\_s} is a scalar. The two forms should agree numerically for the same model and inputs.
 
-\subsection*{Optional stretch: package the calculation as a function}
-A distinction-level extension is to write a reusable function that accepts the model inputs and returns the position array, then design a second independent test. This is not required for the Core Week 2 route.
+\subsection*{Optional extension: package the calculation as a function}
+An optional extension---not required for Week 2---is to write a reusable function that accepts the model inputs and returns the position array, then design a second independent test.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=6mm]
-\item Pseudocode makes the order of a computation visible before MATLAB syntax is introduced.
-\item A traceable loop connects one index, one current input, one calculation, and one matching output slot.
-\item Debugging combines code evidence with validation and physical reasoning; successful execution alone is not proof of correctness.
+\item Pseudocode makes the computation order visible before MATLAB syntax.
+\item A traceable loop links each index, input, calculation, and output slot.
+\item Running code is not proof: debug with code evidence, validation, and physical reasoning.
 \end{enumerate}
 
 \begin{keybox}\textbf{Preparation for the practical.} Be ready to transfer the same loop pattern to cooling, radioactive decay, and oscillation. For each context, state the model and units, trace the first passes, validate a known value, and record what any AI assistance changed or did not change.\end{keybox}

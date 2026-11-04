@@ -1,6 +1,6 @@
 # PHY4605 Week 07 Presenter Notes
 
-## Slide 1: From a Curve to an Accumulated Quantity
+## Slide 1: Numerical Integration: Accumulate a changing quantity and test convergence
 
 The physical question for this week is simple: a force changes with time, so how do we estimate the total impulse delivered between zero and two seconds? Analytically, we recognise impulse as the integral of force with respect to time. Computationally, however, we often have only sampled force values.
 

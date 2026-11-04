@@ -18,12 +18,12 @@
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 12}\par\vspace{4pt}
-{\LARGE\bfseries Integrated Method Selection and Capstone Studio}\par\vspace{3pt}
-\textit{Recognise the learned method, audit supplied code, and assemble reproducible evidence that can be explained in an individual defence.}
+{\LARGE\bfseries Method Selection: Audit a computation and prepare a \mbox{reproducible} capstone}\par\vspace{3pt}
+\textit{Recognise the learned method, audit supplied code, and assemble reproducible evidence that can be \mbox{explained} in an individual defence.}
 
 \begin{keybox}\textbf{Physical question.} When a familiar physics problem is presented with a supplied script or numerical output, how do we identify the appropriate learned method, find a clear defect, validate one result, and prepare evidence for a bounded capstone investigation?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item match a familiar physical question to the learned method, required input, output, and one key limitation;
 \item inspect and trace a supplied or AI-assisted MATLAB script, then choose and justify one validation check; and
@@ -34,6 +34,8 @@
 Read the physical question before looking at the code or result. For each case, state the input, output, units, algorithm, and check in plain language. This week does not add a new required numerical method. It brings the methods from Weeks 01--11 together so that a result can be inspected and defended rather than merely displayed.
 
 \begin{keybox}\textbf{The course chain.} \emph{Physical model $\rightarrow$ scale and units $\rightarrow$ discretisation or data arrangement $\rightarrow$ algorithm $\rightarrow$ code $\rightarrow$ error or uncertainty $\rightarrow$ validation $\rightarrow$ physical interpretation.} A capstone packet should make this chain visible in a compact form.\end{keybox}
+
+Two small ideas help you read the evidence. \textbf{Discretisation} replaces a continuous input such as time by a finite list of points or steps; it makes the calculation runnable but introduces an approximation. \textbf{Error} is the difference between a numerical value and a known or reference value. \textbf{Uncertainty} is limited confidence caused by approximate inputs, sampling, or model assumptions. Report the unit and basis of any error or uncertainty rather than treating many displayed digits as proof.
 
 \section*{1. Start from the output the question requests}
 Method selection is a physical match. First ask what the calculation must produce, then identify the learned method whose algorithm produces that output. A MATLAB function name is only a clue; the model, inputs, units, and limitations still need to agree.
@@ -64,6 +66,7 @@ For example, a request for temperature at many times asks for a time trajectory,
 \section*{2. Audit supplied code before trusting its output}
 A script can run and still encode the wrong physics. Use the same short audit every time:
 
+\begin{samepage}
 \begin{enumerate}[nosep,leftmargin=7mm]
 \item \textbf{Model:} write the physical law in words and check that the code has the same sign, terms, and assumptions.
 \item \textbf{Units:} identify the unit of each input, intermediate rate, step, and output; check that additions combine like units.
@@ -134,7 +137,9 @@ The rate has units $\units{^\circ C\,s^{-1}}$. Multiplying it by $h$ gives a tem
 \item repeat with $h=20\units{s}$ and $h=10\units{s}$, then compare the endpoints with the supplied exact reference; and
 \item record one validation check, the physical interpretation, and one limitation.
 \end{enumerate}
+\end{samepage}
 
+\Needspace{28\baselineskip}
 \subsection*{Trace the first updates}
 For $h=20\units{s}$, the initial rate is
 \[
@@ -161,10 +166,10 @@ $h=10\units{s}$ & 80.000 & 68.600 & 59.366 & 27.2946 \\
 \end{tabular}
 \end{center}
 
-\subsection*{MATLAB scaffold}
-The following script is self-contained. The names carry units, the first array entry stores the initial condition, and the loop writes the next state from the current state.
+\subsection*{MATLAB starter code}
+The following starter code is self-contained. The names carry units, the first array entry stores the initial condition, and the loop writes the next state from the current state.
 
-\begin{lstlisting}[style=matlabstyle,caption={Euler cooling scaffold: inputs and initial state}]
+\begin{lstlisting}[style=matlabstyle,caption={MATLAB starter code for Euler cooling: inputs, time grid, and initial state}]
 T_env_C = 20;
 T_initial_C = 80;
 tau_s = 100;
@@ -179,14 +184,14 @@ T_C(1) = T_initial_C;      % T(0)
 
 The first temperature is at MATLAB index 1. At the first Euler update, $T_1$ is therefore written to index 2. The loop uses the current index $n$ and writes the next index $n+1$.
 
-\begin{lstlisting}[style=matlabstyle,caption={Euler cooling scaffold: current-state update}]
+\begin{lstlisting}[style=matlabstyle,caption={MATLAB starter code for Euler cooling: current-state rate and update}]
 for n = 1:nSteps
     rate_C_per_s = -(T_C(n) - T_env_C) / tau_s;
     T_C(n+1) = T_C(n) + dt_s * rate_C_per_s;
 end
 \end{lstlisting}
 
-\begin{lstlisting}[style=matlabstyle,caption={Cooling reference, endpoint error, and labelled output}]
+\begin{lstlisting}[style=matlabstyle,caption={MATLAB code for the cooling reference, endpoint error, and labelled output}]
 T_exact_C = T_env_C + (T_initial_C - T_env_C) * exp(-t_s/tau_s);
 endpoint_error_C = abs(T_C(end) - T_exact_C(end));
 
@@ -200,7 +205,7 @@ Run the three listings in order from the top after changing only \texttt{dt\_s =
 \[
 T_{\mathrm{exact}}(t)=20+60e^{-t/100},
 \]
-so $T_{\mathrm{exact}}(200\units{s})=28.1201169942\units{^\circ C}$. The exact expression is used as a reference check; students do not need to derive it for the Core route.
+so $T_{\mathrm{exact}}(200\units{s})=28.1201169942\units{^\circ C}$. The exact expression is used as a reference check; students do not need to derive it for the required route.
 
 \begin{center}\small
 \begin{tabular}{rrrr}
@@ -216,7 +221,7 @@ so $T_{\mathrm{exact}}(200\units{s})=28.1201169942\units{^\circ C}$. The exact e
 \subsection*{A clear plus-sign defect}
 The rate law contains a minus sign for a reason. When $T>T_{\mathrm{env}}$, the difference $T-T_{\mathrm{env}}$ is positive, so the minus sign makes the rate negative and the object cools. If the object is colder than the environment, the difference is negative and the same minus sign makes the rate positive, so the object warms toward the environment.
 
-\begin{lstlisting}[style=matlabstyle,caption={A script that runs but reverses the cooling direction}]
+\begin{lstlisting}[style=matlabstyle,caption={MATLAB defect example: a sign reversal in the Euler cooling rate}]
 for n = 1:nSteps
     rate_C_per_s = +(T_C(n) - T_env_C) / tau_s;  % physical defect
     T_C(n+1) = T_C(n) + dt_s * rate_C_per_s;
@@ -226,10 +231,10 @@ end
 With $h=20\units{s}$, the defective line gives $T(20)=92\units{^\circ C}$ instead of $68\units{^\circ C}$. The code is syntactically valid, but the sign makes the temperature move away from the environment. Restore
 \texttt{rate\_C\_per\_s = -(T\_C(n) - T\_env\_C) / tau\_s;} and rerun from a fresh session. An initial-value check alone would not catch this defect because both scripts begin at $80\units{^\circ C}$; the cooling-direction check and the exact endpoint comparison do.
 
-\section*{5. One Core validation and its interpretation}
-For this worked example, select the supplied exact solution as the principal validation because it gives a known temperature at the same endpoint. The numerical evidence is:
+\section*{5. One required validation and its interpretation}
+For this worked example, select the supplied exact solution as the main validation because it gives a known temperature at the same endpoint. The numerical evidence is:
 
-\begin{checkbox}\textbf{Validation result.} Reducing the timestep from $20\units{s}$ to $10\units{s}$ changes the endpoint from $26.4425$ to $27.2946\units{^\circ C}$ and reduces the absolute error from $1.6777$ to $0.8255\units{^\circ C}$ against $28.1201\units{^\circ C}$. The initial value and cooling direction are also physically consistent. For the stated model and horizon, the $10\units{s}$ result is better supported by the supplied evidence.\end{checkbox}
+\begin{checkbox}\textbf{Required validation result.} Reducing the timestep from $20\units{s}$ to $10\units{s}$ changes the endpoint from $26.4425$ to $27.2946\units{^\circ C}$ and reduces the absolute error from $1.6777$ to $0.8255\units{^\circ C}$ against $28.1201\units{^\circ C}$. The initial value and cooling direction are also physically consistent. For the stated model and horizon, the $10\units{s}$ result is better supported by the supplied evidence.\end{checkbox}
 
 The result is not a claim that every smaller timestep is automatically reliable. It shows what happens for this model and these two choices. The Euler approximation remains below the exact cooling curve at $200\units{s}$ because each explicit step uses the rate at the beginning of its interval. The physical model also assumes a constant environment temperature, a uniform object temperature, and one constant cooling timescale. Airflow, changing material properties, or internal heat generation would limit that model.
 
@@ -245,6 +250,7 @@ Exact endpoint reference & Does refinement improve the requested endpoint? & $h=
 \end{tabular}
 \end{center}
 
+\Needspace{8\baselineskip}
 \section*{6. Capstone studio: assemble evidence that can be defended}
 The capstone is a bounded investigation using an approved starter Live Script and problem space. Complete the evidence in the order below. The code may be supplied, completed, or AI-assisted; the reasoning and checks must remain visible.
 
@@ -257,7 +263,7 @@ Model and units & physical question, assumptions, variables, parameters, outputs
 Pseudocode & ordered steps from input to output and check & does each step have one clear purpose? \\
 Method and trace & supplied method, relevant code lines, and one traced update or calculation & can each group member explain one code section? \\
 One modification & one changed physical parameter or assumption, with other choices stated & is the change controlled and predicted before running? \\
-Principal output & one labelled graph or table that answers the question & is the requested quantity visible with units? \\
+Main output & one labelled graph or table that answers the question & is the requested quantity visible with units? \\
 Required and chosen check & the lecturer-required check plus one chosen check & does the evidence support the numerical claim? \\
 Interpretation and limitation & trend, physical meaning, and one condition that limits the conclusion & does the explanation go beyond describing the shape? \\
 Reproducibility and AI record & clean-session steps and accepted, modified, or rejected assistance & could the group rerun and explain the final result? \\
@@ -266,19 +272,22 @@ Reproducibility and AI record & clean-session steps and accepted, modified, or r
 \end{center}
 
 \subsection*{A clean-session reproduction check}
-Use this short checklist before locking the packet:
+Use this short checklist before marking the evidence final in the submission record:
 
 \begin{enumerate}[nosep,leftmargin=7mm]
 \item close or restart MATLAB and open the approved starter script;
 \item run the complete script from the first section, with no hidden Workspace variables;
 \item confirm that the final parameter or assumption modification is visible in the script;
-\item confirm that the principal graph or table has quantities, units, and a readable label;
+\item confirm that the main graph or table has quantities, units, and a readable label;
 \item rerun both the required and chosen validations and record the numerical evidence; and
 \item save the final script and evidence together so another person can reproduce the result.
 \end{enumerate}
 
+\begin{keybox}\textbf{Final evidence state.} Mark the packet \emph{final in the submission record} only after the complete fresh-session rerun reproduces the main output and both checks, every evidence item is present, and each group member can explain a relevant code section. If a rerun or check is missing, leave the packet as draft and record the pending action or defect; do not label it final merely because the code runs.\end{keybox}
+
 \begin{aibox}\textbf{Decision record example.} ``We asked AI to explain the supplied Euler loop. We accepted its description of the index roles, modified its proposed sign after checking the physical cooling direction, and rejected an unnecessary replacement solver. Our independent check was the supplied exact endpoint and the initial-value/trend check.'' This is the level of decision evidence needed; a full transcript is not required.\end{aibox}
 
+\Needspace{16\baselineskip}
 \subsection*{Individual defence rehearsal}
 Each group member should be able to point to one relevant code section and answer these prompts without reading a prepared paragraph:
 
@@ -292,7 +301,7 @@ Each group member should be able to point to one relevant code section and answe
 
 For cooling, identify $T_n$, explain the minus sign, trace $80\rightarrow68\rightarrow58.4\units{^\circ C}$ for $h=20\units{s}$, and justify the exact endpoint check.
 
-\section*{Working exposure: compare supplied evidence}
+\section*{Guided extension: compare supplied evidence}
 Sometimes two supplied results can answer a closely related question. Compare them using the physical output, the stated inputs, and the evidence available. Do not add a new implementation burden simply because another method is shown.
 
 \begin{center}\small
@@ -310,8 +319,8 @@ Forward versus central difference from supplied values & derivative estimate and
 
 The comparison is evidence-based and bounded. A smooth line, a smaller iteration count, or a familiar function name is not enough by itself.
 
-\section*{Optional stretch}
-For distinction-level extension, transfer the audit to an unfamiliar but supplied case with limited scaffolding, design a second independent validation check, or implement one optional extension. These activities are not required for the Core pathway or for a defensible ordinary capstone submission.
+\section*{Optional extension}
+For distinction-level extension, transfer the audit to an unfamiliar but supplied case with limited support, design a second independent validation check, or implement one optional extension. These activities are optional and not required for a defensible ordinary capstone submission.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=6mm]

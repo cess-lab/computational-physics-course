@@ -1,0 +1,209 @@
+[
+  {
+    "slide": "slide_01",
+    "worker_id": "/root/bridge_slide_01",
+    "session_id": "01a1613d-6576-7a73-ad49-0219b6ce41e5",
+    "session_metadata_source": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-32-56-01a1613d-6576-7a73-ad49-0219b6ce41e5.jsonl",
+    "turn_contexts": [
+      {
+        "timestamp": "2026-10-22T01:32:56.108Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a1612d-2ce9-76a1-b7f5-2afe6717d987"
+      },
+      {
+        "timestamp": "2026-10-22T01:32:56.111Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16131-6164-7372-b6d2-96c4de2ce8af"
+      },
+      {
+        "timestamp": "2026-10-22T01:32:56.111Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16132-503c-7891-8885-51ae885cb9e5"
+      },
+      {
+        "timestamp": "2026-10-22T01:32:56.113Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16137-acc4-78f0-900d-aedb578ad448"
+      },
+      {
+        "timestamp": "2026-10-22T01:32:59.517Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "turn_id": "01a1613d-6620-7233-9dfc-324b9635c7f5"
+      },
+      {
+        "timestamp": "2026-10-22T01:34:47.636Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "turn_id": "01a1613f-190e-7a42-8a3f-e97fe1c30b4a"
+      }
+    ],
+    "exact_model_effort_match": false
+  },
+  {
+    "slide": "slide_02",
+    "worker_id": "/root/bridge_slide_02",
+    "session_id": "01a1613d-a55e-7f51-a5c2-ddb888fd6efb",
+    "session_metadata_source": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-33-12-01a1613d-a55e-7f51-a5c2-ddb888fd6efb.jsonl",
+    "turn_contexts": [
+      {
+        "timestamp": "2026-10-22T01:33:12.467Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a1612d-2ce9-76a1-b7f5-2afe6717d987"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:12.470Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16131-6164-7372-b6d2-96c4de2ce8af"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:12.470Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16132-503c-7891-8885-51ae885cb9e5"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:12.472Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16137-acc4-78f0-900d-aedb578ad448"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:15.409Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "turn_id": "01a1613d-a5f8-7fd0-bbde-fcf66532dff4"
+      }
+    ],
+    "exact_model_effort_match": false
+  },
+  {
+    "slide": "slide_04",
+    "worker_id": "/root/bridge_slide_04",
+    "session_id": "01a1613d-ddff-76a2-abbd-2e9d22c09320",
+    "session_metadata_source": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-33-26-01a1613d-ddff-76a2-abbd-2e9d22c09320.jsonl",
+    "turn_contexts": [
+      {
+        "timestamp": "2026-10-22T01:33:26.958Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a1612d-2ce9-76a1-b7f5-2afe6717d987"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:26.961Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16131-6164-7372-b6d2-96c4de2ce8af"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:26.961Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16132-503c-7891-8885-51ae885cb9e5"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:26.963Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16137-acc4-78f0-900d-aedb578ad448"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:29.663Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "turn_id": "01a1613d-de8e-7ff1-aaf8-e5717be33bc0"
+      }
+    ],
+    "exact_model_effort_match": false
+  },
+  {
+    "slide": "slide_05",
+    "worker_id": "/root/bridge_slide_05",
+    "session_id": "01a1613e-1873-7850-b54d-dc92a0b90af5",
+    "session_metadata_source": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-33-41-01a1613e-1873-7850-b54d-dc92a0b90af5.jsonl",
+    "turn_contexts": [
+      {
+        "timestamp": "2026-10-22T01:33:41.932Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a1612d-2ce9-76a1-b7f5-2afe6717d987"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:41.936Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16131-6164-7372-b6d2-96c4de2ce8af"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:41.936Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16132-503c-7891-8885-51ae885cb9e5"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:41.939Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16137-acc4-78f0-900d-aedb578ad448"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:44.714Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "turn_id": "01a1613e-1940-7060-83fb-908a0a4e41fd"
+      }
+    ],
+    "exact_model_effort_match": false
+  },
+  {
+    "slide": "slide_06",
+    "worker_id": "/root/bridge_slide_06",
+    "session_id": "01a1613e-4c54-7b72-ad1f-780d7f641818",
+    "session_metadata_source": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-33-55-01a1613e-4c54-7b72-ad1f-780d7f641818.jsonl",
+    "turn_contexts": [
+      {
+        "timestamp": "2026-10-22T01:33:55.201Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a1612d-2ce9-76a1-b7f5-2afe6717d987"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:55.204Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16131-6164-7372-b6d2-96c4de2ce8af"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:55.204Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16132-503c-7891-8885-51ae885cb9e5"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:55.207Z",
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16137-acc4-78f0-900d-aedb578ad448"
+      },
+      {
+        "timestamp": "2026-10-22T01:33:57.946Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "turn_id": "01a1613e-4cd8-75f1-af60-793e2da5066a"
+      },
+      {
+        "timestamp": "2026-10-22T01:37:18.781Z",
+        "model": "gpt-5.6-luna",
+        "effort": "medium",
+        "turn_id": "01a16141-677a-7cd1-b2f5-4847f447d1a1"
+      }
+    ],
+    "exact_model_effort_match": false
+  }
+]

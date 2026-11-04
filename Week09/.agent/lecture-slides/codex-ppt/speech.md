@@ -1,6 +1,6 @@
-# Week 09 — Data Fitting and Uncertainty
+# Week 09 — Data Fitting: Infer a physical parameter and read residuals with uncertainty
 
-## Slide 1: Can Measurements Reveal a Resistance?
+## Slide 1: Data Fitting: Infer a physical parameter and read residuals with uncertainty
 
 We are going to use a small set of voltage-current measurements to estimate a physical parameter: resistance. Before we fit anything, look at the pattern and predict what the slope should be for a nominal 47 ohm resistor. The important question is whether one point or the overall trend gives the more reliable estimate.
 

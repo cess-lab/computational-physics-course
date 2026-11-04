@@ -1,4 +1,4 @@
-%[text] # Week 12 Lecture Demonstration: Choosing and Auditing a Numerical Method
+%[text] # Method Selection: Audit a computation and prepare a reproducible capstone
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

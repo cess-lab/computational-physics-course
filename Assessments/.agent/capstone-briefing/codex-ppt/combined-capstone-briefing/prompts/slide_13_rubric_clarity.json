@@ -1,0 +1,33 @@
+{
+  "slide": 13,
+  "title": "Capstone Rubric | 100%",
+  "prompt": "Create a replacement 16:9 PowerPoint slide image for PHY4605. Replace the current slide 13 with one single, full-width rubric table. Preserve the approved illustrated scientific briefing style: white/light-neutral canvas, navy title, soft blue table header, pale blue and pale teal alternating row fills, clean dark-blue outlines, restrained small scientific icons, readable sans-serif typography, gentle depth, and a narrow ochre footer. The table is the main visual; do not use two panels and do not show milestone or checkpoint percentages.\n\nTitle at top: Capstone Rubric | 100%\n\nSubtitle below title: One rubric for the capstone investigation. The capstone contribution to the course is explained separately by the lecturer.\n\nCreate one clear table with five columns: Criterion and weight | Excellent | Good | Satisfactory | Weak. Use compact but complete phrases, large enough to read on a projected 16:9 slide. Put the weight in the Criterion cell. Use exactly these seven rows and descriptors:\n\n1. Model, assumptions, scope, variables and units — 15% | Correct, complete, justified, consistent | Mostly correct; minor gaps | Basic model; partial clarity | Missing or wrong; not defensible\n2. Algorithm and MATLAB implementation evidence — 25% | Clear algorithm; faithful code; justified modification | Mostly correct; minor repair | Partial logic; needs support | No traceable algorithm or code\n3. Principal output and reproducibility — 15% | Direct answer; labelled; fresh-run reproducible | Relevant and readable; minor omission | Output exists; run details incomplete | Missing, unlabelled or not reproducible\n4. Validation evidence — 15% | Required plus chosen checks; independent and explained | Both checks present; one explanation limited | One valid check; second weak or missing | No valid or inappropriate check\n5. Physical interpretation and limitations — 15% | Accurate, evidence-linked; meaningful limitation | Correct conclusion; relevant limitation | Basic restatement; vague limitation | Wrong or absent; overclaims\n6. Presentation and communication — 10% | Coherent, concise, readable evidence story | Clear story; minor issues | Partial or cluttered; needs prompting | Incomplete or unreadable\n7. Individual defence and AI-use decision record — 5% | Every member traces and defends; decisions and checks clear | Mostly clear; minor prompting | Partial or uneven; record incomplete | Cannot defend; evidence unusable\n\nUse a compact final footer exactly: Excellent = 4 | Good = 3 | Satisfactory = 2 | Weak = 1. Total rubric weight = 100%.\n\nMake the single-rubric structure unmistakable. Do not add a second percentage panel, the 15% course conversion, milestone rows, equations, code, page numbers, logos, watermarks or unrelated text. Render every word correctly with no clipping, overlap or invented text. Keep the slide illustrated but not photographic or glossy photorealistic.",
+  "out": "slide_13.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_13.png",
+      "role": "edit target and current illustrated rubric style reference",
+      "fidelity": "preserve the clean illustrated scientific briefing language and readable table-like hierarchy while replacing the two-panel layout with one full-width rubric table"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+      "role": "approved current-project style reference",
+      "fidelity": "match the current semi-realistic illustrated scientific editorial line quality, palette and soft depth"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png"
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": ["local drawing/rendering scripts", "Pillow-generated slides", "SVG/HTML/CSS/canvas screenshots", "python-pptx/PptxGenJS/native PPT layout screenshots", "manually composited text/image overlays"],
+    "must_return": ["backend_used", "selected_source", "qa_note"]
+  }
+}

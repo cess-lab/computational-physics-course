@@ -1,0 +1,35 @@
+Use case: scientific-educational. One complete 16:9 high-resolution teaching slide, English, image-based PowerPoint.
+Edit target/source asset: Image 1 is the lecturer-approved bridge-circuit question. Preserve the exact CIRCUIT, component labels/values, junction labels and PHYSICAL branch-current arrows. Replace the surrounding question title, question prose and junction-direction box with the solution-slide layout described below. Do not reproduce the old question copy.
+Style: Codex-PPT Teaching Courseware: open plain white canvas, navy title, black/light-gray circuit, muted blue branch arrows, restrained sage only if needed. Large bold sans-serif title, readable regular sans-serif explanation, clear typeset mathematics. Professional, calm, precise, low-to-moderate density. No outer border, watermark, page number, logo, decorative ornaments or eyebrow. Match the circuit's academic clarity while improving slide hierarchy.
+
+Exact slide title: "Apply voltage conservation around closed paths"
+Layout: title across top; large faithful circuit on left occupying about 58% of width; three stacked equation groups on right occupying about 38%, with generous separation. Small concise instructional sentence along bottom. Every resistor label must remain comfortably readable at full-screen projection. Use the whole 16:9 canvas. Do not squeeze or clip any scientific content.
+Circuit strict details:
+One source Vs=24 V on left, + above −.
+R1=3 Ω top-left to A; R4=3 Ω bottom-left to B; vertical R7=6 Ω A-B; diagonal Rb=6 Ω A-C; top R2=1 Ω then R3=2 Ω; right R8=3 Ω to C; bottom R5=2 Ω then R6=4 Ω from B to C.
+All nine resistors and all wires must remain correctly connected. A top interior junction, B bottom interior junction, C bottom right.
+I1 source branch enters A from left and leaves B leftwards.
+I2 is DOWN from A to B along R7.
+I3 is DOWN-RIGHT from A to C on the diagonal.
+I4 is RIGHT from A through upper resistors and DOWN R8 into C.
+I5 is LEFT from C along lower branch into B.
+Use straight arrows on/along conductors only, never any circular mesh-current arrows. Labels I1–I5 are physical branch currents; no mesh currents exist in the nomenclature.
+
+Right-hand equation groups, render EXACTLY (proper subscripts):
+Group heading "Left path"
+"24 = (3 + 3)I₁ + 6I₂"
+"24 = 6I₁ + 6I₂"
+
+Group heading "Lower triangle"
+"6I₂ = (2 + 4)I₅ + 6I₃"
+"6I₂ = 6I₅ + 6I₃"
+
+Group heading "Upper triangle"
+"6I₃ = (1 + 2 + 3)I₄"
+"6I₃ = 6I₄"
+
+Below equation groups, small but legible: "Resistances in Ω; currents in A; every term is a voltage in V."
+Bottom instructional sentence, exactly:
+"A closed path defines the voltage balance; the arrows define branch-current directions."
+
+Scientific constraints: Never change any coefficient or sign. Do not combine I1/I2 as though they were mesh currents. R7 current is I2, Rb current is I3. Do not show solved currents or KCL on this sample. Explain three voltage equalities clearly. No duplicated unknowns or imaginary components. Source image is a strict circuit asset, not just loose inspiration. Preserve its physical content while editing only the surrounding slide text and composition.

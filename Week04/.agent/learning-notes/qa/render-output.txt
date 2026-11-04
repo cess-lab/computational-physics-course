@@ -1,0 +1,4 @@
+Renderer: pdftoppm 150 dpi
+Date: 2026-09-08
+Outputs: Week04/.agent/learning-notes/qa/rendered-20260908/page-1.png through page-4.png
+Result: PASS; four pages rendered and inspected; no duplicate/blank page, clipping, overlap, or bad automatic hyphenation observed.

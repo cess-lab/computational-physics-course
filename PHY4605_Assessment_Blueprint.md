@@ -44,11 +44,21 @@ Blank-page programming, independent formulation of an unfamiliar problem, severa
 | Test 1 | 10% | 90-minute open-book written assessment | AI-free |
 | Test 2 | 10% | 90-minute open-book written assessment | AI-free |
 | Final examination | 40% | 120-minute open-book written examination | AI-free |
-| Practical portfolio | 15% | Ten group evidence packets; best eight counted | AI allowed and declared |
+| Practical portfolio | 15% | Ten group evidence packets from Weeks 02–11; Week 01 is formative onboarding; best eight counted | AI allowed and declared |
 | Individual lab test | 10% | Individual scaffolded verification challenge | AI allowed and declared |
 | Capstone investigation | 15% | Bounded group project with starter Live Script and individual defence | AI allowed and declared |
 
 Open-book conditions reduce memorisation but do not justify unfamiliar, under-scaffolded cases. A compact formula, algorithm, and MATLAB reference sheet should be supplied where appropriate.
+
+## Semester 1 2026/2027 assessment windows
+
+The official [UPM Bachelor academic calendar](https://akademik.upm.edu.my/current_student/academic_calendar_2026_2027/bachelor-30053) places Assessment I in academic Weeks 4–6 and Assessment II in academic Weeks 8–12 for the first semester of 2026/2027. The [official calendar PDF](https://akademik.upm.edu.my/upload/dokumen/20260331115844BACELOR.pdf) gives these date ranges:
+
+- **Assessment I:** 26 October–22 November 2026, with the 09–15 November mid-semester break inside the window. The active blocks are 26 October–08 November and 16–22 November.
+- **Assessment II:** 30 November 2026–03 January 2027.
+- **Final examination:** 21 January–07 February 2027, after the 18–20 January revision break.
+
+For PHY4605 planning, the broad UPM windows are Assessment I (academic Weeks 4–6) and Assessment II (academic Weeks 8–12). The sequence-safe PHY4605 targets are Test 1 in academic Week 6 (16–22 November 2026), after the Week 05 content / alongside Week 06, and Test 2 in academic Week 12 (28 December 2026–03 January 2027), after the Week 11 content / alongside Week 12. Exact local test dates remain to be confirmed by the lecturer.
 
 ## Course-wide competency balance
 
@@ -194,7 +204,7 @@ The final may include a small number of stretch marks for less-scaffolded transf
 
 ## Practical portfolio
 
-Collect ten compact group evidence packets across the active practical weeks. Students work in groups of two or three and rotate the roles of model lead, algorithm/code lead, and validation/interpretation lead.
+Collect ten compact group evidence packets across Weeks 02–11. Week 01 remains a formative onboarding practical and is not one of the ten counted packets. Students work in groups of two or three and rotate the roles of model lead, algorithm/code lead, and validation/interpretation lead.
 
 Each core packet contains:
 
@@ -260,8 +270,8 @@ The capstone is a bounded supported investigation, not an open-ended research pr
 
 ### Required structure
 
-- The lecturer provides four to six bounded problem spaces.
-- Each group receives or selects an approved starter Live Script.
+- The lecturer provides twelve assigned physical briefs organised in six paired families: projectile motion (01–02), circuit behaviour (03–04), radiation and detection (05–06), thermal behaviour (07–08), Monte Carlo physics (09–10), and oscillatory motion (11–12).
+- Each group receives one assigned brief and its approved starter Live Script; the group does not choose a project during the capstone sequence.
 - The group states the model, assumptions, variables, and units.
 - The group completes or refines supplied pseudocode.
 - The group modifies one physical parameter or assumption.
@@ -273,26 +283,40 @@ The capstone is a bounded supported investigation, not an open-ended research pr
 
 ### Milestones
 
-| Milestone | Week | Weight within course |
-| --- | ---: | ---: |
-| Problem-space selection and feasibility | 06 | 2% |
-| Approved model, supplied/selected method, and validation plan | 07 | 3% |
-| Compact development/process evidence | 08–11 | 3% |
+| Milestone | Week | Role |
+| --- | ---: | --- |
+| Problem-space selection and feasibility | 06 | Feedback checkpoint |
+| Approved model, supplied/selected method, and validation plan | 07 | Approval checkpoint |
+| Compact development/process evidence | 08–11 | Progress evidence |
 | Studio completion and defence rehearsal | 12 | Formative checkpoint |
-| Final bounded investigation | 13 | 5% |
-| Individual defence and handoff | 13 | 2% |
+| Final bounded investigation | 13–14 | Rubric evidence |
+| Individual defence and handoff | 13–14 | Rubric evidence |
 
-Week 14 is buffer only. A deferred presentation or defence may use the buffer when necessary, but no new planned milestone belongs there.
+Weeks 13–14 are the capstone presentation, individual-defence, and reproducibility-handoff sequence. Week 14 carries no new planned core topic or separate milestone.
 
 | Criterion | Weight within capstone |
 | --- | ---: |
-| Model, assumptions, variables, and units | 15% |
-| Pseudocode and explanation of supplied method | 15% |
-| Code tracing and justified modification | 20% |
+| Model, assumptions, scope, variables, and units | 15% |
+| Algorithm and MATLAB implementation evidence | 25% |
 | Principal output and reproducibility | 15% |
-| Required and chosen validation evidence | 15% |
-| Physical interpretation and limitation | 15% |
+| Validation evidence | 15% |
+| Physical interpretation and limitations | 15% |
+| Presentation and communication | 10% |
 | Individual defence and AI decision record | 5% |
+
+The criteria total 100% within the capstone. This single rubric is then scaled to the capstone's 15% contribution to the course. The milestone table above records development checkpoints and feedback; it does not create a second set of course weights.
+
+Each criterion is rated at one of four levels: **Excellent = 4**, **Good = 3**, **Satisfactory = 2**, and **Weak = 1**. The weighted score for a row is `criterion weight × rating / 4`. Use the following descriptors when judging the submitted and defended evidence.
+
+| Criterion | Excellent | Good | Satisfactory | Weak |
+| --- | --- | --- | --- | --- |
+| **Model, assumptions, scope, variables, and units** (15%) | Correct, complete and appropriate model; assumptions and boundary justified; variables, parameters and units explicit and consistent; expected behaviour clear. | Appropriate and mostly correct model; scope and most variables/units stated; minor omissions do not change the conclusion. | Basic model identified, but scope, assumptions or units are only partly explained; computation can be followed with support. | Model missing or materially wrong; scope, assumptions, variables or units are absent or inconsistent. |
+| **Algorithm and MATLAB implementation evidence** (25%) | Clear input-to-output algorithm; MATLAB faithfully implements it; one modification is physically justified; relevant code is traceable without hidden state. | Algorithm and implementation substantially correct; modification linked to model; main code path traceable with minor issues. | Partial algorithm/code evidence; dependencies or modification logic incomplete; needs prompting or a small repair. | No coherent algorithm-to-code link, unidentifiable or wrong modification, or code cannot be meaningfully traced or run. |
+| **Principal output and reproducibility** (15%) | Labelled output directly answers the question; units/settings are meaningful; fresh-session run succeeds; another person can reproduce the main claim. | Relevant readable output with most labels/settings; fresh run supports the same conclusion with a minor omission. | Output exists but labels, settings or run instructions are incomplete; reproduction partly depends on unstated state. | Output missing, irrelevant, misleading or unlabelled; no clean reproducible run. |
+| **Validation evidence** (15%) | Required and different chosen checks are appropriate, independently executed and supported by clear evidence; what each check establishes is stated. | Both checks are appropriate and evidenced, but one explanation or comparison is limited. | At least one valid check shown; second is missing, weak, duplicated or poorly linked to the claim. | No valid check, or checks are inappropriate, circular or contradicted by the result. |
+| **Physical interpretation and limitations** (15%) | Accurate physical explanation linked to model and evidence; meaningful limitation and consequence stated; no overclaim. | Correct main result/trend and relevant limitation; explanation is somewhat general but defensible. | Mainly restates graph/number; physical reasoning limited or limitation vague. | Interpretation absent/incorrect, no meaningful limitation, or conclusion overclaims evidence. |
+| **Presentation and communication** (10%) | Coherent, concise and readable evidence story from question/model through modification, output, checks, interpretation and limitation. | Clear story covering main evidence; minor sequencing, visual or terminology issues. | Some evidence presented, but story is cluttered, uneven or dependent on prompting. | Incomplete, hard to follow or unreadable; no defensible computational conclusion communicated. |
+| **Individual defence and AI decision record** (5%) | Every member traces relevant code and answers a follow-up with physical/algorithmic/validation reasoning; AI decisions and independent checks are clear. | Members explain the main code path with minor prompting; AI record substantially complete and checks identifiable. | Tracing/answers partial or uneven; AI record omits some decisions or checks. | Member cannot trace or defend work, or individual/AI evidence is unusable. |
 
 Independent extensions, blank-page implementations, or advanced method comparisons may earn distinction credit but are not required for ordinary completion.
 

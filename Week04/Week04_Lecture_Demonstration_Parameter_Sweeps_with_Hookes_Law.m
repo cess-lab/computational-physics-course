@@ -1,4 +1,4 @@
-%[text] # Week 4 Lecture Demonstration: Parameter Sweeps with Hooke's Law
+%[text] # Parameter Sweeps: Compare one controlled change and interpret the graph
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%
@@ -59,7 +59,7 @@ wrong_final_value = wrong_baseline_extension(end) %[output:8aba0274]
 correct_final_value_m = correct_baseline_extension(end) %[output:942726a8]
 %%
 %[text] ## Working Exposure: A Two-Parameter Result Table
-%[text] A table can compare selected forces and stiffnesses without introducing a new Core method. Here the supplied values show how the same physical relationship can be inspected numerically as well as graphically.
+%[text] A table can compare selected forces and stiffnesses without introducing a new method. Here the supplied values show how the same physical relationship can be inspected numerically as well as graphically.
 selected_force_N = [2 5 8];
 selected_extension_m = selected_force_N./k_Npm.';
 selected_extension_m %[output:2401dba0]
@@ -77,7 +77,7 @@ dx_dk_m2_per_N = -F_N./baseline_k_Npm^2;
 %[appendix]{"version":"1.0"}
 %---
 %[metadata:view]
-%   data: {"layout":"onright"}
+%   data: {"layout":"inline","rightPanelPercent":32.8}
 %---
 %[output:662d2af9]
 %   data: {"dataType":"matrix","outputData":{"columns":5,"name":"ans","rows":3,"type":"double","value":[["0","0.0100","0.0200","0.0300","0.0400"],["0","0.0050","0.0100","0.0150","0.0200"],["0","0.0025","0.0050","0.0075","0.0100"]]}}

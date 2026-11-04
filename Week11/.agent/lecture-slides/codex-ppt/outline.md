@@ -1,10 +1,10 @@
-# Week 11 Lecture Slide Outline - Sensitivity and Uncertainty Propagation
+# Week 11 — Sensitivity Analysis: Propagate input ranges into defensible output ranges
 
 Status: draft outline awaiting lecturer approval. This file is the only Week 11 slide-production artefact prepared at this stage. No deck specification, speaker notes, prompt jobs, slide images, run state, or PPTX should be created before the outline gate is approved.
 
 Locked lecture model: ideal Hooke's law `x = F/k`; Core force `F = 10 N`; baseline stiffness `k = 100 N/m`; plausible stiffness range `95-105 N/m` represented by `[95, 100, 105] N/m`. Working exposure compares force `[9.8, 10.0, 10.2] N` at fixed `k = 100 N/m`.
 
-## Slide 1: Sensitivity and Uncertainty Propagation
+## Slide 1: Sensitivity Analysis: Propagate input ranges into defensible output ranges
 
 - Key points: Week 11 title; one physical question: how uncertain is a model prediction when one input is not known exactly?; physics-first chain from input range to output range.
 - Visual idea: simple spring-load sketch paired with a compact `input range -> model -> output range` flow.

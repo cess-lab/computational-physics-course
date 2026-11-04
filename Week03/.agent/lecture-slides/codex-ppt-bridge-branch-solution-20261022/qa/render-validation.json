@@ -1,0 +1,67 @@
+{
+  "pdf_pages": 6,
+  "renderer": "LibreOffice Impress PDF export and pdftoppm",
+  "source_comparisons": [
+    {
+      "slide": 1,
+      "rendered_page": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/qa/rendered-pptx/page-1.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mean_absolute_channel_difference_vs_source": 2.845200353555127,
+      "render_check_passed": true
+    },
+    {
+      "slide": 2,
+      "rendered_page": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/qa/rendered-pptx/page-2.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mean_absolute_channel_difference_vs_source": 2.096024284457642,
+      "render_check_passed": true
+    },
+    {
+      "slide": 3,
+      "rendered_page": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/qa/rendered-pptx/page-3.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mean_absolute_channel_difference_vs_source": 3.139898128327291,
+      "render_check_passed": true
+    },
+    {
+      "slide": 4,
+      "rendered_page": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/qa/rendered-pptx/page-4.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mean_absolute_channel_difference_vs_source": 2.3889775884014934,
+      "render_check_passed": true
+    },
+    {
+      "slide": 5,
+      "rendered_page": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/qa/rendered-pptx/page-5.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mean_absolute_channel_difference_vs_source": 3.0641331374034544,
+      "render_check_passed": true
+    },
+    {
+      "slide": 6,
+      "rendered_page": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/qa/rendered-pptx/page-6.png",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "mean_absolute_channel_difference_vs_source": 2.7063445857422033,
+      "render_check_passed": true
+    }
+  ],
+  "passed": true
+}

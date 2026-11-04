@@ -18,17 +18,20 @@
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 6}\par\vspace{4pt}
-{\LARGE\bfseries Numerical Differentiation}\par\vspace{3pt}
+{\LARGE\bfseries Numerical Differentiation: Estimate a physical rate and test the step size}\par\vspace{3pt}
 \textit{Estimate a physical rate from nearby values, then check how well the numerical derivative matches a known reference.}
 
 \begin{keybox}\textbf{Physical question.} A projectile follows a familiar vertical-position model. How can two nearby position values estimate its instantaneous vertical velocity at $t=1.0\units{s}$?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item interpret a derivative as a physical rate and preserve its unit;
 \item trace a forward-difference estimate for several supplied step sizes; and
-\item validate a numerical derivative with an analytic reference and simple error.
+\item validate a numerical derivative against a calculus-based reference and simple error.
 \end{enumerate}
+
+\section*{How to use this note}
+Read the physical rate and its unit before the MATLAB code. Pause at each prediction and validation checkpoint before running the lecture demonstration. Keep the model, sample locations, step size, numerical estimate, and reference comparison connected.
 
 \section*{1. A derivative is a physical rate}
 In physics, a derivative is not only a calculus symbol. It describes how one physical quantity changes when another changes. If vertical position $y$ is measured in metres and time $t$ in seconds, then
@@ -42,7 +45,7 @@ The same idea appears elsewhere: $dT/dt$ is a heating or cooling rate, and $dV/d
 \begin{checkbox}\textbf{Prediction checkpoint.} At $t=1.0\units{s}$, a projectile launched upward at $20\units{m\,s^{-1}}$ should still be moving upward, but more slowly because gravity acts downward. Therefore $dy/dt$ should be positive and less than $20\units{m\,s^{-1}}$.\end{checkbox}
 
 \section*{2. From a tangent slope to two nearby values}
-The exact derivative is the local slope of the tangent. A forward difference replaces that tangent by a secant through two nearby points:
+A tangent is the straight line that matches a curve at one point; its slope gives the exact rate at that point. A secant is the straight line joining two distinct points; its slope gives the average rate across the interval. A forward difference replaces the tangent slope by this secant slope through two nearby points:
 \[
 \left.\frac{dy}{dt}\right|_{t=t_0}
 \approx
@@ -50,6 +53,7 @@ The exact derivative is the local slope of the tangent. A forward difference rep
 \]
 Here $t_0$ is the target time and $h>0$ is the time separation between the two samples.
 
+\Needspace{4\baselineskip}
 In words:
 \begin{center}
 \textbf{change in position} $\div$ \textbf{change in time} $\rightarrow$ \textbf{approximate velocity}.
@@ -60,7 +64,7 @@ The numerator has unit metres and the denominator has unit seconds, so the deriv
 \begin{figure}[H]
 \centering
 \includegraphics[width=.88\linewidth]{../matlab/assets/week06_forward_difference_geometry.png}
-\caption{MATLAB-generated geometry for the Week 6 model. The forward-difference secant over a finite step approximates the local tangent slope at $t_0$.}
+\caption{MATLAB-generated geometry for the Week 6 vertical-motion model. The forward-difference secant over a finite step approximates the tangent slope at $t_0$.}
 \end{figure}
 
 \section*{3. Reuse a familiar vertical-motion model}
@@ -76,16 +80,15 @@ We want the derivative at
 \[
 t_0=1.0\units{s}.
 \]
-The analytic derivative is
+The derivative from calculus is
 \[
 v(t)=\frac{dy}{dt}=v_0-gt,
 \]
-so the independent reference at the target time is
+This calculus result provides an analytic reference: a value obtained by differentiating the formula rather than by using the numerical difference. It is an independent check, not the numerical method itself. At the target time,
 \[
 v(1.0)=20-9.81(1.0)=10.19\units{m\,s^{-1}}.
 \]
-This analytic result is the validation reference, not the numerical method itself.
-
+\Needspace{10\baselineskip}
 \section*{4. One forward difference by hand}
 For $h=0.5\units{s}$,
 \[
@@ -110,8 +113,8 @@ The sign and unit are physically sensible, but the estimate is lower than the an
 \item repeat for the next supplied step size.
 \end{enumerate}
 
-\section*{6. Scaffolded MATLAB calculation}
-\begin{lstlisting}[style=matlabstyle]
+\section*{6. Starter MATLAB calculation}
+\begin{lstlisting}[style=matlabstyle,caption={Starter MATLAB calculation of forward differences for supplied time steps}]
 y0_m = 0;
 v0_mps = 20;
 g_mps2 = 9.81;
@@ -126,7 +129,7 @@ The important line is the final one: the change in position is divided element-b
 
 \Needspace{18\baselineskip}
 \section*{7. Compare a small set of step sizes}
-The supplied Core step sizes give:
+The supplied step sizes give:
 
 \begin{center}\small
 \begin{tabular}{rrrr}
@@ -142,9 +145,10 @@ $h$ (s) & $v_{\mathrm{FD}}$ (m/s) & absolute error (m/s) & relative error (\%)\\
 \end{center}
 
 For this smooth model and this supplied range, the estimate approaches the analytic value as $h$ becomes smaller.
-The lecture Live Script also supplies an error-versus-step-size graph for Working exposure. Read that graph as evidence from one model and finite range, not as proof that arbitrarily tiny steps are always better.
+The lecture Live Script also supplies an error-versus-step-size graph as a guided extension. Read the supplied graph as evidence from one model and finite range, not as proof that arbitrarily tiny steps are always better.
 
-\section*{8. Core validation: compare with the analytic derivative}
+\Needspace{12\baselineskip}
+\section*{8. Required validation: compare with the analytic derivative}
 The required validation is a direct comparison at the same target time:
 \[
 v_{\mathrm{exact}}(1.0)=10.19\units{m\,s^{-1}}.
@@ -166,26 +170,26 @@ and the relative error is approximately
 
 \section*{9. Diagnose a runnable but wrong calculation}
 A common defect is
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Example of an incorrect derivative denominator}]
 wrong_mps = (y_next_m - y_now_m)/t0_s;
 \end{lstlisting}
 The code runs, but the denominator is wrong. The two sampled positions are separated by $h$, not by $t_0$. Numerical correctness requires the denominator to represent the actual input interval between the two model values.
 
 \begin{aibox}\textbf{Responsible-AI caution.} AI-generated differentiation code can be syntactically valid while using the wrong interval, mixing units, differentiating the wrong quantity, or comparing values at different target points. Check the two sample locations, denominator, derivative unit, and reference point before accepting the result.\end{aibox}
 
-\section*{Working exposure: central difference}
-A supplied central difference uses values on both sides of the target point:
+\section*{Guided extension: central difference}
+A supplied central-difference calculation uses values on both sides of the target point:
 \[
 \left.\frac{dy}{dt}\right|_{t=t_0}
 \approx
 \frac{y(t_0+h)-y(t_0-h)}{2h}.
 \]
-For this quadratic position model, the central difference happens to reproduce the analytic derivative to floating-point precision. This special agreement should not be generalised to every physical model.
+For this quadratic position model, the supplied central-difference result happens to reproduce the analytic derivative to the precision available in the computer's stored numbers. This special agreement should not be generalised to every physical model. Read the supplied result and interpret the comparison; independent implementation is not required here.
 
-A supplied error-versus-step-size curve may also be inspected qualitatively. Extremely small steps are not guaranteed to improve every finite-precision calculation. Detailed truncation-error order and round-off analysis are Stretch topics, not Core Week 6 requirements.
+A supplied error-versus-step-size curve may also be inspected qualitatively. A computer stores numbers with finite precision, so subtracting nearly equal values can lose useful digits; extremely small steps are therefore not guaranteed to improve every calculation. Truncation error here means the error caused by replacing the tangent with a finite-step formula. Round-off error is the small numerical change caused by finite-precision storage and arithmetic. Detailed error-order, truncation, and round-off analysis is an optional extension, not a required Week 6 task.
 
-\section*{Optional stretch}
-Optional distinction-level extensions include deriving error order, analysing truncation and round-off in detail, or implementing higher-order difference formulas. Removing this section leaves the complete Core pathway intact.
+\section*{Optional extension}
+Optional distinction-level extensions include deriving error order, analysing truncation and round-off in detail, or implementing higher-order difference formulas. These activities are not required. Removing this section leaves the complete required physics-to-rate and validation pathway intact.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=6mm]

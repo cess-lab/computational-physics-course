@@ -4,3 +4,8 @@ note: Running xdvipdfmx ...
 note: Writing `.agent/learning-notes/build/Week05_Root_Finding.log` (24.2509765625 KiB)
 note: Writing `.agent/learning-notes/build/Week05_Root_Finding.pdf` (131.818359375 KiB)
 note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+2026-09-08 terminology and page-flow revision: bundled Tectonic exit 0; final PDF has 5 A4 pages. Visual evidence is under `rendered-current/page-final4-1.png` through `page-final4-5.png`.
+2026-09-08 reviewer page-flow correction: bundled Tectonic exit 0; final PDF has 5 A4 pages. Visual evidence is under `rendered-current/page-final5-1.png` through `page-final5-5.png`; the complete variable table is clear of the page 1 footer.
+
+2026-09-08 canonical-source synchronization: one `compile_latex.py --compiler tectonic --output-directory Week05/.agent/learning-notes/build` invocation from the current `Week05_Root_Finding.tex`; bundled Tectonic 0.17.0 exit 0. The emitted build PDF is 141514 bytes, 5 A4 pages, SHA-256 `d8d117d69df270255ee311586b5493f639dbb1c5b373c4479134a8ba49fafa9c`. That single emitted file was copied to `Week05/Week05_Learning_Note_Root_Finding.pdf`; `cmp` between root and build PDFs exits 0. The build log has no `Overfull` or `Underfull` diagnostics; the only warning is the non-content `shellesc` shell-escape-disabled warning.

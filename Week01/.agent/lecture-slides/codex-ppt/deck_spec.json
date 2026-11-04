@@ -55,7 +55,7 @@
   "slides": [
     {
       "number": 1,
-      "title": "Physics to Arrays and Plots",
+      "title": "Arrays and Plots: Represent a physical model and compare prediction with evidence",
       "role": "cover",
       "intent": "Open with one familiar physical story and make the model-to-evidence journey visible.",
       "key_points": ["A familiar motion model becomes computational evidence.", "Model -> arrays -> plot -> validation -> interpretation."],

@@ -1,0 +1,41 @@
+{
+  "slide": 12,
+  "title": "Project 12\nFinite-Angle Pendulum Motion",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 12,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nTwelve detailed assigned PHY4605 capstone project briefs, one per project.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"audience\": \"Year-2 physics students with weak retained MATLAB literacy.\",\n    \"boundary\": \"Assigned projects; scaffolded investigation. One main realism feature can suffice. Additional effects optional. Examples of outputs/checks are guidance, not fixed solution route.\",\n    \"evidence\": \"Make model, units, supported assumptions, validation and physical interpretation explicit; AI allowed with independent checks. No invented numerical outcomes.\"\n  }\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware — PHY4605 illustrated scientific briefing\",\n  \"visual_direction\": \"Open white canvas, navy title, muted blue and sage accents, occasional muted ochre; clean scientific illustrations with restrained soft depth. Readable regular sans-serif body, bold title and headings.\",\n  \"deck_consistency\": \"Match approved samples 01 and 03. Use five content groups consistently while allowing main-visual-driven layout variation.\",\n  \"avoid\": \"Outer frames, decorative corners, dense tiny prose, glossy photorealism, unrelated photos.\"\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png — approved sample style reference; match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout\n\n\n## Slide\n{\n  \"number\": 12,\n  \"title\": \"Project 12\\nFinite-Angle Pendulum Motion\",\n  \"subtitle\": \"\",\n  \"role\": \"single assigned project detailed brief\",\n  \"intent\": \"Explain the physical project and defensible decisions, preserving scaffolded Core scope.\"\n}\n\n## Text\n{\n  \"title\": \"Project 12\\nFinite-Angle Pendulum Motion\",\n  \"subtitle\": \"\",\n  \"key_points\": [\n    \"Scenario + objective — A pendulum is released from an angle too large to assume small-angle motion automatically. Investigate how the response differs from the small-angle approximation.\",\n    \"Physical reasoning — The restoring effect depends on angle; the small-angle approximation has a limited range. Friction is an optional separate effect and must be distinguished from numerical energy drift.\",\n    \"Information needed — Length (m), gravitational acceleration (m/s2), initial angle (rad for computation), initial angular speed (rad/s), mass (kg) when evaluating energy, time (s) and any supported damping information.\",\n    \"Scope decisions — Is a point bob on a fixed-length, planar pendulum adequate? Vary initial angle first; pivot friction, rod inertia and moving support remain optional.\",\n    \"Possible evidence — Possible evidence includes angular displacement and period across initial angles, a small-angle reference and an energy/timestep check. Explain which differences are physical and which may arise from numerical error.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"Pendulum geometry upper left, small-angle comparison and energy cue upper right, five compact text groups below.\",\n  \"intent\": \"Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples.\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"Finite-angle pendulum with fixed pivot, string length L, bob mass m, dashed vertical equilibrium, angle theta measured from downward vertical, curved path. Compare small-angle and finite-angle geometry schematically, not quantitative curves. Small conservation cue states Undamped: total energy conserved; optional damping: energy decreases. No energy-versus-angle plot and no energy drift claimed as physical. Label Conceptual illustration.\"\n}\n\n## Constraints\n[\n  \"Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.\",\n  \"No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.\",\n  \"No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.\",\n  \"Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.\",\n  \"Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_12.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+      "role": "approved sample style reference",
+      "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "sample-prompts/slide_01.txt and sample-prompts/slide_03.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_01.png",
+    "input_context_preparation": "Parent inspected local approved samples with view_image; worker must inspect listed style reference and use generate mode, referenced_image_paths for style-only context.",
+    "handoff_rule": "Use built-in image_gen generate mode; sample images are style references only. Return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

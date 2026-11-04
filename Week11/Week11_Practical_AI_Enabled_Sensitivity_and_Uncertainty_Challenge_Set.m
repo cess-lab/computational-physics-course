@@ -1,4 +1,4 @@
-%[text] # Week 11 Practical Activity: AI-Enabled Sensitivity and Uncertainty Challenge Set
+%[text] # Sensitivity Analysis: Propagate input ranges into defensible output ranges
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%
@@ -14,6 +14,9 @@ voltage_baseline_V = 12;
 resistance_cases_ohm = [95 100 105];
 resistance_prediction = "REPLACE_WITH_DIRECTION_AND_UNITS";
 %[text] **Required evidence:** identify baseline/lower/upper resistance, predict the current trend, and state the units. **Defence hook:** explain why only resistance changes in this comparison.
+%%
+%[text] ## Algorithm / Pseudocode Checkpoint
+%[text] Before sweeping an uncertain input, state the ordered computational steps: record the baseline and units, choose one uncertain input to vary, calculate the output for each supplied case, report the output range, compare with a reference or second one-at-a-time sweep, and interpret the uncertainty source.
 %%
 %[text] ## Question 2: Convert Resistance Uncertainty into a Current Range
 %[text] Evaluate the same Ohm's-law model for the three supplied resistance values. Report the baseline current and the minimum-to-maximum current range. The result is a parameter-uncertainty range, not repeated random data.

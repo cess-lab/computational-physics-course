@@ -1,0 +1,11 @@
+Kita sekarang berjalan satu loop pada satu masa. Untuk loop kiri, jumlah voltage drop pada resistor mesti sepadan dengan sumber lima volt, dengan polarity dan arah traversal yang ditunjukkan. Resistor kiri membawa I satu. Resistor tengah membawa I satu tolak I dua dalam arah loop kiri.
+
+Jadi kita tulis: R satu darab I satu, tambah R shared darab kurungan I satu tolak I dua, sama dengan V satu. Kembangkan kurungan itu perlahan-lahan. Terma I satu menjadi R satu tambah R shared. Terma I dua menjadi negatif R shared. Maka persamaannya ialah, kurungan R satu tambah R shared, darab I satu, tolak R shared darab I dua, sama dengan V satu.
+
+Dengan nilai yang diberi, dua tambah satu menjadi tiga. Kita dapat tiga I satu tolak I dua sama dengan lima. Setiap terma di kiri ialah voltage drop, jadi unitnya volt. Tiga itu mewakili tiga ohm, bukan nombor tanpa unit.
+
+Untuk loop kanan pula, current difference pada resistor tengah dalam arah traversal loop kanan ialah I dua tolak I satu. Jadi R dua darab I dua, tambah R shared darab kurungan I dua tolak I satu, sama dengan V dua. Selepas dikembangkan, negatif R shared darab I satu, tambah kurungan R dua tambah R shared darab I dua, sama dengan V dua. Secara nombor, negatif I satu tambah empat I dua sama dengan dua.
+
+Sekarang tutup bahagian jawapan sekejap. Dalam pasangan, seorang jelaskan loop kiri dan seorang jelaskan loop kanan. Jangan hanya sebut negatif satu kerana nampak pattern matriks. Jelaskan arah arus pada resistor yang dikongsi. Jika kamu tersangkut, kembali kepada kurungan current difference sebelum expand.
+
+Kita tidak perlu hafal semua bentuk matriks litar. Kita perlu pastikan setiap persamaan boleh dibaca semula sebagai physical loop. Sebelum bergerak, semak dua perkara: tanda sumber mengikut polarity yang dilukis, dan setiap resistance kali current menghasilkan volt. Inilah jambatan daripada physical model kepada algebra.

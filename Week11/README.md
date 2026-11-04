@@ -1,4 +1,4 @@
-# Week 11 - Sensitivity and Uncertainty Propagation
+# Week 11 — Sensitivity Analysis: Propagate input ranges into defensible output ranges
 
 Use one-at-a-time parameter variation to turn plausible input uncertainty into an output range, then distinguish parameter uncertainty from numerical approximation error and model limitation.
 
@@ -7,7 +7,23 @@ Use one-at-a-time parameter variation to turn plausible input uncertainty into a
 - `Week11_Learning_Note_Sensitivity_and_Uncertainty_Propagation.pdf`: physics-first learning note using Hooke's law to connect an uncertain spring stiffness to a defensible range of predicted extension.
 - `Week11_Lecture_Demonstration_Hookes_Law_Uncertainty.m`: complete lecturer-led plain-text Live Script with baseline/lower/upper cases, one-at-a-time comparison, validation, and Working-exposure sensitivity/propagation ideas.
 - `Week11_Practical_AI_Enabled_Sensitivity_and_Uncertainty_Challenge_Set.m`: ten progressive group challenges across an Ohmic resistor, a small-angle pendulum, and exponential attenuation.
-- Lecture-slide outline: `Week11/.agent/lecture-slides/codex-ppt/outline.md`. This is the only Week 11 slide-deck artefact prepared in this task; no slide image or PPTX is created.
+- [Lecture slide deck](Lecture_Slides_Week11.pptx): assembled 14-slide image-based Teaching Courseware deck, with 14 recorded slide jobs, 14 source images, and 14 presenter-note sections retained under `.agent/lecture-slides/codex-ppt/`.
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the dedicated Week 11 diagnostic in Google Classroom when it is released, and predict which input range should dominate the output range.
+
+**During:** Follow `model -> uncertain input -> controlled cases -> output range -> validation -> uncertainty source -> interpretation`; run the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 11 is one of the ten counted practical packets; the best eight packets count for the group component.
+
+## Current slide-deck status
+
+The PPTX and hidden assembled copy are present and byte-identical. Structural, rendering, and provenance-gap evidence is retained in `.agent/lecture-slides/codex-ppt/qa/final_qa_delivery_record.md` and `provenance_gap_rerun_record_2026-09-07.md`. The endpoint-only title/closing normalization is approved under the course-level normalization approval record; the older full-deck production-provenance gap remains archived as historical evidence and is not retroactively asserted as complete.
 
 ## Learning Focus
 
@@ -33,7 +49,11 @@ The practical is an AI-enabled group challenge set using three analogous supplie
 
 Google Classroom remains the official submission record. Complete and lock group evidence before the question slot and individual defender are drawn. The Week 11 practical includes a compact capstone uncertainty/limitation checkpoint but no new graded capstone milestone.
 
-The individual pre-practical diagnostic is drafted locally under `.agent/practical/` and is not published by this package build.
+Complete the dedicated Week 11 diagnostic through its Google Classroom coursework when released. If it reveals a common misconception, the lecturer may post an optional 10–15 minute remediation with one retry and confidence check; it is not a prerequisite for the next lecture. The local question key remains planning material until publication is approved.
+
+## Test 2 timing
+
+Test 2 covers Weeks 06–11 and is planned after this week / alongside Week 12, within the UPM Assessment II window of 30 November 2026–03 January 2027. The exact PHY4605 date is to be confirmed.
 
 ## Instructor / QA Package
 
@@ -42,6 +62,4 @@ Hidden support materials are stored under `.agent/`:
 - learning-note LaTeX source, figures, build output, and visual QA under `.agent/learning-notes/`;
 - locked numerical evidence, plots, and run logs under `.agent/matlab/`;
 - practical reference answers, diagnostic draft, A/B variant bank, defence rubric, rotation ledger, member summary, and practical QA under `.agent/practical/`;
-- the Week 11 lecture-deck outline only under `.agent/lecture-slides/codex-ppt/`.
-
-No Week 11 `deck_spec.json`, `speech.md`, slide prompt jobs, slide images, slide-state files, or `.pptx` are part of this task.
+- lecture-deck source images, prompts, speaker notes, slide-job state, and QA records under `.agent/lecture-slides/codex-ppt/`; endpoint-normalization approval and dispatch evidence are recorded at the course level, while historical full-deck provenance remains separately archived.

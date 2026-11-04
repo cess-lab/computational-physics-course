@@ -1,4 +1,4 @@
-%[text] # Week 2 Practical Activity: Loops and Debugging Challenge Set
+%[text] # Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 AI-Enabled Group Investigation
 %%
@@ -19,7 +19,7 @@ T_room_C = 25;
 T0_C = 85;
 tau_s = 4.0;
 t_cool_s = 0:1:16;
-%[text] **Required evidence:** executable inputs and short pseudocode. **Defence hook:** explain why `t_cool_s/tau_s` is dimensionless.
+%[text] **Required evidence:** executable inputs and short pseudocode. **Defence hook:** explain why `t_cool_s./tau_s` is dimensionless and applies the operation element by element.
 %%
 %[text] ## Question 3: Complete and Trace a Cooling Loop
 %[text] Add code that preallocates `T_C`, then uses a `for` loop to calculate one temperature for each stored time. Display the first two loop results and trace those two passes by hand.

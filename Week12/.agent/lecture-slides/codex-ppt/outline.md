@@ -1,4 +1,4 @@
-# Week 12 Lecture Outline — Integrated Method Selection and Capstone Studio
+# Week 12 — Method Selection: Audit a computation and prepare a reproducible capstone
 
 Status: outline and source mapping approved by the lecturer in the current task. No slide images, final deck specification, speech, prompt jobs, or PPTX have been created. This 14-slide lecture also provides the capstone-studio briefing; a duplicate practical deck is not proposed.
 
@@ -8,7 +8,7 @@ Locked worked model: Newton cooling, uniform object temperature, constant surrou
 
 Source mapping: all equations, code, units, and values below are strict text facts. The lecture Live Script is the canonical code source. The MATLAB graph assigned to slide 9 is a strict numerical reference, supplied to ImageGen as reference only for a cohesive full-slide redraw. It must never be pasted or overlaid into the deck. No external scientific image is required. Exact equation/code reference renderings will be retained before sample generation when needed.
 
-## Slide 1: Which Computation Answers the Physics Question?
+## Slide 1: Method Selection: Audit a computation and prepare a reproducible capstone
 - Key points: Week 12; begin with the required physical output; choose among methods already learned; finish with a defensible capstone result.
 - Visual idea: physical question -> computation -> evidence, with a labelled output at each stage.
 - Layout role: opening question and course synthesis.

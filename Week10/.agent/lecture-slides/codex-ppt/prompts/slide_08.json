@@ -8,9 +8,20 @@
       "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/lecture-slides/codex-ppt/origin_image/slide_08.png",
       "role": "approved Week 10 sample slide style reference",
       "fidelity": "match title band, divider, palette, typography and density only; never copy its histogram layout unless appropriate"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/matlab/week10_random_walk_histogram.png",
+      "role": "strict numerical MATLAB reference for the localized repair",
+      "fidelity": "preserve the source histogram's 0–900 frequency scale, central peak near 800, even-position bars, x-axis range, labels, and bell-shaped relationships"
     }
   ],
   "requires_context_images": true,
+  "repair_context": {
+    "type": "parent-localized-built-in-imagegen-edit",
+    "strict_reference": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week10/.agent/matlab/week10_random_walk_histogram.png",
+    "required_correction": "Use Number of trials ticks 0, 100, ..., 900 with top limit 900; central peak near 800 trials; retain even-position bars, x-axis approximately -40 to 40 mm, and all locked text/numbers.",
+    "provenance_note": "This is a localized parent edit; no new subagent dispatch or lecturer approval is asserted."
+  },
   "expected_backend": "built-in image tool",
   "sample_generation_method": {
     "backend_used": "built-in image tool",

@@ -3,3 +3,8 @@ note: Rerunning TeX because "Week06_Numerical_Differentiation.aux" changed ...
 note: Running xdvipdfmx ...
 note: Writing `build/Week06_Numerical_Differentiation.pdf` (137.0517578125 KiB)
 note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+
+2026-09-08 terminology and page-flow revision: bundled Tectonic exit 0; final PDF has 5 A4 pages. Visual evidence is under `rendered-current/page-final2-1.png` through `page-final2-5.png`.
+
+2026-09-08 final page-flow revision: bundled Tectonic exit 0; final PDF has 5 A4 pages. Visual evidence is under `rendered-current/page-final3-1.png` through `page-final3-5.png`.
+2026-09-08 final terminology/page-flow build: bundled Tectonic exit 0; final PDF has 5 A4 pages. Visual evidence is under `rendered-current/page-final4-1.png` through `page-final4-5.png`.

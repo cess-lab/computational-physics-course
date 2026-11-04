@@ -1,0 +1,3 @@
+Dua slide seterusnya ialah optional future exposure. Kita tidak menambah derivation tiga mesh sebagai keperluan Core hari ini. Lihat idea yang sama pada network lebih besar: tiga mesh current bermaksud tiga unknown dan tiga equation, jadi coefficient matrix bersaiz tiga kali tiga.
+
+Perhatikan resistor R tujuh dikongsi oleh I satu dan I dua. Resistor diagonal R b pula dikongsi oleh I dua dan I tiga. Kita masih bermula dengan connection dan direction sebelum coefficient. Kita berhenti pada recognition ini. Jangan anggap kamu perlu menyelesaikan bridge circuit ini untuk menguasai contoh dua loop hari ini.

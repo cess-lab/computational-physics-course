@@ -1,0 +1,3 @@
+Gunakan gambar yang sama untuk satu soalan ringkas. Tunjuk pasangan mesh yang berkongsi R tujuh, kemudian pasangan yang berkongsi R b. Kita cuma mahu lihat struktur hubungan. I satu dan I tiga tidak berkongsi branch secara langsung dalam lukisan ini.
+
+Kalau kamu hendak semak penyelesaian kelak, prinsipnya tetap sama: masukkan current kembali ke original Kirchhoff equations dan terangkan arah serta unit. Kita tidak isi coefficient atau run solver untuk network ini sekarang. Ambil idea bahawa kaedah model, equation, solve, check boleh berkembang, kemudian kita kembali kepada litar dua loop yang sudah kita fahami.

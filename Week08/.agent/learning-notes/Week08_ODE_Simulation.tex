@@ -18,20 +18,23 @@
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 8}\par\vspace{4pt}
-{\LARGE\bfseries ODE Simulation: Euler Steps for Newton Cooling}\par\vspace{3pt}
+{\LARGE\bfseries Ordinary Differential Equations: Simulate a changing state from an initial condition}\par\vspace{3pt}
 \textit{Turn a familiar rate law into small, visible temperature updates, then test how timestep size changes the simulation.}
 
 \begin{keybox}\textbf{Physical question.} A hot object cools toward room temperature. Starting at $80\units{^\circ C}$ in a $20\units{^\circ C}$ room, what temperature does an Euler simulation predict from $0$ to $300\units{s}$, and how does the timestep affect confidence in that prediction?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item identify the state, rate, initial condition, timestep, and final time in a first-order physical model;
 \item trace and complete an Euler update loop that produces a labelled temperature trajectory; and
 \item validate the simulation with smaller timesteps, an exact reference, and physical initial-value and trend checks.
 \end{enumerate}
 
+\section*{How to use this note}
+Read the physical question and rate law first. Pause at each prediction checkpoint, trace the first updates by hand, then run the starter code and compare the trajectory with the stated validation evidence.
+
 \section*{1. A changing state needs a starting value}
-The \textbf{state variable} is the object's uniform temperature, $T(t)$. Its value changes with time, so one number is not enough: we need a sequence of temperatures. Newton cooling gives the rate law
+The \textbf{state variable} is the object's uniform temperature, $T(t)$. Its value changes with time, so one number is not enough: we need a sequence of temperatures. A \textbf{first-order model} uses the first time derivative to describe how one state changes. In plain language, it gives the current rate of change, and one starting value selects the trajectory. Newton cooling gives the rate law
 \[
 \frac{dT}{dt}=-\frac{T-T_{\mathrm{env}}}{\tau}.
 \]
@@ -87,8 +90,9 @@ step $n$ & $t_n$ (s) & $T_n$ ($^\circ$C) & rate at $T_n$ ($^\circ$C s$^{-1}$)\\
 \end{tabular}
 \end{center}
 
-\begin{aibox}\textbf{A common physical/logical defect.} In the update, use the \emph{current} value $T_n$ on the right-hand side. Reusing $T_0$ at every step would apply the original cooling rate repeatedly, even after the object has cooled. MATLAB can run that code, but the physics would be wrong.\end{aibox}
+\begin{aibox}\textbf{A common model or logic defect.} In the update, use the \emph{current} value $T_n$ on the right-hand side. Reusing $T_0$ at every step would apply the original cooling rate repeatedly, even after the object has cooled. MATLAB can run that code, but the physics would be wrong.\end{aibox}
 
+\Needspace{18\baselineskip}
 \section*{4. Pseudocode before MATLAB}
 \begin{enumerate}[nosep,leftmargin=7mm]
 \item state the environment temperature, initial temperature, timescale, timestep, and final time with units;
@@ -101,10 +105,10 @@ step $n$ & $t_n$ (s) & $T_n$ ($^\circ$C) & rate at $T_n$ ($^\circ$C s$^{-1}$)\\
 \end{enumerate}
 
 \Needspace{28\baselineskip}
-\section*{5. A commented Euler-loop scaffold}
-The loop counter \texttt{n} labels the \emph{current} position. MATLAB uses one-based indexing, so the current temperature is \texttt{T\_C(n)} and the next position is \texttt{T\_C(n+1)}.
+\section*{5. An Euler update with starter code}
+The code below is starter code. The loop counter \texttt{n} labels the \emph{current} position. MATLAB uses one-based indexing, so the current temperature is \texttt{T\_C(n)} and the next position is \texttt{T\_C(n+1)}.
 
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Euler simulation of Newton cooling with a labelled temperature plot.}]
 T_room_C = 20;
 T_initial_C = 80;
 tau_s = 100;
@@ -129,6 +133,7 @@ grid on
 
 Before running, trace the first two loop passes against the table above. Then change only \texttt{dt\_s} to $25\units{s}$ or $12.5\units{s}$ and predict what will happen to the plotted points and the final temperature.
 
+\Needspace{34\baselineskip}
 \section*{6. Timestep comparison and an independent reference}
 For this teaching model only, a supplied exact solution provides an independent reference:
 \[
@@ -145,7 +150,7 @@ It gives $T_{\mathrm{exact}}(300\units{s})=22.9872\units{^\circ C}$. The figure 
 \begin{center}\small
 \begin{tabular}{rrrr}
 \toprule
-$h$ (s) & Euler $T(300\units{s})$ ($^\circ$C) & abs. error ($^\circ$C) & comparison\\
+$h$ (s) & Euler $T(300\units{s})$ ($^\circ$C) & absolute error ($^\circ$C) & comparison\\
 \midrule
 50.0 & 20.9375 & 2.0497 & coarsest supplied result\\
 25.0 & 21.9006 & 1.0866 & closer to reference\\
@@ -156,7 +161,7 @@ $h$ (s) & Euler $T(300\units{s})$ ($^\circ$C) & abs. error ($^\circ$C) & compari
 
 The physics and final time are unchanged across the rows. Only $h$ changes. For these supplied steps, smaller timesteps give endpoint values closer to the reference. This is evidence about this model and interval, rather than a guarantee that every timestep is acceptable for every ODE.
 
-\section*{7. Core validation: check the start, the trend, and the reference}
+\section*{7. Required validation: check the start, the trend, and the reference}
 The Euler trajectory with $h=50\units{s}$ starts at the required $80\units{^\circ C}$, and its first two calculated values are $50\units{^\circ C}$ and $35\units{^\circ C}$, as traced by hand. Every plotted trajectory decreases toward the $20\units{^\circ C}$ environment and remains within the physical bounds for this case.
 
 \begin{checkbox}\textbf{Validation statement.} At the same final time, the endpoint error decreases from $2.0497\units{^\circ C}$ for $h=50\units{s}$ to $0.5531\units{^\circ C}$ for $h=12.5\units{s}$. Together with the correct initial value and cooling trend, this supports the finer Euler result for the stated Newton-cooling model.\end{checkbox}
@@ -166,17 +171,17 @@ Temperature falls quickly at first because the difference $T-T_{\mathrm{env}}$ i
 
 The numerical result is only as appropriate as its physical model. Here we assumed a constant environment temperature and one constant cooling timescale. Changing airflow, contact with another object, or internal heat generation could make that assumption unsuitable.
 
-\section*{Working exposure: supplied \texttt{ode45} reference}
-MATLAB's \texttt{ode45} is a solver that can produce a reference trajectory without writing the Euler loop. Read the supplied call as evidence, but Core work remains the visible Euler update and its validation:
-\begin{lstlisting}[style=matlabstyle]
+\section*{Guided extension: supplied \texttt{ode45} reference}
+MATLAB's \texttt{ode45} is a solver that can produce a reference trajectory without writing the Euler loop. Read and interpret the supplied call as reference evidence. You are not expected to implement \texttt{ode45} independently; this week's main task remains the visible Euler update and its validation:
+\begin{lstlisting}[style=matlabstyle,caption={Reading a supplied ode45 reference trajectory for the cooling model.}]
 coolingRate = @(t,T) -(T - T_room_C) / tau_s;
 [t45_s,T45_C] = ode45(coolingRate,[0 t_final_s],T_initial_C);
 plot(t45_s,T45_C,'k-')
 \end{lstlisting}
 The anonymous function states the same rate law. The interval \texttt{[0 t\_final\_s]} and initial condition \texttt{T\_initial\_C} remain physical inputs that must be checked.
 
-\section*{Optional stretch}
-Optional extensions include deriving formal Euler stability conditions, comparing Runge--Kutta methods, simulating a stiff system, handling events, or coupling several nonlinear ODEs. These are not required for the Core pathway.
+\section*{Optional extension}
+Optional extensions include deriving formal Euler stability conditions, comparing Runge-Kutta methods, simulating a stiff system, handling events, or coupling several nonlinear ODEs. They are not required for this week’s pathway.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=6mm]

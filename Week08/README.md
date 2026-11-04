@@ -1,4 +1,4 @@
-# Week 08 — ODE Simulation
+# Week 08 — Ordinary Differential Equations: Simulate a changing state from an initial condition
 
 Learn how a first-order rate law becomes a simulated trajectory, then check how the timestep affects the result.
 
@@ -8,6 +8,18 @@ Learn how a first-order rate law becomes a simulated trajectory, then check how 
 - [Learning note](Week08_Learning_Note_ODE_Simulation.pdf): physical model, worked Euler steps, loop reading, timestep comparison, and validation.
 - [Lecture demonstration](Week08_Lecture_Demonstration_Euler_Cooling.m): complete lecturer-led Newton cooling example.
 - [Group practical](Week08_Practical_AI_Enabled_ODE_Challenge_Set.m): ten progressive challenges across three supplied transfer contexts.
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the dedicated Week 08 diagnostic in Google Classroom when it is released, and predict the initial value, direction, and physical bound.
+
+**During:** Follow `state -> rate -> initial condition -> Euler update -> timestep -> reference -> interpretation`; run the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 08 is one of the ten counted practical packets; the best eight packets count for the group component.
 
 ## Learning Focus
 
@@ -31,7 +43,7 @@ Work in groups of two or three. The supplied contexts are RC discharge, falling 
 
 Google Classroom is the official submission record. Complete and lock the group evidence before the question slot and individual defender are drawn. Follow the rotation rule and arrange a make-up defence for an absence. Include the compact capstone progress checkpoint requested in the practical; this week introduces no new graded capstone milestone.
 
-The individual pre-practical diagnostic is drafted but has not been published. Use the corresponding Classroom activity when it is released.
+Complete the dedicated Week 08 diagnostic through its Google Classroom coursework when released. If it reveals a common misconception, the lecturer may post an optional 10–15 minute remediation with one retry and confidence check; it is not a prerequisite for the next lecture. The local question key remains planning material until publication is approved.
 
 ## Instructor Sources
 

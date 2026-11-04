@@ -1,6 +1,6 @@
 # Week 02 speaker notes
 
-## Slide 1: From one calculation to a traceable loop
+## Slide 1: Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes
 
 Week 01 gave us a physical equation and a set of values. This week asks a different question: how do we repeat the same reasoning without losing track of what each result means? A loop is useful only when its order is visible and its output can still be checked.
 

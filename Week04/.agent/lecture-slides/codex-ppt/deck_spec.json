@@ -88,7 +88,7 @@
   "slides": [
     {
       "number": 1,
-      "title": "Change one parameter, see the physics",
+      "title": "Parameter Sweeps: Compare one controlled change and interpret the graph",
       "role": "cover",
       "intent": "Open with a light, question-led cover for the Week 04 parameter-sweep lesson.",
       "key_points": [

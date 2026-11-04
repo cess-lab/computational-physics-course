@@ -1,0 +1,9 @@
+/Users/khairuladib/.codex/skills/openai-text-to-speech/scripts/text-to-speech.sh: line 39: 48145 Terminated: 15          curl --silent --show-error --fail-with-body --config "$auth_config" --header "Content-Type: application/json" --request POST "https://api.openai.com/v1/audio/speech" --data-binary "@$tmp_json" --output "$tmp_audio"
+OpenAI TTS failed: ����[9�[�6�35���<�àx4��Rj��b�F<<c�$���aA���~��]�Ŭ9^r��;bk��"�}i�
+ĳ+���uN^薵�~H�����!� ,ʓIK~���/�x!8Y�&�w���ݷ.t]"�|�:��R?�[P4W@:+�;k�����������\u���zìw����0� �K0�*RF%�.�k�Q1��i:�d�/�fS�VmI�nQ��"%c0��C�5DPi�-m1b.�ة#���"�@������]0�!	E�%\ꝉ���Yv��i�����產��b0���ۖ����X�z��?��_��>��v1rY��n�T�ǠLAME����Wd:0��C!�	0DS2y0B
+֋/Yp�D,8͒ˠ�R����� A6A��06��H������ �+���虱���ܼ/O�$�'FL�a����9��C��$@(�0�A���qET;T��\�5I>P@`��fB�ϣ4��F��٘� K8�
+�c<��q�������A��"��H2�`��1�"
+������v9��_9~�����jI"�E)����w�\�~��*����ډ�������`a��b%B?ÑF��
+-� ��`���-������}�?�礚������r�>�v��zJ/�M��8���������D])%#A�n��o�����S2�����Yl2L��%� )H�@]
+�D��0�	��0s�r0�cѫ0B0�%Y�8��ZAWb�)����E�����-n� S����q�I�R�$��`�Vp��u4�j����W���
+@�|<��@�H��44���D ��3�B��*U#+���k��@	����M���|���mN(�A�B�*��}�Ɯ��o���!~S;Zv��K��-���aϔ�ZL�,}�C�r�ei1�AM�Ϲ7L�4G���$	�SO�f���q�m��(

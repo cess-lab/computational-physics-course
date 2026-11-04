@@ -1,4 +1,4 @@
-## Slide 1: Physics to Arrays and Plots
+## Slide 1: Arrays and Plots: Represent a physical model and compare prediction with evidence
 
 This week begins with a physics situation that is already familiar: a ball launched vertically upward. The important question is not whether we can memorise a MATLAB command. It is whether we can keep the physical question connected to the computation all the way to a defensible graph.
 

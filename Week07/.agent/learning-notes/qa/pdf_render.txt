@@ -1,0 +1,2 @@
+Render command: pdftoppm -png -r 150 Week07/Week07_Learning_Note_Numerical_Integration.pdf Week07/.agent/learning-notes/qa/rendered-revision-20260908-final2/page
+Result: 5 pages rerendered and visually inspected; no clipping, overlap, blank page, or duplicate page.

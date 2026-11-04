@@ -1,6 +1,6 @@
 # Week 04 speaker notes
 
-## Slide 1: Change one parameter, see the physics
+## Slide 1: Parameter Sweeps: Compare one controlled change and interpret the graph
 
 This week treats a parameter sweep as a controlled computational experiment. The cover stays intentionally light: one spring, one force direction, and the compact relation `x = F/k` establish the physical theme without previewing the full workflow.
 

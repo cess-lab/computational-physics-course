@@ -1,4 +1,4 @@
-%[text] # Week 8 Practical Activity: AI-Enabled ODE Challenge Set
+%[text] # Ordinary Differential Equations: Simulate a changing state from an initial condition
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

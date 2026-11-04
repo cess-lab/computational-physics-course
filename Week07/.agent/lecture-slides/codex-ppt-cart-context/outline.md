@@ -1,8 +1,8 @@
-# PHY4605 Week 07 Lecture Deck Outline
+# PHY4605 Week 07 — Numerical Integration: Accumulate a changing quantity and test convergence
 
 **Status:** Outline and strict-asset mapping approved by the lecturer's 2026-09-04 request to generate the Week 07 deck using `codex-ppt`. Style is fixed to the built-in **Teaching Courseware** direction and the established visual language of recent PHY4605 decks. Image-backend confirmation and one representative sample-slide approval remain mandatory before full-deck generation.
 
-**Working title:** From Area Under a Curve to a Credible Accumulated Quantity
+**Working title:** Numerical Integration: Accumulate a changing quantity and test convergence
 
 **Audience:** Year-2 physics students who understand analytic integration but need explicit support translating sampled physical data into an algorithm and MATLAB.
 

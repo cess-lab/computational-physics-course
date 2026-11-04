@@ -1,4 +1,4 @@
-%[text] # Week 12 Practical Activity: Integrated Method Selection and Capstone Studio
+%[text] # Method Selection: Audit a computation and prepare a reproducible capstone
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

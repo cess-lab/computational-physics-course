@@ -1,6 +1,6 @@
 # PHY4605 Week 08 Presenter Notes
 
-## Slide 1: Can a Cooling Rate Predict a Temperature?
+## Slide 1: Ordinary Differential Equations: Simulate a changing state from an initial condition
 
 The question for this week is whether a rule for the current cooling rate can predict a whole temperature history. The object starts at eighty degrees Celsius in a room held at twenty degrees Celsius. Before calculating, decide whether it should lose the same number of degrees in every equal time interval.
 

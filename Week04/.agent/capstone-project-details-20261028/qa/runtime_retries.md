@@ -1,0 +1,1 @@
+Temporary managed-runtime HTTP 503 affected workers 05–10. Same workers retried via followup_task with inherited model/effort unchanged; no alternative model or sequential parent generation used. Original dispatch remained valid. Slides 05 and 11 received parent-directed localized scientific-diagram repairs before recording.

@@ -1,4 +1,4 @@
-# Week 09 — Data Fitting: From Measurements to Physical Parameters
+# Week 09 — Data Fitting: Infer a physical parameter and read residuals with uncertainty
 
 Status: draft prepared for lecturer review. No slide images, prompt jobs, speaker-note file, deck specification, run-state file, or PPTX have been created.
 
@@ -12,7 +12,7 @@ Physical/reference validation: nominal resistor `47 ohm` with `5%` tolerance giv
 
 The MATLAB graph assets referenced below are strict numerical/reference inputs for any future slide generation. They are not style references and must later be redrawn as part of a complete ImageGen slide under the course contract, with the generated graph checked against these retained MATLAB sources. No such redraw is authorized in the current task.
 
-## Slide 1 — Can Measurements Reveal a Resistance?
+## Slide 1 — Data Fitting: Infer a physical parameter and read residuals with uncertainty
 - Show several voltage-current measurements for a nominal 47 ohm resistor.
 - Ask whether one noisy point or the overall trend should determine the resistance estimate.
 - Predict a positive slope of roughly 47 V/A.

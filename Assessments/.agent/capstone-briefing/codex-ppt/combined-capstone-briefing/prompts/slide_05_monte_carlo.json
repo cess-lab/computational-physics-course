@@ -1,0 +1,33 @@
+{
+  "slide": 5,
+  "title": "Twelve Assigned Physical Investigations",
+  "prompt": "Edit the current slide 5 reference into a replacement overview slide. Preserve the exact 16:9 six-card grid, title, five unchanged family cards, bottom assignment footer, clean navy sans-serif hierarchy, muted blue/teal/sage/ochre palette, clean outlines, soft shading and gentle illustrated scientific depth. Replace only the bottom-middle Force/Mass 09–10 card with the new Monte Carlo Physics 09–10 card. Keep all other text and illustrations unchanged.\n\nReplacement card title: MONTE CARLO PHYSICS 09–10\nReplacement card subtitle: Spin lattices and field estimation\nReplacement card illustration: a compact educational split visual combining a small red/blue spin lattice with an irregular charged body and a few electric field lines, clearly signalling two physics-focused Monte Carlo investigations. Do not use equations, code, random project-choice language, page numbers, logos or watermarks.\n\nRender all visible text correctly and keep the replacement card balanced with the other five cards. The footer must continue to read exactly: Each group is assigned one project; the same evidence standard applies to every group.",
+  "out": "slide_05.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_05.png",
+      "role": "edit target and current overview layout reference",
+      "fidelity": "preserve the full grid and all unchanged cards; change only the bottom-middle card content"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+      "role": "approved current-project style reference",
+      "fidelity": "match the current semi-realistic illustrated scientific editorial line quality and soft depth"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png"
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": ["local drawing/rendering scripts", "Pillow-generated slides", "SVG/HTML/CSS/canvas screenshots", "python-pptx/PptxGenJS/native PPT layout screenshots", "manually composited text/image overlays"],
+    "must_return": ["backend_used", "selected_source", "qa_note"]
+  }
+}

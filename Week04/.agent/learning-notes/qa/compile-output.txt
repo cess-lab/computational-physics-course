@@ -1,5 +1,8 @@
-note: Running TeX ...
-note: Rerunning TeX because "Week04_Parameter_Sweeps_and_Graph_Interpretation.aux" changed ...
-note: Running xdvipdfmx ...
-note: Writing `build/Week04_Parameter_Sweeps_and_Graph_Interpretation.pdf` (133.607421875 KiB)
-note: Skipped writing 2 intermediate files (use --keep-intermediates to keep them)
+Compiler: bundled Tectonic 0.17.0
+Date: 2026-09-08
+Command: compile_latex.py --compiler tectonic --output-directory Week04/.agent/learning-notes/build --json
+Result: PASS; 4 pages; A4 (595.28 x 841.89 pt); PDF 1.5; 144210 bytes
+Output: Week04/.agent/learning-notes/build/Week04_Parameter_Sweeps_and_Graph_Interpretation.pdf
+Student-facing copy: Week04/Week04_Learning_Note_Parameter_Sweeps_and_Graph_Interpretation.pdf
+Standard build and student-facing copies are byte-for-byte identical.
+SHA-256: e23c13172541d8aa09f8e6344c1414e67945d4f2eb2fc363e893125085255a85

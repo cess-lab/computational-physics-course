@@ -1,0 +1,401 @@
+[
+  {
+    "slide": 1,
+    "title": "From a circuit to a checked solution",
+    "minutes": 4,
+    "focus": "Model → equations → matrix → solve → check → interpret",
+    "prompt": "What would make two current values credible?",
+    "answer": "A defined model, units, a check against the original equations, and a physical interpretation.",
+    "demo": "Keep MATLAB closed initially. Ask for a show of hands, then take two responses.",
+    "speech": "Assalamualaikum dan salam sejahtera semua. Hari ini kita akan gunakan satu litar yang kecil untuk belajar cara menyelesaikan linear systems. Kita ada dua loop, dua arus yang belum diketahui, dan dua persamaan Kirchhoff. Physics yang kita gunakan masih biasa. Yang kita nak bina ialah hubungan antara litar, persamaan, matriks, dan keputusan komputer.\n\nCuba bayangkan saya terus tunjuk dua nombor daripada MATLAB. Adakah dua nombor itu sudah cukup untuk kita kata jawapannya betul? Ambil sekejap untuk fikir. Kita perlu tahu nombor itu mewakili apa, unitnya apa, arah arus yang kita andaikan, dan bagaimana kita semak keputusan tersebut. Komputer boleh menyelesaikan persamaan yang kita beri, termasuk persamaan yang tersalah bina.\n\nAda tiga perkara utama hari ini. Pertama, pilih unknowns dan arah, kemudian tulis persamaan daripada model fizikal. Kedua, susun persamaan itu sebagai A darab x sama dengan b, dan gunakan MATLAB backslash. Ketiga, masukkan jawapan kembali ke persamaan asal dan terangkan maksud fizikalnya. Kita akan buat prediction dahulu, bukan tunggu komputer bagi jawapan baru kita cuba cari cerita.\n\nSaya akan berhenti beberapa kali untuk kamu bincang dan trace kod. Tak perlu tulis program dari kosong. Gunakan scaffold yang diberi. Kalau kamu boleh jelaskan satu coefficient datang dari mana, baca dua entry output dengan betul, dan tunjuk satu validation check, itu kemahiran yang kita sedang bina. Mari mula dengan litar, sebelum kita sentuh MATLAB.",
+    "rects": [
+      [
+        0.02,
+        0.2,
+        0.35,
+        0.47
+      ],
+      [
+        0.76,
+        0.2,
+        0.22,
+        0.47
+      ]
+    ],
+    "startMinute": 0
+  },
+  {
+    "slide": 2,
+    "title": "Choose directions before algebra",
+    "minutes": 8,
+    "focus": "Ishared = I1 − I2",
+    "prompt": "If I1 = 2 A and I2 = 1 A, what flows down the shared branch?",
+    "answer": "1 A downward. At the upper junction, 2 A enters; 1 A leaves right and 1 A leaves down.",
+    "demo": "Pairs: trace both clockwise arrows. Draw the top-junction current balance. Ask a student to explain why currents subtract.",
+    "speech": "Lihat nilai komponen dahulu. Resistor persendirian di kiri ialah dua ohm. Di kanan, tiga ohm. Resistor yang dikongsi di tengah ialah satu ohm. Sumber kiri lima volt, dan sumber kanan dua volt. Kita gunakan model litar arus terus dengan resistor ideal dan nilai sumber yang tetap.\n\nKita pilih kedua-dua mesh current mengikut arah jam. Pilihan arah ini ialah reference untuk tanda. Ia bukan jaminan bahawa arus sebenar mesti ikut arah yang kita pilih. Kalau jawapan negatif nanti, kita baca semula arah sebenar berbanding reference tersebut.\n\nSekarang lihat junction di atas resistor tengah. Arus I satu masuk dari kiri. Arus I dua keluar ke kanan. Arus shared yang kita tandakan pula keluar ke bawah. Jadi, arus masuk sama dengan jumlah arus keluar. I satu sama dengan I dua tambah I shared. Susun semula: I shared sama dengan I satu tolak I dua.\n\nMengapa bukan tambah? Sebab pada branch tengah, kedua-dua mesh current melalui arah yang bertentangan. Mesh kiri menyumbang ke bawah; mesh kanan menyumbang ke atas. Arus fizikal pada resistor tengah ialah beza dua sumbangan ini. Mesh current ialah unknown yang kita pilih untuk memudahkan persamaan. Branch current ialah arus sebenar dalam branch tersebut.\n\nBincang dengan orang sebelah. Jika I satu dua ampere dan I dua satu ampere, berapa arus ke bawah? Kemudian uji sebaliknya: kalau I satu satu ampere dan I dua dua ampere, apakah maksud tanda negatif? Jawapannya satu ampere ke atas. Kita belum menyelesaikan litar; kita sedang melatih cara membaca tanda.\n\nBerdasarkan sumber dan rintangan ini, kita jangka I satu lebih besar daripada I dua. Anggap itu prediction yang munasabah untuk litar ini, bukan hukum umum bahawa sumber lebih besar sentiasa menghasilkan mesh current lebih besar. Loop ini saling berkait melalui resistor tengah. Kita akan semak prediction selepas solve.",
+    "rects": [
+      [
+        0.08,
+        0.25,
+        0.54,
+        0.49
+      ],
+      [
+        0.47,
+        0.32,
+        0.08,
+        0.34
+      ]
+    ],
+    "startMinute": 4
+  },
+  {
+    "slide": 3,
+    "title": "Write the two physical equations",
+    "minutes": 10,
+    "focus": "3I1 − I2 = 5; −I1 + 4I2 = 2",
+    "prompt": "Why is the coefficient of I2 negative in the left-loop equation?",
+    "answer": "The shared drop is Rs(I1 − I2), so expansion gives −Rs I2.",
+    "demo": "Board work: expand each shared-resistor term. Students fill the two missing signs before revealing the numeric equations.",
+    "speech": "Kita sekarang berjalan satu loop pada satu masa. Untuk loop kiri, jumlah voltage drop pada resistor mesti sepadan dengan sumber lima volt, dengan polarity dan arah traversal yang ditunjukkan. Resistor kiri membawa I satu. Resistor tengah membawa I satu tolak I dua dalam arah loop kiri.\n\nJadi kita tulis: R satu darab I satu, tambah R shared darab kurungan I satu tolak I dua, sama dengan V satu. Kembangkan kurungan itu perlahan-lahan. Terma I satu menjadi R satu tambah R shared. Terma I dua menjadi negatif R shared. Maka persamaannya ialah, kurungan R satu tambah R shared, darab I satu, tolak R shared darab I dua, sama dengan V satu.\n\nDengan nilai yang diberi, dua tambah satu menjadi tiga. Kita dapat tiga I satu tolak I dua sama dengan lima. Setiap terma di kiri ialah voltage drop, jadi unitnya volt. Tiga itu mewakili tiga ohm, bukan nombor tanpa unit.\n\nUntuk loop kanan pula, current difference pada resistor tengah dalam arah traversal loop kanan ialah I dua tolak I satu. Jadi R dua darab I dua, tambah R shared darab kurungan I dua tolak I satu, sama dengan V dua. Selepas dikembangkan, negatif R shared darab I satu, tambah kurungan R dua tambah R shared darab I dua, sama dengan V dua. Secara nombor, negatif I satu tambah empat I dua sama dengan dua.\n\nSekarang tutup bahagian jawapan sekejap. Dalam pasangan, seorang jelaskan loop kiri dan seorang jelaskan loop kanan. Jangan hanya sebut negatif satu kerana nampak pattern matriks. Jelaskan arah arus pada resistor yang dikongsi. Jika kamu tersangkut, kembali kepada kurungan current difference sebelum expand.\n\nKita tidak perlu hafal semua bentuk matriks litar. Kita perlu pastikan setiap persamaan boleh dibaca semula sebagai physical loop. Sebelum bergerak, semak dua perkara: tanda sumber mengikut polarity yang dilukis, dan setiap resistance kali current menghasilkan volt. Inilah jambatan daripada physical model kepada algebra.",
+    "rects": [
+      [
+        0.02,
+        0.22,
+        0.27,
+        0.56
+      ],
+      [
+        0.71,
+        0.22,
+        0.27,
+        0.56
+      ]
+    ],
+    "startMinute": 12
+  },
+  {
+    "slide": 4,
+    "title": "Map equations into rows",
+    "minutes": 8,
+    "focus": "Rows = equations; columns = unknown order",
+    "prompt": "Which coefficient belongs in row 2, column 1?",
+    "answer": "−1 ohm: the coefficient multiplying I1 in the right-loop equation.",
+    "demo": "Students fill A=[3 __; __ 4] and b=[__; __]. Trace A(1,2) and x(2), without solving.",
+    "speech": "Kita sudah ada dua persamaan. Sekarang kita ubah cara menyimpan maklumat yang sama. Kita tetapkan x sebagai satu column vector: I satu di atas, I dua di bawah. Susunan unknown ini mesti konsisten sepanjang pengiraan.\n\nBaris pertama datang daripada persamaan loop kiri. Coefficient untuk I satu ialah tiga, dan coefficient untuk I dua ialah negatif satu. Jadi baris pertama A ialah tiga, negatif satu. Sumber yang sepadan ialah lima volt, jadi entry pertama b ialah lima.\n\nBaris kedua datang daripada persamaan loop kanan. Coefficient untuk I satu ialah negatif satu, dan coefficient untuk I dua ialah empat. Maka baris kedua A ialah negatif satu, empat. Entry kedua b ialah dua volt. A mempunyai dua baris dan dua column. x dan b masing-masing dua baris dan satu column.\n\nBaca matrix multiplication sebagai persamaan. Baris pertama A darab x bermaksud tiga darab I satu, tambah negatif satu darab I dua. Itulah tiga I satu tolak I dua sama dengan lima. Baris kedua pula membina semula persamaan kanan. Matriks tidak menggantikan physics; ia menyimpan coefficient secara teratur.\n\nCuba lengkapkan dua entry kosong yang saya tunjuk. Kemudian tunjuk entry pada baris dua, column satu. Entry itu berkait dengan persamaan mana dan unknown mana? Jawapannya ialah persamaan loop kanan dan unknown I satu. Unit coefficient itu ohm.\n\nKita juga perlu bezakan indexing. Dalam MATLAB, x kurungan dua bermaksud entry kedua vector, iaitu I dua. A kurungan satu koma dua bermaksud baris satu, column dua, iaitu coefficient I dua dalam persamaan pertama. Ambil masa untuk trace kedua-dua contoh ini dengan jari. Kesilapan susunan boleh menghasilkan nombor yang kelihatan munasabah tetapi merujuk kepada masalah yang lain.",
+    "rects": [
+      [
+        0.02,
+        0.23,
+        0.34,
+        0.6
+      ],
+      [
+        0.39,
+        0.3,
+        0.29,
+        0.43
+      ]
+    ],
+    "startMinute": 22
+  },
+  {
+    "slide": 5,
+    "title": "Audit the units",
+    "minutes": 4,
+    "focus": "Ω × A = V",
+    "prompt": "If A stores resistance, what must the units of x be?",
+    "answer": "Amperes, because resistance × current gives voltage.",
+    "demo": "Quick response: identify units of A, x, b and one expanded term. Clarify that the variable A_ohm is a matrix, while A is also the unit symbol for ampere.",
+    "speech": "Sebelum solve, kita semak unit. Matrix A menyimpan resistance, jadi unit entrynya ohm. Vector x menyimpan current dalam ampere. Vector b menyimpan source voltage dalam volt. Maka A darab x mempunyai unit ohm kali ampere, iaitu volt. Kedua-dua belah persamaan mempunyai unit yang sama.\n\nAda satu perkara yang boleh mengelirukan. Huruf besar A digunakan sebagai nama coefficient matrix. Simbol A juga digunakan untuk unit ampere. Dalam kod, kita gunakan nama A underscore ohm supaya jelas bahawa matrix itu mengandungi resistance. Nama x underscore A pula menunjukkan current dalam ampere. Suffix pada nama variable membantu pembaca, tetapi MATLAB tidak melakukan unit checking secara automatik hanya kerana nama itu ada perkataan ohm atau volt.\n\nCuba baca terma pertama: tiga ohm darab I satu ampere. Hasilnya volt. Terma seterusnya, negatif satu ohm darab I dua ampere, juga volt. Kita hanya boleh tambah dan tolak kuantiti yang mempunyai unit serasi dalam persamaan ini.\n\nJika seseorang memasukkan nilai current ke dalam b kerana tersilap salin, kod mungkin masih berjalan sebagai operasi nombor. Unit check membantu kita nampak bahawa model itu tidak konsisten. Tetapi unit yang betul sahaja belum membuktikan tanda dan sambungan litar betul. Kita perlukan kedua-duanya: unit yang konsisten dan coefficient yang sepadan dengan persamaan asal.\n\nSekarang jawab secara ringkas: unit A apa, unit x apa, unit b apa? Kemudian terangkan satu terma dengan ayat penuh. Kita mahu boleh membaca nombor sebagai kuantiti fizikal.",
+    "rects": [
+      [
+        0.04,
+        0.27,
+        0.51,
+        0.24
+      ],
+      [
+        0.6,
+        0.28,
+        0.34,
+        0.2
+      ]
+    ],
+    "startMinute": 30
+  },
+  {
+    "slide": 6,
+    "title": "Trace all four coefficients",
+    "minutes": 6,
+    "focus": "A11=3; A12=−1; A21=−1; A22=4 Ω",
+    "prompt": "Where does A22 = 4 ohm come from?",
+    "answer": "R2 + Rs = 3 + 1 ohm in the right-loop equation.",
+    "demo": "Cold-call with support: each pair explains one entry. Repair by returning to expanded KVL, not by memorising a sign pattern.",
+    "speech": "Ini audit terakhir sebelum kita minta MATLAB solve. Kita baca empat entry A satu per satu. Entry baris satu, column satu ialah tiga ohm. Ia datang daripada resistor kiri dua ohm tambah resistor shared satu ohm, kedua-duanya mendarab I satu dalam persamaan kiri.\n\nEntry baris satu, column dua ialah negatif satu ohm. Ia datang daripada sumbangan negatif R shared darab I dua dalam persamaan kiri. Entry baris dua, column satu juga negatif satu ohm, tetapi kali ini ia datang daripada sumbangan negatif R shared darab I satu dalam persamaan kanan. Nilai sama tidak bermaksud kita boleh abaikan maksud baris dan column.\n\nEntry baris dua, column dua ialah empat ohm. Ia datang daripada resistor kanan tiga ohm tambah resistor shared satu ohm, yang mendarab I dua dalam persamaan kanan. Semua empat entry masih boleh ditunjuk balik kepada litar.\n\nSekarang setiap pasangan pilih satu entry. Terangkan nilainya, tandanya, unitnya, dan persamaan yang diwakilinya. Pasangan lain semak menggunakan persamaan, bukan berdasarkan warna pada slide sahaja. Jika ada yang kata off-diagonal mesti sentiasa negatif, kita perhalus ayat itu. Untuk pilihan dua mesh clockwise dan resistor shared dalam litar ini, coefficient tersebut negatif kerana current contributions bertentangan. Tanda datang daripada model dan convention yang dipilih.\n\nBayangkan saya tersalah taip plus satu pada top-right. Adakah MATLAB akan tahu bahawa kita tersalah tulis physical model? Tidak semestinya. Solver menerima coefficient yang kita masukkan. Sebab itulah audit sebelum solve menjimatkan masa debugging kemudian.\n\nBila kamu boleh trace semua empat entry, barulah matrix itu menjadi ringkasan yang boleh dipercayai. Kita sudah ada model, unknown order, equations, dan unit. Sekarang kita buka Live Script dan lihat bagaimana struktur yang sama muncul dalam kod.",
+    "rects": [
+      [
+        0.05,
+        0.27,
+        0.34,
+        0.45
+      ],
+      [
+        0.43,
+        0.25,
+        0.53,
+        0.49
+      ]
+    ],
+    "startMinute": 34
+  },
+  {
+    "slide": 7,
+    "title": "MATLAB demo: build and solve",
+    "minutes": 12,
+    "focus": "x_A = A_ohm\\b_V",
+    "prompt": "Before running: what do x_A(1) and x_A(2) represent?",
+    "answer": "Left mesh current and right mesh current, in amperes, in the declared order. Expected: 2 A and 1 A.",
+    "demo": "DEMO A — Run sections: Circuit Model → Map the Equations → Solve. Read KVL text between them. Stop before shared-current section. Students trace semicolons and x_A indexing; do not Run All yet.",
+    "speech": "Kita buka Live Script lecture yang diberi. Untuk demo ini, jalankan section mengikut urutan dari atas. Saya mulakan daripada fresh MATLAB session supaya tiada variable lama yang membantu secara senyap. Kita belum tekan Run All kerana saya nak kamu nampak hubungan antara section.\n\nSection pertama menyimpan parameter. R satu underscore ohm ialah dua, R dua underscore ohm ialah tiga, R shared underscore ohm ialah satu. V satu underscore V ialah lima, dan V dua underscore V ialah dua. Semak nilai ini dengan litar pada slide. Nama variable yang panjang sedikit membantu kita ingat kuantiti dan unitnya.\n\nSeterusnya kita bina A underscore ohm. Baris pertama mempunyai R satu tambah R shared, kemudian negatif R shared. Semicolon di dalam square brackets memulakan baris baharu. Baris kedua mempunyai negatif R shared, kemudian R dua tambah R shared. Tiga titik pada hujung baris kod hanya menyambung arahan ke baris berikutnya supaya lebih mudah dibaca.\n\nVector b dibina dengan lima di atas dan dua di bawah. Semicolon di dalam kurungan itu menghasilkan column vector. Ini berbeza daripada semicolon di hujung arahan, yang biasanya menyembunyikan paparan output. Tengok dimensi yang kita jangka: A dua kali dua, b dua kali satu.\n\nSekarang baris solve: x underscore A sama dengan A underscore ohm backslash b underscore V. Backslash bermaksud selesaikan linear system yang dinyatakan oleh A dan b. Kita menggunakan syntax yang dibekalkan. Kita tidak perlu menulis algoritma matrix solver sendiri hari ini.\n\nSebelum saya run, tulis makna entry pertama dan entry kedua. Selepas run, kita dapat I satu dua ampere, dan I dua satu ampere. Jangan berhenti pada dua nombor itu. Kaitkan entry pertama dengan unknown order tadi. Jika saya tukar susunan unknown tetapi masih baca output dengan susunan lama, interpretation akan salah.\n\nSekarang ambil masa untuk trace kod pada laptop atau kertas. Tunjuk baris yang menyimpan physics input, baris yang membina coefficient matrix, dan baris yang menyelesaikan unknowns. Jika kod kamu gagal kerana satu variable belum wujud, kembali ke section parameter dan jalankan ikut urutan. Kita akan validate output ini sebentar lagi.",
+    "rects": [
+      [
+        0.02,
+        0.24,
+        0.65,
+        0.57
+      ],
+      [
+        0.69,
+        0.25,
+        0.28,
+        0.3
+      ]
+    ],
+    "startMinute": 40
+  },
+  {
+    "slide": 8,
+    "title": "MATLAB demo: recover branch current",
+    "minutes": 4,
+    "focus": "Ishared = 2 − 1 = 1 A",
+    "prompt": "Why is the shared branch not carrying 3 A?",
+    "answer": "The two clockwise mesh contributions oppose in that branch.",
+    "demo": "DEMO B — Run Reconstruct the Shared-Branch Current only. Compare sign to the downward reference arrow.",
+    "speech": "Kita sudah ada dua mesh current. Tetapi resistor tengah tidak membawa dua ampere tambah satu ampere. Ia dikongsi oleh dua mesh dengan sumbangan yang bertentangan arah. Jadi kita kembali kepada equation yang dibina di junction tadi: I shared sama dengan I satu tolak I dua.\n\nDalam Live Script, jalankan section Reconstruct the Shared-Branch Current. Baris kodnya ialah I shared underscore A sama dengan I satu underscore A tolak I dua underscore A. Dengan nilai dua dan satu ampere, hasilnya satu ampere. Tanda positif bermaksud arus net mengikut reference shared yang kita pilih, iaitu ke bawah.\n\nCuba terangkan menggunakan junction. Dua ampere datang dari kiri. Satu ampere meneruskan ke kanan. Maka satu ampere lagi turun melalui resistor tengah. Penjelasan ini membantu kita hubungkan unknown matematik dengan branch fizikal.\n\nSekarang saya ubah soalan secara lisan sahaja. Jika subtraction menghasilkan negatif kosong perpuluhan empat ampere, adakah kita buang tanda negatif dan kata error? Tidak. Kita kata arus sebenar kosong perpuluhan empat ampere melawan reference yang dipilih. Magnitude dan direction perlu dibaca bersama.\n\nBincang cepat dengan orang sebelah: satu ayat untuk beza mesh current dan branch current. Mesh current ialah unknown loop yang memudahkan pembentukan equation. Shared branch current ialah beza dua mesh contributions untuk convention ini. Kita tidak perlu tambah unknown baharu untuk branch tengah, sebab nilainya boleh direconstruct daripada dua unknown sedia ada.",
+    "rects": [
+      [
+        0.1,
+        0.3,
+        0.45,
+        0.46
+      ],
+      [
+        0.69,
+        0.32,
+        0.28,
+        0.37
+      ]
+    ],
+    "startMinute": 52
+  },
+  {
+    "slide": 9,
+    "title": "MATLAB demo: direct substitution",
+    "minutes": 8,
+    "focus": "Left = 5 V; right = 2 V; differences ≈ 0 V",
+    "prompt": "Which equations should be used to check the computed currents?",
+    "answer": "The original correct Kirchhoff equations, independently of any suspect matrix entry.",
+    "demo": "DEMO C — Predict 5 and 2 before running Core Validation. Expand 3(2)−1 and −2+4(1) on the board. Explain 1e−12 V tolerance.",
+    "speech": "Sekarang kita buat check yang wajib. Kita tidak menerima output hanya kerana MATLAB tidak memaparkan error. Kita masukkan dua current yang dikira kembali ke persamaan Kirchhoff asal.\n\nUntuk kiri, tiga ohm darab dua ampere, tolak satu ohm darab satu ampere. Enam volt tolak satu volt, jadi lima volt. Itu sepadan dengan source kiri. Untuk kanan, negatif satu ohm darab dua ampere, tambah empat ohm darab satu ampere. Negatif dua volt tambah empat volt, jadi dua volt. Itu sepadan dengan source kanan.\n\nSebelum run section Core Validation, tulis dahulu dua nilai yang kamu jangka: lima volt dan dua volt. Kemudian lihat bagaimana kod membina left reconstructed dan right reconstructed daripada parameter dan solved currents. Kita tolak source voltage masing-masing untuk mendapat validation difference. Bagi jawapan yang betul, kedua-dua differences hampir sifar.\n\nDalam kod ada assert yang memeriksa sama ada nilai absolute difference terbesar lebih kecil daripada sepuluh kuasa negatif dua belas. Oleh sebab difference ini dalam volt, tolerance itu juga dibaca dalam volt. Untuk contoh kecil ini, tolerance yang sangat kecil masih munasabah. Jangan anggap nilai itu sesuai untuk semua eksperimen atau semua skala masalah.\n\nMengapa guna tolerance dan bukan paksa equality tepat kepada sifar? Pengiraan komputer menggunakan floating-point numbers. Kadangkala ada beza yang sangat kecil daripada pembundaran. Kita bandingkan dengan tolerance yang sesuai dengan skala dan tujuan pengiraan. Beza kecil akibat arithmetic berbeza daripada mismatch besar akibat model salah.\n\nSekarang seorang pelajar baca check kiri dengan unit, dan seorang lagi baca check kanan. Terangkan juga had check ini: ia menunjukkan current memenuhi equations yang kita uji. Ia tidak membuktikan bahawa model ideal menangkap semua keadaan litar sebenar. Sebab itulah kita audit litar dan signs dahulu, kemudian validate secara numerik.\n\nKita kini ada satu set evidence yang jelas: dua current dalam ampere, dua voltage reconstructions yang sepadan dengan source, dan difference yang hampir sifar. Selepas check, barulah kita tafsirkan keputusan fizikal dengan lebih yakin.",
+    "rects": [
+      [
+        0.03,
+        0.26,
+        0.45,
+        0.39
+      ],
+      [
+        0.48,
+        0.26,
+        0.49,
+        0.39
+      ],
+      [
+        0.27,
+        0.7,
+        0.48,
+        0.22
+      ]
+    ],
+    "startMinute": 56
+  },
+  {
+    "slide": 10,
+    "title": "Interpret the checked result",
+    "minutes": 4,
+    "focus": "Positive signs follow the chosen clockwise arrows",
+    "prompt": "What does a negative current mean?",
+    "answer": "Actual current flows opposite to the assumed reference direction; it is not automatically a coding error.",
+    "demo": "Run Interpret the Result Physically. Ask students to state values, directions, prediction comparison, and one model limitation.",
+    "speech": "Mari baca nombor kembali pada litar. I satu ialah dua ampere dan positif. Maka current mesh kiri ikut clockwise reference yang kita pilih. I dua ialah satu ampere dan juga positif, jadi ikut clockwise reference kanan. Shared current ialah satu ampere ke bawah untuk reference yang dilukis.\n\nPrediction kita tadi ialah I satu lebih besar daripada I dua. Hasil dua ampere berbanding satu ampere menyokong prediction itu untuk nilai komponen ini. Kita tetap sebut untuk litar ini, kerana current dalam coupled circuit bergantung pada keseluruhan persamaan, bukan satu source sahaja.\n\nCuba lengkapkan ayat: hasil pengiraan menunjukkan apa, check kita menunjukkan apa, dan model kita mengabaikan apa? Contohnya, hasil menunjukkan shared current satu ampere ke bawah. Substitution menunjukkan kedua-dua KVL equations dipenuhi dalam tolerance. Model menggunakan resistor dan source ideal, jadi ia tidak memasukkan semua kesan komponen sebenar, seperti perubahan resistance dengan suhu.\n\nKalau output negatif, kita tidak terus ubah arrow dan rerun semata-mata untuk mendapat nombor positif. Kita baca tanda berdasarkan reference yang sudah ditetapkan. Jika mahu menukar convention, equations dan interpretation perlu ditukar secara konsisten.\n\nInilah maksud physical interpretation. Kita menyebut kuantiti, unit, direction, dan kaitan dengan prediction. Kita juga tahu sejauh mana check kita menyokong jawapan. Nombor yang betul tanpa explanation masih belum menunjukkan bahawa kita memahami model.",
+    "rects": [
+      [
+        0.03,
+        0.27,
+        0.47,
+        0.55
+      ],
+      [
+        0.57,
+        0.27,
+        0.4,
+        0.54
+      ]
+    ],
+    "startMinute": 64
+  },
+  {
+    "slide": 11,
+    "title": "MATLAB demo: a plausible wrong sign",
+    "minutes": 8,
+    "focus": "Successful execution ≠ correct circuit",
+    "prompt": "MATLAB returns finite currents. What evidence would expose the sign defect?",
+    "answer": "Substitution in the correct physical equations gives a left-loop mismatch of −22/13 ≈ −1.6923 V; right-loop mismatch is 0 V.",
+    "demo": "DEMO D — Run Diagnose a Plausible Matrix. Locate A_wrong_sign_ohm(1,2)=+1. Correct only that entry in an instructor scratch copy, rerun and compare. Do not save over the canonical file.",
+    "speech": "Sekarang kita sengaja lihat satu defect. Matrix yang salah hampir sama dengan matrix asal, tetapi entry baris satu column dua ditukar daripada negatif satu kepada positif satu. Semua entry masih dalam ohm. Saiz matrix masih betul. MATLAB masih boleh solve.\n\nSebelum run, jangan cuba teka exact output. Sebaliknya, cari hubungan fizikal yang sudah rosak. Top-right coefficient sepatutnya datang daripada negatif R shared darab I dua dalam equation kiri. Bila kita tukar kepada positif, kita telah menukar equation yang diwakili, walaupun syntax sah.\n\nRun section Diagnose a Plausible Matrix with the Wrong Circuit Sign. Kita dapat current yang finite, lebih kurang satu perpuluhan tiga lapan empat enam ampere dan kosong perpuluhan lapan empat enam dua ampere. Output nampak biasa. Tiada tanda bahawa komputer tahu litar yang kita niatkan berbeza daripada matrix yang diberi.\n\nSekarang lihat wrong model difference. Check ini menggunakan A yang betul, iaitu coefficient daripada original physical equations, untuk menguji current yang datang daripada wrong matrix. Equation kiri mempunyai mismatch lebih kurang negatif satu perpuluhan enam sembilan dua tiga volt. Equation kanan masih sepadan. Itu petunjuk yang tepat: defect kita berada pada equation kiri.\n\nKalau kita cuma mengira wrong matrix darab wrong solution tolak b, kita mungkin dapat hampir sifar. Itu menunjukkan solver menyelesaikan wrong system dengan baik. Ia tidak membetulkan physical model. Kita mesti check against equations yang memang dimaksudkan oleh litar.\n\nBincang dalam pasangan. Kenal pasti defect, jelaskan sebab tanda itu salah, dan cadangkan pembaikan minimum. Jawapannya ubah coefficient top-right kepada negatif R shared, kemudian solve dan validate semula. Kita tidak perlu menukar banyak nilai untuk memaksa jawapan nampak cantik.\n\nCuba bezakan tiga situasi: syntax error menyebabkan arahan gagal dibaca; indexing atau dimension error menyebabkan operasi tidak serasi; physical sign defect pula boleh menghasilkan output tanpa error tetapi tidak memenuhi model yang betul. Kemahiran debugging kita mesti merangkumi ketiga-tiganya.",
+    "rects": [
+      [
+        0.02,
+        0.25,
+        0.3,
+        0.44
+      ],
+      [
+        0.36,
+        0.25,
+        0.29,
+        0.44
+      ],
+      [
+        0.68,
+        0.25,
+        0.3,
+        0.44
+      ]
+    ],
+    "startMinute": 68
+  },
+  {
+    "slide": 12,
+    "title": "Optional: recognise a larger system",
+    "minutes": 1,
+    "focus": "Three meshes → three unknowns → three equations",
+    "prompt": "What size of A would match three mesh-current unknowns?",
+    "answer": "3×3, with x and b both 3×1.",
+    "demo": "Recognition only. Do not derive or solve. If behind, skip slides 12–13 and return their two minutes to direct-substitution practice.",
+    "speech": "Dua slide seterusnya ialah optional future exposure. Kita tidak menambah derivation tiga mesh sebagai keperluan Core hari ini. Lihat idea yang sama pada network lebih besar: tiga mesh current bermaksud tiga unknown dan tiga equation, jadi coefficient matrix bersaiz tiga kali tiga.\n\nPerhatikan resistor R tujuh dikongsi oleh I satu dan I dua. Resistor diagonal R b pula dikongsi oleh I dua dan I tiga. Kita masih bermula dengan connection dan direction sebelum coefficient. Kita berhenti pada recognition ini. Jangan anggap kamu perlu menyelesaikan bridge circuit ini untuk menguasai contoh dua loop hari ini.",
+    "rects": [
+      [
+        0.02,
+        0.23,
+        0.48,
+        0.58
+      ],
+      [
+        0.52,
+        0.24,
+        0.45,
+        0.48
+      ]
+    ],
+    "startMinute": 76
+  },
+  {
+    "slide": 13,
+    "title": "Optional: sketch the scaffold",
+    "minutes": 1,
+    "focus": "Identify shared branches; stop before coefficients",
+    "prompt": "Which current pairs share R7 and Rb?",
+    "answer": "R7: I1 and I2. Rb: I2 and I3. No direct shared branch between I1 and I3 in this drawing.",
+    "demo": "Point-and-name only; no coefficient calculation. Keep this optional task bounded.",
+    "speech": "Gunakan gambar yang sama untuk satu soalan ringkas. Tunjuk pasangan mesh yang berkongsi R tujuh, kemudian pasangan yang berkongsi R b. Kita cuma mahu lihat struktur hubungan. I satu dan I tiga tidak berkongsi branch secara langsung dalam lukisan ini.\n\nKalau kamu hendak semak penyelesaian kelak, prinsipnya tetap sama: masukkan current kembali ke original Kirchhoff equations dan terangkan arah serta unit. Kita tidak isi coefficient atau run solver untuk network ini sekarang. Ambil idea bahawa kaedah model, equation, solve, check boleh berkembang, kemudian kita kembali kepada litar dua loop yang sudah kita fahami.",
+    "rects": [
+      [
+        0.02,
+        0.23,
+        0.46,
+        0.45
+      ],
+      [
+        0.5,
+        0.23,
+        0.46,
+        0.45
+      ]
+    ],
+    "startMinute": 77
+  },
+  {
+    "slide": 14,
+    "title": "MATLAB demo: representation or physics?",
+    "minutes": 7,
+    "focus": "Reorder equations: same result. Change V2: new result.",
+    "prompt": "If only the row order changes, should the currents change?",
+    "answer": "No, when A and b are reordered together. V2=2.1 V instead gives I1≈2.00909 A, I2≈1.02727 A.",
+    "demo": "DEMO E — Run Equivalent Equation Ordering, then A Small Source Change. Students change only 2.1 to 2.2 in an unsaved scratch copy: expected [2.01818; 1.05455] A. Restore baseline; skip Optional Stretch.",
+    "speech": "Sekarang kita bandingkan dua jenis perubahan. Pertama, kita tukar susunan equation. Persamaan kanan diletakkan dahulu dan persamaan kiri kemudian. Untuk mengekalkan masalah yang sama, baris A dan entry b mesti ditukar bersama. Unknown order dalam x kekal I satu, kemudian I dua.\n\nRun section Equivalent Equation Ordering. Kod memilih baris dua kemudian baris satu untuk A, dan melakukan susunan yang sama pada b. Current yang dikira tetap dua ampere dan satu ampere. Maximum difference daripada jawapan asal hampir sifar. Physics tidak berubah; cara kita menyenaraikan equation sahaja berubah.\n\nJika kita menukar A tetapi tidak b, setiap equation akan dipadankan dengan source yang salah. Itu bukan lagi penulisan semula masalah yang sama. Jadi setiap representation change perlu dilakukan secara konsisten.\n\nPerubahan kedua ialah physical input. Kita ubah source kanan daripada dua volt kepada dua perpuluhan satu volt, sambil mengekalkan resistance dan source kiri. Sebelum run, jangka sama ada satu current sahaja atau kedua-duanya boleh berubah. Oleh sebab dua loop coupled melalui shared resistor, kedua-duanya boleh berubah.\n\nRun section A Small Source Change. I satu menjadi lebih kurang dua perpuluhan kosong kosong sembilan kosong sembilan ampere. I dua menjadi lebih kurang satu perpuluhan kosong dua tujuh dua tujuh ampere. Kedua-duanya meningkat untuk perubahan ini. Kita tidak perlu mengira condition number untuk menjelaskan pemerhatian asas itu.\n\nSekarang buat satu modification kecil dalam scratch copy. Tukar source kanan kepada dua perpuluhan dua volt. Simpan semua input lain. Predict dahulu, solve, kemudian validate dengan source baharu, bukan dengan dua volt yang lama. Kamu patut mendapat lebih kurang dua perpuluhan kosong satu lapan satu lapan ampere dan satu perpuluhan kosong lima empat lima lima ampere.\n\nBezakan ayat ini: saya menukar representation, atau saya menukar physical input. Perbezaan itu akan menjadi sangat berguna apabila kita buat parameter sweep minggu depan. Section residual, rank, conditioning, dan power balance dalam Live Script kekal optional stretch. Hari ini direct substitution sudah menjadi check Core kita.",
+    "rects": [
+      [
+        0.02,
+        0.26,
+        0.46,
+        0.52
+      ],
+      [
+        0.51,
+        0.26,
+        0.46,
+        0.52
+      ]
+    ],
+    "startMinute": 78
+  },
+  {
+    "slide": 15,
+    "title": "Exit ticket and capstone direction",
+    "minutes": 5,
+    "focus": "Predict → map → check → interpret",
+    "prompt": "State unknowns and units; explain A12; write one check; interpret −0.4 A.",
+    "answer": "I1,I2 in A; A12=−Rs from the shared drop; check both original KVL equations; −0.4 A means 0.4 A opposite the chosen reference.",
+    "demo": "Collect four short responses. Allocate the final minute to the twelve assigned capstone briefs in six families; no Week 3 submission or grade. Do not imply assignments have already been distributed.",
+    "speech": "Sebelum tamat, kita buat exit ticket yang pendek. Tak perlu tulis program panjang. Pertama, nyatakan dua unknown kita, unitnya, dan reference direction. Kedua, pilih satu coefficient, contohnya entry top-right, dan jelaskan physical origin serta tandanya. Ketiga, tulis satu direct-substitution check menggunakan solved currents. Keempat, terangkan maksud current negatif kosong perpuluhan empat ampere dan nyatakan satu limitation model.\n\nAmbil masa untuk jawab sendiri dahulu. Selepas itu bandingkan dengan seorang rakan. Kalau jawapan kamu hanya tulis MATLAB bagi dua dan satu, tambah maksud fizikalnya. Kalau check kamu hanya kata kod berjaya run, tulis equation yang benar-benar diuji. Kita mahu evidence yang boleh dibaca oleh orang lain.\n\nUntuk recap, kita bermula dengan litar dan reference direction. Shared branch memberi current difference. Dua Kirchhoff equations disusun sebagai dua matrix rows dengan unknown order yang tetap. MATLAB backslash menyelesaikan linear system. Kita kemudian reconstruct shared current, substitute kembali ke original equations, dan baca sign sebagai direction. Salah satu coefficient pun boleh menukar model, walaupun output masih finite.\n\nAkhir sekali, arah capstone kursus ini ialah dua belas assigned briefs dalam enam paired families: projectile motion, circuit behaviour, radiation and detection, thermal behaviour, Monte Carlo physics, dan oscillatory motion. Kita akan gunakan starter material dan satu bounded modification. Week tiga ialah pengenalan problem space; tiada submission capstone atau grade yang perlu dihantar untuk minggu ini. Rujuk brief yang ditetapkan apabila ia dibekalkan, dan minggu empat kita semak scope sambil belajar controlled parameter changes.\n\nJika satu perkara masih kabur, tulis sama ada masalahnya direction, equation-to-matrix mapping, indexing, atau validation. Itu membantu saya beri correction yang tepat. Untuk latihan sendiri, jalankan semula Live Script dari fresh session dan terangkan sekurang-kurangnya satu baris model, satu baris solve, dan satu check. Terima kasih semua.",
+    "rects": [
+      [
+        0.02,
+        0.24,
+        0.47,
+        0.31
+      ],
+      [
+        0.51,
+        0.24,
+        0.47,
+        0.31
+      ],
+      [
+        0.02,
+        0.6,
+        0.47,
+        0.31
+      ],
+      [
+        0.51,
+        0.6,
+        0.47,
+        0.31
+      ]
+    ],
+    "startMinute": 85
+  }
+]

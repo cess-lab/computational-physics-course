@@ -1,4 +1,4 @@
-%[text] # Week 3 Lecture Demonstration: Two-by-Two Linear Systems through Kirchhoff Circuits
+%[text] # Linear Systems: Assemble and validate two-loop Kirchhoff equations
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%
@@ -7,7 +7,7 @@
 %[text] **Learning outcomes.** By the end of this demonstration, you can derive and map two Kirchhoff equations into `A*x=b`, solve the two unknown currents with MATLAB backslash, and validate the currents by direct substitution into the original equations.
 %%
 %[text] ## Circuit Model, Unknowns, and Sign Convention
-%[text] The circuit has a 2 ohm resistor only in the left loop, a 3 ohm resistor only in the right loop, and a 1 ohm resistor shared by both loops. The left and right sources are 5 V and 2 V. Choose both mesh currents, $I_1$ and $I_2$, clockwise. Across the shared resistor, the two mesh currents oppose each other, so the shared-branch current in the mesh-1 direction is $I_1-I_2$.
+%[text] The circuit has a 2 ohm resistor only in the left loop, a 3 ohm resistor only in the right loop, and a 1 ohm resistor shared by both loops. The left and right sources are 5 V and 2 V. Choose both mesh currents, $I\_1$ and $I\_2$, clockwise. Across the shared resistor, the two mesh currents oppose each other, so the shared-branch current in the mesh-1 direction is $I\_1-I\_2$.
 %[text] **Prediction before computing.** Both sources drive their chosen clockwise mesh currents. Predict that both solved mesh currents are positive. Because the left source is larger and its private resistance is smaller, expect the left mesh current to be larger than the right mesh current.
 R1_ohm = 2;        % left private resistance (ohm)
 R2_ohm = 3;        % right private resistance (ohm)
@@ -16,33 +16,33 @@ V1_V = 5;          % left source voltage (V)
 V2_V = 2;          % right source voltage (V)
 %%
 %[text] ## Write Kirchhoff Equations Before Writing a Matrix
-%[text] Walk clockwise around the left loop. In words: the voltage drops across the left resistor and shared resistor must equal the left source. Because the shared current in the mesh-1 direction is $I_1-I_2$, the equation is $(R_1+R_s)I_1-R_sI_2=V_1$.
-%[text] Walk clockwise around the right loop. The shared-resistor contribution has the opposite mesh-current difference, giving $-R_sI_1+(R_2+R_s)I_2=V_2$. Every term has units of volts because resistance in ohms multiplied by current in amperes gives volts.
+%[text] Walk clockwise around the left loop. In words: the voltage drops across the left resistor and shared resistor must equal the left source. Because the shared current in the mesh-1 direction is $I\_1-I\_2$, the equation is $(R\_1+R\_s)I\_1-R\_sI\_2=V\_1$.
+%[text] Walk clockwise around the right loop. The shared-resistor contribution has the opposite mesh-current difference, giving $-R\_sI\_1+(R\_2+R\_s)I\_2=V\_2$. Every term has units of volts because resistance in ohms multiplied by current in amperes gives volts.
 %%
-%[text] ## Map the Equations to A*x=b
+%[text] ## Map the Equations to A\*x=b
 %[text] Put the coefficients of `I1_A` and `I2_A` into one matrix row per Kirchhoff equation. The unknown-current column is `x_A=[I1_A; I2_A]`, and the source-voltage column is `b_V=[V1_V; V2_V]`. The matrix `A_ohm` therefore has units of ohms, so `A_ohm*x_A` has units of volts.
 A_ohm = [R1_ohm + Rs_ohm, -Rs_ohm; ...
          -Rs_ohm, R2_ohm + Rs_ohm];
 b_V = [V1_V; V2_V];
-A_ohm
-b_V
+A_ohm %[output:509b4fb3]
+b_V %[output:12fb70ed]
 %%
 %[text] ## Solve with MATLAB Backslash
 %[text] MATLAB's backslash operator solves the linear system represented by `A_ohm*x_A=b_V`. For this week, use the supplied syntax rather than implementing a matrix solver. Read the two entries of `x_A` in the same order used when the unknown vector was defined.
-x_A = A_ohm\b_V;
-I1_A = x_A(1)
-I2_A = x_A(2)
+x_A = A_ohm\b_V %[output:45e1476e]
+I1_A = x_A(1) %[output:3aad09c0]
+I2_A = x_A(2) %[output:2e3779fa]
 %%
 %[text] ## Reconstruct the Shared-Branch Current
 %[text] Mesh currents are a convenient way to write the equations, but the shared physical branch carries their difference. Positive `Ishared_A` means the net current through the shared resistor follows the direction assigned to mesh 1; a negative value would mean the actual current is opposite to that assumed direction.
-Ishared_A = I1_A - I2_A
+Ishared_A = I1_A - I2_A %[output:4859d2b3]
 %%
 %[text] ## Core Validation: Substitute into the Original Equations
 %[text] Do not accept the currents merely because MATLAB returned numbers. Rebuild the left and right Kirchhoff voltage sums from the solved currents. Each reconstructed value should reproduce its source voltage. This check directly tests the equations we claimed to solve.
-left_reconstructed_V = (R1_ohm + Rs_ohm)*I1_A - Rs_ohm*I2_A
-right_reconstructed_V = -Rs_ohm*I1_A + (R2_ohm + Rs_ohm)*I2_A
-validation_difference_V = [left_reconstructed_V - V1_V; ...
-                           right_reconstructed_V - V2_V]
+left_reconstructed_V = (R1_ohm + Rs_ohm)*I1_A - Rs_ohm*I2_A %[output:5b9e1d47]
+right_reconstructed_V = -Rs_ohm*I1_A + (R2_ohm + Rs_ohm)*I2_A %[output:9c86b063]
+validation_difference_V = [left_reconstructed_V - V1_V; ... %[output:group:633ab1ab] %[output:772fbbc0]
+                           right_reconstructed_V - V2_V] %[output:group:633ab1ab] %[output:772fbbc0]
 assert(max(abs(validation_difference_V)) < 1e-12, ...
     'Direct-substitution validation failed.')
 %%
@@ -90,3 +90,34 @@ power_difference_W = source_power_W - resistor_power_W
 %[text] Run sections from top to bottom in a fresh MATLAB session. This demonstration requires MATLAB R2025a or later and base MATLAB only. Locked values: `R1_ohm=2`, `R2_ohm=3`, `Rs_ohm=1`, `V1_V=5`, and `V2_V=2`. No hidden Workspace state is required.
 
 %[appendix]{"version":"1.0"}
+%---
+%[metadata:view]
+%   data: {"layout":"inline","rightPanelPercent":23.7}
+%---
+%[output:509b4fb3]
+%   data: {"dataType":"matrix","outputData":{"columns":2,"name":"A_ohm","rows":2,"type":"double","value":[["3","-1"],["-1","4"]]}}
+%---
+%[output:12fb70ed]
+%   data: {"dataType":"matrix","outputData":{"columns":1,"name":"b_V","rows":2,"type":"double","value":[["5"],["2"]]}}
+%---
+%[output:45e1476e]
+%   data: {"dataType":"matrix","outputData":{"columns":1,"name":"x_A","rows":2,"type":"double","value":[["2"],["1"]]}}
+%---
+%[output:3aad09c0]
+%   data: {"dataType":"textualVariable","outputData":{"name":"I1_A","value":"2"}}
+%---
+%[output:2e3779fa]
+%   data: {"dataType":"textualVariable","outputData":{"name":"I2_A","value":"1"}}
+%---
+%[output:4859d2b3]
+%   data: {"dataType":"textualVariable","outputData":{"name":"Ishared_A","value":"1"}}
+%---
+%[output:5b9e1d47]
+%   data: {"dataType":"textualVariable","outputData":{"name":"left_reconstructed_V","value":"5"}}
+%---
+%[output:9c86b063]
+%   data: {"dataType":"textualVariable","outputData":{"name":"right_reconstructed_V","value":"2"}}
+%---
+%[output:772fbbc0]
+%   data: {"dataType":"matrix","outputData":{"columns":1,"name":"validation_difference_V","rows":2,"type":"double","value":[["0"],["0"]]}}
+%---

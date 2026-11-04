@@ -1,0 +1,2 @@
+Render command: pdftoppm -png -r 150 Week08/Week08_Learning_Note_ODE_Simulation.pdf Week08/.agent/learning-notes/qa/rendered-revision-20260908-final4/page
+Result: 5 pages rerendered and visually inspected; no clipping, overlap, blank page, or duplicate page. Page 5 now uses the clear wording “They are not required for this week’s pathway.”

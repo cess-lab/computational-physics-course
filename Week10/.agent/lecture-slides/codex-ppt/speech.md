@@ -1,4 +1,4 @@
-## Slide 1: Can Random Motion Produce a Stable Pattern?
+## Slide 1: Monte Carlo Sampling: Use repeated random trials to estimate physical variation
 
 Begin with the apparent contradiction: a single path is unpredictable, yet many paths can reveal a stable centre and a real spread. Ask students to predict both before looking at any code.
 

@@ -1,0 +1,35 @@
+<svg data-scope="2475,7000,4000,1680" data-baseline-hash="8f9944af" viewBox="0 0 3840 2160" xmlns="http://www.w3.org/2000/svg">
+<g id="m3458764687122117142" data-miro-id="3458764687122117142" transform="translate(2475,7000)" data-frame="Week 02 - Debug clinic">
+<rect data-type="frame" x="0" y="0" width="3200" height="1680" fill="#f6f8fb" data-title="Week 02 - Debug clinic" />
+<textArea id="m3458764687122117199" data-miro-id="3458764687122117199" x="59.989" y="38.6999999999998" width="853" height="65" fill="#10244b" font-family="noto_sans" font-size="46" text-align="left" font-weight="bold">Find the defect. Defend the fix.</textArea>
+<textArea id="m3458764687122117200" data-miro-id="3458764687122117200" x="60" y="148" width="3000" height="79" fill="#10244b" font-family="noto_sans" font-size="28" text-align="left">Before editing, add one sticky under a case: defect type -&gt; suspect line -&gt; predicted symptom -&gt; one repair -&gt; one validation. Compare with another answer. Use a comment to ask for evidence.</textArea>
+<textArea id="m3458764687122117201" data-miro-id="3458764687122117201" x="60" y="297.5" width="3000" height="35" fill="#10244b" font-family="noto_sans" font-size="25" text-align="left">Shared model: y = y0 + v0*t - 0.5*g*t^2; upward positive, no air resistance. y0 = 0 m, v0 = 20 m/s, g = 9.81 m/s^2, t_s = 0:0.5:4 s. Inputs and output space are already supplied.</textArea>
+<rect id="m3458764687122117202" data-miro-id="3458764687122117202" x="60" y="395" width="990" height="1170" fill="#ffffff" data-text-color="#1a1a1a" data-font-family="open_sans" data-font-size="14" data-text-align="left" data-text-align-vertical="top" stroke="#d7dfeb" />
+<textArea id="m3458764687122117203" data-miro-id="3458764687122117203" x="85" y="460" width="930" height="45" fill="#10244b" font-family="noto_sans" font-size="32" text-align="left" font-weight="bold">Case A - MATLAB cannot parse the loop</textArea>
+<rect id="m3458764687122117204" data-miro-id="3458764687122117204" data-type="custom-widget" data-widget-type="code" x="85" y="565" width="935" height="250" data-language="PlainText" data-title="Supplied code fragment" data-line-numbers="true">for i = 1:numel(t_s)
+    current_t = t_s(i);
+    y_m(i) = y0 + v0*current_t - 0.5*g*current_t^2;
+% loop closes here?</rect>
+<rect id="m3458764687122117205" data-miro-id="3458764687122117205" data-type="sticky" x="95" y="865" width="350" height="228" data-content="Names/initials: ...&lt;br /&gt;Defect + evidence: ...&lt;br /&gt;Repair: ...&lt;br /&gt;Validation: ..." data-color="light_yellow" />
+<textArea id="m3458764687122117206" data-miro-id="3458764687122117206" x="495" y="900" width="485" height="70" fill="#526079" font-family="noto_sans" font-size="25" text-align="left">Add your own response sticky here. Leave the supplied code in place.</textArea>
+<rect id="m3458764687122117208" data-miro-id="3458764687122117208" x="1090" y="395" width="990" height="1170" fill="#ffffff" data-text-color="#1a1a1a" data-font-family="open_sans" data-font-size="14" data-text-align="left" data-text-align-vertical="top" stroke="#d7dfeb" />
+<textArea id="m3458764687122117209" data-miro-id="3458764687122117209" x="1115" y="460" width="930" height="45" fill="#10244b" font-family="noto_sans" font-size="32" text-align="left" font-weight="bold">Case B - It runs, but one slot changes</textArea>
+<rect id="m3458764687122117210" data-miro-id="3458764687122117210" data-type="custom-widget" data-widget-type="code" x="1115" y="565" width="935" height="250" data-language="PlainText" data-title="Supplied code fragment" data-line-numbers="true">for i = 1:numel(t_s)
+    current_t = t_s(i);
+    y_m(1) = y0 + v0*current_t - 0.5*g*current_t^2;
+end</rect>
+<rect id="m3458764687122117211" data-miro-id="3458764687122117211" data-type="sticky" x="1125" y="865" width="350" height="228" data-content="Names/initials: ...&lt;br /&gt;Defect + evidence: ...&lt;br /&gt;Repair: ...&lt;br /&gt;Validation: ..." data-color="light_blue" />
+<textArea id="m3458764687122117212" data-miro-id="3458764687122117212" x="1525" y="900" width="485" height="70" fill="#526079" font-family="noto_sans" font-size="25" text-align="left">Add your own response sticky here. Leave the supplied code in place.</textArea>
+<rect id="m3458764687122117213" data-miro-id="3458764687122117213" x="2120" y="395" width="990" height="1170" fill="#ffffff" data-text-color="#1a1a1a" data-font-family="open_sans" data-font-size="14" data-text-align="left" data-text-align-vertical="top" stroke="#d7dfeb" />
+<textArea id="m3458764687122117214" data-miro-id="3458764687122117214" x="2145" y="460" width="930" height="45" fill="#10244b" font-family="noto_sans" font-size="32" text-align="left" font-weight="bold">Case C - It runs, but the ball speeds up upward</textArea>
+<rect id="m3458764687122117215" data-miro-id="3458764687122117215" data-type="custom-widget" data-widget-type="code" x="2145" y="565" width="935" height="250" data-language="PlainText" data-title="Supplied code fragment" data-line-numbers="true">for i = 1:numel(t_s)
+    current_t = t_s(i);
+    y_m(i) = y0 + v0*current_t + 0.5*g*current_t^2;
+end</rect>
+<rect id="m3458764687122117216" data-miro-id="3458764687122117216" data-type="sticky" x="2155" y="865" width="350" height="228" data-content="Names/initials: ...&lt;br /&gt;Defect + evidence: ...&lt;br /&gt;Repair: ...&lt;br /&gt;Validation: ..." data-color="light_green" />
+<textArea id="m3458764687122117217" data-miro-id="3458764687122117217" x="2555" y="900" width="485" height="70" fill="#526079" font-family="noto_sans" font-size="25" text-align="left">Add your own response sticky here. Leave the supplied code in place.</textArea>
+<textArea id="m3458764687122117218" data-miro-id="3458764687122117218" x="60" y="1607.5" width="3000" height="35" fill="#10244b" font-family="noto_sans" font-size="25" text-align="left">After discussion, test one controlled repair in MATLAB. A successful run is only the start: explain the numerical evidence and physical meaning.</textArea>
+<textArea id="m3458764687122248941" data-miro-id="3458764687122248941" x="60" y="223" width="3000" height="34" fill="#10244b" font-family="noto_sans" font-size="24" text-align="left">&lt;a href="https://miro.com/app/board/uXjVEdNOzes=/?focusWidget=3458764687121666286"&gt;Return to the interactive lecture&lt;/a&gt; | &lt;a href="https://miro.com/app/board/uXjVEdNOzes=/?moveToWidget=3458764687122117141"&gt;Go to the live reasoning wall&lt;/a&gt;</textArea>
+</g>
+</svg>
+

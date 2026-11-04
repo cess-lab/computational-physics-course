@@ -1,0 +1,109 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=18mm]{geometry}
+\usepackage{amsmath,amssymb,mathtools}
+\usepackage{booktabs,array,enumitem}
+\usepackage[dvipsnames]{xcolor}
+\usepackage{graphicx,listings,tikz}
+\usepackage[most]{tcolorbox}
+\usepackage{hyperref}
+\hypersetup{colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue}
+\setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\newcommand{\course}{PHY4605 Computational Methods in Physics}
+\newtcolorbox{keybox}{colback=RoyalBlue!5,colframe=RoyalBlue!65!black,boxrule=.7pt,arc=2mm}
+\newtcolorbox{checkbox}{colback=ForestGreen!5,colframe=ForestGreen!55!black,boxrule=.7pt,arc=2mm}
+\newtcolorbox{aibox}{colback=BurntOrange!7,colframe=BurntOrange!80!black,boxrule=.7pt,arc=2mm}
+\begin{document}
+{\large\textsc{\course}}\\[-2pt]
+{\small Practical and capstone brief \textbar\ Week 13}\par\vspace{4pt}
+{\LARGE\bfseries Computational Investigation: Present, defend, and hand off a validated physical model}\par\vspace{3pt}
+\textit{A bounded group investigation with a reproducible MATLAB handoff and an individual explanation.}
+\begin{keybox}\textbf{Purpose.} Complete the approved capstone investigation, lock the group evidence, present one defensible result, answer one individual follow-up, and leave an editable handoff that another student can rerun.\end{keybox}
+\section*{Core task}
+Work in a group of two or three. Use the problem space, model, method, and validation plan approved earlier in the course. The ordinary Core route is deliberately narrow:
+\begin{enumerate}[nosep,leftmargin=6mm]
+\item answer one physical question;
+\item change one physical parameter or assumption while keeping the other important inputs fixed;
+\item show one principal graph or table;
+\item apply the required check from the approved plan and one genuinely different chosen check;
+\item explain the physical result and state one limitation; and
+\item submit the edited starter, evidence, reproducibility record, AI decision record, and individual defence evidence through the lecturer's posted Google Classroom coursework.
+\end{enumerate}
+\begin{aibox}\textbf{Assessment boundary.} This brief does not create a new mark or change the course assessment. The capstone remains a 15\% course component with a final bounded investigation and individual defence/handoff evidence presented and recorded across Weeks 13–14. Week 14 adds no new planned milestone.\end{aibox}
+\section*{Approved problem-space menu}
+Select the row already approved for your group. The menu below and the starter file use the same five canonical supplied contexts, keeping the computational demand on methods learned in the course.
+\begin{center}\small
+\begin{tabular}{>{\raggedright\arraybackslash}p{.16\linewidth}>{\raggedright\arraybackslash}p{.26\linewidth}>{\raggedright\arraybackslash}p{.20\linewidth}>{\raggedright\arraybackslash}p{.23\linewidth}}
+\toprule
+\textbf{Context} & \textbf{Supplied model and units} & \textbf{Method} & \textbf{Required check} \\ \midrule
+Projectile range & $R=v_0^2\sin(2\theta)/g$; m, m s$^{-1}$, degrees, m s$^{-2}$ & parameter sweep & 45 degree reference and symmetry \\
+RC charging & $dV/dt=(V_s-V)/(RC)$; V, ohm, F, s & Forward Euler & endpoint versus exact reference \\
+Radioactive decay & $dN/dt=-\lambda N$; counts, h, 1/h & Forward Euler & value at one half-life versus exact reference \\
+Decaying force & $J=\int F(t)\,dt$; N, s, N s & trapezoidal integration & integral versus exact reference \\
+\bottomrule
+\end{tabular}
+\end{center}
+The five entries above are the complete approved menu. Do not silently change context, equation, sign convention, or units after approval. Keep the same evidence order and use the supplied starter section for the approved context.
+\section*{Ten progressive micro-challenges}
+Complete and lock the evidence in order. Each edit should be small enough that a teammate can trace it and explain why it belongs.
+\begin{center}\small
+\begin{tabular}{>{\centering\arraybackslash}p{.08\linewidth}>{\raggedright\arraybackslash}p{.29\linewidth}>{\raggedright\arraybackslash}p{.51\linewidth}}
+\toprule
+\textbf{No.} & \textbf{Challenge} & \textbf{Evidence to keep} \\ \midrule
+1 & Lock the scope & Approved context, one physical question, group members, and the source of the approved starter. \\
+2 & State the model & Equation, assumptions, variables, parameters, outputs, and units. \\
+3 & Predict first & One direction, sign, bound, or limiting behaviour for the controlled change. \\
+4 & Write the recipe & Short pseudocode from inputs to method, output, required check, and chosen check. \\
+5 & Trace the starter & One code line, its algorithmic job, its physical meaning, and one defect category to audit. \\
+6 & Make one change & Changed parameter or assumption, fixed inputs, and reason the change tests the question. \\
+7 & Show one output & One readable graph or table with quantities, units, baseline, modified case, and one pattern to notice. \\
+8 & Run the required check & Concrete value or result, claim supported, and what this check cannot establish. \\
+9 & Add independent evidence & A different check, physical interpretation, and one numerical or model limitation. \\
+10 & Lock and hand off & Fresh-session rerun, file list, settings, AI decisions, rotation record, and presentation/defence evidence. \\
+\bottomrule
+\end{tabular}
+\end{center}
+\section*{Group evidence record}
+Use the visible tables in \texttt{Week13\_Capstone\_Starter\_and\_Validation.m} and the separate handoff checklist. Do not replace a concrete result with a claim that the code looks reasonable.
+\begin{enumerate}[nosep,leftmargin=6mm]
+\item \textbf{Model and units:} map every important code variable to a physical quantity and unit.
+\item \textbf{Algorithm and trace:} show the supplied method in plain language, then trace one relevant code section.
+\item \textbf{Modification:} name one changed input or assumption and what remains fixed.
+\item \textbf{Output:} choose one graph or table that answers the question directly.
+\item \textbf{Validation:} show the required check and a second check that probes a different weakness.
+\item \textbf{Meaning and limitation:} answer the original question in physical words and separate numerical behaviour from model assumptions.
+\end{enumerate}
+\begin{checkbox}\textbf{Lock condition.} Do not draw the post-submission question slot and individual member until every group evidence row, both checks, and the clean rerun are complete. A locked packet can still state a limitation; locking means the evidence is ready to defend, not that the model is perfect.\end{checkbox}
+\section*{Individual defence and rotation}
+Each member prepares one relevant code trace, its physical meaning, and one response to a parameter-change or validation follow-up. The lecturer's rotation ledger must establish one completed defence entry for every group member before any member receives a second entry. An absence remains pending until a recorded make-up defence is completed. Groups with more members than available question slots use a distinct parameter or defect variant when a slot is reused.
+\section*{Responsible AI decision record}
+AI may be used to formulate, write, debug, or refine MATLAB code when the group remains responsible for the final evidence. Record:
+\begin{itemize}[nosep,leftmargin=6mm]
+\item what assistance was requested;
+\item what was accepted, modified, or rejected;
+\item why the decision was made; and
+\item which independent checks were performed before accepting an important claim.
+\end{itemize}
+Do not submit a complete chat history. Do not use an AI-detection score as evidence of learning or misconduct. The evidence is judgement, code tracing, independent checking, and a reproducible result.
+\section*{Reproducibility handoff}
+Another student should be able to open the bundle and regenerate the principal output and both checks from a fresh MATLAB R2025a-or-later session. Include:
+\begin{enumerate}[nosep,leftmargin=6mm]
+\item the edited starter Live Script and required input files;
+\item the model, assumptions, parameter values, and units;
+\item the numerical settings, grid or timestep, and method;
+\item the run order and MATLAB release;
+\item the saved principal output and both check results;
+\item the physical conclusion and one limitation;
+\item the concise AI decision record; and
+\item the individual defence trace and rotation or make-up record.
+\end{enumerate}
+\begin{keybox}\textbf{Final handoff test.} Ask a teammate who did not write the last edit to start from a fresh MATLAB session, run the file from the top, locate the principal output, explain one line, and find both checks. Record any repair before submitting.\end{keybox}
+\section*{Presentation prompts}
+Keep the talk track short and evidence-led:
+\begin{enumerate}[nosep,leftmargin=6mm]
+\item What physical question did we ask, and what assumptions make it usable?
+\item What changed, what stayed fixed, and what did we predict?
+\item Which code section implements the supplied method?
+\item What is the one principal pattern?
+\item Which check supports it, which different check supports it, and what remains limited?
+\end{enumerate}
+\end{document}

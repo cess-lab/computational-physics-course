@@ -1,0 +1,551 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "PHY4605_Capstone_Briefing",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved current-project slide 01 direction",
+    "input_context_preparation": "parent generated and visually inspected the approved current-project sample; no strict source raster assets are required",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+    "handoff_rule": "Use built-in image_gen generate mode and the approved current-project sample as a style-only reference; do not reuse previous deck assets or wording."
+  },
+  "max_concurrent_slides": 6,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "PHY4605 Capstone Investigation",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_01.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Your Assigned Investigation",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_02.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "The Brief Sets the Starting Boundary",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a08628-dc92-7612-9293-cd9a6bd49b4e",
+        "agent_nickname": "Chandrasekhar",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "0b559e0260a4bcc91548c093a9a744aab9ec6b87013d8f684b2efd5d6fffcf37",
+        "dispatched_at": "2026-09-09T12:46:59Z"
+      },
+      "result": {
+        "agent_id": "01a08628-dc92-7612-9293-cd9a6bd49b4e",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_03-worker.png",
+        "selected_source_sha256": "b17b677e5a1a5215ac41df732b4badcac6e0637f829c186a608b13fce5267a7d",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "b17b677e5a1a5215ac41df732b4badcac6e0637f829c186a608b13fce5267a7d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: readable two-zone boundary comparison, clean hierarchy, no clipping or overlap, and current illustrated direction retained.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Realism Means Relevance and Evidence",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a08628-ddcf-7fe3-bf94-308f248fbba1",
+        "agent_nickname": "Russell",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "45976cd564dd904bbc66e78ba331a2ddc6dd3f2889783360568fc4c8a39286ea",
+        "dispatched_at": "2026-09-09T12:46:59Z"
+      },
+      "result": {
+        "agent_id": "01a08628-ddcf-7fe3-bf94-308f248fbba1",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_04-worker.png",
+        "selected_source_sha256": "5c96775e84b184ca029470d55f070cd9aafb12a87812a372cb02535497c6a68d",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "5c96775e84b184ca029470d55f070cd9aafb12a87812a372cb02535497c6a68d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: four-stage realism framework is readable, balanced and consistent with the approved illustrated direction.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Twelve Assigned Physical Investigations",
+      "job": "prompts/slide_05_monte_carlo.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a08685-823b-7270-ad40-1ee1f9ca55ac",
+        "agent_nickname": "Beauvoir",
+        "prompt": "prompts/slide_05_monte_carlo.json",
+        "prompt_sha256": "392a2a57d0a4b858fddaef37457116fbf54533927664e68b239fab54e1a2f6cd",
+        "dispatched_at": "2026-09-09T14:14:59Z"
+      },
+      "result": {
+        "agent_id": "01a08685-823b-7270-ad40-1ee1f9ca55ac",
+        "backend_used": "built-in image generation tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a08685-823b-7270-ad40-1ee1f9ca55ac/exec-d6309fd4-d887-4038-b6d6-6f4f2fc7e7a3.png",
+        "selected_source_sha256": "5d575b0f13f93d97c80394c576484fa057a2ddb6dcd9d523eb1bacd949d59796",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "5d575b0f13f93d97c80394c576484fa057a2ddb6dcd9d523eb1bacd949d59796",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: the six-card overview retains all unchanged families and now shows Monte Carlo Physics 09–10 with spin-lattice and electric-field cues; no clipping or overlap.",
+        "recorded_at": "2026-09-09T14:16:58Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Briefs 01–02 | Projectile Motion",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a0850f-d99a-7500-9db1-a02195e7e5e1",
+        "agent_nickname": "Wegener",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "4c55e8e59664b38bf7b46f07b8339493281f4d8cc1c8d94a67f8e7a2c200a897",
+        "dispatched_at": "2026-09-09T12:46:59Z"
+      },
+      "result": {
+        "agent_id": "01a0850f-d99a-7500-9db1-a02195e7e5e1",
+        "backend_used": "built-in image_gen",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/sample-slide_06-icons.png",
+        "selected_source_sha256": "d790f9e8def35bc9759565c6c9a4d0ef7ffad990caf66d1d92a2a284fdafbebd",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "d790f9e8def35bc9759565c6c9a4d0ef7ffad990caf66d1d92a2a284fdafbebd",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: both projectile briefs retain dense four-section content, readable headings and clear illustrated context.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Briefs 03–04 | Circuit Behaviour",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a085c7-005e-77f3-8c85-032c6dd96e97",
+        "agent_nickname": "Mill",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "4cfd246d234c8ad08b44b44c2505fd6710195edc45dc5a54b6949b14db4f70e0",
+        "dispatched_at": "2026-09-09T12:46:59Z"
+      },
+      "result": {
+        "agent_id": "01a085c7-005e-77f3-8c85-032c6dd96e97",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_07-worker.png",
+        "selected_source_sha256": "e1c83f56f4fad0add3532b0b0e1512fbd17d5aff9fa927aa875e96bef5016f50",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "e1c83f56f4fad0add3532b0b0e1512fbd17d5aff9fa927aa875e96bef5016f50",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: dense circuit pair is readable, balanced and consistent with the approved brief-slide direction.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Briefs 05–06 | Radiation and Detection",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a085c7-00d0-7c33-9021-531f0e861e48",
+        "agent_nickname": "Godel",
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "cead95eb42f62bd7540bf27f30f626d4304a5084244eb3c088a165a5d909581d",
+        "dispatched_at": "2026-09-09T12:47:00Z"
+      },
+      "result": {
+        "agent_id": "01a085c7-00d0-7c33-9021-531f0e861e48",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_08-worker.png",
+        "selected_source_sha256": "3ddcc94cd1c080b7a005b7207e01aea51bd2a50e571988ebd126085bc2186e87",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "3ddcc94cd1c080b7a005b7207e01aea51bd2a50e571988ebd126085bc2186e87",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: radiation pair is readable, balanced and consistent with the approved brief-slide direction.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Briefs 07–08 | Thermal Behaviour",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a085c7-019b-7a10-804c-2e981acff003",
+        "agent_nickname": "Dalton",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "f1a95d401be2d609a34b08bae245ce21318e1731dfb557f9d40c5e361db6b4a5",
+        "dispatched_at": "2026-09-09T12:47:00Z"
+      },
+      "result": {
+        "agent_id": "01a085c7-019b-7a10-804c-2e981acff003",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_09-worker.png",
+        "selected_source_sha256": "e5d1f853dfd4b850b1d74dc9c4ca34f1c60a359482d5c9e3f4bc891811f4192f",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "e5d1f853dfd4b850b1d74dc9c4ca34f1c60a359482d5c9e3f4bc891811f4192f",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: thermal pair is readable, balanced and consistent with the approved brief-slide direction.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Briefs 09–10 | Monte Carlo Physics",
+      "job": "prompts/slide_10_monte_carlo.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match current semi-realistic illustrated scientific editorial language, palette, line quality and soft depth only"
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_10.png",
+          "role": "current dense paired-brief layout reference",
+          "fidelity": "match the two-column card structure, heading icon placement, density and information hierarchy; replace all old content"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a08662-8bc8-7530-90f0-dadf204293b3",
+        "agent_nickname": "Helmholtz",
+        "prompt": "prompts/slide_10_monte_carlo.json",
+        "prompt_sha256": "b52f4ab606e98380a4cfeca04f00bfe86a1005a8d821896aaf8e6ce465eca553",
+        "dispatched_at": "2026-09-09T13:36:49Z"
+      },
+      "result": {
+        "agent_id": "01a08662-8bc8-7530-90f0-dadf204293b3",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a08412-d5b3-7c00-ba73-18ef2d1d830e/exec-6845000e-9585-475d-a1bf-24344b1c5ede.png",
+        "selected_source_sha256": "309b51fc9d4e11de812fb2f55cb5429a802b43468c942fed0ab4b45c9bcf5706",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "309b51fc9d4e11de812fb2f55cb5429a802b43468c942fed0ab4b45c9bcf5706",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed after worker credit failure: replacement Monte Carlo pair is readable, physically specific, dense but balanced, and consistent with the approved illustrated brief-slide direction.",
+        "recorded_at": "2026-09-09T13:42:39Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Briefs 11–12 | Oscillatory Motion",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a085d2-b343-7660-b2df-59139b73f07a",
+        "agent_nickname": "Gauss",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "d1df417dfe583d88198cb5d9a0325260dd09ef81d4c00da14065e33b8085f208",
+        "dispatched_at": "2026-09-09T12:47:00Z"
+      },
+      "result": {
+        "agent_id": "01a085d2-b343-7660-b2df-59139b73f07a",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_11-worker.png",
+        "selected_source_sha256": "b285b882a3afdc7db761df4032fab8401859a65f6391e60ae676926c2c5e3076",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "b285b882a3afdc7db761df4032fab8401859a65f6391e60ae676926c2c5e3076",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: pure-physics oscillatory pair is readable, balanced and consistent with the approved brief-slide direction.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "AI Can Assist — Your Group Must Verify",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a08628-ef12-7670-a7d8-f87631e9b29b",
+        "agent_nickname": "Lagrange",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "bc6c2a723883d26f9b4908123adfe3efbe12ebf598a541e1cc3c1a45f2cc9e7e",
+        "dispatched_at": "2026-09-09T12:47:00Z"
+      },
+      "result": {
+        "agent_id": "01a08628-ef12-7670-a7d8-f87631e9b29b",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_12-worker.png",
+        "selected_source_sha256": "7dd0ad19bedfb22cd0e7ae2cd9e9e520d735c847da84b3e0822a044acd3c57e3",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "7dd0ad19bedfb22cd0e7ae2cd9e9e520d735c847da84b3e0822a044acd3c57e3",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: AI responsibility split is clear, readable and consistent with the current illustrated direction.",
+        "recorded_at": "2026-09-09T12:48:13Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Capstone Rubric | 100%",
+      "job": "prompts/slide_13_rubric_clarity.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a09156-aab2-74b0-9773-99911948e1d7",
+        "agent_nickname": "Kepler",
+        "prompt": "prompts/slide_13_rubric_clarity.json",
+        "prompt_sha256": "a2347e8c8a439f3f4cc47f238c4eb7b3ff10b22bfecb7b2d290a7159042927e0",
+        "dispatched_at": "2026-09-11T16:49:14Z",
+        "model": "gpt-5.6-luna",
+        "reasoning_effort": "max",
+        "inheritance_method": "fork_context=true; explicit Luna Max worker request"
+      },
+      "result": {
+        "agent_id": "01a09156-aab2-74b0-9773-99911948e1d7",
+        "backend_used": "built-in image_gen",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a09156-aab2-74b0-9773-99911948e1d7/exec-5795abbd-3be9-4ac3-80d5-98e7f17c91ea.png",
+        "selected_source_sha256": "41d89e2638e6cbbffee1987bd4a079a09c7d596760ad8dd5018de808aa290a5c",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "41d89e2638e6cbbffee1987bd4a079a09c7d596760ad8dd5018de808aa290a5c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: one full-width rubric table is legible at 16:9, with exactly seven criteria, four performance levels, and weights totaling 100%; no course-contribution conversion, milestone weights, clipping, overlap or second rubric panel.",
+        "recorded_at": "2026-09-11T16:49:14Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Present, Defend and Hand Off",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+          "role": "approved current-project style reference",
+          "fidelity": "match visual language, palette, title hierarchy, line quality, soft depth and teaching mood only; do not copy the exact layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a08629-2159-7752-9921-2c3bbde50e9e",
+        "agent_nickname": "Leibniz",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "82bbfd8f9f1034d268ed1962d22e090f53bd39cb3bd004e93995fd7fcd818115",
+        "dispatched_at": "2026-09-09T12:47:00Z"
+      },
+      "result": {
+        "agent_id": "01a08629-2159-7752-9921-2c3bbde50e9e",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/qa/slide_14-worker.png",
+        "selected_source_sha256": "003afa18f2c4500a24fa82a3e7ba7452efdec2db51be59bcf7ddda9439d02bf0",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "003afa18f2c4500a24fa82a3e7ba7452efdec2db51be59bcf7ddda9439d02bf0",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: final evidence chain and reproducible handoff checklist are readable and balanced.",
+        "recorded_at": "2026-09-09T12:48:14Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-11T16:49:14Z"
+}

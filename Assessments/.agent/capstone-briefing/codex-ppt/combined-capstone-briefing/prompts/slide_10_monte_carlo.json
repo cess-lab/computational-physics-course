@@ -1,0 +1,33 @@
+{
+  "slide": 10,
+  "title": "Briefs 09–10 | Monte Carlo Physics",
+  "prompt": "Create one complete 16:9 PowerPoint slide image in English for a PHY4605 capstone briefing. Match the current approved illustrated scientific briefing direction: white/light-neutral canvas, navy title hierarchy, muted blue and sage paired cards, ochre footer, clean dark-blue outlines, soft shading and gentle depth, recognisably illustrated rather than photographic or glossy photorealistic. Preserve the dense two-column brief layout shown in the current slide 10 reference: large title at top, two equal vertical cards, a labelled scientific illustration near the top of each card, then four readable sections in each card with small icons on the left of every heading: CONTEXT + OBJECTIVE, POSSIBLE REALISM DIMENSIONS, LIKELY INFORMATION, BOUNDARY QUESTIONS. Use exact text below and keep it readable; do not add equations, code, numeric results, page numbers, logos or watermarks.\n\nTitle: Briefs 09–10 | Monte Carlo Physics\n\nLEFT CARD HEADER: BRIEF 09 — BOUNDED 2D ISING FERROMAGNET\nLeft visual: a clean illustrated square spin lattice with small arrows/spins, a few coherent domains, and a temperature cue; show it as an educational diagram, not a decorative generic atom image.\n\nLEFT CARD — CONTEXT + OBJECTIVE: A 2D lattice of interacting spins represents a simple ferromagnet. Investigate how temperature changes domain structure, magnetisation and energy, and identify what the finite simulation can support.\n\nLEFT CARD — POSSIBLE REALISM DIMENSIONS: Temperature, lattice size, boundary condition, coupling strength, initial state, equilibration, random seed and finite-size effects.\n\nLEFT CARD — LIKELY INFORMATION: Lattice size, interaction parameter or energy scale, temperature range, supplied or AI-assisted scaffold, initial state and any reference behaviour actually supplied.\n\nLEFT CARD — BOUNDARY QUESTIONS: How many updates are enough? Is the lattice large enough? Does the initial state matter? Are edge effects material? Is a sharp transition claim defensible?\n\nRIGHT CARD HEADER: BRIEF 10 — FIELD OF AN IRREGULAR CHARGED BODY\nRight visual: an illustrated irregular charged body or plate with distributed charge markers and field lines sampled toward observation points; make the geometry visibly non-uniform, but do not show equations or a prescribed algorithm.\n\nRIGHT CARD — CONTEXT + OBJECTIVE: A charged body has irregular shape and non-uniform charge density. Use random samples to estimate the electric field at selected observation points and compare the result with a simpler reference case.\n\nRIGHT CARD — POSSIBLE REALISM DIMENSIONS: Geometry, charge-density variation, near-field behaviour, observation-point location, sample distribution, sample count, and singular or excluded regions.\n\nRIGHT CARD — LIKELY INFORMATION: Body geometry or bounding region, charge-density description, observation points, unit and scale information, sample counts and any symmetric reference case actually supplied.\n\nRIGHT CARD — BOUNDARY QUESTIONS: Is the sampling distribution unbiased? How does sample count affect spread? How close can a point be to the source? Is a 2D approximation defensible? When is the estimate converged?\n\nFOOTER: Make each random trial physically meaningful; report mean, spread, sample-size effect and a reproducible check.\n\nEnsure all text is correctly spelled, aligned, and readable at slide size. Keep the two cards balanced and information-dense but not cramped. Use the same icon language and soft illustrated finish as the approved current deck.",
+  "out": "slide_10.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png",
+      "role": "approved current-project style reference",
+      "fidelity": "match the current semi-realistic illustrated scientific editorial language, palette, line quality and soft depth only"
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_10.png",
+      "role": "current dense paired-brief layout reference",
+      "fidelity": "match the two-column card structure, heading icon placement, density and information hierarchy; replace all old content with the new Monte Carlo briefs"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/combined-capstone-briefing/origin_image/slide_01.png"
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": ["local drawing/rendering scripts", "Pillow-generated slides", "SVG/HTML/CSS/canvas screenshots", "python-pptx/PptxGenJS/native PPT layout screenshots", "manually composited text/image overlays"],
+    "must_return": ["backend_used", "selected_source", "qa_note"]
+  }
+}

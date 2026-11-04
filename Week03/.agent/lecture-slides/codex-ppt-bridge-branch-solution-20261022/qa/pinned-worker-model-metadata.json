@@ -1,0 +1,102 @@
+[
+  {
+    "slide": "slide_01",
+    "worker_id": "/root/bridge_sol_slide_01",
+    "session_id": "01a16144-c264-7e02-b93f-26938cf6dde2",
+    "prompt": "prompts/slide_01.json",
+    "model_argument": "gpt-6.1-sol",
+    "effort_argument": "high",
+    "fork_turns": "none",
+    "explicit_exception_approved": true,
+    "actual_turn_contexts": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16144-c2d4-70a0-9aa1-fb71a09e1d55",
+        "timestamp": "2026-10-22T01:41:02.449Z"
+      }
+    ],
+    "exact_match": true,
+    "evidence_path": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-40-58-01a16144-c264-7e02-b93f-26938cf6dde2.jsonl"
+  },
+  {
+    "slide": "slide_02",
+    "worker_id": "/root/bridge_sol_slide_02",
+    "session_id": "01a16145-2678-78e3-81b1-4ea76f4d7a1a",
+    "prompt": "prompts/slide_02.json",
+    "model_argument": "gpt-6.1-sol",
+    "effort_argument": "high",
+    "fork_turns": "none",
+    "explicit_exception_approved": true,
+    "actual_turn_contexts": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16145-26cf-76f1-b5f7-57aba642e3e0",
+        "timestamp": "2026-10-22T01:41:28.061Z"
+      }
+    ],
+    "exact_match": true,
+    "evidence_path": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-41-24-01a16145-2678-78e3-81b1-4ea76f4d7a1a.jsonl"
+  },
+  {
+    "slide": "slide_04",
+    "worker_id": "/root/bridge_sol_slide_04",
+    "session_id": "01a16145-82e4-7542-9731-b31282d8f265",
+    "prompt": "prompts/slide_04.json",
+    "model_argument": "gpt-6.1-sol",
+    "effort_argument": "high",
+    "fork_turns": "none",
+    "explicit_exception_approved": true,
+    "actual_turn_contexts": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16145-8353-7102-83d0-8d6df7b5fde7",
+        "timestamp": "2026-10-22T01:41:52.808Z"
+      }
+    ],
+    "exact_match": true,
+    "evidence_path": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-41-47-01a16145-82e4-7542-9731-b31282d8f265.jsonl"
+  },
+  {
+    "slide": "slide_05",
+    "worker_id": "/root/bridge_sol_slide_05",
+    "session_id": "01a16145-e583-71a1-ba27-4d5114d6e104",
+    "prompt": "prompts/slide_05.json",
+    "model_argument": "gpt-6.1-sol",
+    "effort_argument": "high",
+    "fork_turns": "none",
+    "explicit_exception_approved": true,
+    "actual_turn_contexts": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16145-e5f6-7f22-9ac4-9d686cb02790",
+        "timestamp": "2026-10-22T01:42:16.555Z"
+      }
+    ],
+    "exact_match": true,
+    "evidence_path": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-42-13-01a16145-e583-71a1-ba27-4d5114d6e104.jsonl"
+  },
+  {
+    "slide": "slide_06",
+    "worker_id": "/root/bridge_sol_slide_06",
+    "session_id": "01a16146-49ce-7543-b5c1-dadfc9ec559a",
+    "prompt": "prompts/slide_06.json",
+    "model_argument": "gpt-6.1-sol",
+    "effort_argument": "high",
+    "fork_turns": "none",
+    "explicit_exception_approved": true,
+    "actual_turn_contexts": [
+      {
+        "model": "gpt-6.1-sol",
+        "effort": "high",
+        "turn_id": "01a16146-4a2e-7932-9447-f709c861adc4",
+        "timestamp": "2026-10-22T01:42:42.457Z"
+      }
+    ],
+    "exact_match": true,
+    "evidence_path": "/Users/khairuladib/.codex/sessions/2026/10/22/rollout-2026-10-22T09-42-38-01a16146-49ce-7543-b5c1-dadfc9ec559a.jsonl"
+  }
+]

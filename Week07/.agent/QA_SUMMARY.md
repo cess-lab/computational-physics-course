@@ -42,7 +42,10 @@ PASS - `.agent/google-forms/Week07_Question_Key_and_AI_Analysis.md` covers physi
 
 ## Slide gate
 
-PASS - `Week07/.agent/lecture-slides/outline.md` contains a 14-slide review-ready outline with locked model, learning job, key points, visual direction, and the Core/Working/Stretch boundary.
+PASS - the earlier 14-slide no-PPTX statement is superseded historical status. The current student-facing deck is `Week07/Lecture_Slides_Week07.pptx`, and its hidden canonical Codex-PPT artifact is `Week07/.agent/lecture-slides/codex-ppt-cart-context/codex-ppt-cart-context.pptx`.
 
-PASS - there is no Week 07 PPTX, no `.mlx` slide surrogate, and no slide-production asset beyond the outline and folder metadata.
+PASS - the current cart-context deck contains 17 slides and 17 presenter-note parts; the student-facing and hidden copies match at SHA-256 `b969d2d50043cdfda242fd77c7a7e657fd87f7fd6f32b9537ca3c15667830c3d`. `qa/final-qa.md` records the three inserted cart-context slides, the 14 reused approved slides, the scientific checks, and the visual checks.
 
+PASS - the current cart-context state records 14 accepted reused slides and three newly recorded slides, with no pending, dispatched, or blocked jobs. The original 14-slide production state remains under `Week07/.agent/lecture-slides/codex-ppt/` as historical base provenance and is not the current root-deck source.
+
+Approval caveat - current QA records an accepted sample gate and completed local QA for the cart-context revision, but no separate lecturer-approval record for the 17-slide revision is established by these files. This summary does not infer that approval from local QA.

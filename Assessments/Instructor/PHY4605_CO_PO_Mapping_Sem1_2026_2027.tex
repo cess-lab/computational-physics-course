@@ -1,0 +1,169 @@
+% PHY4605 CO-PO Mapping and Assessment Plan
+% Layout adapted from the supplied CAP format.
+% Content basis: PHY4605_Assessment_Blueprint.md (current course blueprint).
+\documentclass[10pt]{article}
+
+\usepackage[a4paper,landscape,margin=1.15cm]{geometry}
+\usepackage[T1]{fontenc}
+\renewcommand{\rmdefault}{cmr}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{multirow}
+\usepackage{makecell}
+\usepackage{booktabs}
+\usepackage{colortbl}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{pifont}
+\usepackage[normalem]{ulem}
+\usepackage{ragged2e}
+\usepackage{enumitem}
+
+\renewcommand{\arraystretch}{1.12}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+
+\definecolor{labelblue}{HTML}{2B76B9}
+\definecolor{infowash}{HTML}{FAF8D7}
+\definecolor{softgreen}{HTML}{EAF2DF}
+\definecolor{gridgreen}{HTML}{A8C978}
+\definecolor{rulegray}{HTML}{777777}
+\newcommand{\cmark}{\ding{51}}
+\newcommand{\blank}{\rule{0pt}{1.2em}}
+
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}m{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}m{#1}}
+\newcolumntype{Y}{>{\RaggedRight\arraybackslash}X}
+\renewcommand{\tabularxcolumn}[1]{m{#1}}
+\newcommand{\blackhead}[1]{\cellcolor{black}\color{white}\bfseries #1}
+\newcommand{\pohead}[2]{\makecell[cc]{\textbf{#1}\\[-1pt]\footnotesize #2}}
+\newcommand{\headparbox}[2]{\parbox[c]{#1}{\centering\color{white}\bfseries #2}}
+
+\begin{document}
+\pagestyle{empty}
+
+% --------------------------------------------------------------------------
+% Page 1: assessment plan and PO contribution
+% --------------------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries Assessment Plan for PHY4605 (Semester 1 2026/2027)}
+\end{center}
+\vspace{0.35cm}
+
+\setlength{\fboxsep}{7pt}
+\fcolorbox{black}{infowash}{%
+  \begin{minipage}{0.972\textwidth}
+    \renewcommand{\arraystretch}{1.0}
+    \begin{tabularx}{\textwidth}{@{}>{\RaggedRight\bfseries\color{labelblue}}m{5.1cm}X@{}}
+      Course code and name: & Kaedah Pengkomputeran dalam Fizik / Computational Methods in Physics (PHY4605)\\
+      Course type: & \sout{1. General / Basic}\hspace{0.7cm}\sout{2. Fully Practical}\hspace{0.7cm}\underline{3. Focused}\\
+      Credits: & 3 (2+1)\\
+      Total Student Learning Time: & 120 hours\\
+      Cohort: & \sout{Year 1}\hspace{0.7cm}\sout{Year 2}\hspace{0.7cm}\underline{Year 3}\hspace{0.7cm}\underline{Year 4}\\
+      Lecturer: & \makecell[l]{Dr Muhammad Khairul Adib Muhammad Yusof\\Ts. Dr. Muhammad Kashfi Shabdin}
+    \end{tabularx}
+    \vspace{0.15cm}
+
+    \begin{center}
+      \renewcommand{\arraystretch}{1.05}
+      \begin{tabular}{|L{5.0cm}|C{2.8cm}|C{2.8cm}|C{2.8cm}|}
+        \hline
+        \rowcolor{softgreen}\textbf{Course type} & \textbf{Cognitive} & \textbf{Psychomotor} & \textbf{Affective}\\
+        \hline
+        General course & 60--80\% & 5--40\% & 5--40\%\\
+        \hline
+        Focused course & 60--80\% & 5--40\% & 5--40\%\\
+        \hline
+        Practical / Fully Practical course & 30--60\% & 30--60\% & $\geq$5\%\\
+        \hline
+      \end{tabular}
+    \end{center}
+  \end{minipage}%
+}
+
+\vspace{0.25cm}
+{\footnotesize
+\renewcommand{\arraystretch}{1.04}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{|L{3.25cm}|C{2.55cm}|C{1.45cm}|*{10}{C{0.86cm}|}C{1.35cm}|L{4.1cm}|}
+  \hline
+  \arrayrulecolor{rulegray}
+  \blackhead{} & \blackhead{} & \blackhead{} &
+  \multicolumn{10}{c|}{\cellcolor{black}\headparbox{8.6cm}{Programme Outcome\\Contribution}} &
+  \blackhead{} & \blackhead{}\\
+  \cline{4-13}
+  \blackhead{} & \blackhead{} & \blackhead{} &
+  \multicolumn{10}{c|}{\cellcolor{black}\headparbox{8.6cm}{Course-weight allocation\\(\%)}} &
+  \blackhead{} & \blackhead{}\\
+  \cline{4-13}
+  \multirow{-3}{*}{\cellcolor{black}\makecell[c]{\color{white}\bfseries Activity}} &
+  \multirow{-3}{*}{\cellcolor{black}\parbox[c]{2.55cm}{\centering\color{white}\bfseries Type of\\Assessment}} &
+  \multirow{-3}{*}{\cellcolor{black}\makecell[c]{\color{white}\bfseries Week}} &
+  \blackhead{PO1} & \blackhead{PO2} & \blackhead{PO3} & \blackhead{PO4} & \blackhead{PO5} & \blackhead{PO6} & \blackhead{PO7} & \blackhead{PO8} & \blackhead{PO9} & \blackhead{PO10} &
+  \multirow{-3}{*}{\cellcolor{black}\parbox[c]{1.35cm}{\centering\color{white}\bfseries Total\\(\%)}} &
+  \multirow{-3}{*}{\cellcolor{black}\makecell[c]{\color{white}\bfseries Remarks}}\\
+  \arrayrulecolor{black}
+  \hline
+  \textbf{Practical portfolio} & \makecell{Formative} & 2--11 &  & 15 &  &  &  &  &  &  &  &  & 15 & Ten packets; best 8 counted; 12\% group + 3\% individual defence\\
+  \hline
+  \textbf{Individual lab test} & \makecell{Summative} & TBC &  & 10 &  &  &  &  &  &  &  &  & 10 & Scaffolded verification + parameter/defect variant + defence\\
+  \hline
+  \textbf{Capstone investigation} & \makecell{Formative} & 13--14 &  &  &  &  &  &  &  & 5 & 10 &  & 15 & Bounded group; checkpoints 06--12; presentation, defence, handoff\\
+  \hline
+  \textbf{Test 1} & \makecell{Summative} & 6 & 10 &  &  &  &  &  &  &  &  &  & 10 & 90 min open-book; Weeks 01--05\\
+  \hline
+  \textbf{Test 2} & \makecell{Summative} & 12 & 10 &  &  &  &  &  &  &  &  &  & 10 & 90 min open-book; Weeks 06--11\\
+  \hline
+  \textbf{Final examination} & \makecell{Summative} & 16--17 & 40 &  &  &  &  &  &  &  &  &  & 40 & 120 min cumulative open-book\\
+  \hline
+  \rowcolor{black}\blackhead{Grand total} & \blackhead{} & \blackhead{} & \blackhead{60} & \blackhead{25} & \blackhead{0} & \blackhead{0} & \blackhead{0} & \blackhead{0} & \blackhead{0} & \blackhead{5} & \blackhead{10} & \blackhead{0} & \blackhead{100} & \blackhead{}\\
+  \hline
+\end{tabular}
+}
+
+\newpage
+
+% --------------------------------------------------------------------------
+% Page 2: CO-PO mapping
+% --------------------------------------------------------------------------
+\begin{center}
+  {\LARGE\bfseries Mapping CO-PO for PHY4605}
+\end{center}
+\vspace{0.35cm}
+
+{\footnotesize
+\begin{tabularx}{\textwidth}{|C{0.75cm}|Y|*{4}{C{1.55cm}|}}
+  \hline
+  \arrayrulecolor{rulegray}
+  \blackhead{} & \blackhead{} &
+  \multicolumn{4}{c|}{\cellcolor{black}\blackhead{Hasil Pembelajaran Program (PO)}}\\
+  \cline{3-6}
+  \multirow{-2}{*}{\cellcolor{black}\makecell[c]{\color{white}\bfseries CO}} &
+  \multirow{-2}{*}{\cellcolor{black}\makecell[c]{\color{white}\bfseries Hasil Pembelajaran Kursus (CO)}} &
+  \blackhead{\pohead{PO1}{C}} & \blackhead{\pohead{PO2}{PP}} & \blackhead{\pohead{PO8}{KK}} & \blackhead{\pohead{PO9}{LS}}\\
+  \arrayrulecolor{black}
+  \hline
+  1 & \parbox[c]{\linewidth}{\RaggedRight Menaksir kaedah analisis berangka berkaitan fizik (C5, LS)} & \cmark &  &  & \cmark\\
+  \hline
+  2 & \parbox[c]{\linewidth}{\RaggedRight Mengorganisasi pelbagai teknik analisis berangka dalam penyelesaian masalah fizik (P4)} &  & \cmark &  & \\
+  \hline
+  3 & \parbox[c]{\linewidth}{\RaggedRight Mengenal pasti potensi kaedah pengkomputeran untuk tujuan pengkomersilan (A4, KK)} &  &  & \cmark & \\
+  \hline
+  \rowcolor{black}\blackhead{} & \blackhead{Jumlah (\%)} & \blackhead{60} & \blackhead{25} & \blackhead{5} & \blackhead{10}\\
+  \hline
+\end{tabularx}
+}
+\vspace{0.42cm}
+\begin{minipage}{\textwidth}
+  \footnotesize
+  \textbf{Kod hasil pembelajaran program}\par\vspace{0.08cm}
+  \begin{tabular}{@{}L{13.4cm}L{13.4cm}@{}}
+    PO1 -- Pengetahuan (C) & PO2 -- Kemahiran Teknikal / Praktikal / Psikomotor (PP)\\
+    PO3 -- Pendekatan Kemahiran berfikir dan saintifik (CTPS) & PO4 -- Kemahiran berkomunikasi (CS)\\
+    PO5 -- Kemahiran sosial dan bertanggung-jawab (TS) & PO6 -- Profesionalisme, nilai, sikap, etika dan moral (EM)\\
+    PO7 -- Pendidikan sepanjang hayat dan pengurusan informasi (LL) & PO8 -- Kemahiran personal dan keusahawanan (KK)\\
+    PO9 -- Kemahiran kepimpinan, autonomi dan tanggungjawab (LS) & PO10 -- Kemahiran Numerasi (NS)
+  \end{tabular}
+\end{minipage}
+
+\end{document}

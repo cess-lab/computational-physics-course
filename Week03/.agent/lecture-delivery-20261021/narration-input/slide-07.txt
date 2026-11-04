@@ -1,0 +1,13 @@
+Kita buka Live Script lecture yang diberi. Untuk demo ini, jalankan section mengikut urutan dari atas. Saya mulakan daripada fresh MATLAB session supaya tiada variable lama yang membantu secara senyap. Kita belum tekan Run All kerana saya nak kamu nampak hubungan antara section.
+
+Section pertama menyimpan parameter. R satu underscore ohm ialah dua, R dua underscore ohm ialah tiga, R shared underscore ohm ialah satu. V satu underscore V ialah lima, dan V dua underscore V ialah dua. Semak nilai ini dengan litar pada slide. Nama variable yang panjang sedikit membantu kita ingat kuantiti dan unitnya.
+
+Seterusnya kita bina A underscore ohm. Baris pertama mempunyai R satu tambah R shared, kemudian negatif R shared. Semicolon di dalam square brackets memulakan baris baharu. Baris kedua mempunyai negatif R shared, kemudian R dua tambah R shared. Tiga titik pada hujung baris kod hanya menyambung arahan ke baris berikutnya supaya lebih mudah dibaca.
+
+Vector b dibina dengan lima di atas dan dua di bawah. Semicolon di dalam kurungan itu menghasilkan column vector. Ini berbeza daripada semicolon di hujung arahan, yang biasanya menyembunyikan paparan output. Tengok dimensi yang kita jangka: A dua kali dua, b dua kali satu.
+
+Sekarang baris solve: x underscore A sama dengan A underscore ohm backslash b underscore V. Backslash bermaksud selesaikan linear system yang dinyatakan oleh A dan b. Kita menggunakan syntax yang dibekalkan. Kita tidak perlu menulis algoritma matrix solver sendiri hari ini.
+
+Sebelum saya run, tulis makna entry pertama dan entry kedua. Selepas run, kita dapat I satu dua ampere, dan I dua satu ampere. Jangan berhenti pada dua nombor itu. Kaitkan entry pertama dengan unknown order tadi. Jika saya tukar susunan unknown tetapi masih baca output dengan susunan lama, interpretation akan salah.
+
+Sekarang ambil masa untuk trace kod pada laptop atau kertas. Tunjuk baris yang menyimpan physics input, baris yang membina coefficient matrix, dan baris yang menyelesaikan unknowns. Jika kod kamu gagal kerana satu variable belum wujud, kembali ke section parameter dan jalankan ikut urutan. Kita akan validate output ini sebentar lagi.

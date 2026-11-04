@@ -1,10 +1,10 @@
 # Week 10 Slide Dispatch Ledger
 
-Main runtime model: GPT-5
+Main runtime model: GPT-5 (recorded value; exact current coordinating identifier not independently evidenced here)
 
-Main reasoning effort: runtime default
+Main reasoning effort: runtime default (recorded value; exact current effort not independently evidenced here)
 
-Inheritance method: `fork_turns="all"` with no model or reasoning-effort override. The runtime guarantees inheritance of the coordinating agent's model and reasoning setting.
+Inheritance method: `fork_turns="all"` with no model or reasoning-effort override (recorded method only; exact model/effort inheritance is not independently evidenced here).
 
 | Slide | Worker ID | Prompt path | Status |
 | --- | --- | --- | --- |

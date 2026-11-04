@@ -31,7 +31,7 @@ The ordinary-pass route uses only two unknowns. Rank, condition number, formal r
 
 ## Capstone problem-space introduction
 
-Week 03 introduces the bounded capstone menu before the Week 04 preference checkpoint. The five canonical options are projectile range, RC charging, radioactive decay, Newton cooling, and decaying-force impulse. Each group should discuss one preferred and one alternate problem space; the formal preference record is due in Week 04. No capstone submission or grade is due in Week 03.
+Week 03 introduces the twelve assigned capstone briefs in six paired families before the Week 04 scope-familiarisation checkpoint: projectile motion (01–02), circuit behaviour (03–04), radiation and detection (05–06), thermal behaviour (07–08), Monte Carlo physics (09–10), and oscillatory motion (11–12). Each group receives one assigned brief; no capstone submission or grade is due in Week 03.
 
 ## MATLAB Requirement
 
@@ -56,3 +56,10 @@ Hidden support materials are stored under `.agent/`:
 - lecture-slide outline, strict source assets, worker state, rendered QA, and assembly evidence under `.agent/lecture-slides/codex-ppt/`.
 
 The final student-facing deck is kept directly in `Week03/`; generated slide sources, images, prompts, logs, and QA evidence remain under the hidden `.agent/` hierarchy.
+
+## Optional bridge-circuit worked example
+
+- [Branch-current question](Week03_Bridge_Circuit_Question.png)
+- [Six-slide branch-current solution](Week03_Bridge_Circuit_Branch_Current_Solution.pptx), including English presenter notes, Kirchhoff equations, the MATLAB solve and current/voltage checks.
+
+This additional worked example uses five physical branch currents. The existing two-loop lecture and practical remain the Week 03 Core route.

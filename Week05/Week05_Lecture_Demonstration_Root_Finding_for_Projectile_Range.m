@@ -1,4 +1,4 @@
-%[text] # Week 5 Lecture Demonstration: Root Finding for Projectile Range
+%[text] # Root Finding: Locate a physical solution and verify the residual
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

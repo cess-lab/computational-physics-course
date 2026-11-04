@@ -1,0 +1,52 @@
+{
+  "slide": 5,
+  "title": "Assemble the three equations into A*x=b",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 5,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nSix optional PHY4605 extension slides deriving a bridge-circuit 3x3 mesh-current system, patiently and exactly, for novice Year-2 physics students. Insert after existing lecture slide13.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"canonical_model\": \"Nine ideal resistors R1,R2,R3,R4,R5,R6,R7,R8,Rb. Source Vs positive at top of left source. All three mesh currents CLOCKWISE. I1 left face, I2 LOWER triangular face, I3 UPPER triangular face. Mesh1 boundary R1,R4,R7,Vs; mesh2 R7,R5,R6,Rb; mesh3 R2,R3,R8,Rb. R7 shared I1/I2; Rb shared I2/I3; no I1/I3 branch. In I1 direction R7 current=I1-I2 downwards; in I2 direction R7=I2-I1 upwards, Rb=I2-I3 down-right; in I3 direction Rb=I3-I2 up-left. All resistance values symbolic.\",\n    \"matrix\": \"A=[[R1+R4+R7,-R7,0],[-R7,R7+R5+R6+Rb,-Rb],[0,-Rb,R2+R3+R8+Rb]], x=[I1;I2;I3], b=[Vs;0;0].\",\n    \"assessment_scope\": \"Optional worked extension; no new ordinary-pass 3x3 assessment demand.\"\n  }\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware\",\n  \"visual_direction\": \"Match existing PHY4605 approved course deck and retained representative slide. White or very light neutral open canvas, large navy sans-serif title, clear regular body and math text, moderate density, muted blue model content, sage validation, sparse muted ochre prompts. No enclosing frame, numbering, watermark, or timing. Vary layouts by content role; derivation sequence may intentionally repeat.\"\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/origin_image/slide_03.png — parent-inspected representative slide, style only; Match visual identity; not content or exact layout.\n- Image 2: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-05.png — STRICT equation and coefficient reference; Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values.\n\n\n## Slide\n{\n  \"number\": 5,\n  \"title\": \"Assemble the three equations into A*x=b\",\n  \"subtitle\": \"\",\n  \"role\": \"matrix mapping\",\n  \"intent\": null\n}\n\n## Text\n{\n  \"title\": \"Assemble the three equations into A*x=b\",\n  \"subtitle\": \"\",\n  \"key_points\": [\n    \"Rows: left, lower, upper mesh equations.\",\n    \"Columns: I1, I2, I3 — keep this order.\",\n    \"Source column: [Vs; 0; 0].\",\n    \"A in ohms; x in amperes; b in volts.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"intent\": \"Matrix-dominant full-width layout: exact full symbolic 3x3 matrix, three-entry column x and source column b. Large properly aligned math, one centered system. Unit badges below A,x,b. Thin row labels left/lower/upper where space allows. No circuit needed on this page. Retain all three resistance sums, off-diagonal signs, and zeros exactly.\"\n}\n\n## Constraints\n[\n  \"16:9 complete cohesive generated slide; all English. No outer frame, page number, duration, watermark or unrelated logo.\",\n  \"Do not add, delete, swap, or rename any resistor, current, source, matrix term, zero or sign.\",\n  \"Render subscripts and proper mathematical notation, never raw LaTeX. Resistances in ohms; currents in amperes; source terms in volts.\",\n  \"Small Optional extension label is permitted. Keep equations readable; wrap long equations only at clear addition signs.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_05.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/origin_image/slide_03.png",
+      "role": "parent-inspected representative slide, style only",
+      "fidelity": "Match visual identity; not content or exact layout."
+    },
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-05.png",
+      "role": "STRICT equation and coefficient reference",
+      "fidelity": "Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values."
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "generate",
+    "model_config": "built-in default; no model override exposed",
+    "prompt_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/qa/sample-prompt.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/origin_image/slide_03.png",
+    "input_context_preparation": "view_image of strict circuit, exact equation reference and existing course style; referenced_image_paths attaches these same images to built-in image tool",
+    "handoff_rule": "Use the same built-in image tool with strict local references and generation mode. Human sample approval was waived by the explicit full-batch instruction; parent-inspected representative slide3 is the retained sample. Never substitute local rendering or another backend.",
+    "localized_correction": {
+      "tool_name": "image_gen__imagegen",
+      "mode": "edit",
+      "reason": "Reverse inconsistent bottom I2 arrow and remove an unrequested solve demand.",
+      "selected_source": "/Users/khairuladib/.codex/generated_images/01a15e1c-e480-7683-8115-cba09a4b1513/exec-57e4095a-7566-4292-8c18-037973bc0007.png"
+    }
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

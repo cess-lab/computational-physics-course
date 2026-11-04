@@ -1,0 +1,6 @@
+Date: 2026-09-08
+Root: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/learning-notes/Week04_Parameter_Sweeps_and_Graph_Interpretation.tex
+Compiler: bundled Tectonic 0.17.0
+Command: compile_latex.py --compiler tectonic --output-directory Week04/.agent/learning-notes/build --json
+Exit code: 0; output is 4-page A4 PDF
+PDF: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/learning-notes/build/Week04_Parameter_Sweeps_and_Graph_Interpretation.pdf

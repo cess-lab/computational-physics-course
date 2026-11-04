@@ -1,4 +1,4 @@
-## Slide 1: Sensitivity and Uncertainty Propagation
+## Slide 1: Sensitivity Analysis: Propagate input ranges into defensible output ranges
 
 Frame today’s question: if one input is uncertain, how should we report the prediction? The route is input range, model, output range.
 

@@ -1,0 +1,31 @@
+{
+  "task_type": "documentation",
+  "linear": true,
+  "objective_validation_available": true,
+  "requires_browser": false,
+  "requires_computer_use": false,
+  "computer_use_complexity": "none",
+  "cross_domain": false,
+  "estimated_independent_workstreams": 1,
+  "distinct_specialties": 1,
+  "dependency_count": 1,
+  "ambiguity": "low",
+  "risk": "low",
+  "requires_architecture": false,
+  "architecture_scope": "none",
+  "requires_parallelism": false,
+  "research_requires_judgment": false,
+  "previous_validation_failures": 0,
+  "previous_sol_failures": 0,
+  "high_impact_action": false,
+  "authorization_state": "authorized",
+  "prompt_length": 120,
+  "estimated_file_count": 1,
+  "overrides": {
+    "disable_orchestration": false,
+    "no_subagents": false,
+    "luna_only": false,
+    "preferred_model": "auto",
+    "parallelize": false
+  }
+}

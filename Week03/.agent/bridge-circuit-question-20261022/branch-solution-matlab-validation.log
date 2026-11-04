@@ -1,0 +1,23 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+Reduced unknowns [I2;I3;I4] in A:
+    1.5000
+    0.5000
+    0.5000
+
+Five physical branch currents [I1;I2;I3;I4;I5] in A:
+    2.5000
+    1.5000
+    0.5000
+    0.5000
+    1.0000
+
+Independent node voltages [VA;VB;VC] in V:
+   16.5000
+    7.5000
+   13.5000
+
+Maximum reduced-system residual: 1.33e-15 V
+Maximum difference from independent nodal currents: 1.33e-15 A
+PASS: five branch currents and independent nodal solution agree.

@@ -1,0 +1,119 @@
+{
+  "date": "2026-10-14",
+  "board": "https://miro.com/app/board/uXjVEdNOzes=/",
+  "deckId": "3458764687121666286",
+  "reasoningWallId": "3458764687122117141",
+  "debugClinicId": "3458764687122117142",
+  "slideCount": 27,
+  "pdfPages": 15,
+  "pdfSource": "Week02/.agent/lecture-slides/codex-ppt/revision-2026-09-08-split-comments/qa/rendered/Lecture_Slides_Week02.pdf",
+  "canonicalPptxSha256": "3e2810700ee289c9fefa2ae0f3d316d3259ede9234d55492b058fef731b6b8f1",
+  "activityFrames": [
+    {
+      "id": "3458764687121822506",
+      "type": "frame",
+      "title": ""
+    },
+    {
+      "id": "3458764687121822507",
+      "type": "frame",
+      "title": ""
+    },
+    {
+      "id": "3458764687121822508",
+      "type": "frame",
+      "title": ""
+    },
+    {
+      "id": "3458764687121822509",
+      "type": "frame",
+      "title": ""
+    },
+    {
+      "id": "3458764687121822510",
+      "type": "frame",
+      "title": ""
+    },
+    {
+      "id": "3458764687121822511",
+      "type": "frame",
+      "title": ""
+    },
+    {
+      "id": "3458764687121822512",
+      "type": "frame",
+      "title": ""
+    }
+  ],
+  "activitySpecs": [
+    {
+      "after": 5,
+      "key": "trace",
+      "type": "open_ended",
+      "title": "Trace before running: t_s = 0:0.5:4. At sample_index = 2, what time is selected, where is y stored, and what is y? Use y0 = 0 m, v0 = 20 m/s, g = 9.81 m/s^2."
+    },
+    {
+      "after": 8,
+      "key": "storage",
+      "type": "open_ended",
+      "title": "Complete y_m(sample_index) = ____; when current_position_m has already been calculated. Explain why y_m(1) = current_position_m inside every pass is wrong."
+    },
+    {
+      "after": 8,
+      "key": "parameter",
+      "type": "multi_choice",
+      "title": "Predict before the graph: change only v0 from 20 to 15 m/s. What happens to the maximum height? Discuss the reason with a neighbour.",
+      "options": [
+        "Lower: less initial upward speed",
+        "Higher: gravity becomes weaker",
+        "Unchanged: the same time array is used"
+      ]
+    },
+    {
+      "after": 10,
+      "key": "decay",
+      "type": "open_ended",
+      "title": "Pair task: N(t)=800*exp(-lambda*t), lambda=log(2)/6 per hour, t=0:1:24 h. Write the loop in words: select -> calculate -> store -> check. Name one time and a known value for checking."
+    },
+    {
+      "after": 14,
+      "key": "validation",
+      "type": "multi_choice",
+      "title": "A wrong plus sign is used for gravity, but y(0)=0 still passes. Is that enough to trust the simulation? Choose, then explain what you would check next.",
+      "options": [
+        "Yes: a passing initial-value check proves the whole model",
+        "No: also check a nonzero time and the physical graph shape",
+        "Yes: MATLAB runs without an error"
+      ]
+    },
+    {
+      "after": 16,
+      "key": "exit",
+      "type": "open_ended",
+      "title": "Exit ticket: explain what t_s(sample_index) selects; name one defect and its evidence; give one validation and what it can miss. End with one question you still have."
+    },
+    {
+      "after": 16,
+      "key": "confidence",
+      "type": "scale",
+      "title": "How confidently can you explain the loop and defend its output? Rate from low to high. This is a learning check, not a mark.",
+      "options": [
+        "Explain selection and matching storage",
+        "Diagnose a defect using evidence",
+        "Choose a useful validation"
+      ]
+    }
+  ],
+  "access": {
+    "previous": "Anyone with the link: Viewer",
+    "current": "Anyone with the link: Editor",
+    "authorized": "User selected link-based Can edit in this conversation",
+    "verified": "Sharing dialog reopened and Editor persisted"
+  },
+  "qa": {
+    "notes": "English presenter guidance added to eight live activities; anonymous responses and initial hide enabled; confidence 1-5",
+    "nativeCode": "Initial create placed native code widgets outside their parent. Position corrected by an actual update and visually confirmed within cases. Native font-size control rescales whole widget; restored 14 and repositioned. Zoom into one case when teaching.",
+    "participant": "Join code accepted; QA participant reached waiting screen; no answers submitted",
+    "source": "15-page final PDF; 14-page older render excluded; canonical PPTX unchanged"
+  }
+}

@@ -1,4 +1,16 @@
-# Week 05 - Root Finding
+# Week 05 — Root Finding: Locate a physical solution and verify the residual
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the dedicated Week 05 diagnostic in Google Classroom when it is released, and predict the residual sign and bracket.
+
+**During:** Follow `target -> residual -> bracket -> algorithm -> code -> substitution -> interpretation`; trace the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 05 is one of the ten counted practical packets; the best eight packets count for the group component.
 
 ## Student-Facing Package
 
@@ -6,7 +18,7 @@
 - `Week05_Lecture_Demonstration_Root_Finding_for_Projectile_Range.m`
 - `Week05_Practical_AI_Enabled_Root_Finding_Challenge_Set.m`
 
-The Week 05 lecture slide deck is **not part of the current preparation stage**. A review-ready 14-slide planning outline is retained at `.agent/lecture-slides/codex-ppt/outline.md`. A PPTX and associated production files from an earlier run remain in the repository, but they were not generated or revised for this task and should be ignored until the lecturer explicitly asks to proceed with Week 05 slides.
+The current [Week 05 lecture slide deck](Lecture_Slides_Week05.pptx) is a completed 14-slide image-based Teaching Courseware deck. Final QA records under `.agent/lecture-slides/codex-ppt/qa/` document the approved outline and sample gates, 14/14 speaker-note sections, full-size inspection, and no pending or blocked jobs. The pre-existing editable deck is retained as historical provenance at `.agent/lecture-slides/codex-ppt/qa/retired/Lecture_Slides_Week05_previous.pptx`; it is not the current student-facing deck.
 
 ## Learning Focus
 
@@ -36,7 +48,11 @@ Each context uses the same Core stopping-rule pattern, `abs(residual) < supplied
 
 ## Individual Pre-Practical Diagnostic
 
-A draft six-question Week 05 diagnostic key and cohort-analysis specification is retained at `../.agent/google-forms/Week05_Question_Key_and_AI_Analysis.md`. It is planning material only; it does not create or publish a Google Form.
+Complete the dedicated Week 05 diagnostic through its Google Classroom coursework when released. If it reveals a common misconception, the lecturer may post an optional 10–15 minute remediation with one retry and confidence check; it is not a prerequisite for the next lecture. The local question key remains planning material until publication is approved.
+
+## Test 1 timing
+
+Test 1 covers Weeks 01–05. The broad UPM Assessment I window is academic Weeks 4–6, with active blocks 26 October–08 November and 16–22 November 2026; the sequence-safe PHY4605 target is academic Week 6 (16–22 November), after this week / alongside Week 06. The exact local date is to be confirmed.
 
 ## Instructor / QA Package
 
@@ -46,4 +62,4 @@ Hidden support materials are stored under `.agent/`:
 - content manifest under `.agent/manifests/`;
 - MATLAB-generated residual plot and fresh-session run/check evidence under `.agent/matlab/`;
 - practical reference, variants, defence rubric, and rotation ledger under `.agent/practical/`;
-- the lecture-slide planning outline at `.agent/lecture-slides/codex-ppt/outline.md`; existing deck-production files in that area are pre-existing and out of scope for this stage.
+- the completed lecture-deck sources, speaker notes, and final QA under `.agent/lecture-slides/codex-ppt/`; the retired editable deck is preserved separately as historical provenance.

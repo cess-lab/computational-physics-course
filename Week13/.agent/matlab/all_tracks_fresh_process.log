@@ -1,0 +1,398 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+	Prerelease License -- for engineering feedback and testing
+	purposes only. Not for sale.
+
+
+problem_space_catalogue =
+
+  5×4 table
+
+         problem_space                   method                     principal_output                          required_validation              
+    ________________________    _________________________    _______________________________    _______________________________________________
+
+    "projectile_range"          "parameter sweep"            "range versus launch angle"        "45 degree reference and symmetry"             
+    "rc_charging"               "Forward Euler ODE"          "voltage versus time"              "Euler endpoint versus exact reference"        
+    "radioactive_decay"         "Forward Euler ODE"          "expected count versus time"       "value at one half-life versus exact reference"
+    "cooling"                   "Forward Euler ODE"          "temperature versus time"          "Euler endpoint versus exact reference"        
+    "decaying_force_impulse"    "trapezoidal integration"    "force and accumulated impulse"    "trapezoidal integral versus exact reference"  
+
+
+validation_summary =
+
+  2×4 table
+
+    validation_role                 validation_name                          validation_result              validation_passed
+    _______________    _________________________________________    ____________________________________    _________________
+
+      "Required"       "45 degree known-value reference"            "baseline error at 45 degrees = 0 m"          true       
+      "Chosen"         "angle symmetry R(theta) = R(90 - theta)"    "maximum symmetry difference = 0 m"           true       
+
+
+bounded_investigation_record =
+
+  9×2 table
+
+              EvidenceItem                                             GroupEntry                               
+    ________________________________    ________________________________________________________________________
+
+    "Approved model and assumptions"    "REPLACE_WITH_APPROVED_MODEL_ASSUMPTIONS_AND_SCOPE"                     
+    "Variables and units"               "REPLACE_WITH_VARIABLES_PARAMETERS_OUTPUTS_AND_UNITS"                   
+    "Pseudocode"                        "REPLACE_WITH_SHORT_ORDERED_RECIPE_FROM_INPUTS_TO_CHECKS"               
+    "One controlled modification"       "REPLACE_WITH_ONE_CHANGED_PARAMETER_OR_ASSUMPTION_AND_WHAT_STAYED_FIXED"
+    "Principal output"                  "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"        
+    "Required validation"               "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION"             
+    "Chosen validation"                 "REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"       
+    "Physical interpretation"           "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION"                 
+    "One limitation"                    "REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                        
+
+
+ai_and_defence_record =
+
+  6×2 table
+
+             RecordItem                                                     GroupEntry                                       
+    _____________________________    ________________________________________________________________________________________
+
+    "AI tool or no AI"               "REPLACE_WITH_TOOL_NAME_OR_NO_AI_USED"                                                  
+    "Request"                        "REPLACE_WITH_CONCISE_REQUEST_FOR_ASSISTANCE"                                           
+    "Decision and reason"            "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                           
+    "Independent checks"             "REPLACE_WITH_UNITS_REFERENCE_LIMITING_CASE_CONVERGENCE_OR_PHYSICAL_CHECKS"             
+    "Rotation and absence record"    "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"
+    "Submission state"               "DRAFT_NOT_YET_LOCKED"                                                                  
+
+
+reproducibility_handoff =
+
+  10×2 table
+
+                HandoffItem                                                                          GroupEntry                                                          
+    ____________________________________    _____________________________________________________________________________________________________________________________
+
+    "Starter or edited Live Script"         "REPLACE_WITH_FILE_NAME_OR_NOT_APPLICABLE"                                                                                   
+    "Required input files"                  "REPLACE_WITH_FILE_NAMES_OR_BASE_MATLAB"                                                                                     
+    "Parameters and units"                  "REPLACE_WITH_PARAMETER_RECORD_LOCATION"                                                                                     
+    "Numerical settings"                    "REPLACE_WITH_STEP_SIZE_GRID_OR_SOLVER_SETTING"                                                                              
+    "Run order and MATLAB release"          "Top to bottom in fresh MATLAB 2026b session"                                                                                
+    "Principal output"                      "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"                                                             
+    "Required and chosen checks"            "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION | REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"
+    "Physical conclusion and limitation"    "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION | REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                     
+    "AI decision record"                    "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                                                                
+    "Individual defence evidence"           "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"                                     
+
+TRACK projectile_range REQUIRED=1 CHOSEN=1
+
+problem_space_catalogue =
+
+  5×4 table
+
+         problem_space                   method                     principal_output                          required_validation              
+    ________________________    _________________________    _______________________________    _______________________________________________
+
+    "projectile_range"          "parameter sweep"            "range versus launch angle"        "45 degree reference and symmetry"             
+    "rc_charging"               "Forward Euler ODE"          "voltage versus time"              "Euler endpoint versus exact reference"        
+    "radioactive_decay"         "Forward Euler ODE"          "expected count versus time"       "value at one half-life versus exact reference"
+    "cooling"                   "Forward Euler ODE"          "temperature versus time"          "Euler endpoint versus exact reference"        
+    "decaying_force_impulse"    "trapezoidal integration"    "force and accumulated impulse"    "trapezoidal integral versus exact reference"  
+
+
+validation_summary =
+
+  2×4 table
+
+    validation_role                         validation_name                               validation_result         validation_passed
+    _______________    __________________________________________________________    ___________________________    _________________
+
+      "Required"       "Euler endpoint versus exact RC reference"                    "endpoint error = 0.0219 V"          true       
+      "Chosen"         "baseline voltage stays between initial and supply values"    "bound check passed = 1"             true       
+
+
+bounded_investigation_record =
+
+  9×2 table
+
+              EvidenceItem                                             GroupEntry                               
+    ________________________________    ________________________________________________________________________
+
+    "Approved model and assumptions"    "REPLACE_WITH_APPROVED_MODEL_ASSUMPTIONS_AND_SCOPE"                     
+    "Variables and units"               "REPLACE_WITH_VARIABLES_PARAMETERS_OUTPUTS_AND_UNITS"                   
+    "Pseudocode"                        "REPLACE_WITH_SHORT_ORDERED_RECIPE_FROM_INPUTS_TO_CHECKS"               
+    "One controlled modification"       "REPLACE_WITH_ONE_CHANGED_PARAMETER_OR_ASSUMPTION_AND_WHAT_STAYED_FIXED"
+    "Principal output"                  "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"        
+    "Required validation"               "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION"             
+    "Chosen validation"                 "REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"       
+    "Physical interpretation"           "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION"                 
+    "One limitation"                    "REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                        
+
+
+ai_and_defence_record =
+
+  6×2 table
+
+             RecordItem                                                     GroupEntry                                       
+    _____________________________    ________________________________________________________________________________________
+
+    "AI tool or no AI"               "REPLACE_WITH_TOOL_NAME_OR_NO_AI_USED"                                                  
+    "Request"                        "REPLACE_WITH_CONCISE_REQUEST_FOR_ASSISTANCE"                                           
+    "Decision and reason"            "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                           
+    "Independent checks"             "REPLACE_WITH_UNITS_REFERENCE_LIMITING_CASE_CONVERGENCE_OR_PHYSICAL_CHECKS"             
+    "Rotation and absence record"    "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"
+    "Submission state"               "DRAFT_NOT_YET_LOCKED"                                                                  
+
+
+reproducibility_handoff =
+
+  10×2 table
+
+                HandoffItem                                                                          GroupEntry                                                          
+    ____________________________________    _____________________________________________________________________________________________________________________________
+
+    "Starter or edited Live Script"         "REPLACE_WITH_FILE_NAME_OR_NOT_APPLICABLE"                                                                                   
+    "Required input files"                  "REPLACE_WITH_FILE_NAMES_OR_BASE_MATLAB"                                                                                     
+    "Parameters and units"                  "REPLACE_WITH_PARAMETER_RECORD_LOCATION"                                                                                     
+    "Numerical settings"                    "REPLACE_WITH_STEP_SIZE_GRID_OR_SOLVER_SETTING"                                                                              
+    "Run order and MATLAB release"          "Top to bottom in fresh MATLAB 2026b session"                                                                                
+    "Principal output"                      "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"                                                             
+    "Required and chosen checks"            "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION | REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"
+    "Physical conclusion and limitation"    "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION | REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                     
+    "AI decision record"                    "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                                                                
+    "Individual defence evidence"           "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"                                     
+
+TRACK rc_charging REQUIRED=1 CHOSEN=1
+
+problem_space_catalogue =
+
+  5×4 table
+
+         problem_space                   method                     principal_output                          required_validation              
+    ________________________    _________________________    _______________________________    _______________________________________________
+
+    "projectile_range"          "parameter sweep"            "range versus launch angle"        "45 degree reference and symmetry"             
+    "rc_charging"               "Forward Euler ODE"          "voltage versus time"              "Euler endpoint versus exact reference"        
+    "radioactive_decay"         "Forward Euler ODE"          "expected count versus time"       "value at one half-life versus exact reference"
+    "cooling"                   "Forward Euler ODE"          "temperature versus time"          "Euler endpoint versus exact reference"        
+    "decaying_force_impulse"    "trapezoidal integration"    "force and accumulated impulse"    "trapezoidal integral versus exact reference"  
+
+
+validation_summary =
+
+  2×4 table
+
+    validation_role                        validation_name                                validation_result            validation_passed
+    _______________    ________________________________________________________    ________________________________    _________________
+
+      "Required"       "expected count at one half-life versus exact reference"    "fraction error at 6 h = 0.0103"          true       
+      "Chosen"         "expected count remains non-negative"                       "non-negative check passed = 1"           true       
+
+
+bounded_investigation_record =
+
+  9×2 table
+
+              EvidenceItem                                             GroupEntry                               
+    ________________________________    ________________________________________________________________________
+
+    "Approved model and assumptions"    "REPLACE_WITH_APPROVED_MODEL_ASSUMPTIONS_AND_SCOPE"                     
+    "Variables and units"               "REPLACE_WITH_VARIABLES_PARAMETERS_OUTPUTS_AND_UNITS"                   
+    "Pseudocode"                        "REPLACE_WITH_SHORT_ORDERED_RECIPE_FROM_INPUTS_TO_CHECKS"               
+    "One controlled modification"       "REPLACE_WITH_ONE_CHANGED_PARAMETER_OR_ASSUMPTION_AND_WHAT_STAYED_FIXED"
+    "Principal output"                  "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"        
+    "Required validation"               "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION"             
+    "Chosen validation"                 "REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"       
+    "Physical interpretation"           "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION"                 
+    "One limitation"                    "REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                        
+
+
+ai_and_defence_record =
+
+  6×2 table
+
+             RecordItem                                                     GroupEntry                                       
+    _____________________________    ________________________________________________________________________________________
+
+    "AI tool or no AI"               "REPLACE_WITH_TOOL_NAME_OR_NO_AI_USED"                                                  
+    "Request"                        "REPLACE_WITH_CONCISE_REQUEST_FOR_ASSISTANCE"                                           
+    "Decision and reason"            "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                           
+    "Independent checks"             "REPLACE_WITH_UNITS_REFERENCE_LIMITING_CASE_CONVERGENCE_OR_PHYSICAL_CHECKS"             
+    "Rotation and absence record"    "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"
+    "Submission state"               "DRAFT_NOT_YET_LOCKED"                                                                  
+
+
+reproducibility_handoff =
+
+  10×2 table
+
+                HandoffItem                                                                          GroupEntry                                                          
+    ____________________________________    _____________________________________________________________________________________________________________________________
+
+    "Starter or edited Live Script"         "REPLACE_WITH_FILE_NAME_OR_NOT_APPLICABLE"                                                                                   
+    "Required input files"                  "REPLACE_WITH_FILE_NAMES_OR_BASE_MATLAB"                                                                                     
+    "Parameters and units"                  "REPLACE_WITH_PARAMETER_RECORD_LOCATION"                                                                                     
+    "Numerical settings"                    "REPLACE_WITH_STEP_SIZE_GRID_OR_SOLVER_SETTING"                                                                              
+    "Run order and MATLAB release"          "Top to bottom in fresh MATLAB 2026b session"                                                                                
+    "Principal output"                      "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"                                                             
+    "Required and chosen checks"            "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION | REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"
+    "Physical conclusion and limitation"    "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION | REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                     
+    "AI decision record"                    "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                                                                
+    "Individual defence evidence"           "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"                                     
+
+TRACK radioactive_decay REQUIRED=1 CHOSEN=1
+
+problem_space_catalogue =
+
+  5×4 table
+
+         problem_space                   method                     principal_output                          required_validation              
+    ________________________    _________________________    _______________________________    _______________________________________________
+
+    "projectile_range"          "parameter sweep"            "range versus launch angle"        "45 degree reference and symmetry"             
+    "rc_charging"               "Forward Euler ODE"          "voltage versus time"              "Euler endpoint versus exact reference"        
+    "radioactive_decay"         "Forward Euler ODE"          "expected count versus time"       "value at one half-life versus exact reference"
+    "cooling"                   "Forward Euler ODE"          "temperature versus time"          "Euler endpoint versus exact reference"        
+    "decaying_force_impulse"    "trapezoidal integration"    "force and accumulated impulse"    "trapezoidal integral versus exact reference"  
+
+
+validation_summary =
+
+  2×4 table
+
+    validation_role                               validation_name                                      validation_result           validation_passed
+    _______________    _____________________________________________________________________    _______________________________    _________________
+
+      "Required"       "Euler endpoint versus exact cooling reference"                          "endpoint error = 0.8255 deg C"          true       
+      "Chosen"         "baseline temperature remains between surroundings and initial value"    "bound check passed = 1"                 true       
+
+
+bounded_investigation_record =
+
+  9×2 table
+
+              EvidenceItem                                             GroupEntry                               
+    ________________________________    ________________________________________________________________________
+
+    "Approved model and assumptions"    "REPLACE_WITH_APPROVED_MODEL_ASSUMPTIONS_AND_SCOPE"                     
+    "Variables and units"               "REPLACE_WITH_VARIABLES_PARAMETERS_OUTPUTS_AND_UNITS"                   
+    "Pseudocode"                        "REPLACE_WITH_SHORT_ORDERED_RECIPE_FROM_INPUTS_TO_CHECKS"               
+    "One controlled modification"       "REPLACE_WITH_ONE_CHANGED_PARAMETER_OR_ASSUMPTION_AND_WHAT_STAYED_FIXED"
+    "Principal output"                  "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"        
+    "Required validation"               "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION"             
+    "Chosen validation"                 "REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"       
+    "Physical interpretation"           "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION"                 
+    "One limitation"                    "REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                        
+
+
+ai_and_defence_record =
+
+  6×2 table
+
+             RecordItem                                                     GroupEntry                                       
+    _____________________________    ________________________________________________________________________________________
+
+    "AI tool or no AI"               "REPLACE_WITH_TOOL_NAME_OR_NO_AI_USED"                                                  
+    "Request"                        "REPLACE_WITH_CONCISE_REQUEST_FOR_ASSISTANCE"                                           
+    "Decision and reason"            "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                           
+    "Independent checks"             "REPLACE_WITH_UNITS_REFERENCE_LIMITING_CASE_CONVERGENCE_OR_PHYSICAL_CHECKS"             
+    "Rotation and absence record"    "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"
+    "Submission state"               "DRAFT_NOT_YET_LOCKED"                                                                  
+
+
+reproducibility_handoff =
+
+  10×2 table
+
+                HandoffItem                                                                          GroupEntry                                                          
+    ____________________________________    _____________________________________________________________________________________________________________________________
+
+    "Starter or edited Live Script"         "REPLACE_WITH_FILE_NAME_OR_NOT_APPLICABLE"                                                                                   
+    "Required input files"                  "REPLACE_WITH_FILE_NAMES_OR_BASE_MATLAB"                                                                                     
+    "Parameters and units"                  "REPLACE_WITH_PARAMETER_RECORD_LOCATION"                                                                                     
+    "Numerical settings"                    "REPLACE_WITH_STEP_SIZE_GRID_OR_SOLVER_SETTING"                                                                              
+    "Run order and MATLAB release"          "Top to bottom in fresh MATLAB 2026b session"                                                                                
+    "Principal output"                      "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"                                                             
+    "Required and chosen checks"            "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION | REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"
+    "Physical conclusion and limitation"    "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION | REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                     
+    "AI decision record"                    "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                                                                
+    "Individual defence evidence"           "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"                                     
+
+TRACK cooling REQUIRED=1 CHOSEN=1
+
+problem_space_catalogue =
+
+  5×4 table
+
+         problem_space                   method                     principal_output                          required_validation              
+    ________________________    _________________________    _______________________________    _______________________________________________
+
+    "projectile_range"          "parameter sweep"            "range versus launch angle"        "45 degree reference and symmetry"             
+    "rc_charging"               "Forward Euler ODE"          "voltage versus time"              "Euler endpoint versus exact reference"        
+    "radioactive_decay"         "Forward Euler ODE"          "expected count versus time"       "value at one half-life versus exact reference"
+    "cooling"                   "Forward Euler ODE"          "temperature versus time"          "Euler endpoint versus exact reference"        
+    "decaying_force_impulse"    "trapezoidal integration"    "force and accumulated impulse"    "trapezoidal integral versus exact reference"  
+
+
+validation_summary =
+
+  2×4 table
+
+    validation_role                           validation_name                                     validation_result              validation_passed
+    _______________    _____________________________________________________________    _____________________________________    _________________
+
+      "Required"       "trapezoidal impulse versus exact integral"                      "absolute impulse error = 0.0041 N s"          true       
+      "Chosen"         "impulse is positive and below the infinite-time upper bound"    "bound check passed = 1"                       true       
+
+
+bounded_investigation_record =
+
+  9×2 table
+
+              EvidenceItem                                             GroupEntry                               
+    ________________________________    ________________________________________________________________________
+
+    "Approved model and assumptions"    "REPLACE_WITH_APPROVED_MODEL_ASSUMPTIONS_AND_SCOPE"                     
+    "Variables and units"               "REPLACE_WITH_VARIABLES_PARAMETERS_OUTPUTS_AND_UNITS"                   
+    "Pseudocode"                        "REPLACE_WITH_SHORT_ORDERED_RECIPE_FROM_INPUTS_TO_CHECKS"               
+    "One controlled modification"       "REPLACE_WITH_ONE_CHANGED_PARAMETER_OR_ASSUMPTION_AND_WHAT_STAYED_FIXED"
+    "Principal output"                  "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"        
+    "Required validation"               "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION"             
+    "Chosen validation"                 "REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"       
+    "Physical interpretation"           "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION"                 
+    "One limitation"                    "REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                        
+
+
+ai_and_defence_record =
+
+  6×2 table
+
+             RecordItem                                                     GroupEntry                                       
+    _____________________________    ________________________________________________________________________________________
+
+    "AI tool or no AI"               "REPLACE_WITH_TOOL_NAME_OR_NO_AI_USED"                                                  
+    "Request"                        "REPLACE_WITH_CONCISE_REQUEST_FOR_ASSISTANCE"                                           
+    "Decision and reason"            "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                           
+    "Independent checks"             "REPLACE_WITH_UNITS_REFERENCE_LIMITING_CASE_CONVERGENCE_OR_PHYSICAL_CHECKS"             
+    "Rotation and absence record"    "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"
+    "Submission state"               "DRAFT_NOT_YET_LOCKED"                                                                  
+
+
+reproducibility_handoff =
+
+  10×2 table
+
+                HandoffItem                                                                          GroupEntry                                                          
+    ____________________________________    _____________________________________________________________________________________________________________________________
+
+    "Starter or edited Live Script"         "REPLACE_WITH_FILE_NAME_OR_NOT_APPLICABLE"                                                                                   
+    "Required input files"                  "REPLACE_WITH_FILE_NAMES_OR_BASE_MATLAB"                                                                                     
+    "Parameters and units"                  "REPLACE_WITH_PARAMETER_RECORD_LOCATION"                                                                                     
+    "Numerical settings"                    "REPLACE_WITH_STEP_SIZE_GRID_OR_SOLVER_SETTING"                                                                              
+    "Run order and MATLAB release"          "Top to bottom in fresh MATLAB 2026b session"                                                                                
+    "Principal output"                      "REPLACE_WITH_GRAPH_OR_TABLE_LOCATION_AND_ONE_PATTERN_TO_NOTICE"                                                             
+    "Required and chosen checks"            "REPLACE_WITH_REQUIRED_CHECK_VALUE_LOCATION_AND_LIMITATION | REPLACE_WITH_CHOSEN_CHECK_VALUE_LOCATION_AND_DIFFERENT_WEAKNESS"
+    "Physical conclusion and limitation"    "REPLACE_WITH_ANSWER_TO_THE_ORIGINAL_PHYSICAL_QUESTION | REPLACE_WITH_ONE_NUMERICAL_OR_MODEL_LIMITATION"                     
+    "AI decision record"                    "REPLACE_WITH_ACCEPTED_MODIFIED_REJECTED_DECISION_AND_REASON"                                                                
+    "Individual defence evidence"           "REPLACE_WITH_LECTURER_LEDGER_REFERENCE_MEMBER_FIRST_ROUND_STATUS_AND_MAKE_UP_IF_NEEDED"                                     
+
+TRACK decaying_force_impulse REQUIRED=1 CHOSEN=1
+WEEK13_ALL_STARTER_TRACKS_PASSED

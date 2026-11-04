@@ -1,0 +1,28 @@
+{
+  "status": "complete",
+  "final_pptx": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/Week03_Bridge_Circuit_Branch_Current_Solution.pptx",
+  "slide_count": 6,
+  "speaker_notes_count": 6,
+  "backend": "built-in image tool",
+  "coordinator_model": "gpt-6.1-sol",
+  "coordinator_effort": "high",
+  "worker_model_match_verified": true,
+  "worker_pin_exception_user_approved": true,
+  "sample_slide": 3,
+  "sample_approved": true,
+  "slide_states": {
+    "slide_01": "recorded",
+    "slide_02": "recorded",
+    "slide_03": "accepted",
+    "slide_04": "recorded",
+    "slide_05": "recorded",
+    "slide_06": "recorded"
+  },
+  "scientific_qa": "passed",
+  "full_size_image_qa": "passed",
+  "pptx_structural_qa": "passed",
+  "pptx_render_qa": "passed",
+  "sha256": "c89575f62d5f9891bff14fedaa577444896d614a226a096d9f1fbe245e070a9f",
+  "archived_predecessor": "none",
+  "known_limitations": "none"
+}

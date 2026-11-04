@@ -1,0 +1,19 @@
+{
+  "scope": "Hidden scientific QA only; arbitrary numeric values are NOT lecture content.",
+  "checks": {
+    "mesh_vs_independent_nodal_A": 5.551115123125783e-16,
+    "R7_branch_difference_A": 2.220446049250313e-16,
+    "Rb_branch_difference_A": 1.6653345369377348e-16,
+    "KVL_residual_V": 2.4424906541753444e-15
+  },
+  "mesh_currents_A": [
+    0.9491373515572484,
+    0.27963253416984096,
+    0.10755097468070807
+  ],
+  "nodal_inferred_mesh_currents_A": [
+    0.9491373515572485,
+    0.27963253416984096,
+    0.10755097468070751
+  ]
+}

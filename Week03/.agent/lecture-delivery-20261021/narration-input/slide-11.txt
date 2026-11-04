@@ -1,0 +1,13 @@
+Sekarang kita sengaja lihat satu defect. Matrix yang salah hampir sama dengan matrix asal, tetapi entry baris satu column dua ditukar daripada negatif satu kepada positif satu. Semua entry masih dalam ohm. Saiz matrix masih betul. MATLAB masih boleh solve.
+
+Sebelum run, jangan cuba teka exact output. Sebaliknya, cari hubungan fizikal yang sudah rosak. Top-right coefficient sepatutnya datang daripada negatif R shared darab I dua dalam equation kiri. Bila kita tukar kepada positif, kita telah menukar equation yang diwakili, walaupun syntax sah.
+
+Run section Diagnose a Plausible Matrix with the Wrong Circuit Sign. Kita dapat current yang finite, lebih kurang satu perpuluhan tiga lapan empat enam ampere dan kosong perpuluhan lapan empat enam dua ampere. Output nampak biasa. Tiada tanda bahawa komputer tahu litar yang kita niatkan berbeza daripada matrix yang diberi.
+
+Sekarang lihat wrong model difference. Check ini menggunakan A yang betul, iaitu coefficient daripada original physical equations, untuk menguji current yang datang daripada wrong matrix. Equation kiri mempunyai mismatch lebih kurang negatif satu perpuluhan enam sembilan dua tiga volt. Equation kanan masih sepadan. Itu petunjuk yang tepat: defect kita berada pada equation kiri.
+
+Kalau kita cuma mengira wrong matrix darab wrong solution tolak b, kita mungkin dapat hampir sifar. Itu menunjukkan solver menyelesaikan wrong system dengan baik. Ia tidak membetulkan physical model. Kita mesti check against equations yang memang dimaksudkan oleh litar.
+
+Bincang dalam pasangan. Kenal pasti defect, jelaskan sebab tanda itu salah, dan cadangkan pembaikan minimum. Jawapannya ubah coefficient top-right kepada negatif R shared, kemudian solve dan validate semula. Kita tidak perlu menukar banyak nilai untuk memaksa jawapan nampak cantik.
+
+Cuba bezakan tiga situasi: syntax error menyebabkan arahan gagal dibaca; indexing atau dimension error menyebabkan operasi tidak serasi; physical sign defect pula boleh menghasilkan output tanpa error tetapi tidak memenuhi model yang betul. Kemahiran debugging kita mesti merangkumi ketiga-tiganya.

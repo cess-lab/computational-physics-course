@@ -9,26 +9,31 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue}
 \setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\hyphenpenalty=10000\exhyphenpenalty=10000\emergencystretch=3em
 \newcommand{\course}{PHY4605 Computational Methods in Physics}
 \newcommand{\units}[1]{\,\mathrm{#1}}
 \newtcolorbox{keybox}{colback=RoyalBlue!5,colframe=RoyalBlue!65!black,boxrule=.7pt,arc=2mm}
 \newtcolorbox{checkbox}{colback=ForestGreen!5,colframe=ForestGreen!55!black,boxrule=.7pt,arc=2mm}
 \newtcolorbox{aibox}{colback=BurntOrange!7,colframe=BurntOrange!80!black,boxrule=.7pt,arc=2mm}
-\lstdefinestyle{matlabstyle}{language=Matlab,basicstyle=\ttfamily\footnotesize,keywordstyle=\color{RoyalBlue!75!black},commentstyle=\color{ForestGreen!55!black},stringstyle=\color{BurntOrange!80!black},numbers=left,numberstyle=\scriptsize\color{black!50},numbersep=5pt,frame=single,rulecolor=\color{RoyalBlue!25},backgroundcolor=\color{RoyalBlue!3},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=true}
+\lstdefinestyle{matlabstyle}{language=Matlab,basicstyle=\ttfamily\footnotesize,keywordstyle=\color{RoyalBlue!75!black},commentstyle=\color{ForestGreen!55!black},stringstyle=\color{BurntOrange!80!black},numbers=left,numberstyle=\scriptsize\color{black!50},numbersep=5pt,frame=single,rulecolor=\color{RoyalBlue!25},backgroundcolor=\color{RoyalBlue!3},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=true,captionpos=b,abovecaptionskip=4pt,belowcaptionskip=0pt}
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 9}\par\vspace{4pt}
-{\LARGE\bfseries Data Fitting and Uncertainty:\\From Measurements to Parameters}\par\vspace{3pt}
+{\LARGE\bfseries Data Fitting: Infer a physical parameter and read residuals with uncertainty}\par\vspace{3pt}
 \textit{Use a small physical dataset to estimate a parameter, inspect where the model misses the data, and report only the uncertainty the evidence supports.}
 
 \begin{keybox}\textbf{Physical question.} A resistor is labelled $47\,\Omega$, but measured voltage and current are not perfectly exact. What resistance is supported by the full dataset, how can residuals reveal model mismatch, and how precise should the reported answer be?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item fit a supplied simple physical relationship and interpret each fitted parameter with its unit;
 \item calculate and interpret residuals to judge whether a model misses visible structure; and
-\item validate a fitted result and state uncertainty cautiously using a supplied repeatability range.
+\item validate a fitted result and state uncertainty cautiously using supplied repeat measurements.
 \end{enumerate}
+
+\textbf{Uncertainty labels.} A repeatability range is the observed span of results from repeated runs. It is not a manufacturer tolerance, which is an allowed component specification, or a confidence interval, which is a statistical interval from a stated inference procedure.
+
+\textbf{How to use this note.} Follow the physical question to the equation, trace the plain-language steps, then read the line-numbered MATLAB starter code. Pause at each prediction and validation check; the Guided extension and Optional extension are not required for the ordinary route.
 
 \section*{1. Measurements are not the same as model parameters}
 The experiment supplies pairs of current $I$ and voltage $V$. These are \textbf{measured quantities}. We propose the simple relationship
@@ -46,8 +51,9 @@ The unit check is already useful: if a reported slope were labelled only in volt
 
 \begin{checkbox}\textbf{Prediction checkpoint.} For a resistor near $47\,\Omega$, increasing current by $0.01\units{A}$ should increase voltage by about $0.47\units{V}$. The voltage--current graph should therefore have a positive slope near $47\units{V/A}$.\end{checkbox}
 
+\Needspace{11\baselineskip}
 \section*{2. Start with the data, then choose the fit}
-The locked teaching dataset is small enough to inspect directly.
+The supplied teaching dataset is small enough to inspect directly.
 
 \begin{center}\small
 \begin{tabular}{rr@{\qquad}rr}
@@ -65,7 +71,7 @@ $I$ (A) & $V$ (V) & $I$ (A) & $V$ (V)\\
 Plotting before fitting matters. A command can always return coefficients, but a visibly curved trend, one extreme point, or a unit mistake may make the proposed straight-line model inappropriate.
 
 \section*{3. A fitting algorithm in plain language}
-For this week, the least-squares calculation itself is supplied. The Core reasoning is the sequence around it:
+For this week, the least-squares calculation itself is supplied. Least squares chooses the line that makes the total of squared residuals as small as possible. The required reasoning is the sequence around it:
 
 \begin{enumerate}[nosep,leftmargin=7mm]
 \item plot the measured data with labelled axes and units;
@@ -79,10 +85,10 @@ For this week, the least-squares calculation itself is supplied. The Core reason
 \end{enumerate}
 
 \Needspace{25\baselineskip}
-\section*{4. MATLAB fitting scaffold}
-Base MATLAB provides \texttt{polyfit} and \texttt{polyval}. A degree of 1 requests a straight line. The first coefficient is the slope and the second is the intercept.
+\section*{4. MATLAB starter code for the fit}
+Base MATLAB provides \texttt{polyfit} and \texttt{polyval}. A degree of 1 requests a straight line. The first coefficient is the slope and the second is the intercept. The starter code below calculates the fitted values and residuals.
 
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={MATLAB fit and residual calculation for the supplied voltage--current data}]
 I_A = (0.01:0.01:0.08)';
 V_measured_V = [0.48 0.93 1.43 1.86 ...
                 2.36 2.83 3.28 3.77]';
@@ -104,13 +110,14 @@ The slope is the physically interesting resistance. The small fitted intercept c
 
 \begin{aibox}\textbf{Do not confuse a fitted parameter with a measured value.} No row in the table ``measures $R=47\,\Omega$'' directly. The resistance estimate comes from the change of voltage with current across the dataset.\end{aibox}
 
+\Needspace{26\baselineskip}
 \section*{5. Overlay the model and measurements}
-The fitted line follows the overall trend while individual measurements sit slightly above or below it.
+\noindent\hspace*{2pt}The fitted line follows the overall trend while individual measurements sit slightly above or below it.
 
 \begin{figure}[H]
 \centering
 \includegraphics[width=.74\linewidth]{assets/week09_ohms_law_fit.png}
-\caption{Locked MATLAB reference: measured voltage-current points and the fitted $V=RI+b$ model. The slope is $47.0000\,\Omega$.}
+\caption{Supplied MATLAB figure: measured voltage--current points and the fitted $V=RI+b$ model. The slope is $47.0000\,\Omega$.}
 \end{figure}
 
 An overlay is useful, but visual closeness alone is not enough. The next step asks where and by how much the model misses each measurement.
@@ -122,7 +129,7 @@ r_i=V_{i,\mathrm{measured}}-V_{i,\mathrm{fit}}.
 \]
 A positive residual means the measured voltage is above the fitted line. A negative residual means it is below. Residuals have unit volts because they are voltage differences.
 
-For the locked data, the residual root-mean-square value is about
+For the supplied data, the residual root-mean-square value is about
 \[
 \mathrm{RMSE}_r=0.0130\units{V},
 \]
@@ -136,7 +143,7 @@ and the largest absolute residual is $0.0225\units{V}$.
 
 The absence of obvious structure supports the straight-line model \emph{over this measured range}. It does not prove that the resistor is perfectly ohmic at every current or temperature.
 
-\begin{checkbox}\textbf{Core model-quality check.} Small residuals are not enough by themselves. Ask whether they show a pattern. A U-shaped sequence---positive at both ends and negative in the middle---would suggest missing curvature or another systematic effect.\end{checkbox}
+\begin{checkbox}\textbf{Required model-quality check.} Small residuals are not enough by themselves. Ask whether they show a pattern. A U-shaped sequence---positive at both ends and negative in the middle---would suggest missing curvature or another systematic effect.\end{checkbox}
 
 \section*{7. Validate the fitted resistance with a physical reference}
 The resistor is labelled $47\,\Omega$ with a nominal $5\%$ tolerance. The manufacturer range is therefore
@@ -175,7 +182,7 @@ Step & Week 9 evidence\\
 Physical model & $V=RI+b$ for an approximately ohmic resistor\\
 Variables and units & $I$ in A, $V$ and $b$ in V, $R$ in $\Omega$\\
 Algorithm & plot $\rightarrow$ fit $\rightarrow$ predict $\rightarrow$ residuals $\rightarrow$ validate\\
-Code & supplied \texttt{polyfit} and \texttt{polyval} scaffold\\
+Code & supplied \texttt{polyfit} and \texttt{polyval} starter code\\
 Error/uncertainty & residual scatter and repeat-run range\\
 Validation & fitted $R$ inside the independent nominal component range\\
 Interpretation & linear model is adequate over the supplied current range\\
@@ -185,13 +192,13 @@ Interpretation & linear model is adequate over the supplied current range\\
 
 This sequence is more important than memorising a fitting function name. In an assessment, the syntax may be supplied; you still need to explain the physical parameter, unit, residual evidence, and justified conclusion.
 
-\section*{Working exposure: one fit-quality statistic}
-You may be shown a supplied coefficient of determination, $R^2$. Values closer to 1 indicate that the fitted predictions account for more of the observed variation in that dataset. Treat it as supporting evidence only. A high $R^2$ does not repair wrong units, a poor physical model, a structured residual pattern, or an unverified data-entry error.
+\section*{Guided extension: one fit-quality statistic}
+This guided extension asks you to read supplied fit evidence and interpret its meaning; independent reproduction of the statistic is not required. You may be shown a supplied coefficient of determination, $R^2$. Values closer to 1 indicate that the fitted predictions account for more of the observed variation in that dataset. Treat it as supporting evidence only. A high $R^2$ does not repair wrong units, a poor physical model, a structured residual pattern, or an unverified data-entry error.
 
 You may also be shown two plausible simple models and their residual evidence. Compare the supplied evidence; independent reproduction of advanced selection metrics is not required.
 
-\section*{Optional stretch}
-Weighted fitting, nonlinear fitting, covariance matrices, regularisation, and formal confidence intervals are outside the Week 9 Core route. They are not required for ordinary pass-level work here.
+\section*{Optional extension}
+Weighted fitting, nonlinear fitting, covariance matrices, regularisation, and formal confidence intervals are outside the Week 9 required route. These topics are not required for ordinary pass-level work here.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=7mm]
@@ -200,6 +207,6 @@ Weighted fitting, nonlinear fitting, covariance matrices, regularisation, and fo
 \item Report uncertainty only to the level supported by the evidence, and keep repeatability distinct from manufacturer tolerance or formal confidence intervals.
 \end{enumerate}
 
-\begin{keybox}\textbf{Preparation for the practical.} Be ready to fit a supplied straight-line scaffold, state parameter units, read residual structure, use one independent check, and report uncertainty only to justified precision.\end{keybox}
+\begin{keybox}\textbf{Preparation for the practical.} Be ready to fit supplied straight-line starter code, state units, read residual structure, use one independent check, and report only justified precision.\end{keybox}
 
 \end{document}

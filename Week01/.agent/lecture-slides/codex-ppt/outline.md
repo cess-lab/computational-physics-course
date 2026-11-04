@@ -1,4 +1,4 @@
-# PHY4605 Week 01 — Physics to Arrays and Plots
+# PHY4605 Week 01 — Arrays and Plots: Represent a physical model and compare prediction with evidence
 
 Status: outline, asset mapping, visual direction, and representative sample approved on 2026-09-02. The revised narrative is intentionally different from the earlier linear draft while retaining the Week 01 blueprint scope and the locked vertical-motion model.
 
@@ -10,7 +10,7 @@ Visual style: Codex-PPT Teaching Courseware, using the selected **Muted Academic
 
 ## Slide outline
 
-### Slide 1: Physics to Arrays and Plots
+### Slide 1: Arrays and Plots: Represent a physical model and compare prediction with evidence
 - Key points: Ask how a familiar physics formula becomes computational evidence; introduce the path from prediction to plot; frame Week 1 as a model-reading and evidence-building lesson.
 - Visual idea: A sparse vertical-launch scene with three physical states and a small preview of the eventual height-time curve.
 - Layout role and intent: Cover / driving question; establish the story without presenting a syllabus list.

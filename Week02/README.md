@@ -1,4 +1,4 @@
-# PHY4605 Week 02 - Pseudocode, Loops, and Debugging
+# PHY4605 Week 02 — Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes
 
 Week 02 reuses the familiar vertical-launch model so the new cognitive load is algorithmic rather than mathematical. The Core route moves from a physical prediction to pseudocode, a traceable `for` loop, one bounded modification, debugging evidence, one known-value validation, and physical interpretation.
 
@@ -8,6 +8,18 @@ Week 02 reuses the familiar vertical-launch model so the new cognitive load is a
 - `Week02_Pseudocode_Loops_and_Debugging.pdf` - learning note.
 - `Week02_Lecture_Demonstration_Pseudocode_Loops_and_Debugging.m` - lecturer-guided MATLAB Live Script.
 - `Week02_Practical_AI_Enabled_Loops_and_Debugging_Challenge_Set.m` - AI-enabled group practical with ten progressive micro-challenges.
+
+## Weekly workflow
+
+**Before:** Read the learning note, complete the Week 02 diagnostic in the corresponding Google Classroom coursework when it is released, and predict the loop output.
+
+**During:** Follow `model -> units -> pseudocode -> loop -> validation -> interpretation`; trace the supplied MATLAB work and complete the exit ticket.
+
+**Practical:** Work in a group of two or three through ten progressive challenges, recording the model, units, algorithm, code/output, validation, interpretation, and material AI decisions. Rerun the final work from a fresh MATLAB session.
+
+**After:** Submit the locked packet through Google Classroom. The question slot and eligible student are drawn after submission for the individual defence. Feedback and any optional short remediation/retry are issued through Classroom.
+
+**Portfolio status:** Week 02 is the first of the ten counted practical packets; the best eight packets count for the group component.
 
 ## Locked lecture model
 
@@ -39,4 +51,4 @@ Run the final work from the top in a fresh MATLAB session before submission. Do 
 
 ## Classroom diagnostic
 
-Week 02 already has a mapped Google Form/Classroom diagnostic. Do not create a duplicate. The diagnostic wording should be reviewed against the final Week 02 materials before publication changes are made.
+Week 02 already has a mapped Google Form/Classroom diagnostic. Complete it through the corresponding Classroom coursework when released; do not create a duplicate. If it reveals a common misconception, the lecturer may post an optional 10–15 minute Classroom remediation with one retry and confidence check. It is not a prerequisite for the next lecture.

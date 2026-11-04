@@ -1,0 +1,95 @@
+                                                Assessment Plan for PHY4605 (Semester 1 2026/2027)
+
+                                                Kaedah Pengkomputeran dalam Fizik / Computational Methods in Physics (PHY4605)
+  Course code and name:
+                                                1. General / Basic            2. Fully Practical         3. Focused
+  Course type:
+                                                3 (2+1)
+  Credits:
+                                                120 hours
+  Total Student Learning Time:
+                                                Year 1         Year 2         Year 3    Year 4
+  Cohort:
+                                                Dr Muhammad Khairul Adib Muhammad Yusof
+  Lecturer:
+
+                                                  Course type                                           Cognitive               Psychomotor           Aﬀective
+                                                  General course                                         60–80%                    5–40%               5–40%
+                                                  Focused course                                         60–80%                    5–40%               5–40%
+                                                  Practical / Fully Practical course                     30–60%                   30–60%                ≥5%
+
+                                                                                                          Programme Outcome
+            Activity               Type of               Week                                                 Contribution                                      Total     Remarks
+                                  Assessment                                                                                                                    (%)
+                                                                                                         Course-weight allocation
+                                                                                                                  (%)
+
+                                                                        PO1      PO2     PO3       PO4       PO5       PO6          PO7   PO8   PO9   PO10
+                                  Summative
+ Practical portfolio                                      2–11           2        4       2         1          1         1           1           2     1         15       10 packets; best 8; 12% group + 3%
+                                  AI-assisted
+                                                                                                                                                                          individual defence
+                                  Summative
+ Individual lab test                                      TBC            1        3       3                              1                       1     1         10       Scaﬀolded veriﬁcation + variant +
+                                  AI-assisted
+                                                                                                                                                                          defence
+                                  Summative
+ Capstone investigation                                  13–14           2        2       2         2          1         2           1           1     2         15       Bounded group; checkpoints 06–12;
+                                  AI-assisted
+                                                                                                                                                                          presentation, defence, handoﬀ
+                                  Summative
+ Test 1                                                    6             3        3       3                                                            1         10       90 min open-book AI-free; Weeks
+                                    AI-free
+                                                                                                                                                                          01–05
+                                  Summative
+ Test 2                                                   12             2        3       3                                                            2         10       90 min open-book AI-free; Weeks
+                                    AI-free
+                                                                                                                                                                          06–11
+                                  Summative
+ Final examination                                       16–17          10        10      12                                                           8         40       120 min cumulative open-book AI-
+                                    AI-free
+                                                                                                                                                                          free
+
+ Grand total                                                            20        25      25        3          2         4           2     0     4     15        100
+
+
+
+
+Notes. Week 01 is formative onboarding and is not one of the ten counted portfolio packets. The exact week for the individual lab test is not ﬁxed in the current assessment blueprint and remains lecturer-conﬁrmed. The
+percentages in the PO columns allocate each assessment’s existing course weight to its principal evidence; they are not additional marks.
+                                                                               Mapping CO–PO for PHY4605
+
+                                                                                                                                             Programme Outcome (PO)
+  CO       Course Outcome (CO)
+
+                                                                                                         PO1        PO2         PO3        PO4        PO5         PO6        PO7        PO8         PO9       PO10
+                                                                                                           C          PP        CTPS         CS         TS         EM          LL         KK         LS         NS
+    1      Analyse a familiar physics model and numerical evidence by identifying as-                      3                      3                                                                              3
+           sumptions, variables, units, expected behaviour, and appropriate validation
+           checks.
+           (C4–C5)
+    2      Apply and adapt scaﬀolded numerical algorithms and MATLAB code to                               3          3           3                                                                              3
+           produce reproducible evidence, diagnose clear defects, and interpret the phys-
+           ical result.
+           (P4–P5)
+    3      Communicate and defend a bounded computational investigation, includ-                                                             3          3          3           3                     3
+           ing limitations, responsible AI decisions, reproducibility, and individual/team
+           accountability.
+           (A4)
+
+           Course-weight contribution (%)                                                                 20          25         25          3          2           4          2          0           4         15
+
+Programme outcome codes
+PO1 – Knowledge (C)                                                                                         PO2 – Technical / practical / psychomotor skills (PP)
+PO3 – Critical and scientiﬁc thinking (CTPS)                                                                PO4 – Communication skills (CS)
+PO5 – Social and responsibility skills (TS)                                                                 PO6 – Professionalism, values, ethics and morality (EM)
+PO7 – Lifelong learning and information management (LL)                                                     PO8 – Personal and entrepreneurship skills (KK)
+PO9 – Leadership, autonomy and responsibility (LS)                                                          PO10 – Numeracy skills (NS)
+
+
+
+
+Mapping rule. A checkmark indicates direct evidence in the current PHY4605 assessment blueprint. PO8 is retained for completeness because it appears in the supplied CAP format, but no direct course-assessment
+evidence for personal or entrepreneurship skills is speciﬁed in the new blueprint; therefore its contribution is zero. This proposed operational mapping should be checked against the programme’s currently approved PO
+deﬁnitions before formal submission.
+

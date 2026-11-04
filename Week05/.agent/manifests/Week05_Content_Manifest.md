@@ -9,7 +9,7 @@
 - Root variable: launch angle `theta` in degrees
 - Residual: `f(theta) = R(theta) - target`
 - MATLAB dependency: MATLAB R2025a or later, base MATLAB only
-- Lecture slide status: review-ready outline at `.agent/lecture-slides/codex-ppt/outline.md`; **no Week 05 PPTX is generated or revised in this preparation stage**. A pre-existing deck and production files remain in the repository but are explicitly out of scope until the lecturer authorises slide work.
+- Lecture slide status: the earlier preparation-stage statement that no Week 05 PPTX was generated or revised is historical. The current verified Codex-PPT deck and its completed QA record are retained at the paths below; the pre-existing editable deck remains separately preserved under the Codex-PPT QA archive.
 
 ## Three Core Ideas
 
@@ -107,7 +107,11 @@ No ImageGen illustration is required for the learning note or Live Scripts. The 
 
 ## Lecture Slide Gate
 
-The active planning artefact for this stage is `.agent/lecture-slides/codex-ppt/outline.md`. It explicitly maps the MATLAB residual plot as a numerical reference for the future graph slide. Do not generate or revise `deck_spec.json`, `speech.md`, prompt jobs, strict slide-image assets, slide images, or a PPTX until the lecturer explicitly authorises the next slide-production gate. Existing files of those types are pre-existing and are not part of the present task.
+- Historical preparation record: the outline at `Week05/.agent/lecture-slides/codex-ppt/outline.md` and the earlier restriction on generating or revising slide artifacts are retained as provenance only.
+- Current student-facing artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/Lecture_Slides_Week05.pptx`.
+- Current hidden Codex-PPT artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/lecture-slides/codex-ppt/codex-ppt.pptx`.
+- Current verified state: `slide_run_state.json` and `slide_jobs.json` record `slides_recorded` with one accepted sample, 13 recorded slides, and no pending or blocked jobs. The final QA record confirms a 14-slide, 16:9 image-based deck with non-empty speaker notes.
+- Approval evidence: `qa/outline_approval.md` and `qa/sample_approval.md` record the outline/sample approvals and production authorization; final local QA is in `qa/final_qa.md`. These records supersede the earlier preparation-stage boundary without erasing it.
 
 ## Publication Gate
 
@@ -120,4 +124,4 @@ Before publication of the non-slide Week 05 package:
 5. run the hidden practical reference solution and confirm all validation checks pass;
 6. run MATLAB `checkcode` on both student-facing scripts;
 7. verify Core content uses one stopping-rule pattern and keeps solver-selection/uniqueness topics out of the Core route;
-8. verify the current task has not generated or revised a Week 05 PPTX or slide-production assets; only the planning outline may be revised at this stage.
+8. verify the current local Week 05 deck, Codex-PPT state, and final QA record at the paths above; this manifest does not by itself assert any separate external publication decision.

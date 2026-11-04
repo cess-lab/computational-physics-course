@@ -68,7 +68,7 @@
   "slides": [
     {
       "number": 1,
-      "title": "From a Curve to an Accumulated Quantity",
+      "title": "Numerical Integration: Accumulate a changing quantity and test convergence",
       "role": "cover and physical question",
       "intent": "Open with the force-time accumulation question and establish area under the curve as impulse.",
       "key_points": [

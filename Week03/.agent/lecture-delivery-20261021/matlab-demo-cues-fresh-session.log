@@ -1,0 +1,52 @@
+expr: syntax error
+env: /Applications/MATLAB: No such file or directory
+mkdir: /bin/maca64: Operation not permitted
+
+x_A =
+
+     2
+     1
+
+
+Ishared_A =
+
+     1
+
+
+validation_difference_V =
+
+     0
+     0
+
+
+x_wrong_sign_A =
+
+    1.3846
+    0.8462
+
+
+wrong_model_difference_V =
+
+   -1.6923
+   -0.0000
+
+
+x_perturbed_A =
+
+    2.0091
+    1.0273
+
+
+x_student_A =
+
+    2.0182
+    1.0545
+
+
+student_difference_V =
+
+   1.0e-15 *
+
+         0
+    0.4441
+

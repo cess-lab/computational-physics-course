@@ -1,6 +1,6 @@
 # Week 05 speaker notes
 
-## Slide 1: From a physical target to a checkable root
+## Slide 1: Root Finding: Locate a physical solution and verify the residual
 
 Start with the physical question rather than the numerical method. A projectile leaves level ground at 20 metres per second, and the target range is 35 metres. The unknown is a launch angle: we want an input that makes the model output meet a specified condition.
 

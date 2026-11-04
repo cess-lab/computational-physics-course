@@ -1,0 +1,8 @@
+Root: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week13/.agent/learning-notes/Week13_Capstone_Presentation_Defence_and_Handoff.tex
+Compiler: tectonic
+Command: /Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic -X compile --outdir /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week13/.agent/learning-notes/build --outfmt pdf --print --untrusted Week13_Capstone_Presentation_Defence_and_Handoff.tex
+Exit code: 0
+PDF: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week13/.agent/learning-notes/build/Week13_Capstone_Presentation_Defence_and_Handoff.pdf
+
+Attempts:
+- tectonic: passed (exit 0)

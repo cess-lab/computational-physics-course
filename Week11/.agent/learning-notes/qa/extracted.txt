@@ -1,7 +1,8 @@
 PHY4605 Computational Methods in Physics
 Learning Note | Week 11
 
-Sensitivity and Uncertainty Propagation
+Sensitivity Analysis:
+Input Ranges and Output Reliability
 Use controlled parameter variation to turn plausible input uncertainty into an output range that can be
 validated and interpreted physically.
 
@@ -11,11 +12,14 @@ validated and interpreted physically.
 
 
 
-Core learning outcomes
+Learning outcomes
 1. convert one uncertain input into lower, baseline, and upper one-at-a-time model evaluations;
 2. report and validate the resulting output range without false precision; and
 3. distinguish parameter uncertainty, numerical approximation error, and model limitation in plain
    language.
+How to use this note. Follow the required pathway from model and units to a controlled output
+range, an independent validation, and a physical interpretation. Guided extensions contain supplied
+relationships to read and interpret; they are not required to complete the pathway.
 
 
 1. From a parameter sweep to uncertainty evidence
@@ -32,7 +36,7 @@ We use
 with a plausible stiffness range from 95 to 105 N m−1 .
 
     Quantity                Week 11 value                 Meaning
-    F                       10 N                          applied force held fixed in the Core sweep
+    F                       10 N                          applied force held fixed in the required sweep
     k                       95, 100, 105 N m−1            plausible lower, baseline, and upper stiffness
                                                           values
     x                       m                             model output: predicted extension
@@ -45,15 +49,14 @@ with a plausible stiffness range from 95 to 105 N m−1 .
 
 
 
-2. One-at-a-time uncertainty reasoning
-A one-at-a-time sweep changes one uncertain input while keeping the model and every other input fixed.
-This allows the resulting output change to be attributed to that one input range.
-
-
-
 
                                                       1
-                          Choose plausible       Hold model and      Evaluate lower,
+ 2. One-at-a-time uncertainty reasoning
+ A one-at-a-time sweep changes one uncertain input while keeping the model and every other input fixed.
+ In other words, change one input at a time. This lets the resulting output change be attributed to that
+ one input range.
+
+                          Choose plausible       Hold model and      Evaluate lower,
                             input range         other inputs fixed   baseline, upper
 
 
@@ -75,9 +78,10 @@ This allows the resulting output change to be attributed to that one input range
 
 
 
- 3. MATLAB scaffold: three controlled cases
- The Core calculation needs only a short array and element-wise division. The three stiffness values form
- three controlled evaluations of the same deterministic equation.
+ 3. MATLAB starter code: three controlled cases
+ The required calculation needs only a short array and element-wise division. The three stiffness values
+ form three controlled evaluations of the same deterministic equation.
+          Listing 1: Controlled evaluation of Hooke-law extension cases and their output range.
 1 force_baseline_N = 10;
 2 stiffness_baseline_Npm = 100;
 3 stiffness_cases_Npm = [95 100 105];
@@ -87,34 +91,31 @@ This allows the resulting output change to be attributed to that one input range
 7 extension_range_m = [min(extension_cases_m) max(extension_cases_m)];
 
 
- The dot in ./ means that the scalar force is divided by each stored stiffness value. The calculation gives
-
+ The dot in ./ is MATLAB’s element-wise division operator: the scalar force is divided by each array
+ value in stiffness_cases_Npm, producing one extension for each stored stiffness. The calculation gives
                                                 x0 = 0.10000 m,
-
  and the range
                                         0.09524 m ≲ x ≲ 0.10526 m.
-
 
 
  4. Report a range, not just a long decimal
  The exact-looking statement “x = 0.10000 m” describes only the baseline case. It hides the fact that the
  stiffness itself is uncertain over the supplied range.
- A more defensible statement is:
 
      Range-based result. For a 10 N load and stiffness between 95 and 105 N m−1 , the ideal Hooke
      model predicts an extension of about 0.095 to 0.105 m.
-
- Extra displayed decimal places do not improve knowledge of the spring stiffness. Numerical display
- precision and physical parameter uncertainty are different ideas.
-
-
 
 
                                                        2
  Figure 1: Predicted extension for the supplied stiffness values. These points are controlled parameter
  cases, not repeated random trials.
 
- 5. Core validation: check the baseline independently
+
+ Extra displayed decimal places do not improve knowledge of the spring stiffness. Numerical display
+ precision and physical parameter uncertainty are different ideas.
+
+
+ 5. Required validation: check the baseline independently
  The baseline is simple enough to calculate by hand:
                                                    10 N
                                          x0 =             = 0.10 m.
@@ -123,6 +124,8 @@ This allows the resulting output change to be attributed to that one input range
                                                    N
                                                        = m.
                                                  N m−1
+
+               Listing 2: Independent MATLAB check of the baseline Hooke-law extension.
 1 reference_baseline_m = 10/100;
 2 baseline_check_passed = abs(extension_baseline_m-reference_baseline_m) < 1e-12;
 3 assert(baseline_check_passed,'Baseline Hooke-law validation failed.')
@@ -138,20 +141,25 @@ This allows the resulting output change to be attributed to that one input range
  6. Three different reasons a prediction can be imperfect
  The word “error” is too vague unless its source is identified.
 
-    Source                    Meaning                                 Week 11 example
-    Parameter uncertainty     an input is not known exactly           spring stiffness is plausible from 95 to
-                                                                      105 N m−1
-    Numerical                 a mathematical operation is             a finite timestep changes an ODE
-    approximation error       approximated numerically                simulation result
-    Model limitation          the equation’s assumptions do not       Hooke’s law may fail outside the
-                              fully represent reality                 linear elastic range
 
- The direct Core Hooke calculation has no meaningful timestep, grid, or iterative approximation. Its
- uncertainty range comes from the stated stiffness range. Even a perfectly evaluated equation can still
- inherit uncertainty from its inputs and limitations from its assumptions.
+
 
                                                       3
-7. Worked reasoning chain
+  Source                    Meaning                                   Week 11 example
+  Parameter uncertainty     an input is not known exactly             spring stiffness is plausible from 95 to
+                                                                      105 N m−1
+  Numerical                 a mathematical operation is               a finite timestep changes an ODE
+  approximation error       approximated numerically                  simulation result
+  Model limitation          the equation’s assumptions do not         Hooke’s law may fail outside the
+                            fully represent reality                   linear elastic range
+
+
+This direct Hooke-law calculation has no timestep, grid, or iterative approximation. Its uncertainty range
+comes from the stated stiffness range. Even a perfectly evaluated equation can still inherit uncertainty
+from its inputs and limitations from its assumptions.
+
+
+7. Worked reasoning chain
 
   Step                          Week 11 evidence
   Physical model                ideal linear spring, x = F/k
@@ -168,9 +176,10 @@ be supplied; the physical model, held-fixed conditions, uncertainty source, vali
 still need to be defended.
 
 
-Working exposure: compare a second uncertain input
-Now hold k = 100 N m−1 fixed and vary the force from 9.8 to 10.2 N. The corresponding extension range
-is 0.098 to 0.102 m, with a full span of 0.004 m.
+Guided extension: compare a second uncertain input
+Read the supplied comparison below and interpret which input range produces the wider output span;
+independent implementation is not required. Hold k = 100 N m−1 fixed and vary the force from 9.8 to
+10.2 N. The corresponding extension range is 0.098 to 0.102 m, with a full span of 0.004 m.
 For the stiffness range, the full extension span is about 0.01003 m. For the supplied uncertainty ranges,
 stiffness therefore changes the output more than force. This conclusion depends on the ranges that were
 supplied; it is not a universal statement that stiffness must always dominate force.
@@ -185,15 +194,19 @@ one input range at a time.
 
 
                                                       4
-Working exposure: supplied sensitivity and propagation formulas
-A supplied normalized sensitivity can compare fractional output change with fractional input change
-near a baseline:
-                                                ∆x/x0
-                                           S≈          .
-                                                ∆p/p0
-For x = F/k, the supplied local interpretation is approximately Sk = −1 and SF = +1. The sign
-gives the direction of response; the magnitude describes the fractional responsiveness near the baseline.
-Deriving these sensitivities is not Core Week 11 work.
+Guided extension: supplied sensitivity and propagation formulas
+Read and interpret the supplied formulas below; deriving or coding them independently is not required.
+A normalized sensitivity is a dimensionless measure of how much the output changes fractionally when
+one input changes fractionally, near a chosen baseline:
+
+                                                   ∆x/x0
+                                              S≈         .
+                                                   ∆p/p0
+
+For x = F/k, the supplied local interpretation is approximately Sk = −1 and SF = +1. This is a
+local interpretation because it describes small changes near the baseline, not the response over every
+possible input value. The sign gives the direction of response; the magnitude describes the fractional
+responsiveness near the baseline. Deriving these sensitivities is not required Week 11 work.
 If small force and stiffness uncertainties are treated as independent standard uncertainties, a supplied
 first-order relation is                        √( )
                                          ux        u F 2 ( u k )2
@@ -205,11 +218,17 @@ Using uF = 0.2 N and uk = 5 N m−1 gives a relative estimate of about 5.39% and
 
 This combined estimate answers a different question from the isolated one-at-a-time ranges. The formula
 is supplied for interpretation only.
+Here uF and uk are standard uncertainties: one-standard-deviation-sized estimates of the uncertainty
+in the force and stiffness. Independent means that a deviation in one input is not linked to a deviation
+in the other. First-order means that the relation keeps only terms proportional to small changes and
+neglects products and higher powers, so it is an approximation for small uncertainties.
 
 
-Optional stretch
-Independent derivative-based propagation, Monte Carlo uncertainty propagation, correlated inputs, in-
-teraction effects, and global sensitivity methods are outside the Week 11 Core route.
+Optional extension: beyond one-at-a-time
+This extension is optional and not required. Interaction effects are changes produced by combinations
+of inputs that cannot be explained by considering each input separately. Global sensitivity compares
+influence over the full chosen input ranges or distributions, rather than only near one baseline. Monte
+Carlo propagation and correlated-input analysis are further optional methods.
 
 
 Three takeaways

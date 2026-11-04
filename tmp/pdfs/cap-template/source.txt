@@ -1,0 +1,55 @@
+                                   Assessment Plan for PHY4605 (Semester 1 2025/2026)
+Kod & Nama Kursus:                           Kaedah Pengkomputeran dalam Fizik (PHY4605)
+Jenis Kursus (Gariskan):                     1. Umum / Asas         2. Amali sepenuhnya         3. Berfokus
+Kredit:                                      3(2+1)
+Jumlah Jam Pembelajaran Pelajar:             120
+Peserta kursus (Gariskan):                   Tahun pertama          Tahun kedua                 Tahun ketiga            Tahun keempat
+Nama Pensyarah:                              Dr. Muhammad Khairul Adib Muhammad Yusof
+
+
+
+
+                 Type of
+  Activity                   Week                             Learning Outcome Addressed                             Total (%)   Remarks
+               Assessment
+                                                                    Percentage (%)
+                                       P01    P02     P03     P04    P05     P06     P07   P08      P09       P010
+     Lab
+               Formative     2 – 13           20                                                                        20       P1 – P2
+Assignments
+  Lab Test     Summative        14             5                                                                         5       P3 – P4
+Mini Project   Formative      2 – 13                                                        5        5                  10        KK, LS
+    Test 1     Summative      5–7      10                                                                               10       C1 – C3
+    Test 2     Summative      9 –11    15                                                                               15       C2 – C4
+ Final Exam    Summative     15 – 16   40                                                                               40       C2 – C5
+Grand Total                            65     25                                            5        5                 100
+                                                            Mapping CO-PO for PHY4605
+
+                                    Hasil Pembelajaran Kursus (CO)                          Hasil Pembelajaran Program (PO)
+                                                                                        PO1         PO2         PO8         PO9
+     Pelajar dapat:                                                                      C           PP          KK          LS
+ 1   MENAKSIR KAEDAH ANALISIS BERANGKA BERKAITAN FIZIK (C5, LS)
+                                                                                         ✓                                  ✓
+     MENGORGANISASI PELBAGAI TEKNIK ANALISIS BERANGKA DALAM PENYELESAIAN MASALAH
+ 2
+     FIZIK (P4)                                                                                     ✓
+
+     MENGENAL PASTI POTENSI KAEDAH PENGKOMPUTERAN UNTUK TUJUAN PENGKOMERSILAN
+ 3
+     (A4, KK)                                                                                                   ✓
+
+     Jumlah (%)                                                                         65          25          5           5
+
+
+
+PO1 – Pengetahuan
+PO2 – Kemahiran Teknikal / Praktikal / Psikomotor
+PO3 – Pendekatan Kemahiran berfikir dan saintifik (CTPS)
+PO4 – Kemahiran berkomunikasi (CS)
+PO5 – Kemahiran sosial dan bertangung-jawab (TS)
+PO6 – Profesionalisme, nilai, sikap , etika dan moral (EM)
+PO7 – Pendidikan sepanjang hayat dan pengurusan informasi (LL)
+PO8 – Kemahiran personal dan keusahawanan
+PO9 – Kemahiran kepimpinan, autonomi dan tanggungjawab (LS)
+PO10 – Kemahiran Numerasi (NS)
+

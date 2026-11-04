@@ -1,0 +1,75 @@
+{
+  "coordinator": {
+    "model": "gpt-6.1-sol",
+    "reasoning_effort": "high",
+    "evidence": "Latest turn_context of this chat; see approval-and-model-evidence.md"
+  },
+  "inheritance": {
+    "fork_turns": "all",
+    "model_override": null,
+    "reasoning_effort_override": null,
+    "runtime_guarantee": "Full-history forks inherit exact parent model and effort per collaboration.spawn_agent documentation"
+  },
+  "workers": [
+    {
+      "slide": "slide_01",
+      "worker_id": "/root/bridge_slide_01",
+      "main_model": "gpt-6.1-sol",
+      "main_effort": "high",
+      "worker_model": "gpt-6.1-sol (exact runtime inheritance)",
+      "worker_effort": "high (exact runtime inheritance)",
+      "prompt_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/prompts/slide_01.json",
+      "fork_turns": "all",
+      "model_override": null,
+      "effort_override": null
+    },
+    {
+      "slide": "slide_02",
+      "worker_id": "/root/bridge_slide_02",
+      "main_model": "gpt-6.1-sol",
+      "main_effort": "high",
+      "worker_model": "gpt-6.1-sol (exact runtime inheritance)",
+      "worker_effort": "high (exact runtime inheritance)",
+      "prompt_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/prompts/slide_02.json",
+      "fork_turns": "all",
+      "model_override": null,
+      "effort_override": null
+    },
+    {
+      "slide": "slide_04",
+      "worker_id": "/root/bridge_slide_04",
+      "main_model": "gpt-6.1-sol",
+      "main_effort": "high",
+      "worker_model": "gpt-6.1-sol (exact runtime inheritance)",
+      "worker_effort": "high (exact runtime inheritance)",
+      "prompt_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/prompts/slide_04.json",
+      "fork_turns": "all",
+      "model_override": null,
+      "effort_override": null
+    },
+    {
+      "slide": "slide_05",
+      "worker_id": "/root/bridge_slide_05",
+      "main_model": "gpt-6.1-sol",
+      "main_effort": "high",
+      "worker_model": "gpt-6.1-sol (exact runtime inheritance)",
+      "worker_effort": "high (exact runtime inheritance)",
+      "prompt_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/prompts/slide_05.json",
+      "fork_turns": "all",
+      "model_override": null,
+      "effort_override": null
+    },
+    {
+      "slide": "slide_06",
+      "worker_id": "/root/bridge_slide_06",
+      "main_model": "gpt-6.1-sol",
+      "main_effort": "high",
+      "worker_model": "gpt-6.1-sol (exact runtime inheritance)",
+      "worker_effort": "high (exact runtime inheritance)",
+      "prompt_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/prompts/slide_06.json",
+      "fork_turns": "all",
+      "model_override": null,
+      "effort_override": null
+    }
+  ]
+}

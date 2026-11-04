@@ -1,0 +1,131 @@
+{
+  "model": "gpt-4o-mini-tts",
+  "voice": "marin",
+  "paidOpenAIAPI": true,
+  "aiGeneratedSpeech": true,
+  "audioSeconds": 1777.0320000000002,
+  "chapterCount": 15,
+  "classMinutes": 90,
+  "chapters": [
+    [
+      1,
+      "From a circuit to a checked solution",
+      0,
+      103.512,
+      0,
+      240
+    ],
+    [
+      2,
+      "Choose directions before algebra",
+      103.512,
+      131.448,
+      240,
+      480
+    ],
+    [
+      3,
+      "Write the two physical equations",
+      234.96,
+      141.864,
+      720,
+      600
+    ],
+    [
+      4,
+      "Map equations into rows",
+      376.824,
+      124.416,
+      1320,
+      480
+    ],
+    [
+      5,
+      "Audit the units",
+      501.24,
+      108.456,
+      1800,
+      240
+    ],
+    [
+      6,
+      "Trace all four coefficients",
+      609.696,
+      128.256,
+      2040,
+      360
+    ],
+    [
+      7,
+      "MATLAB demo: build and solve",
+      737.952,
+      159.504,
+      2400,
+      720
+    ],
+    [
+      8,
+      "MATLAB demo: recover branch current",
+      897.456,
+      100.656,
+      3120,
+      240
+    ],
+    [
+      9,
+      "MATLAB demo: direct substitution",
+      998.112,
+      142.92,
+      3360,
+      480
+    ],
+    [
+      10,
+      "Interpret the checked result",
+      1141.032,
+      101.448,
+      3840,
+      240
+    ],
+    [
+      11,
+      "MATLAB demo: a plausible wrong sign",
+      1242.48,
+      143.76,
+      4080,
+      480
+    ],
+    [
+      12,
+      "Optional: recognise a larger system",
+      1386.24,
+      43.656,
+      4560,
+      60
+    ],
+    [
+      13,
+      "Optional: sketch the scaffold",
+      1429.896,
+      43.608,
+      4620,
+      60
+    ],
+    [
+      14,
+      "MATLAB demo: representation or physics?",
+      1473.504,
+      159.264,
+      4680,
+      420
+    ],
+    [
+      15,
+      "Exit ticket and capstone direction",
+      1632.768,
+      144.264,
+      5100,
+      300
+    ]
+  ]
+}

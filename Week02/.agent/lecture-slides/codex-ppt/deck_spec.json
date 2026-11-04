@@ -88,7 +88,7 @@
   "slides": [
     {
       "number": 1,
-      "title": "From one calculation to a traceable loop",
+      "title": "Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes",
       "role": "cover",
       "intent": "Open with the driving question and show looping as an extension of a physical calculation.",
       "key_points": [

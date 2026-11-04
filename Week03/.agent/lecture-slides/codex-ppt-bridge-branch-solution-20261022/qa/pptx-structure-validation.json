@@ -1,0 +1,90 @@
+{
+  "pptx": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/codex-ppt-bridge-branch-solution-20261022.pptx",
+  "pptx_sha256": "c89575f62d5f9891bff14fedaa577444896d614a226a096d9f1fbe245e070a9f",
+  "slide_count": 6,
+  "notes_count": 6,
+  "aspect_ratio": "16:9",
+  "width_emu": 9144000,
+  "height_emu": 5143500,
+  "slides": [
+    {
+      "slide": 1,
+      "source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_01.png",
+      "source_sha256": "eaadc594c99702db95d2c94032a67da884b1e5adb407dcdb618814acd9a9d93c",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "full_slide_image": true,
+      "embedded_image_exactly_matches_source": true,
+      "notes_exact_match": true,
+      "notes_characters": 875
+    },
+    {
+      "slide": 2,
+      "source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_02.png",
+      "source_sha256": "2b11e1ac37dfa802e0a784cbbccb514de466923d5220f61d1e97d0960135e2a6",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "full_slide_image": true,
+      "embedded_image_exactly_matches_source": true,
+      "notes_exact_match": true,
+      "notes_characters": 758
+    },
+    {
+      "slide": 3,
+      "source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_03.png",
+      "source_sha256": "3ef185b3b1c17eac3b51353dd3a7b259eb41c1da786c939e6cb0d944f0cda9db",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "full_slide_image": true,
+      "embedded_image_exactly_matches_source": true,
+      "notes_exact_match": true,
+      "notes_characters": 1040
+    },
+    {
+      "slide": 4,
+      "source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_04.png",
+      "source_sha256": "4b5a826b04ca90b96b38f2189f297b5d0f9cade94f533aa78e40acbd54ab4b91",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "full_slide_image": true,
+      "embedded_image_exactly_matches_source": true,
+      "notes_exact_match": true,
+      "notes_characters": 949
+    },
+    {
+      "slide": 5,
+      "source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_05.png",
+      "source_sha256": "9b6308e97d86d36391723f15087a430a158cbcfd61277d1801bdfce978a42c82",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "full_slide_image": true,
+      "embedded_image_exactly_matches_source": true,
+      "notes_exact_match": true,
+      "notes_characters": 811
+    },
+    {
+      "slide": 6,
+      "source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt-bridge-branch-solution-20261022/origin_image/slide_06.png",
+      "source_sha256": "6389e98b3c8caaad2eaad52ff4dd791f0592466500f852b521b4dc90c571185a",
+      "dimensions": [
+        1672,
+        941
+      ],
+      "full_slide_image": true,
+      "embedded_image_exactly_matches_source": true,
+      "notes_exact_match": true,
+      "notes_characters": 994
+    }
+  ],
+  "all_checks_passed": true
+}

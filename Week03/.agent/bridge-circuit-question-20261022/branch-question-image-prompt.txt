@@ -1,0 +1,39 @@
+Use case: scientific-educational
+Edit target: the provided numerical bridge-circuit question image.
+Create the revised standalone student question image, landscape 16:9. Keep the same nine-resistor circuit topology, resistor positions, values, DC source polarity and node labels A B C. Change the current labelling from mesh currents to FIVE PHYSICAL BRANCH CURRENTS. Remove every circular/curved loop arrow and old mesh-current label. No current solutions or numerical current values.
+
+Title exactly: "Bridge circuit: calculate the branch currents"
+Diagram must dominate the white page with readable labels and clear spacing. Retain navy heading, black wires, rectangular pale-gray resistor symbols, subtle blue straight current arrows. No border or watermark.
+
+Locked topology and resistance labels:
+Left outer vertical battery "V_s = 24 V", positive top, negative bottom.
+Upper left horizontal R1=3 Ω leading to node A.
+Lower left horizontal R4=3 Ω leading to node B.
+Vertical resistor R7=6 Ω between A and B.
+Top edge from A to upper-right corner: R2=1 Ω then R3=2 Ω.
+Right vertical R8=3 Ω from upper-right corner to lower-right node C.
+Bottom edge from B to C: R5=2 Ω then R6=4 Ω.
+Diagonal A to C: R_b=6 Ω.
+Exactly nine resistors, one battery, all paths connected.
+
+NEW current definitions (all are physical branch currents, not meshes; supersede old image labels):
+I₁: source branch B -> R4 -> negative battery -> positive battery -> R1 -> A. Draw straight current arrows on the upper-left wire between R1 and A pointing RIGHT into A and on the bottom-left wire between B and R4 pointing LEFT out of B. Label both I₁ to show the same series current; optionally one upward arrow on left source wire.
+I₂: vertical R7 branch A -> B. Draw blue arrow DOWN on a wire segment of R7 branch, label I₂.
+I₃: diagonal R_b branch A -> C. Draw blue straight diagonal arrow DOWN-RIGHT, aligned along the diagonal conductor, label I₃.
+I₄: upper/right branch A -> R2 -> R3 -> R8 -> C. Draw blue arrow RIGHT on top conductor just after A before R2, label I₄, and another arrow DOWN on right wire before C, also labelled I₄. Same series current.
+I₅: lower branch C -> R6 -> R5 -> B. Draw blue arrow LEFT on lower conductor near C and another LEFT into B, label I₅. Same series current.
+Arrows should be on or immediately alongside actual wire segments, unmistakably parallel to their branch; do not draw arrows in mesh interiors. Maintain conductor connectivity around arrows; never turn resistor symbols into arrow symbols.
+Spread layout/labels if needed so R7 and I2 are clearly separate from diagonal I3. Preserve all resistor names and values. Do not overlap arrow labels with component labels or nodes.
+
+Provide a compact, readable junction-direction guide below or beside circuit, exactly:
+"At A: I₁ enters; I₂, I₃ and I₄ leave."
+"At B: I₂ and I₅ enter; I₁ leaves."
+"At C: I₃ and I₄ enter; I₅ leaves."
+This guide describes the arrows, not numerical answers.
+
+Question text exactly:
+"An ideal 24 V DC source supplies the ohmic resistor network shown."
+"Using Kirchhoff’s laws, calculate the five branch currents I₁–I₅."
+"Show your equations and give each current in amperes."
+Small final line: "Arrows define the assumed positive directions."
+All text English and accurate. Do not include KCL solution equations or current values. No loop arrows, no mesh terminology. Draw a beautiful but scientifically exact, uncluttered undergraduate physics exercise.

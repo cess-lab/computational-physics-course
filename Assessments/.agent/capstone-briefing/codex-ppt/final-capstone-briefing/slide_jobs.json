@@ -1,0 +1,601 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "PHY4605_Capstone_Presentation_and_Defence_Briefing",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "approved Deck B sample prompt for slide 08, Validate the Physics and the Computation",
+    "input_context_preparation": "parent generated and visually inspected the sample with the built-in image_gen tool; no strict source raster assets are required",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+    "handoff_rule": "Use built-in image_gen generate mode and the approved sample as a style-only reference; return a blocker if the same backend is unavailable."
+  },
+  "max_concurrent_slides": 4,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Present, Defend and Hand Off Your Investigation",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_01.json",
+        "prompt_sha256": "f527710277fc8f923088df675cda181f2e7e9939217355cd19e73d54fd7b8efc",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-e3dae6fc-661b-44b0-811e-53ca37752931.png",
+        "selected_source_sha256": "f5ef087277ce3b80cce897d2aa387f9c49581f35a3d9682a68773a3da8b54b66",
+        "final_image": "origin_image/slide_01.png",
+        "final_image_sha256": "f5ef087277ce3b80cce897d2aa387f9c49581f35a3d9682a68773a3da8b54b66",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "What the Final Assessment Rewards",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "5ba062591bf13ea7b975580f04283f0b6f92e421c956c544761c0975747adda7",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-426ef622-2005-483d-9111-0dd2d0b3ba61.png",
+        "selected_source_sha256": "517fbaf05b1179bf3f21e12c9e5545bf3148eef47dfc98be56cace42ccbe3c66",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "517fbaf05b1179bf3f21e12c9e5545bf3148eef47dfc98be56cace42ccbe3c66",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Turn the Scenario into a Defensible Claim",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_03.json",
+        "prompt_sha256": "953605fb125b03c81396886ebcb0015066d8e47373b5a0eed9c0f5fa8985561d",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-61b09205-c1d8-453a-a4a9-af8bd39ac287.png",
+        "selected_source_sha256": "dea484c532842b224315d4f6f9a5e32fcb861cd30b77e235b53ac972797aedbd",
+        "final_image": "origin_image/slide_03.png",
+        "final_image_sha256": "dea484c532842b224315d4f6f9a5e32fcb861cd30b77e235b53ac972797aedbd",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Show the Model You Chose and Why",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "c98174f87a77506efdc82c86cfe1341a342f7933a167f8e707016aab436f3d9c",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-d97a3873-5869-4d6f-be0f-4d65dd3e43fe.png",
+        "selected_source_sha256": "4257a93f6804121ed566188eb1753a7d51c2f3b677a038e5927833b6410cb55b",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "4257a93f6804121ed566188eb1753a7d51c2f3b677a038e5927833b6410cb55b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Explain the Realism Trade-Off",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "eeeb9e43cccb807fcbb8ddf0aa47280307d592a3204768a9741cb24ac7b89003",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-72e58c5a-47c9-4346-91f9-4d7be816bcdb.png",
+        "selected_source_sha256": "657b489f2688bcf8fa52d2869543c600dd01066cadeeaec5e0a7e9c5c94d3036",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "657b489f2688bcf8fa52d2869543c600dd01066cadeeaec5e0a7e9c5c94d3036",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Make the Numerical Implementation Traceable",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "0f50af9bb3f16cc06c95d17bd905a2c7dae6acc09069b275ce3f70464ff33bd2",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-1d327f56-461c-4a6e-aefc-5cef7d941f0a.png",
+        "selected_source_sha256": "ff49382eb1c32d3f1cab3f14e24009ed400e4aaec61630a10c638f0a12826b5e",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "ff49382eb1c32d3f1cab3f14e24009ed400e4aaec61630a10c638f0a12826b5e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Choose Evidence That Answers the Objective",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "4384419e03752ee7f44ac84baedfda2a2c8618c112d93a390e93549b9e5f1cd6",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-adf26a29-72bd-4b11-8c18-821900d75bd1.png",
+        "selected_source_sha256": "477659f7de7501007f7308249ccd514da887082091dd4f907cc8d0cd8f29116a",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "477659f7de7501007f7308249ccd514da887082091dd4f907cc8d0cd8f29116a",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Validate the Physics and the Computation",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_08.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Show Sensitivity and Uncertainty Honestly",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "447b6b437b0e0d1f0ea7cb9e027d4c0ffabe8bbe7cdeefcd48c2afe9bf6cc531",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-893824a2-c05c-4e8d-b51e-181e9e054f6c.png",
+        "selected_source_sha256": "ddce7f9ac876ddd217322d5577e49e56fb7b234ba053c303f5b3cac5114b6b4c",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "ddce7f9ac876ddd217322d5577e49e56fb7b234ba053c303f5b3cac5114b6b4c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Explain What the Simulation Cannot Establish",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "08844c9f6151b024550860b53ddbf84d0f787afe225d973ebad76d81f9c1bdd4",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-34d43a5e-04bc-4f43-946b-4e0a30312951.png",
+        "selected_source_sha256": "197692be87964ec41a096bd959e1e81e27afdd9ff49444f694e0778da5d2556c",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "197692be87964ec41a096bd959e1e81e27afdd9ff49444f694e0778da5d2556c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Record AI Decisions Transparently",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "a1d443a3deb51a49e11b5953116821a4dfe5b2e87da746f356592505eed9c961",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-31fd7ca0-f90e-4dfb-9439-e5f37bf287f5.png",
+        "selected_source_sha256": "746882aa0364a7097c39ad3393a0e2dcbb30f5ae2878996d6de42c8cda6b64c4",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "746882aa0364a7097c39ad3393a0e2dcbb30f5ae2878996d6de42c8cda6b64c4",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Prepare a Reproducible Handoff",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "7bd5154b186a1a0889581f417a7b046e39f024360b41109b99872554354a736f",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-02a5139a-c234-4951-a2eb-dfab5de6fc59.png",
+        "selected_source_sha256": "006df51354ec9bfa1eeaa1568db9a6cc779792b7796c1581888560ca28b87ff5",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "006df51354ec9bfa1eeaa1568db9a6cc779792b7796c1581888560ca28b87ff5",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_13",
+      "number": 13,
+      "title": "Use an Evidence-Led Presentation Structure",
+      "job": "prompts/slide_13.json",
+      "out": "origin_image/slide_13.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_13.json",
+        "prompt_sha256": "c22dfd5a172e504e8508c19d6619729f1e1461d015c38e91aac92a387a3218db",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-928f0e5c-2069-46b5-a627-799ccf4856fb.png",
+        "selected_source_sha256": "6aaf82410ae1e4f4aa49940b8338a3493a9119f750277f2156827eb6938bec2c",
+        "final_image": "origin_image/slide_13.png",
+        "final_image_sha256": "6aaf82410ae1e4f4aa49940b8338a3493a9119f750277f2156827eb6938bec2c",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_14",
+      "number": 14,
+      "title": "Prepare for the Individual Defence",
+      "job": "prompts/slide_14.json",
+      "out": "origin_image/slide_14.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_14.json",
+        "prompt_sha256": "bf85f5daee8119a7956df7ed6769440c9859d9ad57b0fb0e6141dc7d1ed4fdd4",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-4a5d8efa-ac5a-49ee-88cf-44f0ff061a70.png",
+        "selected_source_sha256": "f6f4673543899032b09282d44d2d7699aae5115c0c993d92310735c5f116be12",
+        "final_image": "origin_image/slide_14.png",
+        "final_image_sha256": "f6f4673543899032b09282d44d2d7699aae5115c0c993d92310735c5f116be12",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_15",
+      "number": 15,
+      "title": "Final Lock and Submission Checklist",
+      "job": "prompts/slide_15.json",
+      "out": "origin_image/slide_15.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Assessments/.agent/capstone-briefing/codex-ppt/final-capstone-briefing/origin_image/slide_08.png",
+          "role": "approved Deck B sample style reference",
+          "fidelity": "match palette, title hierarchy, open canvas, icon language, density and teaching mood only; do not copy the exact four-column validation matrix"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "agent_nickname": "Bernoulli",
+        "prompt": "prompts/slide_15.json",
+        "prompt_sha256": "2a1334b50e0832630964086a72852a4276a7ee7a92a6caf6815c368f544c8829",
+        "dispatched_at": "2026-09-09T06:34:11Z"
+      },
+      "result": {
+        "agent_id": "01a084df-762a-7d42-85f1-f084697eb8d9",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a084df-762a-7d42-85f1-f084697eb8d9/exec-e39871ab-34cd-4972-8875-5351c00eb815.png",
+        "selected_source_sha256": "30262bad5533e763ac2a6efa2907fe29ecb88643653f093271d4b619fbf2710d",
+        "final_image": "origin_image/slide_15.png",
+        "final_image_sha256": "30262bad5533e763ac2a6efa2907fe29ecb88643653f093271d4b619fbf2710d",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent visual QA passed: text readable, 16:9 composition valid, style matches the approved sample, no blocking overlap or truncation observed.",
+        "recorded_at": "2026-09-09T06:50:20Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-09-09T06:50:20Z"
+}

@@ -1,0 +1,1 @@
+Selected samples: projects 01 and 03. User instruction: okay jana slide 01 dan 03. Backend: built-in image_gen. Style: current course Teaching Courseware. Two selected sample images only; no full-deck generation or assembly.

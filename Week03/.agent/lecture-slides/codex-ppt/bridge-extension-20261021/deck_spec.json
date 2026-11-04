@@ -1,0 +1,233 @@
+{
+  "deck_name": "bridge-extension-20261021",
+  "language": "English",
+  "goal": "Six optional PHY4605 extension slides deriving a bridge-circuit 3x3 mesh-current system, patiently and exactly, for novice Year-2 physics students. Insert after existing lecture slide13.",
+  "style": {
+    "name": "Teaching Courseware",
+    "visual_direction": "Match existing PHY4605 approved course deck and retained representative slide. White or very light neutral open canvas, large navy sans-serif title, clear regular body and math text, moderate density, muted blue model content, sage validation, sparse muted ochre prompts. No enclosing frame, numbering, watermark, or timing. Vary layouts by content role; derivation sequence may intentionally repeat."
+  },
+  "deck_context": {
+    "canonical_model": "Nine ideal resistors R1,R2,R3,R4,R5,R6,R7,R8,Rb. Source Vs positive at top of left source. All three mesh currents CLOCKWISE. I1 left face, I2 LOWER triangular face, I3 UPPER triangular face. Mesh1 boundary R1,R4,R7,Vs; mesh2 R7,R5,R6,Rb; mesh3 R2,R3,R8,Rb. R7 shared I1/I2; Rb shared I2/I3; no I1/I3 branch. In I1 direction R7 current=I1-I2 downwards; in I2 direction R7=I2-I1 upwards, Rb=I2-I3 down-right; in I3 direction Rb=I3-I2 up-left. All resistance values symbolic.",
+    "matrix": "A=[[R1+R4+R7,-R7,0],[-R7,R7+R5+R6+Rb,-Rb],[0,-Rb,R2+R3+R8+Rb]], x=[I1;I2;I3], b=[Vs;0;0].",
+    "assessment_scope": "Optional worked extension; no new ordinary-pass 3x3 assessment demand."
+  },
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen__imagegen",
+    "mode": "generate",
+    "model_config": "built-in default; no model override exposed",
+    "prompt_source": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/qa/sample-prompt.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/origin_image/slide_03.png",
+    "input_context_preparation": "view_image of strict circuit, exact equation reference and existing course style; referenced_image_paths attaches these same images to built-in image tool",
+    "handoff_rule": "Use the same built-in image tool with strict local references and generation mode. Human sample approval was waived by the explicit full-batch instruction; parent-inspected representative slide3 is the retained sample. Never substitute local rendering or another backend.",
+    "localized_correction": {
+      "tool_name": "image_gen__imagegen",
+      "mode": "edit",
+      "reason": "Reverse inconsistent bottom I2 arrow and remove an unrequested solve demand.",
+      "selected_source": "/Users/khairuladib/.codex/generated_images/01a15e1c-e480-7683-8115-cba09a4b1513/exec-57e4095a-7566-4292-8c18-037973bc0007.png"
+    }
+  },
+  "style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/origin_image/slide_03.png",
+    "role": "parent-inspected representative slide, style only",
+    "fidelity": "Match visual identity; not content or exact layout."
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Identify three meshes and two shared branches",
+      "role": "model map",
+      "key_points": [
+        "Choose I1, I2 and I3 clockwise.",
+        "R7 is shared by meshes 1 and 2.",
+        "Rb is shared by meshes 2 and 3.",
+        "Meshes 1 and 3 share no branch."
+      ],
+      "layout": {
+        "intent": "Large exact circuit central-left; three compact aligned mesh-boundary labels on right (I1: R1,R4,R7,Vs; I2: R7,R5,R6,Rb; I3: R2,R3,R8,Rb). Short shared-current callouts close to R7 and Rb. Avoid a three-card template. Distinguish clockwise reference mesh contributions from actual net branch currents."
+      },
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/bridge_mesh_model.png",
+          "role": "STRICT circuit input",
+          "fidelity": "Preserve topology, source polarity, EVERY resistor label and clockwise current arrow and its mesh face; include visibly, do not replace with a similar circuit."
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-01.png",
+          "role": "STRICT equation and coefficient reference",
+          "fidelity": "Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values."
+        }
+      ],
+      "sample_approved": false,
+      "constraints": [
+        "16:9 complete cohesive generated slide; all English. No outer frame, page number, duration, watermark or unrelated logo.",
+        "Do not add, delete, swap, or rename any resistor, current, source, matrix term, zero or sign.",
+        "Render subscripts and proper mathematical notation, never raw LaTeX. Resistances in ohms; currents in amperes; source terms in volts.",
+        "Small Optional extension label is permitted. Keep equations readable; wrap long equations only at clear addition signs."
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Derive the left-mesh equation",
+      "role": "guided derivation",
+      "key_points": [
+        "R1 I1 + R4 I1 + R7(I1-I2) = Vs",
+        "(R1+R4+R7)I1 - R7 I2 + 0 I3 = Vs",
+        "Row 1: [R1+R4+R7, -R7, 0]"
+      ],
+      "layout": {
+        "intent": "Circuit inset LEFT with mesh1 boundary traced muted blue, including R1,R4,R7 and Vs. On RIGHT expand the shared R7(I1-I2) term, then show collected equation. Bottom row1 strip with I1,I2,I3 column labels. This is a deliberate derivation-sequence layout matching sample slide3 while emphasizing left mesh."
+      },
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/bridge_mesh_model.png",
+          "role": "STRICT circuit input",
+          "fidelity": "Preserve topology, source polarity, EVERY resistor label and clockwise current arrow and its mesh face; include visibly, do not replace with a similar circuit."
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-02.png",
+          "role": "STRICT equation and coefficient reference",
+          "fidelity": "Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values."
+        }
+      ],
+      "sample_approved": false,
+      "constraints": [
+        "16:9 complete cohesive generated slide; all English. No outer frame, page number, duration, watermark or unrelated logo.",
+        "Do not add, delete, swap, or rename any resistor, current, source, matrix term, zero or sign.",
+        "Render subscripts and proper mathematical notation, never raw LaTeX. Resistances in ohms; currents in amperes; source terms in volts.",
+        "Small Optional extension label is permitted. Keep equations readable; wrap long equations only at clear addition signs."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Derive the lower-mesh equation",
+      "role": "guided derivation",
+      "key_points": [
+        "R7(I2-I1)+R5 I2+R6 I2+Rb(I2-I3)=0",
+        "-R7 I1+(R7+R5+R6+Rb)I2-Rb I3=0",
+        "Row 2: [-R7, R7+R5+R6+Rb, -Rb]"
+      ],
+      "layout": {
+        "intent": "Circuit LEFT with mesh2 lower triangular boundary traced sage. RIGHT two exact KVL lines and collected equation. Bottom coefficient row. Follow representative sample."
+      },
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/bridge_mesh_model.png",
+          "role": "STRICT circuit input",
+          "fidelity": "Preserve topology, source polarity, EVERY resistor label and clockwise current arrow and its mesh face; include visibly, do not replace with a similar circuit."
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-03.png",
+          "role": "STRICT equation and coefficient reference",
+          "fidelity": "Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values."
+        }
+      ],
+      "sample_approved": true,
+      "constraints": [
+        "16:9 complete cohesive generated slide; all English. No outer frame, page number, duration, watermark or unrelated logo.",
+        "Do not add, delete, swap, or rename any resistor, current, source, matrix term, zero or sign.",
+        "Render subscripts and proper mathematical notation, never raw LaTeX. Resistances in ohms; currents in amperes; source terms in volts.",
+        "Small Optional extension label is permitted. Keep equations readable; wrap long equations only at clear addition signs."
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Derive the upper-mesh equation",
+      "role": "guided derivation",
+      "key_points": [
+        "R2 I3+R3 I3+R8 I3+Rb(I3-I2)=0",
+        "0 I1-Rb I2+(R2+R3+R8+Rb)I3=0",
+        "Row 3: [0, -Rb, R2+R3+R8+Rb]"
+      ],
+      "layout": {
+        "intent": "Circuit LEFT with mesh3 upper triangular boundary traced muted ochre. RIGHT KVL and collection. Bottom row3 strip. Clearly point out zero coefficient of I1. Preserve full circuit and all labels."
+      },
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/bridge_mesh_model.png",
+          "role": "STRICT circuit input",
+          "fidelity": "Preserve topology, source polarity, EVERY resistor label and clockwise current arrow and its mesh face; include visibly, do not replace with a similar circuit."
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-04.png",
+          "role": "STRICT equation and coefficient reference",
+          "fidelity": "Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values."
+        }
+      ],
+      "sample_approved": false,
+      "constraints": [
+        "16:9 complete cohesive generated slide; all English. No outer frame, page number, duration, watermark or unrelated logo.",
+        "Do not add, delete, swap, or rename any resistor, current, source, matrix term, zero or sign.",
+        "Render subscripts and proper mathematical notation, never raw LaTeX. Resistances in ohms; currents in amperes; source terms in volts.",
+        "Small Optional extension label is permitted. Keep equations readable; wrap long equations only at clear addition signs."
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Assemble the three equations into A*x=b",
+      "role": "matrix mapping",
+      "key_points": [
+        "Rows: left, lower, upper mesh equations.",
+        "Columns: I1, I2, I3 \u2014 keep this order.",
+        "Source column: [Vs; 0; 0].",
+        "A in ohms; x in amperes; b in volts."
+      ],
+      "layout": {
+        "intent": "Matrix-dominant full-width layout: exact full symbolic 3x3 matrix, three-entry column x and source column b. Large properly aligned math, one centered system. Unit badges below A,x,b. Thin row labels left/lower/upper where space allows. No circuit needed on this page. Retain all three resistance sums, off-diagonal signs, and zeros exactly."
+      },
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-05.png",
+          "role": "STRICT equation and coefficient reference",
+          "fidelity": "Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values."
+        }
+      ],
+      "sample_approved": false,
+      "constraints": [
+        "16:9 complete cohesive generated slide; all English. No outer frame, page number, duration, watermark or unrelated logo.",
+        "Do not add, delete, swap, or rename any resistor, current, source, matrix term, zero or sign.",
+        "Render subscripts and proper mathematical notation, never raw LaTeX. Resistances in ohms; currents in amperes; source terms in volts.",
+        "Small Optional extension label is permitted. Keep equations readable; wrap long equations only at clear addition signs."
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Check every coefficient against the circuit",
+      "role": "coefficient audit",
+      "key_points": [
+        "Diagonal: sum the resistances around that mesh.",
+        "Off-diagonal: negative shared resistance for these clockwise references.",
+        "A12=A21=-R7; A23=A32=-Rb; A13=A31=0.",
+        "Validate solved currents in all three original KVL equations."
+      ],
+      "layout": {
+        "intent": "Circuit inset on LEFT and coefficient audit on RIGHT, with three short paired-entry rows: A12=A21=-R7, A23=A32=-Rb, A13=A31=0. Below a single concise units and direct-substitution validation strip. Explain diagonal self-resistance sum for one example A22=R7+R5+R6+Rb. Do not add rank, condition number, or numeric values."
+      },
+      "required_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/bridge_mesh_model.png",
+          "role": "STRICT circuit input",
+          "fidelity": "Preserve topology, source polarity, EVERY resistor label and clockwise current arrow and its mesh face; include visibly, do not replace with a similar circuit."
+        },
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/assets/equations-06.png",
+          "role": "STRICT equation and coefficient reference",
+          "fidelity": "Preserve all exact mathematical facts, subscripts, signs, order and units. Compose professional readable math as part of the generated slide; no invented values."
+        }
+      ],
+      "sample_approved": false,
+      "constraints": [
+        "16:9 complete cohesive generated slide; all English. No outer frame, page number, duration, watermark or unrelated logo.",
+        "Do not add, delete, swap, or rename any resistor, current, source, matrix term, zero or sign.",
+        "Render subscripts and proper mathematical notation, never raw LaTeX. Resistances in ohms; currents in amperes; source terms in volts.",
+        "Small Optional extension label is permitted. Keep equations readable; wrap long equations only at clear addition signs."
+      ]
+    }
+  ],
+  "approved_sample": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/origin_image/slide_03.png",
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/lecture-slides/codex-ppt/bridge-extension-20261021/origin_image/slide_03.png",
+    "role": "parent-inspected representative slide, style only",
+    "fidelity": "Match visual identity; not content or exact layout."
+  }
+}

@@ -1,4 +1,4 @@
-# PHY4605 Week 02 — From One Calculation to a Traceable Loop
+# PHY4605 Week 02 — Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes
 
 Status: outline and planned asset roles approved by the lecturer on 2026-09-02. The lecturer subsequently approved the Slide 11 conceptual-graphic replacement on 2026-09-02. This outline is a new narrative for the Week 02 Codex-PPT replacement. It uses the Week 01 production as a style-and-flow reference only; it does not require reuse of the original Week 02 slide text, slide renders, or illustrations.
 
@@ -14,7 +14,7 @@ Visual direction after approval: Codex-PPT Teaching Courseware, carrying forward
 
 ## Slide outline
 
-### Slide 1: From one calculation to a traceable loop
+### Slide 1: Numerical Algorithms: Turn physical reasoning into pseudocode, loops, and fixes
 - Key points: A familiar equation can be evaluated one time at a time; an algorithm makes the order visible; a loop makes the repetition explicit; evidence still needs checking and physical interpretation.
 - Visual idea: One vertical-motion trajectory connected to a clean reasoning path: question -> recipe -> loop -> evidence -> explanation.
 - Layout role and intent: Cover / driving question; position Week 02 as algorithmic thinking, not a syntax catalogue.

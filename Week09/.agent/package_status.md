@@ -1,6 +1,6 @@
 # Week 09 production record
 
-Request: prepare Week 09 course materials except the lecture slide deck; prepare only the deck outline, 2026-09-05.
+Request: prepare Week 09 course materials except the lecture slide deck; prepare only the deck outline, 2026-09-05. This is a historical preparation boundary and was superseded by the later local Codex-PPT production record dated 2026-09-07.
 
 ## Completed package
 
@@ -10,6 +10,7 @@ Request: prepare Week 09 course materials except the lecture slide deck; prepare
 - AI-enabled ten-challenge group practical across spring, cart, and pendulum contexts.
 - Hidden practical answer/reference script, diagnostic draft, A/B variant bank, defence rubric, event ledger, and member summary.
 - Fourteen-slide lecture outline under the Codex-PPT project folder.
+- Current student-facing lecture deck: `Week09/Lecture_Slides_Week09.pptx`.
 
 ## Locked Week 09 lecture evidence
 
@@ -24,9 +25,15 @@ The model is `V = R I + b` for a nominal 47 ohm resistor. The locked eight-point
 - Plain-text Live Script structure passed H1/depth/appendix checks for both student `.m` files.
 - Canonical weekly Form mapping checked: only Week01 and Week02 are currently registered; Week09 diagnostic remains local and unpublished.
 
-## Slide production boundary
+## Slide production status
 
-The Week 09 Codex-PPT folder contains only `outline.md` plus MATLAB Drive metadata. There is no `deck_spec.json`, `speech.md`, prompt directory, slide job state, generated slide image, or Week 09 PPTX. The outline is a draft awaiting lecturer approval before any later slide-production gate can advance.
+- Historical boundary: the earlier statement that the Codex-PPT folder contained only a draft outline and no deck is retained as preparation-stage provenance and is not current.
+- Current Codex-PPT directory: `Week09/.agent/lecture-slides/codex-ppt/`.
+- Current student-facing artifact: `Week09/Lecture_Slides_Week09.pptx`.
+- Current hidden assembled artifact: `Week09/.agent/lecture-slides/codex-ppt/codex-ppt.pptx`.
+- Current verified state: `slide_run_state.json` and `slide_jobs.json` record `slides_recorded` with one accepted sample, 13 recorded slides, and no pending or blocked jobs. The deck contains 14 slides, 14 non-empty presenter-note sections, and one full-slide picture per slide.
+- Current final-QA evidence: `Week09/.agent/lecture-slides/codex-ppt/qa/final-qa.md` records successful rendering and inspection; the verified SHA-256 is `1cbd94cbbf053e4c5ed6c51bccfd045075a8eb75249a6fedd00f16c90d535b6e`.
+- Approval caveat: the current QA record states that the Slide 08 sample gate was accepted before dispatch, but this package status does not independently establish a lecturer-approval record for the completed deck. Retain that approval gate unless separately recorded.
 
 ## Existing work
 

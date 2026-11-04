@@ -1,4 +1,4 @@
-%[text] # Week 7 Lecture Demonstration: Numerical Integration of a Decaying Force
+%[text] # Numerical Integration: Accumulate a changing quantity and test convergence
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%
@@ -105,6 +105,9 @@ error_reduction_factor = abs_error_Ns(1:end-1)./abs_error_Ns(2:end)
 %%
 %[text] ## Three Takeaways
 %[text] First, a numerical integral represents physical accumulation, so its unit combines the vertical-axis unit with the horizontal-axis unit. Second, the trapezoidal rule adds areas formed from neighbouring sampled values, and MATLAB `trapz(x,y)` preserves the actual sample coordinates. Third, refine the sampling and compare with an analytic or supplied reference before trusting the accumulated result.
+%%
+%[text] ## Physical Interpretation
+%[text] Explain what `finest_impulse_Ns` means physically: it is the accumulated impulse delivered by the positive, decaying force from `t=0` to `T_s`. Connect the positive trend and the upper bound `F0_N*T_s` to the model, and state why the unit `N s` (equivalently `kg m/s`) is appropriate.
 %%
 %[text] ## Reproducibility Record
 %[text] Run sections from top to bottom in a fresh MATLAB session. This demonstration requires MATLAB R2025a or later and base MATLAB only. Locked values are `F0_N=12`, `tau_s=0.8`, `T_s=2.0`, and Core interval counts `[4 8 16]`. No hidden Workspace state is required.

@@ -4,6 +4,7 @@
 \usepackage{booktabs,array,enumitem}
 \usepackage[dvipsnames]{xcolor}
 \usepackage{graphicx,listings,tikz}
+\usepackage{float}
 \usetikzlibrary{arrows.meta,positioning}
 \usepackage[most]{tcolorbox}
 \usepackage{hyperref}
@@ -19,17 +20,20 @@
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 11}\par\vspace{4pt}
-{\LARGE\bfseries Sensitivity and Uncertainty Propagation}\par\vspace{3pt}
+{\LARGE\bfseries Sensitivity Analysis:\\[-1pt]
+Input Ranges and Output Reliability}\par\vspace{3pt}
 \textit{Use controlled parameter variation to turn plausible input uncertainty into an output range that can be validated and interpreted physically.}
 
 \begin{keybox}\textbf{Physical question.} A spring is loaded by a known force, but its stiffness is only known within a plausible range. What range of extension should we report, and what does that range say about the reliability of the prediction?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
 \item convert one uncertain input into lower, baseline, and upper one-at-a-time model evaluations;
 \item report and validate the resulting output range without false precision; and
 \item distinguish parameter uncertainty, numerical approximation error, and model limitation in plain language.
 \end{enumerate}
+
+\textbf{How to use this note.} Follow the required pathway from model and units to a controlled output range, an independent validation, and a physical interpretation. Guided extensions contain supplied relationships to read and interpret; they are not required to complete the pathway.
 
 \section*{1. From a parameter sweep to uncertainty evidence}
 In Week 4, changing a model parameter helped reveal a physical trend. Week 11 uses the same computational move for a different purpose: the input is not known exactly, so a plausible input range becomes uncertainty evidence.
@@ -49,7 +53,7 @@ with a plausible stiffness range from $95$ to $105\units{N\,m^{-1}}$.
 \toprule
 Quantity & Week 11 value & Meaning \\
 \midrule
-$F$ & $10\units{N}$ & applied force held fixed in the Core sweep \\
+$F$ & $10\units{N}$ & applied force held fixed in the required sweep \\
 $k$ & $95,100,105\units{N\,m^{-1}}$ & plausible lower, baseline, and upper stiffness values \\
 $x$ & m & model output: predicted extension \\
 \bottomrule
@@ -58,8 +62,9 @@ $x$ & m & model output: predicted extension \\
 
 \begin{checkbox}\textbf{Prediction checkpoint.} Because $x=F/k$, lower stiffness should produce larger extension. The $95\units{N\,m^{-1}}$ case should therefore give the largest $x$, while the $105\units{N\,m^{-1}}$ case should give the smallest.\end{checkbox}
 
+\Needspace{11\baselineskip}
 \section*{2. One-at-a-time uncertainty reasoning}
-A one-at-a-time sweep changes one uncertain input while keeping the model and every other input fixed. This allows the resulting output change to be attributed to that one input range.
+A one-at-a-time sweep changes one uncertain input while keeping the model and every other input fixed. In other words, change one input at a time. This lets the resulting output change be attributed to that one input range.
 
 \begin{center}\begin{tikzpicture}[node distance=7mm and 5mm,every node/.style={font=\small,align=center},box/.style={draw=MidnightBlue,rounded corners=2mm,fill=RoyalBlue!7,minimum width=26mm,minimum height=9mm},check/.style={draw=ForestGreen!55!black,rounded corners=2mm,fill=ForestGreen!7,minimum width=26mm,minimum height=9mm},arrow/.style={-{Latex[length=2mm]},thick,MidnightBlue}]
 \node[box] (r) {Choose plausible\\input range};
@@ -83,10 +88,10 @@ The computational recipe is:
 
 \begin{aibox}\textbf{Do not vary several uncertain inputs at once when the question asks which input caused the change.} Simultaneous variation can be useful for other analyses, but it no longer isolates one input's effect.\end{aibox}
 
-\section*{3. MATLAB scaffold: three controlled cases}
-The Core calculation needs only a short array and element-wise division. The three stiffness values form three controlled evaluations of the same deterministic equation.
+\section*{3. MATLAB starter code: three controlled cases}
+The required calculation needs only a short array and element-wise division. The three stiffness values form three controlled evaluations of the same deterministic equation.
 
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Controlled evaluation of Hooke-law extension cases and their output range.},label={lst:controlled-cases}]
 force_baseline_N = 10;
 stiffness_baseline_Npm = 100;
 stiffness_cases_Npm = [95 100 105];
@@ -96,7 +101,7 @@ extension_baseline_m = force_baseline_N/stiffness_baseline_Npm;
 extension_range_m = [min(extension_cases_m) max(extension_cases_m)];
 \end{lstlisting}
 
-The dot in \texttt{./} means that the scalar force is divided by each stored stiffness value. The calculation gives
+The dot in \texttt{./} is MATLAB's element-wise division operator: the scalar force is divided by each array value in \texttt{stiffness\_cases\_Npm}, producing one extension for each stored stiffness. The calculation gives
 \[
 x_0=0.10000\units{m},
 \]
@@ -114,13 +119,11 @@ and the range
 \section*{4. Report a range, not just a long decimal}
 The exact-looking statement ``$x=0.10000\units{m}$'' describes only the baseline case. It hides the fact that the stiffness itself is uncertain over the supplied range.
 
-A more defensible statement is:
-
 \begin{keybox}\textbf{Range-based result.} For a $10\units{N}$ load and stiffness between $95$ and $105\units{N\,m^{-1}}$, the ideal Hooke model predicts an extension of about $0.095$ to $0.105\units{m}$.\end{keybox}
 
 Extra displayed decimal places do not improve knowledge of the spring stiffness. Numerical display precision and physical parameter uncertainty are different ideas.
 
-\section*{5. Core validation: check the baseline independently}
+\section*{5. Required validation: check the baseline independently}
 The baseline is simple enough to calculate by hand:
 \[
 x_0=\frac{10\units{N}}{100\units{N\,m^{-1}}}=0.10\units{m}.
@@ -130,7 +133,7 @@ The units also reduce correctly:
 \frac{\mathrm{N}}{\mathrm{N\,m^{-1}}}=\mathrm{m}.
 \]
 
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={Independent MATLAB check of the baseline Hooke-law extension.},label={lst:baseline-validation}]
 reference_baseline_m = 10/100;
 baseline_check_passed = abs(extension_baseline_m-reference_baseline_m) < 1e-12;
 assert(baseline_check_passed,'Baseline Hooke-law validation failed.')
@@ -153,7 +156,7 @@ Model limitation & the equation's assumptions do not fully represent reality & H
 \end{tabular}
 \end{center}
 
-The direct Core Hooke calculation has no meaningful timestep, grid, or iterative approximation. Its uncertainty range comes from the stated stiffness range. Even a perfectly evaluated equation can still inherit uncertainty from its inputs and limitations from its assumptions.
+This direct Hooke-law calculation has no timestep, grid, or iterative approximation. Its uncertainty range comes from the stated stiffness range. Even a perfectly evaluated equation can still inherit uncertainty from its inputs and limitations from its assumptions.
 
 \section*{7. Worked reasoning chain}
 \begin{center}\small
@@ -174,24 +177,23 @@ Interpretation & stiffness uncertainty creates a range of plausible model predic
 
 This chain is more important than memorising a MATLAB function name. In an assessment, syntax may be supplied; the physical model, held-fixed conditions, uncertainty source, validation, and interpretation still need to be defended.
 
-\section*{Working exposure: compare a second uncertain input}
-Now hold $k=100\units{N\,m^{-1}}$ fixed and vary the force from $9.8$ to $10.2\units{N}$. The corresponding extension range is $0.098$ to $0.102\units{m}$, with a full span of $0.004\units{m}$.
+\section*{Guided extension: compare a second uncertain input}
+Read the supplied comparison below and interpret which input range produces the wider output span; independent implementation is not required. Hold $k=100\units{N\,m^{-1}}$ fixed and vary the force from $9.8$ to $10.2\units{N}$. The corresponding extension range is $0.098$ to $0.102\units{m}$, with a full span of $0.004\units{m}$.
 
 For the stiffness range, the full extension span is about $0.01003\units{m}$. For the supplied uncertainty ranges, stiffness therefore changes the output more than force. This conclusion depends on the ranges that were supplied; it is not a universal statement that stiffness must always dominate force.
 
-\begin{figure}[h]
+\begin{figure}[H]
 \centering
-\includegraphics[width=.70\linewidth]{assets/week11_one_at_a_time_comparison.png}
+\includegraphics[width=.45\linewidth]{assets/week11_one_at_a_time_comparison.png}
 \caption{One-at-a-time output spans for the supplied stiffness and force ranges. The comparison isolates one input range at a time.}
 \end{figure}
 
-\Needspace{18\baselineskip}
-\section*{Working exposure: supplied sensitivity and propagation formulas}
-A supplied normalized sensitivity can compare fractional output change with fractional input change near a baseline:
+\section*{Guided extension: supplied sensitivity and propagation formulas}
+Read and interpret the supplied formulas below; deriving or coding them independently is not required. A normalized sensitivity is a dimensionless measure of how much the output changes fractionally when one input changes fractionally, near a chosen baseline:
 \[
 S\approx\frac{\Delta x/x_0}{\Delta p/p_0}.
 \]
-For $x=F/k$, the supplied local interpretation is approximately $S_k=-1$ and $S_F=+1$. The sign gives the direction of response; the magnitude describes the fractional responsiveness near the baseline. Deriving these sensitivities is not Core Week 11 work.
+For $x=F/k$, the supplied local interpretation is approximately $S_k=-1$ and $S_F=+1$. This is a local interpretation because it describes small changes near the baseline, not the response over every possible input value. The sign gives the direction of response; the magnitude describes the fractional responsiveness near the baseline. Deriving these sensitivities is not required Week 11 work.
 
 If small force and stiffness uncertainties are treated as independent standard uncertainties, a supplied first-order relation is
 \[
@@ -203,8 +205,10 @@ u_x\approx0.00539\units{m}.
 \]
 This combined estimate answers a different question from the isolated one-at-a-time ranges. The formula is supplied for interpretation only.
 
-\section*{Optional stretch}
-Independent derivative-based propagation, Monte Carlo uncertainty propagation, correlated inputs, interaction effects, and global sensitivity methods are outside the Week 11 Core route.
+Here $u_F$ and $u_k$ are standard uncertainties: one-standard-deviation-sized estimates of the uncertainty in the force and stiffness. Independent means that a deviation in one input is not linked to a deviation in the other. First-order means that the relation keeps only terms proportional to small changes and neglects products and higher powers, so it is an approximation for small uncertainties.
+
+\section*{Optional extension: beyond one-at-a-time}
+This extension is optional and not required. Interaction effects are changes produced by combinations of inputs that cannot be explained by considering each input separately. Global sensitivity compares influence over the full chosen input ranges or distributions, rather than only near one baseline. Monte Carlo propagation and correlated-input analysis are further optional methods.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=7mm]

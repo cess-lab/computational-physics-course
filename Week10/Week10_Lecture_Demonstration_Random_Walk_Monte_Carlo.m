@@ -1,4 +1,4 @@
-%[text] # Week 10 Lecture Demonstration: Random Walks and Monte Carlo Sampling
+%[text] # Monte Carlo Sampling: Use repeated random trials to estimate physical variation
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

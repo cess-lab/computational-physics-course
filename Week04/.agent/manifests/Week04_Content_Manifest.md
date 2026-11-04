@@ -9,7 +9,7 @@
 - Swept lecture parameter: spring stiffness `k`
 - Common lecture input: applied-force array `F`
 - MATLAB dependency: MATLAB R2025a or later, base MATLAB only
-- Lecture slide status: intentionally not created; lecturer explicitly requested all Week 04 materials **except** the lecture slide deck
+- Lecture slide status: the statement that the deck was intentionally not created because the lecturer requested all Week 04 materials **except** the lecture slide deck is a historical preparation boundary. It is superseded by the current verified Codex-PPT deck and final-QA record below.
 
 ## Three Core Ideas
 
@@ -90,6 +90,14 @@ The student-facing `Week04_Capstone_Preference_Checkpoint.md` provides six bound
 
 No ImageGen asset is required for the Week 04 learning note or Live Scripts. The main representation barrier is the logic of a controlled parameter sweep and the relationship between stiffness and extension. A deterministic parameter-control flow diagram and a MATLAB-generated overlay plot communicate those relationships more precisely than a generated decorative image. The decision is recorded in `.agent/learning-notes/qa/illustration-decision.md`.
 
+## Lecture Slide Gate
+
+- Historical preparation record: the earlier no-deck scope in this manifest is retained as provenance only.
+- Current student-facing artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/Lecture_Slides_Week04.pptx`.
+- Current hidden Codex-PPT artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/lecture-slides/codex-ppt/codex-ppt.pptx`.
+- Current verified state: the Codex-PPT `slide_run_state.json` and `slide_jobs.json` record `slides_recorded`; the final deck contains 15 slides, and the student-facing and hidden copies match at SHA-256 `5b7bf09a1c44eef19f21223aa1a9391095e4f5541dbcff90fa903876de87e955`.
+- Final local QA is recorded in `Week04/.agent/lecture-slides/codex-ppt/qa/final_qa.md`. Approval and worker provenance remain in the adjacent `qa/outline_approval.md`, `qa/sample_generation_method.md`, and `qa/worker_dispatch_ledger.md` records.
+
 ## Publication Gate
 
 Before publication:
@@ -101,4 +109,4 @@ Before publication:
 5. run the hidden practical reference solution and confirm all validation checks pass;
 6. run MATLAB `checkcode` on both student-facing scripts;
 7. verify the capstone preference checkpoint is formative and does not imply a Week 04 assessment deadline;
-8. verify that no Week 04 lecture PPTX or slide-production assets were created.
+8. verify the current local Week 04 deck, Codex-PPT state, and final QA record at the paths above; this manifest does not by itself assert any separate external publication decision.

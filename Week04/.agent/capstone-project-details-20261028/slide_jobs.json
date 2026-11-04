@@ -1,0 +1,463 @@
+{
+  "run_status": "slides_recorded",
+  "deck_name": "capstone-project-details-20261028",
+  "selected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "sample-prompts/slide_01.txt and sample-prompts/slide_03.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_01.png",
+    "input_context_preparation": "Parent inspected local approved samples with view_image; worker must inspect listed style reference and use generate mode, referenced_image_paths for style-only context.",
+    "handoff_rule": "Use built-in image_gen generate mode; sample images are style references only. Return a blocker if unavailable."
+  },
+  "max_concurrent_slides": 10,
+  "slides": [
+    {
+      "slide_id": "slide_01",
+      "number": 1,
+      "title": "Project 01\nProjectile Delivery in Crosswind with Quadratic Drag",
+      "job": "prompts/slide_01.json",
+      "out": "origin_image/slide_01.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_01.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_02",
+      "number": 2,
+      "title": "Project 02\nProjectile Launch from Elevated Terrain under Wind Shear",
+      "job": "prompts/slide_02.json",
+      "out": "origin_image/slide_02.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide02",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_02.json",
+        "prompt_sha256": "ca0af25582bf25d1f491084dc7c56872720a142a8f4080fc68359a7dfda40a08",
+        "dispatched_at": "2026-10-28T05:42:24Z"
+      },
+      "result": {
+        "agent_id": "/root/slide02",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a18107-d476-79e3-a221-cf15bdf1662f/exec-e8851d49-b202-4902-860f-17e9a71a7639.png",
+        "selected_source_sha256": "65dfadf4130e4925818c0e9aa395c9d60d9861db7a1e397f0fbaa7ad070e188e",
+        "final_image": "origin_image/slide_02.png",
+        "final_image_sha256": "65dfadf4130e4925818c0e9aa395c9d60d9861db7a1e397f0fbaa7ad070e188e",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: title, five groups and units readable; terrain intersection and height-dependent wind explicit; conceptual path, no numerical result.",
+        "recorded_at": "2026-10-28T06:57:40Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_03",
+      "number": 3,
+      "title": "Project 03\nRC Charging with Leakage and Temperature-Dependent Components",
+      "job": "prompts/slide_03.json",
+      "out": "origin_image/slide_03.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "accepted",
+      "dispatch": null,
+      "result": {
+        "final_image": "origin_image/slide_03.png",
+        "accepted_sample": true
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_04",
+      "number": 4,
+      "title": "Project 04\nRC Sensor Circuit with Internal Source Resistance and Time-Varying Load",
+      "job": "prompts/slide_04.json",
+      "out": "origin_image/slide_04.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide04",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_04.json",
+        "prompt_sha256": "1de3c488eab6bc03bf6ee8558bd12b162ed2de34bf2c582893b0b3b13c94620f",
+        "dispatched_at": "2026-10-28T05:42:46Z"
+      },
+      "result": {
+        "agent_id": "/root/slide04",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a18108-2476-7753-b27d-41ca01902c05/exec-b0703bc7-0955-4416-b6f9-a3ba415c7a7e.png",
+        "selected_source_sha256": "14fb9ae97ed0e23bd23d41199e903b6708d6b5be500eb46d19cbe35adad5c8ad",
+        "final_image": "origin_image/slide_04.png",
+        "final_image_sha256": "14fb9ae97ed0e23bd23d41199e903b6708d6b5be500eb46d19cbe35adad5c8ad",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: correct R_s, C and load parallel branches/common return; load stage schematic and all five groups readable.",
+        "recorded_at": "2026-10-28T06:57:40Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_05",
+      "number": 5,
+      "title": "Project 05\nRadioactive Decay with Background Radiation and Detector Dead Time",
+      "job": "prompts/slide_05.json",
+      "out": "origin_image/slide_05.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide05",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_05.json",
+        "prompt_sha256": "97cc20965ca7e572779af4928aa8f8a31b0a2aa9ffefd65183e435ea1ec5e79b",
+        "dispatched_at": "2026-10-28T05:43:11Z"
+      },
+      "result": {
+        "agent_id": "/root/slide05",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a18108-7d01-7d00-ace1-a82e53117359/exec-d4f1a1cc-2273-4fef-8846-db07a3ebb1db.png",
+        "selected_source_sha256": "1aa416a41e0219aecd62ac43fd103091f4b6a2c2ab9ebb398f09e027691f77ae",
+        "final_image": "origin_image/slide_05.png",
+        "final_image_sha256": "1aa416a41e0219aecd62ac43fd103091f4b6a2c2ab9ebb398f09e027691f77ae",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size QA after localized repairs: incoming/recorded events aligned, E omitted within recovery interval after D, conceptual sequence has no calibrated numeric timing; text readable.",
+        "recorded_at": "2026-10-28T07:10:49Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_06",
+      "number": 6,
+      "title": "Project 06\nTwo-Isotope Decay Mixture with Efficiency and Counting Noise",
+      "job": "prompts/slide_06.json",
+      "out": "origin_image/slide_06.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide06",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_06.json",
+        "prompt_sha256": "d82a3021a71fb551097a572d59fa2d6d649f0f8b3cdd4ce163072a0cbf847e37",
+        "dispatched_at": "2026-10-28T05:43:31Z"
+      },
+      "result": {
+        "agent_id": "/root/slide06",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a18108-de9d-7be1-bdf2-7ea45c0f4601/exec-830fbae2-9ec3-4870-9e0b-de1ed155e4f8.png",
+        "selected_source_sha256": "6e13dd1358efe887d787efc8a1eda01be6b57e5f29f987a97b8a664e69c45289",
+        "final_image": "origin_image/slide_06.png",
+        "final_image_sha256": "6e13dd1358efe887d787efc8a1eda01be6b57e5f29f987a97b8a664e69c45289",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Readable English and coherent two-component decay-to-detector diagram; faster and slower components visibly combine before detection; conceptual counts show variation without numerical claims.",
+        "recorded_at": "2026-10-28T07:01:31Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_07",
+      "number": 7,
+      "title": "Project 07\nCooling with Thermal Radiation and Changing Ambient Temperature",
+      "job": "prompts/slide_07.json",
+      "out": "origin_image/slide_07.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide07",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_07.json",
+        "prompt_sha256": "52b9b022c85f7343a353afef7a9df6f32be96f32a17f8bb9fdea1d8f7a050760",
+        "dispatched_at": "2026-10-28T05:43:55Z"
+      },
+      "result": {
+        "agent_id": "/root/slide07",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a18109-2bf4-72f0-a101-3b7f9d24b7ff/exec-d65cf56f-3558-4742-a7d5-f98c38a4f416.png",
+        "selected_source_sha256": "86222bf350dec1d665cdac72d6cd0c995520d4ea819dc1b7a8c2f2f5e0f65a91",
+        "final_image": "origin_image/slide_07.png",
+        "final_image_sha256": "86222bf350dec1d665cdac72d6cd0c995520d4ea819dc1b7a8c2f2f5e0f65a91",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size QA after local edit: all content readable and scientific mappings correct; approved style retained.",
+        "recorded_at": "2026-10-28T07:07:36Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_08",
+      "number": 8,
+      "title": "Project 08\nCooling of a Heated Object with Internal Heat Generation",
+      "job": "prompts/slide_08.json",
+      "out": "origin_image/slide_08.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide08",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_08.json",
+        "prompt_sha256": "9fc09ac247b85da5bfbafcb5bf02b9e3b2c0c288d3a7e7f2c68fb6cfda0b9863",
+        "dispatched_at": "2026-10-28T05:44:19Z"
+      },
+      "result": {
+        "agent_id": "/root/slide08",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a18109-8a65-79c2-bf36-d9aecda9b674/exec-b6a74ee5-1a77-46e4-b138-d21ee745bffc.png",
+        "selected_source_sha256": "29f8fd2f5a8908d549039b4342937358ba216359fb00c31a066fd445386ff779",
+        "final_image": "origin_image/slide_08.png",
+        "final_image_sha256": "29f8fd2f5a8908d549039b4342937358ba216359fb00c31a066fd445386ff779",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: generation and outward losses, thermal storage, correct cooling/steady/warming balances; all five groups readable.",
+        "recorded_at": "2026-10-28T07:02:00Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_09",
+      "number": 9,
+      "title": "Project 09\nBounded 2D Ising Ferromagnet",
+      "job": "prompts/slide_09.json",
+      "out": "origin_image/slide_09.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide09",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_09.json",
+        "prompt_sha256": "7f87e840e21d9a9dec9de037cb290c254d56768eefce5d4af7f902d8a1320317",
+        "dispatched_at": "2026-10-28T05:44:39Z"
+      },
+      "result": {
+        "agent_id": "/root/slide09",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a18109-de97-7150-a5f5-25d1144fa7d2/exec-f1a887de-d8e8-4a40-ba73-20d05196099c.png",
+        "selected_source_sha256": "e6c4dabf579972abebd38ffb84a724a33651fa9f22c8d59d9d732a82c7bb9879",
+        "final_image": "origin_image/slide_09.png",
+        "final_image_sha256": "e6c4dabf579972abebd38ffb84a724a33651fa9f22c8d59d9d732a82c7bb9879",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size QA after local edit: all content readable and scientific mappings correct; approved style retained.",
+        "recorded_at": "2026-10-28T07:07:36Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_10",
+      "number": 10,
+      "title": "Project 10\nMonte Carlo Field of an Irregular Charged Body",
+      "job": "prompts/slide_10.json",
+      "out": "origin_image/slide_10.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide10",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_10.json",
+        "prompt_sha256": "b01c883f54e8df219fe8c400f7bfd46fad01e7b0a6a7a6a3e1ab5b698a840c09",
+        "dispatched_at": "2026-10-28T05:45:01Z"
+      },
+      "result": {
+        "agent_id": "/root/slide10",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a1810a-3cac-7153-8b8f-0b625b28c083/exec-62ebf989-9f1e-400d-8ad2-676b90c92632.png",
+        "selected_source_sha256": "85f568fc2c0c7fa51834cc553850c605e0ff225aef5428bdd812eecf5b149f08",
+        "final_image": "origin_image/slide_10.png",
+        "final_image_sha256": "85f568fc2c0c7fa51834cc553850c605e0ff225aef5428bdd812eecf5b149f08",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size QA after local repair: resultant field points outward from positive body, conceptual sampling only, complete readable content.",
+        "recorded_at": "2026-10-28T07:12:24Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_11",
+      "number": 11,
+      "title": "Project 11\nDamped Mass–Spring Response",
+      "job": "prompts/slide_11.json",
+      "out": "origin_image/slide_11.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide11",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_11.json",
+        "prompt_sha256": "d053bbf6e7960ab49f27c73854c8c08956840a153ddcc83679d48cf11ecf569c",
+        "dispatched_at": "2026-10-28T06:58:03Z"
+      },
+      "result": {
+        "agent_id": "/root/slide11",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a1814d-0630-7d41-bdb1-a8c4a055f5cb/exec-cbaf31e7-f40b-4d60-8666-30e7fbe05602.png",
+        "selected_source_sha256": "b1ea9defb0f56fea4e567afbe418432a91f66e9e713bca416fe96c8788095d2b",
+        "final_image": "origin_image/slide_11.png",
+        "final_image_sha256": "b1ea9defb0f56fea4e567afbe418432a91f66e9e713bca416fe96c8788095d2b",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size QA after localized edit: correct parallel spring/damper and explicit velocity/damping-force opposition in both directions; all content readable.",
+        "recorded_at": "2026-10-28T07:04:47Z"
+      },
+      "blocker": null
+    },
+    {
+      "slide_id": "slide_12",
+      "number": 12,
+      "title": "Project 12\nFinite-Angle Pendulum Motion",
+      "job": "prompts/slide_12.json",
+      "out": "origin_image/slide_12.png",
+      "input_images": [
+        {
+          "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+          "role": "approved sample style reference",
+          "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+        }
+      ],
+      "requires_context_images": true,
+      "status": "recorded",
+      "dispatch": {
+        "agent_id": "/root/slide12",
+        "agent_nickname": null,
+        "prompt": "prompts/slide_12.json",
+        "prompt_sha256": "b3c96e32717057bc2e5719361d4f019493e6c5679a3b499d5f4ab24e9cc1ee1a",
+        "dispatched_at": "2026-10-28T06:58:26Z"
+      },
+      "result": {
+        "agent_id": "/root/slide12",
+        "backend_used": "built-in image tool",
+        "selected_source": "/Users/khairuladib/.codex/generated_images/01a1814d-65ff-7143-9ed7-cf03ab078889/exec-085f85b0-97d5-48a0-b3e8-ab0eb6e2276a.png",
+        "selected_source_sha256": "a14b8fa3f876ec19c75d78b893a8d2b6494e1ef352b15ea1404de579fb93dcfe",
+        "final_image": "origin_image/slide_12.png",
+        "final_image_sha256": "a14b8fa3f876ec19c75d78b893a8d2b6494e1ef352b15ea1404de579fb93dcfe",
+        "expected_backend": "built-in image tool",
+        "expected_backend_labels": [
+          "built-in image tool",
+          "image_gen"
+        ],
+        "sample_generation_method_matched": true,
+        "qa_note": "Parent full-size inspection: complete readable five groups, correct conceptual geometry and physical interpretation, no clipping or numerical results.",
+        "recorded_at": "2026-10-28T07:01:44Z"
+      },
+      "blocker": null
+    }
+  ],
+  "updated_at": "2026-10-28T07:12:24Z"
+}

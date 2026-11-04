@@ -1,0 +1,13 @@
+Sekarang kita bandingkan dua jenis perubahan. Pertama, kita tukar susunan equation. Persamaan kanan diletakkan dahulu dan persamaan kiri kemudian. Untuk mengekalkan masalah yang sama, baris A dan entry b mesti ditukar bersama. Unknown order dalam x kekal I satu, kemudian I dua.
+
+Run section Equivalent Equation Ordering. Kod memilih baris dua kemudian baris satu untuk A, dan melakukan susunan yang sama pada b. Current yang dikira tetap dua ampere dan satu ampere. Maximum difference daripada jawapan asal hampir sifar. Physics tidak berubah; cara kita menyenaraikan equation sahaja berubah.
+
+Jika kita menukar A tetapi tidak b, setiap equation akan dipadankan dengan source yang salah. Itu bukan lagi penulisan semula masalah yang sama. Jadi setiap representation change perlu dilakukan secara konsisten.
+
+Perubahan kedua ialah physical input. Kita ubah source kanan daripada dua volt kepada dua perpuluhan satu volt, sambil mengekalkan resistance dan source kiri. Sebelum run, jangka sama ada satu current sahaja atau kedua-duanya boleh berubah. Oleh sebab dua loop coupled melalui shared resistor, kedua-duanya boleh berubah.
+
+Run section A Small Source Change. I satu menjadi lebih kurang dua perpuluhan kosong kosong sembilan kosong sembilan ampere. I dua menjadi lebih kurang satu perpuluhan kosong dua tujuh dua tujuh ampere. Kedua-duanya meningkat untuk perubahan ini. Kita tidak perlu mengira condition number untuk menjelaskan pemerhatian asas itu.
+
+Sekarang buat satu modification kecil dalam scratch copy. Tukar source kanan kepada dua perpuluhan dua volt. Simpan semua input lain. Predict dahulu, solve, kemudian validate dengan source baharu, bukan dengan dua volt yang lama. Kamu patut mendapat lebih kurang dua perpuluhan kosong satu lapan satu lapan ampere dan satu perpuluhan kosong lima empat lima lima ampere.
+
+Bezakan ayat ini: saya menukar representation, atau saya menukar physical input. Perbezaan itu akan menjadi sangat berguna apabila kita buat parameter sweep minggu depan. Section residual, rank, conditioning, dan power balance dalam Live Script kekal optional stretch. Hari ini direct substitution sudah menjadi check Core kita.

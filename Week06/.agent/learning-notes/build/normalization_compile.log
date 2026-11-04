@@ -1,0 +1,10 @@
+Root: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/learning-notes/Week06_Numerical_Differentiation.tex
+Compiler: tectonic
+Command: /Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic -X compile --outdir /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/learning-notes/build --outfmt pdf --print --untrusted Week06_Numerical_Differentiation.tex
+Exit code: 0
+PDF: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/learning-notes/build/Week06_Numerical_Differentiation.pdf
+
+Attempts:
+- tectonic: passed (exit 0)
+
+Final terminology/page-flow revision compiled 2026-09-08 with bundled Tectonic; output is 5 A4 pages.

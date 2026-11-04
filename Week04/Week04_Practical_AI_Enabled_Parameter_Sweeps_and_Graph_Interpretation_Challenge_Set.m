@@ -1,4 +1,4 @@
-%[text] # Week 4 Practical Activity: Parameter Sweeps and Graph Interpretation Challenge Set
+%[text] # Parameter Sweeps: Compare one controlled change and interpret the graph
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 AI-Enabled Group Investigation
 %%
@@ -14,6 +14,9 @@ matlab_release = version('-release');
 resistor_V_V = 0:1:12;
 resistor_R_ohm = [5 10 20];
 %[text] **Required evidence:** prediction, variables and units, swept parameter, fixed input/model list. **Defence hook:** explain why changing voltage range between cases would weaken the comparison.
+%%
+%[text] ## Algorithm / Pseudocode Checkpoint
+%[text] Before writing the sweep code, state the ordered computational steps: list the fixed inputs and the swept parameter, evaluate the model for each case, plot comparable curves, perform the planned baseline or limiting-case check, and interpret the trend. Label which MATLAB variable changes and which remain fixed.
 %%
 %[text] ## Question 2: Build and Plot the Resistor Sweep
 %[text] Evaluate $I=V/R$ for all three resistances using a loop or an equivalent clearly traceable array method. Overlay the three current-voltage curves on the same axes and identify the 10 ohm case as the baseline.
@@ -58,7 +61,7 @@ pendulum_g_mps2 = [1.62 3.71 9.81];
 %[text] **Required evidence:** cross-context comparison, validation judgement, concise AI decision record, and fresh-session run confirmation. **Defence hook:** explain why a parameter sweep is an experiment on a fixed model rather than a collection of unrelated curves.
 %%
 %[text] ## Formative Capstone Preference Checkpoint
-%[text] Open `Week04_Capstone_Preference_Checkpoint.md`. As a group, record one preferred and one alternate bounded problem space plus one parameter you would consider modifying while holding the rest of the model fixed. This is a formative Week 4 choice, not the Week 6 feasibility submission.
+%[text] Open `Week04_Capstone_Preference_Checkpoint.md`. As a group, review your assigned brief and paired family, then record one parameter or realism dimension you would consider examining while holding the rest of the model fixed. This is a formative Week 4 scope checkpoint, not a project-choice or separate graded submission.
 %%
 %[text] ## Submission and Individual Defence
 %[text] Submit one completed group file through the Week 4 Google Classroom practical assignment only after running it from the top in a fresh MATLAB session. After submissions are locked, the instructor assigns a question slot and, where needed, a parameter or defect variant; one selected group member explains the model, code/output, validation, and physical conclusion.

@@ -1,4 +1,4 @@
-%[text] # Week 5 Practical Activity: Root Finding Challenge Set
+%[text] # Root Finding: Locate a physical solution and verify the residual
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 AI-Enabled Group Investigation
 %%
@@ -20,6 +20,9 @@ proj_tolerance_m = 1e-3;
 %[text] ## Question 2: Build a Residual Graph for the Projectile
 %[text] Plot the projectile residual over a suitable low-angle scan and mark or state where it crosses zero. Use the graph to justify your bracket before applying a numerical method.
 %[text] **Required evidence:** labelled residual graph, bracket selected from the graph, sign-change calculation. **Defence hook:** identify the root location on the graph without using a formula rearrangement.
+%%
+%[text] ## Algorithm / Pseudocode Checkpoint
+%[text] Before applying a root-finding method, state the ordered steps: define the residual and its units, choose and check a sign-changing bracket, evaluate the next trial value, update the bracket from the residual sign, stop using the supplied rule, substitute the result back into the residual, and interpret the root physically.
 %%
 %[text] ## Question 3: Complete and Validate a Bisection Search
 %[text] Use bisection on your projectile bracket until `abs(residual_m) < proj_tolerance_m`. Validate the answer by substituting the final angle back into the residual and report the low-angle launch angle with units.

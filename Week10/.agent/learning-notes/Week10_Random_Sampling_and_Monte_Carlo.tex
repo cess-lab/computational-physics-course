@@ -9,26 +9,29 @@
 \usepackage{hyperref}
 \hypersetup{colorlinks=true,urlcolor=MidnightBlue,linkcolor=MidnightBlue}
 \setlength{\parindent}{0pt}\setlength{\parskip}{4pt}
+\hyphenpenalty=10000\exhyphenpenalty=10000\emergencystretch=3em
 \newcommand{\course}{PHY4605 Computational Methods in Physics}
 \newcommand{\units}[1]{\,\mathrm{#1}}
 \newtcolorbox{keybox}{colback=RoyalBlue!5,colframe=RoyalBlue!65!black,boxrule=.7pt,arc=2mm}
 \newtcolorbox{checkbox}{colback=ForestGreen!5,colframe=ForestGreen!55!black,boxrule=.7pt,arc=2mm}
 \newtcolorbox{aibox}{colback=BurntOrange!7,colframe=BurntOrange!80!black,boxrule=.7pt,arc=2mm}
-\lstdefinestyle{matlabstyle}{language=Matlab,basicstyle=\ttfamily\footnotesize,keywordstyle=\color{RoyalBlue!75!black},commentstyle=\color{ForestGreen!55!black},stringstyle=\color{BurntOrange!80!black},numbers=left,numberstyle=\scriptsize\color{black!50},numbersep=5pt,frame=single,rulecolor=\color{RoyalBlue!25},backgroundcolor=\color{RoyalBlue!3},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=true}
+\lstdefinestyle{matlabstyle}{language=Matlab,basicstyle=\ttfamily\footnotesize,keywordstyle=\color{RoyalBlue!75!black},commentstyle=\color{ForestGreen!55!black},stringstyle=\color{BurntOrange!80!black},numbers=left,numberstyle=\scriptsize\color{black!50},numbersep=5pt,frame=single,rulecolor=\color{RoyalBlue!25},backgroundcolor=\color{RoyalBlue!3},showstringspaces=false,columns=fullflexible,keepspaces=true,breaklines=true,captionpos=b,abovecaptionskip=4pt,belowcaptionskip=0pt}
 \begin{document}
 {\large\textsc{\course}}\\[-2pt]
 {\small Learning Note \textbar\ Week 10}\par\vspace{4pt}
-{\LARGE\bfseries Random Sampling and Monte Carlo:\\From One Random Path to Reliable Evidence}\par\vspace{3pt}
+{\LARGE\bfseries Monte Carlo Sampling:\\Estimate physical variation}\par\vspace{3pt}
 \textit{Use repeated random trials to describe physical variability, test reproducibility, and see how sample size affects a Monte Carlo estimate.}
 
 \begin{keybox}\textbf{Physical question.} A small particle receives random left-or-right kicks. One path is unpredictable, but if we simulate many particles under the same rule, what stable pattern can we extract from their final positions?\end{keybox}
 
-\section*{Core learning outcomes}
+\section*{Learning outcomes}
 \begin{enumerate}[nosep,leftmargin=5mm]
-\item explain what one random trial represents physically and reproduce a supplied random-sampling scaffold;
+\item explain what one random trial represents physically and reproduce supplied random-sampling starter code;
 \item calculate and interpret the mean and spread of repeated outcomes; and
 \item compare several sample sizes, use a fixed random seed when required, and validate the result against the physical model.
 \end{enumerate}
+
+\textbf{How to use this note.} Follow the random-walk rule to the algorithm, trace the line-numbered MATLAB starter code, then pause at each interpretation and validation check. The Guided extension and Optional extension are not required for the ordinary route.
 
 \section*{1. A random model still needs a physical rule}
 The lecture model is a one-dimensional symmetric random walk. A particle starts at
@@ -50,6 +53,7 @@ For this model, \textbf{one trial is one complete 100-step path}. One trial cont
 
 Repeating the Monte Carlo experiment means simulating many independent 100-step paths under the same physical assumptions. The number of repeated paths is the Monte Carlo sample size $M$.
 
+\Needspace{11\baselineskip}
 Keep these two counts separate:
 
 \begin{center}\small
@@ -83,29 +87,30 @@ The computational rule is simple:
 This is the same course reasoning chain used in earlier weeks: physical model $\rightarrow$ algorithm $\rightarrow$ code $\rightarrow$ numerical evidence $\rightarrow$ validation $\rightarrow$ interpretation.
 
 \Needspace{21\baselineskip}
-\section*{4. MATLAB random-sampling scaffold}
-Base MATLAB provides the random numbers. The Week 10 learning target is reading and modifying the scaffold, not deriving a random-number generator.
+\section*{4. MATLAB starter code for random sampling}
+Base MATLAB provides the random numbers. The Week 10 learning target is reading and modifying the starter code, not deriving a random-number generator.
 
-\begin{lstlisting}[style=matlabstyle]
+\begin{lstlisting}[style=matlabstyle,caption={MATLAB generation of random steps and cumulative trajectories}]
 n_steps = 100;
 step_length_mm = 1;
-maximum_trials = 10000;
+n_trials = 10000;
 
-rng(4605,'twister')
-u = rand(n_steps,maximum_trials);
-direction = 2*(u >= 0.5)-1;
-step_mm = step_length_mm*direction;
+rng(4605,'twister')             % fixed seed for reproducibility
+u = rand(n_steps,n_trials);
+step_mm = step_length_mm*(2*(u >= 0.5)-1);
 
 trajectory_mm = cumsum(step_mm,1);
 final_position_mm = trajectory_mm(end,:);
 \end{lstlisting}
 
-The expression \texttt{u >= 0.5} produces logical values. Multiplying by 2 and subtracting 1 converts them to $-1$ or $+1$. Multiplying by \texttt{step\_length\_mm} attaches the physical step scale.
+The expression \texttt{u >= 0.5} produces logical 0 or 1 values. Multiplying by 2 and subtracting 1 maps them to $-1$ or $+1$, then \texttt{step\_length\_mm} attaches the physical step scale. Each column is one trial, and \texttt{cumsum(step\_mm,1)} cumulatively adds the steps down that column, so the final row stores one final position per trial.
 
-\begin{aibox}\textbf{Do not confuse the seed with a physical parameter.} The seed chooses a reproducible random-number sequence. It does not represent time, position, temperature, or a property of the particle. Changing the seed should change finite-sample details while preserving the statistical behaviour of a correct model.\end{aibox}
+The call \texttt{rng(4605,'twister')} sets a fixed starting state for MATLAB's pseudo-random generator. With the same seed and the same code, another student can reproduce the same sequence and compare results. Changing the seed changes finite-sample details, but it does not change the physical rule.
+
+\begin{aibox}\textbf{Reproducibility is not validation.} A fixed seed can reproduce a coding defect perfectly. Always pair a reproducible run with a physical or numerical validation check.\end{aibox}
 
 \section*{5. One trajectory is one possible history}
-The first simulated path below is produced with the locked seed. Another valid seed can produce a very different-looking path.
+The first simulated path below uses the fixed seed shown in the starter code. Another valid seed can produce a very different-looking path.
 
 \begin{figure}[H]
 \centering
@@ -115,8 +120,9 @@ The first simulated path below is produced with the locked seed. Another valid s
 
 A trajectory is useful for connecting the code to motion, but one trajectory cannot tell us the long-run mean or spread. Those require repeated trials.
 
+\Needspace{32\baselineskip}
 \section*{6. Repeated trials produce a distribution}
-With $M=10000$ independent paths, the locked simulation gives a distribution of final positions.
+With $M=10000$ independent paths, the supplied fixed-seed run gives a distribution of final positions.
 
 \begin{figure}[H]
 \centering
@@ -133,10 +139,10 @@ s_{\mathrm{final}}=9.9423\units{mm}.
 
 The \textbf{mean} describes the centre of the repeated outcomes. The \textbf{spread} describes how widely individual outcomes vary around that centre. A mean near zero does not mean every particle finishes at zero.
 
-\begin{checkbox}\textbf{Core interpretation check.} If the final-position mean is close to $0\units{mm}$ but the spread is about $10\units{mm}$, the two results are not contradictory. Symmetry controls the centre; accumulated random steps create the variability.\end{checkbox}
+\begin{checkbox}\textbf{Required interpretation check.} If the final-position mean is close to $0\units{mm}$ but the spread is about $10\units{mm}$, the two results are not contradictory. Symmetry controls the centre; accumulated random steps create the variability.\end{checkbox}
 
 \section*{7. Sample size changes the estimate, not the physical walk}
-Use the first 100, 1000, and 10000 trials from the same reproducible simulation:
+Use the first 100, 1000, and 10000 trials from the same reproducible simulation. A finite sample is the particular set of $M$ paths included in one run, so its mean and spread can fluctuate:
 
 \begin{center}\small
 \begin{tabular}{rrr}
@@ -161,9 +167,9 @@ The mean does not move monotonically toward zero: $0.040$, $0.066$, then $-0.128
 The spread stays near $10\units{mm}$ for all three sample sizes because the underlying 100-step physical process has not changed. More Monte Carlo trials improve our evidence about the distribution; they do not make individual random walks less variable.
 
 \section*{8. Validate with the model, not with appearance alone}
-Two Core checks follow directly from the physical rule.
+Two required checks follow directly from the physical rule.
 
-\textbf{Symmetry check.} Equal left/right probabilities imply a long-run mean near $0\units{mm}$. The locked mean $-0.128\units{mm}$ is small compared with the width of the distribution.
+\textbf{Symmetry check.} Equal left/right probabilities imply a long-run mean near $0\units{mm}$. The supplied mean $-0.128\units{mm}$ is small compared with the width of the distribution.
 
 \textbf{Step-rule check.} After exactly 100 steps of $\pm1\units{mm}$, every final position must be an even integer number of millimetres. A result such as $7.3\units{mm}$ would violate the model even if it appeared inside a plausible-looking histogram.
 
@@ -186,23 +192,24 @@ Interpretation & more trials stabilise estimates without removing physical rando
 \end{tabular}
 \end{center}
 
+\Needspace{8\baselineskip}
 In an assessment, syntax may be supplied. You still need to define one trial, explain what repeated outcomes mean, keep physical units, distinguish mean from spread, and justify a validation check.
 
-\section*{Working exposure: standard error and random-walk scaling}
-A supplied standard-error estimate for the mean is
+\section*{Guided extension: standard error and random-walk scaling}
+This guided extension asks you to read supplied values and interpret their meaning; independent derivation is not required. A supplied standard-error estimate for the mean is
 \[
 \mathrm{SE}(\overline{x})\approx\frac{s}{\sqrt{M}}.
 \]
-For the locked simulation, the supplied values are about $1.063$, $0.310$, and $0.099\units{mm}$ for $M=100$, 1000, and 10000. Standard error describes precision of the \emph{estimated mean}, not particle spread.
+For the supplied fixed-seed run, the values are about $1.063$, $0.310$, and $0.099\units{mm}$ for $M=100$, 1000, and 10000. Standard error describes precision of the \emph{estimated mean}, not particle spread.
 
 For the ideal symmetric walk, the supplied final-position scaling is
 \[
 s_x\sim a\sqrt{N}.
 \]
-With $a=1\units{mm}$ and $N=100$, this gives $10\units{mm}$; the simulated $9.9423\units{mm}$ is close. Interpreting the scaling is Working exposure; deriving it is not required.
+With $a=1\units{mm}$ and $N=100$, this gives $10\units{mm}$; the simulated $9.9423\units{mm}$ is close. Interpreting the scaling is part of the guided extension; deriving it is not required.
 
-\section*{Optional stretch}
-Distribution derivations, statistical mechanics, variance reduction, MCMC diagnostics, and formal convergence theory are outside the Week 10 Core route.
+\section*{Optional extension}
+Distribution derivations, statistical mechanics, variance reduction, MCMC diagnostics, and formal convergence theory are outside the Week 10 required route. These topics are not required for ordinary pass-level work here.
 
 \section*{Three takeaways}
 \begin{enumerate}[nosep,leftmargin=7mm]
@@ -211,6 +218,6 @@ Distribution derivations, statistical mechanics, variance reduction, MCMC diagno
 \item A fixed seed supports reproducibility; sample-size and physical checks support trustworthiness.
 \end{enumerate}
 
-\begin{keybox}\textbf{Preparation for the practical.} Be ready to identify one random trial, trace a supplied random-sampling scaffold, interpret a histogram or summary table, compare sample sizes, use a fixed seed when needed, and validate the Monte Carlo result against independent physical evidence.\end{keybox}
+\begin{keybox}\textbf{Preparation for the practical.} Be ready to identify one random trial, trace supplied random-sampling starter code, interpret a histogram or summary table, compare sample sizes, use a fixed seed when needed, and validate the Monte Carlo result against independent physical evidence.\end{keybox}
 
 \end{document}

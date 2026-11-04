@@ -1,0 +1,11 @@
+Ini audit terakhir sebelum kita minta MATLAB solve. Kita baca empat entry A satu per satu. Entry baris satu, column satu ialah tiga ohm. Ia datang daripada resistor kiri dua ohm tambah resistor shared satu ohm, kedua-duanya mendarab I satu dalam persamaan kiri.
+
+Entry baris satu, column dua ialah negatif satu ohm. Ia datang daripada sumbangan negatif R shared darab I dua dalam persamaan kiri. Entry baris dua, column satu juga negatif satu ohm, tetapi kali ini ia datang daripada sumbangan negatif R shared darab I satu dalam persamaan kanan. Nilai sama tidak bermaksud kita boleh abaikan maksud baris dan column.
+
+Entry baris dua, column dua ialah empat ohm. Ia datang daripada resistor kanan tiga ohm tambah resistor shared satu ohm, yang mendarab I dua dalam persamaan kanan. Semua empat entry masih boleh ditunjuk balik kepada litar.
+
+Sekarang setiap pasangan pilih satu entry. Terangkan nilainya, tandanya, unitnya, dan persamaan yang diwakilinya. Pasangan lain semak menggunakan persamaan, bukan berdasarkan warna pada slide sahaja. Jika ada yang kata off-diagonal mesti sentiasa negatif, kita perhalus ayat itu. Untuk pilihan dua mesh clockwise dan resistor shared dalam litar ini, coefficient tersebut negatif kerana current contributions bertentangan. Tanda datang daripada model dan convention yang dipilih.
+
+Bayangkan saya tersalah taip plus satu pada top-right. Adakah MATLAB akan tahu bahawa kita tersalah tulis physical model? Tidak semestinya. Solver menerima coefficient yang kita masukkan. Sebab itulah audit sebelum solve menjimatkan masa debugging kemudian.
+
+Bila kamu boleh trace semua empat entry, barulah matrix itu menjadi ringkasan yang boleh dipercayai. Kita sudah ada model, unknown order, equations, dan unit. Sekarang kita buka Live Script dan lihat bagaimana struktur yang sama muncul dalam kod.

@@ -1,0 +1,9 @@
+Mari baca nombor kembali pada litar. I satu ialah dua ampere dan positif. Maka current mesh kiri ikut clockwise reference yang kita pilih. I dua ialah satu ampere dan juga positif, jadi ikut clockwise reference kanan. Shared current ialah satu ampere ke bawah untuk reference yang dilukis.
+
+Prediction kita tadi ialah I satu lebih besar daripada I dua. Hasil dua ampere berbanding satu ampere menyokong prediction itu untuk nilai komponen ini. Kita tetap sebut untuk litar ini, kerana current dalam coupled circuit bergantung pada keseluruhan persamaan, bukan satu source sahaja.
+
+Cuba lengkapkan ayat: hasil pengiraan menunjukkan apa, check kita menunjukkan apa, dan model kita mengabaikan apa? Contohnya, hasil menunjukkan shared current satu ampere ke bawah. Substitution menunjukkan kedua-dua KVL equations dipenuhi dalam tolerance. Model menggunakan resistor dan source ideal, jadi ia tidak memasukkan semua kesan komponen sebenar, seperti perubahan resistance dengan suhu.
+
+Kalau output negatif, kita tidak terus ubah arrow dan rerun semata-mata untuk mendapat nombor positif. Kita baca tanda berdasarkan reference yang sudah ditetapkan. Jika mahu menukar convention, equations dan interpretation perlu ditukar secara konsisten.
+
+Inilah maksud physical interpretation. Kita menyebut kuantiti, unit, direction, dan kaitan dengan prediction. Kita juga tahu sejauh mana check kita menyokong jawapan. Nombor yang betul tanpa explanation masih belum menunjukkan bahawa kita memahami model.

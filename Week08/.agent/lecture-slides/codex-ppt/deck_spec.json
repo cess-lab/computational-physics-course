@@ -43,7 +43,7 @@
   "slides": [
     {
       "number": 1,
-      "title": "Can a Cooling Rate Predict a Temperature?",
+      "title": "Ordinary Differential Equations: Simulate a changing state from an initial condition",
       "role": "cover and physical question",
       "intent": "Open with a familiar cooling prediction and establish that the goal is a future temperature trajectory.",
       "key_points": ["A warm object starts at 80 C in a room at 20 C.", "Will it lose the same temperature in every equal time interval?", "Use a rate law to predict temperature from 0 to 300 s."],

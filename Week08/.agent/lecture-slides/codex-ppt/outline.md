@@ -1,4 +1,4 @@
-# Week 08 — Simulating Cooling with Euler's Method
+# Week 08 — Ordinary Differential Equations: Simulate a changing state from an initial condition
 
 Status: approved by the lecturer on 2026-09-05, including the strict reference-to-slide mapping. No slide images or PPTX have been generated.
 
@@ -12,7 +12,7 @@ At 300 s, exact T=22.9872241021 C; Euler endpoints are 20.9375000000, 21.9005811
 
 All numerical assets below are MATLAB reference-only inputs for a full-slide ImageGen redraw. They are strict scientific evidence, not style references and not raster overlays. Retain their scripts and CSV data under `../../matlab/`; compare the final redraw with these originals during QA.
 
-## Slide 1 — Can a Cooling Rate Predict a Temperature?
+## Slide 1 — Ordinary Differential Equations: Simulate a changing state from an initial condition
 - Warm object starts at 80 C in a room at 20 C.
 - Predict whether equal time intervals produce equal temperature drops.
 - Connect a rate rule to a sequence of future temperatures.

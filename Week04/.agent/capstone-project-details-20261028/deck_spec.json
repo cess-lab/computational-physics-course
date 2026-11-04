@@ -1,0 +1,361 @@
+{
+  "deck_name": "capstone-project-details-20261028",
+  "language": "English",
+  "goal": "Twelve detailed assigned PHY4605 capstone project briefs, one per project.",
+  "selected_image_backend": "built-in image tool",
+  "max_concurrent_slides": 10,
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "sample-prompts/slide_01.txt and sample-prompts/slide_03.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_01.png",
+    "input_context_preparation": "Parent inspected local approved samples with view_image; worker must inspect listed style reference and use generate mode, referenced_image_paths for style-only context.",
+    "handoff_rule": "Use built-in image_gen generate mode; sample images are style references only. Return a blocker if unavailable."
+  },
+  "approved_style_reference": {
+    "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+    "role": "approved sample style reference",
+    "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+  },
+  "style": {
+    "name": "Teaching Courseware — PHY4605 illustrated scientific briefing",
+    "visual_direction": "Open white canvas, navy title, muted blue and sage accents, occasional muted ochre; clean scientific illustrations with restrained soft depth. Readable regular sans-serif body, bold title and headings.",
+    "deck_consistency": "Match approved samples 01 and 03. Use five content groups consistently while allowing main-visual-driven layout variation.",
+    "avoid": "Outer frames, decorative corners, dense tiny prose, glossy photorealism, unrelated photos."
+  },
+  "deck_context": {
+    "audience": "Year-2 physics students with weak retained MATLAB literacy.",
+    "boundary": "Assigned projects; scaffolded investigation. One main realism feature can suffice. Additional effects optional. Examples of outputs/checks are guidance, not fixed solution route.",
+    "evidence": "Make model, units, supported assumptions, validation and physical interpretation explicit; AI allowed with independent checks. No invented numerical outcomes."
+  },
+  "slides": [
+    {
+      "number": 1,
+      "title": "Project 01\nProjectile Delivery in Crosswind with Quadratic Drag",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A released package must reach an intended delivery region. Investigate how crosswind and quadratic air resistance change its flight and landing outcome.",
+        "Physical reasoning — Gravity changes vertical motion; drag depends on motion relative to the air. A lateral wind can move the package away from the intended flight plane.",
+        "Information needed — Release position (m), launch velocity (m/s), mass (kg), wind vector (m/s), aerodynamic information and target geometry (m). Identify supplied values, estimates and approved assumptions.",
+        "Scope decisions — Is steady wind adequate? Is lateral displacement important enough to require 3D? Can the object be treated as a point? Keep lift, spin and gusts optional unless supported.",
+        "Possible evidence — Possible evidence includes trajectory and landing displacement, a controlled wind comparison, and a no-drag reference. Explain what the prediction can support about delivery accuracy."
+      ],
+      "layout": {
+        "composition": "Approved sample composition retained.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Approved sample image retained."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ],
+      "sample_approved": true
+    },
+    {
+      "number": 2,
+      "title": "Project 02\nProjectile Launch from Elevated Terrain under Wind Shear",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — An object launches above an uneven landing surface while wind changes with height. Investigate whether it reaches the acceptable landing region.",
+        "Physical reasoning — The object encounters different airflow at different heights. Flight ends at intersection with the terrain, which need not be at zero elevation.",
+        "Information needed — Launch position and terrain elevations (m), launch velocity (m/s), wind observations/profile (m/s versus height in m), object properties and acceptable landing region.",
+        "Scope decisions — Which terrain detail matters? Is a vertical-plane model defensible? How should the model handle heights beyond the supported wind information? Gusts and obstacles remain optional.",
+        "Possible evidence — Possible evidence includes trajectory over terrain, landing location and impact speed, comparison with uniform wind, and a simpler terrain reference. Explain sensitivity to wind-profile or elevation assumptions."
+      ],
+      "layout": {
+        "composition": "Terrain scene occupies upper half; five grouped short text areas below and along right.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Large terrain cross-section, release above uneven ground, landing region and wind arrows increasing with height. Label Launch point, Terrain, Wind varies with height, Landing region. Trajectory is a conceptual dashed path, not a quantitative graph. Ensure path ends at terrain intersection. Show wind roughly horizontal and height axis vertical. No guns, use generic projectile/test object."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Project 03\nRC Charging with Leakage and Temperature-Dependent Components",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A capacitor or sensor node charges while leakage and operating temperature alter the response. Investigate the change from an ideal RC baseline.",
+        "Physical reasoning — Current divides between capacitor charging and the leakage path. Temperature may change resistance, capacitance or leakage; these dependencies must be supplied or justified.",
+        "Information needed — Supply and initial voltage (V), resistance and leakage resistance (ohm), capacitance (F), temperature range (degrees C or K as appropriate), and supported component-temperature information.",
+        "Scope decisions — Which temperature dependence matters? Is one leakage path adequate? Use fixed-temperature cases first when appropriate; a coupled self-heating model is optional.",
+        "Possible evidence — Possible evidence includes voltage histories, charging time and final voltage across operating cases. Compare with a no-leakage baseline and check long-time behaviour. Explain the consequences for the sensor node."
+      ],
+      "layout": {
+        "composition": "Approved sample composition retained.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Approved sample image retained."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ],
+      "sample_approved": true
+    },
+    {
+      "number": 4,
+      "title": "Project 04\nRC Sensor Circuit with Internal Source Resistance and Time-Varying Load",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A non-ideal source supplies an RC sensor node whose load changes with time. Investigate voltage droop, recovery and acceptable operation.",
+        "Physical reasoning — Internal resistance creates a current-dependent voltage loss. The capacitor stores charge and influences the transient response as load demand changes.",
+        "Information needed — Source voltage (V), internal resistance (ohm), capacitance (F), initial node voltage (V), load schedule (A or ohm versus s), and an acceptable voltage band if supplied.",
+        "Scope decisions — Represent the load as a current demand or resistance consistently. Are transients important? Is constant source resistance adequate? Keep thermal and wiring effects optional.",
+        "Possible evidence — Possible evidence includes aligned load and node-voltage histories, minimum voltage and recovery behaviour. Compare with a constant-load or ideal-source case and check a steady segment. State whether the supported operating band is maintained."
+      ],
+      "layout": {
+        "composition": "Main circuit upper left, load-stage sequence upper right, five concise supporting groups below.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Correct RC sensor circuit: DC voltage source positive through series internal resistance R_s to node V_C; capacitor C and time-varying load I_L(t) are two parallel branches between node and shared source-negative return. Show load as labelled functional block, no need to prescribe current-source internals. Mark source current into node, capacitor and load currents down the branches. Include a small three-state load-demand strip labelled Low demand, High demand, Recovery; no quantitative plotted curves. Do not omit capacitor or short it."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 5,
+      "title": "Project 05\nRadioactive Decay with Background Radiation and Detector Dead Time",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A detector records decaying-source events together with background, while recovery time can prevent some events being counted. Investigate how recorded counts differ from the source behaviour.",
+        "Physical reasoning — Background adds events; dead time can remove recorded events at high rates. Counts, count rate and source activity are distinct quantities.",
+        "Information needed — Source/background counts, acquisition interval (s), count rate (counts/s), decay information, detector dead time (s), and efficiency/calibration when available.",
+        "Scope decisions — How is background established? Which dead-time model is supported? Is efficiency adequately constant? Do not add pile-up or detailed detector physics without evidence.",
+        "Possible evidence — Possible evidence includes expected and recorded rate histories, the effect of background and event rate, and zero-dead-time or low-rate checks. Explain the regimes where detector effects materially change the conclusion."
+      ],
+      "layout": {
+        "composition": "Event-flow main object across upper middle, five text groups below with readable labels.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Event-flow diagram source events plus separate background arrivals enter detector with a labelled recovery interval, then recorded events. Use two event strips on common conceptual time direction: incoming pulses and recorded pulses; an event arriving during recovery is visibly missed. Label Conceptual event sequence; no numerical count or rate claims. Detector recovers after a detected event in this illustration, no unsupported universal dead-time law. No quantitative decay graph."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 6,
+      "title": "Project 06\nTwo-Isotope Decay Mixture with Efficiency and Counting Noise",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — Recorded counts arise from two decaying components with detection efficiency and statistical variation. Investigate whether the observed time history supports distinguishing the components.",
+        "Physical reasoning — Faster and slower decays contribute to a combined signal. The observation window, relative contributions and counting variation affect what can be inferred.",
+        "Information needed — Decay timescales (s or another consistent time unit), initial contributions/activity where supplied, bin width (s), counts per bin, efficiency (dimensionless), and background information if used.",
+        "Scope decisions — Are timescales sufficiently distinct? Is the observation window informative? Is efficiency constant? Advanced parameter estimation is optional; do not require identification from inadequate data.",
+        "Possible evidence — Possible evidence includes separate expected components, their total and noisy recorded counts; a one-component reference and repeated simulations can support checking. Explain why noise or similar decay times can make the mixture ambiguous."
+      ],
+      "layout": {
+        "composition": "Two components converge into common measurement chain upper middle; five supporting groups in lower half.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Two distinguishable source-component icons Faster decay and Slower decay, both feed a detector, then recorded bins. Use symbolic count-bin blocks with qualitative variation, no numeric results or plotted decay curves. Label Combined signal, Efficiency, Counting variation. Diagram conceptual; do not imply detector separates the two isotopes event by event."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Project 07\nCooling with Thermal Radiation and Changing Ambient Temperature",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A warm object exchanges heat with its surroundings while ambient temperature changes. Investigate how these effects alter its temperature history.",
+        "Physical reasoning — Convection and net thermal radiation contribute to energy transfer. Distinguish ambient air from radiative surroundings if their temperatures differ; radiation calculations require absolute temperature.",
+        "Information needed — Initial and ambient temperature histories (degrees C or K), radiative-surroundings temperature if separate, mass (kg), heat capacity (J/kg/K), area (m2), convection coefficient (W/m2/K), emissivity and time (s).",
+        "Scope decisions — Is one object temperature adequate? Is a constant convection coefficient reasonable? Are ambient variation and radiation material? Spatial heat-flow modelling is optional.",
+        "Possible evidence — Possible evidence includes object and ambient temperature histories, comparison with fixed surroundings or convection-only behaviour, and an equilibrium/no-temperature-difference check. Explain which exchange mechanism matters over the supported range."
+      ],
+      "layout": {
+        "composition": "Large energy-exchange illustration left, information and scope at right; objective and evidence along lower strip.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Warm object in air with separate blue convection arrows and muted coral net radiation arrows outward for a hot object. Label Object temperature, Ambient air, Radiative surroundings. A short three-stage ambient cue Morning, Later, Changed surroundings; no numeric temperatures or graphs. Labels for radiation need absolute temperature, do not conflate air and radiative surroundings."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 8,
+      "title": "Project 08\nCooling of a Heated Object with Internal Heat Generation",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — An initially heated object continues generating heat while losing energy to its surroundings. Investigate conditions for cooling, warming or steady temperature.",
+        "Physical reasoning — Temperature follows the balance between heat generation and heat loss. Internal generation can sustain a steady temperature above ambient.",
+        "Information needed — Generation power or schedule (W versus s), initial/ambient temperature, thermal capacity (J/K) or mass and specific heat, geometry and supported heat-loss information.",
+        "Scope decisions — Is generation uniform and prescribed? Is a lumped temperature adequate? Keep spatial gradients, changing material properties and multiple heat-transfer paths optional unless needed.",
+        "Possible evidence — Possible evidence includes temperature and generation histories, the effect of one generation change, and comparison with zero generation. Check whether heat generation balances loss in an apparent steady state; explain the resulting operating condition."
+      ],
+      "layout": {
+        "composition": "Energy balance centre-left; three qualitative state comparisons to right; five grouped text areas around diagram with clear hierarchy.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Large object cutaway with internal heat-generation symbol, inward arrow labelled Generation (W), outward arrows labelled Heat loss (W), storage label Thermal energy stored. Three small labelled balance states Generation < loss: cooling; Generation = loss: steady; Generation > loss: warming. This is conceptual energy balance, not numerical data or equations. Avoid equating nonzero generation to ambient equilibrium."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Project 09\nBounded 2D Ising Ferromagnet",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A finite lattice of interacting up/down spins provides a simple ferromagnetic model. Investigate how temperature changes domains, magnetisation and energy.",
+        "Physical reasoning — Neighbour interactions and temperature influence spin configurations. Random updates belong to a supplied physical sampling rule; they are not arbitrary flips.",
+        "Information needed — Lattice size, interaction/energy scale, consistently defined temperature or reduced temperature, boundary condition, initial state, update count and random seed. Supply a bounded implementation scaffold.",
+        "Scope decisions — How long should the system equilibrate? Do initial state and finite size matter? Fix most settings and vary one principal factor; algorithm derivation and precise transition claims are beyond Core.",
+        "Possible evidence — Possible evidence includes comparable lattice snapshots and averaged magnetisation/energy after equilibration, repeated seeds and longer-run checks. Explain finite-run variation and the limits of claims from a small lattice."
+      ],
+      "layout": {
+        "composition": "Lattice comparison upper half; process strip centre; five compact text groups below.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Two same-size 5 by 5 conceptual spin lattices, one Low temperature with mainly aligned spins and one High temperature with mixed up/down spins. Legend up/down and label Conceptual configurations; no numeric claims or phase-transition graph. Bottom small process strip Physical random updates → Equilibrate → Measure. Draw exactly equal lattice sizes in both images. Do not imply arbitrary random flips simulate the model correctly."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 10,
+      "title": "Project 10\nMonte Carlo Field of an Irregular Charged Body",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — An irregular charged body has a specified charge distribution. Use physically meaningful random samples to estimate the electric field at selected observation points.",
+        "Physical reasoning — Vector contributions from charge elements add to the net electric field. Sampling and charge weighting must represent the stated geometry and density.",
+        "Information needed — Geometry and observation coordinates (m), volume or surface charge density with consistent units (C/m3 or C/m2), sample count, random seed and any reference geometry supplied.",
+        "Scope decisions — Is the source a volume or a thin surface? Does the sampling represent it without bias? Begin with external observation points; near-source or singular cases require explicit treatment and remain optional.",
+        "Possible evidence — Possible evidence includes field components/magnitude (N/C), direction at observation points, repeated-run spread and sample-count behaviour. A symmetric reference or far-field comparison can support validation where appropriate."
+      ],
+      "layout": {
+        "composition": "Main field geometry upper left, sample-size cue upper right, five supporting groups below.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Irregular positively charged source with plus signs and random sample markers, external observation point P, and a few contribution vectors at P pointing away from individual sampled positive charges; resultant E points broadly away from body. Label Source region, Random samples, Observation point, Vector sum. No inward field lines for positive charge. Include two compact conceptual sample clouds labelled Fewer samples and More samples, no guarantee each larger sample estimate is closer. No quantitative chart."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 11,
+      "title": "Project 11\nDamped Mass–Spring Response",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A disturbed mass–spring system loses energy as it moves. Investigate how damping changes its transient response and settling behaviour.",
+        "Physical reasoning — The spring restores displacement; damping opposes motion and dissipates mechanical energy. Use an initial disturbance as the simplest baseline; additional forcing requires an explicit scope decision.",
+        "Information needed — Mass (kg), stiffness (N/m), damping parameter with units matching the selected law, initial displacement (m), initial velocity (m/s), observation interval (s) and any settling criterion supplied.",
+        "Scope decisions — Are 1D motion, a linear spring and a simple damping law adequate? Nonlinear stiffness, changing support and continued forcing are optional.",
+        "Possible evidence — Possible evidence includes displacement history, energy history and settling behaviour across damping cases. Compare with an undamped reference and refine the timestep to distinguish physical dissipation from numerical error."
+      ],
+      "layout": {
+        "composition": "Large correct spring-mass-damper upper half; grouped explanations and scope/evidence lower half.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Correct mass-spring-damper on horizontal frictionless guide: wall at left, spring and dashpot in parallel between fixed wall and block m, displacement x to right, initial displacement indicated, no ongoing forcing. Use a simple ghost-position sequence with diminishing amplitude labelled Conceptual motion; no quantitative graph. Damping opposes velocity; avoid drawing a force arrow whose direction is inconsistent with shown motion."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    },
+    {
+      "number": 12,
+      "title": "Project 12\nFinite-Angle Pendulum Motion",
+      "role": "single assigned project detailed brief",
+      "intent": "Explain the physical project and defensible decisions, preserving scaffolded Core scope.",
+      "key_points": [
+        "Scenario + objective — A pendulum is released from an angle too large to assume small-angle motion automatically. Investigate how the response differs from the small-angle approximation.",
+        "Physical reasoning — The restoring effect depends on angle; the small-angle approximation has a limited range. Friction is an optional separate effect and must be distinguished from numerical energy drift.",
+        "Information needed — Length (m), gravitational acceleration (m/s2), initial angle (rad for computation), initial angular speed (rad/s), mass (kg) when evaluating energy, time (s) and any supported damping information.",
+        "Scope decisions — Is a point bob on a fixed-length, planar pendulum adequate? Vary initial angle first; pivot friction, rod inertia and moving support remain optional.",
+        "Possible evidence — Possible evidence includes angular displacement and period across initial angles, a small-angle reference and an energy/timestep check. Explain which differences are physical and which may arise from numerical error."
+      ],
+      "layout": {
+        "composition": "Pendulum geometry upper left, small-angle comparison and energy cue upper right, five compact text groups below.",
+        "intent": "Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples."
+      },
+      "visual_elements": {
+        "main_visual": "Finite-angle pendulum with fixed pivot, string length L, bob mass m, dashed vertical equilibrium, angle theta measured from downward vertical, curved path. Compare small-angle and finite-angle geometry schematically, not quantitative curves. Small conservation cue states Undamped: total energy conserved; optional damping: energy decreases. No energy-versus-angle plot and no energy drift claimed as physical. Label Conceptual illustration."
+      },
+      "constraints": [
+        "Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.",
+        "No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.",
+        "No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.",
+        "Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.",
+        "Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps."
+      ]
+    }
+  ]
+}

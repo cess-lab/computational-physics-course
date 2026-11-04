@@ -1,4 +1,4 @@
-%[text] # Week 9 Lecture Demonstration: Fitting Ohm's Law Data
+%[text] # Data Fitting: Infer a physical parameter and read residuals with uncertainty
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

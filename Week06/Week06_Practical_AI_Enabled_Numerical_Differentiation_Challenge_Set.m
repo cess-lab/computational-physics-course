@@ -1,4 +1,4 @@
-%[text] # Week 6 Practical Activity: Numerical Differentiation Challenge Set
+%[text] # Numerical Differentiation: Estimate a physical rate and test the step size
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 AI-Enabled Group Investigation
 %%
@@ -17,6 +17,9 @@ vert_g_mps2 = 9.81;
 vert_t0_s = 0.8;
 vert_h_s = [0.4 0.2 0.1 0.05];
 %[text] **Required evidence:** prediction, model, derivative meaning, and derivative unit. **Defence hook:** explain why negative acceleration does not automatically mean negative velocity.
+%%
+%[text] ## Algorithm / Pseudocode Checkpoint
+%[text] Before calculating a finite difference, state the ordered steps: define the target function and variable, choose a step size, evaluate the two required samples, form the difference quotient, compare step sizes with the analytic reference, and interpret the derivative unit and error.
 %%
 %[text] ## Question 2: Complete One Forward Difference
 %[text] Use `h = 0.4 s`. Evaluate the position at `t0` and `t0+h`, then complete the forward-difference expression `[y(t0+h)-y(t0)]/h`.

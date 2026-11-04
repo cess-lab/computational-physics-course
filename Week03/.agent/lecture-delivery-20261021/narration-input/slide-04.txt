@@ -1,0 +1,11 @@
+Kita sudah ada dua persamaan. Sekarang kita ubah cara menyimpan maklumat yang sama. Kita tetapkan x sebagai satu column vector: I satu di atas, I dua di bawah. Susunan unknown ini mesti konsisten sepanjang pengiraan.
+
+Baris pertama datang daripada persamaan loop kiri. Coefficient untuk I satu ialah tiga, dan coefficient untuk I dua ialah negatif satu. Jadi baris pertama A ialah tiga, negatif satu. Sumber yang sepadan ialah lima volt, jadi entry pertama b ialah lima.
+
+Baris kedua datang daripada persamaan loop kanan. Coefficient untuk I satu ialah negatif satu, dan coefficient untuk I dua ialah empat. Maka baris kedua A ialah negatif satu, empat. Entry kedua b ialah dua volt. A mempunyai dua baris dan dua column. x dan b masing-masing dua baris dan satu column.
+
+Baca matrix multiplication sebagai persamaan. Baris pertama A darab x bermaksud tiga darab I satu, tambah negatif satu darab I dua. Itulah tiga I satu tolak I dua sama dengan lima. Baris kedua pula membina semula persamaan kanan. Matriks tidak menggantikan physics; ia menyimpan coefficient secara teratur.
+
+Cuba lengkapkan dua entry kosong yang saya tunjuk. Kemudian tunjuk entry pada baris dua, column satu. Entry itu berkait dengan persamaan mana dan unknown mana? Jawapannya ialah persamaan loop kanan dan unknown I satu. Unit coefficient itu ohm.
+
+Kita juga perlu bezakan indexing. Dalam MATLAB, x kurungan dua bermaksud entry kedua vector, iaitu I dua. A kurungan satu koma dua bermaksud baris satu, column dua, iaitu coefficient I dua dalam persamaan pertama. Ambil masa untuk trace kedua-dua contoh ini dengan jari. Kesilapan susunan boleh menghasilkan nombor yang kelihatan munasabah tetapi merujuk kepada masalah yang lain.

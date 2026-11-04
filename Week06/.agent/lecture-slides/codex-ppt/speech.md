@@ -1,4 +1,4 @@
-## Slide 1: From nearby values to an instantaneous rate
+## Slide 1: Numerical Differentiation: Estimate a physical rate and test the step size
 
 Today we start with a familiar question: a projectile has a position model, but we want its velocity at one instant. The key idea is that two nearby position values can give us a numerical estimate of that instantaneous rate. We will keep the physics familiar and focus on the computational reasoning.
 

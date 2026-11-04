@@ -1,0 +1,63 @@
+{
+  "slide_count": 12,
+  "notes_count": 12,
+  "aspect_ratio": "16:9",
+  "one_full_canvas_image_per_slide": true,
+  "embedded_image_hashes_match_sources": true,
+  "all_states_complete": true,
+  "pdf_render_pages": 12,
+  "render_source_comparisons": [
+    {
+      "slide": 1,
+      "render_mean_absolute_error": 3.889
+    },
+    {
+      "slide": 2,
+      "render_mean_absolute_error": 3.42
+    },
+    {
+      "slide": 3,
+      "render_mean_absolute_error": 3.396
+    },
+    {
+      "slide": 4,
+      "render_mean_absolute_error": 3.575
+    },
+    {
+      "slide": 5,
+      "render_mean_absolute_error": 3.886
+    },
+    {
+      "slide": 6,
+      "render_mean_absolute_error": 3.632
+    },
+    {
+      "slide": 7,
+      "render_mean_absolute_error": 3.818
+    },
+    {
+      "slide": 8,
+      "render_mean_absolute_error": 3.843
+    },
+    {
+      "slide": 9,
+      "render_mean_absolute_error": 3.436
+    },
+    {
+      "slide": 10,
+      "render_mean_absolute_error": 3.873
+    },
+    {
+      "slide": 11,
+      "render_mean_absolute_error": 3.822
+    },
+    {
+      "slide": 12,
+      "render_mean_absolute_error": 3.268
+    }
+  ],
+  "pptx_sha256": "f6f186844dd8fb44e6ce920f84327cf991f4144945b563ea28808aa765067aa5",
+  "backend": "built-in image tool",
+  "parent_full_size_source_inspection": "all 12 complete",
+  "known_limitations": "Image-based slides; scientific illustrations are conceptual, not numerical simulation output."
+}

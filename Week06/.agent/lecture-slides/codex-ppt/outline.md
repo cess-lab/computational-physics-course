@@ -1,4 +1,4 @@
-# PHY4605 Week 06 Lecture Deck - Draft Outline
+# PHY4605 Week 06 — Numerical Differentiation: Estimate a physical rate and test the step size
 
 **Status:** DRAFT FOR LECTURER REVIEW. Outline only. No Week 06 PPTX or slide-production assets have been created.
 
@@ -14,7 +14,7 @@
 
 ## Slide sequence
 
-### Slide 01 - From Nearby Values to an Instantaneous Rate
+### Slide 01 - Numerical Differentiation: Estimate a physical rate and test the step size
 - **Key points:** `Week 06 | Numerical Differentiation`. Driving question: if a position model is known, how can two nearby values estimate the velocity at one instant?
 - **Visual idea:** clean vertical-motion path with two close time markers and one velocity arrow at `t = 1.0 s`.
 - **Learning job:** make the derivative a physical quantity before introducing a formula.

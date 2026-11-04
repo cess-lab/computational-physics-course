@@ -1,0 +1,11 @@
+Root: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/learning-notes/Week05_Root_Finding.tex
+Compiler: tectonic
+Command: /Users/khairuladib/.codex/plugins/cache/openai-bundled/latex/0.2.6/bin/tectonic -X compile --outdir /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/learning-notes/build --outfmt pdf --print --untrusted Week05_Root_Finding.tex
+Exit code: 0
+PDF: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week05/.agent/learning-notes/build/Week05_Root_Finding.pdf
+
+Attempts:
+- tectonic: passed (exit 0)
+
+Final terminology/page-flow revision compiled 2026-09-08 with bundled Tectonic; output is 5 A4 pages.
+Reviewer page-flow correction compiled 2026-09-08 with bundled Tectonic; output is 5 A4 pages and the variable table is clear of the page 1 footer.

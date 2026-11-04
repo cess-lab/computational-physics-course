@@ -43,7 +43,7 @@
   "slides": [
     {
       "number": 1,
-      "title": "Can Measurements Reveal a Resistance?",
+      "title": "Data Fitting: Infer a physical parameter and read residuals with uncertainty",
       "role": "cover and physical question",
       "intent": "Open with the familiar measurement problem and a prediction about the overall voltage-current trend.",
       "key_points": ["Several voltage-current measurements come from a nominal 47 ohm resistor.", "One noisy point should not determine the resistance estimate.", "Predict a positive slope of roughly 47 V/A."],

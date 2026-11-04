@@ -1,1 +1,14 @@
-Week06 slide-deck gate: outline only; no PPTX present.
+Historical Week 06 slide-deck gate (superseded)
+
+The earlier record, “outline only; no PPTX present,” is retained as historical provenance and is not the current state.
+
+Current verified local state:
+
+- Student-facing artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/Lecture_Slides_Week06.pptx`
+- Hidden Codex-PPT artifact: `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week06/.agent/lecture-slides/codex-ppt/codex-ppt.pptx`
+- Current SHA-256 for both copies: `d8709f8f1dc2188ed69e180ee4294953ad1fca8d06606b77538cde4c84d15c95`
+- Current OpenXML check: 14 slides, 14 presenter-note parts, 14 media images, and `unzip -t` passed.
+- Current Codex-PPT state: `Week06/.agent/lecture-slides/codex-ppt/slide_run_state.json` and `slide_jobs.json` record `slides_recorded` with one accepted sample, 13 recorded slides, and no pending or blocked jobs.
+- Repair provenance and the prior final audit remain in `Week06/.agent/lecture-slides/codex-ppt/qa/qa-ledger.md`; the reconciliation evidence remains under `Week06/.agent/lecture-slides/codex-ppt/qa/reconciliation/`.
+
+Approval caveat: the QA ledger records the authorised Slide 1 scientific-plot exception and final audit, but this historical gate file does not assert any separate external publication approval.

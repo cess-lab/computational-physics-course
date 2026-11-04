@@ -1,4 +1,4 @@
-%[text] # Week 6 Lecture Demonstration: Numerical Differentiation of Vertical Motion
+%[text] # Numerical Differentiation: Estimate a physical rate and test the step size
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

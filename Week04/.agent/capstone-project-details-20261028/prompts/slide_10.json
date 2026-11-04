@@ -1,0 +1,41 @@
+{
+  "slide": 10,
+  "title": "Project 10\nMonte Carlo Field of an Irregular Charged Body",
+  "prompt": "# Codex PPT Slide Image Prompt\n\n## Canvas\n{\n  \"type\": \"16:9 full-slide PowerPoint image\",\n  \"language\": \"English\",\n  \"slide_number\": 10,\n  \"render_slide_number\": false\n}\n\n## Deck Goal\nTwelve detailed assigned PHY4605 capstone project briefs, one per project.\n\n## Required Background\n{\n  \"deck_context\": {\n    \"audience\": \"Year-2 physics students with weak retained MATLAB literacy.\",\n    \"boundary\": \"Assigned projects; scaffolded investigation. One main realism feature can suffice. Additional effects optional. Examples of outputs/checks are guidance, not fixed solution route.\",\n    \"evidence\": \"Make model, units, supported assumptions, validation and physical interpretation explicit; AI allowed with independent checks. No invented numerical outcomes.\"\n  }\n}\n\n## Global Style\n{\n  \"name\": \"Teaching Courseware — PHY4605 illustrated scientific briefing\",\n  \"visual_direction\": \"Open white canvas, navy title, muted blue and sage accents, occasional muted ochre; clean scientific illustrations with restrained soft depth. Readable regular sans-serif body, bold title and headings.\",\n  \"deck_consistency\": \"Match approved samples 01 and 03. Use five content groups consistently while allowing main-visual-driven layout variation.\",\n  \"avoid\": \"Outer frames, decorative corners, dense tiny prose, glossy photorealism, unrelated photos.\"\n}\n\n## Input Images\n\n- Image 1: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png — approved sample style reference; match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout\n\n\n## Slide\n{\n  \"number\": 10,\n  \"title\": \"Project 10\\nMonte Carlo Field of an Irregular Charged Body\",\n  \"subtitle\": \"\",\n  \"role\": \"single assigned project detailed brief\",\n  \"intent\": \"Explain the physical project and defensible decisions, preserving scaffolded Core scope.\"\n}\n\n## Text\n{\n  \"title\": \"Project 10\\nMonte Carlo Field of an Irregular Charged Body\",\n  \"subtitle\": \"\",\n  \"key_points\": [\n    \"Scenario + objective — An irregular charged body has a specified charge distribution. Use physically meaningful random samples to estimate the electric field at selected observation points.\",\n    \"Physical reasoning — Vector contributions from charge elements add to the net electric field. Sampling and charge weighting must represent the stated geometry and density.\",\n    \"Information needed — Geometry and observation coordinates (m), volume or surface charge density with consistent units (C/m3 or C/m2), sample count, random seed and any reference geometry supplied.\",\n    \"Scope decisions — Is the source a volume or a thin surface? Does the sampling represent it without bias? Begin with external observation points; near-source or singular cases require explicit treatment and remain optional.\",\n    \"Possible evidence — Possible evidence includes field components/magnitude (N/C), direction at observation points, repeated-run spread and sample-count behaviour. A symmetric reference or far-field comparison can support validation where appropriate.\"\n  ],\n  \"speaker_focus\": null\n}\n\n## Layout\n{\n  \"composition\": \"Main field geometry upper left, sample-size cue upper right, five supporting groups below.\",\n  \"intent\": \"Use one labelled physical diagram as principal learning object; keep five content groups legible. Vary arrangement while matching the samples.\"\n}\n\n## Visual Elements\n{\n  \"main_visual\": \"Irregular positively charged source with plus signs and random sample markers, external observation point P, and a few contribution vectors at P pointing away from individual sampled positive charges; resultant E points broadly away from body. Label Source region, Random samples, Observation point, Vector sum. No inward field lines for positive charge. Include two compact conceptual sample clouds labelled Fewer samples and More samples, no guarantee each larger sample estimate is closer. No quantitative chart.\"\n}\n\n## Constraints\n[\n  \"Render all five content groups in concise readable English; preserve meaning and units. Use regular body weight and clear headings.\",\n  \"No outer frame, decorative border, timing, watermark, logo or page numbers. Project identifier is content, permitted in title.\",\n  \"No numerical graph or invented computed evidence. Conceptual scientific diagrams only. No code or model derivations.\",\n  \"Do not turn examples into compulsory checklist, imply students choose projects, or claim data/starter files already supplied.\",\n  \"Keep title readable in two or three lines if needed. No tiny text, overflow or overlaps.\"\n]\n\n## Style Reference Rule\nUse Image 1 as the approved sample-slide style reference. Match its palette, typography mood, density, texture, and overall visual identity. Do not copy its exact layout unless this slide's layout explicitly asks for it.\n\n## Input Image Handling Rules\nFor any input image marked as a strict input asset, include it visibly and preserve its content. Do not redraw, replace, relabel, or invent a similar figure. Scale and crop only as needed for composition while keeping the important labels, arrows, data, and relationships recognizable.\n\n## Universal Constraints\n- The final image itself must contain the title and key points.\n- Render English text exactly and legibly; avoid garbled characters.\n- Keep the confirmed deck style consistent while varying layout by slide role.\n- No watermark, unrelated logo, or extra slide number.\n",
+  "out": "slide_10.png",
+  "input_images": [
+    {
+      "path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_03.png",
+      "role": "approved sample style reference",
+      "fidelity": "match white/navy, muted blue/sage, sans-serif hierarchy, clean illustrated scientific language only; do not copy exact circuit layout"
+    }
+  ],
+  "requires_context_images": true,
+  "expected_backend": "built-in image tool",
+  "sample_generation_method": {
+    "backend_used": "built-in image tool",
+    "tool_name": "image_gen",
+    "mode": "generate",
+    "model_config": "built-in default",
+    "prompt_source": "sample-prompts/slide_01.txt and sample-prompts/slide_03.txt",
+    "approved_sample_path": "/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week04/.agent/capstone-project-details-20261028/origin_image/slide_01.png",
+    "input_context_preparation": "Parent inspected local approved samples with view_image; worker must inspect listed style reference and use generate mode, referenced_image_paths for style-only context.",
+    "handoff_rule": "Use built-in image_gen generate mode; sample images are style references only. Return a blocker if unavailable."
+  },
+  "generation_contract": {
+    "must_use_selected_image_backend": true,
+    "must_match_sample_generation_method": true,
+    "forbidden_final_image_methods": [
+      "local drawing/rendering scripts",
+      "Pillow-generated slides",
+      "SVG/HTML/CSS/canvas screenshots",
+      "python-pptx/PptxGenJS/native PPT layout screenshots",
+      "manually composited text/image overlays"
+    ],
+    "must_return": [
+      "backend_used",
+      "selected_source",
+      "qa_note"
+    ]
+  }
+}

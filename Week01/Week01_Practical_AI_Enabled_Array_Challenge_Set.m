@@ -1,4 +1,4 @@
-%[text] # Week 1 Practical Activity: AI-Enabled Array Challenge Set
+%[text] # Arrays and Plots: Represent a physical model and compare prediction with evidence
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

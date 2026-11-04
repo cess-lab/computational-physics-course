@@ -1,4 +1,4 @@
-%[text] # Week 11 Lecture Demonstration: Sensitivity and Uncertainty with Hooke's Law
+%[text] # Sensitivity Analysis: Propagate input ranges into defensible output ranges
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

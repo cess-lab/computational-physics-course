@@ -1,0 +1,7 @@
+Assalamualaikum dan salam sejahtera semua. Hari ini kita akan gunakan satu litar yang kecil untuk belajar cara menyelesaikan linear systems. Kita ada dua loop, dua arus yang belum diketahui, dan dua persamaan Kirchhoff. Physics yang kita gunakan masih biasa. Yang kita nak bina ialah hubungan antara litar, persamaan, matriks, dan keputusan komputer.
+
+Cuba bayangkan saya terus tunjuk dua nombor daripada MATLAB. Adakah dua nombor itu sudah cukup untuk kita kata jawapannya betul? Ambil sekejap untuk fikir. Kita perlu tahu nombor itu mewakili apa, unitnya apa, arah arus yang kita andaikan, dan bagaimana kita semak keputusan tersebut. Komputer boleh menyelesaikan persamaan yang kita beri, termasuk persamaan yang tersalah bina.
+
+Ada tiga perkara utama hari ini. Pertama, pilih unknowns dan arah, kemudian tulis persamaan daripada model fizikal. Kedua, susun persamaan itu sebagai A darab x sama dengan b, dan gunakan MATLAB backslash. Ketiga, masukkan jawapan kembali ke persamaan asal dan terangkan maksud fizikalnya. Kita akan buat prediction dahulu, bukan tunggu komputer bagi jawapan baru kita cuba cari cerita.
+
+Saya akan berhenti beberapa kali untuk kamu bincang dan trace kod. Tak perlu tulis program dari kosong. Gunakan scaffold yang diberi. Kalau kamu boleh jelaskan satu coefficient datang dari mana, baca dua entry output dengan betul, dan tunjuk satu validation check, itu kemahiran yang kita sedang bina. Mari mula dengan litar, sebelum kita sentuh MATLAB.

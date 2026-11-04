@@ -1,4 +1,4 @@
-%[text] # Week 8 Lecture Demonstration: Simulating Cooling with Euler's Method
+%[text] # Ordinary Differential Equations: Simulate a changing state from an initial condition
 %[text] **LECTURE DEMONSTRATION**
 %[text] PHY4605 Physics-First Reproducible MATLAB Notebook
 %%

@@ -1,0 +1,234 @@
+PHY4605 Computational Methods in Physics
+Learning Note | Week 7
+
+Numerical Integration: Accumulate a changing quantity
+and test convergence
+Estimate a physically accumulated quantity from sampled values, then test convergence: do refined
+estimates approach a stable reference?
+
+   Physical question. A force changes continuously with time and gradually decays. How can
+   sampled force values estimate the total impulse delivered from t = 0 to t = 2.0 s?
+
+
+
+Learning outcomes
+1. connect area under a physical curve to an accumulated quantity, limits, and units;
+2. trace a trapezoidal estimate and the equivalent MATLAB trapz(x,y) calculation; and
+3. validate a numerical integral using refinement, an analytic/reference value, and simple error.
+
+
+How to use this note
+Read the physical question and model first. At each prediction checkpoint, pause and write what you
+expect; then trace the short calculation, run the MATLAB listing, and compare the result with the
+stated validation evidence.
+
+
+1. Integration means physical accumulation
+In calculus, an integral is often introduced as area under a curve. In computational physics, that area
+usually represents a physical quantity. For a force that varies with time,
+                                                  ∫ tb
+                                             J=        F (t) dt
+                                                     ta
+
+is the impulse delivered over the stated interval.
+The axes carry the unit of the integral. Force is measured in newtons and time in seconds, so
+
+                                              N × s = N s,
+
+which is also equivalent to the momentum unit kg m s−1 . The limits ta and tb are part of the physical
+question: changing them changes what has been accumulated.
+
+   Prediction checkpoint. If the force remains positive from 0 to 2.0 s, the impulse must be
+   positive. If the force starts at 12 N and then decays, the impulse must also be smaller than the
+   rectangle 12 N × 2 s = 24 N s.
+
+
+
+2. Reuse a simple decaying force model
+Use
+                                            F (t) = F0 e−t/τ ,
+with
+                              F0 = 12 N,      τ = 0.8 s,         0 ≤ t ≤ 2.0 s.
+
+
+                                                      1
+The force is largest at the start and decreases smoothly while remaining positive. We want the accumu-
+lated impulse                                    ∫         2.0
+                                             J=                  F (t) dt.
+                                                       0
+
+For validation later, this teaching model has an analytic integral:
+                                            (          )
+                               Jexact = F0 τ 1 − e−T /τ = 8.8119840132 N s.
+
+This value is the independent reference, not the numerical method.
+
+
+3. A numerical integral only sees samples
+A computer does not need the entire continuous curve to apply a basic quadrature rule. In plain language,
+a quadrature rule estimates accumulated area by combining function values at selected coordinates. Here,
+convergence means that, with the force model and limits held fixed, the numerical estimates approach
+a stable value as the sample spacing is reduced. With four equal intervals between 0 and 2.0 s,
+                                                  2.0 − 0
+                                           ∆t =           = 0.5 s,
+                                                     4
+so the five sample coordinates are 0, 0.5, 1.0, 1.5, and 2.0 s.
+
+                                               t (s)        F (t) (N)
+                                                0.0          12.0000
+                                                0.5           6.4231
+                                                1.0           3.4381
+                                                1.5           1.8403
+                                                2.0           0.9850
+
+
+
+
+Figure 1: Week 7 force-time model: five samples define four trapezoids whose total area estimates the
+impulse.
+
+
+
+
+                                                            2
+4. One trapezoid is width times average height
+Between two neighbouring samples, approximate the curved force by a straight segment. For samples Fi
+and Fi+1 separated by ∆t,
+                                                 Fi + Fi+1
+                                         Ai ≈ ∆t           .
+                                                     2
+For the first interval, from 0 to 0.5 s,
+                                           12.0000 + 6.4231
+                                A1 ≈ 0.5                    ≈ 4.6058 N s.
+                                                   2
+The unit is already the unit of impulse because the trapezoid width is in seconds and its height is in
+newtons.
+
+
+5. Add the trapezoids for a composite estimate
+For uniform spacing, the four trapezoids can be collected into the composite form
+                                          [                           ]
+                                            1                      1
+                               Jtrap = ∆t F0 + F1 + F2 + F3 + F4 .
+                                            2                      2
+
+Using the five sampled values above,
+
+                                       Jtrap ≈ 9.0969821492 N s.
+
+This result is positive and below 24 N s, so it passes the basic sign and bound checks. Those checks are
+useful, but they do not yet tell us whether the approximation is accurate enough.
+
+
+6. Pseudocode before MATLAB
+ 1. state the accumulated quantity, integration limits, and expected unit;
+ 2. choose a supplied number of intervals;
+ 3. create sample coordinates between the fixed limits;
+ 4. evaluate the force at those coordinates;
+ 5. add trapezoid areas between neighbouring samples;
+ 6. repeat at finer supplied resolutions without changing the force model;
+ 7. compare the estimates with an independent reference; and
+ 8. report the final integral with its unit, error, and physical meaning.
+
+
+
+
+                                                    3
+  7. MATLAB trapz performs the same accumulation
+  The coarse calculation can be written explicitly and then checked against MATLAB’s built-in trapezoidal
+  integration function:
+                 Listing 1: Manual and built-in trapezoidal integration of the sampled force.
+ 1 F0_N = 12;
+ 2 tau_s = 0.8;
+ 3 T_s = 2.0;
+ 4 n = 4;
+ 5 t_s = linspace(0,T_s,n+1);
+ 6 F_N = F0_N*exp(-t_s/tau_s);
+ 7 dt_s = T_s/n;
+ 8 J_manual_Ns = dt_s*(0.5*F_N(1) + ...
+ 9     sum(F_N(2:end-1)) + 0.5*F_N(end));
+10 J_trapz_Ns = trapz(t_s,F_N);
+
+
+  The call trapz(t_s,F_N) matters: the first argument supplies the physical coordinates and therefore
+  the actual spacing between samples. The manual and trapz estimates should agree for the same data.
+
+      Runnable does not mean physically correct. The call trapz(F_N) runs, but MATLAB then
+      assumes unit spacing between samples. If the real sample spacing is 0.5 s, reporting that raw result
+      directly as an impulse silently loses the physical time scale.
+
+
+
+  8. Refine the sampling without changing the physics
+  Now keep F0 , τ , and the integration limits fixed while increasing only the number of intervals. This
+  isolates the effect of numerical resolution.
+  For each row, the absolute error is the size of the difference from the analytic reference,
+
+                                               Eabs = |Jtrap − Jexact | ,
+
+  while the relative error expresses that difference as a percentage of the reference,
+                                                          Eabs
+                                               Erel =              × 100%.
+                                                         |Jexact |
+
+                     Intervals   ∆t (s)    Jtrap (N s)    absolute error (N s)   relative error (%)
+                            4    0.500      9.0969821               0.2849981               3.2342
+                            8    0.250      8.8835797               0.0715957               0.8125
+                           16    0.125      8.8299047               0.0179207               0.2034
+
+  The estimates move toward the same analytic reference as the sample spacing is reduced. For this smooth
+  model and these supplied resolutions, the error also decreases each time the spacing is halved.
+
+
+  9. Required validation: refinement plus reference comparison
+  The finest supplied estimate is
+                                               J16 = 8.8299047499 N s.
+  Compared with the analytic reference,
+
+                                          |J16 − Jexact | = 0.0179207367 N s,
+
+  and the relative error is approximately
+                                                         0.203%.
+
+                                                             4
+   Validation statement. The numerical impulse remains positive and below the physical upper
+   bound, and the trapezoidal estimate approaches the analytic result as the sampling is refined. At
+   16 intervals the result differs from the analytic reference by about 0.203%, supporting the estimate
+   for the stated model and limits.
+
+
+
+10. Interpret the number physically
+An impulse of about 8.83 N s corresponds to a momentum change of about 8.83 kg m s−1 in the positive
+force direction over 0 to 2.0 s. This interpretation is conditional on the stated force model and limits;
+numerical precision cannot repair an inappropriate model.
+
+
+Guided extension: Simpson comparison and convergence evidence
+Read and interpret the supplied eight-interval Simpson result, JSimpson = 8.8124455163 N s, as com-
+parison evidence; independent derivation or implementation of Simpson’s rule is not required. In the
+trapezoidal table, halving ∆t reduces error by about a factor of four; describe that observed convergence
+pattern without deriving its formal order.
+
+
+Optional extension
+Optional extensions are quadrature error-order derivation, independent composite-rule comparison, and
+adaptive quadrature. They are not required for this week’s pathway.
+
+
+Three takeaways
+1. A numerical integral represents physical accumulation over explicit limits, and its unit combines the
+   two axis units.
+2. The trapezoidal rule sums areas between neighbouring samples; trapz(x,y) uses their supplied
+   coordinates.
+3. Refine the sampling and compare with a reference before trusting the accumulated result.
+
+   Preparation for the practical. Transfer the same reasoning to impulse, work, and charge. For
+   each context, identify the accumulated quantity, limits, axis units, trapezoidal sampling/refinement
+   plan, and validation reference.
+
+
+
+
+                                                    5
+

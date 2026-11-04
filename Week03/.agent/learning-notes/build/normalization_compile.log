@@ -1,0 +1,6 @@
+Date: 2026-09-08
+Root: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/learning-notes/Week03_Two_by_Two_Linear_Systems_through_Kirchhoff_Circuits.tex
+Compiler: bundled Tectonic 0.17.0
+Command: compile_latex.py --compiler tectonic --output-directory Week03/.agent/learning-notes/build --json
+Exit code: 0; output is 4-page A4 PDF
+PDF: /Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week03/.agent/learning-notes/build/Week03_Two_by_Two_Linear_Systems_through_Kirchhoff_Circuits.pdf

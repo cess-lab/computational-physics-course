@@ -1,0 +1,23 @@
+Use case: scientific-educational
+Asset type: standalone student question image, landscape 16:9, high resolution.
+Input image: the attached original teaching image is an edit target for CIRCUIT TOPOLOGY ONLY. Preserve its exact circuit configuration, all nine resistor positions, and the one DC source. Replace the surrounding lecture content with the question below.
+Primary request: Create a clean English physics exercise, headed "Bridge circuit: find the mesh currents".
+White background, navy heading, black circuit wires, pale gray IEC rectangular resistor symbols, large very readable math labels. Sparse blue I1, teal I2, ochre I3 labels and clearly CLOCKWISE curved arrows in the three mesh interiors. No outer border, no watermark, no page number. The circuit should dominate the image with plentiful label spacing. Use typeset subscripts and Ω.
+Exact circuit connectivity and positions: A left outer rectangle contains the DC battery in its left vertical branch (+ at top, − at bottom); R1 is the upper-left horizontal resistor; R4 is the lower-left horizontal resistor. Upper interior junction A is immediately after R1. Lower interior junction B is immediately after R4. A and B are connected vertically by R7. From A to the top-right corner, R2 then R3 are in series along the upper horizontal edge. R8 is the right vertical resistor from the top-right corner to the lower-right junction C. From B to C along the lower horizontal edge, R5 then R6 are in series. The diagonal from A to C contains Rb. All these branches must remain intact with no extra sources, no missing resistors, no crossing ambiguity.
+Label each component directly beside its symbol, using these exact labels and values ONCE:
+"R₁ = 3 Ω"
+"R₂ = 1 Ω"
+"R₃ = 2 Ω"
+"R₄ = 3 Ω"
+"R₅ = 2 Ω"
+"R₆ = 4 Ω"
+"R₇ = 6 Ω"
+"R₈ = 3 Ω"
+"R_b = 6 Ω"
+"V_s = 24 V"
+Current arrows: I₁ inside the left rectangular mesh, I₂ inside the lower triangular mesh bounded by R7, R5/R6, Rb, and I₃ inside the upper-right triangular mesh bounded by R2/R3, R8, Rb. All arrows clockwise, each clean and unambiguous. I2 clockwise means up R7, down-right along Rb, and left along R6/R5. I3 clockwise means right along R2/R3, down R8 and up-left along Rb.
+Question text beneath the circuit, exactly:
+"An ideal 24 V DC source supplies the resistor network shown. All resistors are ohmic."
+"Using Kirchhoff’s laws, calculate the clockwise mesh currents I₁, I₂ and I₃."
+"Show your equations and give each current in amperes."
+Critical constraints: The sole voltage source is 24 V with positive terminal above negative. Nine resistors including Rb, not eight. Do not add voltage values across resistors: those are unknown and not independent sources. No answer values, no matrix, no solution, no teaching key-points panel, no 'future exposure' content. Check every label and topology against the reference.

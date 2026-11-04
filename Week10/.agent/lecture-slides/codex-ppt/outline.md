@@ -1,4 +1,4 @@
-# Week 10 — Random Sampling and Monte Carlo: From Random Paths to Reliable Evidence
+# Week 10 — Monte Carlo Sampling: Use repeated random trials to estimate physical variation
 
 Status: draft prepared for lecturer review. No slide images, prompt jobs, speaker-note file, deck specification, run-state file, or PPTX have been created.
 
@@ -14,7 +14,7 @@ Core validation: symmetry predicts a long-run mean near `0 mm`; after exactly 10
 
 The MATLAB graph assets referenced below are strict numerical/reference inputs for any future slide generation. They are not style references and must later be redrawn as part of a complete ImageGen slide under the course contract, with the generated graph checked against these retained MATLAB sources. No such redraw is authorized in the current task.
 
-## Slide 1 — Can Random Motion Produce a Stable Pattern?
+## Slide 1 — Monte Carlo Sampling: Use repeated random trials to estimate physical variation
 - Introduce a particle receiving many equal left/right random kicks.
 - Ask what can be predicted if no single 100-step trajectory is predictable.
 - Prediction: many repeated paths should have an average final position near zero but nonzero spread.

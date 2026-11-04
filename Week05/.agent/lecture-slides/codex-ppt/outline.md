@@ -1,4 +1,4 @@
-# PHY4605 Week 05 Lecture Deck - Draft Outline
+# PHY4605 Week 05 — Root Finding: Locate a physical solution and verify the residual
 
 **Status:** DRAFT / REVIEW-READY — retained as the planning outline for the 2026-09-04 Week 05 material-preparation stage. Do not generate, revise, or publish a Week 05 lecture deck until the lecturer explicitly asks to proceed. A PPTX from an earlier run exists in the repository but is outside the scope of this preparation stage and is not the source of truth for this outline.
 
@@ -16,7 +16,7 @@
 
 ## Slide sequence
 
-### Slide 01 - From a Physical Target to a Checkable Root
+### Slide 01 - Root Finding: Locate a physical solution and verify the residual
 
 - **Key points:** Keep the cover deliberately light: `Week 05 | Root Finding`. Frame the lecture as finding an input that makes a physical target condition true. Use a level-ground projectile launched at `v0 = 20 m/s`; the target range is `35 m`. The unknown is one low launch angle, not a generic abstract `x`.
 - **Visual idea:** Sparse cover: projectile arc motif, a clearly labelled `35 m` target, launch-speed arrow `20 m/s`, and an angle marker `theta`; no numerical-method workflow yet.

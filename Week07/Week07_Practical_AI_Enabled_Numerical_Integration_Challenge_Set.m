@@ -1,4 +1,4 @@
-%[text] # Week 7 Practical Activity: Numerical Integration Challenge Set
+%[text] # Numerical Integration: Accumulate a changing quantity and test convergence
 %[text] **PRACTICAL ACTIVITY**
 %[text] PHY4605 AI-Enabled Group Investigation
 %%

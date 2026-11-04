@@ -8,7 +8,7 @@
 - Familiar lecture model: exponentially decaying force, `F(t) = F0*exp(-t/tau)`
 - Physical integral: impulse, `J = integral F(t) dt`
 - MATLAB dependency: MATLAB R2025a or later, base MATLAB only
-- Lecture slide status: the lecturer has approved production through `codex-ppt`; the approved outline is under `Week07/.agent/lecture-slides/codex-ppt/outline.md`, while backend and representative sample approval remain pending
+- Lecture slide status: the earlier 14-slide production record under `Week07/.agent/lecture-slides/codex-ppt/` is historical base provenance. The current verified student-facing deck is `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week07/Lecture_Slides_Week07.pptx`, assembled from the actual Codex-PPT revision directory `/Users/khairuladib/MATLAB-Drive/Kuliah/computational-physics-course/Week07/.agent/lecture-slides/codex-ppt-cart-context/`.
 
 ## Three Core Ideas
 
@@ -104,7 +104,10 @@ No ImageGen illustration is required for the learning note or Live Scripts. The 
 
 ## Lecture Slide Gate
 
-The lecturer authorised Week 07 slide production through the installed `codex-ppt` skill on 2026-09-04. The approved outline and strict-asset mapping live at `.agent/lecture-slides/codex-ppt/outline.md`. Follow the remaining Codex-PPT gates: confirm the image backend, generate exactly one representative sample slide, obtain explicit sample approval, then create jobs, recorded state, remaining slide images, English `speech.md`, QA evidence, and the assembled PPTX.
+- Historical base record: the lecturer authorised Week 07 slide production through the installed `codex-ppt` skill on 2026-09-04; the original approved outline and 14-slide state remain under `Week07/.agent/lecture-slides/codex-ppt/`.
+- Current verified production record: the actual revision directory is `Week07/.agent/lecture-slides/codex-ppt-cart-context/`; it contains the 17-slide state, prompt jobs, English `speech.md`, and hidden assembled deck `codex-ppt-cart-context.pptx`.
+- Current deck evidence: the student-facing and hidden copies match at SHA-256 `b969d2d50043cdfda242fd77c7a7e657fd87f7fd6f32b9537ca3c15667830c3d`; final local QA is retained in `Week07/.agent/lecture-slides/codex-ppt-cart-context/qa/final-qa.md`.
+- Approval caveat: the current records establish the accepted sample gate and completed local QA, but do not provide a separate lecturer-approval record for the three-slide cart-context revision. Do not infer that approval from the completed QA state; retain the gate until separately recorded.
 
 ## Publication Gate
 
@@ -119,4 +122,4 @@ Before calling the non-slide Week 07 package complete:
 7. verify the capstone milestone matches the 3% Week 07 assessment blueprint;
 8. verify Core content uses trapezoidal geometry, `trapz`, explicit limits/units, refinement, analytic/reference comparison, and simple error;
 9. verify Simpson/convergence-rate reading is clearly Working exposure and quadrature derivations/adaptive methods remain Stretch; and
-10. verify no Week 07 PPTX is published until every Codex-PPT slide state and QA gate is complete.
+10. verify the current 17-slide cart-context Codex-PPT state and final QA record at the paths above; do not treat the completed local QA as proof of separate lecturer approval or external publication.

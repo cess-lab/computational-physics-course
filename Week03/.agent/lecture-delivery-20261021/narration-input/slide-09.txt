@@ -1,0 +1,13 @@
+Sekarang kita buat check yang wajib. Kita tidak menerima output hanya kerana MATLAB tidak memaparkan error. Kita masukkan dua current yang dikira kembali ke persamaan Kirchhoff asal.
+
+Untuk kiri, tiga ohm darab dua ampere, tolak satu ohm darab satu ampere. Enam volt tolak satu volt, jadi lima volt. Itu sepadan dengan source kiri. Untuk kanan, negatif satu ohm darab dua ampere, tambah empat ohm darab satu ampere. Negatif dua volt tambah empat volt, jadi dua volt. Itu sepadan dengan source kanan.
+
+Sebelum run section Core Validation, tulis dahulu dua nilai yang kamu jangka: lima volt dan dua volt. Kemudian lihat bagaimana kod membina left reconstructed dan right reconstructed daripada parameter dan solved currents. Kita tolak source voltage masing-masing untuk mendapat validation difference. Bagi jawapan yang betul, kedua-dua differences hampir sifar.
+
+Dalam kod ada assert yang memeriksa sama ada nilai absolute difference terbesar lebih kecil daripada sepuluh kuasa negatif dua belas. Oleh sebab difference ini dalam volt, tolerance itu juga dibaca dalam volt. Untuk contoh kecil ini, tolerance yang sangat kecil masih munasabah. Jangan anggap nilai itu sesuai untuk semua eksperimen atau semua skala masalah.
+
+Mengapa guna tolerance dan bukan paksa equality tepat kepada sifar? Pengiraan komputer menggunakan floating-point numbers. Kadangkala ada beza yang sangat kecil daripada pembundaran. Kita bandingkan dengan tolerance yang sesuai dengan skala dan tujuan pengiraan. Beza kecil akibat arithmetic berbeza daripada mismatch besar akibat model salah.
+
+Sekarang seorang pelajar baca check kiri dengan unit, dan seorang lagi baca check kanan. Terangkan juga had check ini: ia menunjukkan current memenuhi equations yang kita uji. Ia tidak membuktikan bahawa model ideal menangkap semua keadaan litar sebenar. Sebab itulah kita audit litar dan signs dahulu, kemudian validate secara numerik.
+
+Kita kini ada satu set evidence yang jelas: dua current dalam ampere, dua voltage reconstructions yang sepadan dengan source, dan difference yang hampir sifar. Selepas check, barulah kita tafsirkan keputusan fizikal dengan lebih yakin.
