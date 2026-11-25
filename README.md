@@ -25,3 +25,7 @@ For development, `npm run dev` serves at port 8766 on localhost, LAN, and Tailsc
 ## Week 06 numerical differentiation
 
 `differentiation.html` visualizes the vertical-motion model y(t) = 20t − 4.905t² in metres. Adjust the target time and step size to compare sampled positions and their secant with the analytic tangent. Forward difference is the core method; central difference is working exposure. The analytic velocity 20 − 9.81t provides the reference and absolute error. Central difference is exact to floating-point precision for this quadratic model, not for arbitrary functions. Interactive values are kept in page memory and reset on reload. The plot is responsive SVG with a text alternative and native keyboard-accessible controls.
+
+## Week 08 ODEs: Euler cooling
+
+`ode.html` traces Euler's method for the lecture cooling model: initial 80 °C, room 20 °C, cooling time 100 s and final time 300 s. Students can step through the updates, compare 50, 25 and 12.5 s timesteps, or choose the supplied slower-cooling case τ = 200 s. Changing a parameter resets the step counter. The graph shows calculated values through the current step, the next step as a dashed segment, and the analytic reference; the endpoint summary compares both methods at 300 s. Controls use browser-local page state only and work without a network connection.

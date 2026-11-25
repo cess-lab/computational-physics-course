@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore Euler's method step by step using the Week 08 cooling model.">
+  <title>Euler's method for ODEs · PHY4605</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="ode.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a href="./">PHY4605 <span>Computational Methods in Physics</span></a><span>Interactive laboratory</span></header>
+<main>
+  <nav class="method-nav" aria-label="Computational methods"><a href="./">Bisection</a><a href="newton.html">Newton’s method</a><a href="differentiation.html">Numerical differentiation</a><a href="ode.html" aria-current="page">ODEs · Euler's method</a></nav>
+  <section class="intro ode-intro">
+    <h1>From a rate<br> <em>to a trajectory.</em></h1>
+    <div><p>How does an object cool over time?</p><p class="muted">Trace Euler’s method one step at a time and compare its estimates with the exact solution.</p></div>
+  </section>
+  <section class="lab" aria-label="Euler cooling demonstration">
+    <div class="plot-panel">
+      <div class="plot-heading"><h2>Cooling trajectory</h2></div>
+      <div id="chart-wrap"><svg id="chart" role="img" aria-labelledby="chart-title chart-description"></svg></div>
+      <div class="legend ode-legend" aria-label="Graph legend"><span><i class="curve-key"></i>Exact solution</span><span><i class="secant-key"></i>Euler estimates</span><span><i class="target-key"></i>Current value</span><span><i class="ode-next-key"></i>Next Euler step</span><span><i class="ode-room-key"></i>Room temperature</span></div>
+      <div class="sample-values" aria-label="Current step values"><div><span>Time, tₙ</span><strong id="current-time"></strong></div><div><span>Temperature, Tₙ</span><strong id="current-temperature"></strong></div><div><span>Rate at Tₙ</span><strong id="current-rate"></strong></div></div>
+      <div class="diff-controls">
+        <div><label for="step-slider">Euler step <output id="step-display" for="step-slider"></output></label><input id="step-slider" type="range" min="0" max="6" step="1" value="0"><div class="ode-buttons"><button id="back" type="button">← Previous step</button><button id="next" class="primary" type="button">Next step →</button></div></div>
+      </div>
+    </div>
+    <aside class="reasoning diff-reasoning">
+      <label for="timestep">Timestep, Δt</label>
+      <select id="timestep"><option value="50">50 s</option><option value="25">25 s</option><option value="12.5">12.5 s</option></select>
+      <label for="cooling-time" class="ode-select-label">Cooling time, τ</label>
+      <select id="cooling-time"><option value="100">100 s · lecture model</option><option value="200">200 s · slower cooling</option></select>
+      <p class="model-description">Changing the timestep or cooling time returns the trace to step 0.</p>
+      <p class="model-description">A uniform object starts at 80 °C in a room held at 20 °C. The cooling time is constant.</p>
+      <div class="equation">dT/dt = −(T − T<sub>room</sub>) / τ</div>
+      <div class="diff-calculation" aria-live="polite" aria-atomic="true">
+        <h2 id="step-title">Calculate the next temperature</h2>
+        <p id="step-description"></p>
+        <div class="formula">Tₙ₊₁ = Tₙ + Δt × rate at Tₙ</div>
+        <div id="calculation" class="calculation"></div>
+        <div class="result-row"><span>Euler temperature at tₙ</span><strong id="euler-current"></strong></div>
+        <div class="result-row"><span>Exact temperature at tₙ</span><strong id="exact-current"></strong></div>
+        <div class="result-row"><span>Absolute error at tₙ</span><strong id="current-error"></strong></div>
+        <div class="ode-endpoint"><strong>Compare at 300 s</strong><p id="endpoint-summary"></p></div>
+      </div>
+    </aside>
+  </section>
+  <section class="explanation" aria-label="Understanding the method">
+    <div><h2>From a rate to a step</h2><p>The initial condition is 80 °C at t = 0 s. Euler’s method calculates the rate at the current temperature, holds it constant over one timestep and uses it to estimate the next value.</p><p>The markers are computed values; the straight lines join them for reading.</p></div>
+    <div><h2>Check against a reference</h2><p>The supplied exact solution is T(t) = 20 + 60 exp(−t/τ) °C. Compare Euler and exact temperatures at the <strong>same time</strong>, then reduce Δt and compare the error at 300 s.</p><p>For these timesteps the object cools toward room temperature. A plausible trend alone does not establish accuracy or validate the model assumptions.</p></div>
+  </section>
+</main>
+<footer>PHY4605 · Week 08: ordinary differential equations <span>Model → initial condition → Euler steps → validation</span></footer>
+<noscript>This demonstration needs JavaScript enabled to calculate and update the graph.</noscript>
+</body>
+</html>
