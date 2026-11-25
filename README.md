@@ -21,3 +21,7 @@ The example, iteration, stage, and zoom setting persist locally in the browser; 
 Each method uses its own browser storage key. The Newton SVG uses the same single-chart rendering approach, with a dashed rust tangent, explicit current/next point labels, and responsive domains containing the current and next estimates. Reduced-motion disables domain transitions. Bracket shading and width bounds are exclusive to bisection.
 
 For development, `npm run dev` serves at port 8766 on localhost, LAN, and Tailscale interfaces. It does not start automatically. GitHub Pages serves the static files without this development server.
+
+## Week 06 numerical differentiation
+
+`differentiation.html` visualizes the vertical-motion model y(t) = 20t − 4.905t² in metres. Adjust the target time and step size to compare sampled positions and their secant with the analytic tangent. Forward difference is the core method; central difference is working exposure. The analytic velocity 20 − 9.81t provides the reference and absolute error. Central difference is exact to floating-point precision for this quadratic model, not for arbitrary functions. Interactive values are kept in page memory and reset on reload. The plot is responsive SVG with a text alternative and native keyboard-accessible controls.

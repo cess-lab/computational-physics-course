@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore numerical differentiation through vertical motion, secant slopes, and an analytic velocity reference.">
+  <title>Numerical differentiation · PHY4605</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="differentiation.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a href="./">PHY4605 <span>Computational Methods in Physics</span></a><span>Interactive laboratory</span></header>
+<main>
+  <nav class="method-nav" aria-label="Computational methods"><a href="./">Bisection</a><a href="newton.html">Newton’s method</a><a href="differentiation.html" aria-current="page">Numerical differentiation</a></nav>
+  <section class="intro differentiation-intro">
+    <h1>Numerical<br><em>differentiation.</em></h1>
+    <div><p>How can two positions reveal a velocity?</p><p class="muted">Compare the slope between sampled positions with the instantaneous slope of the model.</p></div>
+  </section>
+  <section class="lab" aria-label="Numerical differentiation demonstration">
+    <div class="plot-panel">
+      <div class="plot-heading"><h2>Vertical position and slope</h2></div>
+      <div id="chart-wrap"><svg id="chart" role="img" aria-labelledby="chart-title chart-description"></svg></div>
+      <div class="legend differentiation-legend" aria-label="Graph legend"><span><i class="curve-key"></i>Position y(t)</span><span><i class="secant-key"></i>Numerical secant</span><span><i class="tangent-key"></i>Analytic tangent at t₀</span><span><i class="sample-key"></i>Sampled positions</span><span><i class="target-key"></i>At t₀</span></div>
+      <div class="sample-values" aria-label="Sampled values"><div><span id="sample-a-label"></span><strong id="sample-a-value"></strong></div><div><span id="sample-b-label"></span><strong id="sample-b-value"></strong></div><div><span>Position change, Δy</span><strong id="delta-y"></strong></div></div>
+      <div class="diff-controls">
+        <div><label for="time">Target time, t₀ <output id="time-display" for="time"></output></label><input id="time" type="range" min="0.5" max="2" step="0.05" value="1"></div>
+        <div><label for="step">Step size, h <output id="step-display" for="step step-number"></output></label><div class="slider-row"><input id="step" type="range" min="0.05" max="0.5" step="0.05" value="0.5"><input id="step-number" type="number" min="0.05" max="0.5" step="0.05" value="0.5" aria-label="Step size in seconds"></div><small>Range: 0.05–0.50 s</small></div>
+      </div>
+    </div>
+    <aside class="reasoning diff-reasoning">
+      <label for="method">Difference method</label>
+      <select id="method"><option value="forward">Forward difference · Core</option><option value="central">Central difference · Working exposure</option></select>
+      <p class="model-description">A projectile rises vertically with initial speed 20 m/s. Assume constant gravity and negligible air resistance.</p>
+      <div class="equation">y(t) = 20t − ½(9.81)t² <span class="units">m</span></div>
+      <div class="diff-calculation" aria-live="polite" aria-atomic="true">
+        <h2>Estimate the velocity</h2>
+        <p id="method-description"></p>
+        <div class="formula" id="formula"></div>
+        <div id="substitution" class="calculation"></div>
+        <div class="result-row"><span>Numerical estimate</span><strong id="estimate"></strong></div>
+        <div class="result-row"><span>Analytic reference</span><strong id="exact"></strong></div>
+        <div class="result-row"><span>Absolute error</span><strong id="error"></strong></div>
+        <p id="interpretation" class="interpretation"></p>
+      </div>
+    </aside>
+  </section>
+  <section class="explanation" aria-label="Understanding the result">
+    <div><h2>From slope to velocity</h2><p>Velocity is the rate of change of position with time. The secant gives an <strong>average velocity</strong> between two sampled positions; it estimates the instantaneous velocity at t₀.</p><p>Its units are metres divided by seconds, or m/s.</p></div>
+    <div><h2>Check the estimate</h2><p>The analytic derivative is v(t) = 20 − 9.81t m/s. Compare it with the numerical estimate at the same t₀ and report the absolute error.</p><p>For this quadratic model, central difference agrees with the analytic derivative to floating-point precision. This special result does not hold for every function.</p></div>
+  </section>
+</main>
+<footer>PHY4605 · Week 06: numerical differentiation <span>Model → sample → slope → validation → interpretation</span></footer>
+<noscript>This demonstration needs JavaScript enabled to calculate and update the graph.</noscript>
+</body>
+</html>
