@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Explore numerical integration as the accumulated impulse of a decaying force using the composite trapezoidal rule.">
+  <title>Numerical integration · PHY4605</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="styles.css">
+  <script src="integration.js" defer></script>
+</head>
+<body>
+<header class="masthead"><a href="./">PHY4605 <span>Computational Methods in Physics</span></a><span>Interactive laboratory</span></header>
+<main>
+  <nav class="method-nav" aria-label="Computational methods"><a href="./">Bisection</a><a href="newton.html">Newton’s method</a><a href="differentiation.html">Numerical differentiation</a><a href="integration.html" aria-current="page">Numerical integration</a><a href="ode.html">ODEs · Euler's method</a></nav>
+  <section class="intro integration-intro">
+    <h1>From a force<br> <em>to an impulse.</em></h1>
+    <div><p>How does a changing force accumulate over time?</p><p class="muted">Build the area under the curve one trapezoid at a time, then check the estimate by refining the intervals.</p></div>
+  </section>
+  <section class="lab" aria-label="Trapezoidal integration demonstration">
+    <div class="plot-panel">
+      <div class="plot-heading"><h2>Force and accumulated impulse</h2></div>
+      <div id="chart-wrap"><svg id="chart" role="img" aria-labelledby="chart-title chart-description"></svg></div>
+      <div class="legend integration-legend" aria-label="Graph legend"><span><i class="curve-key"></i>Force model</span><span><i class="int-acc-key"></i>Accumulated trapezoids</span><span><i class="int-next-key"></i>Next trapezoid</span><span><i class="int-future-key"></i>Not yet added</span><span><i class="sample-key"></i>Force samples</span></div>
+      <div class="sample-values" aria-label="Current accumulation"><div><span>Intervals added</span><strong id="count-value"></strong></div><div><span>Interval width, Δt</span><strong id="width-value"></strong></div><div><span>Accumulated impulse</span><strong id="sum-value"></strong></div></div>
+      <div class="diff-controls"><div><label for="strip-slider">Trapezoids added <output id="strip-display" for="strip-slider"></output></label><input id="strip-slider" type="range" min="0" max="4" step="1" value="0"><div class="ode-buttons"><button id="back" type="button">← Previous</button><button id="next" class="primary" type="button">Add trapezoid →</button></div></div></div>
+    </div>
+    <aside class="reasoning diff-reasoning">
+      <label for="intervals">Number of intervals</label><select id="intervals"><option value="4">4 intervals · coarse</option><option value="8">8 intervals</option><option value="16">16 intervals · fine</option></select>
+      <p class="model-description">A positive force starts at 12 N and decays with a time constant of 0.8 s. Find the impulse delivered from 0 to 2.0 s. Changing the interval count restarts the trace.</p>
+      <div class="equation">F(t) = 12 exp(−t / 0.8) <span class="units">N</span></div>
+      <div class="diff-calculation" aria-live="polite" aria-atomic="true">
+        <h2 id="step-title">Calculate the next area</h2>
+        <p id="step-description"></p>
+        <div class="formula">Area ≈ ½(Fᵢ + Fᵢ₊₁) Δt</div>
+        <div id="calculation" class="calculation"></div>
+        <div class="result-row"><span>Accumulated so far</span><strong id="partial"></strong></div>
+        <div class="result-row"><span>Complete trapezoidal estimate</span><strong id="estimate"></strong></div>
+        <div class="result-row"><span>Analytic reference</span><strong id="exact"></strong></div>
+        <div class="result-row"><span>Complete estimate error</span><strong id="error"></strong></div>
+        <p class="interpretation" id="interpretation"></p>
+      </div>
+    </aside>
+  </section>
+  <section class="explanation" aria-label="Understanding numerical integration">
+    <div><h2>Area becomes impulse</h2><p>The area under the force–time curve is impulse. Each trapezoid estimates the area between two adjacent force samples; adding the strips estimates the total impulse.</p><p>Force is measured in N and time in s, so impulse is in <strong>N s</strong>, equivalent to kg m/s.</p></div>
+    <div><h2>Check the result</h2><p>The analytic reference is J = 12(0.8)[1 − exp(−2/0.8)] N s. The positive impulse must be smaller than the 24 N s rectangle formed by the initial force and the full duration.</p><p>Try 4, 8 and 16 intervals. For this smooth model, the trapezoidal estimate approaches the reference as the intervals become narrower.</p></div>
+  </section>
+</main>
+<footer>PHY4605 · Week 07: numerical integration <span>Model → sample → accumulate → validate → interpret</span></footer>
+<noscript>This demonstration needs JavaScript enabled to calculate and update the graph.</noscript>
+</body>
+</html>
