@@ -6,8 +6,8 @@
   <meta name="description" content="Explore numerical integration as the accumulated impulse of a decaying force using the composite trapezoidal rule.">
   <title>Numerical integration · PHY4605</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css">
-  <script src="integration.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=integration2">
+  <script src="integration.js?v=2" defer></script>
 </head>
 <body>
 <header class="masthead"><a href="./">PHY4605 <span>Computational Methods in Physics</span></a><span>Interactive laboratory</span></header>
@@ -21,7 +21,8 @@
     <div class="plot-panel">
       <div class="plot-heading"><h2>Force and accumulated impulse</h2></div>
       <div id="chart-wrap"><svg id="chart" role="img" aria-labelledby="chart-title chart-description"></svg></div>
-      <div class="legend integration-legend" aria-label="Graph legend"><span><i class="curve-key"></i>Force model</span><span><i class="int-acc-key"></i>Accumulated trapezoids</span><span><i class="int-next-key"></i>Next trapezoid</span><span><i class="int-future-key"></i>Not yet added</span><span><i class="sample-key"></i>Force samples</span></div>
+      <div class="legend integration-legend" aria-label="Graph legend"><span><i class="curve-key"></i>Force model</span><span><i class="int-acc-key"></i>Added to the sum</span><span><i class="int-next-key"></i>Next to add</span><span><i class="int-future-key"></i>Not yet added</span><span><i class="sample-key"></i>Force samples</span></div>
+      <div id="addition-feedback" class="addition-feedback" aria-live="polite"></div>
       <div class="sample-values" aria-label="Current accumulation"><div><span>Intervals added</span><strong id="count-value"></strong></div><div><span>Interval width, Δt</span><strong id="width-value"></strong></div><div><span>Accumulated impulse</span><strong id="sum-value"></strong></div></div>
       <div class="diff-controls"><div><label for="strip-slider">Trapezoids added <output id="strip-display" for="strip-slider"></output></label><input id="strip-slider" type="range" min="0" max="4" step="1" value="0"><div class="ode-buttons"><button id="back" type="button">← Previous</button><button id="next" class="primary" type="button">Add trapezoid →</button></div></div></div>
     </div>
