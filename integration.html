@@ -6,8 +6,9 @@
   <meta name="description" content="Explore numerical integration as the accumulated impulse of a decaying force using the composite trapezoidal rule.">
   <title>Numerical integration · PHY4605</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=integration3">
+  <link rel="stylesheet" href="styles.css?v=integration4">
   <script src="integration.js?v=3" defer></script>
+  <script src="simpson-steps.js?v=1" defer></script>
 </head>
 <body>
 <header class="masthead"><a href="./">PHY4605 <span>Computational Methods in Physics</span></a><span>Interactive laboratory</span></header>
@@ -32,6 +33,7 @@
       <label for="intervals" class="integration-select-label">Number of intervals</label><select id="intervals"><option value="4">4 intervals · coarse</option><option value="8">8 intervals</option><option value="16">16 intervals · fine</option></select>
       <p class="model-description">A positive force starts at 12 N and decays with a time constant of 0.8 s. Find the impulse delivered from 0 to 2.0 s. Changing the method or interval count restarts the trace.</p>
       <div class="equation">F(t) = 12 exp(−t / 0.8) <span class="units">N</span></div>
+      <a class="derivation-link" href="#derivation-title">Explore how Simpson’s formula is built</a>
       <div class="diff-calculation" aria-live="polite" aria-atomic="true">
         <h2 id="step-title">Calculate the next area</h2>
         <p id="step-description"></p>
@@ -52,15 +54,24 @@
     <div><h2>Check the result</h2><p>The analytic reference is J = 12(0.8)[1 − exp(−2/0.8)] N s. The positive impulse must be smaller than the 24 N s rectangle formed by the initial force and the full duration.</p><p>Try 4, 8 and 16 intervals. Both methods use the same sampled force values. For this smooth example, both approach the reference as the intervals become narrower.</p></div>
   </section>
   <section class="simpson-derivation" aria-labelledby="derivation-title">
-    <h2 id="derivation-title">Where do Simpson’s weights come from?</h2>
-    <p>Take three equally spaced samples: F₀ at t₀, F₁ at t₀ + h, and F₂ at t₀ + 2h. Fit one quadratic through them. The panel spans <strong>two intervals</strong>, each of width h.</p>
-    <ol>
-      <li><strong>Centre the coordinate.</strong> Let u = (t − t₁)/h, where t₁ = t₀ + h. The samples now lie at u = −1, 0 and 1. Write the fitted curve as p(u) = Au² + Bu + C.</li>
-      <li><strong>Fit the samples.</strong> At u = 0, C = F₁. The two endpoints give A = (F₀ − 2F₁ + F₂)/2 and B = (F₂ − F₀)/2.</li>
-      <li><strong>Integrate the quadratic.</strong> Since dt = h du, integrate h(Au² + Bu + C) from −1 to 1. The odd Bu term cancels, giving h(2A/3 + 2C).</li>
-      <li><strong>Substitute A and C.</strong> The area becomes <strong>h(F₀ + 4F₁ + F₂)/3</strong>. That is Simpson’s 1/3 rule: the middle sample receives four times the endpoint weight.</li>
-    </ol>
-    <p>For several panels, adjacent panels share endpoints. Their combined weights are 1, 4, 2, 4, …, 2, 4, 1. Composite Simpson’s 1/3 rule requires <strong>equally spaced samples and an even number of intervals</strong>. A quadratic is an approximation to this exponential force curve, so validate its total against the reference.</p>
+    <h2 id="derivation-title">Build Simpson’s 1/3 rule</h2>
+    <p>Follow one quadratic panel from three equally spaced force samples to the 1 : 4 : 1 formula. The example below uses the first panel and the interval size selected above.</p>
+    <div class="derivation-layout">
+      <div class="derivation-plot">
+        <div class="derivation-chart-wrap"><svg id="derivation-chart" role="img" aria-labelledby="derive-chart-title derive-chart-description"></svg></div>
+        <div class="derivation-legend"><span><i class="sample-key"></i>Force samples</span><span id="derive-fit-legend"><i></i>Quadratic fit</span><span id="derive-area-legend"><i></i>Fitted area</span></div>
+        <p class="derivation-note" id="derive-graph-note"></p>
+      </div>
+      <div class="derivation-work" aria-live="polite" aria-atomic="true">
+        <div class="derivation-progress" id="derive-progress"></div>
+        <h3 id="derive-title"></h3>
+        <p id="derive-explanation"></p>
+        <div class="derivation-equation" id="derive-equation"></div>
+        <p class="derivation-number" id="derive-number"></p>
+      </div>
+    </div>
+    <div class="derivation-actions"><button id="derive-back" type="button">← Previous</button><span id="derive-indicator"></span><button id="derive-next" type="button" class="primary">Next step →</button></div>
+    <p class="derivation-footnote">Composite Simpson’s 1/3 rule requires <strong>equally spaced samples and an even number of intervals</strong>. The quadratic is an approximation to this exponential force curve, so compare the result with the analytic reference.</p>
   </section>
 </main>
 <footer>PHY4605 · Week 07: numerical integration <span>Model → sample → accumulate → validate → interpret</span></footer>
