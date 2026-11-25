@@ -6,8 +6,8 @@
   <meta name="description" content="Explore numerical integration as the accumulated impulse of a decaying force using the composite trapezoidal rule.">
   <title>Numerical integration · PHY4605</title>
   <link rel="icon" href="data:,">
-  <link rel="stylesheet" href="styles.css?v=integration2">
-  <script src="integration.js?v=2" defer></script>
+  <link rel="stylesheet" href="styles.css?v=integration3">
+  <script src="integration.js?v=3" defer></script>
 </head>
 <body>
 <header class="masthead"><a href="./">PHY4605 <span>Computational Methods in Physics</span></a><span>Interactive laboratory</span></header>
@@ -15,37 +15,52 @@
   <nav class="method-nav" aria-label="Computational methods"><a href="./">Bisection</a><a href="newton.html">Newton’s method</a><a href="differentiation.html">Numerical differentiation</a><a href="integration.html" aria-current="page">Numerical integration</a><a href="ode.html">ODEs · Euler's method</a></nav>
   <section class="intro integration-intro">
     <h1>From a force<br> <em>to an impulse.</em></h1>
-    <div><p>How does a changing force accumulate over time?</p><p class="muted">Build the area under the curve one trapezoid at a time, then check the estimate by refining the intervals.</p></div>
+    <div><p>How does a changing force accumulate over time?</p><p class="muted">Build the area one panel at a time, compare two methods, and check each estimate against the analytic reference.</p></div>
   </section>
-  <section class="lab" aria-label="Trapezoidal integration demonstration">
+  <section class="lab" aria-label="Numerical integration demonstration">
     <div class="plot-panel">
       <div class="plot-heading"><h2>Force and accumulated impulse</h2></div>
       <div id="chart-wrap"><svg id="chart" role="img" aria-labelledby="chart-title chart-description"></svg></div>
       <div class="legend integration-legend" aria-label="Graph legend"><span><i class="curve-key"></i>Force model</span><span><i class="int-acc-key"></i>Added to the sum</span><span><i class="int-next-key"></i>Next to add</span><span><i class="int-future-key"></i>Not yet added</span><span><i class="sample-key"></i>Force samples</span></div>
+      <p id="fit-description" class="fit-description"></p>
       <div id="addition-feedback" class="addition-feedback" aria-live="polite"></div>
-      <div class="sample-values" aria-label="Current accumulation"><div><span>Intervals added</span><strong id="count-value"></strong></div><div><span>Interval width, Δt</span><strong id="width-value"></strong></div><div><span>Accumulated impulse</span><strong id="sum-value"></strong></div></div>
-      <div class="diff-controls"><div><label for="strip-slider">Trapezoids added <output id="strip-display" for="strip-slider"></output></label><input id="strip-slider" type="range" min="0" max="4" step="1" value="0"><div class="ode-buttons"><button id="back" type="button">← Previous</button><button id="next" class="primary" type="button">Add trapezoid →</button></div></div></div>
+      <div class="sample-values" aria-label="Current accumulation"><div><span id="count-label">Panels added</span><strong id="count-value"></strong></div><div><span>Interval width, Δt</span><strong id="width-value"></strong></div><div><span>Accumulated impulse</span><strong id="sum-value"></strong></div></div>
+      <div class="diff-controls"><div><label for="strip-slider"><span id="slider-label">Trapezoids added</span> <output id="strip-display" for="strip-slider"></output></label><input id="strip-slider" type="range" min="0" max="4" step="1" value="0"><div class="ode-buttons"><button id="back" type="button">← Previous</button><button id="next" class="primary" type="button">Add trapezoid →</button></div></div></div>
     </div>
     <aside class="reasoning diff-reasoning">
-      <label for="intervals">Number of intervals</label><select id="intervals"><option value="4">4 intervals · coarse</option><option value="8">8 intervals</option><option value="16">16 intervals · fine</option></select>
-      <p class="model-description">A positive force starts at 12 N and decays with a time constant of 0.8 s. Find the impulse delivered from 0 to 2.0 s. Changing the interval count restarts the trace.</p>
+      <label for="method">Integration method</label><select id="method"><option value="trapezoid">Trapezoidal rule · Core</option><option value="simpson">Simpson’s 1/3 rule · Working exposure</option></select>
+      <label for="intervals" class="integration-select-label">Number of intervals</label><select id="intervals"><option value="4">4 intervals · coarse</option><option value="8">8 intervals</option><option value="16">16 intervals · fine</option></select>
+      <p class="model-description">A positive force starts at 12 N and decays with a time constant of 0.8 s. Find the impulse delivered from 0 to 2.0 s. Changing the method or interval count restarts the trace.</p>
       <div class="equation">F(t) = 12 exp(−t / 0.8) <span class="units">N</span></div>
       <div class="diff-calculation" aria-live="polite" aria-atomic="true">
         <h2 id="step-title">Calculate the next area</h2>
         <p id="step-description"></p>
-        <div class="formula">Area ≈ ½(Fᵢ + Fᵢ₊₁) Δt</div>
+        <div class="formula" id="panel-formula">Area ≈ ½(Fᵢ + Fᵢ₊₁) Δt</div>
         <div id="calculation" class="calculation"></div>
         <div class="result-row"><span>Accumulated so far</span><strong id="partial"></strong></div>
-        <div class="result-row"><span>Complete trapezoidal estimate</span><strong id="estimate"></strong></div>
+        <div class="result-row"><span>Trapezoidal estimate</span><strong id="trap-estimate"></strong></div>
+        <div class="result-row"><span>Simpson estimate</span><strong id="simpson-estimate"></strong></div>
         <div class="result-row"><span>Analytic reference</span><strong id="exact"></strong></div>
-        <div class="result-row"><span>Complete estimate error</span><strong id="error"></strong></div>
+        <div class="result-row"><span>Trapezoidal error</span><strong id="trap-error"></strong></div>
+        <div class="result-row"><span>Simpson error</span><strong id="simpson-error"></strong></div>
         <p class="interpretation" id="interpretation"></p>
       </div>
     </aside>
   </section>
   <section class="explanation" aria-label="Understanding numerical integration">
-    <div><h2>Area becomes impulse</h2><p>The area under the force–time curve is impulse. Each trapezoid estimates the area between two adjacent force samples; adding the strips estimates the total impulse.</p><p>Force is measured in N and time in s, so impulse is in <strong>N s</strong>, equivalent to kg m/s.</p></div>
-    <div><h2>Check the result</h2><p>The analytic reference is J = 12(0.8)[1 − exp(−2/0.8)] N s. The positive impulse must be smaller than the 24 N s rectangle formed by the initial force and the full duration.</p><p>Try 4, 8 and 16 intervals. For this smooth model, the trapezoidal estimate approaches the reference as the intervals become narrower.</p></div>
+    <div><h2>Area becomes impulse</h2><p>The area under the force–time curve is impulse. The trapezoidal rule uses a straight line between two samples. Simpson’s rule uses a quadratic through three equally spaced samples. Adding the panels estimates the total impulse.</p><p>Force is measured in N and time in s, so impulse is in <strong>N s</strong>, equivalent to kg m/s.</p></div>
+    <div><h2>Check the result</h2><p>The analytic reference is J = 12(0.8)[1 − exp(−2/0.8)] N s. The positive impulse must be smaller than the 24 N s rectangle formed by the initial force and the full duration.</p><p>Try 4, 8 and 16 intervals. Both methods use the same sampled force values. For this smooth example, both approach the reference as the intervals become narrower.</p></div>
+  </section>
+  <section class="simpson-derivation" aria-labelledby="derivation-title">
+    <h2 id="derivation-title">Where do Simpson’s weights come from?</h2>
+    <p>Take three equally spaced samples: F₀ at t₀, F₁ at t₀ + h, and F₂ at t₀ + 2h. Fit one quadratic through them. The panel spans <strong>two intervals</strong>, each of width h.</p>
+    <ol>
+      <li><strong>Centre the coordinate.</strong> Let u = (t − t₁)/h, where t₁ = t₀ + h. The samples now lie at u = −1, 0 and 1. Write the fitted curve as p(u) = Au² + Bu + C.</li>
+      <li><strong>Fit the samples.</strong> At u = 0, C = F₁. The two endpoints give A = (F₀ − 2F₁ + F₂)/2 and B = (F₂ − F₀)/2.</li>
+      <li><strong>Integrate the quadratic.</strong> Since dt = h du, integrate h(Au² + Bu + C) from −1 to 1. The odd Bu term cancels, giving h(2A/3 + 2C).</li>
+      <li><strong>Substitute A and C.</strong> The area becomes <strong>h(F₀ + 4F₁ + F₂)/3</strong>. That is Simpson’s 1/3 rule: the middle sample receives four times the endpoint weight.</li>
+    </ol>
+    <p>For several panels, adjacent panels share endpoints. Their combined weights are 1, 4, 2, 4, …, 2, 4, 1. Composite Simpson’s 1/3 rule requires <strong>equally spaced samples and an even number of intervals</strong>. A quadratic is an approximation to this exponential force curve, so validate its total against the reference.</p>
   </section>
 </main>
 <footer>PHY4605 · Week 07: numerical integration <span>Model → sample → accumulate → validate → interpret</span></footer>

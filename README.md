@@ -33,3 +33,5 @@ For development, `npm run dev` serves at port 8766 on localhost, LAN, and Tailsc
 ## Week 07 numerical integration
 
 `integration.html` illustrates the impulse from a decaying force F(t) = 12 exp(−t/0.8) N over 0–2 s. Step through composite trapezoids and compare 4, 8 or 16 intervals with the analytic reference. The visualization shows the running sum, next strip, complete estimate, and absolute error in N s. Changing interval count restarts the trace.
+
+The integration page also offers composite Simpson’s 1/3 rule using the same even interval counts. Each Simpson panel fits a quadratic through three samples across two intervals; both estimates and their absolute errors are shown together. The page includes a short derivation of the 1–4–1 weights. Simpson is working exposure in the Week 07 lecture.
